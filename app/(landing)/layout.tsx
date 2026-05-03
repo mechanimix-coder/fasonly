@@ -1,0 +1,24 @@
+import Footer from "@/component/landing/Footer";
+import Header from "@/component/landing/Header";
+import License from "@/component/landing/License";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Fasonly",
+  description: "New Generation Production",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <div className="min-h-full flex flex-col">
+      <Header />
+      {children}
+      <Footer />
+      <License />
+    </div>
+  );
+}
