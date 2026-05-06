@@ -183,12 +183,18 @@ export default function Hero() {
 
           {/* Right Side - Dashboard Panel */}
           <div className="w-full lg:w-[700px] relative">
+            {/* Ambient Glow Effect */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#96E92A] to-[#0099ff] rounded-4xl blur-2xl opacity-75 group-hover:opacity-100 transition duration-1000"></div>
+
+            {/* Optional: Secondary glow for more depth */}
+            <div className="absolute -inset-3 bg-gradient-to-r from-[#96E92A]/30 to-[#0099ff]/30 rounded-4xl blur-3xl"></div>
+
             <Image
               src={"/Assets/Images/Fasonly-Monitoring.png"}
               width={900}
               height={500}
               alt="Fasonly Panel Image"
-              className="rounded-4xl border border-[#0099ff] border-4 w-full h-auto"
+              className="rounded-4xl relative w-full h-auto"
             />
           </div>
         </div>
