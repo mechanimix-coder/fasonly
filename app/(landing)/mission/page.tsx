@@ -23,7 +23,7 @@ export default function MissionPage() {
   return (
     <div className="w-full bg-white">
       {/* Hero Section - Dark Blue with Blue Glare */}
-      <div className="relative w-full bg-[#0B1221] pb-28 overflow-hidden pt-46">
+      <div className="relative w-full bg-[#0B1221] pb-28 pt-46 overflow-hidden">
         {/* Blue glare effect */}
         <div className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[#0099ff] blur-[150px] rounded-full opacity-25 pointer-events-none" />
         <div className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[400px] bg-[#0099ff] blur-[120px] rounded-full opacity-15 pointer-events-none" />

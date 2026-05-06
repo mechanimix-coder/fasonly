@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="min-h-full flex flex-col">
+    <div className="min-h-full flex flex-col overflow-hidden">
       <Header />
       {children}
       <Footer />

@@ -47,7 +47,7 @@ export default function Header() {
   return (
     <div
       className={`flex z-50 px-4 py-5 md:px-6 flex-row fixed top-0 w-full items-center justify-between bg-[#0B1221] text-white h-20 md:h-auto transition-transform duration-300 ease-in-out
-      ${visible ? "translate-y-0" : "-translate-y-full"}`}>
+      ${visible ? "lg:translate-y-0" : "lg:-translate-y-full"}`}>
       {/* Logo - Always visible */}
       <div className="flex-shrink-0">
         <Link href="/">
@@ -291,15 +291,21 @@ export default function Header() {
               <div
                 className={`overflow-hidden transition-all duration-300 ${isDropdownOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"}`}>
                 <div className="pl-4 flex flex-col gap-1 border-l-2 border-white/10 ml-1">
-                  <span className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
+                  <Link
+                    href={"/mission"}
+                    className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
                     Our Mission
-                  </span>
-                  <span className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
+                  </Link>
+                  <Link
+                    href={"/about"}
+                    className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
                     About Us
-                  </span>
-                  <span className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
+                  </Link>
+                  <Link
+                    href={"/contact"}
+                    className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
                     Contact
-                  </span>
+                  </Link>
                 </div>
               </div>
             </div>
