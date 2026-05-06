@@ -21,6 +21,11 @@ export default function Header() {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    setIsDropdownOpen(false);
+  };
+
   // Scroll behavior
   useEffect(() => {
     const handleScroll = () => {
@@ -50,7 +55,7 @@ export default function Header() {
       ${visible ? "lg:translate-y-0" : "lg:-translate-y-full"}`}>
       {/* Logo - Always visible */}
       <div className="flex-shrink-0">
-        <Link href="/">
+        <Link href="/" onClick={closeMenu}>
           <Image
             src={"/Assets/Images/Logo.png"}
             width={400}
@@ -242,8 +247,8 @@ export default function Header() {
 
       {/* Mobile Full-Screen Slide-in Menu */}
       <div
-        className={`fixed inset-0 bg-(--dark-blue) z-[60] lg:hidden transition-transform duration-300 ease-in-out 
-        ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+        className={`fixed inset-0 bg-[#0B1221] z-[60] lg:hidden transition-transform duration-300 ease-in-out 
+  ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
         {/* Menu Header */}
         <div className="flex justify-between items-center p-4 border-b border-white/10 h-20">
           <div className="flex-shrink-0">
@@ -264,13 +269,20 @@ export default function Header() {
         </div>
 
         {/* Menu Content - Full remaining height */}
-        <div className="flex flex-col bg-(--dark-blue) h-[calc(100vh-80px)] overflow-y-auto p-6">
-          {/* Anında Teklif Al Button - First item in mobile menu */}
-          <div className="mb-4">
+        <div className="flex flex-col bg-[#0B1221] h-[calc(100vh-80px)] overflow-y-auto p-6">
+          {/* Button Row - Anında Teklif Al & Login/Register side by side */}
+          <div className="mb-8 grid grid-cols-2 gap-3">
             <RedirectButton
               title={"Anında Teklif Al"}
               url=""
               theme="BlueToGreen"
+              style="w-full text-sm py-2.5"
+            />
+            <RedirectButton
+              title="Log in / Register"
+              url=""
+              theme="GreenToBlue"
+              style="w-full text-sm py-2.5"
             />
           </div>
 
@@ -293,16 +305,19 @@ export default function Header() {
                 <div className="pl-4 flex flex-col gap-1 border-l-2 border-white/10 ml-1">
                   <Link
                     href={"/mission"}
+                    onClick={closeMenu}
                     className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
                     Our Mission
                   </Link>
                   <Link
                     href={"/about"}
+                    onClick={closeMenu}
                     className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
                     About Us
                   </Link>
                   <Link
                     href={"/contact"}
+                    onClick={closeMenu}
                     className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
                     Contact
                   </Link>
@@ -310,28 +325,33 @@ export default function Header() {
               </div>
             </div>
 
-            <div className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10">
+            <Link
+              href={"/services"}
+              onClick={closeMenu}
+              className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10 block">
               Services
-            </div>
-            <div className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10">
-              Industries
-            </div>
-            <div className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10">
-              Information Center
-            </div>
-            <div className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10">
-              Ingredients
-            </div>
-          </div>
+            </Link>
 
-          {/* Login/Register at bottom */}
-          <div className="mt-auto pt-6 border-t border-white/10">
-            <RedirectButton
-              title="Log in / Register"
-              url=""
-              theme="GreenToBlue"
-              style="w-full text-base py-3"
-            />
+            <Link
+              href={"/reviews"}
+              onClick={closeMenu}
+              className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10 block">
+              Endüstriler
+            </Link>
+
+            <Link
+              href={"/gallery"}
+              onClick={closeMenu}
+              className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10 block">
+              Bilgi Merkezi
+            </Link>
+
+            <Link
+              href={"/pricing"}
+              onClick={closeMenu}
+              className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10 block">
+              Malzemeler
+            </Link>
           </div>
         </div>
       </div>

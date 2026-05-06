@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Fasonly",
+  themeColor: "#0e1932",
   description: "New Generation Production",
 };
 
