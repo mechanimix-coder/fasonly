@@ -1,12 +1,17 @@
 import Footer from "@/component/landing/Footer";
 import Header from "@/component/landing/Header";
 import License from "@/component/landing/License";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
   title: "Fasonly",
-  themeColor: "#0e1932",
   description: "New Generation Production",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0e1932", // Move your themeColor here
 };
 
 export default function RootLayout({
