@@ -115,7 +115,7 @@ export default function BlogPage() {
     return (
       <div className="w-full bg-gradient-to-b from-gray-50 to-white min-h-screen">
         {/* Hero Section Skeleton */}
-        <div className="relative bg-[#0B1221] overflow-hidden">
+        <div className="relative bg-[#0B1221] pt-10 overflow-hidden">
           <div className="container mx-auto px-4 md:px-10 lg:px-20 py-20 lg:py-28">
             <div className="text-center max-w-3xl mx-auto">
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
@@ -204,7 +204,7 @@ export default function BlogPage() {
   return (
     <div className="w-full bg-gradient-to-b from-gray-50 to-white min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-[#0B1221] overflow-hidden">
+      <section className="relative bg-[#0B1221]  pt-10 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-72 h-72 bg-[#0099ff] rounded-full filter blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#96E92A] rounded-full filter blur-3xl"></div>

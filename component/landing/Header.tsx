@@ -315,6 +315,12 @@ export default function Header() {
                     Our Mission
                   </Link>
                   <Link
+                    href={"/blog"}
+                    onClick={closeMenu}
+                    className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
+                    Blog
+                  </Link>
+                  <Link
                     href={"/about"}
                     onClick={closeMenu}
                     className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">

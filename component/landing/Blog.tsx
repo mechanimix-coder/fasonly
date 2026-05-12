@@ -18,7 +18,7 @@ const blogPosts: BlogPost[] = [
     title: "ProDesk by Fasonly ile Tanışın",
     description:
       "Özel parçalarınızı teklif verme, sipariş verme ve yönetme için gelişmiş dijital platformumuz. Gerçek zamanlı fiyatlandırma ve yapay zeka destekli DFM geri bildirimi ile malzeme ve teslim sürelerini kolayca yapılandırın. ProDesk, prototipten üretime geçişte ekibinizin uyum içinde ve daha hızlı hareket etmesine yardımcı olur.",
-    image: "/Assets/Images/blog/prodesk.png", // Update with actual path
+    image: "/Assets/Images/placeholder.png", // Update with actual path
     date: "15 Mart 2025",
     link: "/blog/prodesk",
   },
@@ -27,7 +27,7 @@ const blogPosts: BlogPost[] = [
     title: "Gelişmiş CNC Freze Hizmetleri",
     description:
       "Genişletilmiş CNC freze hizmetlerimizle parçalarınızı sadece 4 gün gibi kısa sürede teslim alın. Artık yüksek gereksinimli projeler için daha fazla esneklik sunan 2D teknik çizimleri de kabul ediyoruz.",
-    image: "/Assets/Images/blog/cnc.png", // Update with actual path
+    image: "/Assets/Images/placeholder.png", // Update with actual path
     date: "1 Mart 2025",
     link: "/blog/cnc-milling",
   },
@@ -36,7 +36,7 @@ const blogPosts: BlogPost[] = [
     title: "Seri Üretim İçin Güvenilir Çözüm Ortağınız",
     description:
       "Ekibimiz, üretim projenizi başlatmanıza yardımcı olmaya hazır. Sürecin her adımında uzmanlarımızdan destek alarak projenizi güvenle tamamlayın.",
-    image: "/Assets/Images/blog/production.png", // Update with actual path
+    image: "/Assets/Images/placeholder.png", // Update with actual path
     date: "10 Şubat 2025",
     link: "/blog/production",
   },
@@ -45,7 +45,7 @@ const blogPosts: BlogPost[] = [
     title: "3D Baskıda Yeni Malzeme Seçenekleri",
     description:
       "Endüstriyel 3D baskı portföyümüze eklenen yeni malzemelerle daha dayanıklı, hafif ve yüksek performanslı parçalar üretmek artık çok daha kolay.",
-    image: "/Assets/Images/blog/3d-materials.png",
+    image: "/Assets/Images/placeholder.png",
     date: "25 Ocak 2025",
     link: "/blog/3d-printing-materials",
   },
@@ -55,7 +55,7 @@ const blogPosts: BlogPost[] = [
     description:
       "Otomotiv sektöründe prototipleme süreçlerinizi hızlandıran yeni üretim hattımız. Elektrikli ve hibrit araç projeleriniz için özel çözümler.",
     date: "10 Ocak 2025",
-    image: "/Assets/Images/blog/automotive.png",
+    image: "/Assets/Images/placeholder.png",
     link: "/blog/automotive-prototyping",
   },
 ];
