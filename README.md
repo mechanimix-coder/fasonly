@@ -525,3 +525,4 @@ For questions or issues:
 **Last Updated:** May 2026
 **Version:** 0.1.0
 **Status:** Active Development
+**Developer:** uixreza.ir

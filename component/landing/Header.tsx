@@ -80,6 +80,11 @@ export default function Header() {
               Our Mission
             </Link>
             <Link
+              href="/blog"
+              className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A]">
+              Blog
+            </Link>
+            <Link
               href="/about"
               className="p-3 w-full cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A]">
               About Us
