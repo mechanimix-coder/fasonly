@@ -1,6 +1,11 @@
 import React from "react";
 
 export default function Footer() {
+  // Certifications data
+  const certifications = [
+    { name: "ISO 9001", description: "Kalite Yönetim Sistemi" },
+  ];
+
   return (
     <div className="bg-[#0B1221] w-full relative pt-16 pb-10 text-white font-sans min-h-[800px]">
       {/* 🔵 Blue Glare - Less bright, moved more down */}
@@ -87,18 +92,37 @@ export default function Footer() {
         <div className="relative z-10 flex flex-col md:flex-row bg-[#151E32] rounded-lg overflow-hidden max-w-4xl mx-auto shadow-xl border border-white/5">
           {/* Contact Block */}
           <div className="flex-1 p-6 flex flex-col items-center justify-center border-r-0 md:border-r border-white/10 border-b md:border-b-0 border-white/10">
-            <h3 className="text-white font-bold text-lg mb-2">Contact:</h3>
+            <h3 className="text-white font-bold text-lg mb-2">Contact</h3>
             <span className="text-xs text-gray-400 text-center">
               e-mail: info@fasonly.com / tel: +90 541 773 1298
             </span>
           </div>
 
           {/* Address Block */}
-          <div className="flex-1 p-6 flex flex-col items-center justify-center">
-            <h3 className="text-white font-bold text-lg mb-2">Address:</h3>
+          <div className="flex-1 p-6 flex flex-col items-center justify-center border-r-0 md:border-r border-white/10 border-b md:border-b-0 border-white/10">
+            <h3 className="text-white font-bold text-lg mb-2">Address</h3>
             <span className="text-xs text-[#96E92A] text-center">
               Baksan, 10000 Nilüfer/Bursa
             </span>
+          </div>
+
+          {/* Certifications Block - New */}
+          <div className="flex-1 p-6 flex flex-col items-center justify-center">
+            <h3 className="text-white font-bold text-lg mb-2">
+              Certifications
+            </h3>
+            <div className="flex flex-col items-center gap-1">
+              {certifications.map((cert, index) => (
+                <div key={index} className="text-center">
+                  <span className="text-xs text-[#96E92A] font-medium">
+                    {cert.name}
+                  </span>
+                  <span className="text-[10px] text-gray-400 block">
+                    {cert.description}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

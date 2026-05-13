@@ -7,119 +7,89 @@ export default function SectorsSection() {
       title: "Otomotiv & Yan Sanayi",
       description:
         "Otomotiv sektörü için yüksek hassasiyetli parça üretimi, prototipleme ve seri üretim çözümleri. Kalite ve dayanıklılık odaklı üretim anlayışıyla projelerinize değer katarız.",
-      cert: "ISO 9001",
     },
     {
       title: "Savunma Sanayi",
       description:
         "Savunma sanayi gereksinimlerine uygun, yüksek dayanıklılık ve hassasiyet gerektiren parçaların üretimi. Kritik uygulamalar için güvenilir çözümler sunuyoruz.",
-      cert: null,
     },
     {
       title: "Medikal Cihaz",
       description:
         "Medikal cihazlar ve sağlık ekipmanları için hassas üretim, hızlı prototipleme ve düşük adetli özel parça çözümleri. Güvenlik ve kalite standartlarına tam uyum.",
-      cert: null,
     },
     {
       title: "Beyaz Eşya",
       description:
         "Beyaz eşya sektörüne yönelik dayanıklı, uzun ömürlü ve estetik parça üretimi. Yüksek adetli seri üretimden prototiplemeye kadar tüm ihtiyaçlarınız için yanınızdayız.",
-      cert: null,
     },
     {
       title: "Enerji & Güç",
       description:
         "Enerji sektörü için dayanıklı ve güvenilir bileşen üretimi. Yenilenebilir enerji ve güç sistemleri projelerinize özel çözümler sunuyoruz.",
-      cert: null,
     },
     {
       title: "Endüstriyel Makine",
       description:
         "Endüstriyel makine ve ekipmanları için hassas parça üretimi, bakım ve revizyon desteği. Makine parkınız için ihtiyaç duyduğunuz her türlü bileşeni üretiyoruz.",
-      cert: null,
     },
   ];
 
   return (
-    <div className="w-full bg-white py-16">
+    <div className="w-full bg-white py-20">
       <div className="container mx-auto px-4 md:px-10 lg:px-20">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-[#0099ff] font-semibold text-sm tracking-wider uppercase mb-3 inline-block">
+            Uzmanlık Alanlarımız
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1221] mb-4">
             Hizmet Verdiğimiz Sektörler
           </h2>
-          <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
+          <div className="w-16 h-0.5 bg-gradient-to-r from-[#96E92A] to-[#0099ff] mx-auto rounded-full"></div>
+          <p className="text-gray-500 mt-6 text-lg">
+            Farklı sektörlerin ihtiyaçlarına özel, mühendislik destekli üretim
+            çözümleri
+          </p>
         </div>
 
-        {/* Two Column Layout - Sectors on left, Certifications on right */}
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
-          {/* Left Side - Sectors List */}
-          <div className="flex-1">
-            <div className="bg-[#F0F8FF] rounded-xl p-6 shadow-sm border border-gray-100">
-              <h3 className="text-2xl font-bold text-[#0B1221] mb-6 text-center lg:text-left">
-                Sektörler
-              </h3>
-              <div className="space-y-3">
-                {sectors.map((sector, index) => (
-                  <div
-                    key={index}
-                    className="border-b border-gray-200 last:border-0 pb-3 last:pb-0">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#96E92A] rounded-full mt-2"></div>
-                      <div>
-                        <h4 className="font-bold text-[#0B1221]">
-                          {sector.title}
-                        </h4>
-                        <p className="text-gray-600 text-sm leading-relaxed mt-1">
-                          {sector.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+        {/* Minimal Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {sectors.map((sector, index) => (
+            <div
+              key={index}
+              className="group p-6 rounded-2xl bg-white border border-gray-100 hover:border-[#96E92A]/30 hover:shadow-lg transition-all duration-300">
+              {/* Index Number */}
+              <div className="text-5xl font-bold text-gray-100 group-hover:text-[#96E92A]/20 transition-colors duration-300 mb-4">
+                {(index + 1).toString().padStart(2, "0")}
               </div>
-            </div>
-          </div>
 
-          {/* Right Side - Certifications */}
-          <div className="flex-1">
-            <div className="bg-[#F0F8FF] rounded-xl p-6 shadow-sm border border-gray-100">
-              <h3 className="text-2xl font-bold text-[#0B1221] mb-6 text-center lg:text-left">
-                Sertifikalarımız
+              {/* Title with minimal accent */}
+              <h3 className="text-xl font-bold text-[#0B1221] mb-3 group-hover:text-[#0099ff] transition-colors duration-300">
+                {sector.title}
               </h3>
-              <div className="space-y-3">
-                {sectors
-                  .filter((s) => s.cert)
-                  .map((sector, index) => (
-                    <div
-                      key={index}
-                      className="border-b border-gray-200 last:border-0 pb-3 last:pb-0">
-                      <div className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-[#96E92A] rounded-full"></div>
-                        <div>
-                          <p className="font-medium text-[#0B1221]">
-                            {sector.cert}
-                          </p>
-                          <p className="text-gray-500 text-xs">
-                            {sector.title}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-              </div>
+
+              {/* Description */}
+              <p className="text-gray-500 text-sm leading-relaxed mb-4">
+                {sector.description}
+              </p>
+
+              {/* Minimal Learn More Link */}
+              <button className="inline-flex items-center gap-1 text-sm font-medium text-gray-400 group-hover:text-[#0099ff] transition-all duration-300">
+                Detaylar
+                <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" />
+              </button>
             </div>
-          </div>
+          ))}
         </div>
 
         {/* CTA Button */}
-        <div className="text-center mt-10">
-          <button className="group inline-flex items-center gap-2 bg-[#0B1221] hover:bg-[#1a2a3a] text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 hover:gap-3">
-            Tüm Sektörleri İncele
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        {/* <div className="text-center mt-12">
+          <button className="group inline-flex items-center gap-2 bg-transparent border border-[#0B1221] hover:bg-[#0B1221] text-[#0B1221] hover:text-white font-medium px-8 py-3 rounded-full transition-all duration-300">
+            Tüm Sektörleri Keşfet
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
