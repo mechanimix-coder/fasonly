@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X, CheckCircle } from "lucide-react";
 import { RedirectButton } from "../UI/Buttons";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -9,21 +9,32 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isServicesHover, setIsServicesHover] = useState(false);
+  const [isIndustriesHover, setIsIndustriesHover] = useState(false);
   const [prevScrollY, setPrevScrollY] = useState(0);
   const [visible, setVisible] = useState(true);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    if (isMenuOpen) setIsDropdownOpen(false);
+    if (isMenuOpen) {
+      setIsDropdownOpen(false);
+      setIsMobileIndustriesOpen(false);
+    }
   };
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const [isMobileIndustriesOpen, setIsMobileIndustriesOpen] = useState(false);
+
+  const toggleMobileIndustries = () => {
+    setIsMobileIndustriesOpen(!isMobileIndustriesOpen);
+  };
+
   const closeMenu = () => {
     setIsMenuOpen(false);
     setIsDropdownOpen(false);
+    setIsMobileIndustriesOpen(false);
   };
 
   // Scroll behavior
@@ -32,10 +43,8 @@ export default function Header() {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > prevScrollY && currentScrollY > 50) {
-        // Scrolling down - hide header
         setVisible(false);
       } else {
-        // Scrolling up - show header
         setVisible(true);
       }
 
@@ -207,12 +216,137 @@ export default function Header() {
           </div>
         </div>
 
-        <Link
-          href={"/reviews"}
-          className="cursor-pointer hover:text-[#96E92A] relative group text-sm xl:text-base">
-          Endüstriler
-          <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
-        </Link>
+        {/* Industries with Full-Width Dropdown - UPDATED with 2 columns for Industries We Serve */}
+        <div
+          className="relative group"
+          onMouseEnter={() => setIsIndustriesHover(true)}
+          onMouseLeave={() => setIsIndustriesHover(false)}>
+          <div className="flex flex-row items-center cursor-pointer group">
+            <span className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
+              Endüstriler <ChevronDown className="w-4 h-4" />
+              <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
+            </span>
+          </div>
+
+          {/* Full-Width Industries Dropdown */}
+          <div
+            className={`fixed left-0 right-0 top-20 bg-[#F0F8FF] text-[#0B1221] shadow-2xl transition-all duration-300
+            ${isIndustriesHover ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-[-10px]"}`}>
+            <div className="container mx-auto px-4 py-10">
+              {/* Three Column Layout */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {/* Column 1 - Industries We Serve (White background cards in 2 columns) */}
+                <div>
+                  <h2 className="text-xl font-bold text-[#0B1221] mb-5 pb-2 border-b-2 border-[#96E92A] inline-block">
+                    Industries We Serve
+                  </h2>
+                  <div className="grid grid-cols-2 gap-4 mt-5">
+                    {[
+                      {
+                        title: "Medical",
+                        desc: "Accelerated development of medical devices and health care products",
+                      },
+                      {
+                        title: "Aerospace",
+                        desc: "High-quality components from early prototyping to hot-fire testing to launch",
+                      },
+                      {
+                        title: "Automotive",
+                        desc: "Rapid prototyping and ramp-up production for traditional, electric, and autonomous vehicles",
+                      },
+                      {
+                        title: "Robotics",
+                        desc: "Complex end-use production parts for robotics and automation applications",
+                      },
+                      {
+                        title: "Consumer Electronics",
+                        desc: "Functional prototyping and on-demand production of consumer and computer electronics parts",
+                      },
+                      {
+                        title: "Industrial Equipment",
+                        desc: "Durable jigs, fixtures, and other components to streamline assembly and reduce production costs",
+                      },
+                    ].map((industry, idx) => (
+                      <Link
+                        href="/industries"
+                        key={idx}
+                        className="block bg-white rounded-lg p-4 hover:shadow-md transition-all duration-300 cursor-pointer border border-gray-100 group">
+                        <h3 className="font-bold text-[#0B1221] mb-2 group-hover:text-[#0099ff] transition-colors text-sm">
+                          {industry.title}
+                        </h3>
+                        <p className="text-xs text-gray-500 leading-relaxed">
+                          {industry.desc}
+                        </p>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Column 2 - Industry Resources */}
+                <div>
+                  <h2 className="text-xl font-bold text-[#0B1221] mb-5 pb-2 border-b-2 border-[#96E92A] inline-block">
+                    Industry Resources
+                  </h2>
+                  <div className="space-y-3 mt-5">
+                    {[
+                      "Medical Injection Molding",
+                      "Medical Materials",
+                      "Aerospace Manufacturing Guide",
+                      "Aerospace Machining",
+                      "EV/AV Automotive Guide",
+                      "Industry Case Studies",
+                    ].map((resource, idx) => (
+                      <Link
+                        href="/resources"
+                        key={idx}
+                        className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#0099ff] transition-colors cursor-pointer group">
+                        <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full group-hover:scale-125 transition-transform"></div>
+                        {resource}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Column 3 - Industry Certifications (ISO 9001 highlighted) */}
+                <div>
+                  <h2 className="text-xl font-bold text-[#0B1221] mb-5 pb-2 border-b-2 border-[#96E92A] inline-block">
+                    Industry Certifications
+                  </h2>
+                  <div className="mt-5">
+                    {/* ISO 9001 - Main Certification */}
+                    <div className="bg-gradient-to-br from-[#96E92A]/10 to-transparent rounded-xl p-5 border border-[#96E92A]/30">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-10 h-10 bg-[#96E92A]/20 rounded-full flex items-center justify-center">
+                          <CheckCircle className="w-5 h-5 text-[#96E92A]" />
+                        </div>
+                        <div>
+                          <h3 className="font-bold text-lg text-[#0B1221]">
+                            ISO 9001
+                          </h3>
+                          <p className="text-xs text-gray-500">
+                            Kalite Yönetim Sistemi
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-xs text-gray-600 leading-relaxed">
+                        Fasonly, ISO 9001 sertifikası ile uluslararası kalite
+                        standartlarında üretim yapma yetkinliğine sahiptir.
+                      </p>
+                    </div>
+
+                    {/* Additional Certifications Note */}
+                    <div className="mt-4 p-4 bg-white/50 rounded-lg border border-gray-100">
+                      <p className="text-xs text-gray-500 text-center">
+                        Tüm üretim süreçlerimiz ISO 9001:2015 standartlarına
+                        uygun olarak yönetilmektedir.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <Link
           href={"/gallery"}
@@ -343,12 +477,83 @@ export default function Header() {
               Services
             </Link>
 
-            <Link
-              href={"/reviews"}
-              onClick={closeMenu}
-              className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10 block">
-              Endüstriler
-            </Link>
+            {/* Endüstriler with dropdown - Mobile */}
+            <div className="border-b border-white/10 py-2">
+              <button
+                onClick={toggleMobileIndustries}
+                className="flex items-center justify-between w-full py-3 text-lg font-medium hover:text-[#96E92A] transition-colors">
+                <span>Endüstriler</span>
+                <ChevronDown
+                  className={`w-5 h-5 transition-transform duration-300 ${isMobileIndustriesOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+
+              {/* Industries Dropdown items - Mobile */}
+              <div
+                className={`overflow-hidden transition-all duration-300 ${isMobileIndustriesOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}>
+                <div className="pl-4 flex flex-col gap-3 border-l-2 border-white/10 ml-1 pt-2 pb-3">
+                  <div className="mb-2">
+                    <h4 className="text-sm font-semibold text-[#96E92A] mb-2">
+                      Industries We Serve
+                    </h4>
+                    <div className="flex flex-col gap-2">
+                      {[
+                        "Medical",
+                        "Aerospace",
+                        "Automotive",
+                        "Robotics",
+                        "Consumer Electronics",
+                        "Industrial Equipment",
+                      ].map((item, idx) => (
+                        <Link
+                          key={idx}
+                          href={"/industries"}
+                          onClick={closeMenu}
+                          className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                          {item}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="mb-2">
+                    <h4 className="text-sm font-semibold text-[#96E92A] mb-2">
+                      Industry Resources
+                    </h4>
+                    <div className="flex flex-col gap-2">
+                      {[
+                        "Medical Injection Molding",
+                        "Medical Materials",
+                        "Aerospace Manufacturing Guide",
+                        "Aerospace Machining",
+                        "EV/AV Automotive Guide",
+                        "Industry Case Studies",
+                      ].map((item, idx) => (
+                        <Link
+                          key={idx}
+                          href={"/resources"}
+                          onClick={closeMenu}
+                          className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                          {item}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold text-[#96E92A] mb-2">
+                      Industry Certifications
+                    </h4>
+                    <div className="flex flex-col gap-2">
+                      <Link
+                        href={"/certifications"}
+                        onClick={closeMenu}
+                        className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                        ISO 9001:2015
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <Link
               href={"/gallery"}

@@ -75,10 +75,10 @@ export default function SectorsSection() {
               </p>
 
               {/* Minimal Learn More Link */}
-              <button className="inline-flex items-center gap-1 text-sm font-medium text-gray-400 group-hover:text-[#0099ff] transition-all duration-300">
+              {/* <button className="inline-flex items-center gap-1 text-sm font-medium text-gray-400 group-hover:text-[#0099ff] transition-all duration-300">
                 Detaylar
                 <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" />
-              </button>
+              </button> */}
             </div>
           ))}
         </div>

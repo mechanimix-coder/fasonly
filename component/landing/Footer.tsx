@@ -93,6 +93,7 @@ export default function Footer() {
           {/* Contact Block */}
           <div className="flex-1 p-6 flex flex-col items-center justify-center border-r-0 md:border-r border-white/10 border-b md:border-b-0 border-white/10">
             <h3 className="text-white font-bold text-lg mb-2">Contact</h3>
+
             <span className="text-xs text-gray-400 text-center">
               e-mail: info@fasonly.com / tel: +90 541 773 1298
             </span>
