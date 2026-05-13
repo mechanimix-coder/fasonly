@@ -8,8 +8,10 @@ import Link from "next/link";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isAboutSubHover, setIsAboutSubHover] = useState(false);
   const [isServicesHover, setIsServicesHover] = useState(false);
   const [isIndustriesHover, setIsIndustriesHover] = useState(false);
+  const [isResourcesHover, setIsResourcesHover] = useState(false);
   const [prevScrollY, setPrevScrollY] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -17,7 +19,10 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
     if (isMenuOpen) {
       setIsDropdownOpen(false);
+      setIsMobileAboutOpen(false);
       setIsMobileIndustriesOpen(false);
+      setIsMobileServicesOpen(false);
+      setIsMobileResourcesOpen(false);
     }
   };
 
@@ -25,16 +30,34 @@ export default function Header() {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const [isMobileAboutOpen, setIsMobileAboutOpen] = useState(false);
   const [isMobileIndustriesOpen, setIsMobileIndustriesOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [isMobileResourcesOpen, setIsMobileResourcesOpen] = useState(false);
+
+  const toggleMobileAbout = () => {
+    setIsMobileAboutOpen(!isMobileAboutOpen);
+  };
 
   const toggleMobileIndustries = () => {
     setIsMobileIndustriesOpen(!isMobileIndustriesOpen);
   };
 
+  const toggleMobileServices = () => {
+    setIsMobileServicesOpen(!isMobileServicesOpen);
+  };
+
+  const toggleMobileResources = () => {
+    setIsMobileResourcesOpen(!isMobileResourcesOpen);
+  };
+
   const closeMenu = () => {
     setIsMenuOpen(false);
     setIsDropdownOpen(false);
+    setIsMobileAboutOpen(false);
     setIsMobileIndustriesOpen(false);
+    setIsMobileServicesOpen(false);
+    setIsMobileResourcesOpen(false);
   };
 
   // Scroll behavior
@@ -82,141 +105,289 @@ export default function Header() {
             Fasonly <ChevronDown className="w-4 h-4" />
             <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
           </span>
-          <div className="invisible flex flex-col group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 absolute left-0 w-40 top-8 bg-[#0B1221] text-white shadow-xl rounded-md overflow-hidden">
+          <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 absolute left-0 w-52 top-8 bg-[#0B1221] text-white shadow-xl rounded-md  z-50">
             <Link
               href="/mission"
-              className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A]">
-              Our Mission
+              className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A] block">
+              Misyonumuz
             </Link>
             <Link
               href="/blog"
-              className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A]">
+              className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A] block">
               Blog
             </Link>
-            <Link
-              href="/about"
-              className="p-3 w-full cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A]">
-              About Us
-            </Link>
+
+            {/* About Us with Sub-dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setIsAboutSubHover(true)}
+              onMouseLeave={() => setIsAboutSubHover(false)}>
+              <div className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A] flex items-center justify-between">
+                Hakkımızda
+                <ChevronDown className="w-3 h-3 -rotate-90" />
+              </div>
+
+              {/* Sub-dropdown that appears to the right */}
+              <div
+                className={`absolute left-full top-0 ml-1 w-[500px] bg-[#0B1221] text-white shadow-xl rounded-md overflow-hidden transition-all duration-200 z-50 ${isAboutSubHover ? "visible opacity-100" : "invisible opacity-0"}`}>
+                <div className="grid grid-cols-3 gap-4 p-4">
+                  <div>
+                    <h4 className="text-[#96E92A] text-xs font-semibold mb-2">
+                      HAKKIMIZDA
+                    </h4>
+                    <ul className="space-y-1">
+                      <li>
+                        <Link
+                          href="/about/who-we-are"
+                          className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
+                          Biz Kimiz
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/about/production-facility"
+                          className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
+                          Üretim Tesisi
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/about/our-team"
+                          className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
+                          Ekibimiz
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/about/our-customers"
+                          className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
+                          Müşterilerimiz
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="text-[#96E92A] text-xs font-semibold mb-2">
+                      KURUMSAL
+                    </h4>
+                    <ul className="space-y-1">
+                      <li>
+                        <Link
+                          href="/corporate/certificates"
+                          className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
+                          Sertifikalar
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/corporate/quality-policy"
+                          className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
+                          Kalite Politikamız
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/corporate/sustainability"
+                          className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
+                          Sürdürülebilirlik
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="text-[#96E92A] text-xs font-semibold mb-2">
+                      İLETİŞİM
+                    </h4>
+                    <ul className="space-y-1">
+                      <li>
+                        <Link
+                          href="/contact/sakarya-facility"
+                          className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
+                          Sakarya Tesisi
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/contact/quote-request"
+                          className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
+                          Teklif Talebi
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/contact/careers"
+                          className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
+                          Kariyer
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <Link
               href="/contact"
-              className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A]">
-              Contact
+              className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A] block">
+              İletişim
             </Link>
           </div>
         </div>
 
-        {/* Services with Full-Width Dropdown */}
+        {/* Services with Clean Dropdown - Updated with Image Box */}
         <div
           className="relative group"
           onMouseEnter={() => setIsServicesHover(true)}
           onMouseLeave={() => setIsServicesHover(false)}>
           <div className="flex flex-row items-center cursor-pointer group">
             <span className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
-              Services <ChevronDown className="w-4 h-4" />
+              Hizmetler <ChevronDown className="w-4 h-4" />
               <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
             </span>
           </div>
 
-          {/* Full-Width Services Dropdown */}
+          {/* Clean Services Dropdown with 4 columns + Image Box */}
           <div
-            className={`fixed left-0 right-0 top-20 bg-[#F0F8FF] text-[#0B1221] shadow-2xl transition-all duration-300
+            className={`fixed left-0 right-0 top-20 bg-white text-[#0B1221] shadow-2xl transition-all duration-300
             ${isServicesHover ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-[-10px]"}`}>
-            <div className="container mx-auto px-4 py-8">
-              {/* Top Row - 4 Service Cards */}
-              <div className="grid grid-cols-4 gap-6 mb-8">
-                {[
-                  {
-                    title: "CNC İşleme Hizmetleri",
-                    desc: "Yüksek hassasiyetli CNC işleme teknolojileriyle prototipten seri üretime kadar kaliteli, hızlı ve güvenilir üretim.",
-                    image: "/Assets/Images/parts/CNC.png",
-                    url: "/services",
-                  },
-                  {
-                    title: "Sac Metal Parça Üretimi",
-                    desc: "Lazer kesim, büküm, delme ve kaynak operasyonlarını entegre ederek yüksek hassasiyetli sac metal parçalar üretir.",
-                    image: "/Assets/Images/parts/metal.png",
-                    url: "/services",
-                  },
-                  {
-                    title: "3D Baskı Hizmetleri",
-                    desc: "Fonksiyonel prototipler ve düşük adetli üretimler için, farklı malzeme ve baskı teknolojileriyle hızlı ve mühendislik odaklı 3D baskı çözümleri sunuyoruz.",
-                    image: "/Assets/Images/parts/3d.png",
-                    url: "/services",
-                  },
-                  {
-                    title: "Plastik Enjeksiyon ile Parça Üretimi",
-                    desc: "Plastik enjeksiyon üretiminde mühendislik hassasiyeti ve hızlı teslimat ile düşük adetli prototip üretimlerinden seri imalata kadar tüm süreçler dijital olarak yönetilir.",
-                    image: "/Assets/Images/parts/plastic.png",
-                    url: "/services",
-                  },
-                ].map((service, index) => (
-                  <Link
-                    href={service.url}
-                    key={index}
-                    className="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-100">
-                    <div className="h-32 flex items-center justify-center mb-4">
-                      <Image
-                        src={service.image}
-                        alt={service.title}
-                        width={120}
-                        height={120}
-                        className="object-contain"
-                      />
-                    </div>
-                    <h3 className="font-bold text-lg text-[#0B1221] mb-2">
-                      {service.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {service.desc}
-                    </p>
-                  </Link>
-                ))}
-              </div>
+            <div className="container mx-auto px-4 py-10">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+                {/* Injection Molding Service */}
+                <div>
+                  <h3 className="font-bold text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
+                    Enjeksiyon Kalıplama
+                  </h3>
+                  <ul className="space-y-2 mt-4">
+                    {[
+                      "Plastik Enjeksiyon Kalıplama",
+                      "Sıvı Silikon Kauçuk Kalıplama",
+                      "Kaplama Kalıplama",
+                      "Gömme Parçalı Kalıplama",
+                      "Aile ve Çok Gözlü Kalıplama",
+                      "Prototipleme",
+                      "Seri Üretim",
+                      "Kalite",
+                      "İkincil Operasyonlar",
+                    ].map((item, idx) => (
+                      <li key={idx}>
+                        <Link
+                          href="/services/injection-molding"
+                          className="text-sm text-gray-600 hover:text-[#0099ff] transition-colors cursor-pointer block py-1">
+                          {item}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-              {/* Bottom Row - 3 Support Cards */}
-              <div className="grid grid-cols-3 gap-6">
-                {[
-                  {
-                    title: "Tasarım ve Mühendislik Desteği",
-                    icon: "/Assets/Images/Services/1.png",
-                    url: "/services",
-                  },
-                  {
-                    title: "Canlı Üretim Takibi ve Kontrolü",
-                    icon: "/Assets/Images/Services/2.png",
-                    url: "/services",
-                  },
-                  {
-                    title: "Hızlı ve Güvenilir Tekliflendirme",
-                    icon: "/Assets/Images/Services/3.png",
-                    url: "/services",
-                  },
-                ].map((item, index) => (
-                  <Link
-                    href={item.url}
-                    key={index}
-                    className="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-100 flex items-center gap-4">
-                    <div className="flex-shrink-0">
-                      <Image
-                        src={item.icon}
-                        alt={item.title}
-                        width={50}
-                        height={50}
-                        className="object-contain"
-                      />
+                {/* CNC Machining Service */}
+                <div>
+                  <h3 className="font-bold text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
+                    CNC İşleme
+                  </h3>
+                  <ul className="space-y-2 mt-4">
+                    {[
+                      "CNC Frezeleme",
+                      "CNC Tornalama",
+                      "Seri Üretim İşleme",
+                      "Diş Açma Seçenekleri",
+                      "Kalite",
+                      "Yüzey İşlem Seçenekleri",
+                    ].map((item, idx) => (
+                      <li key={idx}>
+                        <Link
+                          href="/services/cnc-machining"
+                          className="text-sm text-gray-600 hover:text-[#0099ff] transition-colors cursor-pointer block py-1">
+                          {item}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* 3D Printing Service */}
+                <div>
+                  <h3 className="font-bold text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
+                    3D Baskı
+                  </h3>
+                  <ul className="space-y-2 mt-4">
+                    {[
+                      "Metal 3D Baskı",
+                      "Stereolitografi",
+                      "Multi Jet Fusion",
+                      "Seçici Lazer Sinterleme",
+                      "PolyJet",
+                      "Gelişmiş Fotopolimerler",
+                      "Fused Deposition Modeling",
+                      "Seri Üretim",
+                      "Büyük Format",
+                      "Kalite",
+                      "Yüzey İşlem Seçenekleri",
+                    ].map((item, idx) => (
+                      <li key={idx}>
+                        <Link
+                          href="/services/3d-printing"
+                          className="text-sm text-gray-600 hover:text-[#0099ff] transition-colors cursor-pointer block py-1">
+                          {item}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Sheet Metal Fabrication */}
+                <div>
+                  <h3 className="font-bold text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
+                    Sac Metal İşleme
+                  </h3>
+                  <ul className="space-y-2 mt-4">
+                    {[
+                      "Lazer Kesim",
+                      "Zımbalama",
+                      "Şekillendirme ve Bükme",
+                      "Birleştirilmiş Montajlar",
+                      "Prototipleme",
+                      "Seri Üretim",
+                      "Tasarım Kılavuzları",
+                      "Kalite",
+                      "Yüzey İşlem Seçenekleri",
+                    ].map((item, idx) => (
+                      <li key={idx}>
+                        <Link
+                          href="/services/sheet-metal"
+                          className="text-sm text-gray-600 hover:text-[#0099ff] transition-colors cursor-pointer block py-1">
+                          {item}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Column 5 - Image Box (Same style as Resources dropdown) */}
+                <div className="bg-[#F0F8FF] h-fit rounded-xl p-5 border border-gray-100">
+                  <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20">
+                    <div className="flex items-center justify-center h-full">
+                      <span className="text-4xl">⚙️</span>
                     </div>
-                    <h3 className="font-bold text-lg text-[#0B1221]">
-                      {item.title}
-                    </h3>
-                  </Link>
-                ))}
+                  </div>
+                  <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                    Hızlı Üretim Çözümleri
+                  </h3>
+                  <p className="text-xs text-gray-600 leading-relaxed mb-4">
+                    Prototiplemeden seri üretime kadar tüm ihtiyaçlarınız için
+                    tek noktadan çözüm ortağınız. Modern makine parkuru ve uzman
+                    mühendislik desteği ile üretim süreçlerinizi hızlandırın.
+                  </p>
+                  <button className="w-full bg-[#0B1221] hover:bg-[#1a2a3a] text-white font-medium py-2 rounded-lg transition-colors text-sm">
+                    Hemen Teklif Al
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Industries with Full-Width Dropdown - UPDATED with 2 columns for Industries We Serve */}
+        {/* Industries with Full-Width Dropdown */}
         <div
           className="relative group"
           onMouseEnter={() => setIsIndustriesHover(true)}
@@ -230,41 +401,41 @@ export default function Header() {
 
           {/* Full-Width Industries Dropdown */}
           <div
-            className={`fixed left-0 right-0 top-20 bg-[#F0F8FF] text-[#0B1221] shadow-2xl transition-all duration-300
+            className={`fixed left-0 right-0 top-20 bg-white text-[#0B1221] shadow-2xl transition-all duration-300
             ${isIndustriesHover ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-[-10px]"}`}>
             <div className="container mx-auto px-4 py-10">
               {/* Three Column Layout */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {/* Column 1 - Industries We Serve (White background cards in 2 columns) */}
+                {/* Column 1 - Industries We Serve */}
                 <div>
                   <h2 className="text-xl font-bold text-[#0B1221] mb-5 pb-2 border-b-2 border-[#96E92A] inline-block">
-                    Industries We Serve
+                    Hizmet Verdiğimiz Sektörler
                   </h2>
                   <div className="grid grid-cols-2 gap-4 mt-5">
                     {[
                       {
-                        title: "Medical",
-                        desc: "Accelerated development of medical devices and health care products",
+                        title: "Medikal",
+                        desc: "Medikal cihazlar ve sağlık ürünlerinin hızlandırılmış geliştirilmesi",
                       },
                       {
-                        title: "Aerospace",
-                        desc: "High-quality components from early prototyping to hot-fire testing to launch",
+                        title: "Havacılık ve Uzay",
+                        desc: "Erken prototiplemeden ateşleme testlerine ve fırlatmaya kadar yüksek kaliteli bileşenler",
                       },
                       {
-                        title: "Automotive",
-                        desc: "Rapid prototyping and ramp-up production for traditional, electric, and autonomous vehicles",
+                        title: "Otomotiv",
+                        desc: "Geleneksel, elektrikli ve otonom araçlar için hızlı prototipleme ve hızlandırılmış üretim",
                       },
                       {
-                        title: "Robotics",
-                        desc: "Complex end-use production parts for robotics and automation applications",
+                        title: "Robotik",
+                        desc: "Robotik ve otomasyon uygulamaları için karmaşık son kullanım üretim parçaları",
                       },
                       {
-                        title: "Consumer Electronics",
-                        desc: "Functional prototyping and on-demand production of consumer and computer electronics parts",
+                        title: "Tüketici Elektroniği",
+                        desc: "Tüketici ve bilgisayar elektroniği parçalarının fonksiyonel prototiplenmesi ve talep üzerine üretimi",
                       },
                       {
-                        title: "Industrial Equipment",
-                        desc: "Durable jigs, fixtures, and other components to streamline assembly and reduce production costs",
+                        title: "Endüstriyel Ekipman",
+                        desc: "Dayanıklı aparatlar, fikstürler ve montajı kolaylaştırmak ve üretim maliyetlerini düşürmek için diğer bileşenler",
                       },
                     ].map((industry, idx) => (
                       <Link
@@ -285,16 +456,16 @@ export default function Header() {
                 {/* Column 2 - Industry Resources */}
                 <div>
                   <h2 className="text-xl font-bold text-[#0B1221] mb-5 pb-2 border-b-2 border-[#96E92A] inline-block">
-                    Industry Resources
+                    Sektör Kaynakları
                   </h2>
                   <div className="space-y-3 mt-5">
                     {[
-                      "Medical Injection Molding",
-                      "Medical Materials",
-                      "Aerospace Manufacturing Guide",
-                      "Aerospace Machining",
-                      "EV/AV Automotive Guide",
-                      "Industry Case Studies",
+                      "Medikal Enjeksiyon Kalıplama",
+                      "Medikal Malzemeler",
+                      "Havacılık Üretim Rehberi",
+                      "Havacılık İşleme",
+                      "EV/AV Otomotiv Rehberi",
+                      "Sektör Vaka Çalışmaları",
                     ].map((resource, idx) => (
                       <Link
                         href="/resources"
@@ -307,10 +478,10 @@ export default function Header() {
                   </div>
                 </div>
 
-                {/* Column 3 - Industry Certifications (ISO 9001 highlighted) */}
+                {/* Column 3 - Industry Certifications */}
                 <div>
                   <h2 className="text-xl font-bold text-[#0B1221] mb-5 pb-2 border-b-2 border-[#96E92A] inline-block">
-                    Industry Certifications
+                    Sektör Sertifikaları
                   </h2>
                   <div className="mt-5">
                     {/* ISO 9001 - Main Certification */}
@@ -348,12 +519,175 @@ export default function Header() {
           </div>
         </div>
 
-        <Link
-          href={"/gallery"}
-          className="cursor-pointer hover:text-[#96E92A] relative group text-sm xl:text-base">
-          Bilgi Merkezi
-          <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
-        </Link>
+        {/* Resources Dropdown - Bilgi Merkezi */}
+        <div
+          className="relative group"
+          onMouseEnter={() => setIsResourcesHover(true)}
+          onMouseLeave={() => setIsResourcesHover(false)}>
+          <div className="flex flex-row items-center cursor-pointer group">
+            <span className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
+              Bilgi Merkezi <ChevronDown className="w-4 h-4" />
+              <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
+            </span>
+          </div>
+
+          {/* Resources Dropdown - 4 Columns with Image */}
+          <div
+            className={`fixed left-0 right-0 top-20 bg-white text-[#0B1221] shadow-2xl transition-all duration-300
+            ${isResourcesHover ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-[-10px]"}`}>
+            <div className="container mx-auto px-4 py-10">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                {/* Column 1 - Design Tips, Toolkits, Guides */}
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                      Tasarım İpuçları
+                    </h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      Yaygın üretilebilirlik sorunları ve malzeme seçimi
+                      hakkında tavsiyeler
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                      Araç Setleri
+                    </h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      Parçalarınızı prototiplemeden seri üretime optimize edecek
+                      kaynaklar
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                      Rehberler ve Trend Raporları
+                    </h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      Dijital üretim konularında derinlemesine rehberler ve
+                      raporlar
+                    </p>
+                  </div>
+                </div>
+
+                {/* Column 2 - Partnerships, Design Aids, Events */}
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                      İş Ortaklıkları
+                    </h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      Yenilikçi şirketlerden gerçek dünya başarı hikayeleri
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                      Tasarım Yardımcıları
+                    </h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      Parça tasarımını geliştirmek için fiziksel araçlar ve
+                      kaynaklar edinin
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                      Etkinlikler ve Fuarlar
+                    </h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      Sektör etkinliklerine katılın, isteğe bağlı veya canlı web
+                      seminerleri
+                    </p>
+                  </div>
+                </div>
+
+                {/* Column 3 - Blog, Videos, FAQs, Educators */}
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                      Blog
+                    </h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      Tasarım kaynakları, derinlemesine özellikler ve sektör
+                      haberleri için kaynağınız
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                      Videolar
+                    </h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      Tesislerimizi, teknolojilerimizi, malzeme seçimini ve daha
+                      fazlasını keşfedin
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                      SSS
+                    </h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      Hizmet hatlarımız genelinde sık sorulan sorulara yanıtlar
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                      Eğitimciler ve Öğrenciler
+                    </h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      Sınıf ve geleceğin mühendisleri için kaynaklar
+                    </p>
+                  </div>
+                </div>
+
+                {/* Column 4 - Image with Description and Request Button */}
+                <div className="bg-[#F0F8FF] rounded-xl p-5 border border-gray-100">
+                  <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20">
+                    <div className="flex items-center justify-center h-full">
+                      <span className="text-4xl">🎯</span>
+                    </div>
+                  </div>
+                  <h3 className="font-bold text-base text-[#0B1221] mb-2">
+                    Tasarım Küpü
+                  </h3>
+                  <p className="text-xs text-gray-600 leading-relaxed mb-4">
+                    Yardımcı tasarım aracımız, enjeksiyon kalıplama için
+                    parçalar tasarlarken dikkat edilmesi gereken çok ince veya
+                    çok kalın parça özelliklerini, kötü boss'ları, doğru ve
+                    yanlış kaburgaları ve diğer hususları gösterir.
+                  </p>
+                  <button className="w-full bg-[#0B1221] hover:bg-[#1a2a3a] text-white font-medium py-2 rounded-lg transition-colors text-sm">
+                    Tasarım Küpü İste
+                  </button>
+                </div>
+              </div>
+
+              {/* Bottom Links - Manufacturing Glossary, Help Center, etc. */}
+              <div className="mt-8 pt-6 border-t border-gray-100">
+                <div className="flex flex-wrap items-center justify-between gap-4">
+                  <div className="flex items-center gap-6 flex-wrap">
+                    <Link
+                      href="/resources/glossary"
+                      className="text-sm text-gray-500 hover:text-[#0099ff] transition-colors">
+                      Üretim Sözlüğü
+                    </Link>
+                    <Link
+                      href="/resources/help-center"
+                      className="text-sm text-gray-500 hover:text-[#0099ff] transition-colors">
+                      Yardım Merkezi
+                    </Link>
+                    <Link
+                      href="/resources/product-life-cycle"
+                      className="text-sm text-gray-500 hover:text-[#0099ff] transition-colors">
+                      Ürün Yaşam Döngüsü
+                    </Link>
+                    <Link
+                      href="/resources/product-releases"
+                      className="text-sm text-gray-500 hover:text-[#0099ff] transition-colors">
+                      Ürün Duyuruları
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <Link
           href={"/pricing"}
@@ -367,7 +701,11 @@ export default function Header() {
 
       {/* Desktop Login/Register - Hidden on mobile */}
       <div className="hidden lg:block">
-        <RedirectButton title="Log in / Register" url="" theme="GreenToBlue" />
+        <RedirectButton
+          title="Giriş Yap / Kayıt Ol"
+          url=""
+          theme="GreenToBlue"
+        />
       </div>
 
       {/* Mobile Hamburger Menu Button - Visible on mobile */}
@@ -418,7 +756,7 @@ export default function Header() {
               style="w-full text-sm py-2.5"
             />
             <RedirectButton
-              title="Log in / Register"
+              title="Giriş Yap / Kayıt Ol"
               url=""
               theme="GreenToBlue"
               style="w-full text-sm py-2.5"
@@ -440,13 +778,13 @@ export default function Header() {
 
               {/* Dropdown items */}
               <div
-                className={`overflow-hidden transition-all duration-300 ${isDropdownOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"}`}>
-                <div className="pl-4 flex flex-col gap-1 border-l-2 border-white/10 ml-1">
+                className={`overflow-hidden transition-all duration-300 ${isDropdownOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}>
+                <div className="pl-4 flex flex-col gap-2 border-l-2 border-white/10 ml-1 pt-2 pb-3">
                   <Link
                     href={"/mission"}
                     onClick={closeMenu}
                     className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
-                    Our Mission
+                    Misyonumuz
                   </Link>
                   <Link
                     href={"/blog"}
@@ -454,28 +792,233 @@ export default function Header() {
                     className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
                     Blog
                   </Link>
-                  <Link
-                    href={"/about"}
-                    onClick={closeMenu}
-                    className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
-                    About Us
-                  </Link>
+                  <div>
+                    <button
+                      onClick={toggleMobileAbout}
+                      className="flex items-center justify-between w-full py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
+                      <span>Hakkımızda</span>
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-300 ${isMobileAboutOpen ? "rotate-180" : ""}`}
+                      />
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ${isMobileAboutOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}>
+                      <div className="pl-4 mt-1 flex flex-col gap-2 border-l-2 border-white/10 ml-2">
+                        <div>
+                          <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
+                            HAKKIMIZDA
+                          </h4>
+                          <div className="flex flex-col gap-1 mb-2">
+                            <Link
+                              href="/about/who-we-are"
+                              onClick={closeMenu}
+                              className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                              Biz Kimiz
+                            </Link>
+                            <Link
+                              href="/about/production-facility"
+                              onClick={closeMenu}
+                              className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                              Üretim Tesisi
+                            </Link>
+                            <Link
+                              href="/about/our-team"
+                              onClick={closeMenu}
+                              className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                              Ekibimiz
+                            </Link>
+                            <Link
+                              href="/about/our-customers"
+                              onClick={closeMenu}
+                              className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                              Müşterilerimiz
+                            </Link>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
+                            KURUMSAL
+                          </h4>
+                          <div className="flex flex-col gap-1 mb-2">
+                            <Link
+                              href="/corporate/certificates"
+                              onClick={closeMenu}
+                              className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                              Sertifikalar
+                            </Link>
+                            <Link
+                              href="/corporate/quality-policy"
+                              onClick={closeMenu}
+                              className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                              Kalite Politikamız
+                            </Link>
+                            <Link
+                              href="/corporate/sustainability"
+                              onClick={closeMenu}
+                              className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                              Sürdürülebilirlik
+                            </Link>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
+                            İLETİŞİM
+                          </h4>
+                          <div className="flex flex-col gap-1">
+                            <Link
+                              href="/contact/sakarya-facility"
+                              onClick={closeMenu}
+                              className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                              Sakarya Tesisi
+                            </Link>
+                            <Link
+                              href="/contact/quote-request"
+                              onClick={closeMenu}
+                              className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                              Teklif Talebi
+                            </Link>
+                            <Link
+                              href="/contact/careers"
+                              onClick={closeMenu}
+                              className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                              Kariyer
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <Link
                     href={"/contact"}
                     onClick={closeMenu}
                     className="py-2 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 hover:text-white">
-                    Contact
+                    İletişim
                   </Link>
                 </div>
               </div>
             </div>
 
-            <Link
-              href={"/services"}
-              onClick={closeMenu}
-              className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10 block">
-              Services
-            </Link>
+            {/* Hizmetler with dropdown - Mobile */}
+            <div className="border-b border-white/10 py-2">
+              <button
+                onClick={toggleMobileServices}
+                className="flex items-center justify-between w-full py-3 text-lg font-medium hover:text-[#96E92A] transition-colors">
+                <span>Hizmetler</span>
+                <ChevronDown
+                  className={`w-5 h-5 transition-transform duration-300 ${isMobileServicesOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+
+              {/* Services Dropdown items - Mobile */}
+              <div
+                className={`overflow-hidden transition-all duration-300 ${isMobileServicesOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"}`}>
+                <div className="pl-4 flex flex-col gap-3 border-l-2 border-white/10 ml-1 pt-2 pb-3">
+                  <div>
+                    <h4 className="text-sm font-semibold text-[#96E92A] mb-2">
+                      Enjeksiyon Kalıplama
+                    </h4>
+                    <div className="flex flex-col gap-1 mb-3">
+                      {[
+                        "Plastik Enjeksiyon Kalıplama",
+                        "Sıvı Silikon Kauçuk Kalıplama",
+                        "Kaplama Kalıplama",
+                        "Gömme Parçalı Kalıplama",
+                        "Aile ve Çok Gözlü Kalıplama",
+                        "Prototipleme",
+                        "Seri Üretim",
+                        "Kalite",
+                        "İkincil Operasyonlar",
+                      ].map((item, idx) => (
+                        <Link
+                          key={idx}
+                          href="/services/injection-molding"
+                          onClick={closeMenu}
+                          className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                          {item}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold text-[#96E92A] mb-2">
+                      CNC İşleme
+                    </h4>
+                    <div className="flex flex-col gap-1 mb-3">
+                      {[
+                        "CNC Frezeleme",
+                        "CNC Tornalama",
+                        "Seri Üretim İşleme",
+                        "Diş Açma Seçenekleri",
+                        "Kalite",
+                        "Yüzey İşlem Seçenekleri",
+                      ].map((item, idx) => (
+                        <Link
+                          key={idx}
+                          href="/services/cnc-machining"
+                          onClick={closeMenu}
+                          className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                          {item}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold text-[#96E92A] mb-2">
+                      3D Baskı
+                    </h4>
+                    <div className="flex flex-col gap-1 mb-3">
+                      {[
+                        "Metal 3D Baskı",
+                        "Stereolitografi",
+                        "Multi Jet Fusion",
+                        "Seçici Lazer Sinterleme",
+                        "PolyJet",
+                        "Gelişmiş Fotopolimerler",
+                        "Fused Deposition Modeling",
+                        "Seri Üretim",
+                        "Büyük Format",
+                        "Kalite",
+                        "Yüzey İşlem Seçenekleri",
+                      ].map((item, idx) => (
+                        <Link
+                          key={idx}
+                          href="/services/3d-printing"
+                          onClick={closeMenu}
+                          className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                          {item}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold text-[#96E92A] mb-2">
+                      Sac Metal İşleme
+                    </h4>
+                    <div className="flex flex-col gap-1">
+                      {[
+                        "Lazer Kesim",
+                        "Zımbalama",
+                        "Şekillendirme ve Bükme",
+                        "Birleştirilmiş Montajlar",
+                        "Prototipleme",
+                        "Seri Üretim",
+                        "Tasarım Kılavuzları",
+                        "Kalite",
+                        "Yüzey İşlem Seçenekleri",
+                      ].map((item, idx) => (
+                        <Link
+                          key={idx}
+                          href="/services/sheet-metal"
+                          onClick={closeMenu}
+                          className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
+                          {item}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Endüstriler with dropdown - Mobile */}
             <div className="border-b border-white/10 py-2">
@@ -494,16 +1037,16 @@ export default function Header() {
                 <div className="pl-4 flex flex-col gap-3 border-l-2 border-white/10 ml-1 pt-2 pb-3">
                   <div className="mb-2">
                     <h4 className="text-sm font-semibold text-[#96E92A] mb-2">
-                      Industries We Serve
+                      Hizmet Verdiğimiz Sektörler
                     </h4>
                     <div className="flex flex-col gap-2">
                       {[
-                        "Medical",
-                        "Aerospace",
-                        "Automotive",
-                        "Robotics",
-                        "Consumer Electronics",
-                        "Industrial Equipment",
+                        "Medikal",
+                        "Havacılık ve Uzay",
+                        "Otomotiv",
+                        "Robotik",
+                        "Tüketici Elektroniği",
+                        "Endüstriyel Ekipman",
                       ].map((item, idx) => (
                         <Link
                           key={idx}
@@ -517,16 +1060,16 @@ export default function Header() {
                   </div>
                   <div className="mb-2">
                     <h4 className="text-sm font-semibold text-[#96E92A] mb-2">
-                      Industry Resources
+                      Sektör Kaynakları
                     </h4>
                     <div className="flex flex-col gap-2">
                       {[
-                        "Medical Injection Molding",
-                        "Medical Materials",
-                        "Aerospace Manufacturing Guide",
-                        "Aerospace Machining",
-                        "EV/AV Automotive Guide",
-                        "Industry Case Studies",
+                        "Medikal Enjeksiyon Kalıplama",
+                        "Medikal Malzemeler",
+                        "Havacılık Üretim Rehberi",
+                        "Havacılık İşleme",
+                        "EV/AV Otomotiv Rehberi",
+                        "Sektör Vaka Çalışmaları",
                       ].map((item, idx) => (
                         <Link
                           key={idx}
@@ -540,7 +1083,7 @@ export default function Header() {
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-[#96E92A] mb-2">
-                      Industry Certifications
+                      Sektör Sertifikaları
                     </h4>
                     <div className="flex flex-col gap-2">
                       <Link
@@ -555,12 +1098,72 @@ export default function Header() {
               </div>
             </div>
 
-            <Link
-              href={"/gallery"}
-              onClick={closeMenu}
-              className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10 block">
-              Bilgi Merkezi
-            </Link>
+            {/* Bilgi Merkezi with dropdown - Mobile */}
+            <div className="border-b border-white/10 py-2">
+              <button
+                onClick={toggleMobileResources}
+                className="flex items-center justify-between w-full py-3 text-lg font-medium hover:text-[#96E92A] transition-colors">
+                <span>Bilgi Merkezi</span>
+                <ChevronDown
+                  className={`w-5 h-5 transition-transform duration-300 ${isMobileResourcesOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+
+              {/* Resources Dropdown items - Mobile */}
+              <div
+                className={`overflow-hidden transition-all duration-300 ${isMobileResourcesOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}>
+                <div className="pl-4 flex flex-col gap-2 border-l-2 border-white/10 ml-1 pt-2 pb-3">
+                  <div>
+                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
+                      Tasarım İpuçları
+                    </h4>
+                    <p className="text-xs text-gray-400 mb-2">
+                      Yaygın üretilebilirlik sorunları ve malzeme seçimi
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
+                      Araç Setleri
+                    </h4>
+                    <p className="text-xs text-gray-400 mb-2">
+                      Parçalarınızı prototiplemeden seri üretime optimize edin
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
+                      Rehberler ve Trend Raporları
+                    </h4>
+                    <p className="text-xs text-gray-400 mb-2">
+                      Dijital üretim konularında derinlemesine rehberler
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
+                      Blog
+                    </h4>
+                    <p className="text-xs text-gray-400 mb-2">
+                      Tasarım kaynakları ve sektör haberleri
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
+                      Videolar
+                    </h4>
+                    <p className="text-xs text-gray-400 mb-2">
+                      Tesislerimizi, teknolojilerimizi keşfedin
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
+                      Tasarım Küpü
+                    </h4>
+                    <p className="text-xs text-gray-400 mb-2">
+                      Enjeksiyon kalıplama için yardımcı tasarım aracı
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <Link
               href={"/pricing"}
