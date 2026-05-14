@@ -240,10 +240,12 @@ export default function Header() {
           onMouseEnter={() => setIsServicesHover(true)}
           onMouseLeave={() => setIsServicesHover(false)}>
           <div className="flex flex-row items-center cursor-pointer group">
-            <span className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
+            <Link
+              href={"/services"}
+              className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
               Hizmetler <ChevronDown className="w-4 h-4" />
               <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
-            </span>
+            </Link>
           </div>
 
           {/* Clean Services Dropdown with 4 columns + Image Box */}
@@ -254,9 +256,11 @@ export default function Header() {
               <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
                 {/* Injection Molding Service */}
                 <div>
-                  <h3 className="font-bold text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
+                  <Link
+                    href={"/services/injection-molding"}
+                    className="font-bold hover:text-[#96E92A] text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
                     Enjeksiyon Kalıplama
-                  </h3>
+                  </Link>
                   <ul className="space-y-2 mt-4">
                     {[
                       "Plastik Enjeksiyon Kalıplama",
