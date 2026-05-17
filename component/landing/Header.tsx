@@ -313,9 +313,11 @@ export default function Header() {
 
                 {/* 3D Printing Service */}
                 <div>
-                  <h3 className="font-bold text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
+                  <Link
+                    href={"/services/3d-printing"}
+                    className="font-bold text-lg hover:text-[#96E92A] text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
                     3D Baskı
-                  </h3>
+                  </Link>
                   <ul className="space-y-2 mt-4">
                     {[
                       "Metal 3D Baskı",
@@ -343,9 +345,11 @@ export default function Header() {
 
                 {/* Sheet Metal Fabrication */}
                 <div>
-                  <h3 className="font-bold text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
+                  <Link
+                    href={"/services/sheet-metal-fabrication"}
+                    className="font-bold hover:text-[#96E92A] text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
                     Sac Metal İşleme
-                  </h3>
+                  </Link>
                   <ul className="space-y-2 mt-4">
                     {[
                       "Lazer Kesim",

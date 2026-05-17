@@ -1,7 +1,11 @@
 import { ChevronDown, Download, Mail, MapPin } from "lucide-react";
 import React from "react";
-
-export default function GuideDownload() {
+interface Props {
+  title: string;
+  desc: string;
+  img?: string;
+}
+export default function GuideDownload({ title, desc, img }: Props) {
   return (
     <div className="w-full bg-[#F0F8FF] py-36">
       <div className="container mx-auto px-4 md:px-10 lg:px-20">
@@ -10,14 +14,9 @@ export default function GuideDownload() {
             {/* Left Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Definitive Guide to Injection Molding
+                {title}
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Bu kapsamlı referans kılavuzu, teklif alma, tasarım analizi ve
-                sevkiyattan, modelinizin kalıplama için optimize edilmesini
-                sağlayan en iyi uygulamalara kadar her şeyi size adım adım
-                gösterir.
-              </p>
+              <p className="text-gray-600 leading-relaxed mb-6">{desc}</p>
 
               {/* Download Form */}
               <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
