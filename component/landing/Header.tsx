@@ -286,9 +286,11 @@ export default function Header() {
 
                 {/* CNC Machining Service */}
                 <div>
-                  <h3 className="font-bold text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
+                  <Link
+                    href={"/services/cnc-machining"}
+                    className="font-bold  hover:text-[#96E92A] text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
                     CNC İşleme
-                  </h3>
+                  </Link>
                   <ul className="space-y-2 mt-4">
                     {[
                       "CNC Frezeleme",

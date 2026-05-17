@@ -24,29 +24,36 @@ import {
   Play,
   Pause,
 } from "lucide-react";
+import Blog from "@/component/landing/Blog";
+import Hint from "@/component/UI/Hint";
+import Accordion from "@/component/landing/Accordion";
 
 export default function InjectionMoldingPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const faqs = [
     {
-      question: "How much does injection molding cost?",
-      answer:
+      id: 1,
+      title: "How much does injection molding cost?",
+      content:
         "Injection molding costs vary based on several factors including part complexity, material selection, tooling requirements, and production volume. Contact us for a detailed quote tailored to your specific project needs.",
     },
     {
-      question: "Do you do production molding?",
-      answer:
+      id: 2,
+      title: "Do you do production molding?",
+      content:
         "Yes, we offer both prototyping and production molding services. Our on-demand manufacturing process is designed to meet your production needs with scientific molding, in-process CMM inspections, and a full suite of secondary operations.",
     },
     {
-      question: "What are your tolerances for molded parts?",
-      answer:
+      id: 3,
+      title: "What are your tolerances for molded parts?",
+      content:
         "Our standard tolerances for molded parts are +/-0.003 inches plus resin tolerance (in./in.). For tighter tolerance requirements, please contact our engineering team to discuss your specific needs.",
     },
     {
-      question: "What is the maximum part size for injection molding?",
-      answer:
+      id: 4,
+      title: "What is the maximum part size for injection molding?",
+      content:
         "The maximum part size depends on the specific material and design requirements. Our team can evaluate your 3D CAD file and provide guidance on manufacturability and size limitations.",
     },
   ];
@@ -54,6 +61,30 @@ export default function InjectionMoldingPage() {
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index);
   };
+
+  // Company logos data
+  const companyLogos = [
+    {
+      name: "Antek",
+      logo: "/Assets/Images/brands/antek.png",
+    },
+    {
+      name: "Antgroup",
+      logo: "/Assets/Images/brands/antgroup.png",
+    },
+    {
+      name: "Marmaram",
+      logo: "/Assets/Images/brands/marmaram.png",
+    },
+    {
+      name: "Mechanimix",
+      logo: "/Assets/Images/brands/mechanimix.png",
+    },
+    {
+      name: "MRM",
+      logo: "/Assets/Images/brands/mrm.png",
+    },
+  ];
 
   return (
     <div className="w-full pt-10 bg-white">
@@ -134,20 +165,23 @@ export default function InjectionMoldingPage() {
         </div>
       </div>
 
-      {/* Companies Section - Logos */}
+      {/* Companies Section - Logos with Icons */}
       <div className="w-full bg-[#F0F8FF] py-12">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <p className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-8">
             DESTEK VERDİĞİMİZ YENİLİKÇİ ŞİRKETLER
           </p>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
-            {["Boston Scientific", "Edwards", "Thermo Fisher", "Medtronic"].map(
-              (company, idx) => (
-                <div key={idx} className="text-gray-400 text-xl font-semibold">
-                  {company}
-                </div>
-              ),
-            )}
+            {companyLogos.map((company, idx) => (
+              <div key={idx} className="relative w-32 h-12">
+                <Image
+                  src={company.logo}
+                  alt={company.name}
+                  fill
+                  className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -571,7 +605,7 @@ export default function InjectionMoldingPage() {
           </div>
         </div>
       </div>
-
+      <Hint />
       {/* Section 4: Injection Molding Materials */}
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
@@ -938,38 +972,16 @@ export default function InjectionMoldingPage() {
               </h2>
             </div>
 
-            <div className="space-y-3">
-              {faqs.map((faq, index) => (
-                <div
-                  key={index}
-                  className="border border-gray-200 rounded-xl overflow-hidden bg-white">
-                  <button
-                    onClick={() => toggleFaq(index)}
-                    className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors duration-200">
-                    <span className="font-semibold text-[#0B1221] text-lg">
-                      {faq.question}
-                    </span>
-                    <ChevronDown
-                      className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${
-                        openFaq === index ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      openFaq === index
-                        ? "max-h-[200px] opacity-100 pb-5 px-5"
-                        : "max-h-0 opacity-0"
-                    }`}>
-                    <p className="text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
-                      {faq.answer}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <Accordion
+              items={faqs}
+              defaultOpenIndex={0}
+              allowMultiple={false}
+            />
           </div>
         </div>
+
+        {/* blog section */}
+        <Blog />
       </div>
     </div>
   );
