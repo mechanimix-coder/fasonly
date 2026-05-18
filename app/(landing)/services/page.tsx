@@ -1,10 +1,8 @@
 // app/services/page.tsx
 "use client";
-
 import Image from "next/image";
 import {
   ArrowUpRight,
-  Play,
   Check,
   ChevronRight,
   Headphones,
@@ -14,7 +12,6 @@ import {
   Users,
   Activity,
 } from "lucide-react";
-import { RedirectButton } from "@/component/UI/Buttons";
 import { useState } from "react";
 
 export default function ServicesPage() {

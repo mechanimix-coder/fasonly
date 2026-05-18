@@ -403,10 +403,12 @@ export default function Header() {
           onMouseEnter={() => setIsIndustriesHover(true)}
           onMouseLeave={() => setIsIndustriesHover(false)}>
           <div className="flex flex-row items-center cursor-pointer group">
-            <span className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
-              Endüstriler <ChevronDown className="w-4 h-4" />
+            <Link
+              href={"/industries"}
+              className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
+              Malzemeler <ChevronDown className="w-4 h-4" />
               <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
-            </span>
+            </Link>
           </div>
 
           {/* Full-Width Industries Dropdown */}
@@ -699,13 +701,6 @@ export default function Header() {
           </div>
         </div>
 
-        <Link
-          href={"/pricing"}
-          className="cursor-pointer hover:text-[#96E92A] relative group text-sm xl:text-base">
-          Malzemeler
-          <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
-        </Link>
-
         <RedirectButton title={"Anında Teklif Al"} url="" theme="BlueToGreen" />
       </div>
 
@@ -913,7 +908,7 @@ export default function Header() {
               <button
                 onClick={toggleMobileServices}
                 className="flex items-center justify-between w-full py-3 text-lg font-medium hover:text-[#96E92A] transition-colors">
-                <span>Hizmetler</span>
+                <span>Malzemeler</span>
                 <ChevronDown
                   className={`w-5 h-5 transition-transform duration-300 ${isMobileServicesOpen ? "rotate-180" : ""}`}
                 />
@@ -1174,13 +1169,6 @@ export default function Header() {
                 </div>
               </div>
             </div>
-
-            <Link
-              href={"/pricing"}
-              onClick={closeMenu}
-              className="py-3 text-lg font-medium cursor-pointer hover:text-[#96E92A] transition-colors border-b border-white/10 block">
-              Malzemeler
-            </Link>
           </div>
         </div>
       </div>
