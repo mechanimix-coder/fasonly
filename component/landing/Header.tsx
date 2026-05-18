@@ -122,10 +122,12 @@ export default function Header() {
               className="relative"
               onMouseEnter={() => setIsAboutSubHover(true)}
               onMouseLeave={() => setIsAboutSubHover(false)}>
-              <div className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A] flex items-center justify-between">
+              <Link
+                href={"/about"}
+                className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A] flex items-center justify-between">
                 Hakkımızda
                 <ChevronDown className="w-3 h-3 -rotate-90" />
-              </div>
+              </Link>
 
               {/* Sub-dropdown that appears to the right */}
               <div
@@ -138,7 +140,7 @@ export default function Header() {
                     <ul className="space-y-1">
                       <li>
                         <Link
-                          href="/about/who-we-are"
+                          href="/about"
                           className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
                           Biz Kimiz
                         </Link>
