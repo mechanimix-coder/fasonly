@@ -83,7 +83,7 @@ export default function Header() {
 
   return (
     <div
-      className={`flex z-50 px-4 py-5 md:px-6 flex-row fixed top-0 w-full items-center justify-between bg-[#0B1221] text-white h-20 md:h-auto transition-transform duration-300 ease-in-out
+      className={`flex z-50 px-4 py-5  md:px-6 flex-row fixed top-0 w-full items-center justify-between bg-[#0B1221] text-white h-20 md:h-auto transition-transform duration-300 ease-in-out
       ${visible ? "lg:translate-y-0" : "lg:-translate-y-full"}`}>
       {/* Logo - Always visible */}
       <div className="flex-shrink-0">
@@ -175,21 +175,21 @@ export default function Header() {
                     <ul className="space-y-1">
                       <li>
                         <Link
-                          href="/corporate/certificates"
+                          href="/about/certificates"
                           className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
                           Sertifikalar
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/corporate/quality-policy"
+                          href="/about/quality-policy"
                           className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
                           Kalite Politikamız
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/corporate/sustainability"
+                          href="/about/sustainability"
                           className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
                           Sürdürülebilirlik
                         </Link>
@@ -848,19 +848,19 @@ export default function Header() {
                           </h4>
                           <div className="flex flex-col gap-1 mb-2">
                             <Link
-                              href="/corporate/certificates"
+                              href="/about/certificates"
                               onClick={closeMenu}
                               className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
                               Sertifikalar
                             </Link>
                             <Link
-                              href="/corporate/quality-policy"
+                              href="/about/quality-policy"
                               onClick={closeMenu}
                               className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
                               Kalite Politikamız
                             </Link>
                             <Link
-                              href="/corporate/sustainability"
+                              href="/about/sustainability"
                               onClick={closeMenu}
                               className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
                               Sürdürülebilirlik
