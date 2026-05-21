@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
+import { base_url } from "@/config";
 
 export interface BlogPost {
   id: number;
@@ -13,69 +15,73 @@ export interface BlogPost {
 }
 
 interface BlogProps {
-  posts?: BlogPost[];
   title?: string;
   itemsPerPage?: number;
   showNavigation?: boolean;
   className?: string;
 }
 
-const defaultPosts: BlogPost[] = [
-  {
-    id: 1,
-    title: "ProDesk by Fasonly ile Tanışın",
-    description:
-      "Özel parçalarınızı teklif verme, sipariş verme ve yönetme için gelişmiş dijital platformumuz. Gerçek zamanlı fiyatlandırma ve yapay zeka destekli DFM geri bildirimi ile malzeme ve teslim sürelerini kolayca yapılandırın. ProDesk, prototipten üretime geçişte ekibinizin uyum içinde ve daha hızlı hareket etmesine yardımcı olur.",
-    image: "/Assets/Images/placeholder.png",
-    date: "15 Mart 2025",
-    link: "/blog/prodesk",
-  },
-  {
-    id: 2,
-    title: "Gelişmiş CNC Freze Hizmetleri",
-    description:
-      "Genişletilmiş CNC freze hizmetlerimizle parçalarınızı sadece 4 gün gibi kısa sürede teslim alın. Artık yüksek gereksinimli projeler için daha fazla esneklik sunan 2D teknik çizimleri de kabul ediyoruz.",
-    image: "/Assets/Images/placeholder.png",
-    date: "1 Mart 2025",
-    link: "/blog/cnc-milling",
-  },
-  {
-    id: 3,
-    title: "Seri Üretim İçin Güvenilir Çözüm Ortağınız",
-    description:
-      "Ekibimiz, üretim projenizi başlatmanıza yardımcı olmaya hazır. Sürecin her adımında uzmanlarımızdan destek alarak projenizi güvenle tamamlayın.",
-    image: "/Assets/Images/placeholder.png",
-    date: "10 Şubat 2025",
-    link: "/blog/production",
-  },
-  {
-    id: 4,
-    title: "3D Baskıda Yeni Malzeme Seçenekleri",
-    description:
-      "Endüstriyel 3D baskı portföyümüze eklenen yeni malzemelerle daha dayanıklı, hafif ve yüksek performanslı parçalar üretmek artık çok daha kolay.",
-    image: "/Assets/Images/placeholder.png",
-    date: "25 Ocak 2025",
-    link: "/blog/3d-printing-materials",
-  },
-  {
-    id: 5,
-    title: "Otomotiv Sektörü İçin Hızlı Prototipleme",
-    description:
-      "Otomotiv sektöründe prototipleme süreçlerinizi hızlandıran yeni üretim hattımız. Elektrikli ve hibrit araç projeleriniz için özel çözümler.",
-    date: "10 Ocak 2025",
-    image: "/Assets/Images/placeholder.png",
-    link: "/blog/automotive-prototyping",
-  },
-];
+// Helper function to format the date
+const formatDate = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString("tr-TR", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+};
 
 export default function Blog({
-  posts = defaultPosts,
   title = "Fasonly'de Neler Yeni?",
   itemsPerPage = 3,
   showNavigation = true,
   className = "",
 }: BlogProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Fetch blog posts from our API
+  useEffect(() => {
+    const fetchBlogPosts = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch("/api/blog");
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(result.error || "Failed to fetch blog posts");
+        }
+
+        // Transform the API data to match our BlogPost interface
+        const transformedPosts: BlogPost[] = result.data.map(
+          (article: any) => ({
+            id: article.id,
+            title: article.title,
+            description: article.summary || "İçerik özeti bulunmamaktadır.",
+            // Use base_url from config for the image
+            image: `${base_url}/${article.thumbnail}`,
+            // Using the article ID as a fallback for date since the API response doesn't include one
+            date: formatDate(new Date().toISOString()),
+            link: `/blog/${article.slug}`,
+          }),
+        );
+
+        setPosts(transformedPosts);
+      } catch (err) {
+        console.error("Error fetching blog posts:", err);
+        setError(
+          "Makaleler yüklenirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+        );
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogPosts();
+  }, []);
+
   const totalPages = Math.ceil(posts.length / itemsPerPage);
 
   const nextSlide = () => {
@@ -97,6 +103,68 @@ export default function Blog({
   };
 
   const visiblePosts = posts.slice(currentIndex, currentIndex + itemsPerPage);
+
+  // Show loading state
+  if (loading) {
+    return (
+      <div className={`w-full bg-white py-16 ${className}`}>
+        <div className="container mx-auto px-4 md:px-10 lg:px-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
+              {title}
+            </h2>
+            <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
+          </div>
+          <div className="flex justify-center items-center h-64">
+            <div className="w-12 h-12 border-4 border-[#96E92A] border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Show error state
+  if (error) {
+    return (
+      <div className={`w-full bg-white py-16 ${className}`}>
+        <div className="container mx-auto px-4 md:px-10 lg:px-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
+              {title}
+            </h2>
+            <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
+          </div>
+          <div className="text-center py-12">
+            <p className="text-red-500">{error}</p>
+            <button
+              onClick={() => window.location.reload()}
+              className="mt-4 text-[#0099ff] hover:text-[#96E92A] transition-colors">
+              Tekrar Dene
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Show empty state if no posts
+  if (posts.length === 0) {
+    return (
+      <div className={`w-full bg-white py-16 ${className}`}>
+        <div className="container mx-auto px-4 md:px-10 lg:px-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
+              {title}
+            </h2>
+            <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
+          </div>
+          <div className="text-center py-12">
+            <p className="text-gray-500">Henüz makale bulunmamaktadır.</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={`w-full bg-white py-16 ${className}`}>
@@ -122,7 +190,24 @@ export default function Blog({
                     src={post.image}
                     alt={post.title}
                     fill
+                    unoptimized
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      // Fallback if image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = "none";
+                      // Show fallback div
+                      const parent = target.parentElement;
+                      if (parent) {
+                        const fallback = document.createElement("div");
+                        fallback.className =
+                          "w-full h-full bg-gradient-to-br from-[#F0F8FF] to-[#E6F3FF] flex items-center justify-center";
+                        fallback.innerHTML =
+                          '<span class="text-gray-400 text-sm">Görsel</span>';
+                        parent.appendChild(fallback);
+                        target.style.display = "none";
+                      }
+                    }}
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-[#F0F8FF] to-[#E6F3FF] flex items-center justify-center">
@@ -144,12 +229,12 @@ export default function Blog({
                 <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
                   {post.description}
                 </p>
-                <button
-                  onClick={() => (window.location.href = post.link)}
+                <Link
+                  href={post.link}
                   className="flex items-center gap-2 text-[#0B1221] font-medium mt-auto hover:text-[#0099ff] transition-colors duration-300 group-hover:gap-3 w-fit">
                   Daha Fazla
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </Link>
               </div>
             </div>
           ))}

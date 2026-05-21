@@ -3,18 +3,41 @@ import Hero from "@/component/landing/Hero";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { ChevronDown, ChevronUp, ArrowRight } from "lucide-react";
-import useLanding from "@/store/store";
 import Blog from "@/component/landing/Blog";
-import SectorsSection from "@/component/landing/Sectors"; // Import the new component
+import SectorsSection from "@/component/landing/Sectors";
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface LandingData {
+  faqs: FAQ[];
+  heroTitle?: string;
+  heroDescription?: string;
+  // Add other fields as needed
+}
 
 export default function Home() {
   const [openAccordion, setOpenAccordion] = useState<number | null>(0);
+  const [landingData, setLandingData] = useState<LandingData | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  // Fetch data from store
-  const { data, fetchLanding } = useLanding();
-
+  // Fetch data from API
   useEffect(() => {
-    fetchLanding();
+    const fetchLandingData = async () => {
+      try {
+        const response = await fetch("/api/landing/hero");
+        const data = await response.json();
+        setLandingData(data);
+      } catch (error) {
+        console.error("Error fetching landing data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchLandingData();
   }, []);
 
   const toggleAccordion = (index: number) => {
@@ -23,7 +46,7 @@ export default function Home() {
 
   // Accordion data from API (faqs)
   const accordionItems =
-    data?.faqs?.map((faq) => ({
+    landingData?.faqs?.map((faq) => ({
       title: faq.question,
       content: faq.answer,
     })) || [];
@@ -55,6 +78,17 @@ export default function Home() {
       icon: "/Assets/Images/services/2.4.png",
     },
   ];
+
+  if (loading) {
+    return (
+      <div className="mt-10 pb-20 bg-white min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-16 h-16 border-4 border-[#96E92A] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-gray-500">Yükleniyor...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="mt-10 pb-20 bg-white">
@@ -161,7 +195,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Part 3 - Sectors Section - REPLACED WITH NEW COMPONENT */}
+      {/* Part 3 - Sectors Section */}
       <SectorsSection />
 
       {/* blog section */}

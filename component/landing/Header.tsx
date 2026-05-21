@@ -122,12 +122,10 @@ export default function Header() {
               className="relative"
               onMouseEnter={() => setIsAboutSubHover(true)}
               onMouseLeave={() => setIsAboutSubHover(false)}>
-              <Link
-                href={"/about"}
-                className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A] flex items-center justify-between">
+              <div className="p-3 cursor-pointer hover:bg-white/15 transition-all hover:text-[#96E92A] flex items-center justify-between">
                 Hakkımızda
                 <ChevronDown className="w-3 h-3 -rotate-90" />
-              </Link>
+              </div>
 
               {/* Sub-dropdown that appears to the right */}
               <div
@@ -140,7 +138,7 @@ export default function Header() {
                     <ul className="space-y-1">
                       <li>
                         <Link
-                          href="/about"
+                          href="/about/who-we-are"
                           className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
                           Biz Kimiz
                         </Link>
@@ -242,12 +240,10 @@ export default function Header() {
           onMouseEnter={() => setIsServicesHover(true)}
           onMouseLeave={() => setIsServicesHover(false)}>
           <div className="flex flex-row items-center cursor-pointer group">
-            <Link
-              href={"/services"}
-              className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
+            <span className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
               Hizmetler <ChevronDown className="w-4 h-4" />
               <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
-            </Link>
+            </span>
           </div>
 
           {/* Clean Services Dropdown with 4 columns + Image Box */}
@@ -259,27 +255,54 @@ export default function Header() {
                 {/* Injection Molding Service */}
                 <div>
                   <Link
-                    href={"/services/injection-molding"}
+                    href="/services/injection-molding"
                     className="font-bold hover:text-[#96E92A] text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
                     Enjeksiyon Kalıplama
                   </Link>
                   <ul className="space-y-2 mt-4">
                     {[
-                      "Plastik Enjeksiyon Kalıplama",
-                      "Sıvı Silikon Kauçuk Kalıplama",
-                      "Kaplama Kalıplama",
-                      "Gömme Parçalı Kalıplama",
-                      "Aile ve Çok Gözlü Kalıplama",
-                      "Prototipleme",
-                      "Seri Üretim",
-                      "Kalite",
-                      "İkincil Operasyonlar",
+                      {
+                        name: "Plastik Enjeksiyon Kalıplama",
+                        link: "/services/injection-molding/plastic-injection-molding",
+                      },
+                      {
+                        name: "Sıvı Silikon Kauçuk Kalıplama",
+                        link: "/services/injection-molding/liquid-silicone-rubber-molding",
+                      },
+                      {
+                        name: "Kaplama Kalıplama",
+                        link: "/services/injection-molding/overmolding",
+                      },
+                      {
+                        name: "Gömme Parçalı Kalıplama",
+                        link: "/services/injection-molding/insert-molding",
+                      },
+                      {
+                        name: "Aile ve Çok Gözlü Kalıplama",
+                        link: "/services/injection-molding/family-multi-cavity",
+                      },
+                      {
+                        name: "Prototipleme",
+                        link: "/services/injection-molding/prototyping",
+                      },
+                      {
+                        name: "Seri Üretim",
+                        link: "/services/injection-molding/production",
+                      },
+                      {
+                        name: "Kalite",
+                        link: "/services/injection-molding/quality",
+                      },
+                      {
+                        name: "İkincil Operasyonlar",
+                        link: "/services/injection-molding/secondary-operations",
+                      },
                     ].map((item, idx) => (
                       <li key={idx}>
                         <Link
-                          href="/services/injection-molding"
+                          href={item.link}
                           className="text-sm text-gray-600 hover:text-[#0099ff] transition-colors cursor-pointer block py-1">
-                          {item}
+                          {item.name}
                         </Link>
                       </li>
                     ))}
@@ -289,24 +312,42 @@ export default function Header() {
                 {/* CNC Machining Service */}
                 <div>
                   <Link
-                    href={"/services/cnc-machining"}
+                    href="/services/cnc-machining"
                     className="font-bold  hover:text-[#96E92A] text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
                     CNC İşleme
                   </Link>
                   <ul className="space-y-2 mt-4">
                     {[
-                      "CNC Frezeleme",
-                      "CNC Tornalama",
-                      "Seri Üretim İşleme",
-                      "Diş Açma Seçenekleri",
-                      "Kalite",
-                      "Yüzey İşlem Seçenekleri",
+                      {
+                        name: "CNC Frezeleme",
+                        link: "/services/cnc-machining/cnc-milling",
+                      },
+                      {
+                        name: "CNC Tornalama",
+                        link: "/services/cnc-machining/cnc-turning",
+                      },
+                      {
+                        name: "Seri Üretim İşleme",
+                        link: "/services/cnc-machining/production-machining",
+                      },
+                      {
+                        name: "Diş Açma Seçenekleri",
+                        link: "/services/cnc-machining/threading-options",
+                      },
+                      {
+                        name: "Kalite",
+                        link: "/services/cnc-machining/quality",
+                      },
+                      {
+                        name: "Yüzey İşlem Seçenekleri",
+                        link: "/services/cnc-machining/finishing-options",
+                      },
                     ].map((item, idx) => (
                       <li key={idx}>
                         <Link
-                          href="/services/cnc-machining"
+                          href={item.link}
                           className="text-sm text-gray-600 hover:text-[#0099ff] transition-colors cursor-pointer block py-1">
-                          {item}
+                          {item.name}
                         </Link>
                       </li>
                     ))}
@@ -316,29 +357,59 @@ export default function Header() {
                 {/* 3D Printing Service */}
                 <div>
                   <Link
-                    href={"/services/3d-printing"}
+                    href="/services/3d-printing"
                     className="font-bold text-lg hover:text-[#96E92A] text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
                     3D Baskı
                   </Link>
                   <ul className="space-y-2 mt-4">
                     {[
-                      "Metal 3D Baskı",
-                      "Stereolitografi",
-                      "Multi Jet Fusion",
-                      "Seçici Lazer Sinterleme",
-                      "PolyJet",
-                      "Gelişmiş Fotopolimerler",
-                      "Fused Deposition Modeling",
-                      "Seri Üretim",
-                      "Büyük Format",
-                      "Kalite",
-                      "Yüzey İşlem Seçenekleri",
+                      {
+                        name: "Metal 3D Baskı",
+                        link: "/services/3d-printing/metal-3d-printing",
+                      },
+                      {
+                        name: "Stereolitografi",
+                        link: "/services/3d-printing/stereolithography",
+                      },
+                      {
+                        name: "Multi Jet Fusion",
+                        link: "/services/3d-printing/multi-jet-fusion",
+                      },
+                      {
+                        name: "Seçici Lazer Sinterleme",
+                        link: "/services/3d-printing/selective-laser-sintering",
+                      },
+                      {
+                        name: "PolyJet",
+                        link: "/services/3d-printing/polyjet",
+                      },
+                      {
+                        name: "Gelişmiş Fotopolimerler",
+                        link: "/services/3d-printing/advanced-photopolymers",
+                      },
+                      {
+                        name: "Fused Deposition Modeling",
+                        link: "/services/3d-printing/fdm",
+                      },
+                      {
+                        name: "Seri Üretim",
+                        link: "/services/3d-printing/production",
+                      },
+                      {
+                        name: "Büyük Format",
+                        link: "/services/3d-printing/large-format",
+                      },
+                      { name: "Kalite", link: "/services/3d-printing/quality" },
+                      {
+                        name: "Yüzey İşlem Seçenekleri",
+                        link: "/services/3d-printing/finishing-options",
+                      },
                     ].map((item, idx) => (
                       <li key={idx}>
                         <Link
-                          href="/services/3d-printing"
+                          href={item.link}
                           className="text-sm text-gray-600 hover:text-[#0099ff] transition-colors cursor-pointer block py-1">
-                          {item}
+                          {item.name}
                         </Link>
                       </li>
                     ))}
@@ -348,27 +419,54 @@ export default function Header() {
                 {/* Sheet Metal Fabrication */}
                 <div>
                   <Link
-                    href={"/services/sheet-metal-fabrication"}
+                    href="/services/sheet-metal-fabrication"
                     className="font-bold hover:text-[#96E92A] text-lg text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
                     Sac Metal İşleme
                   </Link>
                   <ul className="space-y-2 mt-4">
                     {[
-                      "Lazer Kesim",
-                      "Zımbalama",
-                      "Şekillendirme ve Bükme",
-                      "Birleştirilmiş Montajlar",
-                      "Prototipleme",
-                      "Seri Üretim",
-                      "Tasarım Kılavuzları",
-                      "Kalite",
-                      "Yüzey İşlem Seçenekleri",
+                      {
+                        name: "Lazer Kesim",
+                        link: "/services/sheet-metal-fabrication/laser-cutting",
+                      },
+                      {
+                        name: "Zımbalama",
+                        link: "/services/sheet-metal-fabrication/punching",
+                      },
+                      {
+                        name: "Şekillendirme ve Bükme",
+                        link: "/services/sheet-metal-fabrication/forming-bending",
+                      },
+                      {
+                        name: "Birleştirilmiş Montajlar",
+                        link: "/services/sheet-metal-fabrication/assemblies",
+                      },
+                      {
+                        name: "Prototipleme",
+                        link: "/services/sheet-metal-fabrication/prototyping",
+                      },
+                      {
+                        name: "Seri Üretim",
+                        link: "/services/sheet-metal-fabrication/production",
+                      },
+                      {
+                        name: "Tasarım Kılavuzları",
+                        link: "/services/sheet-metal-fabrication/design-guidelines",
+                      },
+                      {
+                        name: "Kalite",
+                        link: "/services/sheet-metal-fabrication/quality",
+                      },
+                      {
+                        name: "Yüzey İşlem Seçenekleri",
+                        link: "/services/sheet-metal-fabrication/finishing-options",
+                      },
                     ].map((item, idx) => (
                       <li key={idx}>
                         <Link
-                          href="/services/sheet-metal"
+                          href={item.link}
                           className="text-sm text-gray-600 hover:text-[#0099ff] transition-colors cursor-pointer block py-1">
-                          {item}
+                          {item.name}
                         </Link>
                       </li>
                     ))}
@@ -390,9 +488,11 @@ export default function Header() {
                     tek noktadan çözüm ortağınız. Modern makine parkuru ve uzman
                     mühendislik desteği ile üretim süreçlerinizi hızlandırın.
                   </p>
-                  <button className="w-full bg-[#0B1221] hover:bg-[#1a2a3a] text-white font-medium py-2 rounded-lg transition-colors text-sm">
-                    Hemen Teklif Al
-                  </button>
+                  <Link href="/contact/quote-request">
+                    <button className="w-full bg-[#0B1221] hover:bg-[#1a2a3a] text-white font-medium py-2 rounded-lg transition-colors text-sm">
+                      Hemen Teklif Al
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -405,12 +505,10 @@ export default function Header() {
           onMouseEnter={() => setIsIndustriesHover(true)}
           onMouseLeave={() => setIsIndustriesHover(false)}>
           <div className="flex flex-row items-center cursor-pointer group">
-            <Link
-              href={"/industries"}
-              className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
-              Malzemeler <ChevronDown className="w-4 h-4" />
+            <span className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
+              Endüstriler <ChevronDown className="w-4 h-4" />
               <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
-            </Link>
+            </span>
           </div>
 
           {/* Full-Width Industries Dropdown */}
@@ -430,30 +528,36 @@ export default function Header() {
                       {
                         title: "Medikal",
                         desc: "Medikal cihazlar ve sağlık ürünlerinin hızlandırılmış geliştirilmesi",
+                        link: "/industries/medical",
                       },
                       {
                         title: "Havacılık ve Uzay",
                         desc: "Erken prototiplemeden ateşleme testlerine ve fırlatmaya kadar yüksek kaliteli bileşenler",
+                        link: "/industries/aerospace",
                       },
                       {
                         title: "Otomotiv",
                         desc: "Geleneksel, elektrikli ve otonom araçlar için hızlı prototipleme ve hızlandırılmış üretim",
+                        link: "/industries/automotive",
                       },
                       {
                         title: "Robotik",
                         desc: "Robotik ve otomasyon uygulamaları için karmaşık son kullanım üretim parçaları",
+                        link: "/industries/robotics",
                       },
                       {
                         title: "Tüketici Elektroniği",
                         desc: "Tüketici ve bilgisayar elektroniği parçalarının fonksiyonel prototiplenmesi ve talep üzerine üretimi",
+                        link: "/industries/consumer-electronics",
                       },
                       {
                         title: "Endüstriyel Ekipman",
                         desc: "Dayanıklı aparatlar, fikstürler ve montajı kolaylaştırmak ve üretim maliyetlerini düşürmek için diğer bileşenler",
+                        link: "/industries/industrial-equipment",
                       },
                     ].map((industry, idx) => (
                       <Link
-                        href="/industries"
+                        href={industry.link}
                         key={idx}
                         className="block bg-white rounded-lg p-4 hover:shadow-md transition-all duration-300 cursor-pointer border border-gray-100 group">
                         <h3 className="font-bold text-[#0B1221] mb-2 group-hover:text-[#0099ff] transition-colors text-sm">
@@ -474,19 +578,37 @@ export default function Header() {
                   </h2>
                   <div className="space-y-3 mt-5">
                     {[
-                      "Medikal Enjeksiyon Kalıplama",
-                      "Medikal Malzemeler",
-                      "Havacılık Üretim Rehberi",
-                      "Havacılık İşleme",
-                      "EV/AV Otomotiv Rehberi",
-                      "Sektör Vaka Çalışmaları",
+                      {
+                        name: "Medikal Enjeksiyon Kalıplama",
+                        link: "/resources/medical-injection-molding",
+                      },
+                      {
+                        name: "Medikal Malzemeler",
+                        link: "/resources/medical-materials",
+                      },
+                      {
+                        name: "Havacılık Üretim Rehberi",
+                        link: "/resources/aerospace-manufacturing-guide",
+                      },
+                      {
+                        name: "Havacılık İşleme",
+                        link: "/resources/aerospace-machining",
+                      },
+                      {
+                        name: "EV/AV Otomotiv Rehberi",
+                        link: "/resources/ev-av-automotive-guide",
+                      },
+                      {
+                        name: "Sektör Vaka Çalışmaları",
+                        link: "/resources/industry-case-studies",
+                      },
                     ].map((resource, idx) => (
                       <Link
-                        href="/resources"
+                        href={resource.link}
                         key={idx}
                         className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#0099ff] transition-colors cursor-pointer group">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full group-hover:scale-125 transition-transform"></div>
-                        {resource}
+                        {resource.name}
                       </Link>
                     ))}
                   </div>
@@ -554,27 +676,33 @@ export default function Header() {
                 {/* Column 1 - Design Tips, Toolkits, Guides */}
                 <div className="space-y-6">
                   <div>
-                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
-                      Tasarım İpuçları
-                    </h3>
+                    <Link href="/resources/design-tips">
+                      <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
+                        Tasarım İpuçları
+                      </h3>
+                    </Link>
                     <p className="text-xs text-gray-500 leading-relaxed">
                       Yaygın üretilebilirlik sorunları ve malzeme seçimi
                       hakkında tavsiyeler
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
-                      Araç Setleri
-                    </h3>
+                    <Link href="/resources/toolkits">
+                      <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
+                        Araç Setleri
+                      </h3>
+                    </Link>
                     <p className="text-xs text-gray-500 leading-relaxed">
                       Parçalarınızı prototiplemeden seri üretime optimize edecek
                       kaynaklar
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
-                      Rehberler ve Trend Raporları
-                    </h3>
+                    <Link href="/resources/guides-reports">
+                      <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
+                        Rehberler ve Trend Raporları
+                      </h3>
+                    </Link>
                     <p className="text-xs text-gray-500 leading-relaxed">
                       Dijital üretim konularında derinlemesine rehberler ve
                       raporlar
@@ -585,26 +713,32 @@ export default function Header() {
                 {/* Column 2 - Partnerships, Design Aids, Events */}
                 <div className="space-y-6">
                   <div>
-                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
-                      İş Ortaklıkları
-                    </h3>
+                    <Link href="/resources/partnerships">
+                      <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
+                        İş Ortaklıkları
+                      </h3>
+                    </Link>
                     <p className="text-xs text-gray-500 leading-relaxed">
                       Yenilikçi şirketlerden gerçek dünya başarı hikayeleri
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
-                      Tasarım Yardımcıları
-                    </h3>
+                    <Link href="/resources/design-aids">
+                      <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
+                        Tasarım Yardımcıları
+                      </h3>
+                    </Link>
                     <p className="text-xs text-gray-500 leading-relaxed">
                       Parça tasarımını geliştirmek için fiziksel araçlar ve
                       kaynaklar edinin
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
-                      Etkinlikler ve Fuarlar
-                    </h3>
+                    <Link href="/resources/events">
+                      <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
+                        Etkinlikler ve Fuarlar
+                      </h3>
+                    </Link>
                     <p className="text-xs text-gray-500 leading-relaxed">
                       Sektör etkinliklerine katılın, isteğe bağlı veya canlı web
                       seminerleri
@@ -615,35 +749,43 @@ export default function Header() {
                 {/* Column 3 - Blog, Videos, FAQs, Educators */}
                 <div className="space-y-6">
                   <div>
-                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
-                      Blog
-                    </h3>
+                    <Link href="/blog">
+                      <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
+                        Blog
+                      </h3>
+                    </Link>
                     <p className="text-xs text-gray-500 leading-relaxed">
                       Tasarım kaynakları, derinlemesine özellikler ve sektör
                       haberleri için kaynağınız
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
-                      Videolar
-                    </h3>
+                    <Link href="/resources/videos">
+                      <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
+                        Videolar
+                      </h3>
+                    </Link>
                     <p className="text-xs text-gray-500 leading-relaxed">
                       Tesislerimizi, teknolojilerimizi, malzeme seçimini ve daha
                       fazlasını keşfedin
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
-                      SSS
-                    </h3>
+                    <Link href="/resources/faqs">
+                      <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
+                        SSS
+                      </h3>
+                    </Link>
                     <p className="text-xs text-gray-500 leading-relaxed">
                       Hizmet hatlarımız genelinde sık sorulan sorulara yanıtlar
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-bold text-base text-[#0B1221] mb-2">
-                      Eğitimciler ve Öğrenciler
-                    </h3>
+                    <Link href="/resources/educators-students">
+                      <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
+                        Eğitimciler ve Öğrenciler
+                      </h3>
+                    </Link>
                     <p className="text-xs text-gray-500 leading-relaxed">
                       Sınıf ve geleceğin mühendisleri için kaynaklar
                     </p>
@@ -666,9 +808,11 @@ export default function Header() {
                     çok kalın parça özelliklerini, kötü boss'ları, doğru ve
                     yanlış kaburgaları ve diğer hususları gösterir.
                   </p>
-                  <button className="w-full bg-[#0B1221] hover:bg-[#1a2a3a] text-white font-medium py-2 rounded-lg transition-colors text-sm">
-                    Tasarım Küpü İste
-                  </button>
+                  <Link href="/resources/design-cube">
+                    <button className="w-full bg-[#0B1221] hover:bg-[#1a2a3a] text-white font-medium py-2 rounded-lg transition-colors text-sm">
+                      Tasarım Küpü İste
+                    </button>
+                  </Link>
                 </div>
               </div>
 
@@ -703,14 +847,18 @@ export default function Header() {
           </div>
         </div>
 
-        <RedirectButton title={"Anında Teklif Al"} url="" theme="BlueToGreen" />
+        <RedirectButton
+          title={"Anında Teklif Al"}
+          url="/contact/quote-request"
+          theme="BlueToGreen"
+        />
       </div>
 
       {/* Desktop Login/Register - Hidden on mobile */}
       <div className="hidden lg:block">
         <RedirectButton
           title="Giriş Yap / Kayıt Ol"
-          url=""
+          url="/auth/login"
           theme="GreenToBlue"
         />
       </div>
@@ -758,13 +906,13 @@ export default function Header() {
           <div className="mb-8 grid grid-cols-2 gap-3">
             <RedirectButton
               title={"Anında Teklif Al"}
-              url=""
+              url="/contact/quote-request"
               theme="BlueToGreen"
               style="w-full text-sm py-2.5"
             />
             <RedirectButton
               title="Giriş Yap / Kayıt Ol"
-              url=""
+              url="/auth/login"
               theme="GreenToBlue"
               style="w-full text-sm py-2.5"
             />
@@ -910,7 +1058,7 @@ export default function Header() {
               <button
                 onClick={toggleMobileServices}
                 className="flex items-center justify-between w-full py-3 text-lg font-medium hover:text-[#96E92A] transition-colors">
-                <span>Malzemeler</span>
+                <span>Hizmetler</span>
                 <ChevronDown
                   className={`w-5 h-5 transition-transform duration-300 ${isMobileServicesOpen ? "rotate-180" : ""}`}
                 />
@@ -926,22 +1074,49 @@ export default function Header() {
                     </h4>
                     <div className="flex flex-col gap-1 mb-3">
                       {[
-                        "Plastik Enjeksiyon Kalıplama",
-                        "Sıvı Silikon Kauçuk Kalıplama",
-                        "Kaplama Kalıplama",
-                        "Gömme Parçalı Kalıplama",
-                        "Aile ve Çok Gözlü Kalıplama",
-                        "Prototipleme",
-                        "Seri Üretim",
-                        "Kalite",
-                        "İkincil Operasyonlar",
+                        {
+                          name: "Plastik Enjeksiyon Kalıplama",
+                          link: "/services/injection-molding/plastic-injection-molding",
+                        },
+                        {
+                          name: "Sıvı Silikon Kauçuk Kalıplama",
+                          link: "/services/injection-molding/liquid-silicone-rubber-molding",
+                        },
+                        {
+                          name: "Kaplama Kalıplama",
+                          link: "/services/injection-molding/overmolding",
+                        },
+                        {
+                          name: "Gömme Parçalı Kalıplama",
+                          link: "/services/injection-molding/insert-molding",
+                        },
+                        {
+                          name: "Aile ve Çok Gözlü Kalıplama",
+                          link: "/services/injection-molding/family-multi-cavity",
+                        },
+                        {
+                          name: "Prototipleme",
+                          link: "/services/injection-molding/prototyping",
+                        },
+                        {
+                          name: "Seri Üretim",
+                          link: "/services/injection-molding/production",
+                        },
+                        {
+                          name: "Kalite",
+                          link: "/services/injection-molding/quality",
+                        },
+                        {
+                          name: "İkincil Operasyonlar",
+                          link: "/services/injection-molding/secondary-operations",
+                        },
                       ].map((item, idx) => (
                         <Link
                           key={idx}
-                          href="/services/injection-molding"
+                          href={item.link}
                           onClick={closeMenu}
                           className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
-                          {item}
+                          {item.name}
                         </Link>
                       ))}
                     </div>
@@ -952,19 +1127,37 @@ export default function Header() {
                     </h4>
                     <div className="flex flex-col gap-1 mb-3">
                       {[
-                        "CNC Frezeleme",
-                        "CNC Tornalama",
-                        "Seri Üretim İşleme",
-                        "Diş Açma Seçenekleri",
-                        "Kalite",
-                        "Yüzey İşlem Seçenekleri",
+                        {
+                          name: "CNC Frezeleme",
+                          link: "/services/cnc-machining/cnc-milling",
+                        },
+                        {
+                          name: "CNC Tornalama",
+                          link: "/services/cnc-machining/cnc-turning",
+                        },
+                        {
+                          name: "Seri Üretim İşleme",
+                          link: "/services/cnc-machining/production-machining",
+                        },
+                        {
+                          name: "Diş Açma Seçenekleri",
+                          link: "/services/cnc-machining/threading-options",
+                        },
+                        {
+                          name: "Kalite",
+                          link: "/services/cnc-machining/quality",
+                        },
+                        {
+                          name: "Yüzey İşlem Seçenekleri",
+                          link: "/services/cnc-machining/finishing-options",
+                        },
                       ].map((item, idx) => (
                         <Link
                           key={idx}
-                          href="/services/cnc-machining"
+                          href={item.link}
                           onClick={closeMenu}
                           className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
-                          {item}
+                          {item.name}
                         </Link>
                       ))}
                     </div>
@@ -975,24 +1168,57 @@ export default function Header() {
                     </h4>
                     <div className="flex flex-col gap-1 mb-3">
                       {[
-                        "Metal 3D Baskı",
-                        "Stereolitografi",
-                        "Multi Jet Fusion",
-                        "Seçici Lazer Sinterleme",
-                        "PolyJet",
-                        "Gelişmiş Fotopolimerler",
-                        "Fused Deposition Modeling",
-                        "Seri Üretim",
-                        "Büyük Format",
-                        "Kalite",
-                        "Yüzey İşlem Seçenekleri",
+                        {
+                          name: "Metal 3D Baskı",
+                          link: "/services/3d-printing/metal-3d-printing",
+                        },
+                        {
+                          name: "Stereolitografi",
+                          link: "/services/3d-printing/stereolithography",
+                        },
+                        {
+                          name: "Multi Jet Fusion",
+                          link: "/services/3d-printing/multi-jet-fusion",
+                        },
+                        {
+                          name: "Seçici Lazer Sinterleme",
+                          link: "/services/3d-printing/selective-laser-sintering",
+                        },
+                        {
+                          name: "PolyJet",
+                          link: "/services/3d-printing/polyjet",
+                        },
+                        {
+                          name: "Gelişmiş Fotopolimerler",
+                          link: "/services/3d-printing/advanced-photopolymers",
+                        },
+                        {
+                          name: "Fused Deposition Modeling",
+                          link: "/services/3d-printing/fdm",
+                        },
+                        {
+                          name: "Seri Üretim",
+                          link: "/services/3d-printing/production",
+                        },
+                        {
+                          name: "Büyük Format",
+                          link: "/services/3d-printing/large-format",
+                        },
+                        {
+                          name: "Kalite",
+                          link: "/services/3d-printing/quality",
+                        },
+                        {
+                          name: "Yüzey İşlem Seçenekleri",
+                          link: "/services/3d-printing/finishing-options",
+                        },
                       ].map((item, idx) => (
                         <Link
                           key={idx}
-                          href="/services/3d-printing"
+                          href={item.link}
                           onClick={closeMenu}
                           className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
-                          {item}
+                          {item.name}
                         </Link>
                       ))}
                     </div>
@@ -1003,22 +1229,49 @@ export default function Header() {
                     </h4>
                     <div className="flex flex-col gap-1">
                       {[
-                        "Lazer Kesim",
-                        "Zımbalama",
-                        "Şekillendirme ve Bükme",
-                        "Birleştirilmiş Montajlar",
-                        "Prototipleme",
-                        "Seri Üretim",
-                        "Tasarım Kılavuzları",
-                        "Kalite",
-                        "Yüzey İşlem Seçenekleri",
+                        {
+                          name: "Lazer Kesim",
+                          link: "/services/sheet-metal-fabrication/laser-cutting",
+                        },
+                        {
+                          name: "Zımbalama",
+                          link: "/services/sheet-metal-fabrication/punching",
+                        },
+                        {
+                          name: "Şekillendirme ve Bükme",
+                          link: "/services/sheet-metal-fabrication/forming-bending",
+                        },
+                        {
+                          name: "Birleştirilmiş Montajlar",
+                          link: "/services/sheet-metal-fabrication/assemblies",
+                        },
+                        {
+                          name: "Prototipleme",
+                          link: "/services/sheet-metal-fabrication/prototyping",
+                        },
+                        {
+                          name: "Seri Üretim",
+                          link: "/services/sheet-metal-fabrication/production",
+                        },
+                        {
+                          name: "Tasarım Kılavuzları",
+                          link: "/services/sheet-metal-fabrication/design-guidelines",
+                        },
+                        {
+                          name: "Kalite",
+                          link: "/services/sheet-metal-fabrication/quality",
+                        },
+                        {
+                          name: "Yüzey İşlem Seçenekleri",
+                          link: "/services/sheet-metal-fabrication/finishing-options",
+                        },
                       ].map((item, idx) => (
                         <Link
                           key={idx}
-                          href="/services/sheet-metal"
+                          href={item.link}
                           onClick={closeMenu}
                           className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
-                          {item}
+                          {item.name}
                         </Link>
                       ))}
                     </div>
@@ -1048,19 +1301,28 @@ export default function Header() {
                     </h4>
                     <div className="flex flex-col gap-2">
                       {[
-                        "Medikal",
-                        "Havacılık ve Uzay",
-                        "Otomotiv",
-                        "Robotik",
-                        "Tüketici Elektroniği",
-                        "Endüstriyel Ekipman",
+                        { name: "Medikal", link: "/industries/medical" },
+                        {
+                          name: "Havacılık ve Uzay",
+                          link: "/industries/aerospace",
+                        },
+                        { name: "Otomotiv", link: "/industries/automotive" },
+                        { name: "Robotik", link: "/industries/robotics" },
+                        {
+                          name: "Tüketici Elektroniği",
+                          link: "/industries/consumer-electronics",
+                        },
+                        {
+                          name: "Endüstriyel Ekipman",
+                          link: "/industries/industrial-equipment",
+                        },
                       ].map((item, idx) => (
                         <Link
                           key={idx}
-                          href={"/industries"}
+                          href={item.link}
                           onClick={closeMenu}
                           className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
-                          {item}
+                          {item.name}
                         </Link>
                       ))}
                     </div>
@@ -1071,19 +1333,37 @@ export default function Header() {
                     </h4>
                     <div className="flex flex-col gap-2">
                       {[
-                        "Medikal Enjeksiyon Kalıplama",
-                        "Medikal Malzemeler",
-                        "Havacılık Üretim Rehberi",
-                        "Havacılık İşleme",
-                        "EV/AV Otomotiv Rehberi",
-                        "Sektör Vaka Çalışmaları",
+                        {
+                          name: "Medikal Enjeksiyon Kalıplama",
+                          link: "/resources/medical-injection-molding",
+                        },
+                        {
+                          name: "Medikal Malzemeler",
+                          link: "/resources/medical-materials",
+                        },
+                        {
+                          name: "Havacılık Üretim Rehberi",
+                          link: "/resources/aerospace-manufacturing-guide",
+                        },
+                        {
+                          name: "Havacılık İşleme",
+                          link: "/resources/aerospace-machining",
+                        },
+                        {
+                          name: "EV/AV Otomotiv Rehberi",
+                          link: "/resources/ev-av-automotive-guide",
+                        },
+                        {
+                          name: "Sektör Vaka Çalışmaları",
+                          link: "/resources/industry-case-studies",
+                        },
                       ].map((item, idx) => (
                         <Link
                           key={idx}
-                          href={"/resources"}
+                          href={item.link}
                           onClick={closeMenu}
                           className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
-                          {item}
+                          {item.name}
                         </Link>
                       ))}
                     </div>
@@ -1094,7 +1374,7 @@ export default function Header() {
                     </h4>
                     <div className="flex flex-col gap-2">
                       <Link
-                        href={"/certifications"}
+                        href={"/about/certificates"}
                         onClick={closeMenu}
                         className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
                         ISO 9001:2015
@@ -1121,49 +1401,61 @@ export default function Header() {
                 className={`overflow-hidden transition-all duration-300 ${isMobileResourcesOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}>
                 <div className="pl-4 flex flex-col gap-2 border-l-2 border-white/10 ml-1 pt-2 pb-3">
                   <div>
-                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
-                      Tasarım İpuçları
-                    </h4>
+                    <Link href="/resources/design-tips" onClick={closeMenu}>
+                      <h4 className="text-xs font-semibold text-[#96E92A] mb-1 hover:text-white transition-colors">
+                        Tasarım İpuçları
+                      </h4>
+                    </Link>
                     <p className="text-xs text-gray-400 mb-2">
                       Yaygın üretilebilirlik sorunları ve malzeme seçimi
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
-                      Araç Setleri
-                    </h4>
+                    <Link href="/resources/toolkits" onClick={closeMenu}>
+                      <h4 className="text-xs font-semibold text-[#96E92A] mb-1 hover:text-white transition-colors">
+                        Araç Setleri
+                      </h4>
+                    </Link>
                     <p className="text-xs text-gray-400 mb-2">
                       Parçalarınızı prototiplemeden seri üretime optimize edin
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
-                      Rehberler ve Trend Raporları
-                    </h4>
+                    <Link href="/resources/guides-reports" onClick={closeMenu}>
+                      <h4 className="text-xs font-semibold text-[#96E92A] mb-1 hover:text-white transition-colors">
+                        Rehberler ve Trend Raporları
+                      </h4>
+                    </Link>
                     <p className="text-xs text-gray-400 mb-2">
                       Dijital üretim konularında derinlemesine rehberler
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
-                      Blog
-                    </h4>
+                    <Link href="/blog" onClick={closeMenu}>
+                      <h4 className="text-xs font-semibold text-[#96E92A] mb-1 hover:text-white transition-colors">
+                        Blog
+                      </h4>
+                    </Link>
                     <p className="text-xs text-gray-400 mb-2">
                       Tasarım kaynakları ve sektör haberleri
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
-                      Videolar
-                    </h4>
+                    <Link href="/resources/videos" onClick={closeMenu}>
+                      <h4 className="text-xs font-semibold text-[#96E92A] mb-1 hover:text-white transition-colors">
+                        Videolar
+                      </h4>
+                    </Link>
                     <p className="text-xs text-gray-400 mb-2">
                       Tesislerimizi, teknolojilerimizi keşfedin
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-xs font-semibold text-[#96E92A] mb-1">
-                      Tasarım Küpü
-                    </h4>
+                    <Link href="/resources/design-cube" onClick={closeMenu}>
+                      <h4 className="text-xs font-semibold text-[#96E92A] mb-1 hover:text-white transition-colors">
+                        Tasarım Küpü
+                      </h4>
+                    </Link>
                     <p className="text-xs text-gray-400 mb-2">
                       Enjeksiyon kalıplama için yardımcı tasarım aracı
                     </p>
