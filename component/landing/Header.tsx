@@ -389,7 +389,7 @@ export default function Header() {
                       },
                       {
                         name: "Fused Deposition Modeling",
-                        link: "/services/3d-printing/fdm",
+                        link: "/services/3d-printing/fused-deposition-modeling",
                       },
                       {
                         name: "Seri Üretim",
@@ -1194,7 +1194,7 @@ export default function Header() {
                         },
                         {
                           name: "Fused Deposition Modeling",
-                          link: "/services/3d-printing/fdm",
+                          link: "/services/3d-printing/fused-deposition-modeling",
                         },
                         {
                           name: "Seri Üretim",
