@@ -75,6 +75,7 @@ export default function page() {
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
         title="FDM 3D Printing"
+        bg="/Assets/Images/services/3d-printing/fused-deposition-modeling/bg.jpg"
         desc="Fused deposition modeling (FDM) creates quality prototypes and end-use parts in a variety of materials and fast quoting "
         firstButton={{ title: "Get Instant Quote", route: "/" }}
         simple
@@ -461,6 +462,65 @@ export default function page() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full bg-white py-20">
+        <div className="container mx-auto px-4 md:px-10 lg:px-20">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            {/* Left Column - Text */}
+            <div className="flex-1">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
+                How Does FDM 3D Printing Work?
+              </h2>
+              <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
+
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Fused Deposition Modeling (FDM) creates parts by heating and
+                extruding thermoplastic filaments layer by layer, resulting in
+                solid objects with practical functionality.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Unlike resin-based technologies such as stereolithography
+                (SLA)—which use liquid photopolymers cured by a UV laser to
+                achieve fine details and smooth finishes—FDM offers the
+                advantage of lower costs and faster production times.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed">
+                Additionally, although powder-based methods such as selective
+                laser sintering (SLS) fuse material powders into complex shapes
+                without the need for support structures, FDM remains a versatile
+                and economical option for producing durable parts, especially
+                when surface finish is not the primary concern. This makes FDM
+                ideal for functional prototypes and low-volume manufacturing
+                across a range of industries.
+              </p>
+            </div>
+
+            {/* Right Column - Video Player */}
+            <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0B1221] to-[#1a2a3a] shadow-xl">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-[#96E92A] rounded-full flex items-center justify-center mx-auto mb-4 cursor-pointer hover:scale-110 transition-transform duration-300">
+                    <svg
+                      className="w-8 h-8 text-[#0B1221] ml-1"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <p className="text-white text-sm font-semibold">
+                    Watch Video
+                  </p>
+                  <p className="text-gray-300 text-xs mt-1">
+                    When to Use FDM 3D Printing
+                  </p>
+                  <p className="text-gray-400 text-xs mt-2">PROTOLABS</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
