@@ -2,6 +2,7 @@
 
 import GetAQuote from "@/component/landing/GetAQuote";
 import ServicesHero from "@/component/landing/ServicesHero";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -31,7 +32,12 @@ export default function page() {
             {/* Item 1 - Edges broken (tool marks visible) */}
             <div className="bg-[#F0F8FF] rounded-xl overflow-hidden hover:shadow-md transition-all duration-300">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🔧</span>
+                <Image
+                  src="/Assets/Images/services/cnc-machining/finishing-options/cnc-circularflange-aluminum-brokenedge.jpg"
+                  alt="OD Threads"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] text-center mb-3">
@@ -58,7 +64,12 @@ export default function page() {
             {/* Item 2 - Edges broken and light bead blast */}
             <div className="bg-[#F0F8FF] rounded-xl overflow-hidden hover:shadow-md transition-all duration-300">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">✨</span>
+                <Image
+                  src="/Assets/Images/services/cnc-machining/finishing-options/cnc-milling-circularflange-aluminum-beadblasted.jpg"
+                  alt="OD Threads"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] text-center mb-3">
@@ -83,7 +94,12 @@ export default function page() {
             {/* Item 3 - Leave sharp (tool marks visible) */}
             <div className="bg-[#F0F8FF] rounded-xl overflow-hidden hover:shadow-md transition-all duration-300">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">⚠️</span>
+                <Image
+                  src="/Assets/Images/services/cnc-machining/finishing-options/cnc-milling-circularflange-aluminum-sharpedge.jpg"
+                  alt="OD Threads"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] text-center mb-3">
@@ -146,9 +162,12 @@ export default function page() {
                   className="bg-[#F0F8FF] rounded-xl overflow-hidden hover:shadow-md transition-all duration-300">
                   <div
                     className={`relative h-32 w-full ${item.color} flex items-center justify-center`}>
-                    <span className="text-white text-opacity-50 text-2xl">
-                      ●
-                    </span>
+                    <Image
+                      src="/Assets/Images/services/cnc-machining/finishing-options/A1.webp"
+                      alt="OD Threads"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
                   </div>
                   <div className="p-3 text-center">
                     <p className="text-xs font-medium text-gray-700">

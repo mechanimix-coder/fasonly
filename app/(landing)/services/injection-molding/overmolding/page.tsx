@@ -1,5 +1,6 @@
 import GuideDownload from "@/component/landing/GuideDownload";
 import ServicesHero from "@/component/landing/ServicesHero";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -446,10 +447,13 @@ export default function page() {
             {/* Right Column - Image with Numbered Steps */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🔧</span>
-                <p className="text-gray-300 text-sm mt-2">
-                  Overmolding Process
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/overmolding/overmolding-and-insert-molding-process-illustration-900x600.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               {/* Numbered indicators overlay - representing steps 1-9 */}
               <div className="absolute inset-0 pointer-events-none">

@@ -1,6 +1,7 @@
 import GuideDownload from "@/component/landing/GuideDownload";
 import ServicesHero from "@/component/landing/ServicesHero";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -194,8 +195,13 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🧪</span>
-                <p className="text-gray-500 text-sm mt-2">Silicone Materials</p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/liquid-silicone-rubber-molding/silicone-rubber-parts-570x308-1.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
 
@@ -287,10 +293,13 @@ export default function page() {
             {/* Right Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-auto min-h-[400px] rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🎨</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Surface Finish Samples
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/liquid-silicone-rubber-molding/lsr-durometer-30-material-9590_composite-fn-1-1.png"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
           </div>
@@ -303,8 +312,13 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🔍</span>
-                <p className="text-gray-500 text-sm mt-2">Quality Inspection</p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/liquid-silicone-rubber-molding/metrology-lab-at-proto-labs-570308.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
 
@@ -347,8 +361,13 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">📘</span>
-                <p className="text-gray-300 text-sm mt-2">LSR Molding Guide</p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/liquid-silicone-rubber-molding/silicone-rubber-operator-900x400.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
 

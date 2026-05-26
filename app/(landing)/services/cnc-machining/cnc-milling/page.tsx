@@ -3,6 +3,7 @@
 import GetAQuote from "@/component/landing/GetAQuote";
 import GuideDownload from "@/component/landing/GuideDownload";
 import ServicesHero from "@/component/landing/ServicesHero";
+import Image from "next/image";
 import { useState } from "react";
 
 // Type definitions
@@ -600,8 +601,13 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🔧</span>
-                <p className="text-gray-500 text-sm mt-2">CNC Machined Parts</p>
+                <Image
+                  src={
+                    "/Assets/Images/services/cnc-machining/cnc-milling/aluminum-cnc-milled-part.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
 
@@ -703,7 +709,13 @@ export default function page() {
             {/* Item 1 - ABS Black */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/15 transition-all duration-300">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🔲</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/cnc-machining/cnc-milling/black-abs-plastic-milled-part.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-4 text-center">
                 <h3 className="text-white font-bold text-lg">ABS Black</h3>
@@ -714,7 +726,13 @@ export default function page() {
             {/* Item 2 - ABS Natural */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/15 transition-all duration-300">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🔳</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/cnc-machining/cnc-milling/abs-natural-cnc-milled-part.png"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-4 text-center">
                 <h3 className="text-white font-bold text-lg">ABS Natural</h3>
@@ -725,7 +743,13 @@ export default function page() {
             {/* Item 3 - Aluminum (Broken Edge) */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/15 transition-all duration-300">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🥈</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/cnc-machining/cnc-milling/aluminum-cnc-milled-part-broken-edges.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-4 text-center">
                 <h3 className="text-white font-bold text-lg">Aluminum</h3>
@@ -736,7 +760,13 @@ export default function page() {
             {/* Item 4 - Aluminum (Bead Blast) */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/15 transition-all duration-300">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">✨</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/cnc-machining/cnc-milling/aluminum-cnc-milled-part-with-bead-blast.png"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-4 text-center">
                 <h3 className="text-white font-bold text-lg">Aluminum</h3>
@@ -747,7 +777,13 @@ export default function page() {
             {/* Item 5 - Aluminum (Sharp Edge) */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/15 transition-all duration-300">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">⚠️</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/cnc-machining/cnc-milling/aluminum-cnc-milled-part-with-sharp-edges.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-4 text-center">
                 <h3 className="text-white font-bold text-lg">Aluminum</h3>

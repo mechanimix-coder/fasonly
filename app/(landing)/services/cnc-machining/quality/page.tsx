@@ -1,5 +1,6 @@
 "use client";
 import ServicesHero from "@/component/landing/ServicesHero";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -95,8 +96,12 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">📋</span>
-                <p className="text-gray-500 text-sm mt-2">Quality Inspection</p>
+                <Image
+                  src="/Assets/Images/services/cnc-machining/quality/012-pl_brandcampaign_2024_techinical-expert-test.jpg"
+                  alt="OD Threads"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
             </div>
 
@@ -169,8 +174,12 @@ export default function page() {
             {/* Right Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">✅</span>
-                <p className="text-gray-500 text-sm mt-2">Quality Certified</p>
+                <Image
+                  src="/Assets/Images/services/cnc-machining/quality/quality_control.jpg"
+                  alt="OD Threads"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
             </div>
           </div>
@@ -322,10 +331,12 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">👨‍🔧</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Engineering Support
-                </p>
+                <Image
+                  src="/Assets/Images/services/cnc-machining/quality/pl_brandcampaign_technical_expert_02.webp"
+                  alt="OD Threads"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
             </div>
 
@@ -375,8 +386,12 @@ export default function page() {
             {/* Right Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">✈️</span>
-                <p className="text-gray-500 text-sm mt-2">Aerospace Parts</p>
+                <Image
+                  src="/Assets/Images/services/cnc-machining/quality/comparison-guide.jpg"
+                  alt="OD Threads"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
             </div>
           </div>

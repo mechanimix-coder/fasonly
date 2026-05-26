@@ -4,6 +4,7 @@ import Quote from "@/component/landing/Quote";
 import ServicesHero from "@/component/landing/ServicesHero";
 import Hint from "@/component/UI/Hint";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -236,10 +237,13 @@ export default function page() {
 
             {/* Right Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-              <div className="text-center">
-                <span className="text-6xl">🎯</span>
-                <p className="text-gray-500 text-sm mt-2">Design Cube</p>
-              </div>
+              <Image
+                src={
+                  "/Assets/Images/services/injection-molding/plastic-injection-molding/protolabs-educator-design-cube.jpg"
+                }
+                fill
+                alt="design cube"
+              />
             </div>
           </div>
         </div>
@@ -312,12 +316,13 @@ export default function page() {
 
             {/* Right Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-auto min-h-[400px] rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-              <div className="text-center">
-                <span className="text-6xl">🧪</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Thermoplastic Materials
-                </p>
-              </div>
+              <Image
+                src={
+                  "/Assets/Images/services/injection-molding/plastic-injection-molding/blue-injection-molding-thermoplastic-rendered-part.jpg"
+                }
+                fill
+                alt="design cube"
+              />
             </div>
           </div>
         </div>
@@ -326,12 +331,16 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             {/* Left Column - Image */}
-            <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
+            <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden  flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">📊</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Material Selection Guide
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/plastic-injection-molding/subq-it-injection-molded-part.jpg"
+                  }
+                  width={400}
+                  height={800}
+                  alt="design cube"
+                />
               </div>
             </div>
 
@@ -546,29 +555,18 @@ export default function page() {
                 bin. When the run is complete, parts (or the initial sample run)
                 are boxed and shipped shortly thereafter.
               </p>
-
-              {/* Click to enlarge section */}
-              <div className="mt-6">
-                <p className="text-sm text-gray-400 mb-3">Click to enlarge</p>
-                <div className="flex gap-3">
-                  {[1, 2, 3].map((num) => (
-                    <button
-                      key={num}
-                      className="w-8 h-8 rounded-full bg-[#F0F8FF] hover:bg-[#0099ff] hover:text-white text-[#0B1221] font-semibold transition-all duration-300">
-                      {num}
-                    </button>
-                  ))}
-                </div>
-              </div>
             </div>
 
             {/* Right Column - Image */}
             <div className="flex-1 relative w-full h-96 md:h-[500px] rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🏭</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Injection Molding Process
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/plastic-injection-molding/plastic-injection-molding-process-illustration-570x308.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
           </div>

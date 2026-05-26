@@ -1,6 +1,7 @@
 "use client";
 import ServicesHero from "@/component/landing/ServicesHero";
 import { ArrowRight, Download } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 export default function page() {
   const [activeTab, setActiveTab] = useState<"partial" | "capability">(
@@ -217,10 +218,15 @@ export default function page() {
             </div>
 
             {/* Right Column - Image */}
-            <div className="flex-1 relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
+            <div className="flex-1 relative w-full h-64 md:h-80 rounded-xl overflow-hidden flex items-center justify-center">
               <div className="text-center">
-                <span className="text-5xl">📊</span>
-                <p className="text-gray-500 text-sm mt-2">DFM Analysis Chart</p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/quality/group-1-2.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
           </div>
@@ -230,10 +236,13 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-5xl">🔬</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Scientific Molding Process
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/quality/scientific-molding-guide-image_570x308-6.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
 
@@ -349,8 +358,13 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-5xl">📋</span>
-                <p className="text-gray-500 text-sm mt-2">Inspection Reports</p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/quality/im_quality_inspection_3_hi_res.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
 
@@ -400,8 +414,13 @@ export default function page() {
             {/* Right Column - Image */}
             <div className="flex-1 relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-5xl">🔬</span>
-                <p className="text-gray-500 text-sm mt-2">Quality Control</p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/quality/frame-1-5.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
           </div>
@@ -411,8 +430,13 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-5xl">📏</span>
-                <p className="text-gray-500 text-sm mt-2">CMM Measurement</p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/quality/scientific-molding-wp-cmm-570x308.png"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
 

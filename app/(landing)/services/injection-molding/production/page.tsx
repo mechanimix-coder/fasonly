@@ -1,6 +1,7 @@
 import GuideDownload from "@/component/landing/GuideDownload";
 import ServicesHero from "@/component/landing/ServicesHero";
 import Hint from "@/component/UI/Hint";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -110,12 +111,16 @@ export default function page() {
           <div className="container mx-auto px-4 md:px-10 lg:px-20">
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
               {/* Left Column - Image */}
-              <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
+              <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden  flex items-center justify-center">
                 <div className="text-center">
-                  <span className="text-6xl">🏭</span>
-                  <p className="text-gray-500 text-sm mt-2">
-                    Production Grade Tooling
-                  </p>
+                  <Image
+                    src={
+                      "/Assets/Images/services/injection-molding/production/pl-production-page-image-02-570x608.jpg"
+                    }
+                    width={600}
+                    height={900}
+                    alt="design cube"
+                  />
                 </div>
               </div>
 

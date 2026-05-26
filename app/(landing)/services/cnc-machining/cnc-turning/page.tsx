@@ -2,6 +2,7 @@
 
 import GuideDownload from "@/component/landing/GuideDownload";
 import ServicesHero from "@/component/landing/ServicesHero";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -244,7 +245,13 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
               {/* Image */}
               <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center mb-6">
                 <div className="text-center">
-                  <span className="text-6xl">🔧</span>
+                  <Image
+                    src={
+                      "/Assets/Images/services/cnc-machining/cnc-turning/aluminum-cnc-turned-part-bead-blast.webp"
+                    }
+                    fill
+                    alt="design cube"
+                  />
                   <p className="text-gray-500 text-sm mt-2">CNC Turned Parts</p>
                 </div>
               </div>
@@ -307,7 +314,13 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
             {/* Image 1 - Aluminum Broken Edge */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🔘</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/cnc-machining/cnc-turning/12-cnc-sf-turn-570x308-sproket-aluminum-brokenedge.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-4 text-center">
                 <p className="font-semibold text-[#0B1221]">
@@ -322,7 +335,13 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
             {/* Image 2 - Aluminum Bead Blast */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">✨</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/cnc-machining/cnc-turning/13-cnc-sf-turn-570x308-sproket-aluminum-beadblastededge.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-4 text-center">
                 <p className="font-semibold text-[#0B1221]">
@@ -337,7 +356,13 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
             {/* Image 3 - Aluminum Sharp Edge */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">⚠️</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/cnc-machining/cnc-turning/14-cnc-sf-turn-570x308-sproket-aluminum-sharpedge.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-4 text-center">
                 <p className="font-semibold text-[#0B1221]">
@@ -426,11 +451,18 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
             </div>
 
             {/* Right Column - Image */}
-            <div className="flex-1 relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-              <div className="text-center">
-                <span className="text-6xl">⚡</span>
-                <p className="text-gray-500 text-sm mt-2">Quick-turn Parts</p>
-              </div>
+            <div className="flex-1">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
+                High-requirement Finishing
+              </h2>
+              <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Have AS9100 and ITAR requirements? Try our domestic precision
+                machining option. If you have more complex anodizing and plating
+                requirements, work with our digital network of manufacturers.
+                The network works well for components that require a specialized
+                color or material option such as titanium or nickel.
+              </p>
             </div>
           </div>
 
@@ -463,34 +495,6 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
                 <span className="text-6xl">🔧</span>
                 <p className="text-gray-500 text-sm mt-2">
                   CNC Turning Process
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Row 3 - High-requirement Finishing - Image Right, Text Left */}
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Left Column - Content */}
-            <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                High-requirement Finishing
-              </h2>
-              <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                Have AS9100 and ITAR requirements? Try our domestic precision
-                machining option. If you have more complex anodizing and plating
-                requirements, work with our digital network of manufacturers.
-                The network works well for components that require a specialized
-                color or material option such as titanium or nickel.
-              </p>
-            </div>
-
-            {/* Right Column - Image */}
-            <div className="flex-1 relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-              <div className="text-center">
-                <span className="text-6xl">🏭</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  High-requirement Finishing
                 </p>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import GuideDownload from "@/component/landing/GuideDownload";
 import ServicesHero from "@/component/landing/ServicesHero";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 export default function page() {
@@ -115,10 +116,13 @@ export default function page() {
             {/* Right Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🏭</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Prototyping to Production
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/prototyping/injection-molding-production-570x308.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
           </div>
@@ -139,10 +143,13 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-auto min-h-[400px] rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🔧</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Prototyping Mold Tool
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/prototyping/pl-production-page-image-02-570x608.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
 
@@ -255,10 +262,13 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">⚙️</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Prototyping Process
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/prototyping/pl-prototyping-page-image-570x308-image-03.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
 

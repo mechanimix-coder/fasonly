@@ -1,5 +1,6 @@
 "use client";
 import ServicesHero from "@/component/landing/ServicesHero";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -29,7 +30,13 @@ export default function page() {
             {/* Mold Texturing & Engraving */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🎨</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/secondary-operations/mold-texturing.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
@@ -51,7 +58,13 @@ export default function page() {
             {/* Laser Engraving */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">⚡</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/secondary-operations/laser-engraving.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
@@ -73,7 +86,13 @@ export default function page() {
             {/* Pad Printing */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🖨️</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/secondary-operations/pad-printing.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
@@ -95,7 +114,13 @@ export default function page() {
             {/* UV Printing */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">💡</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/secondary-operations/im_2024_uv-printing_process_15_lr-1.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
@@ -118,7 +143,13 @@ export default function page() {
             {/* Threaded Inserts */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🔩</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/secondary-operations/inserts.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
@@ -141,7 +172,13 @@ export default function page() {
             {/* Part Cleaning */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🧼</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/secondary-operations/clean-room-operations.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
@@ -163,7 +200,13 @@ export default function page() {
             {/* Machining */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">⚙️</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/secondary-operations/cnc-milling-point.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
@@ -185,7 +228,13 @@ export default function page() {
             {/* Assembly */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🔧</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/secondary-operations/im-sec-ops-assembly.png"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
@@ -207,7 +256,13 @@ export default function page() {
             {/* Packaging */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">📦</span>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/secondary-operations/im-sec-ops-assembly.png"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">

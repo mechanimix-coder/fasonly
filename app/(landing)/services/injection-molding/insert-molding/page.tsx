@@ -1,5 +1,6 @@
 import GuideDownload from "@/component/landing/GuideDownload";
 import ServicesHero from "@/component/landing/ServicesHero";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -227,12 +228,15 @@ export default function page() {
             </div>
 
             {/* Right Column - Image */}
-            <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
+            <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden  flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">📝</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Technical Specifications
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/green-overmold-part.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
           </div>
@@ -277,22 +281,13 @@ export default function page() {
             {/* Right Column - Image with Labeled Elements */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🔩</span>
-                <p className="text-gray-300 text-sm mt-2">
-                  Insert Molding Process
-                </p>
-              </div>
-              {/* Label overlays */}
-              <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-4 left-4 bg-[#0B1221]/80 px-2 py-1 rounded text-white text-xs font-semibold">
-                  Insert
-                </div>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#0B1221]/80 px-2 py-1 rounded text-white text-xs font-semibold">
-                  Mold
-                </div>
-                <div className="absolute bottom-4 right-4 bg-[#0B1221]/80 px-2 py-1 rounded text-white text-xs font-semibold">
-                  Plastic
-                </div>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/insert-molding/om-dg-insertmold-tiny.webp"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
           </div>
@@ -304,40 +299,13 @@ export default function page() {
             {/* Left Column - Image with Numbered Overlays */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🔧</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Insert Molding Process
-                </p>
-              </div>
-              {/* Numbered indicators 1-9 */}
-              <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-2 left-2 w-6 h-6 bg-[#96E92A] rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md">
-                  1
-                </div>
-                <div className="absolute top-2 right-2 w-6 h-6 bg-[#96E92A] rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md">
-                  2
-                </div>
-                <div className="absolute bottom-2 left-2 w-6 h-6 bg-[#96E92A] rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md">
-                  3
-                </div>
-                <div className="absolute bottom-2 right-2 w-6 h-6 bg-[#96E92A] rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md">
-                  4
-                </div>
-                <div className="absolute top-1/3 left-2 -translate-y-1/2 w-6 h-6 bg-[#96E92A] rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md">
-                  5
-                </div>
-                <div className="absolute top-1/3 right-2 -translate-y-1/2 w-6 h-6 bg-[#96E92A] rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md">
-                  6
-                </div>
-                <div className="absolute bottom-1/3 left-2 translate-y-1/2 w-6 h-6 bg-[#96E92A] rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md">
-                  7
-                </div>
-                <div className="absolute bottom-1/3 right-2 translate-y-1/2 w-6 h-6 bg-[#96E92A] rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md">
-                  8
-                </div>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-[#96E92A] rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md">
-                  9
-                </div>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/insert-molding/overmolding-and-insert-molding-process-illustration-900x600.png"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
 

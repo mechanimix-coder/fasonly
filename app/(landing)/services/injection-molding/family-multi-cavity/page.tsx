@@ -1,6 +1,7 @@
 "use client";
 import GuideDownload from "@/component/landing/GuideDownload";
 import ServicesHero from "@/component/landing/ServicesHero";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function page() {
@@ -323,10 +324,13 @@ export default function page() {
             {/* Right Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-auto min-h-[400px] rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🧪</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Injection Molding Materials
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/family-multi-cavity/im-nylon_resin_pellets_570x308.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
           </div>
@@ -339,10 +343,13 @@ export default function page() {
             {/* Left Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🎨</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Surface Finish Samples
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/family-multi-cavity/im-services-img.png"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
 
@@ -430,10 +437,13 @@ export default function page() {
             {/* Right Column - Image */}
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">🏭</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Multi-Cavity / Family Mold
-                </p>
+                <Image
+                  src={
+                    "/Assets/Images/services/injection-molding/family-multi-cavity/sec_ops_custom_color_22_hr-600x400-bf06395-1.jpg"
+                  }
+                  fill
+                  alt="design cube"
+                />
               </div>
             </div>
           </div>
