@@ -391,7 +391,7 @@ export default function IndustriesPage() {
       <GuideDownload
         title="Download Our Periodic Table of Materials"
         desc="The Periodic Table of Materials is your go-to guide for the most
-                popular materials offered at Protolabs. Whether it is injection
+                popular materials offered at Fasonly. Whether it is injection
                 molding, CNC machining, 3D printing or sheet metal fabrication,
                 download the guide and hang it at your desk for easy reference
                 during your next project."

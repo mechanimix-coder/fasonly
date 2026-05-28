@@ -662,7 +662,7 @@ export default function page() {
                     <td className="p-4 font-semibold text-[#0B1221]">
                       Surface Finish
                     </td>
-                    <td className="p-4 text-gray-600">Protolabs' discretion</td>
+                    <td className="p-4 text-gray-600">Fasonly' discretion</td>
                     <td className="p-4 text-gray-600">
                       Housings, covers, face plates, external brackets and
                       mounts

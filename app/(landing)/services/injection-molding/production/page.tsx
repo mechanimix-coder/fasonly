@@ -236,7 +236,7 @@ export default function page() {
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Protolabs on-demand manufacturing service helps you simplify your
+              Fasonly on-demand manufacturing service helps you simplify your
               supply chain so you can get quality parts easier and faster. Using
               industry best practices like scientific molding, we accelerate
               manufacturing cycles to reduce your time to market. We meet your

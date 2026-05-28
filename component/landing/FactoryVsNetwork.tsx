@@ -18,10 +18,10 @@ export default function FactoryVsNetwork() {
         {/* Description */}
         <p className="text-gray-600 text-center max-w-4xl mx-auto mb-10 leading-relaxed">
           We offer a range of capabilities through our in-house digital
-          factories at Protolabs along with our digital network of
-          manufacturers. If speed is essential, our factory capabilities have
-          you covered, but if you're in need of advanced capabilities and have
-          more flexibility in your schedule, try Protolabs Network.
+          factories at Fasonly along with our digital network of manufacturers.
+          If speed is essential, our factory capabilities have you covered, but
+          if you're in need of advanced capabilities and have more flexibility
+          in your schedule, try Fasonly Network.
         </p>
 
         {/* Toggle Buttons */}

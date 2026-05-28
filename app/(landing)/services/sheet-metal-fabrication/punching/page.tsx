@@ -132,7 +132,7 @@ export default function page() {
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-3">
-                Types of features that can be punched through the Protolabs
+                Types of features that can be punched through the Fasonly
                 process include:
               </p>
 
@@ -173,11 +173,11 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              Advantages of Punching with Protolabs
+              Advantages of Punching with Fasonly
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-8"></div>
             <p className="text-gray-600 leading-relaxed text-center mb-8">
-              Using Protolabs for punching unlocks several advantages for your
+              Using Fasonly for punching unlocks several advantages for your
               next sheet metal component or assembly project:
             </p>
             <ul className="space-y-3">

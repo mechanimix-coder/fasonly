@@ -28,7 +28,7 @@ export default function page() {
       rows: [
         [
           "Included in all shipments. No measurement results are provided",
-          "Protolabs quality control inspects parts to verify consistency with quoted dimensional and visual standards",
+          "Fasonly quality control inspects parts to verify consistency with quoted dimensional and visual standards",
           "Available on all orders.",
           "None",
           "None",
@@ -52,7 +52,7 @@ export default function page() {
       rows: [
         [
           "Verifies numerous dimensional specifications without requiring a 2D drawing.",
-          "Protolabs quality control inspects approximately 10 dimensions to verify quoted tolerances. GD&T is excluded from inspection.",
+          "Fasonly quality control inspects approximately 10 dimensions to verify quoted tolerances. GD&T is excluded from inspection.",
           "N/A",
           "Formatted report with bubbled part image and results summary chart.",
           "None",
@@ -77,7 +77,7 @@ export default function page() {
       rows: [
         [
           "Verifies the sample part conforms to all dimensions provided in a 2D drawing.",
-          "Protolabs quality control inspects 100% of dimensions provided on a 2D drawing, including GD&T. Quoted tolerances apply.",
+          "Fasonly quality control inspects 100% of dimensions provided on a 2D drawing, including GD&T. Quoted tolerances apply.",
           "N/A",
           "FAI produced using a template conforming to AS9102C standard.",
           "Adds 1 day",

@@ -50,7 +50,7 @@ export default function page() {
               {/* Beyond Prototyping Section */}
               <div id="what-is-stereolithography" className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  Why Protolabs?
+                  Why Fasonly?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 

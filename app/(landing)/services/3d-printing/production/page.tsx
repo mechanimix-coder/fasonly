@@ -29,7 +29,7 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Beyond prototyping, Protolabs is also a reliable source for
+                Beyond prototyping, Fasonly is also a reliable source for
                 3D-printed production parts. With industrial additive
                 manufacturing technologies and a wide range of plastic and metal
                 materials, we can support projects from early design stages
@@ -64,7 +64,7 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Advantages of Protolabs
+              Advantages of Fasonly
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -346,7 +346,7 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                 Watch the video to see how we take your product from concept to
                 completion.
               </p>
-              <p className="text-gray-400 text-sm">PROTOLABS</p>
+              <p className="text-gray-400 text-sm">FASONLY</p>
             </div>
 
             {/* Right Column - Video Player */}
@@ -403,7 +403,7 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Protolabs' experts support you throughout your 3D printing
+                Fasonly' experts support you throughout your 3D printing
                 project, helping you to get the most out of our on-demand
                 capabilities, and ensuring consistency across production runs.
               </p>
@@ -431,7 +431,7 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              5 Reasons to Rely on Protolabs for 3D Printing at Scale
+              5 Reasons to Rely on Fasonly for 3D Printing at Scale
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>

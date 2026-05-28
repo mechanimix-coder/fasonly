@@ -268,8 +268,8 @@ Hizmetleri"
               <Quote className="w-8 h-8 text-[#0099ff]" />
             </div>
             <p className="text-xl md:text-2xl text-[#0B1221] leading-relaxed mb-6 italic">
-              &quot;Edwards için zaman her zaman en önemli faktördü. Protolabs
-              ile ortaklık kurmak bu çevikliği elde etmemizi sağladı ve sonuçta
+              &quot;Edwards için zaman her zaman en önemli faktördü. Fasonly ile
+              ortaklık kurmak bu çevikliği elde etmemizi sağladı ve sonuçta
               mümkün olan en iyi ürünü ortaya çıkardı. Onlar olmadan, başarı
               için gereken hıza ulaşabileceğimize inanmıyorum.&quot;
             </p>
@@ -321,11 +321,11 @@ Hizmetleri"
                     Objective
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    I need to validate my design at Protolabs speeds. I need the
+                    I need to validate my design at Fasonly speeds. I need the
                     flexibility to economically iterate before production.
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    I have on-demand production needs at Protolabs speeds.
+                    I have on-demand production needs at Fasonly speeds.
                   </td>
                 </tr>
 
@@ -437,7 +437,7 @@ Hizmetleri"
                     </ul>
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    Quality Inspection Report (QIR) verifies Protolabs'
+                    Quality Inspection Report (QIR) verifies Fasonly'
                     manufacturing process controls
                   </td>
                 </tr>
@@ -746,7 +746,7 @@ Hizmetleri"
                     What is Injection Molding?
                   </p>
                   <p className="text-gray-300 text-sm mt-1">
-                    PROTOLABS | Manufacturing Accelerated
+                    Fasonly | Manufacturing Accelerated
                   </p>
                 </div>
               </div>

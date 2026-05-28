@@ -133,7 +133,7 @@ export default function page() {
                 Watch the video to see how we take your product from concept to
                 completion.
               </p>
-              <p className="text-gray-400 text-sm">PROTOLABS</p>
+              <p className="text-gray-400 text-sm">FASONLY</p>
             </div>
           </div>
         </div>

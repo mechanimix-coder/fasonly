@@ -368,7 +368,7 @@ export default function page() {
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Through both the Factory and Protolabs Network, you can access a
+              Through both the Factory and Fasonly Network, you can access a
               broad range of post-processing capabilities to meet your part's
               specifications.
             </p>

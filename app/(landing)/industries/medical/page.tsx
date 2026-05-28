@@ -2,6 +2,7 @@
 
 import ServicesHero from "@/component/landing/ServicesHero";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function page() {
@@ -24,18 +25,18 @@ export default function page() {
         "100+ plastic, elastomeric, and silicone rubber materials",
         "Automated CMM for fast, in-house quality documentation",
       ],
-      image: "🏭",
+      image: "/Assets/Images/Industries/medical/pl_service_im.webp",
     },
     cnc: {
       title: "CNC Machining",
       description:
-        "Leverage the same speed, precision, and reliability in machining that you're accustomed to at Protolabs but unlock advanced machining capabilities like tighter tolerances and volume pricing through our manufacturing network.",
+        "Leverage the same speed, precision, and reliability in machining that you're accustomed to at Fasonly but unlock advanced machining capabilities like tighter tolerances and volume pricing through our manufacturing network.",
       features: [
         "Machined parts in as fast as 1 day with optional plating and anodizing in as fast as 4 days",
         "Cost-efficient machined parts at higher volumes",
         "Tolerances down to ±0.001 in. (0.020mm) through our digital network",
       ],
-      image: "⚙️",
+      image: "/Assets/Images/Industries/medical/pl_service_cnc.webp",
     },
     printing: {
       title: "3D Printing",
@@ -46,7 +47,7 @@ export default function page() {
         "30 plastic and metal materials in a range of finishes",
         "25 years of additive manufacturing expertise",
       ],
-      image: "🖨️",
+      image: "/Assets/Images/Industries/medical/pl_service_3dp-2.webp",
     },
     sheet: {
       title: "Sheet Metal Fabrication",
@@ -57,7 +58,7 @@ export default function page() {
         "Six sheet metal materials including aluminum, stainless steel, steel, brass, and copper",
         "Finishing options from welding and hardware insertion to powder coating and silk screening",
       ],
-      image: "🔩",
+      image: "/Assets/Images/Industries/medical/sheet-metal-home.webp",
     },
   };
 
@@ -78,7 +79,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              How Do Medical Companies Use Protolabs?
+              How Do Medical Companies Use Fasonly?
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -321,12 +322,13 @@ export default function page() {
             </div>
 
             {/* Right Column - Image */}
-            <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
+            <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden flex items-center justify-center">
               <div className="text-center">
-                <span className="text-7xl">{currentContent.image}</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  {currentContent.title}
-                </p>
+                <Image
+                  src={currentContent.image}
+                  alt={currentContent.title}
+                  fill
+                />
               </div>
             </div>
           </div>
@@ -378,12 +380,13 @@ export default function page() {
           {/* Row 1 - Image Left, Text Right */}
           <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
             {/* Left Column - Image */}
-            <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
+            <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden flex items-center justify-center">
               <div className="text-center">
-                <span className="text-6xl">📋</span>
-                <p className="text-gray-500 text-sm mt-2">
-                  Quality Documentation
-                </p>
+                <Image
+                  src={"/Assets/Images/Industries/medical/quality_measures.jpg"}
+                  alt={""}
+                  fill
+                />
               </div>
             </div>
 
@@ -471,9 +474,6 @@ export default function page() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Process Traceability */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 text-center hover:shadow-md transition-all duration-300">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
-                <span className="text-2xl">🔗</span>
-              </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
                 Process Traceability
               </h3>
@@ -486,9 +486,6 @@ export default function page() {
 
             {/* CTQ Reporting */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 text-center hover:shadow-md transition-all duration-300">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
-                <span className="text-2xl">📊</span>
-              </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
                 CTQ Reporting
               </h3>
@@ -501,9 +498,6 @@ export default function page() {
 
             {/* Report Comparison */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 text-center hover:shadow-md transition-all duration-300">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
-                <span className="text-2xl">📑</span>
-              </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
                 Report Comparison
               </h3>
@@ -516,9 +510,6 @@ export default function page() {
 
             {/* Industry Certifications (Network) */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 text-center hover:shadow-md transition-all duration-300">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
-                <span className="text-2xl">🏅</span>
-              </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
                 Network Certifications
               </h3>
@@ -548,8 +539,12 @@ export default function page() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* High-temp Plastics */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
-              <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🔥</span>
+              <div className="relative h-48 w-full flex items-center justify-center">
+                <Image
+                  src={"/Assets/Images/Industries/medical/peek.jpg"}
+                  alt={""}
+                  fill
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
@@ -566,7 +561,11 @@ export default function page() {
             {/* Medical-grade Silicone Rubber */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🧪</span>
+                <Image
+                  src={"/Assets/Images/Industries/medical/silicone_parts.jpg"}
+                  alt={""}
+                  fill
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
@@ -583,7 +582,11 @@ export default function page() {
             {/* Advanced Photopolymers */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">💎</span>
+                <Image
+                  src={"/Assets/Images/Industries/medical/frame-9-1.jpg"}
+                  alt={""}
+                  fill
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
@@ -600,7 +603,11 @@ export default function page() {
             {/* Micro-resolution */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">🔬</span>
+                <Image
+                  src={"/Assets/Images/Industries/medical/micro_fine.jpg"}
+                  alt={""}
+                  fill
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
@@ -608,7 +615,7 @@ export default function page() {
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
                   MicroFine™ (green and gray) is a proprietary material
-                  developed by Protolabs to build complex 3D-printed parts with
+                  developed by Fasonly to build complex 3D-printed parts with
                   micro-sized features as small as 0.0025 in.
                 </p>
               </div>
@@ -617,7 +624,11 @@ export default function page() {
             {/* Microfluidics */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">💧</span>
+                <Image
+                  src={"/Assets/Images/Industries/medical/watershed.jpg"}
+                  alt={""}
+                  fill
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
@@ -634,7 +645,11 @@ export default function page() {
             {/* Medical Alloys */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
-                <span className="text-5xl">⚙️</span>
+                <Image
+                  src={"/Assets/Images/Industries/medical/titanium.jpg"}
+                  alt={""}
+                  fill
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">

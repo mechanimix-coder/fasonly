@@ -57,9 +57,9 @@ export default function page() {
                 If you have any issues or questions please contact an
                 applications engineer at{" "}
                 <a
-                  href="mailto:customerservice@protolabs.com"
+                  href="mailto:customerservice@Fasonly.com"
                   className="text-[#0099ff] hover:text-[#96E92A] transition-colors">
-                  customerservice@protolabs.com
+                  customerservice@Fasonly.com
                 </a>{" "}
                 or 877-479-3680.
               </p>

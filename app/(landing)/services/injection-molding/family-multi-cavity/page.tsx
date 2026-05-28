@@ -265,9 +265,9 @@ export default function page() {
                     <span className="font-semibold text-[#0B1221]">
                       Tolerances:
                     </span>{" "}
-                    Typically, Protolabs can maintain a machining tolerance of
-                    +/- 0.003 in. (0.08mm) with an included resin tolerance that
-                    can be greater than but no less than +/- 0.002 in./in.
+                    Typically, Fasonly can maintain a machining tolerance of +/-
+                    0.003 in. (0.08mm) with an included resin tolerance that can
+                    be greater than but no less than +/- 0.002 in./in.
                     (0.002mm/mm).
                   </p>
                 </div>
@@ -363,7 +363,7 @@ export default function page() {
               {/* Finish List */}
               <div className="space-y-2">
                 {[
-                  "PM-FO - non-cosmetic, finish to Protolabs' discretion",
+                  "PM-FO - non-cosmetic, finish to Fasonly' discretion",
                   "PM-F1 - low-cosmetic, most toolmarks removed",
                   "PM-F2 - non-cosmetic, EDM permissible",
                   "SPI-C1 - 600 grit stone",

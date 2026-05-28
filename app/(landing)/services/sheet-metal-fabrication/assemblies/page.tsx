@@ -120,7 +120,7 @@ export default function page() {
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              For situations where Protolabs will not assemble your project
+              For situations where Fasonly will not assemble your project
               components, a solid (or top-level) assembly file is not required.
             </p>
           </div>
@@ -361,7 +361,7 @@ export default function page() {
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
                     All parts and assemblies are inspected for dimensional and
-                    visual accuracy based on Protolabs work standards prior to
+                    visual accuracy based on Fasonly work standards prior to
                     shipping.
                   </span>
                 </li>

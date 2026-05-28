@@ -366,7 +366,7 @@ export default function page() {
                   <p className="text-gray-300 text-xs mt-1">
                     When to Use FDM 3D Printing
                   </p>
-                  <p className="text-gray-400 text-xs mt-2">PROTOLABS</p>
+                  <p className="text-gray-400 text-xs mt-2">FASONLY</p>
                 </div>
               </div>
             </div>
@@ -382,7 +382,7 @@ export default function page() {
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Protolabs FDM materials for prototyping are typically chosen for
+              Fasonly FDM materials for prototyping are typically chosen for
               their ease of use, speed, and cost-effectiveness, focusing on
               enabling rapid design iterations and validation. Materials for
               production are selected for their durability, specific mechanical
@@ -518,7 +518,7 @@ export default function page() {
                   <p className="text-gray-300 text-xs mt-1">
                     When to Use FDM 3D Printing
                   </p>
-                  <p className="text-gray-400 text-xs mt-2">PROTOLABS</p>
+                  <p className="text-gray-400 text-xs mt-2">FASONLY</p>
                 </div>
               </div>
             </div>

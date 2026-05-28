@@ -190,7 +190,7 @@ export default function page() {
     threading: {
       title: "Threading",
       description:
-        "In the Protolabs automated factory, we currently support UNC and UNF threads from #2 up to 0.5 in., and metric threads from M2 to M12. Avoid modeling internal threads on your part design.",
+        "In the Fasonly automated factory, we currently support UNC and UNF threads from #2 up to 0.5 in., and metric threads from M2 to M12. Avoid modeling internal threads on your part design.",
       table: {
         headers: ["Thread Type", "Size Range"],
         rows: [
@@ -230,7 +230,7 @@ export default function page() {
         {
           subtitle: "Engraving",
           content:
-            "Protolabs' fully automated factory allows you to design in engraving.",
+            "Fasonly' fully automated factory allows you to design in engraving.",
         },
       ],
       bulletPoints: [
@@ -238,7 +238,7 @@ export default function page() {
         "Hard metals: Minimum width of 0.033 in. (0.838mm) and depth of 0.0118 in. (0.3mm). Example text size would be 22 point Arial Rounded MT font.",
         "If design permits it, opt for recessed text versus raised text.",
       ],
-      note: "Protolabs also offers Laser Part Marking and Ink Stamp for our semi-automated factory capability as well as via Protolabs Network website.",
+      note: "Fasonly also offers Laser Part Marking and Ink Stamp for our semi-automated factory capability as well as via Fasonly Network website.",
       inkTable: {
         headers: ["Ink Stamp", "Spec"],
         rows: [

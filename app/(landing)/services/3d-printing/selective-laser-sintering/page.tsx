@@ -141,7 +141,7 @@ export default function page() {
     {
       id: 4,
       title: "MicroFine™ (Gray and Green)",
-      content: `MicroFine™ is a custom formulated material available in gray and green that is exclusive to Protolabs. This ABS-like thermoset is printed in Protolabs' customized machinery to achieve high resolution features as small as 0.002 in. MicroFine is ideal for small parts, generally less than 1 in. by 1 in. by 1 in. In terms of mechanical properties, MicroFine falls in the mid-range of stereolithography materials for tensile strength and modulus and on the low end for impact strength and elongation.`,
+      content: `MicroFine™ is a custom formulated material available in gray and green that is exclusive to Fasonly. This ABS-like thermoset is printed in Fasonly' customized machinery to achieve high resolution features as small as 0.002 in. MicroFine is ideal for small parts, generally less than 1 in. by 1 in. by 1 in. In terms of mechanical properties, MicroFine falls in the mid-range of stereolithography materials for tensile strength and modulus and on the low end for impact strength and elongation.`,
       benefits: [
         "Produces highest resolution parts",
         "Ideal for extra-small parts",

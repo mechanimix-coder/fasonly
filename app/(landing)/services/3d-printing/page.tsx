@@ -209,7 +209,7 @@ export default function ThreePrinting() {
             {/* Right Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                FDM 3D Printing Through Protolabs Network
+                FDM 3D Printing Through Fasonly Network
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 FDM (fused deposition modeling) 3D printing builds parts by
@@ -795,7 +795,7 @@ export default function ThreePrinting() {
                     What is 3D Printing?
                   </p>
                   <p className="text-gray-300 text-sm mt-1">
-                    PROTOLABS | Manufacturing Accelerated
+                    FASONLY | Manufacturing Accelerated
                   </p>
                 </div>
               </div>
@@ -952,7 +952,7 @@ export default function ThreePrinting() {
                   <p className="text-white text-lg font-semibold">
                     Digital Quoting Enhancements for 3D Printing
                   </p>
-                  <p className="text-gray-300 text-sm mt-1">PROTOLABS</p>
+                  <p className="text-gray-300 text-sm mt-1">FASONLY</p>
                 </div>
               </div>
               {/* Optional: Add actual video embed here */}

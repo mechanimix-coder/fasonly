@@ -21,7 +21,7 @@ export default function page() {
         value:
           "Selected features per Inspection Statement of Work. May include plane-to-plane, hole-to-hole, ID/OD, or radii measurements as critical features",
       },
-      { label: "Service Provided By", value: "Protolabs" },
+      { label: "Service Provided By", value: "Fasonly" },
       {
         label: "Additional Features",
         value:
@@ -65,7 +65,7 @@ export default function page() {
         value:
           "Selected features per Inspection Statement of Work. May include plane-to-plane, hole-to-hole, ID/OD, or radii measurements as critical features",
       },
-      { label: "Service Provided By", value: "Protolabs" },
+      { label: "Service Provided By", value: "Fasonly" },
       {
         label: "Additional Features",
         value:
@@ -317,15 +317,15 @@ export default function page() {
 
               <p className="text-gray-600 leading-relaxed mb-6">
                 <span className="font-semibold">
-                  Protolabs Proposed Revision (PPR):
+                  Fasonly Proposed Revision (PPR):
                 </span>{" "}
                 In some instances, we can provide a second CAD model to
-                you—called a Protolabs Proposed Revision (PPR). This is a new
-                CAD file with changes already made. The revised model can be
-                used immediately or you can transfer the modifications to the
+                you—called a Fasonly Proposed Revision (PPR). This is a new CAD
+                file with changes already made. The revised model can be used
+                immediately or you can transfer the modifications to the
                 original model. Following the DFM analysis, and, in some cases,
-                the PPR, once the part has been approved, Protolabs moves into
-                the final step before actual production—the digital preparation.
+                the PPR, once the part has been approved, Fasonly moves into the
+                final step before actual production—the digital preparation.
               </p>
 
               <a
@@ -398,7 +398,7 @@ export default function page() {
                 Injection Molding Inspection Reports
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                As part of the Protolabs standard, we measure up to four
+                As part of the Fasonly standard, we measure up to four
                 plane-to-plane and outside diameter dimensions based on your CAD
                 model (X, Y, Z) to quoted tolerances. We automatically define
                 these quality control checks and perform the measurements on a

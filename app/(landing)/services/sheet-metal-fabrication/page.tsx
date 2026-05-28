@@ -148,7 +148,7 @@ export default function SheetMetalFabrication() {
             {/* Right Column - Content */}
             <div className="flex-1 text-center md:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Sheet Metal Quoting with Protolabs
+                Sheet Metal Quoting with Fasonly
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto md:mx-0"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -389,7 +389,7 @@ export default function SheetMetalFabrication() {
 
             {/* Quote Text */}
             <p className="text-xl md:text-2xl lg:text-3xl text-[#0B1221] leading-relaxed mb-6 italic font-medium">
-              &quot;Partnering with Protolabs was easy. We ended up with high
+              &quot;Partnering with Fasonly was easy. We ended up with high
               fidelity hardware at a bargain price on a very competitive
               schedule.&quot;
             </p>
@@ -434,7 +434,7 @@ export default function SheetMetalFabrication() {
               </div>
 
               <button className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                Learn more about Protolabs' sheet metal materials →
+                Learn more about Fasonly' sheet metal materials →
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -474,7 +474,7 @@ export default function SheetMetalFabrication() {
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Why Choose Protolabs for Sheet Metal Parts?
+              Why Choose Fasonly for Sheet Metal Parts?
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>

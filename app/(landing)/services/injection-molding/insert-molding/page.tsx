@@ -265,7 +265,7 @@ export default function page() {
                   className="text-[#96E92A] hover:text-[#85d122] transition-colors">
                   stocked inserts
                 </a>{" "}
-                at Protolabs is available here.
+                at Fasonly is available here.
               </p>
 
               <p className="text-gray-300 leading-relaxed">

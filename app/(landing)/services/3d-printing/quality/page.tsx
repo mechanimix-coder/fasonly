@@ -447,12 +447,11 @@ export default function page() {
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 The AS9102 FAI is a more stringent report which validates the
-                actual process used to make parts. Protolabs quality control
-                will inspect 100% of dimensions provided on a 2D drawing,
-                including GD&T. AS9102 is an industry standard format often
-                required in the aerospace industry, but other fields can use it,
-                too. It is significantly more intense from a completion
-                standpoint.
+                actual process used to make parts. Fasonly quality control will
+                inspect 100% of dimensions provided on a 2D drawing, including
+                GD&T. AS9102 is an industry standard format often required in
+                the aerospace industry, but other fields can use it, too. It is
+                significantly more intense from a completion standpoint.
               </p>
             </div>
           </div>

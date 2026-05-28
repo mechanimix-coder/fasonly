@@ -83,9 +83,9 @@ export default function page() {
                 minimize escapes, our proprietary software instructs our factory
                 CNC machines to perform in-process quality checks on every
                 unique geometry. Whether produced in our factories or through
-                Protolabs Network, once the part is completed, our quality
-                control experts take over and visually and dimensionally inspect
-                the physical part to ensure consistency with your 3D model (or
+                Fasonly Network, once the part is completed, our quality control
+                experts take over and visually and dimensionally inspect the
+                physical part to ensure consistency with your 3D model (or
                 print, if necessary).
               </p>
             </div>
@@ -258,12 +258,12 @@ export default function page() {
           {/* Sampling-Based Inspection Process Section */}
           <div>
             <h3 className="text-2xl font-bold text-[#0B1221] mb-4 text-center">
-              Protolabs' Sampling-Based Inspection Process
+              Fasonly' Sampling-Based Inspection Process
             </h3>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed text-center max-w-3xl mx-auto mb-8">
               To ensure consistent quality while maintaining fast turnaround
-              times, Protolabs uses a sampling-based inspection process for
+              times, Fasonly uses a sampling-based inspection process for
               BIR/DIR inspection reports rather than inspecting every part in a
               lot. Sample sizes are selected based on total lot quantity, as
               outlined in the table below, and are designed to provide reliable

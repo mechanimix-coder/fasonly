@@ -206,9 +206,9 @@ export default function page() {
           <div className="mt-6 p-4 bg-[#F0F8FF] rounded-lg">
             <p className="text-gray-600 text-sm leading-relaxed">
               <span className="font-semibold text-[#0B1221]">Tolerances:</span>{" "}
-              Typically, Protolabs can maintain a machining tolerance of +/-
-              0.003 in. (0.08mm) with an included resin tolerance that can be
-              greater than but no less than +/- 0.002 in./in. (0.002mm/mm).
+              Typically, Fasonly can maintain a machining tolerance of +/- 0.003
+              in. (0.08mm) with an included resin tolerance that can be greater
+              than but no less than +/- 0.002 in./in. (0.002mm/mm).
             </p>
           </div>
         </div>

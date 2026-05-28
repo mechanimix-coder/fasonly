@@ -172,7 +172,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              4 Reasons to Turn to the Protolabs Network for Machined Production
+              4 Reasons to Turn to the Fasonly Network for Machined Production
               Parts
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
@@ -334,7 +334,7 @@ export default function page() {
                   Watch How it Works
                 </p>
                 <p className="text-gray-300 text-sm mt-1">
-                  Protolabs Network Process Overview
+                  Fasonly Network Process Overview
                 </p>
               </div>
             </div>

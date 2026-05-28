@@ -1224,7 +1224,7 @@ export default function page() {
                         <li className="flex items-start gap-2">
                           <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                           <span className="text-sm">
-                            Protolabs design for manufacturability analysis
+                            Fasonly design for manufacturability analysis
                             suggests feature deformation as a solution. Note
                             that before manufacturing begins, our sheet metal
                             fabrication experts will evaluate all situations in

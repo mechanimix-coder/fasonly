@@ -97,7 +97,7 @@ export default function CncMachining() {
               </div>
             </div>
 
-            {/* Card 3 - Protolabs Network */}
+            {/* Card 3 - Fasonly Network */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
               {/* Image */}
               <div className="relative h-56 w-full overflow-hidden bg-gradient-to-br from-[#0099ff]/10 to-[#96E92A]/10">
@@ -109,7 +109,7 @@ export default function CncMachining() {
               {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Protolabs Network
+                  Fasonly Network
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   Our manufacturing network provides advanced CNC machining
@@ -182,7 +182,7 @@ export default function CncMachining() {
               </h2>
               <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
                 Not seeing the material you're looking for? We have added 24 new
-                options available through the Protolabs Network.
+                options available through the Fasonly Network.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
                 Browse Materials
@@ -209,7 +209,7 @@ export default function CncMachining() {
                 Post-Processing Options
               </h2>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Protolabs offers a variety of CNC machining surface finishing
+                Fasonly offers a variety of CNC machining surface finishing
                 options to meet your part requirements. More advanced coating
                 and plating options are also available.
               </p>
