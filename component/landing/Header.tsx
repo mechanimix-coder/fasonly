@@ -477,7 +477,13 @@ export default function Header() {
                 <div className="bg-[#F0F8FF] h-fit rounded-xl p-5 border border-gray-100">
                   <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20">
                     <div className="flex items-center justify-center h-full">
-                      <span className="text-4xl">⚙️</span>
+                      <Image
+                        src={
+                          "/Assets/Images/services/production_order_cnc_machining-1-1.jpg"
+                        }
+                        alt=""
+                        fill
+                      />
                     </div>
                   </div>
                   <h3 className="font-bold text-base text-[#0B1221] mb-2">
@@ -505,10 +511,12 @@ export default function Header() {
           onMouseEnter={() => setIsIndustriesHover(true)}
           onMouseLeave={() => setIsIndustriesHover(false)}>
           <div className="flex flex-row items-center cursor-pointer group">
-            <span className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
+            <Link
+              href={"/resources"}
+              className="flex flex-row items-center justify-center gap-2 hover:text-[#96E92A] relative text-sm xl:text-base">
               Endüstriler <ChevronDown className="w-4 h-4" />
               <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#96E92A] transition-all duration-300 group-hover:w-full"></span>
-            </span>
+            </Link>
           </div>
 
           {/* Full-Width Industries Dropdown */}
