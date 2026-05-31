@@ -5,7 +5,7 @@ import Link from "next/link";
 
 interface Props {
   title: string;
-  desc: string;
+  desc?: string;
   image?: string;
   simple?: boolean;
   bg?: string;
