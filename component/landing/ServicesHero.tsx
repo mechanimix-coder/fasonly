@@ -87,9 +87,11 @@ export default function ServicesHero({
               </div>
 
               {/* Certifications Text */}
-              <p className={`text-sm ${certificationColor}`}>
-                Sertifikalar: ISO 9001:2015 | CTQ Denetimleri | ITAR
-              </p>
+              {!simple && (
+                <p className={`text-sm ${certificationColor}`}>
+                  Sertifikalar: ISO 9001:2015 | CTQ Denetimleri | ITAR
+                </p>
+              )}
             </div>
 
             {/* Right Column - Image and Stats */}

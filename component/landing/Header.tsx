@@ -606,10 +606,10 @@ export default function Header() {
                         name: "EV/AV Otomotiv Rehberi",
                         link: "/resources/ev-av-automotive-guide",
                       },
-                      {
-                        name: "Sektör Vaka Çalışmaları",
-                        link: "/resources/industry-case-studies",
-                      },
+                      // {
+                      //   name: "Sektör Vaka Çalışmaları",
+                      //   link: "/resources/industry-case-studies",
+                      // },
                     ].map((resource, idx) => (
                       <Link
                         href={resource.link}
@@ -778,16 +778,7 @@ export default function Header() {
                       fazlasını keşfedin
                     </p>
                   </div>
-                  <div>
-                    <Link href="/resources/faqs">
-                      <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
-                        SSS
-                      </h3>
-                    </Link>
-                    <p className="text-xs text-gray-500 leading-relaxed">
-                      Hizmet hatlarımız genelinde sık sorulan sorulara yanıtlar
-                    </p>
-                  </div>
+
                   <div>
                     <Link href="/resources/educators-students">
                       <h3 className="font-bold text-base text-[#0B1221] mb-2 hover:text-[#0099ff] transition-colors">
@@ -829,11 +820,6 @@ export default function Header() {
                 <div className="flex flex-wrap items-center justify-between gap-4">
                   <div className="flex items-center gap-6 flex-wrap">
                     <Link
-                      href="/resources/glossary"
-                      className="text-sm text-gray-500 hover:text-[#0099ff] transition-colors">
-                      Üretim Sözlüğü
-                    </Link>
-                    <Link
                       href="/resources/help-center"
                       className="text-sm text-gray-500 hover:text-[#0099ff] transition-colors">
                       Yardım Merkezi
@@ -842,11 +828,6 @@ export default function Header() {
                       href="/resources/product-life-cycle"
                       className="text-sm text-gray-500 hover:text-[#0099ff] transition-colors">
                       Ürün Yaşam Döngüsü
-                    </Link>
-                    <Link
-                      href="/resources/product-releases"
-                      className="text-sm text-gray-500 hover:text-[#0099ff] transition-colors">
-                      Ürün Duyuruları
                     </Link>
                   </div>
                 </div>
@@ -1361,10 +1342,10 @@ export default function Header() {
                           name: "EV/AV Otomotiv Rehberi",
                           link: "/resources/ev-av-automotive-guide",
                         },
-                        {
-                          name: "Sektör Vaka Çalışmaları",
-                          link: "/resources/industry-case-studies",
-                        },
+                        // {
+                        //   name: "Sektör Vaka Çalışmaları",
+                        //   link: "/resources/industry-case-studies",
+                        // },
                       ].map((item, idx) => (
                         <Link
                           key={idx}
