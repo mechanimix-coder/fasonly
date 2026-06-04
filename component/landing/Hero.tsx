@@ -7,6 +7,7 @@ import { ChevronRight, ArrowRight } from "lucide-react";
 import { RedirectButton } from "../UI/Buttons";
 import useLanding from "@/store/store";
 import { base_url } from "@/config";
+import Link from "next/link";
 
 export default function Hero() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(1);
@@ -227,9 +228,11 @@ export default function Hero() {
                 theme="BlueToGreen"
                 style="font-mono"
               />
-              <button className="bg-transparent border border-white/30 text-white px-7 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors duration-300">
+              <Link
+                href={"/services"}
+                className="bg-transparent border border-white/30 text-white px-7 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors duration-300">
                 Hizmetleri İncele
-              </button>
+              </Link>
             </div>
 
             {/* Infinite Brand Slider - Draggable */}

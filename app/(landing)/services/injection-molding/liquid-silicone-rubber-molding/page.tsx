@@ -5,12 +5,12 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="w-full pt-10 bg-white">
+    <div className="w-full pt-10 pb-36 bg-white">
       <ServicesHero
         title="Çevrimiçi CNC İşleme Hizmeti"
         desc="İşlenmiş prototipler ve üretim parçaları 1 gün kadar kısa sürede. Bugün çevrimiçi teklif talep edin."
         image="/Assets/Images/services/injection-molding/slr-hero.webp"
-        firstButton={{ title: "Get a Quote", route: "/" }}
+        firstButton={{ title: "Teklif Al", route: "/" }}
         secondButton={{ title: "Malzemeleri İncele", route: "/" }}
       />
 
@@ -21,14 +21,14 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Capabilities",
-                    "Materials",
-                    "Surface Finishes",
-                    "Quality Inspections",
+                    "Yetenekler",
+                    "Malzemeler",
+                    "Yüzey İşlemleri",
+                    "Kalite Denetimleri",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -43,32 +43,32 @@ export default function page() {
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
+              {/* What is Liquid Silicone Rubber Molding? Section */}
               <div
-                id="about-plastic-injection-molding"
+                id="sıvı-silikon-kauçuk-kalıplama-hakkında"
                 className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  What is Plastic Injection Molding?
+                  Sıvı Silikon Kauçuk (LSR) Kalıplama Nedir?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Our liquid silicone rubber (LSR) molding process produces
-                  custom prototypes and end-use production parts in 15 days or
-                  less. We use aluminum molds that offer cost-efficient tooling
-                  and accelerated manufacturing cycles, and stock various grades
-                  and durometers of LSR materials.
+                  Sıvı silikon kauçuk (LSR) kalıplama sürecimiz, 15 gün veya
+                  daha kısa sürede özel prototipler ve son kullanım üretim
+                  parçaları üretir. Maliyet etkin takım ve hızlandırılmış üretim
+                  döngüleri sunan alüminyum kalıplar kullanıyoruz ve çeşitli
+                  kalite ve sertlik derecelerinde LSR malzemeleri stokluyoruz.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Common applications for silicone rubber molding:
+                  Silikon kauçuk kalıplama için yaygın uygulamalar:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "low-volume production",
-                    "bridge tooling",
-                    "pilot runs",
-                    "functional prototyping",
+                    "düşük hacimli üretim",
+                    "köprü takımı",
+                    "pilot çalışmalar",
+                    "fonksiyonel prototipleme",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -85,8 +85,8 @@ export default function page() {
       </div>
 
       <GuideDownload
-        title="Definitive Guide to Injection Molding"
-        desc="This complete reference guide walks you through everything from quoting, design analysis, and shipment to best practices that ensure your model is optimized for molding."
+        title="Enjeksiyon Kalıplama Kesin Kılavuzu"
+        desc="Bu tam referans kılavuzu, teklif alma, tasarım analizi ve sevkiyattan, modelinizin kalıplama için optimize edildiğini garanti eden en iyi uygulamalara kadar her şeyde size yol gösterir."
       />
 
       <div className="w-full bg-white py-20">
@@ -94,18 +94,20 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Liquid Silicone Rubber Molding Capabilities
+              Sıvı Silikon Kauçuk Kalıplama Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our basic guidelines for silicone rubber molding include important
-              design considerations to help improve part moldability, enhance
-              cosmetic appearance, and reduce overall production time.
+              Silikon kauçuk kalıplama için temel kılavuzlarımız, parça
+              kalıplanabilirliğini iyileştirmeye, kozmetik görünümü geliştirmeye
+              ve genel üretim süresini azaltmaya yardımcı olacak önemli tasarım
+              hususlarını içerir.
             </p>
             <a
               href="#"
               className="inline-block text-[#0099ff] hover:text-[#96E92A] transition-colors mt-2">
-              View our design guidelines page for more details. →
+              Daha fazla detay için tasarım kılavuzları sayfamızı görüntüleyin.
+              →
             </a>
           </div>
 
@@ -116,10 +118,10 @@ export default function page() {
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700"></th>
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                    US
+                    ABD
                   </th>
                   <th className="text-left p-4 font-semibold text-lg">
-                    Metric
+                    Metrik
                   </th>
                 </tr>
               </thead>
@@ -127,50 +129,50 @@ export default function page() {
                 {/* Size Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 w-1/3">
-                    Size
+                    Boyut
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    12 in. x 8 in. x 4 in.
+                    12 inç x 8 inç x 4 inç
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    304.88mm x 203.2mm x 101.6mm
+                    304,88mm x 203,2mm x 101,6mm
                   </td>
                 </tr>
 
                 {/* Volume Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Volume
+                    Hacim
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">13.3 cu. in.</td>
+                  <td className="p-4 text-gray-600 bg-white">13,3 inç küp</td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    217,948 cu. mm
+                    217.948 mm küp
                   </td>
                 </tr>
 
                 {/* Depth Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Depth
+                    Derinlik
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    No greater than 2 in. from any parting line; deeper parts
-                    are limited to a smaller outline
+                    Herhangi bir ayırma hattından 2 inç'ten fazla olmamalıdır;
+                    daha derin parçalar daha küçük bir çevre ile sınırlıdır
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    No greater than 50.88mm from any parting line; deeper parts
-                    are limited to a smaller outline
+                    Herhangi bir ayırma hattından 50,88mm'den fazla olmamalıdır;
+                    daha derin parçalar daha küçük bir çevre ile sınırlıdır
                   </td>
                 </tr>
 
                 {/* Projected Mold Area Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Projected Mold Area
+                    Öngörülen Kalıp Alanı
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">48 sq. in.</td>
+                  <td className="p-4 text-gray-600 bg-white">48 inç kare</td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    30,968 sq. mm
+                    30.968 mm kare
                   </td>
                 </tr>
               </tbody>
@@ -180,10 +182,9 @@ export default function page() {
           {/* Tolerances Info */}
           <div className="mt-6 p-4 bg-[#F0F8FF] rounded-lg">
             <p className="text-gray-600 text-sm leading-relaxed">
-              <span className="font-semibold text-[#0B1221]">Tolerances:</span>{" "}
-              Fasonly can maintain a machining tolerance of +/- 0.003 in.
-              (0.08mm) with a linear tolerance of +/- 0.025 in./in.
-              (0.025mm/mm).
+              <span className="font-semibold text-[#0B1221]">Toleranslar:</span>{" "}
+              Fasonly, +/- 0,003 inç (0,08mm) işleme toleransını +/- 0,025
+              inç/inç (0,025mm/mm) doğrusal toleransla koruyabilir.
             </p>
           </div>
         </div>
@@ -208,15 +209,15 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Liquid Silicone Rubber Materials
+                Sıvı Silikon Kauçuk Malzemeler
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <ul className="space-y-3">
                 {[
-                  "Standard Silicone (30, 40, 50, 60, and 70 durometers)",
-                  "Medical-Grade Silicone",
-                  "Optical-Grade Silicone",
-                  "Fluorosilicone (fuel and oil resistant)",
+                  "Standart Silikon (30, 40, 50, 60 ve 70 sertlik dereceleri)",
+                  "Medikal Sınıfı Silikon",
+                  "Optik Sınıfı Silikon",
+                  "Florosilikon (yakıt ve yağa dayanıklı)",
                 ].map((material, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -234,7 +235,7 @@ export default function page() {
             {/* Left Column - Title and Table */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Surface Finish Options
+                Yüzey İşlem Seçenekleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
@@ -244,34 +245,38 @@ export default function page() {
                   <thead>
                     <tr className="bg-[#0B1221] text-white">
                       <th className="text-left p-3 font-semibold border-r border-gray-700">
-                        FINISH
+                        YÜZEY
                       </th>
-                      <th className="text-left p-3 font-semibold">
-                        DESCRIPTION
-                      </th>
+                      <th className="text-left p-3 font-semibold">AÇIKLAMA</th>
                     </tr>
                   </thead>
                   <tbody>
                     {[
                       {
                         finish: "PM-F0",
-                        desc: "non-cosmetic, finish to Fasonly' discretion",
+                        desc: "kozmetik olmayan, Fasonly'nin takdirine göre bitirme",
                       },
                       {
                         finish: "PM-F1",
-                        desc: "low-cosmetic, most toolmarks removed",
+                        desc: "düşük kozmetik, çoğu takım izi giderilmiş",
                       },
                       {
                         finish: "PM-F2",
-                        desc: "non-cosmetic, EDM permissible",
+                        desc: "kozmetik olmayan, EDM izin verilebilir",
                       },
-                      { finish: "SPI-C1", desc: "600 grit stone, 10-12 Ra" },
-                      { finish: "PM-T1", desc: "SPI-C1 + light bead blast" },
-                      { finish: "PM-T2", desc: "SPI-C1 + medium bead blast" },
-                      { finish: "SPI-B1", desc: "600 grit paper, 2-3 Ra" },
+                      { finish: "SPI-C1", desc: "600 grit taş, 10-12 Ra" },
+                      {
+                        finish: "PM-T1",
+                        desc: "SPI-C1 + hafif boncuk püskürtme",
+                      },
+                      {
+                        finish: "PM-T2",
+                        desc: "SPI-C1 + orta boncuk püskürtme",
+                      },
+                      { finish: "SPI-B1", desc: "600 grit zımpara, 2-3 Ra" },
                       {
                         finish: "SPI-A2",
-                        desc: "grade #2 diamond buff, 1-2 Ra",
+                        desc: "2 numara elmas cilalama, 1-2 Ra",
                       },
                     ].map((row, idx) => (
                       <tr
@@ -325,25 +330,25 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Quality Inspections and Finishing Options
+                Kalite Denetimleri ve İşlem Sonrası Seçenekler
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Depending on your application's requirements, you can choose
-                from the following when requesting a quote for your silicone
-                rubber parts.
+                Uygulamanızın gereksinimlerine bağlı olarak, silikon kauçuk
+                parçalarınız için teklif talep ederken aşağıdakiler arasından
+                seçim yapabilirsiniz.
               </p>
 
               <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                Quality Inspections available for on-demand manufacturing orders
+                Talep üzerine üretim siparişleri için mevcut Kalite Denetimleri
               </h3>
 
               <ul className="space-y-3">
                 {[
-                  "Designing for Manufacturability (DFM) Feedback",
-                  "Scientific Molding Process Development Report",
-                  "In-process CMM inspection and machine monitoring",
-                  "First article inspection (FAI) and process capability report with GD&T",
+                  "Üretilebilirlik İçin Tasarım (DFM) Geri Bildirimi",
+                  "Bilimsel Kalıplama Süreç Geliştirme Raporu",
+                  "Süreç içi CMM denetimi ve makine izleme",
+                  "GD&T ile ilk ürün denetimi (FAI) ve süreç yetenek raporu",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -374,18 +379,19 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Learn More About Liquid Silicone Rubber Molding
+                Sıvı Silikon Kauçuk Kalıplama Hakkında Daha Fazla Bilgi
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto lg:mx-0"></div>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Our guide to liquid silicone rubber (LSR) discusses the
-                injection-molding process of the elastic material and offers
-                guidelines to improve molded LSR parts. While there are some
-                shared similarities to thermoplastic injection molding, LSR is a
-                thermoset material with a unique set of design characteristics.
+                Sıvı silikon kauçuk (LSR) kılavuzumuz, elastik malzemenin
+                enjeksiyon kalıplama sürecini tartışır ve kalıplanmış LSR
+                parçalarını iyileştirmek için kılavuzlar sunar. Termoplastik
+                enjeksiyon kalıplama ile bazı ortak benzerlikler olsa da, LSR,
+                benzersiz bir tasarım özellikleri setine sahip bir termoset
+                malzemedir.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Read Guide
+                Kılavuzu Oku
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -399,28 +405,30 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                How Does Liquid Silicone Rubber Molding Work?
+                Sıvı Silikon Kauçuk Kalıplama Nasıl Çalışır?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Due to the flexible nature of LSR, parts are manually removed
-                from the mold, and thus, ejector pins are not built into the
-                mold design. Like a standard aluminum tool, an LSR molding tool
-                is fabricated using CNC machining to create a high-temperature
-                tool built to withstand the LSR molding process. After milling,
-                the tool is polished by hand to customer specifications, which
-                allows six standard surface finish options.
+                LSR'nin esnek yapısı nedeniyle, parçalar kalıptan manuel olarak
+                çıkarılır ve bu nedenle, kalıp tasarımına itici pimler dahil
+                edilmez. Standart bir alüminyum takım gibi, bir LSR kalıplama
+                takımı, LSR kalıplama sürecine dayanacak şekilde üretilmiş
+                yüksek sıcaklıkta bir takım oluşturmak için CNC işleme
+                kullanılarak üretilir. Frezelemeden sonra, takım müşteri
+                spesifikasyonlarına göre elle parlatılır, bu da altı standart
+                yüzey işlem seçeneğine olanak tanır.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                The finished tool is loaded into an advanced LSR-specific
-                injection molding press that is precision geared for accurate
-                control of shot size to produce the most consistent LSR parts.
-                Since LSR is a thermosetting polymer, its molded state is
-                permanent—once it is set, it can't be melted again like a
-                thermoplastic. When the run is complete, parts (or the initial
-                sample run) are boxed and shipped shortly thereafter.
+                Bitmiş takım, en tutarlı LSR parçalarını üretmek için atış
+                boyutunun hassas kontrolü için hassas dişli olarak ayarlanmış
+                gelişmiş bir LSR'ye özel enjeksiyon kalıplama presine yüklenir.
+                LSR termoset bir polimer olduğundan, kalıplanmış durumu
+                kalıcıdır - bir kez ayarlandığında, bir termoplastik gibi tekrar
+                eritilemez. Çalıştırma tamamlandığında, parçalar (veya ilk
+                numune çalıştırması) kutulanır ve kısa bir süre sonra
+                gönderilir.
               </p>
             </div>
 
@@ -437,10 +445,10 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
                   <p className="text-gray-300 text-xs mt-1">
-                    LSR Molding Process
+                    LSR Kalıplama Süreci
                   </p>
                 </div>
               </div>

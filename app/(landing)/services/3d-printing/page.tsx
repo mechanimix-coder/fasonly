@@ -23,12 +23,10 @@ export default function ThreePrinting() {
   return (
     <div className="w-full pt-10 bg-white">
       <ServicesHero
-        title="Online 3D Printing Service for Custom Parts"
-        desc=" On-demand 3D printing for rapid prototyping and production in as
-                fast as 1 day. Get an instant 3D printing quote with DFAM
-                analysis today."
+        title="Özel Parçalar için Çevrimiçi 3D Baskı Hizmeti"
+        desc="Hızlı prototipleme ve üretim için talep üzerine 3D baskı, 1 gün kadar kısa sürede. Bugün DFAM analizi ile anında 3D baskı teklifi alın."
         image="/Assets/Images/services/injection-molding/3dp.webp"
-        firstButton={{ title: "Get Instant Quote", route: "/" }}
+        firstButton={{ title: "Anında Teklif Al", route: "/" }}
         secondButton={{ title: "Malzemeleri İncele", route: "/" }}
       />
 
@@ -38,17 +36,18 @@ export default function ThreePrinting() {
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              3D Printing Processes
+              3D Baskı Süreçleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our online 3D printing service enables you to 3D print your custom
-              part on demand. We offer six 3D printing technologies to transform
-              your 3D files into plastic, metal, and elastomeric parts. With
-              more than 120 3D printers, we have unmatched capacity that
-              reliably delivers parts within days. In addition to a broad
-              material selection, we offer several post-processing options to
-              improve cosmetics or enhance mechanical properties.
+              Çevrimiçi 3D baskı hizmetimiz, özel parçanızı talep üzerine 3D
+              baskı ile üretmenize olanak tanır. 3D dosyalarınızı plastik, metal
+              ve elastomerik parçalara dönüştürmek için altı 3D baskı
+              teknolojisi sunuyoruz. 120'den fazla 3D yazıcı ile parçaları
+              günler içinde güvenilir bir şekilde teslim eden benzersiz bir
+              kapasiteye sahibiz. Geniş malzeme seçimine ek olarak, kozmetik
+              görünümü iyileştirmek veya mekanik özellikleri geliştirmek için
+              çeşitli işlem sonrası seçenekleri sunuyoruz.
             </p>
           </div>
 
@@ -63,15 +62,15 @@ export default function ThreePrinting() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Metal 3D Printing
+                  Metal 3D Baskı
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Direct metal laser sintering (DMLS) uses a fiber laser system
-                  that draws onto a surface of atomized metal powder, welding
-                  the powder into fully dense metal parts.
+                  Doğrudan metal lazer sinterleme (DMLS), atomize metal tozu
+                  yüzeyine çizim yapan bir fiber lazer sistemi kullanarak tozu
+                  tam yoğun metal parçalara kaynaklar.
                 </p>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More
+                  Daha Fazla Bilgi
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
@@ -86,15 +85,15 @@ export default function ThreePrinting() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Stereolithography (SLA)
+                  Stereolitografi (SLA)
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Stereolithography (SLA) uses an ultraviolet laser that draws
-                  on the surface of liquid thermoset resin to create thousands
-                  of thin layers until final parts are formed.
+                  Stereolitografi (SLA), sıvı termoset reçinenin yüzeyine çizim
+                  yapan bir ultraviyole lazer kullanarak nihai parçalar oluşana
+                  kadar binlerce ince katman oluşturur.
                 </p>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More
+                  Daha Fazla Bilgi
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
@@ -109,15 +108,15 @@ export default function ThreePrinting() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Selective Laser Sintering (SLS)
+                  Seçici Lazer Sinterleme (SLS)
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Selective laser sintering (SLS) uses a CO₂ laser that fuses
-                  nylon-based powder, layer by layer until final thermoplastic
-                  parts are built.
+                  Seçici lazer sinterleme (SLS), naylon bazlı tozu katman katman
+                  birleştiren bir CO₂ lazer kullanarak nihai termoplastik
+                  parçalar inşa eder.
                 </p>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More
+                  Daha Fazla Bilgi
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
@@ -132,15 +131,15 @@ export default function ThreePrinting() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Fused Deposition Modeling (FDM)
+                  Birikimli Modelleme (FDM)
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Fused deposition modeling (FDM) extrudes thermoplastic
-                  filaments layer by layer to build durable, accurate, and
-                  cost-effective functional prototypes and end-use parts.
+                  Birikimli modelleme (FDM), termoplastik filamentleri katman
+                  katman ekstrüde ederek dayanıklı, doğru ve uygun maliyetli
+                  fonksiyonel prototipler ve son kullanım parçaları üretir.
                 </p>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More
+                  Daha Fazla Bilgi
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
@@ -155,15 +154,16 @@ export default function ThreePrinting() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Multi Jet Fusion (MJF)
+                  Multi Jet Füzyon (MJF)
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Multi Jet Fusion (MJF) uses an inkjet array to apply fusing
-                  and detailing agents across nylon powder beds, creating
-                  strong, accurate, and detailed production-grade parts.
+                  Multi Jet Füzyon (MJF), naylon tozu yatakları boyunca
+                  birleştirme ve detaylandırma maddeleri uygulamak için bir
+                  mürekkep püskürtme dizisi kullanarak güçlü, doğru ve detaylı
+                  üretim sınıfı parçalar oluşturur.
                 </p>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More
+                  Daha Fazla Bilgi
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
@@ -181,12 +181,13 @@ export default function ThreePrinting() {
                   PolyJet
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  PolyJet technology jets photopolymer droplets onto a build
-                  platform and instantly cures them with UV light, producing
-                  smooth, detailed parts with multiple material properties.
+                  PolyJet teknolojisi, fotopolimer damlacıklarını bir yapı
+                  platformuna püskürtür ve onları UV ışığıyla anında kürleyerek
+                  birden fazla malzeme özelliğine sahip pürüzsüz, detaylı
+                  parçalar üretir.
                 </p>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More
+                  Daha Fazla Bilgi
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
@@ -209,18 +210,18 @@ export default function ThreePrinting() {
             {/* Right Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                FDM 3D Printing Through Fasonly Network
+                Fasonly Network ile FDM 3D Baskı
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                FDM (fused deposition modeling) 3D printing builds parts by
-                heating and extruding thermoplastics layer-by-layer. FDM is a
-                good 3D printing option for strong prototypes and functional
-                parts. Material options include popular thermoplastics like ABS,
-                TPU, PEI, PETG, and more. Get an instant quote for FDM parts
-                within days.
+                FDM (birikimli modelleme) 3D baskı, termoplastikleri ısıtarak ve
+                katman katman ekstrüde ederek parçalar üretir. FDM, güçlü
+                prototipler ve fonksiyonel parçalar için iyi bir 3D baskı
+                seçeneğidir. Malzeme seçenekleri arasında ABS, TPU, PEI, PETG ve
+                daha fazlası gibi popüler termoplastikler bulunur. Günler içinde
+                FDM parçaları için anında teklif alın.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Learn More
+                Daha Fazla Bilgi
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -231,16 +232,16 @@ export default function ThreePrinting() {
             {/* Left Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Print it Better
+                Daha İyi Baskı Alın
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Get high quality 3D-printed parts fast with support from
-                engineers who know additive inside and out. Build
-                high-performing, reliable parts with six 3D printing
-                technologies and 60+ materials.
+                Eklemeli üretimi enine boyuna bilen mühendislerin desteğiyle
+                yüksek kaliteli 3D baskılı parçaları hızlıca alın. Altı 3D baskı
+                teknolojisi ve 60'ın üzerinde malzeme ile yüksek performanslı,
+                güvenilir parçalar üretin.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Learn More
+                Daha Fazla Bilgi
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -260,14 +261,14 @@ export default function ThreePrinting() {
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Compare 3D Printing Processes
+              3D Baskı Süreçlerini Karşılaştır
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              New to our 3D printing service and not sure which additive
-              technology is right for your 3D design? Compare the capabilities
-              of each process below to see what fits your application's
-              requirements.
+              3D baskı hizmetimizde yenisiniz ve hangi eklemeli teknolojinin 3D
+              tasarımınız için doğru olduğundan emin değil misiniz?
+              Uygulamanızın gereksinimlerine neyin uyduğunu görmek için aşağıda
+              her sürecin yeteneklerini karşılaştırın.
             </p>
           </div>
 
@@ -280,7 +281,7 @@ export default function ThreePrinting() {
                   ? "bg-[#0B1221] text-white shadow-lg"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              US
+              ABD
             </button>
             <button
               onClick={() => setActiveTable("metric")}
@@ -289,7 +290,7 @@ export default function ThreePrinting() {
                   ? "bg-[#0B1221] text-white shadow-lg"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Metric
+              Metrik
             </button>
           </div>
 
@@ -299,14 +300,14 @@ export default function ThreePrinting() {
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-[#0B1221] text-white">
-                    <th className="text-left p-4 font-semibold">Materials</th>
+                    <th className="text-left p-4 font-semibold">Malzemeler</th>
                     <th className="text-left p-4 font-semibold">
-                      Max Part Size
+                      Maks. Parça Boyutu
                     </th>
                     <th className="text-left p-4 font-semibold">
-                      Min Feature Size
+                      Min. Özellik Boyutu
                     </th>
-                    <th className="text-left p-4 font-semibold">Tolerance</th>
+                    <th className="text-left p-4 font-semibold">Tolerans</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -358,14 +359,14 @@ export default function ThreePrinting() {
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-[#0B1221] text-white">
-                    <th className="text-left p-4 font-semibold">Materials</th>
+                    <th className="text-left p-4 font-semibold">Malzemeler</th>
                     <th className="text-left p-4 font-semibold">
-                      Max Part Size
+                      Maks. Parça Boyutu
                     </th>
                     <th className="text-left p-4 font-semibold">
-                      Min Feature Size
+                      Min. Özellik Boyutu
                     </th>
-                    <th className="text-left p-4 font-semibold">Tolerance</th>
+                    <th className="text-left p-4 font-semibold">Tolerans</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -415,9 +416,9 @@ export default function ThreePrinting() {
 
       <Hint />
 
-      <MetalsSection metals={metalsData} title="Metal 3D Printing Materials" />
+      <MetalsSection metals={metalsData} title="Metal 3D Baskı Malzemeleri" />
       <GuideDownload
-        title={"3D Printing Surface Finish Guide"}
+        title={"3D Baskı Yüzey İşlem Kılavuzu"}
         desc={
           "Bu kapsamlı referans kılavuzu, teklif alma, tasarım analizi ve sevkiyattan, modelinizin kalıplama için optimize edilmesini sağlayan en iyi uygulamalara kadar her şeyi size adım adım gösterir."
         }
@@ -431,14 +432,14 @@ export default function ThreePrinting() {
             {/* Left Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Sample Quote
+                Örnek Teklif
               </h2>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Explore our material feature that lets you compare the cost of
-                3DP processes, materials, and resolutions.
+                3DP süreçlerinin, malzemelerin ve çözünürlüklerin maliyetini
+                karşılaştırmanıza olanak tanıyan malzeme özelliğimizi keşfedin.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                View Sample Quote
+                Örnek Teklifi Görüntüle
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -464,8 +465,8 @@ export default function ThreePrinting() {
 
             {/* Testimonial Text */}
             <p className="text-white text-xl md:text-2xl leading-relaxed mb-6">
-              &quot;Great service at a fair price and the quality of my parts is
-              fantastic. Keep up the great work.&quot;
+              &quot;Adil fiyata harika hizmet ve parçalarımın kalitesi mükemmel.
+              Harika çalışmalarınıza devam edin.&quot;
             </p>
 
             {/* Divider */}
@@ -493,15 +494,16 @@ export default function ThreePrinting() {
             {/* Right Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                3D Printing Toolkit
+                3D Baskı Araç Seti
               </h2>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Get in-depth design advice to optimize 3D-printed parts.
-                Designing with additive manufacturing in mind can accelerate
-                production time and reduce overall cost.
+                3D baskılı parçaları optimize etmek için derinlemesine tasarım
+                tavsiyeleri alın. Eklemeli üretimi göz önünde bulundurarak
+                tasarım yapmak, üretim süresini hızlandırabilir ve genel
+                maliyeti azaltabilir.
               </p>
               <button className="bg-[#0099ff] hover:bg-[#0077cc] text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Check Out The Toolkit
+                Araç Setini İncele
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -513,7 +515,7 @@ export default function ThreePrinting() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-12">
-            Surface Finish Options for 3D Prints
+            3D Baskılar için Yüzey İşlem Seçenekleri
           </h2>
 
           {/* Table */}
@@ -522,48 +524,48 @@ export default function ThreePrinting() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold w-1/4">
-                    Finish Type
+                    İşlem Tipi
                   </th>
-                  <th className="text-left p-4 font-semibold">Description</th>
+                  <th className="text-left p-4 font-semibold">Açıklama</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 align-top">
-                    Unfinished
+                    Bitmemiş
                   </td>
                   <td className="p-4 text-gray-600">
-                    Dots, or standing "nibs," remain evident on the bottom of
-                    the part from the support structure remnants.
+                    Destek yapısı kalıntılarından parçanın alt kısmında noktalar
+                    veya dikenler belirgin kalır.
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 align-top">
-                    Natural
+                    Doğal
                   </td>
                   <td className="p-4 text-gray-600">
-                    Supported surfaces are sanded down to eliminate the support
-                    nibs.
+                    Destekli yüzeyler, destek dikenlerini ortadan kaldırmak için
+                    zımparalanır.
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 align-top">
-                    Standard
+                    Standart
                   </td>
                   <td className="p-4 text-gray-600">
-                    Supported surfaces are sanded, and the entire part is finely
-                    blasted for a consistent look. Note that the layers are
-                    still present.
+                    Destekli yüzeyler zımparalanır ve tüm parça tutarlı bir
+                    görünüm için ince kumlanır. Katmanların hala mevcut olduğunu
+                    unutmayın.
                   </td>
                 </tr>
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 align-top">
-                    Custom
+                    Özel
                   </td>
                   <td className="p-4 text-gray-600">
-                    Soft-touch paint, clear part finishing, painting, masking,
-                    color matching, decals/graphic, and texture finishes are
-                    available.
+                    Yumuşak dokunuşlu boya, şeffaf parça bitirme, boyama,
+                    maskeleme, renk eşleme, çıkartmalar/grafikler ve doku
+                    yüzeyleri mevcuttur.
                   </td>
                 </tr>
               </tbody>
@@ -577,7 +579,7 @@ export default function ThreePrinting() {
               <div className="flex items-center justify-center h-full">
                 <div className="text-center">
                   <span className="text-5xl block mb-2">👨‍🔧</span>
-                  <p className="text-gray-500 text-sm">Working on 3D printer</p>
+                  <p className="text-gray-500 text-sm">3D yazıcıda çalışma</p>
                 </div>
               </div>
             </div>
@@ -588,7 +590,7 @@ export default function ThreePrinting() {
                 <div className="text-center">
                   <span className="text-5xl block mb-2">🖨️</span>
                   <p className="text-gray-500 text-sm">
-                    3D printer nozzle with resin
+                    3D yazıcı nozulu reçine ile
                   </p>
                 </div>
               </div>
@@ -602,15 +604,15 @@ export default function ThreePrinting() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-            Custom Finishing
+            Özel Bitirme
           </h2>
 
           {/* Description */}
           <p className="text-gray-300 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
-            Looking to boost the strength, clarity, or appearance of your
-            3D-printed parts? Choose from microfluidic and micro-resolution
-            materials, metal plating, secondary machining, and custom finishes
-            like painting, clear coating, and decaling.
+            3D baskılı parçalarınızın mukavemetini, şeffaflığını veya görünümünü
+            iyileştirmek mi istiyorsunuz? Mikroakışkan ve mikro-çözünürlük
+            malzemeleri, metal kaplama, ikincil işleme ve boyama, şeffaf kaplama
+            ve dekal uygulama gibi özel yüzey işlemleri arasından seçim yapın.
           </p>
 
           {/* Table */}
@@ -619,88 +621,88 @@ export default function ThreePrinting() {
               <thead>
                 <tr className="bg-white/10 text-white">
                   <th className="text-left p-4 font-semibold w-1/4">
-                    Finish Type
+                    İşlem Tipi
                   </th>
-                  <th className="text-left p-4 font-semibold">Description</th>
+                  <th className="text-left p-4 font-semibold">Açıklama</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-white/10">
                   <td className="p-4 font-semibold text-[#96E92A] bg-white/5 align-top">
-                    Clear Coat
+                    Şeffaf Kaplama
                   </td>
                   <td className="p-4 text-gray-300">
-                    Clear cosmetic finish that can be applied to ABS-Like
-                    Translucent/Clear (WaterShed XC 11122) and PC-Like
-                    Translucent/Clear (Accura 60) materials.
+                    ABS-Benzeri Yarı Saydam/Şeffaf (WaterShed XC 11122) ve
+                    PC-Benzeri Yarı Saydam/Şeffaf (Accura 60) malzemelerine
+                    uygulanabilen şeffaf kozmetik kaplama.
                   </td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-4 font-semibold text-[#96E92A] bg-white/5 align-top">
-                    Painting
+                    Boyama
                   </td>
                   <td className="p-4 text-gray-300">
-                    After smoothing the part with sanding and polishing, parts
-                    can be painted with automotive-grade paint. Provide a
-                    pantone color with your quote request. We also offer
-                    soft-touch painting.
+                    Parçayı zımparalama ve parlatma ile düzelttikten sonra,
+                    parçalar otomotiv sınıfı boya ile boyanabilir. Teklif
+                    talebinizle birlikte bir pantone rengi sağlayın. Ayrıca
+                    yumuşak dokunuşlu boya da sunuyoruz.
                   </td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-4 font-semibold text-[#96E92A] bg-white/5 align-top">
-                    Plating
+                    Kaplama
                   </td>
                   <td className="p-4 text-gray-300">
-                    Electroless nickel plating can be used to achieve parts that
-                    are similar to cast aluminum or magnesium.
+                    Elektrolizsiz nikel kaplama, döküm alüminyum veya magnezyuma
+                    benzer parçalar elde etmek için kullanılabilir.
                   </td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-4 font-semibold text-[#96E92A] bg-white/5 align-top">
-                    Dyeing
+                    Boyama (Daldırma)
                   </td>
                   <td className="p-4 text-gray-300">
-                    Dyeing is another method for adding color to 3D prints. This
-                    is a faster option with a limited color selection, so is a
-                    more cost-effective choice than painting.
+                    Boyama, 3D baskılara renk eklemek için başka bir yöntemdir.
+                    Bu, sınırlı renk seçeneği olan daha hızlı bir seçenektir, bu
+                    nedenle boyamadan daha uygun maliyetli bir seçimdir.
                   </td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-4 font-semibold text-[#96E92A] bg-white/5 align-top">
-                    Decaling
+                    Dekal Uygulama
                   </td>
                   <td className="p-4 text-gray-300">
-                    Decaling can be used to add a logo or other graphics to
-                    boost cosmetics or function.
+                    Dekal uygulama, kozmetik veya işlevi iyileştirmek için bir
+                    logo veya diğer grafikleri eklemek için kullanılabilir.
                   </td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-4 font-semibold text-[#96E92A] bg-white/5 align-top">
-                    Polishing
+                    Parlatma
                   </td>
                   <td className="p-4 text-gray-300">
-                    We can polish parts to a mirror-like finish. If this is a
-                    requirement, we ask that you provide either a drawing or
-                    image that indicates your finish expectations.
+                    Parçaları ayna benzeri bir yüzeye kadar parlatabiliriz. Bu
+                    bir gereksinimse, yüzey işlemi beklentilerinizi gösteren bir
+                    çizim veya görüntü sağlamanızı rica ediyoruz.
                   </td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-4 font-semibold text-[#96E92A] bg-white/5 align-top">
-                    Heat Treatment
+                    Isıl İşlem
                   </td>
                   <td className="p-4 text-gray-300">
-                    Harden and strengthen metal 3D prints with multiple heat
-                    treatment options: NADCAP heat treatment, hot isostatic
-                    pressing (HIP), solution annealing, and aging.
+                    Metal 3D baskıları birden fazla ısıl işlem seçeneği ile
+                    sertleştirin ve güçlendirin: NADCAP ısıl işlem, sıcak
+                    izostatik presleme (HIP), çözelti tavlaması ve yaşlandırma.
                   </td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-4 font-semibold text-[#96E92A] bg-white/5 align-top">
-                    Machining
+                    İşleme
                   </td>
                   <td className="p-4 text-gray-300">
-                    Machine metal 3D prints to achieve exceptional surface
-                    finish quality or meet tight tolerances.
+                    Olağanüstü yüzey kalitesi elde etmek veya sıkı toleransları
+                    karşılamak için metal 3D baskıları işleyin.
                   </td>
                 </tr>
               </tbody>
@@ -715,51 +717,52 @@ export default function ThreePrinting() {
             {/* Left Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                Why Choose Us for Custom 3D Printing?
+                Neden Özel 3D Baskı İçin Bizi Tercih Etmelisiniz?
               </h2>
 
               <div className="space-y-6">
                 {/* Unmatched Quality */}
                 <div>
                   <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                    Unmatched Quality
+                    Benzersiz Kalite
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Get design feedback from our experienced engineering team
-                    that has helped thousands of customers bring their products
-                    to market with quality 3D-printed parts. We will also work
-                    with you to determine optimal part orientation based on your
-                    application's requirements.
+                    Binlerce müşterinin ürünlerini kaliteli 3D baskılı
+                    parçalarla pazara sunmasına yardımcı olan deneyimli
+                    mühendislik ekibimizden tasarım geri bildirimi alın. Ayrıca,
+                    uygulamanızın gereksinimlerine göre optimum parça yönelimini
+                    belirlemek için sizinle birlikte çalışacağız.
                   </p>
                 </div>
 
                 {/* Wide Material Selection */}
                 <div>
                   <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                    Wide Material Selection
+                    Geniş Malzeme Seçimi
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Across our six 3D printing technologies, we use a range of
-                    commercial-grade thermoset resins, and thermoplastic and
-                    metal powders to 3D print parts that are suitable for
-                    various part applications and industries. If required for
-                    your parts, we offer a variety of post-process options such
-                    as heat treating, secondary machining, plating, painting,
-                    and dyeing to further enhance mechanical properties and
-                    cosmetics.
+                    Altı 3D baskı teknolojimiz genelinde, çeşitli parça
+                    uygulamaları ve endüstrileri için uygun 3D baskılı parçalar
+                    üretmek üzere bir dizi ticari sınıf termoset reçine,
+                    termoplastik ve metal tozu kullanıyoruz. Parçalarınız için
+                    gerekliyse, mekanik özellikleri ve kozmetik görünümü daha da
+                    geliştirmek için ısıl işlem, ikincil işleme, kaplama, boyama
+                    ve renklendirme gibi çeşitli işlem sonrası seçenekleri
+                    sunuyoruz.
                   </p>
                 </div>
 
                 {/* Scale and Production */}
                 <div>
                   <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                    Scale and Production
+                    Ölçek ve Üretim
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Our facility is home to more than 120 3D printing machines
-                    that produce metal and plastic parts. This means we'll
-                    always have capacity when you need parts fast—whether it's a
-                    small batch of parts or production level volumes.
+                    Tesisimiz, metal ve plastik parçalar üreten 120'den fazla 3D
+                    baskı makinesine ev sahipliği yapmaktadır. Bu, ister küçük
+                    bir parti parça ister üretim seviyesi hacimler olsun,
+                    parçaları hızlı bir şekilde ihtiyaç duyduğunuzda her zaman
+                    kapasitemiz olacağı anlamına gelir.
                   </p>
                 </div>
               </div>
@@ -770,9 +773,7 @@ export default function ThreePrinting() {
               <div className="flex items-center justify-center h-full">
                 <div className="text-center">
                   <span className="text-7xl block mb-3">🖨️</span>
-                  <p className="text-gray-500 font-medium">
-                    3D Printing Facility
-                  </p>
+                  <p className="text-gray-500 font-medium">3D Baskı Tesisi</p>
                 </div>
               </div>
             </div>
@@ -792,10 +793,10 @@ export default function ThreePrinting() {
                     <PlayCircle className="w-10 h-10 text-[#0B1221] ml-1" />
                   </div>
                   <p className="text-white text-lg font-semibold">
-                    What is 3D Printing?
+                    3D Baskı Nedir?
                   </p>
                   <p className="text-gray-300 text-sm mt-1">
-                    FASONLY | Manufacturing Accelerated
+                    FASONLY | Hızlandırılmış Üretim
                   </p>
                 </div>
               </div>
@@ -805,22 +806,22 @@ export default function ThreePrinting() {
             {/* Right Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                What is 3D Printing?
+                3D Baskı Nedir?
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                3D printing is a term used to describe a number of additive
-                manufacturing technologies that produce parts one layer at a
-                time from a 3D digital model.
+                3D baskı, bir 3D dijital modelden parçaları her seferinde bir
+                katman olacak şekilde üreten bir dizi eklemeli üretim
+                teknolojisini tanımlamak için kullanılan bir terimdir.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Some 3D printing machines will extrude a filament to create
-                parts, while others use lasers to sinter or cure raw materials
-                like metal or plastic powders and liquid resins.
+                Bazı 3D baskı makineleri parçalar oluşturmak için bir filament
+                ekstrüde ederken, diğerleri metal veya plastik tozları ve sıvı
+                reçineler gibi ham maddeleri sinterlemek veya kürlemek için
+                lazerler kullanır.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                There are a variety of 3D printing technologies that differ in
-                terms of materials, surface finish quality, cost, and quantity
-                to name a few.
+                Malzemeler, yüzey kalitesi, maliyet ve miktar açısından
+                farklılık gösteren çeşitli 3D baskı teknolojileri bulunmaktadır.
               </p>
             </div>
           </div>
@@ -835,21 +836,20 @@ export default function ThreePrinting() {
             {/* Left Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Advantages of 3D Printing
+                3D Baskının Avantajları
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Building parts layer-by-layer brings about many benefits that
-                open up design possibilities that were previously unachievable
-                through traditional processes like injection molding, machining,
-                or casting.
+                Parçaları katman katman inşa etmek, daha önce enjeksiyon
+                kalıplama, işleme veya döküm gibi geleneksel süreçlerle
+                ulaşılamayan tasarım olasılıklarını açan birçok fayda sağlar.
               </p>
               <ul className="space-y-2">
                 {[
-                  "Complex, organic geometries with limited impact on part cost",
-                  "Consolidation of multi-component assembly into a single part",
-                  "No upfront tooling costs",
-                  "Fast production for parts within 24 hours",
-                  "Internal features for advanced heat transfer and flow applications",
+                  "Parça maliyeti üzerinde sınırlı etkisi olan karmaşık, organik geometriler",
+                  "Çok bileşenli montajın tek bir parçada birleştirilmesi",
+                  "Ön takım maliyeti yok",
+                  "24 saat içinde parçalar için hızlı üretim",
+                  "Gelişmiş ısı transferi ve akış uygulamaları için iç özellikler",
                 ].map((item, idx) => (
                   <li
                     key={idx}
@@ -881,25 +881,24 @@ export default function ThreePrinting() {
             {/* Right Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Common 3D Printing Applications
+                Yaygın 3D Baskı Uygulamaları
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Additive manufacturing can be leveraged for both rapid
-                prototyping and production in aerospace, medical, automotive,
-                and other large industry sectors. Examples of typical parts,
-                include:
+                Eklemeli üretim, havacılık, medikal, otomotiv ve diğer büyük
+                endüstri sektörlerinde hem hızlı prototipleme hem de üretim için
+                kullanılabilir. Tipik parça örnekleri şunları içerir:
               </p>
               <ul className="grid grid-cols-2 gap-2">
                 {[
-                  "Form and fit prototypes",
-                  "Housings and enclosures",
-                  "Medical devices",
-                  "Snap fits",
-                  "Jigs and fixtures",
-                  "Heat exchangers and heat sinks",
-                  "Engine components",
-                  "Fuel injectors",
-                  "Surgical instrumentation",
+                  "Form ve uyum prototipleri",
+                  "Gövdeler ve muhafazalar",
+                  "Medikal cihazlar",
+                  "Geçmeli bağlantılar",
+                  "Tezgahlar ve fikstürler",
+                  "Isı eşanjörleri ve soğutucular",
+                  "Motor bileşenleri",
+                  "Yakıt enjektörleri",
+                  "Cerrahi aletler",
                 ].map((item, idx) => (
                   <li
                     key={idx}
@@ -922,21 +921,21 @@ export default function ThreePrinting() {
             {/* Left Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Get an Instant 3D Printing Quote
+                Anında 3D Baskı Teklifi Alın
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Upload a 3D CAD file to get an instant quote on your 3D printing
-                design. In our quoting platform, you can see real-time cost
-                implications based on your choice of 3D printing material and
-                resolution level.
+                3D baskı tasarımınız için anında teklif almak üzere bir 3D CAD
+                dosyası yükleyin. Teklif platformumuzda, 3D baskı malzemesi ve
+                çözünürlük seviyesi seçiminize bağlı olarak gerçek zamanlı
+                maliyet etkilerini görebilirsiniz.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                If you have any questions regarding your quote or design, you
-                can then work with our applications engineering team and they
-                will help guide you through the process.
+                Teklifiniz veya tasarımınızla ilgili herhangi bir sorunuz varsa,
+                uygulama mühendisliği ekibimizle çalışabilir ve süreç boyunca
+                size rehberlik etmelerine yardımcı olabilirsiniz.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Get Instant Quote
+                Anında Teklif Al
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -950,7 +949,7 @@ export default function ThreePrinting() {
                     <PlayCircle className="w-10 h-10 text-[#0B1221] ml-1" />
                   </div>
                   <p className="text-white text-lg font-semibold">
-                    Digital Quoting Enhancements for 3D Printing
+                    3D Baskı için Dijital Teklif İyileştirmeleri
                   </p>
                   <p className="text-gray-300 text-sm mt-1">FASONLY</p>
                 </div>
@@ -963,8 +962,8 @@ export default function ThreePrinting() {
       {/* faqs section */}
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
-          <h2 className="text-3xl md:text-4xl w-full flex  justify-center font-bold text-[#0B1221] mb-10">
-            3D Printing FAQs
+          <h2 className="text-3xl md:text-4xl w-full flex justify-center font-bold text-[#0B1221] mb-10">
+            3D Baskı SSS
           </h2>
           <Accordion items={faqItems} />
         </div>

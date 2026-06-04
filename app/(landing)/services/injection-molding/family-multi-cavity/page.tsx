@@ -8,80 +8,81 @@ export default function page() {
   const [activeTab, setActiveTab] = useState("maximumPartSize");
 
   const tabs = [
-    { id: "maximumPartSize", label: "Maximum Part Size" },
-    { id: "maximumPartVolume", label: "Maximum Part Volume" },
-    { id: "maximumNumberOfCavities", label: "Maximum Number of Cavities" },
-    { id: "maximumSurfaceArea", label: "Maximum Surface Area" },
-    { id: "leadTimes", label: "Lead Times" },
+    { id: "maximumPartSize", label: "Maksimum Parça Boyutu" },
+    { id: "maximumPartVolume", label: "Maksimum Parça Hacmi" },
+    { id: "maximumNumberOfCavities", label: "Maksimum Göz Sayısı" },
+    { id: "maximumSurfaceArea", label: "Maksimum Yüzey Alanı" },
+    { id: "leadTimes", label: "Teslim Süreleri" },
   ];
 
   const content = {
     maximumPartSize: {
-      title: "Maximum Part Size",
+      title: "Maksimum Parça Boyutu",
       description:
-        "Maximum part size is a function of mold size and part complexity. The largest size we can support with plastic injection molding is 18.9 in. by 29.6 in. by 8 in. (480mm by 751mm by 203mm).",
+        "Maksimum parça boyutu, kalıp boyutunun ve parça karmaşıklığının bir fonksiyonudur. Plastik enjeksiyon kalıplama ile destekleyebileceğimiz en büyük boyut 18,9 inç x 29,6 inç x 8 inç'tir (480mm x 751mm x 203mm).",
       table: null,
     },
     maximumPartVolume: {
-      title: "Maximum Part Volume",
+      title: "Maksimum Parça Hacmi",
       description:
-        "Maximum is 59 in. (1,499mm). Specs below exclude tiny parts less than 0.05 in. (1.27mm). Between two parts, if volume is:",
+        "Maksimum 59 inç (1.499mm)'dir. Aşağıdaki özellikler 0,05 inçten (1,27mm) küçük parçaları hariç tutar. İki parça arasında, hacim şu şekildeyse:",
       table: {
-        headers: ["If part size is:", "Maximum Difference in Part Volume"],
+        headers: ["Parça boyutu:", "Parça Hacmindeki Maksimum Fark"],
         rows: [
-          ["< 2 in. (50.8mm)", "20%"],
-          ["2 in. (50.8mm) to < 5 in. (127mm)", "15%"],
-          ["5 in. (127mm) to < 10 in. (254mm)", "10%"],
-          ["10 in. (254mm) to 59 in. (1499mm)", "5%"],
+          ["< 2 inç (50,8mm)", "%20"],
+          ["2 inç (50,8mm) ile < 5 inç (127mm)", "%15"],
+          ["5 inç (127mm) ile < 10 inç (254mm)", "%10"],
+          ["10 inç (254mm) ile 59 inç (1499mm)", "%5"],
         ],
       },
     },
     maximumNumberOfCavities: {
-      title: "Maximum Number of Cavities",
+      title: "Maksimum Göz Sayısı",
       description:
-        "The number of possible cavities can be 2, 4, or 8 per mold. This ultimately is dependent on part complexity and size.",
+        "Olası göz sayısı kalıp başına 2, 4 veya 8 olabilir. Bu nihayetinde parça karmaşıklığına ve boyutuna bağlıdır.",
       table: null,
     },
     maximumSurfaceArea: {
-      title: "Maximum Surface Area",
+      title: "Maksimum Yüzey Alanı",
       description:
-        "Maximum is 175 in. (4,445mm), each cavity added together. Between two parts, if surface area is:",
+        "Maksimum 175 inç (4.445mm)'dir, her bir göz birbirine eklenir. İki parça arasında, yüzey alanı şu şekildeyse:",
       table: {
-        headers: [
-          "If part size is:",
-          "Maximum Difference in Part Surface Area",
-        ],
+        headers: ["Parça boyutu:", "Parça Yüzey Alanındaki Maksimum Fark"],
         rows: [
-          ["< 5 in. (127mm)", "20%"],
-          ["5 in. (127mm) to < 10 in. (254mm)", "15%"],
-          ["10 in. (254mm) to < 20 in. (508mm)", "10%"],
-          ["20 in. (508mm) to < 59 in. (1499mm)", "5%"],
+          ["< 5 inç (127mm)", "%20"],
+          ["5 inç (127mm) ile < 10 inç (254mm)", "%15"],
+          ["10 inç (254mm) ile < 20 inç (508mm)", "%10"],
+          ["20 inç (508mm) ile < 59 inç (1499mm)", "%5"],
         ],
       },
     },
     leadTimes: {
-      title: "Lead Times for Multi-Cavity and Family Tools",
+      title: "Çok Gözlü ve Aile Kalıpları için Teslim Süreleri",
       description:
-        "Fundamentally, lead times are based on the complexity and size of your mold and can vary from 1 to 20 days, based on those attributes. Below is a rough idea of what you can expect in terms of turnaround for your parts.",
+        "Temel olarak, teslim süreleri kalıbınızın karmaşıklığına ve boyutuna bağlıdır ve bu özelliklere göre 1 ila 20 gün arasında değişebilir. Aşağıda parçalarınızın teslim süresi açısından ne bekleyebileceğinize dair kabaca bir fikir verilmiştir.",
       table: {
-        headers: ["If maximum part size is:", "Design Specs", "Lead time is:"],
+        headers: [
+          "Maksimum parça boyutu:",
+          "Tasarım Özellikleri",
+          "Teslim Süresi:",
+        ],
         rows: [
           [
-            "Maximum Part Volume",
-            "No side-pulls, hot-tip gates, contoured ejectors, steel core pins, family and multi-cavity molds",
-            "1 business day",
+            "Maksimum Parça Hacmi",
+            "Yan çekme yok, sıcak uçlu kapaklar, konturlu iticiler, çelik çekirdek pimleri, aile ve çok gözlü kalıplar yok",
+            "1 iş günü",
           ],
-          ["Maximum Surface Area", "", ""],
-          ["Lead Times", "", ""],
+          ["Maksimum Yüzey Alanı", "", ""],
+          ["Teslim Süreleri", "", ""],
           [
-            "15 in. by 9 in. by 4 in. (381mm by 229mm by 101.6mm); depending on gate type, maximum part size could be smaller",
-            "Does not contain more than two side-pulls; no pick-out cams; family and multi-cavity molds may include only two simple parts",
-            "5 business days",
+            "15 inç x 9 inç x 4 inç (381mm x 229mm x 101,6mm); kapak tipine bağlı olarak maksimum parça boyutu daha küçük olabilir",
+            "İkiden fazla yan çekme içermez; seçmeli kam yok; aile ve çok gözlü kalıplar yalnızca iki basit parça içerebilir",
+            "5 iş günü",
           ],
           [
-            "15 in. by 9 in. by 4 in. (381mm by 229mm by 101.6mm); depending on gate type, maximum part size could be larger",
-            "Does not contain more than two side-pulls; no pick-out cams; family and multi-cavity molds may include only two simple parts",
-            "7 business days",
+            "15 inç x 9 inç x 4 inç (381mm x 229mm x 101,6mm); kapak tipine bağlı olarak maksimum parça boyutu daha büyük olabilir",
+            "İkiden fazla yan çekme içermez; seçmeli kam yok; aile ve çok gözlü kalıplar yalnızca iki basit parça içerebilir",
+            "7 iş günü",
           ],
         ],
       },
@@ -93,9 +94,9 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Multi-Cavity and Family Injection Molding"
-        desc="Maximize each shot with multiples of the same or different parts from a single mold"
-        firstButton={{ title: "Get Instant Quote", route: "/" }}
+        title="Çok Gözlü ve Aile Enjeksiyon Kalıplama"
+        desc="Tek bir kalıptan aynı veya farklı parçaların birden fazlası ile her atışı maksimize edin"
+        firstButton={{ title: "Anında Teklif Al", route: "/" }}
       />
 
       <div className="w-full bg-white py-20">
@@ -105,15 +106,15 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Capabilities",
-                    "Material options",
-                    "Surface Finishes",
-                    "What is Multi-cavity or Family Injection Molding?",
-                    "Common Applications",
+                    "Yetenekler",
+                    "Malzeme Seçenekleri",
+                    "Yüzey İşlemleri",
+                    "Çok Gözlü veya Aile Enjeksiyon Kalıplama Nedir?",
+                    "Yaygın Uygulamalar",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -128,35 +129,35 @@ export default function page() {
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
+              {/* What is Family and Multi-Cavity Molding? Section */}
               <div
-                id="about-plastic-injection-molding"
+                id="çok-gözlü-veya-aile-enjeksiyon-kalıplama-nedir"
                 className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  What is Family and Multi-Cavity Molding?
+                  Aile ve Çok Gözlü Kalıplama Nedir?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Family molding and multi-cavity molding are techniques used to
-                  produce multiple parts from a single mold. Rather than
-                  producing a single part with each cycle, multiple parts can be
-                  produced with a single shot. Multi-cavity molding describes a
-                  tool with the same cavity designed to produce multiples of the
-                  same parts. While family molding describes a tool with various
-                  cavity designs such as a left and right components that mate
-                  together.
+                  Aile kalıplama ve çok gözlü kalıplama, tek bir kalıptan birden
+                  fazla parça üretmek için kullanılan tekniklerdir. Her döngüde
+                  tek bir parça üretmek yerine, tek bir enjeksiyonla birden
+                  fazla parça üretilebilir. Çok gözlü kalıplama, aynı parçaların
+                  birden fazlasını üretmek için tasarlanmış aynı göze sahip bir
+                  takımı tanımlar. Aile kalıplama ise birbirine uyan sol ve sağ
+                  bileşenler gibi çeşitli göz tasarımlarına sahip bir takımı
+                  tanımlar.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Common applications for Insert molding:
+                  Gömme parçalı kalıplama için yaygın uygulamalar:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "low-volume production",
-                    "bridge tooling",
-                    "pilot runs",
-                    "functional prototyping",
+                    "düşük hacimli üretim",
+                    "köprü takımı",
+                    "pilot çalışmalar",
+                    "fonksiyonel prototipleme",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -173,8 +174,8 @@ export default function page() {
       </div>
 
       <GuideDownload
-        title="Definitive Guide to Injection Molding"
-        desc="This complete reference guide walks you through everything from quoting, design analysis, and shipment to best practices that ensure your model is optimized for molding."
+        title="Enjeksiyon Kalıplama Kesin Kılavuzu"
+        desc="Bu tam referans kılavuzu, teklif alma, tasarım analizi ve sevkiyattan, modelinizin kalıplama için optimize edildiğini garanti eden en iyi uygulamalara kadar her şeyde size yol gösterir."
       />
 
       <div className="w-full bg-white py-20">
@@ -182,14 +183,14 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Family and Multi-Cavity Molding Capabilities
+              Aile ve Çok Gözlü Kalıplama Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our basic guidelines for multi-cavity and family injection molding
-              include important design considerations to help improve part
-              moldability, enhance cosmetic appearance, and reduce overall
-              production time.
+              Çok gözlü ve aile enjeksiyon kalıplama için temel kılavuzlarımız,
+              parça kalıplanabilirliğini iyileştirmeye, kozmetik görünümü
+              geliştirmeye ve genel üretim süresini azaltmaya yardımcı olacak
+              önemli tasarım hususlarını içerir.
             </p>
           </div>
 
@@ -263,12 +264,12 @@ export default function page() {
                 <div className="mt-6 p-4 bg-[#F0F8FF] rounded-lg">
                   <p className="text-gray-600 text-sm leading-relaxed">
                     <span className="font-semibold text-[#0B1221]">
-                      Tolerances:
+                      Toleranslar:
                     </span>{" "}
-                    Typically, Fasonly can maintain a machining tolerance of +/-
-                    0.003 in. (0.08mm) with an included resin tolerance that can
-                    be greater than but no less than +/- 0.002 in./in.
-                    (0.002mm/mm).
+                    Tipik olarak Fasonly, +/- 0,003 inç (0,08mm) işleme
+                    toleransını koruyabilir ve buna dahil olan reçine toleransı
+                    +/- 0,002 inç/inç'ten (0,002mm/mm) büyük ancak daha az
+                    olmayabilir.
                   </p>
                 </div>
               </div>
@@ -283,20 +284,20 @@ export default function page() {
             {/* Left Column - Materials List */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Injection Molding Materials
+                Enjeksiyon Kalıplama Malzemeleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <div className="grid grid-cols-2 gap-x-8 gap-y-2">
                 {[
                   "ABS",
-                  "Acetal Copolymer",
-                  "Acetal Homopolymer/Delrin",
+                  "Asetal Kopolimer",
+                  "Asetal Homopolimer/Delrin",
                   "ETPU",
                   "HDPE",
                   "LCP",
                   "LDPE",
                   "LLDPE",
-                  "Nylon",
+                  "Naylon",
                   "PBT",
                   "PC/ABS",
                   "PC/PBT",
@@ -304,9 +305,9 @@ export default function page() {
                   "PEI",
                   "PET",
                   "PETG",
-                  "PMMA (Acrylic, Plexiglas)",
-                  "Polycarbonate",
-                  "Polypropylene",
+                  "PMMA (Akrilik, Plexiglas)",
+                  "Polikarbonat",
+                  "Polipropilen",
                   "PPA",
                   "PPE/PS",
                   "PS",
@@ -329,7 +330,7 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/family-multi-cavity/im-nylon_resin_pellets_570x308.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Enjeksiyon kalıplama malzemeleri"
                 />
               </div>
             </div>
@@ -348,7 +349,7 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/family-multi-cavity/im-services-img.png"
                   }
                   fill
-                  alt="design cube"
+                  alt="Yüzey işlem seçenekleri"
                 />
               </div>
             </div>
@@ -356,21 +357,21 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Surface Finish Options
+                Yüzey İşlem Seçenekleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               {/* Finish List */}
               <div className="space-y-2">
                 {[
-                  "PM-FO - non-cosmetic, finish to Fasonly' discretion",
-                  "PM-F1 - low-cosmetic, most toolmarks removed",
-                  "PM-F2 - non-cosmetic, EDM permissible",
-                  "SPI-C1 - 600 grit stone",
-                  "PM-T1 - SPI-C1 + light bead blast",
-                  "PM-T2 - SPI-C1 + medium bead blast",
-                  "SPI-B1 - 600 grit paper",
-                  "SPI-A2 - grade #2 diamond buff",
+                  "PM-FO - kozmetik olmayan, Fasonly'nin takdirine göre bitirme",
+                  "PM-F1 - düşük kozmetik, çoğu takım izi giderilmiş",
+                  "PM-F2 - kozmetik olmayan, EDM izin verilebilir",
+                  "SPI-C1 - 600 grit taş",
+                  "PM-T1 - SPI-C1 + hafif boncuk püskürtme",
+                  "PM-T2 - SPI-C1 + orta boncuk püskürtme",
+                  "SPI-B1 - 600 grit zımpara",
+                  "SPI-A2 - 2 numara elmas cilalama",
                 ].map((finish, idx) => (
                   <div key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -388,28 +389,29 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                How Does Multi-Cavity or Family Molding Work?
+                Çok Gözlü veya Aile Kalıplama Nasıl Çalışır?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Multi-cavity molds enable the production of multiple versions of
-                the same part in a single shot. You can take this process to the
-                next logical step when you include many different parts on the
-                same mold, creating a family mold. If you have ever built a
-                plastic model, you've probably worked with parts made in a
-                family mold. The runners between each part are left intact,
-                forcing you to break each part off the whole.
+                Çok gözlü kalıplar, tek bir enjeksiyonda aynı parçanın birden
+                fazla versiyonunun üretilmesini sağlar. Aynı kalıp üzerinde
+                birçok farklı parçayı birleştirerek bir aile kalıbı
+                oluşturduğunuzda bu süreci bir sonraki mantıksal adıma
+                taşıyabilirsiniz. Hiç plastik model yaptıysanız, muhtemelen bir
+                aile kalıbında üretilmiş parçalarla çalışmışsınızdır. Her parça
+                arasındaki kanallar sağlam bırakılır ve sizi her bir parçayı
+                bütünden ayırmaya zorlar.
               </p>
 
               <h3 className="text-xl font-bold text-[#0B1221] mb-3 mt-6">
-                Advantages:
+                Avantajlar:
               </h3>
               <ul className="space-y-2 mb-6">
                 {[
-                  "High Production Volume: Significantly increases the number of parts produced per hour compared to a single-cavity mold",
-                  "Efficiency: Maximizes machine utilization",
-                  "Lower Per-part Cost: While the mold itself is more expensive initially, the cost per individual part drops dramatically due to the increased output rate and reduced cycle time per part",
+                  "Yüksek Üretim Hacmi: Tek gözlü bir kalıba kıyasla saatte üretilen parça sayısını önemli ölçüde artırır",
+                  "Verimlilik: Makine kullanımını maksimize eder",
+                  "Daha Düşük Parça Başı Maliyet: Kalıbın kendisi başlangıçta daha pahalı olsa da, artan çıktı hızı ve parça başına azalan döngü süresi nedeniyle bireysel parça başına maliyet önemli ölçüde düşer",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -419,12 +421,12 @@ export default function page() {
               </ul>
 
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Challenges:
+                Zorluklar:
               </h3>
               <ul className="space-y-2">
                 {[
-                  "Mold Complexity and Cost: It costs more to design and build a balanced multi-cavity mold due to the added complexity and time it takes to cut the mold, but you might make up for that with a lower piece-part price",
-                  "Balancing: Ensure that all cavities fill evenly and at the same rate for consistent part quality. Careful runner system design is critical",
+                  "Kalıp Karmaşıklığı ve Maliyeti: Dengeleyici bir çok gözlü kalıp tasarlamak ve üretmek, eklenen karmaşıklık ve kalıbı kesme süresi nedeniyle daha pahalıya mal olur, ancak bunu daha düşük parça fiyatıyla telafi edebilirsiniz",
+                  "Dengeleme: Tutarlı parça kalitesi için tüm gözlerin eşit ve aynı oranda dolmasını sağlayın. Dikkatli kanal sistemi tasarımı kritik öneme sahiptir",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -442,7 +444,7 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/family-multi-cavity/sec_ops_custom_color_22_hr-600x400-bf06395-1.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Çok gözlü kalıplama süreci"
                 />
               </div>
             </div>
@@ -455,7 +457,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Applications
+              Uygulamalar
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -465,65 +467,64 @@ export default function page() {
             {/* Automotive */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Automotive
+                Otomotiv
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                For high-volume fasteners, connectors, sub-assembly components,
-                interior trim sets, and small standard parts.
+                Yüksek hacimli bağlantı elemanları, konnektörler, alt montaj
+                bileşenleri, iç trim setleri ve küçük standart parçalar için.
               </p>
             </div>
 
             {/* Consumer Electronics */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Consumer Electronics
+                Tüketici Elektroniği
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Standardized components used across many units, housings, and
-                internal components for specific devices.
+                Birçok ünitede kullanılan standartlaştırılmış bileşenler,
+                gövdeler ve belirli cihazlar için dahili bileşenler.
               </p>
             </div>
 
             {/* Medical Devices */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Medical Devices
+                Medikal Cihazlar
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Particularly for disposable items and casings for handheld
-                diagnostic tools or kits.
+                Özellikle tek kullanımlık ürünler ve el tipi teşhis aletleri
+                veya kitleri için gövdeler.
               </p>
             </div>
 
             {/* Packaging */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Packaging
+                Ambalajlama
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Especially beverage, food, cosmetic, and pharmaceutical
-                packaging.
+                Özellikle içecek, gıda, kozmetik ve ilaç ambalajları.
               </p>
             </div>
 
             {/* Appliances */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Appliances
+                Ev Aletleri
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Housings and components for smaller appliances.
+                Küçük ev aletleri için gövdeler ve bileşenler.
               </p>
             </div>
 
             {/* Industrial Equipment */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Industrial Equipment
+                Endüstriyel Ekipman
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Durable components, housings, and structural parts for
-                industrial machinery and equipment.
+                Endüstriyel makine ve ekipmanlar için dayanıklı bileşenler,
+                gövdeler ve yapısal parçalar.
               </p>
             </div>
           </div>
@@ -534,7 +535,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Types of Parts
+              Parça Tipleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -545,52 +546,53 @@ export default function page() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                    Types of Parts
+                    Parça Tipleri
                   </th>
                   <th className="text-left p-4 font-semibold text-lg">
-                    Function
+                    Fonksiyon
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {[
                   {
-                    part: "Electronic device housings",
+                    part: "Elektronik cihaz gövdeleri",
                     function:
-                      "Front/back casings, battery doors, button sets for a specific remote control, phone, or gadget",
+                      "Ön/arka kasalar, pil kapakları, belirli bir uzaktan kumanda, telefon veya cihaz için düğme setleri",
                   },
                   {
-                    part: "Buttons and keys",
-                    function: "Keyboards, control panels, remote controls",
-                  },
-                  {
-                    part: "Caps and closures",
+                    part: "Düğmeler ve tuşlar",
                     function:
-                      "Bottle caps, jar lids, flip-tops, spray nozzle components (huge volumes needed)",
+                      "Klavyeler, kontrol panelleri, uzaktan kumandalar",
                   },
                   {
-                    part: "Connectors",
+                    part: "Kapaklar ve kapatmalar",
                     function:
-                      "Electrical connectors, terminal housings, fiber optic connectors (standardized, high quantity)",
+                      "Şişe kapakları, kavanoz kapakları, açılır kapanır kapaklar, sprey nozulu bileşenleri (büyük hacimler gerekir)",
                   },
                   {
-                    part: "Fasteners",
+                    part: "Konnektörler",
                     function:
-                      "Plastic clips, rivets, screw anchors, cable ties (commodity, high volume)",
+                      "Elektrik konnektörleri, terminal gövdeleri, fiber optik konnektörler (standartlaştırılmış, yüksek miktar)",
                   },
                   {
-                    part: "Medical disposables and casings",
+                    part: "Bağlantı Elemanları",
                     function:
-                      "Syringe barrels/plungers, pipette tips, test tubes, vial caps, parts for IV sets, sample cups. Two halves of a glucose meter casing, parts for a specific diagnostic test kit (high volume, consistency crucial)",
+                      "Plastik klipsler, perçinler, vida ankrajları, kablo bağları (emtia, yüksek hacim)",
                   },
                   {
-                    part: "Small ears, bushings, washers",
-                    function: "Standardized mechanical components",
-                  },
-                  {
-                    part: "Small pipe fittings",
+                    part: "Medikal tek kullanımlık ürünler ve gövdeler",
                     function:
-                      "Elbows, T-connectors, caps for plumbing/irrigation",
+                      "Şırınga gövdeleri/plungerları, pipet uçları, test tüpleri, flakon kapakları, IV setleri için parçalar, numune kapları. Bir glikoz metre kasasının iki yarısı, belirli bir teşhis test kiti için parçalar (yüksek hacim, tutarlılık kritik)",
+                  },
+                  {
+                    part: "Küçük burçlar, rondelalar",
+                    function: "Standartlaştırılmış mekanik bileşenler",
+                  },
+                  {
+                    part: "Küçük boru bağlantı parçaları",
+                    function:
+                      "Dirsekler, T-konnektörler, sıhhi tesisat/sulama için kapaklar",
                   },
                 ].map((row, idx) => (
                   <tr

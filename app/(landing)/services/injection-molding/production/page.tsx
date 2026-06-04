@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="w-full pt-10 bg-white">
+    <div className="w-full pt-10 pb-36 bg-white">
       <ServicesHero
-        title="Tooling for Production Injection Molding"
-        desc="Reduce part costs and create supply chain flexibility with automated injection molding"
+        title="Üretim Enjeksiyon Kalıplama için Takım"
+        desc="Otomatik enjeksiyon kalıplama ile parça maliyetlerini azaltın ve tedarik zinciri esnekliği oluşturun"
         image="/Assets/Images/services/injection-molding/pl_service_im.webp"
-        firstButton={{ title: "Get Instant Quote", route: "/" }}
-        secondButton={{ title: "Start Production Quote", route: "/" }}
+        firstButton={{ title: "Anında Teklif Al", route: "/" }}
+        secondButton={{ title: "Üretim Teklifi Başlat", route: "/" }}
       />
 
       <div className="w-full bg-white py-20">
@@ -21,16 +21,16 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Capabilities",
-                    "Materials",
-                    "Surface Finishes",
-                    "Quality Inspections",
-                    "Finishing Options",
-                    "About Plastic Injection Molding",
+                    "Yetenekler",
+                    "Malzemeler",
+                    "Yüzey İşlemleri",
+                    "Kalite Denetimleri",
+                    "İşlem Sonrası Seçenekler",
+                    "Plastik Enjeksiyon Kalıplama Hakkında",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -45,33 +45,31 @@ export default function page() {
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
-              <div
-                id="about-plastic-injection-molding"
-                className="scroll-mt-32">
+              {/* What is Prototyping? Section */}
+              <div id="prototipleme-hakkında" className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  What is Prototyping?
+                  Prototipleme Nedir?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  We have two injection molding service options—prototyping and
-                  on-demand manufacturing—and each offers its own benefits
-                  depending on your project needs. If part quantities are lower,
-                  an affordable entry point for tooling is important, and rapid
-                  development over a short period of time is critical, our
-                  prototyping option works great.
+                  İki enjeksiyon kalıplama hizmet seçeneğimiz var - prototipleme
+                  ve talep üzerine üretim - ve her biri proje ihtiyaçlarınıza
+                  bağlı olarak kendi avantajlarını sunar. Parça miktarları daha
+                  düşükse, takım için uygun fiyatlı bir giriş noktası önemliyse
+                  ve kısa bir süre içinde hızlı geliştirme kritikse,
+                  prototipleme seçeneğimiz harika çalışır.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Common applications for plastic injection molding:
+                  Plastik enjeksiyon kalıplama için yaygın uygulamalar:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "low-volume production",
-                    "bridge tooling",
-                    "pilot runs",
-                    "functional testing and prototyping",
+                    "düşük hacimli üretim",
+                    "köprü takımı",
+                    "pilot çalışmalar",
+                    "fonksiyonel test ve prototipleme",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -87,8 +85,8 @@ export default function page() {
         </div>
       </div>
       <GuideDownload
-        title="Definitive Guide to Injection Molding"
-        desc="This complete reference guide walks you through everything from quoting, design analysis, and shipment to best practices that ensure your model is optimized for molding."
+        title="Enjeksiyon Kalıplama Kesin Kılavuzu"
+        desc="Bu tam referans kılavuzu, teklif alma, tasarım analizi ve sevkiyattan, modelinizin kalıplama için optimize edildiğini garanti eden en iyi uygulamalara kadar her şeyde size yol gösterir."
       />
 
       <div className="w-full bg-white">
@@ -96,12 +94,12 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20 pt-20">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-gray-600 leading-relaxed">
-              We have two injection molding service options—prototyping and
-              on-demand manufacturing—and each offers its own benefits depending
-              on your project needs. If part quantities are higher, an
-              affordable piece-part price is important, and quick-turn
-              production throughout your product life cycle is critical, our
-              on-demand manufacturing option is ideal.
+              İki enjeksiyon kalıplama hizmet seçeneğimiz var - prototipleme ve
+              talep üzerine üretim - ve her biri proje ihtiyaçlarınıza bağlı
+              olarak kendi avantajlarını sunar. Parça miktarları daha yüksekse,
+              uygun fiyatlı bir parça fiyatı önemliyse ve ürün yaşam döngünüz
+              boyunca hızlı teslim üretim kritikse, talep üzerine üretim
+              seçeneğimiz idealdir.
             </p>
           </div>
         </div>
@@ -127,7 +125,7 @@ export default function page() {
               {/* Right Column - Content */}
               <div className="flex-1">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                  Production Grade Tooling for Injection Molding
+                  Enjeksiyon Kalıplama için Üretim Sınıfı Takım
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
@@ -138,46 +136,44 @@ export default function page() {
                       {/* Mold Price Row */}
                       <tr className="border-b border-gray-200">
                         <td className="p-3 font-semibold text-[#0B1221] bg-gray-50 w-2/5">
-                          Mold Price
+                          Kalıp Fiyatı
                         </td>
                         <td className="p-3 text-gray-600 bg-white">
-                          Higher than prototyping tool
+                          Prototip takımından daha yüksek
                         </td>
                       </tr>
                       {/* Part Price Row */}
                       <tr className="border-b border-gray-200">
                         <td className="p-3 font-semibold text-[#0B1221] bg-gray-50">
-                          Part Price
+                          Parça Fiyatı
                         </td>
                         <td className="p-3 text-gray-600 bg-white">
-                          Lower than prototyping tool
+                          Prototip takımından daha düşük
                         </td>
                       </tr>
                       {/* Mold Cavities Row */}
                       <tr className="border-b border-gray-200">
                         <td className="p-3 font-semibold text-[#0B1221] bg-gray-50">
-                          Mold Cavities
+                          Kalıp Gözleri
                         </td>
                         <td className="p-3 text-gray-600 bg-white">
-                          Single and multi-cavity
+                          Tek ve çok gözlü
                         </td>
                       </tr>
                       {/* Guaranteed Mold Life Row */}
                       <tr className="border-b border-gray-200">
                         <td className="p-3 font-semibold text-[#0B1221] bg-gray-50">
-                          Guaranteed Mold Life
+                          Garantili Kalıp Ömrü
                         </td>
-                        <td className="p-3 text-gray-600 bg-white">
-                          Unlimited
-                        </td>
+                        <td className="p-3 text-gray-600 bg-white">Sınırsız</td>
                       </tr>
                       {/* Mold Storage Row */}
                       <tr className="border-b border-gray-200">
                         <td className="p-3 font-semibold text-[#0B1221] bg-gray-50">
-                          Mold Storage
+                          Kalıp Saklama
                         </td>
                         <td className="p-3 text-gray-600 bg-white">
-                          Stored for 3 years of inactivity
+                          3 yıl hareketsizlik durumunda saklanır
                         </td>
                       </tr>
                     </tbody>
@@ -187,15 +183,15 @@ export default function page() {
                 {/* Quality Documentation Section */}
                 <div className="mt-6">
                   <h3 className="text-lg font-bold text-[#0B1221] mb-2">
-                    Quality Documentation
+                    Kalite Dokümantasyonu
                   </h3>
                   <ul className="space-y-1">
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                       <span className="text-gray-600 text-sm">
-                        Molding process development report and basic inspection
-                        reports included; enhanced inspection reports available
-                        upon request
+                        Kalıplama süreç geliştirme raporu ve temel denetim
+                        raporları dahildir; gelişmiş denetim raporları talep
+                        üzerine mevcuttur
                       </span>
                     </li>
                   </ul>
@@ -204,14 +200,14 @@ export default function page() {
                 {/* Additional Features Section */}
                 <div className="mt-6">
                   <h3 className="text-lg font-bold text-[#0B1221] mb-2">
-                    Additional Features
+                    Ek Özellikler
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {[
-                      "Aluminum molds",
-                      "Standard lead time of 15 days or less",
-                      "Tolerances of +/-0.003 in. plus resin tolerance (in./in.)",
-                      "Set-up fees apply to each run",
+                      "Alüminyum kalıplar",
+                      "15 gün veya daha kısa standart teslim süresi",
+                      "+/-0,003 inç artı reçine toleransı (in./in.) toleranslar",
+                      "Her çalıştırma için kurulum ücretleri uygulanır",
                     ].map((feature, idx) => (
                       <div key={idx} className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -232,17 +228,18 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Injection Molding for End-Use Production
+              Son Kullanım Üretimi için Enjeksiyon Kalıplama
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Fasonly on-demand manufacturing service helps you simplify your
-              supply chain so you can get quality parts easier and faster. Using
-              industry best practices like scientific molding, we accelerate
-              manufacturing cycles to reduce your time to market. We meet your
-              inventory needs with no minimum order quantities, and offer supply
-              chain flexibility ranging from bridge tooling and just-in-time
-              (JIT) production to line-down emergency coverage.
+              Fasonly talep üzerine üretim hizmeti, tedarik zincirinizi
+              basitleştirmenize yardımcı olarak kaliteli parçaları daha kolay ve
+              hızlı bir şekilde almanızı sağlar. Bilimsel kalıplama gibi
+              endüstri en iyi uygulamalarını kullanarak, üretim döngülerini
+              hızlandırır ve pazara çıkış sürenizi kısaltırız. Minimum sipariş
+              miktarı olmadan envanter ihtiyaçlarınızı karşılıyoruz ve köprü
+              takımından tam zamanında (JIT) üretime ve hat duruşu acil durum
+              kapsamına kadar tedarik zinciri esnekliği sunuyoruz.
             </p>
           </div>
 
@@ -251,28 +248,28 @@ export default function page() {
             {/* Low-volume Runs */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Low-volume Runs
+                Düşük Hacimli Çalıştırmalar
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Validate part design, assembly processes, and market demand
-                    with pilot runs prior to mass production.
+                    Seri üretimden önce pilot çalıştırmalarla parça tasarımını,
+                    montaj süreçlerini ve pazar talebini doğrulayın.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Manage inventory overhead with production of parts only when
-                    demand dictates.
+                    Parçaları yalnızca talep gerektirdiğinde üreterek envanter
+                    genel giderlerini yönetin.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Use as the primary production method for products with
-                    annual sales volumes of a few thousand units.
+                    Yıllık satış hacmi birkaç bin adet olan ürünler için
+                    birincil üretim yöntemi olarak kullanın.
                   </span>
                 </li>
               </ul>
@@ -281,21 +278,21 @@ export default function page() {
             {/* Bridge Tooling */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Bridge Tooling
+                Köprü Takımı
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Implement cost-effective aluminum tooling before committing
-                    to a capital expense with steel tooling.
+                    Çelik takımla sermaye harcaması yapmadan önce uygun
+                    maliyetli alüminyum takım uygulayın.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Minimize the "cost of waiting" for a steel tool—and get to
-                    market quicker.
+                    Çelik takım için "bekleme maliyetini" en aza indirin - ve
+                    pazara daha hızlı çıkın.
                   </span>
                 </li>
               </ul>
@@ -304,28 +301,29 @@ export default function page() {
             {/* Optimizing Supply Chain */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Optimizing Supply Chain
+                Tedarik Zinciri Optimizasyonu
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Minimize down time and reduce the risk of stock-outs when
-                    large-scale production tools are being repaired.
+                    Büyük ölçekli üretim takımları onarılırken kesinti süresini
+                    en aza indirin ve stok tükenmesi riskini azaltın.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Mitigate the risk of domestic and global shipping delays by
-                    having a reliable, on-demand supplier of low-volume parts.
+                    Düşük hacimli parçaların güvenilir, talep üzerine
+                    tedarikçisine sahip olarak yerel ve küresel nakliye
+                    gecikmeleri riskini azaltın.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Manage increases in demand volatility without going on
-                    back-order.
+                    Ön siparişe geçmeden talep değişkenliğindeki artışları
+                    yönetin.
                   </span>
                 </li>
               </ul>
@@ -334,28 +332,28 @@ export default function page() {
             {/* Reduce Production Costs */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Reduce Production Costs
+                Üretim Maliyetlerini Azaltın
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Unlock new market opportunities with cost-effective
-                    production of low-volume, end-use parts.
+                    Düşük hacimli, son kullanım parçalarının uygun maliyetli
+                    üretimi ile yeni pazar fırsatlarının kapılarını açın.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Procure parts on demand, without any Minimum Order Quantity
-                    (MOQ) requirements.
+                    Herhangi bir Minimum Sipariş Miktarı (MOQ) gereksinimi
+                    olmadan parçaları talep üzerine tedarik edin.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Lower inventory costs and warehousing expenses with
-                    on-demand sourcing.
+                    Talep üzerine tedarik ile envanter maliyetlerini ve depolama
+                    giderlerini düşürün.
                   </span>
                 </li>
               </ul>

@@ -14,100 +14,100 @@ export default function page() {
       material: "30A",
       tearStrength: "85 psi",
       tensileStrength: "399 psi",
-      elongation: "245%",
+      elongation: "%245",
     },
     {
       material: "40A",
       tearStrength: "100 psi",
       tensileStrength: "508 psi",
-      elongation: "200%",
+      elongation: "%200",
     },
     {
       material: "50A",
       tearStrength: "114 psi",
       tensileStrength: "508 psi",
-      elongation: "190%",
+      elongation: "%190",
     },
     {
       material: "60A",
       tearStrength: "121 psi",
       tensileStrength: "580 psi",
-      elongation: "160%",
+      elongation: "%160",
     },
     {
       material: "70A",
       tearStrength: "185 psi",
       tensileStrength: "725 psi",
-      elongation: "130%",
+      elongation: "%130",
     },
     {
       material: "85A",
       tearStrength: "341 psi",
-      tensileStrength: "1,088 psi",
-      elongation: "80%",
+      tensileStrength: "1.088 psi",
+      elongation: "%80",
     },
     {
       material: "95A",
       tearStrength: "398 psi",
-      tensileStrength: "1,740 psi",
-      elongation: "60%",
+      tensileStrength: "1.740 psi",
+      elongation: "%60",
     },
     {
-      material: "Rigid",
+      material: "Rijit",
       tearStrength: "n/a",
-      tensileStrength: "8,702 psi",
-      elongation: "17.5%",
+      tensileStrength: "8.702 psi",
+      elongation: "%17,5",
     },
   ];
 
   const metricData = [
     {
       material: "30A",
-      tearStrength: "0.59 MPa",
-      tensileStrength: "2.75 MPa",
-      elongation: "245%",
+      tearStrength: "0,59 MPa",
+      tensileStrength: "2,75 MPa",
+      elongation: "%245",
     },
     {
       material: "40A",
-      tearStrength: "0.69 MPa",
-      tensileStrength: "3.5 MPa",
-      elongation: "200%",
+      tearStrength: "0,69 MPa",
+      tensileStrength: "3,5 MPa",
+      elongation: "%200",
     },
     {
       material: "50A",
-      tearStrength: "0.79 MPa",
-      tensileStrength: "3.5 MPa",
-      elongation: "190%",
+      tearStrength: "0,79 MPa",
+      tensileStrength: "3,5 MPa",
+      elongation: "%190",
     },
     {
       material: "60A",
-      tearStrength: "0.83 Mpa",
-      tensileStrength: "4.0 Mpa",
-      elongation: "160%",
+      tearStrength: "0,83 MPa",
+      tensileStrength: "4,0 MPa",
+      elongation: "%160",
     },
     {
       material: "70A",
-      tearStrength: "1.28 Mpa",
-      tensileStrength: "5.0 Mpa",
-      elongation: "130%",
+      tearStrength: "1,28 MPa",
+      tensileStrength: "5,0 MPa",
+      elongation: "%130",
     },
     {
       material: "85A",
-      tearStrength: "2.35 Mpa",
-      tensileStrength: "7.5 Mpa",
-      elongation: "80%",
+      tearStrength: "2,35 MPa",
+      tensileStrength: "7,5 MPa",
+      elongation: "%80",
     },
     {
       material: "95A",
-      tearStrength: "2.74 Mpa",
-      tensileStrength: "12.0 Mpa",
-      elongation: "60%",
+      tearStrength: "2,74 MPa",
+      tensileStrength: "12,0 MPa",
+      elongation: "%60",
     },
     {
-      material: "Rigid",
+      material: "Rijit",
       tearStrength: "n/a",
-      tensileStrength: "60.0 Mpa",
-      elongation: "17.5%",
+      tensileStrength: "60,0 MPa",
+      elongation: "%17,5",
     },
   ];
 
@@ -115,10 +115,10 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="PolyJet 3D Printing Service"
-        desc="Get 3D-printed elastomeric parts within days. Request an online quote today."
+        title="PolyJet 3D Baskı Hizmeti"
+        desc="Günler içinde 3D baskılı elastomerik parçalar alın. Bugün çevrimiçi teklif talep edin."
         image="/Assets/Images/services/3d-printing/polyjet/hero.png"
-        firstButton={{ title: "Get Instant Quote", route: "/" }}
+        firstButton={{ title: "Anında Teklif Al", route: "/" }}
         simple
       />
 
@@ -129,14 +129,14 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Capabilities",
-                    "Materials",
-                    " PolyJet 3D Printers",
-                    "About PolyJet 3D Printing",
+                    "Yetenekler",
+                    "Malzemeler",
+                    "PolyJet 3D Yazıcılar",
+                    "PolyJet 3D Baskı Hakkında",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -151,32 +151,30 @@ export default function page() {
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
-              <div
-                id="about-plastic-injection-molding"
-                className="scroll-mt-32">
+              {/* What is PolyJet 3D Printing? Section */}
+              <div id="polyjet-3d-baskı-nedir" className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  What is 3D printing ?
+                  3D Baskı Nedir?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  PolyJet is an industrial 3D printing process that builds
-                  multi-material prototypes with flexible features and complex
-                  parts with intricate geometries in as fast as 1 day. A range
-                  of hardnesses (durometers) are available, which work well for
-                  components with elastomeric features like gaskets, seals, and
-                  housings.
+                  PolyJet, esnek özelliklere sahip çok malzemeli prototipler ve
+                  karmaşık geometrilere sahip karmaşık parçaları 1 gün kadar
+                  kısa sürede üreten endüstriyel bir 3D baskı sürecidir.
+                  Contalar, keçeler ve gövdeler gibi elastomerik özelliklere
+                  sahip bileşenler için iyi çalışan çeşitli sertlikler (sertlik
+                  dereceleri) mevcuttur.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Common applications for PolyJet 3D printing:
+                  PolyJet 3D baskı için yaygın uygulamalar:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "prototyping designs for overmolding or silicone rubber parts",
-                    "combining two colors or durometers into a single part",
-                    "simulating elastomers or flexible parts",
+                    "kaplama kalıplama veya silikon kauçuk parçalar için prototipleme tasarımları",
+                    "tek bir parçada iki rengi veya sertlik derecesini birleştirme",
+                    "elastomerleri veya esnek parçaları simüle etme",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -192,21 +190,22 @@ export default function page() {
         </div>
       </div>
       <GuideDownload
-        title="3D Printing Surface Finish Guide"
-        desc="Get this quick reference guide to explore your surface finish options across our six 3D printing technologies."
+        title="3D Baskı Yüzey İşlem Kılavuzu"
+        desc="Altı 3D baskı teknolojimiz genelinde yüzey işlem seçeneklerinizi keşfetmek için bu hızlı referans kılavuzunu alın."
       />
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              PolyJet Design Guidelines and Capabilities
+              PolyJet Tasarım Kılavuzları ve Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our basic guidelines for PolyJet include important design
-              considerations to help improve part manufacturability, enhance
-              cosmetic appearance, and reduce overall production time.
+              PolyJet için temel kılavuzlarımız, parça üretilebilirliğini
+              iyileştirmeye, kozmetik görünümü geliştirmeye ve genel üretim
+              süresini azaltmaya yardımcı olacak önemli tasarım hususlarını
+              içerir.
             </p>
           </div>
 
@@ -217,20 +216,20 @@ export default function page() {
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700"></th>
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                    US
+                    ABD
                   </th>
                   <th className="text-left p-4 font-semibold text-lg">
-                    Metric
+                    Metrik
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Maximum Part Size
+                    Maksimum Parça Boyutu
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    19.3 in. × 15.4 in. × 7.9 in.
+                    19,3 inç × 15,4 inç × 7,9 inç
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
                     490mm × 390mm × 200mm
@@ -238,24 +237,24 @@ export default function page() {
                 </tr>
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Layer Thickness
+                    Katman Kalınlığı
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">0.00118 in.</td>
-                  <td className="p-4 text-gray-600 bg-gray-50">30 microns</td>
+                  <td className="p-4 text-gray-600 bg-white">0,00118 inç</td>
+                  <td className="p-4 text-gray-600 bg-gray-50">30 mikron</td>
                 </tr>
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Minimum Feature Size
+                    Minimum Özellik Boyutu
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">0.012 in.</td>
-                  <td className="p-4 text-gray-600 bg-gray-50">0.3mm</td>
+                  <td className="p-4 text-gray-600 bg-white">0,012 inç</td>
+                  <td className="p-4 text-gray-600 bg-gray-50">0,3mm</td>
                 </tr>
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Minimum Freestanding Wall, Hole, or Channel Size
+                    Minimum Bağımsız Duvar, Delik veya Kanal Boyutu
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">0.030 in.</td>
-                  <td className="p-4 text-gray-600 bg-gray-50">0.76mm</td>
+                  <td className="p-4 text-gray-600 bg-white">0,030 inç</td>
+                  <td className="p-4 text-gray-600 bg-gray-50">0,76mm</td>
                 </tr>
               </tbody>
             </table>
@@ -265,11 +264,12 @@ export default function page() {
           <div className="mt-6 p-4 bg-[#F0F8FF] rounded-lg">
             <p className="text-gray-600 text-sm leading-relaxed">
               <span className="font-semibold text-[#0B1221]">
-                Tolerances for PolyJet:
+                PolyJet için Toleranslar:
               </span>{" "}
-              For well-designed parts, tolerances of ±0.005 (0.1mm) for the
-              first inch plus 0.1% of nominal length can typically be achieved.
-              Note that tolerances may change depending on part geometry.
+              İyi tasarlanmış parçalar için, ilk inç için ±0,005 (0,1mm) artı
+              nominal uzunluğun %0,1'i toleranslar tipik olarak elde edilebilir.
+              Toleransların parça geometrisine bağlı olarak değişebileceğini
+              unutmayın.
             </p>
           </div>
         </div>
@@ -281,7 +281,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden ">
               <Image
                 src="/Assets/Images/services/3d-printing/polyjet/tpng-web-polyjet-gasket-lr-1017.webp"
-                alt="PolyJet Material Options"
+                alt="PolyJet Malzeme Seçenekleri"
                 fill
                 className="object-cover"
               />
@@ -290,21 +290,21 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                PolyJet Material Options
+                PolyJet Malzeme Seçenekleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                PolyJet provides the ability to choose a desired hardness or
-                combine material properties into a single build, which makes it
-                ideal for prototyping overmolding parts. Shore A hardnesses of
-                30A, 40A, 50A, 60A, 70A, 85A, 95A, and rigid are available in
-                these colors:
+                PolyJet, istenen bir sertliği seçme veya malzeme özelliklerini
+                tek bir yapıda birleştirme yeteneği sağlar, bu da onu kaplama
+                kalıplama parçalarını prototiplemek için ideal hale getirir.
+                30A, 40A, 50A, 60A, 70A, 85A, 95A ve rijit Shore A sertlikleri
+                şu renklerde mevcuttur:
               </p>
               <ul className="space-y-2 mb-6">
                 {[
-                  "Digital Clear/Translucent",
-                  "Digital Black",
-                  "Digital White",
+                  "Dijital Şeffaf/Yarı Saydam",
+                  "Dijital Siyah",
+                  "Dijital Beyaz",
                 ].map((color, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -315,7 +315,7 @@ export default function page() {
               <a
                 href="#"
                 className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                Learn more about PolyJet materials →
+                PolyJet malzemeleri hakkında daha fazla bilgi edinin →
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
@@ -327,7 +327,7 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Compare PolyJet Material Properties
+              PolyJet Malzeme Özelliklerini Karşılaştır
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -341,7 +341,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              US (Imperial)
+              ABD (Imperial)
             </button>
             <button
               onClick={() => setUnit("metric")}
@@ -350,7 +350,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Metric (SI)
+              Metrik (SI)
             </button>
           </div>
 
@@ -360,16 +360,16 @@ export default function page() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-base border-r border-gray-700">
-                    Material
+                    Malzeme
                   </th>
                   <th className="text-left p-4 font-semibold text-base border-r border-gray-700">
-                    Tensile Tear Strength
+                    Çekme Yırtılma Mukavemeti
                   </th>
                   <th className="text-left p-4 font-semibold text-base border-r border-gray-700">
-                    Tensile Strength
+                    Çekme Mukavemeti
                   </th>
                   <th className="text-left p-4 font-semibold text-base">
-                    Elongation
+                    Uzama
                   </th>
                 </tr>
               </thead>
@@ -401,12 +401,12 @@ export default function page() {
           {/* Disclaimer */}
           <div className="mt-6 p-4 bg-gray-100 rounded-lg">
             <p className="text-xs text-gray-500 leading-relaxed">
-              These figures are approximate and dependent on a number of
-              factors, including but not limited to, machine and process
-              parameters. The information provided is therefore not binding and
-              not deemed to be certified. When performance is critical, also
-              consider independent lab testing of additive materials or final
-              parts.
+              Bu rakamlar yaklaşıktır ve makine ve süreç parametreleriyle
+              sınırlı olmamak üzere bir dizi faktöre bağlıdır. Bu nedenle
+              sağlanan bilgiler bağlayıcı değildir ve sertifikalı olarak kabul
+              edilmez. Performans kritik olduğunda, eklemeli malzemelerin veya
+              nihai parçaların bağımsız laboratuvar testlerini de göz önünde
+              bulundurun.
             </p>
           </div>
         </div>
@@ -417,27 +417,28 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                How Does PolyJet 3D Printing Work?
+                PolyJet 3D Baskı Nasıl Çalışır?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                The PolyJet process begins by spraying small droplets of liquid
-                photopolymers in layers that are instantly UV cured. Voxels
-                (three-dimensional pixels) are strategically placed during the
-                build, which allow for the combination of both flexible and
-                rigid photopolymers known as{" "}
-                <span className="italic">digital materials</span>. Each voxel
-                has a vertical thickness equal to the layer thickness of 30
-                microns. The fine layers of digital materials accumulate on the
-                build platform to create accurate 3D-printed parts.
+                PolyJet süreci, anında UV ile kürlenen katmanlar halinde küçük
+                sıvı fotopolimer damlacıklarının püskürtülmesiyle başlar.
+                Vokseller (üç boyutlu pikseller), yapı sırasında stratejik
+                olarak yerleştirilir ve bu,{" "}
+                <span className="italic">dijital malzemeler</span> olarak
+                bilinen hem esnek hem de rijit fotopolimerlerin
+                birleştirilmesine olanak tanır. Her voksel, 30 mikronluk katman
+                kalınlığına eşit dikey bir kalınlığa sahiptir. Dijital
+                malzemelerin ince katmanları, doğru 3D baskılı parçalar
+                oluşturmak için yapı platformunda birikir.
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                Each PolyJet part is completely coated in support material
-                during the build, which ultimately is removed by hand using a
-                pressurized water stream and a chemical solution bath. No
-                post-curing is required after the manufacturing process.
+                Her PolyJet parçası, yapı sırasında tamamen destek malzemesi ile
+                kaplanır ve bu malzeme nihayetinde basınçlı su akışı ve kimyasal
+                çözelti banyosu kullanılarak elle çıkarılır. Üretim sürecinden
+                sonra son kürleme gerekmez.
               </p>
             </div>
 
@@ -454,10 +455,10 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
                   <p className="text-gray-300 text-xs mt-1">
-                    PolyJet 3D Printing Process
+                    PolyJet 3D Baskı Süreci
                   </p>
                 </div>
               </div>

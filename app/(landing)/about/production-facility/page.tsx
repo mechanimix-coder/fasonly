@@ -18,7 +18,7 @@ import {
 
 export default function ProductionFacility() {
   return (
-    <div className="w-full pt-32 pb-20 bg-white">
+    <div className="w-full pt-32 pb-36 bg-white">
       <div className="container mx-auto px-4 md:px-10 lg:px-20">
         {/* Hero Section */}
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
@@ -51,16 +51,6 @@ export default function ProductionFacility() {
                 Tesisi Ziyaret Edin
                 <MapPin className="w-4 h-4" />
               </Link>
-            </div>
-          </div>
-          <div className="flex-1 relative">
-            <div className="relative w-full h-80 lg:h-96 rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src="/Assets/Images/facility/hero.jpg"
-                alt="Fasonly Production Facility"
-                fill
-                className="object-cover"
-              />
             </div>
           </div>
         </div>

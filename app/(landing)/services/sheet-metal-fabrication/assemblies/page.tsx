@@ -7,10 +7,10 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Sheet Metal Assemblies"
-        desc="Get custom fabricated assemblies delivered in as fast as five days. Upload your assembly file to get an online quote"
+        title="Sac Metal Montajları"
+        desc="Beş gün kadar kısa sürede teslim edilen özel fabrikasyon montajlar alın. Montaj dosyanızı yükleyerek çevrimiçi teklif alın"
         image="/Assets/Images/services/sheet-metal-fabrication/assembly/hero.png"
-        firstButton={{ title: "Upload Your Assembly", route: "/" }}
+        firstButton={{ title: "Montajınızı Yükleyin", route: "/" }}
         simple
       />
       <div className="w-full bg-white py-20">
@@ -20,16 +20,16 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "File format and configuration",
-                    "Materials",
-                    " Assembly construction guidelines",
-                    "Hardware insertion",
-                    "Welding and riveting",
-                    "Finishing options for assemblies",
+                    "Dosya formatı ve yapılandırma",
+                    "Malzemeler",
+                    "Montaj yapım kılavuzları",
+                    "Donanım yerleştirme",
+                    "Kaynak ve perçinleme",
+                    "Montajlar için yüzey işlem seçenekleri",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -45,14 +45,14 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
               {/* Beyond Prototyping Section */}
-              <div id="what-is-stereolithography" className="scroll-mt-32">
+              <div id="sac-metal-montaj" className="scroll-mt-32">
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Our online sheet metal assembly service lets you create
-                  functional, end-use products delivered to you in days. With
-                  each project, you get design for manufacturability (DFM)
-                  feedback and expert-level support. You can choose from a broad
-                  range of finishing options to achieve your aesthetic
-                  requirements.
+                  Çevrimiçi sac metal montaj hizmetimiz, günler içinde teslim
+                  edilen fonksiyonel, son kullanım ürünleri oluşturmanıza olanak
+                  tanır. Her projede, üretilebilirlik için tasarım (DFM) geri
+                  bildirimi ve uzman seviyesinde destek alırsınız. Estetik
+                  gereksinimlerinizi karşılamak için geniş bir yüzey işlem
+                  seçeneği yelpazesinden seçim yapabilirsiniz.
                 </p>
               </div>
             </div>
@@ -63,16 +63,16 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Fabricated assemblies are frequently used for:
+              Fabrikasyon montajlar sıklıkla şunlar için kullanılır:
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
 
             <ul className="space-y-3 mb-8 max-w-md mx-auto">
               {[
-                "Functional prototyping",
-                "Product testing and qualification",
-                "Low volume, end-use production",
-                "Pilot runs",
+                "Fonksiyonel prototipleme",
+                "Ürün testi ve kalifikasyon",
+                "Düşük hacimli, son kullanım üretimi",
+                "Pilot çalışmalar",
               ].map((item, idx) => (
                 <li
                   key={idx}
@@ -83,7 +83,7 @@ export default function page() {
               ))}
             </ul>
             <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-              Schedule Now
+              Şimdi Planla
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -104,24 +104,25 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              File Format and Configuration
+              Dosya Formatı ve Yapılandırma
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-8"></div>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              Preferred file formats for assemblies are upper-level assembly
-              STEP files. For SOLIDWORKS users, a solid assembly file (.sldasm)
-              with separate component files (.sldpart) is preferred.
+              Montajlar için tercih edilen dosya formatları, üst düzey montaj
+              STEP dosyalarıdır. SOLIDWORKS kullanıcıları için, ayrı bileşen
+              dosyalarına (.sldpart) sahip bir katı montaj dosyası (.sldasm)
+              tercih edilir.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              If your project is a weldment or has welding requirements, please
-              provide a 2D drawing with your CAD submission.
+              Projeniz bir kaynaklı konstrüksiyon ise veya kaynak gereksinimleri
+              varsa, lütfen CAD gönderiminizle birlikte bir 2B çizim sağlayın.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              For situations where Fasonly will not assemble your project
-              components, a solid (or top-level) assembly file is not required.
+              Fasonly'nin proje bileşenlerinizi monte etmeyeceği durumlarda,
+              katı (veya üst düzey) bir montaj dosyası gerekli değildir.
             </p>
           </div>
         </div>
@@ -133,23 +134,23 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Materials
+                Malzemeler
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Choose from readily available materials which can be easily
-                constructed into a final assembly. Industry standard material
-                thicknesses are used for all material types. Common materials
-                found in fabricated assemblies are:
+                Kolayca temin edilebilen ve nihai bir montaj halinde kolayca
+                inşa edilebilen malzemeler arasından seçim yapın. Tüm malzeme
+                türleri için endüstri standardı malzeme kalınlıkları kullanılır.
+                Fabrikasyon montajlarda bulunan yaygın malzemeler şunlardır:
               </p>
 
               <ul className="space-y-2 mb-4">
                 {[
-                  "Aluminum 5052-H32",
-                  "Low carbon steel CR 1008",
-                  "Stainless steel 304/304L",
-                  "Stainless steel 316/316L",
+                  "Alüminyum 5052-H32",
+                  "Düşük karbonlu çelik CR 1008",
+                  "Paslanmaz çelik 304/304L",
+                  "Paslanmaz çelik 316/316L",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -159,21 +160,21 @@ export default function page() {
               </ul>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Each of these materials provides excellent formability and
-                weldability characteristics, as well as superior corrosion
-                resistance in harsh environments.
+                Bu malzemelerin her biri mükemmel şekillendirilebilirlik ve
+                kaynaklanabilirlik özelliklerinin yanı sıra zorlu ortamlarda
+                üstün korozyon direnci sağlar.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-2">
-                Additional materials are available, such as pre-plated steels
-                (galvanized or galvannealed). However, the pre-treated coating
-                makes these materials candidates for rivet-based assembly
-                construction.
+                Ön kaplamalı çelikler (galvanizli veya galvanizli tavlanmış)
+                gibi ek malzemeler mevcuttur. Ancak, ön işlem görmüş kaplama, bu
+                malzemeleri perçin tabanlı montaj yapımı için aday haline
+                getirir.
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                Our material comparison tool offers more information on sheet
-                metal types and thickness ranges.
+                Malzeme karşılaştırma aracımız, sac metal tipleri ve kalınlık
+                aralıkları hakkında daha fazla bilgi sunar.
               </p>
             </div>
 
@@ -181,7 +182,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-[500px] rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/assembly/material_smf_low-carbon-steel-cr-galvannealed_v2_hr.jpg"
-                alt="Materials for Fabricated Assemblies"
+                alt="Fabrikasyon Montajlar için Malzemeler"
                 fill
                 className="object-cover"
               />
@@ -193,33 +194,32 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Assembly Construction Guidelines
+                Montaj Yapım Kılavuzları
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Customizing your assembly design can take many forms. Consider
-                the following for your next sheet metal project.
+                Montaj tasarımınızı özelleştirmek birçok şekilde olabilir. Bir
+                sonraki sac metal projeniz için aşağıdakileri göz önünde
+                bulundurun.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
                 <span className="font-semibold">
-                  Maximum assembly size (when fully constructed):
+                  Maksimum montaj boyutu (tamamen inşa edildiğinde):
                 </span>{" "}
-                47 in. x 39 in. x 36 in. (1194mm x 991mm x 914mm)
+                47 inç x 39 inç x 36 inç (1194mm x 991mm x 914mm)
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-3">
-                <span className="font-semibold">
-                  Available assembly methods:
-                </span>
+                <span className="font-semibold">Mevcut montaj yöntemleri:</span>
               </p>
 
               <ul className="space-y-2 mb-4">
                 {[
-                  "Welding (seam, tack, stitch weld techniques)",
-                  "Riveting (pop and solid rivets)",
-                  "Hardware insertion",
+                  "Kaynak (dikiş, teyel, dikişli kaynak teknikleri)",
+                  "Perçinleme (pop ve katı perçinler)",
+                  "Donanım yerleştirme",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -229,8 +229,8 @@ export default function page() {
               </ul>
 
               <p className="text-gray-600 leading-relaxed italic">
-                Cold-rolled galvannealed steel is a great choice for strength
-                and corrosion resistance.
+                Soğuk haddelenmiş galvanizli tavlanmış çelik, mukavemet ve
+                korozyon direnci için harika bir seçimdir.
               </p>
             </div>
 
@@ -238,7 +238,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-[500px] rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/assembly/insert-img.jpg"
-                alt="Assembly Construction Guidelines"
+                alt="Montaj Yapım Kılavuzları"
                 fill
                 className="object-cover"
               />
@@ -252,27 +252,29 @@ export default function page() {
             {/* Formed Features */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Formed Features
+                Şekillendirilmiş Özellikler
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Linear bending (via press brake) with tooling options
-                    between .010 in. and 1 in. (0.254mm and 25.4mm).
+                    Doğrusal bükme (pres fren ile) 0,010 inç ile 1 inç (0,254mm
+                    ile 25,4mm) arasında takım seçenekleri ile.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Large radius bending for additional functional or aesthetic
-                    requirements using bump forming or roll-forming techniques.
+                    Kademeli şekillendirme veya haddeleme şekillendirme
+                    teknikleri kullanarak ek fonksiyonel veya estetik
+                    gereksinimler için büyük yarıçaplı bükme.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Punch-formed features such as louvers, ribs, dimples.
+                    Panjur, kaburga, çukur gibi zımba ile şekillendirilmiş
+                    özellikler.
                   </span>
                 </li>
               </ul>
@@ -281,19 +283,20 @@ export default function page() {
             {/* Machined Features */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Machined Features
+                İşlenmiş Özellikler
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                Post-processing CNC machining can offer additional features
-                typically found on more complex geometries. These design
-                elements are hard to achieve with laser cutting, punching, or
-                press brake forming alone. Possible features include:
+                İşlem sonrası CNC işleme, tipik olarak daha karmaşık
+                geometrilerde bulunan ek özellikler sunabilir. Bu tasarım
+                elemanlarına yalnızca lazer kesim, zımbalama veya pres fren
+                şekillendirme ile ulaşmak zordur. Olası özellikler şunları
+                içerir:
               </p>
               <ul className="space-y-2">
                 {[
-                  "Pockets",
-                  "Holes, cutouts, or features at risk of deformation during forming",
-                  "Flange length reduction",
+                  "Cepler",
+                  "Şekillendirme sırasında deformasyon riski olan delikler, kesikler veya özellikler",
+                  "Flanş uzunluğu azaltma",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -306,33 +309,33 @@ export default function page() {
             {/* Tolerances */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Tolerances
+                Toleranslar
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Typical sheet metal tolerances apply to assemblies. Review
-                    our{" "}
+                    Tipik sac metal toleransları montajlar için geçerlidir. Daha
+                    fazla detay için{" "}
                     <a
                       href="#"
                       className="text-[#0099ff] hover:text-[#96E92A] transition-colors">
-                      design guidelines
+                      tasarım kılavuzlarımızı
                     </a>{" "}
-                    for more details.
+                    inceleyin.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Specific tolerance questions, including stack-up and
-                    fitment, can be addressed by scheduling a free{" "}
+                    Kümülatif tolerans ve uyum dahil olmak üzere belirli
+                    tolerans soruları, ücretsiz{" "}
                     <a
                       href="#"
                       className="text-[#0099ff] hover:text-[#96E92A] transition-colors">
-                      30-minute design review
-                    </a>
-                    .
+                      30 dakikalık tasarım incelemesi
+                    </a>{" "}
+                    planlayarak ele alınabilir.
                   </span>
                 </li>
               </ul>
@@ -341,34 +344,33 @@ export default function page() {
             {/* Inspection Reporting Options */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Inspection Reporting Options
+                Denetim Raporlama Seçenekleri
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Material and/or finishing certifications are available*
+                    Malzeme ve/veya yüzey işlem sertifikaları mevcuttur*
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Inspection documentation, including First Article
-                    Inspection*
+                    İlk Ürün Denetimi dahil denetim dokümantasyonu*
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    All parts and assemblies are inspected for dimensional and
-                    visual accuracy based on Fasonly work standards prior to
-                    shipping.
+                    Tüm parçalar ve montajlar, gönderim öncesinde Fasonly iş
+                    standartlarına göre boyutsal ve görsel doğruluk açısından
+                    denetlenir.
                   </span>
                 </li>
               </ul>
               <p className="text-gray-500 text-xs italic mt-3">
-                *Must be requested before your order is placed. Choose from
-                options shown on your online quote.
+                *Siparişiniz verilmeden önce talep edilmelidir. Çevrimiçi
+                teklifinizde gösterilen seçenekler arasından seçim yapın.
               </p>
             </div>
           </div>
@@ -381,40 +383,41 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Hardware Insertion Guidelines
+                Donanım Yerleştirme Kılavuzları
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                An extensive stocked library of fasteners is available from
-                brands such as PEM and Southco.
+                PEM ve Southco gibi markalardan kapsamlı bir stoklanmış bağlantı
+                elemanı kütüphanesi mevcuttur.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-3">
-                <span className="font-semibold">File Formatting:</span>
+                <span className="font-semibold">Dosya Biçimlendirme:</span>
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Recommended: Include any hardware in your 3D CAD model as
-                    separate solid bodies from the main sheet metal body. Use
-                    industry standard hardware part numbers when possible (e.g.,
-                    CLS-M6-1)
+                    Önerilen: Herhangi bir donanımı ana sac metal gövdeden ayrı
+                    katı gövdeler olarak 3B CAD modelinize dahil edin. Mümkün
+                    olduğunda endüstri standardı donanım parça numaralarını
+                    kullanın (örn., CLS-M6-1)
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Alternative: Upload your CAD file without hardware and
-                    include a 2D drawing noting hardware types and locations.
+                    Alternatif: CAD dosyanızı donanım olmadan yükleyin ve
+                    donanım türlerini ve konumlarını belirten bir 2B çizim
+                    ekleyin.
                   </span>
                 </li>
               </ul>
 
               <p className="text-gray-600 leading-relaxed">
-                <span className="font-semibold">Lead Time:</span> Adding
-                hardware to your part design does not add lead time.
+                <span className="font-semibold">Teslim Süresi:</span> Parça
+                tasarımınıza donanım eklemek teslim süresine ek süre eklemez.
               </p>
             </div>
 
@@ -422,7 +425,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/assembly/welding-smf.jpg"
-                alt="Hardware Insertion Guidelines"
+                alt="Donanım Yerleştirme Kılavuzları"
                 fill
                 className="object-cover"
               />
@@ -434,21 +437,21 @@ export default function page() {
             {/* Left Column - Examples of Hardware Types */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                Examples of Available Hardware Types to Customize Your Project:
+                Projenizi Özelleştirmek için Mevcut Donanım Türlerine Örnekler:
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {[
-                  "Self-clinching nuts",
-                  "Self-clinching standoffs",
-                  "Flush-head studs",
-                  "Miniature self-clinching nuts",
-                  "Self-clinching flush nuts",
-                  "Flush-head pins",
-                  "Self-clinching blind fasteners",
-                  "Thin sheet non-flush studs",
-                  "Self-clinching lock nuts",
-                  "Self-clinching micro pins",
-                  "Panel fasteners",
+                  "Kendinden sıkışan somunlar",
+                  "Kendinden sıkışan ayaklar",
+                  "Gömme başlı saplamalar",
+                  "Minyatür kendinden sıkışan somunlar",
+                  "Kendinden sıkışan gömme somunlar",
+                  "Gömme başlı pimler",
+                  "Kendinden sıkışan kör bağlantı elemanları",
+                  "İnce sac gömme olmayan saplamalar",
+                  "Kendinden sıkışan kilitli somunlar",
+                  "Kendinden sıkışan mikro pimler",
+                  "Panel bağlantı elemanları",
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -461,24 +464,25 @@ export default function page() {
             {/* Right Column - Design Guidelines */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                Design Guidelines
+                Tasarım Kılavuzları
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    For inserts to grip the sheet metal correctly, the material
-                    of the hardware insert must have a hardness equal to or
-                    greater than the material into which it is inserted. Further
-                    details on hardware and material compatibility can be found
-                    in our Design for Manufacturability Toolkit.
+                    Ek parçaların sac metali doğru şekilde kavraması için,
+                    donanım ek parçasının malzemesi, yerleştirildiği malzemeye
+                    eşit veya daha büyük bir sertliğe sahip olmalıdır. Donanım
+                    ve malzeme uyumluluğu hakkında daha fazla ayrıntı,
+                    Üretilebilirlik için Tasarım Araç Setimizde bulunabilir.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600 text-sm">
-                    Our design tip on effective hardware integration covers
-                    hardware use cases and part placement considerations.
+                    Etkili donanım entegrasyonu hakkındaki tasarım ipucumuz,
+                    donanım kullanım durumlarını ve parça yerleştirme
+                    hususlarını kapsar.
                   </span>
                 </li>
               </ul>
@@ -492,24 +496,25 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Finishing Options for Assemblies
+                Montajlar için Yüzey İşlem Seçenekleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                In addition to feature or geometry customization, our finishing
-                services for components and assemblies allow for customization
-                of your aesthetic requirements. Our finishing options include:
+                Özellik veya geometri özelleştirmesine ek olarak, bileşenler ve
+                montajlar için yüzey işlem hizmetlerimiz, estetik
+                gereksinimlerinizin özelleştirilmesine olanak tanır. Yüzey işlem
+                seçeneklerimiz şunları içerir:
               </p>
 
               <ul className="space-y-2 mb-4">
                 {[
-                  "Plating",
-                  "Powder coating",
-                  "Wet paint",
-                  "Masking",
-                  "Part marking",
-                  "Metal surface finishing",
+                  "Kaplama",
+                  "Toz boya",
+                  "Islak boya",
+                  "Maskeleme",
+                  "Parça işaretleme",
+                  "Metal yüzey işleme",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -519,27 +524,29 @@ export default function page() {
               </ul>
 
               <p className="text-gray-600 leading-relaxed mb-2">
-                <span className="font-semibold">Lead Time:</span> Most finishing
-                options add 1-2 days per finish. See our{" "}
+                <span className="font-semibold">Teslim Süresi:</span> Çoğu yüzey
+                işlem seçeneği, işlem başına 1-2 gün ekler. Daha fazla detay
+                için{" "}
                 <a
                   href="#"
                   className="text-[#0099ff] hover:text-[#96E92A] transition-colors">
-                  finishing options page
+                  yüzey işlem seçenekleri sayfamızı
                 </a>{" "}
-                for more details.
+                ziyaret edin.
               </p>
 
               <p className="text-gray-600 leading-relaxed italic">
-                Some say parts aren't finished until they're finished. Explore
-                your options to take your parts to the next level.
+                Bazıları, parçalar bitirilene kadar bitmiş sayılmaz der.
+                Parçalarınızı bir sonraki seviyeye taşımak için seçeneklerinizi
+                keşfedin.
               </p>
             </div>
 
             {/* Right Column - Image */}
-            <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden  bg-gray-100">
+            <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/assembly/finishing-options.jpg"
-                alt="Finishing Options for Assemblies"
+                alt="Montajlar için Yüzey İşlem Seçenekleri"
                 fill
                 className="object-cover"
               />

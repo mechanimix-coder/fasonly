@@ -8,12 +8,10 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="CNC Turning Service"
-        desc="
-Get quality custom turned parts for rapid prototyping and end-use production. Lead times are as fast as 1 day. 
-"
+        title="CNC Tornalama Hizmeti"
+        desc="Hızlı prototipleme ve son kullanım üretimi için kaliteli özel tornalanmış parçalar alın. Teslim süreleri 1 gün kadar kısadır."
         image="/Assets/Images/services/injection-molding/cnc_turn_2017_cylindr_al_sharpedge_.webp"
-        firstButton={{ title: "Get a Quote", route: "/" }}
+        firstButton={{ title: "Teklif Al", route: "/" }}
       />
 
       <div className="w-full bg-white py-20">
@@ -23,14 +21,14 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Capabilities",
-                    "Materials",
-                    "Surface Finishes",
-                    "Quality Inspections",
+                    "Yetenekler",
+                    "Malzemeler",
+                    "Yüzey İşlemleri",
+                    "Kalite Denetimleri",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -45,30 +43,29 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
-              <div
-                id="about-plastic-injection-molding"
-                className="scroll-mt-32">
+              {/* What is CNC turning services? Section */}
+              <div id="cnc-tornalama-hizmetleri-nedir" className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  What is CNC turning services?
+                  CNC Tornalama Hizmetleri Nedir?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Our CNC turning process produces custom prototypes and end-use
-                  production parts in as fast as 1 day. We use a CNC lathe with
-                  live tooling so features like axial and radial holes, flats,
-                  grooves, and slots can be machined.
+                  CNC tornalama sürecimiz, 1 gün kadar kısa sürede özel
+                  prototipler ve son kullanım üretim parçaları üretir. Eksenel
+                  ve radyal delikler, düz yüzeyler, kanallar ve yuvalar gibi
+                  özelliklerin işlenebilmesi için canlı takım tezgahına sahip
+                  bir CNC torna tezgahı kullanıyoruz.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  CNC turning is often used for:
+                  CNC tornalama genellikle şunlar için kullanılır:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "functional prototypes and end-use parts",
-                    "parts with cylindrical features",
-                    "parts with axial and radial holes, flats, grooves, and slots",
+                    "fonksiyonel prototipler ve son kullanım parçaları",
+                    "silindirik özelliklere sahip parçalar",
+                    "eksenel ve radyal delikler, düz yüzeyler, kanallar ve yuvalar içeren parçalar",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -85,8 +82,8 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
       </div>
 
       <GuideDownload
-        title="CNC Machining Design Guide"
-        desc="In this guide to CNC machining, you'll learn how to create efficient, manufacturable metal and plastic parts for prototyping and production."
+        title="CNC İşleme Tasarım Kılavuzu"
+        desc="Bu CNC işleme kılavuzunda, prototipleme ve üretim için verimli, üretilebilir metal ve plastik parçaların nasıl oluşturulacağını öğreneceksiniz."
       />
 
       <div className="w-full bg-white py-20">
@@ -94,13 +91,14 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Design Guidelines for CNC Turning
+              CNC Tornalama için Tasarım Kılavuzları
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our basic guidelines for CNC turning include important design
-              considerations to help improve part manufacturability, enhance
-              cosmetic appearance, and reduce overall production time.
+              CNC tornalama için temel kılavuzlarımız, parça üretilebilirliğini
+              iyileştirmeye, kozmetik görünümü geliştirmeye ve genel üretim
+              süresini azaltmaya yardımcı olacak önemli tasarım hususlarını
+              içerir.
             </p>
           </div>
 
@@ -111,10 +109,10 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700"></th>
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                    US
+                    ABD
                   </th>
                   <th className="text-left p-4 font-semibold text-lg">
-                    Metric
+                    Metrik
                   </th>
                 </tr>
               </thead>
@@ -122,22 +120,22 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
                 {/* Maximum Dimensions Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 w-1/3 align-top">
-                    Maximum Dimensions
+                    Maksimum Boyutlar
                   </td>
                   <td className="p-4 text-gray-600 bg-white align-top">
                     <div className="mb-2">
-                      <span className="font-medium">Diameter:</span> 3.95 in. *
+                      <span className="font-medium">Çap:</span> 3,95 inç *
                     </div>
                     <div>
-                      <span className="font-medium">Length:</span> 9 in.
+                      <span className="font-medium">Uzunluk:</span> 9 inç
                     </div>
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50 align-top">
                     <div className="mb-2">
-                      <span className="font-medium">Diameter:</span> 100.33mm
+                      <span className="font-medium">Çap:</span> 100,33mm
                     </div>
                     <div>
-                      <span className="font-medium">Length:</span> 228.6mm
+                      <span className="font-medium">Uzunluk:</span> 228,6mm
                     </div>
                   </td>
                 </tr>
@@ -149,32 +147,32 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
           <div className="mb-8 p-4 bg-[#F0F8FF] rounded-lg">
             <p className="text-sm text-gray-600">
               <span className="font-semibold text-[#0B1221]">
-                *Hard metals maximum diameter is 2.95 in. (75mm)
+                *Sert metaller için maksimum çap 2,95 inçtir (75mm)
               </span>{" "}
-              for specific turning dimensions by material, see the full list of
-              maximum part extents for machining.
+              malzemeye göre belirli tornalama boyutları için işleme için
+              maksimum parça boyutlarının tam listesine bakın.
             </p>
           </div>
 
           {/* Additional Notes */}
           <div>
             <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-              Additional Notes on CNC Turning Guidelines
+              CNC Tornalama Kılavuzlarına Ek Notlar
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Small features may be allowed, but the diameter in any region
-                  should not be less than 0.030 in. (0.76mm).
+                  Küçük özelliklere izin verilebilir, ancak herhangi bir
+                  bölgedeki çap 0,030 inçten (0,76mm) az olmamalıdır.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Sharp conical points are allowed; angles should be greater
-                  than 30 degrees. Walls thinner than 0.020 in. (0.5mm)
-                  typically do not survive the machining process.
+                  Keskin konik uçlara izin verilir; açılar 30 dereceden büyük
+                  olmalıdır. 0,020 inçten (0,5mm) daha ince duvarlar tipik
+                  olarak işleme sürecinde dayanmaz.
                 </span>
               </li>
             </ul>
@@ -189,23 +187,23 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
               {/* Materials Section */}
               <div className="mb-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                  Materials for CNC Turning
+                  CNC Tornalama için Malzemeler
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  We stock a range of metal materials that are suitable for
-                  various part applications and industries. Choose from
-                  aluminum, brass, low carbon steel, stainless steel, steel
-                  alloy, and titanium for turned parts.
+                  Çeşitli parça uygulamaları ve endüstriler için uygun bir dizi
+                  metal malzeme stokluyoruz. Tornalanmış parçalar için
+                  alüminyum, pirinç, düşük karbonlu çelik, paslanmaz çelik,
+                  çelik alaşımı ve titanyum arasından seçim yapın.
                 </p>
                 <div className="grid grid-cols-2 gap-3 mb-8">
                   {[
-                    "Aluminum",
-                    "Brass",
-                    "Low Carbon Steel",
-                    "Steel Alloy",
-                    "Stainless Steel",
-                    "Titanium",
+                    "Alüminyum",
+                    "Pirinç",
+                    "Düşük Karbonlu Çelik",
+                    "Çelik Alaşımı",
+                    "Paslanmaz Çelik",
+                    "Titanyum",
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -218,24 +216,25 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
               {/* Surface Finish Options Section */}
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                  Surface Finish Options for Turned Parts
+                  Tornalanmış Parçalar için Yüzey İşlem Seçenekleri
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Parts that are turned typically have a very smooth surface
-                  finish. The as-machined surface finish of the cylindrical
-                  areas will typically be much smoother using the lathe than the
-                  mill, so consider this when selecting the machining method for
-                  those parts that qualify for either method. Areas cut with
-                  live tooling, such as flats and slots, may have visible tools
-                  marks.
+                  Tornalanan parçalar tipik olarak çok pürüzsüz bir yüzey
+                  kalitesine sahiptir. Silindirik alanların işlenmiş yüzey
+                  kalitesi, torna tezgahı kullanıldığında freze tezgahına göre
+                  tipik olarak çok daha pürüzsüz olacaktır, bu nedenle her iki
+                  yöntem için de uygun olan parçalar için işleme yöntemini
+                  seçerken bunu göz önünde bulundurun. Düz yüzeyler ve yuvalar
+                  gibi canlı takım tezgahı ile kesilen alanlarda görünür takım
+                  izleri olabilir.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  If desired, the metal parts can be lightly bead blasted
-                  leaving a fine matte finish. Hard metals like steel and
-                  stainless steel can also have edges broken (deburred) with a
-                  light bead blast to remove metal slivers, and sharp or rough
-                  areas.
+                  İstenirse, metal parçalar ince bir mat yüzey bırakarak hafifçe
+                  boncuk püskürtülebilir. Çelik ve paslanmaz çelik gibi sert
+                  metaller de metal kıymıkları ve keskin veya pürüzlü alanları
+                  temizlemek için hafif boncuk püskürtme ile kenarları
+                  kırılabilir (çapak alınabilir).
                 </p>
               </div>
             </div>
@@ -250,9 +249,11 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
                       "/Assets/Images/services/cnc-machining/cnc-turning/aluminum-cnc-turned-part-bead-blast.webp"
                     }
                     fill
-                    alt="design cube"
+                    alt="CNC tornalanmış parçalar"
                   />
-                  <p className="text-gray-500 text-sm mt-2">CNC Turned Parts</p>
+                  <p className="text-gray-500 text-sm mt-2">
+                    CNC Tornalanmış Parçalar
+                  </p>
                 </div>
               </div>
 
@@ -262,30 +263,31 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
                   <thead>
                     <tr className="bg-[#0B1221] text-white">
                       <th className="text-left p-3 font-semibold border-r border-gray-700">
-                        Material
+                        Malzeme
                       </th>
                       <th className="text-left p-3 font-semibold">
-                        Finish Options
+                        İşlem Seçenekleri
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-b border-gray-200 bg-white">
                       <td className="p-3 font-semibold text-[#0B1221]">
-                        Aluminum
+                        Alüminyum
                       </td>
                       <td className="p-3 text-gray-600">
-                        Edges broken with visible toolmarks, edges broken with
-                        light bead blast, or sharp edges with visible toolmarks
+                        Görünür takım izleriyle kırılmış kenarlar, hafif boncuk
+                        püskürtmeyle kırılmış kenarlar veya görünür takım
+                        izleriyle keskin kenarlar
                       </td>
                     </tr>
                     <tr className="border-b border-gray-200 bg-gray-50">
                       <td className="p-3 font-semibold text-[#0B1221]">
-                        All other metals
+                        Diğer tüm metaller
                       </td>
                       <td className="p-3 text-gray-600">
-                        Edges broken with visible toolmarks or edges broken with
-                        light bead blast
+                        Görünür takım izleriyle kırılmış kenarlar veya hafif
+                        boncuk püskürtmeyle kırılmış kenarlar
                       </td>
                     </tr>
                   </tbody>
@@ -300,12 +302,12 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Surface Finish Examples
+              Yüzey İşlem Örnekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Different surface finish options for aluminum parts: broken edge,
-              bead blast, and sharp edge.
+              Alüminyum parçalar için farklı yüzey işlem seçenekleri: kırık
+              kenar, boncuk püskürtme ve keskin kenar.
             </p>
           </div>
 
@@ -319,15 +321,15 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
                     "/Assets/Images/services/cnc-machining/cnc-turning/12-cnc-sf-turn-570x308-sproket-aluminum-brokenedge.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Alüminyum parça - kırık kenar"
                 />
               </div>
               <div className="p-4 text-center">
                 <p className="font-semibold text-[#0B1221]">
-                  Material: Aluminum
+                  Malzeme: Alüminyum
                 </p>
                 <p className="text-gray-500 text-sm">
-                  Surface Finish: Broken Edge
+                  Yüzey İşlemi: Kırık Kenar
                 </p>
               </div>
             </div>
@@ -340,15 +342,15 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
                     "/Assets/Images/services/cnc-machining/cnc-turning/13-cnc-sf-turn-570x308-sproket-aluminum-beadblastededge.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Alüminyum parça - boncuk püskürtme"
                 />
               </div>
               <div className="p-4 text-center">
                 <p className="font-semibold text-[#0B1221]">
-                  Material: Aluminum
+                  Malzeme: Alüminyum
                 </p>
                 <p className="text-gray-500 text-sm">
-                  Surface Finish: Bead Blast
+                  Yüzey İşlemi: Boncuk Püskürtme
                 </p>
               </div>
             </div>
@@ -361,15 +363,15 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
                     "/Assets/Images/services/cnc-machining/cnc-turning/14-cnc-sf-turn-570x308-sproket-aluminum-sharpedge.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Alüminyum parça - keskin kenar"
                 />
               </div>
               <div className="p-4 text-center">
                 <p className="font-semibold text-[#0B1221]">
-                  Material: Aluminum
+                  Malzeme: Alüminyum
                 </p>
                 <p className="text-gray-500 text-sm">
-                  Surface Finish: Sharp Edge
+                  Yüzey İşlemi: Keskin Kenar
                 </p>
               </div>
             </div>
@@ -378,7 +380,7 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
           {/* Anodizing and Chromate Plating Specifications Table */}
           <div>
             <h3 className="text-2xl md:text-3xl font-bold text-[#0B1221] mb-6 text-center">
-              Anodizing and Chromate Plating Specifications
+              Anodizasyon ve Kromat Kaplama Özellikleri
             </h3>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-8"></div>
 
@@ -387,31 +389,31 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
                 <thead>
                   <tr className="bg-[#0B1221] text-white">
                     <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                      Anodize
+                      Anodizasyon
                     </th>
                     <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                      Hard Anodize
+                      Sert Anodizasyon
                     </th>
                     <th className="text-left p-4 font-semibold text-lg">
-                      Chromate
+                      Kromat
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-200 bg-white">
                     <td className="p-4 text-gray-600 align-top">
-                      MIL-A-8625 Type II, Class 2 (Bik)
+                      MIL-A-8625 Tip II, Sınıf 2 (Bik)
                     </td>
                     <td className="p-4 text-gray-600 align-top">
-                      MIL-A-8625 Type III, Class 2 (Bik)
+                      MIL-A-8625 Tip III, Sınıf 2 (Bik)
                     </td>
                     <td className="p-4 text-gray-600 align-top">
-                      MIL-DTL-5541 Type II, Class 3 (Clr)
+                      MIL-DTL-5541 Tip II, Sınıf 3 (Clr)
                     </td>
                   </tr>
                   <tr className="border-b border-gray-200 bg-gray-50">
                     <td className="p-4 text-gray-600 align-top">
-                      MIL-A-8625 Type II, Class 1 (Clr)
+                      MIL-A-8625 Tip II, Sınıf 1 (Clr)
                     </td>
                     <td className="p-4 text-gray-600 align-top">&nbsp;</td>
                     <td className="p-4 text-gray-600 align-top">&nbsp;</td>
@@ -429,18 +431,18 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
             {/* Left Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Quick-turn Finishing
+                Hızlı Teslim Bitirme
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Here are the requirements to get parts in as fast as 4 days
-                (1-day expedite + 3 days for plating):
+                Parçaları 4 gün kadar kısa sürede almak için gerekenler (1 gün
+                hızlandırma + 3 gün kaplama):
               </p>
               <ul className="space-y-2 mb-6">
                 {[
-                  "Aluminum 6061/6082 and 7075 material eligibility",
-                  "Threaded holes plugged",
-                  "No masking available",
+                  "Alüminyum 6061/6082 ve 7075 malzeme uygunluğu",
+                  "Dişli delikler tıkalı",
+                  "Maskeleme mevcut değil",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -450,18 +452,18 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
               </ul>
             </div>
 
-            {/* Right Column - Image */}
+            {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                High-requirement Finishing
+                Yüksek Gereksinimli Bitirme
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Have AS9100 and ITAR requirements? Try our domestic precision
-                machining option. If you have more complex anodizing and plating
-                requirements, work with our digital network of manufacturers.
-                The network works well for components that require a specialized
-                color or material option such as titanium or nickel.
+                AS9100 ve ITAR gereksinimleriniz mi var? Yerel hassas işleme
+                seçeneğimizi deneyin. Daha karmaşık anodizasyon ve kaplama
+                gereksinimleriniz varsa, dijital üretici ağımızla çalışın. Ağ,
+                titanyum veya nikel gibi özel bir renk veya malzeme seçeneği
+                gerektiren bileşenler için iyi çalışır.
               </p>
             </div>
           </div>
@@ -471,21 +473,22 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
             {/* Left Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                What is CNC Turning?
+                CNC Tornalama Nedir?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                CNC turning is a subtractive manufacturing process that rotates
-                a metal rod while a cutting tool is held against the stock to
-                remove material and create final parts. Our CNC lathes are also
-                equipped with live tooling that can machine flat features and
-                holes into the workpiece. Outside diameter (OD) and inside
-                diameter (ID) threading is also available.
+                CNC tornalama, bir metal çubuğu döndürürken bir kesici takımın
+                malzemeyi çıkarmak ve nihai parçalar oluşturmak için malzeme
+                üzerinde tutulduğu çıkarımlı bir üretim sürecidir. CNC torna
+                tezgahlarımız ayrıca iş parçasına düz yüzey özellikleri ve
+                delikler işleyebilen canlı takım tezgahı ile donatılmıştır. Dış
+                çap (OD) ve iç çap (ID) diş açma da mevcuttur.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Turned parts can then be left as-machined, with visible tool
-                marks, or bead blasted. When the run is complete, parts are
-                inspected, boxed and shipped shortly thereafter.
+                Tornalanmış parçalar daha sonra, görünür takım izleriyle
+                işlenmiş olarak bırakılabilir veya boncuk püskürtülebilir.
+                Çalıştırma tamamlandığında, parçalar denetlenir, kutulanır ve
+                kısa bir süre sonra gönderilir.
               </p>
             </div>
 
@@ -494,7 +497,7 @@ Get quality custom turned parts for rapid prototyping and end-use production. Le
               <div className="text-center">
                 <span className="text-6xl">🔧</span>
                 <p className="text-gray-500 text-sm mt-2">
-                  CNC Turning Process
+                  CNC Tornalama Süreci
                 </p>
               </div>
             </div>

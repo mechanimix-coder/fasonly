@@ -6,9 +6,9 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Secondary Operations for Injection Molding"
-        desc="Choose from a wide selection of finishing options for molding that strengthen parts, improve cosmetic appearance, provide customization, and other benefits."
-        firstButton={{ title: "Get a Quote", route: "/" }}
+        title="Enjeksiyon Kalıplama için İkincil Operasyonlar"
+        desc="Parçaları güçlendiren, kozmetik görünümü iyileştiren, özelleştirme sağlayan ve diğer faydalar sunan kalıplama için geniş bir yüzey işlem seçeneği yelpazesinden seçim yapın."
+        firstButton={{ title: "Teklif Al", route: "/" }}
       />
 
       <div className="w-full bg-white py-20">
@@ -16,12 +16,12 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Secondary Operations Capabilities
+              İkincil Operasyon Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Turnaround time for each process varies and is dependent on
-              factors like part complexity and quantity.
+              Her süreç için geri dönüş süresi değişir ve parça karmaşıklığı ve
+              miktarı gibi faktörlere bağlıdır.
             </p>
           </div>
 
@@ -35,22 +35,22 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/secondary-operations/mold-texturing.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Kalıp dokulandırma ve gravür"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Mold Texturing & Engraving
+                  Kalıp Dokulandırma ve Gravür
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  Mold texturing and/or engraving involves applying industry
-                  standard textures to a mold and/or engraving the mold cavity
-                  with graphics/text.
+                  Kalıp dokulandırma ve/veya gravür, bir kalıba endüstri
+                  standardı dokuların uygulanmasını ve/veya kalıp boşluğuna
+                  grafik/metin gravürü yapılmasını içerir.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1">
-                  View Details →
+                  Detayları Görüntüle →
                 </a>
               </div>
             </div>
@@ -63,22 +63,22 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/secondary-operations/laser-engraving.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Lazer gravür"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Laser Engraving
+                  Lazer Gravür
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  Laser engraving is applied directly to the parts with
-                  information such as logos or part numbers. This process
-                  ensures crisp, consistent information on each part.
+                  Lazer gravür, logolar veya parça numaraları gibi bilgilerle
+                  doğrudan parçalara uygulanır. Bu süreç, her parça üzerinde
+                  net, tutarlı bilgi sağlar.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1">
-                  View Details →
+                  Detayları Görüntüle →
                 </a>
               </div>
             </div>
@@ -91,22 +91,22 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/secondary-operations/pad-printing.webp"
                   }
                   fill
-                  alt="design cube"
+                  alt="Pad baskı"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Pad Printing
+                  Pad Baskı
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  Transfer a two-dimensional image, like a company logo, onto a
-                  three-dimensional object. All images are reviewed for size,
-                  color, and complexity restrictions.
+                  İki boyutlu bir görüntüyü, örneğin bir şirket logosunu, üç
+                  boyutlu bir nesneye aktarır. Tüm görüntüler boyut, renk ve
+                  karmaşıklık kısıtlamaları açısından incelenir.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1">
-                  View Details →
+                  Detayları Görüntüle →
                 </a>
               </div>
             </div>
@@ -119,23 +119,24 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/secondary-operations/im_2024_uv-printing_process_15_lr-1.webp"
                   }
                   fill
-                  alt="design cube"
+                  alt="UV baskı"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  UV Printing
+                  UV Baskı
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  UV printing uses state-of-the-art flatbed UV inkjet technology
-                  to print directly onto a three-dimensional object. Images can
-                  be very small or very large, simple or complex, and contain
-                  numerous different colors.
+                  UV baskı, doğrudan üç boyutlu bir nesne üzerine baskı yapmak
+                  için son teknoloji düz yatak UV mürekkep püskürtme
+                  teknolojisini kullanır. Görüntüler çok küçük veya çok büyük,
+                  basit veya karmaşık olabilir ve çok sayıda farklı renk
+                  içerebilir.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1">
-                  View Details →
+                  Detayları Görüntüle →
                 </a>
               </div>
             </div>
@@ -148,23 +149,23 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/secondary-operations/inserts.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Dişli ek parçalar"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Threaded Inserts
+                  Dişli Ek Parçalar
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  We stock and install a variety of commonly used standard
-                  inserts in UNF and metric sizes. We can also accommodate
-                  customer-supplied inserts designed for heat staking or
-                  ultrasonic installation methods.
+                  UNF ve metrik boyutlarda çeşitli yaygın olarak kullanılan
+                  standart ek parçaları stokluyor ve monte ediyoruz. Ayrıca, ısı
+                  çakma veya ultrasonik montaj yöntemleri için tasarlanmış
+                  müşteri tarafından sağlanan ek parçaları da karşılayabiliriz.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1">
-                  View Details →
+                  Detayları Görüntüle →
                 </a>
               </div>
             </div>
@@ -177,22 +178,22 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/secondary-operations/clean-room-operations.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Parça temizleme"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Part Cleaning
+                  Parça Temizleme
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  Our comprehensive part cleaning service for injection molding
-                  ensures that parts are free from contaminants and ready for
-                  subsequent processes or immediate use.
+                  Enjeksiyon kalıplama için kapsamlı parça temizleme hizmetimiz,
+                  parçaların kirleticilerden arındırılmış olmasını ve sonraki
+                  işlemlere veya hemen kullanıma hazır olmasını sağlar.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1">
-                  View Details →
+                  Detayları Görüntüle →
                 </a>
               </div>
             </div>
@@ -205,22 +206,22 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/secondary-operations/cnc-milling-point.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="İşleme"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Machining
+                  İşleme
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  Machining involves using tools to add precise features like
-                  holes, threads, and pockets to a molded part after its initial
-                  formation.
+                  İşleme, ilk şekillendirmeden sonra kalıplanmış bir parçaya
+                  delikler, dişler ve cepler gibi hassas özellikler eklemek için
+                  takımların kullanılmasını içerir.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1">
-                  View Details →
+                  Detayları Görüntüle →
                 </a>
               </div>
             </div>
@@ -233,22 +234,22 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/secondary-operations/im-sec-ops-assembly.png"
                   }
                   fill
-                  alt="design cube"
+                  alt="Montaj"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Assembly
+                  Montaj
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  Our standard assembly service includes putting together molded
-                  parts we've made, applying labels to individually bagged
-                  parts, and installing pins or inserts.
+                  Standart montaj hizmetimiz, ürettiğimiz kalıplanmış parçaların
+                  birleştirilmesini, ayrı ayrı torbalanmış parçalara etiket
+                  uygulanmasını ve pim veya ek parçaların takılmasını içerir.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1">
-                  View Details →
+                  Detayları Görüntüle →
                 </a>
               </div>
             </div>
@@ -261,22 +262,23 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/secondary-operations/im-sec-ops-assembly.png"
                   }
                   fill
-                  alt="design cube"
+                  alt="Paketleme"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Packaging
+                  Paketleme
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  Packing involves custom labeling and packing of parts,
-                  including options like sterilized labels, barcodes, and QR
-                  codes. We also offer tailored packing solutions.
+                  Paketleme, sterilize edilmiş etiketler, barkodlar ve QR kodlar
+                  gibi seçenekler dahil olmak üzere parçaların özel
+                  etiketlenmesini ve paketlenmesini içerir. Ayrıca özel
+                  paketleme çözümleri de sunuyoruz.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1">
-                  View Details →
+                  Detayları Görüntüle →
                 </a>
               </div>
             </div>

@@ -24,27 +24,27 @@ export default function InjectionMoldingPage() {
   const faqs = [
     {
       id: 1,
-      title: "How much does injection molding cost?",
+      title: "Enjeksiyon kalıplamanın maliyeti nedir?",
       content:
-        "Injection molding costs vary based on several factors including part complexity, material selection, tooling requirements, and production volume. Contact us for a detailed quote tailored to your specific project needs.",
+        "Enjeksiyon kalıplama maliyetleri, parça karmaşıklığı, malzeme seçimi, takım gereksinimleri ve üretim hacmi gibi çeşitli faktörlere bağlı olarak değişir. Özel proje ihtiyaçlarınıza göre uyarlanmış detaylı bir teklif için bizimle iletişime geçin.",
     },
     {
       id: 2,
-      title: "Do you do production molding?",
+      title: "Seri üretim kalıplama yapıyor musunuz?",
       content:
-        "Yes, we offer both prototyping and production molding services. Our on-demand manufacturing process is designed to meet your production needs with scientific molding, in-process CMM inspections, and a full suite of secondary operations.",
+        "Evet, hem prototipleme hem de seri üretim kalıplama hizmetleri sunuyoruz. Talep üzerine üretim sürecimiz, bilimsel kalıplama, süreç içi CMM denetimleri ve tam kapsamlı ikincil operasyonlarla üretim ihtiyaçlarınızı karşılamak için tasarlanmıştır.",
     },
     {
       id: 3,
-      title: "What are your tolerances for molded parts?",
+      title: "Kalıplanmış parçalar için toleranslarınız nedir?",
       content:
-        "Our standard tolerances for molded parts are +/-0.003 inches plus resin tolerance (in./in.). For tighter tolerance requirements, please contact our engineering team to discuss your specific needs.",
+        "Kalıplanmış parçalar için standart toleranslarımız +/-0.003 inç artı reçine toleransıdır (in./in.). Daha sıkı tolerans gereksinimleri için lütfen mühendislik ekibimizle iletişime geçerek özel ihtiyaçlarınızı görüşün.",
     },
     {
       id: 4,
-      title: "What is the maximum part size for injection molding?",
+      title: "Enjeksiyon kalıplama için maksimum parça boyutu nedir?",
       content:
-        "The maximum part size depends on the specific material and design requirements. Our team can evaluate your 3D CAD file and provide guidance on manufacturability and size limitations.",
+        "Maksimum parça boyutu, spesifik malzeme ve tasarım gereksinimlerine bağlıdır. Ekibimiz 3B CAD dosyanızı değerlendirebilir ve üretilebilirlik ile boyut sınırlamaları konusunda rehberlik sağlayabilir.",
     },
   ];
 
@@ -56,7 +56,7 @@ export default function InjectionMoldingPage() {
 Hizmetleri"
         desc="Özel parçalar için enjeksiyon kalıplama hizmeti. Prototipler ve talep üzerine üretim parçaları için 1 gün kadar kısa sürede teklif alın."
         image="/Assets/Images/services/injection-molding/hero.png"
-        firstButton={{ title: "Get a Quote", route: "/" }}
+        firstButton={{ title: "Teklif Al", route: "/" }}
         secondButton={{ title: "Malzemeleri İncele", route: "/" }}
       />
       {/* Description Section */}
@@ -275,7 +275,7 @@ Hizmetleri"
             </p>
             <div className="w-16 h-0.5 bg-[#96E92A] mx-auto mb-4"></div>
             <p className="text-[#0B1221] font-semibold">
-              — TIM HUMPHREY, FORMER LEAD SENIOR PRODUCT DESIGNER
+              — TIM HUMPHREY, ESKİ KIDEMLİ BAŞ ÜRÜN TASARIMCISI
             </p>
           </div>
         </div>
@@ -285,18 +285,20 @@ Hizmetleri"
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-6">
-            Injection Mold Tooling Options and Quality Reporting
+            Enjeksiyon Kalıp Takım Seçenekleri ve Kalite Raporlaması
           </h2>
           <p className="text-gray-600 text-center max-w-4xl mx-auto mb-12 leading-relaxed">
-            We have two unique offers to meet your needs wherever you are in the
-            product lifecycle. Our prototype injection molding process helps you
-            cut product development cycles by weeks—sometimes months—and bridge
-            to production with injection-molded parts within days. Our On-demand
-            Manufacturing process is designed to meet your production needs, and
-            helps you qualify parts quickly to seamlessly transition into
-            production with scientific molding, in-process CMM inspections with
-            GD&amp;T, and a full suite of secondary operations to make sure that
-            your parts show up and perform as expected.
+            Ürün yaşam döngüsünde nerede olursanız olun ihtiyaçlarınızı
+            karşılamak için iki benzersiz teklifimiz var. Prototip enjeksiyon
+            kalıplama sürecimiz, ürün geliştirme döngülerini haftalarca - bazen
+            aylarca - kısaltmanıza ve günler içinde enjeksiyon kalıplanmış
+            parçalarla üretime geçiş yapmanıza yardımcı olur. Talep Üzerine
+            Üretim sürecimiz, üretim ihtiyaçlarınızı karşılamak için
+            tasarlanmıştır ve bilimsel kalıplama, GD&amp;T ile süreç içi CMM
+            denetimleri ve parçalarınızın beklendiği gibi gelmesini ve
+            performans göstermesini sağlamak için tam kapsamlı ikincil
+            operasyonlarla parçaları hızlı bir şekilde kalifiye etmenize
+            yardımcı olur.
           </p>
 
           {/* Comparison Table */}
@@ -307,10 +309,10 @@ Hizmetleri"
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700"></th>
                   <th className="text-left p-4 font-semibold text-lg">
-                    Prototyping
+                    Prototipleme
                   </th>
                   <th className="text-left p-4 font-semibold text-lg">
-                    On-Demand Manufacturing
+                    Talep Üzerine Üretim
                   </th>
                 </tr>
               </thead>
@@ -318,49 +320,51 @@ Hizmetleri"
                 {/* Objective Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 w-1/3">
-                    Objective
+                    Amaç
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    I need to validate my design at Fasonly speeds. I need the
-                    flexibility to economically iterate before production.
+                    Tasarımımı Fasonly hızlarında doğrulamam gerekiyor. Üretim
+                    öncesinde ekonomik olarak iterasyon yapma esnekliğine
+                    ihtiyacım var.
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    I have on-demand production needs at Fasonly speeds.
+                    Fasonly hızlarında talep üzerine üretim ihtiyaçlarım var.
                   </td>
                 </tr>
 
                 {/* Best When Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Best When
+                    En Uygun Olduğu Durum
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
                     <ul className="list-disc pl-4 space-y-1">
                       <li>
-                        Completing design or material iterations, and assessing
-                        cost or manufacturability tradeoffs
+                        Tasarım veya malzeme iterasyonlarını tamamlama ve
+                        maliyet veya üretilebilirlik ödünleşimlerini
+                        değerlendirme
                       </li>
                       <li>
-                        Key focus is to reduce design risk, increase R&amp;D
-                        productivity, and iterate faster to reduce time to
-                        market
+                        Temel odak noktası tasarım riskini azaltmak, Ar-Ge
+                        verimliliğini artırmak ve pazara çıkış süresini
+                        kısaltmak için daha hızlı iterasyon yapmaktır
                       </li>
-                      <li>Typical Quantities &lt;2,000</li>
+                      <li>Tipik Miktarlar &lt;2.000</li>
                     </ul>
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
                     <ul className="list-disc pl-4 space-y-1">
                       <li>
-                        Design is finalized and run-to-run part consistency is
-                        critical
+                        Tasarım sonuçlandırılmıştır ve çalışmadan çalışmaya
+                        parça tutarlılığı kritiktir
                       </li>
                       <li>
-                        Key focus is to improve quality, reduce cost, and
-                        mitigate supply chain risk
+                        Temel odak noktası kaliteyi iyileştirmek, maliyeti
+                        azaltmak ve tedarik zinciri riskini hafifletmektir
                       </li>
                       <li>
-                        Process development, qualification documentation, and
-                        mold capability information is required
+                        Süreç geliştirme, kalifikasyon dokümantasyonu ve kalıp
+                        yetenek bilgisi gereklidir
                       </li>
                     </ul>
                   </td>
@@ -369,106 +373,105 @@ Hizmetleri"
                 {/* Mold Cavities Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Mold Cavities
+                    Kalıp Gözleri
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">Single</td>
+                  <td className="p-4 text-gray-600 bg-white">Tek</td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    Single and multi-cavity
+                    Tek ve çok gözlü
                   </td>
                 </tr>
 
                 {/* Mold Life Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Mold Life
+                    Kalıp Ömrü
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    Limited (guaranteed for at least 2,000 shots)
+                    Sınırlı (en az 2.000 atış için garanti edilir)
                   </td>
-                  <td className="p-4 text-gray-600 bg-gray-50">Unlimited</td>
+                  <td className="p-4 text-gray-600 bg-gray-50">Sınırsız</td>
                 </tr>
 
                 {/* Mold Storage Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Mold Storage
+                    Kalıp Saklama
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    Stored for 18 months of inactivity
+                    18 ay hareketsizlik durumunda saklanır
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    Stored for 3 years of inactivity
+                    3 yıl hareketsizlik durumunda saklanır
                   </td>
                 </tr>
 
                 {/* Mold Ownership Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Mold Ownership
+                    Kalıp Sahipliği
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">Upon request</td>
-                  <td className="p-4 text-gray-600 bg-gray-50">Yes</td>
+                  <td className="p-4 text-gray-600 bg-white">Talep üzerine</td>
+                  <td className="p-4 text-gray-600 bg-gray-50">Evet</td>
                 </tr>
 
                 {/* Quality Documentation Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Quality Documentation
+                    Kalite Dokümantasyonu
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
                     <ul className="list-disc pl-4 space-y-1">
-                      <li>Scientific molding process development report</li>
+                      <li>Bilimsel kalıplama süreç geliştirme raporu</li>
                       <li>
-                        In-process CMM inspection of critical dimensions,
-                        including 9 GD&amp;T symbols
+                        9 GD&amp;T sembolü dahil olmak üzere kritik boyutların
+                        süreç içi CMM denetimi
                       </li>
                       <li>
-                        Critical to Quality (CTQ) - identify up to five critical
-                        features or dimensions of importance
+                        Kalite İçin Kritik (CTQ) - önemli en fazla beş kritik
+                        özellik veya boyutu belirleyin
                       </li>
                       <li>
-                        CTQ Partial FAI: 3-part dimensional first article
-                        inspection
+                        CTQ Kısmi FAI: 3 parçalı boyutlu ilk ürün denetimi
                       </li>
                       <li>
-                        CTQ DIR with Capability Study: 30-part dimensional
-                        capability study
+                        CTQ Yetenek Çalışması ile DIR: 30 parçalı boyutlu
+                        yetenek çalışması
                       </li>
                     </ul>
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    Quality Inspection Report (QIR) verifies Fasonly'
-                    manufacturing process controls
+                    Kalite Denetim Raporu (QIR), Fasonly'nin üretim süreç
+                    kontrollerini doğrular
                   </td>
                 </tr>
 
                 {/* Shared Features Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Shared Features
+                    Ortak Özellikler
                   </td>
                   <td colSpan={2} className="p-4 text-gray-600 bg-gray-100">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                      <span className="text-sm">✓ Aluminum molds</span>
+                      <span className="text-sm">✓ Alüminyum kalıplar</span>
                       <span className="text-sm">
-                        ✓ Standard lead times as fast as 7 days
+                        ✓ 7 gün kadar kısa standart teslim süreleri
                       </span>
                       <span className="text-sm">
-                        ✓ Tolerances of +/-0.003 in. plus resin tolerance
-                        (in./in.)
+                        ✓ +/-0.003 inç artı reçine toleransı (in./in.)
+                        toleranslar
                       </span>
                       <span className="text-sm">
-                        ✓ Set-up fees apply to each run
+                        ✓ Her çalıştırma için kurulum ücretleri uygulanır
                       </span>
                       <span className="text-sm">
-                        ✓ Consultative Design Services (CDS)
+                        ✓ Danışmanlık Tasarım Hizmetleri (CDS)
                       </span>
-                      <span className="text-sm">✓ Finishing Options</span>
+                      <span className="text-sm">✓ Yüzey İşlem Seçenekleri</span>
                       <span className="text-sm">
-                        ✓ No minimum order quantities (MOQ)
+                        ✓ Minimum sipariş miktarı yok (MOQ)
                       </span>
                       <span className="text-sm">
-                        ✓ Quick-turn shipping in as fast as 1 day
+                        ✓ 1 gün kadar kısa sürede hızlı gönderim
                       </span>
                     </div>
                   </td>
@@ -503,15 +506,15 @@ Hizmetleri"
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-2">
                   {[
                     "ABS",
-                    "Acetal",
-                    "Acetal Copolymer",
-                    "Acetal Homopolymer/Delrin",
+                    "Asetal",
+                    "Asetal Kopolimer",
+                    "Asetal Homopolimer/Delrin",
                     "ETPU",
                     "HDPE",
                     "LCP",
                     "LDPE",
                     "LLDPE",
-                    "Nylon",
+                    "Naylon",
                     "PBT",
                     "PC/ABS",
                     "PC/PBT",
@@ -519,9 +522,9 @@ Hizmetleri"
                     "PEI",
                     "PET",
                     "PETG",
-                    "PMMA (Acrylic, Plexiglas)",
-                    "Polycarbonate",
-                    "Polypropylene",
+                    "PMMA (Akrilik, Plexiglas)",
+                    "Polikarbonat",
+                    "Polipropilen",
                     "PPA",
                     "PPE/PS",
                     "PS",
@@ -542,10 +545,10 @@ Hizmetleri"
                 </h3>
                 <div className="grid grid-cols-1 gap-y-2">
                   {[
-                    "Standard silicone (30, 40, 50, 60, and 70 durometers)",
-                    "Medical-grade silicone",
-                    "Optical-grade silicone",
-                    "Fluorosilicone (fuel and oil resistant)",
+                    "Standart silikon (30, 40, 50, 60 ve 70 sertlik dereceleri)",
+                    "Medikal sınıfı silikon",
+                    "Optik sınıfı silikon",
+                    "Florosilikon (yakıt ve yağa dayanıklı)",
                   ].map((material, idx) => (
                     <div key={idx} className="text-gray-600 text-sm py-1">
                       {material}
@@ -572,8 +575,8 @@ Hizmetleri"
       </div>
 
       <GuideDownload
-        title="Definitive Guide to Injection Molding"
-        desc="This complete reference guide walks you through everything from quoting, design analysis, and shipment to best practices that ensure your model is optimized for molding."
+        title="Enjeksiyon Kalıplama Kesin Kılavuzu"
+        desc="Bu tam referans kılavuzu, teklif alma, tasarım analizi ve sevkiyattan, modelinizin kalıplama için optimize edildiğini garanti eden en iyi uygulamalara kadar her şeyde size yol gösterir."
       />
 
       {/* Section 6: Why Choose Us for Custom Injection Molding - Dark Blue Two Column */}
@@ -583,45 +586,45 @@ Hizmetleri"
             {/* Left Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Why Choose Us for Custom Injection Molding?
+                Neden Özel Enjeksiyon Kalıplama İçin Bizi Tercih Etmelisiniz?
               </h2>
               <div className="space-y-4 text-gray-300">
                 <p>
-                  <strong className="text-white">Unmatched Lead Times</strong> -
-                  Reduce your product development cycle by weeks—sometimes
-                  months—and bridge to production with injection-molded parts
-                  within days. Some injection molding orders can ship in as fast
-                  as 1 day.
+                  <strong className="text-white">Eşsiz Teslim Süreleri</strong>{" "}
+                  - Ürün geliştirme döngünüzü haftalarca - bazen aylarca -
+                  azaltın ve günler içinde enjeksiyon kalıplanmış parçalarla
+                  üretime geçin. Bazı enjeksiyon kalıplama siparişleri 1 gün
+                  kadar kısa sürede gönderilebilir.
                 </p>
                 <p>
                   <strong className="text-white">
-                    Design for Manufacturing Feedback
+                    Üretilebilirlik İçin Tasarım Geri Bildirimi
                   </strong>{" "}
-                  - Every quote includes real-time pricing and design analysis.
-                  We evaluate your 3D CAD and help identify any features that
-                  may pose challenges during the molding process such as
-                  difficult to machine undercuts and insufficient draft.
+                  - Her teklif, gerçek zamanlı fiyatlandırma ve tasarım analizi
+                  içerir. 3B CAD dosyanızı değerlendirir ve kalıplama sürecinde
+                  zorluk çıkarabilecek işlenmesi zor alt kesimler ve yetersiz
+                  çekme açıları gibi özellikleri belirlemenize yardımcı oluruz.
                 </p>
                 <p>
                   <strong className="text-white">
-                    No Minimum Order Quantities (MOQs)
+                    Minimum Sipariş Miktarı Yok (MOQ)
                   </strong>{" "}
-                  - Procuring parts on demand, without MOQs, helps you manage
-                  market or demand volatility and provides a cost-effective
-                  source for bridge production, line-down emergencies,
-                  end-of-life production, or product customization.
+                  - Talep üzerine parça tedarik etmek, MOQ olmadan, piyasa veya
+                  talep değişkenliğini yönetmenize yardımcı olur ve köprü
+                  üretimi, hat duruşu acil durumları, ömür sonu üretimi veya
+                  ürün özelleştirme için uygun maliyetli bir kaynak sağlar.
                 </p>
                 <p>
                   <strong className="text-white">
-                    Injection Molding Expertise
+                    Enjeksiyon Kalıplama Uzmanlığı
                   </strong>{" "}
-                  - We'll work with you throughout the course of your project to
-                  help you quickly move from prototyping to production,
-                  including finishing options and inspection reporting.
+                  - Projeniz boyunca sizinle birlikte çalışarak, yüzey işlem
+                  seçenekleri ve denetim raporlaması dahil olmak üzere
+                  prototiplemeden üretime hızlıca geçmenize yardımcı olacağız.
                 </p>
               </div>
               <button className="mt-8 bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Try a Sample Quote
+                Örnek Teklif Dene
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -657,22 +660,23 @@ Hizmetleri"
             {/* Right Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                Advantages of Injection Molding
+                Enjeksiyon Kalıplamanın Avantajları
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Injection molding is a plastic manufacturing process that can
-                produce high quality parts at scale. It's typically used for
-                low- to high-volume production but our aluminum tooling can also
-                make prototyping runs economical.
+                Enjeksiyon kalıplama, ölçekte yüksek kaliteli parçalar
+                üretebilen bir plastik üretim sürecidir. Tipik olarak düşük ila
+                yüksek hacimli üretim için kullanılır, ancak alüminyum
+                takımlarımız prototip çalışmalarını da ekonomik hale
+                getirebilir.
               </p>
               <ul className="grid grid-cols-2 gap-3 mt-6">
                 {[
-                  "Low cost at higher volumes",
-                  "Exceptional part cosmetics and surface finish",
-                  "Repeatable",
-                  "Complex parts",
-                  "Low scrap rate",
-                  "Large selection of thermoplastic and thermoset materials",
+                  "Daha yüksek hacimlerde düşük maliyet",
+                  "Olağanüstü parça estetiği ve yüzey kalitesi",
+                  "Tekrarlanabilir",
+                  "Karmaşık parçalar",
+                  "Düşük hurda oranı",
+                  "Geniş termoplastik ve termoset malzeme seçeneği",
                 ].map((item, idx) => (
                   <li
                     key={idx}
@@ -690,22 +694,22 @@ Hizmetleri"
             {/* Left Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                Injection Molding Applications
+                Enjeksiyon Kalıplama Uygulamaları
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Injection molding is widely used for plastic part production in
-                medical, consumer, and automotive industries. Typical parts
-                include:
+                Enjeksiyon kalıplama, tıp, tüketici ve otomotiv endüstrilerinde
+                plastik parça üretimi için yaygın olarak kullanılır. Tipik
+                parçalar şunları içerir:
               </p>
               <ul className="grid grid-cols-2 gap-3 mt-6">
                 {[
-                  "Housings",
-                  "Brackets",
-                  "Gears",
-                  "Single-use medical parts",
-                  "Electrical connectors",
-                  "Syringes",
-                  "Containers",
+                  "Muhafazalar",
+                  "Braketler",
+                  "Dişliler",
+                  "Tek kullanımlık tıbbi parçalar",
+                  "Elektrik konnektörleri",
+                  "Şırıngalar",
+                  "Kaplar",
                 ].map((item, idx) => (
                   <li
                     key={idx}
@@ -743,10 +747,10 @@ Hizmetleri"
                     <Play className="w-10 h-10 text-[#0B1221] ml-1" />
                   </div>
                   <p className="text-white text-lg font-semibold">
-                    What is Injection Molding?
+                    Enjeksiyon Kalıplama Nedir?
                   </p>
                   <p className="text-gray-300 text-sm mt-1">
-                    Fasonly | Manufacturing Accelerated
+                    Fasonly | Hızlandırılmış Üretim
                   </p>
                 </div>
               </div>
@@ -758,7 +762,7 @@ Hizmetleri"
           <div>
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221]">
-                Injection Molding FAQs
+                Enjeksiyon Kalıplama SSS
               </h2>
             </div>
 

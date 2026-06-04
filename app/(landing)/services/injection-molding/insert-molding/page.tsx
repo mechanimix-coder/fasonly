@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="w-full pt-10 pb-20 bg-white">
+    <div className="w-full pt-10 pb-36 bg-white">
       <ServicesHero
-        title="Insert Molding Service"
-        desc="Get custom plastic parts molded with metal inserts. Upload a part to get an online quote."
+        title="Gömme Parçalı Kalıplama Hizmeti"
+        desc="Metal ek parçalarla kalıplanmış özel plastik parçalar alın. Çevrimiçi teklif almak için bir parça yükleyin."
         image="/Assets/Images/services/injection-molding/propeller-part.webp"
-        firstButton={{ title: "Upload a Part", route: "/" }}
+        firstButton={{ title: "Parça Yükle", route: "/" }}
         secondButton={{ title: "Malzemeleri İncele", route: "/" }}
       />
 
@@ -20,14 +20,14 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Capabilities",
-                    "Materials",
-                    "Surface Finishes",
-                    "Quality Inspections",
+                    "Yetenekler",
+                    "Malzemeler",
+                    "Yüzey İşlemleri",
+                    "Kalite Denetimleri",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -42,32 +42,32 @@ export default function page() {
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
+              {/* What is Plastic Insert Molding? Section */}
               <div
-                id="about-plastic-injection-molding"
+                id="plastik-gömme-parçalı-kalıplama-nedir"
                 className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  What is Plastic Insert Molding?
+                  Plastik Gömme Parçalı Kalıplama Nedir?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Our insert molding processes produce custom prototypes and
-                  on-demand production parts in as fast as 15 days. We use
-                  aluminum molds that offer cost-efficient tooling, producing
-                  parts from a range of thermoplastic and liquid silicone rubber
-                  materials.
+                  Gömme parçalı kalıplama süreçlerimiz, 15 gün kadar kısa sürede
+                  özel prototipler ve talep üzerine üretim parçaları üretir.
+                  Maliyet etkin takım sunan alüminyum kalıplar kullanıyoruz ve
+                  çeşitli termoplastik ve sıvı silikon kauçuk malzemelerden
+                  parçalar üretiyoruz.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Common applications for Insert molding:
+                  Gömme parçalı kalıplama için yaygın uygulamalar:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "low-volume production",
-                    "bridge tooling",
-                    "pilot runs",
-                    "functional prototyping",
+                    "düşük hacimli üretim",
+                    "köprü takımı",
+                    "pilot çalışmalar",
+                    "fonksiyonel prototipleme",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -84,8 +84,8 @@ export default function page() {
       </div>
 
       <GuideDownload
-        title="Definitive Guide to Injection Molding"
-        desc="This complete reference guide walks you through everything from quoting, design analysis, and shipment to best practices that ensure your model is optimized for molding."
+        title="Enjeksiyon Kalıplama Kesin Kılavuzu"
+        desc="Bu tam referans kılavuzu, teklif alma, tasarım analizi ve sevkiyattan, modelinizin kalıplama için optimize edildiğini garanti eden en iyi uygulamalara kadar her şeyde size yol gösterir."
       />
 
       <div className="w-full bg-white py-20">
@@ -93,19 +93,20 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Insert Molding Design Guidelines
+              Gömme Parçalı Kalıplama Tasarım Kılavuzları
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our basic guidelines for overmolding and insert molding include
-              important design considerations to help improve part
-              manufacturability, enhance cosmetic appearance, and reduce overall
-              production time.
+              Kaplama kalıplama ve gömme parçalı kalıplama için temel
+              kılavuzlarımız, parça üretilebilirliğini iyileştirmeye, kozmetik
+              görünümü geliştirmeye ve genel üretim süresini azaltmaya yardımcı
+              olacak önemli tasarım hususlarını içerir.
             </p>
             <a
               href="#"
               className="inline-block text-[#0099ff] hover:text-[#96E92A] transition-colors mt-2">
-              View our design guidelines page for more in-depth details. →
+              Daha derinlemesine detaylar için tasarım kılavuzları sayfamızı
+              görüntüleyin. →
             </a>
           </div>
 
@@ -116,10 +117,10 @@ export default function page() {
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700"></th>
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                    US
+                    ABD
                   </th>
                   <th className="text-left p-4 font-semibold text-lg">
-                    Metric
+                    Metrik
                   </th>
                 </tr>
               </thead>
@@ -127,44 +128,44 @@ export default function page() {
                 {/* Maximum Part Size Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 w-1/3">
-                    Maximum Part Size
+                    Maksimum Parça Boyutu
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    18.9 in. x 29.6 in. x 8 in.
+                    18,9 inç x 29,6 inç x 8 inç
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    480mm x 751.8mm x 203.2mm
+                    480mm x 751,8mm x 203,2mm
                   </td>
                 </tr>
 
                 {/* Volume Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Volume
+                    Hacim
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">59 cu. in.</td>
+                  <td className="p-4 text-gray-600 bg-white">59 inç küp</td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    966,837 cu. mm
+                    966.837 mm küp
                   </td>
                 </tr>
 
                 {/* Depth Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Depth
+                    Derinlik
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    4 in. from parting line
+                    Ayırma hattından 4 inç
                     <div className="text-sm text-gray-400 mt-1">
-                      up to 8 in. if the parting line can pass through middle of
-                      part
+                      Ayırma hattı parçanın ortasından geçebiliyorsa 8 inç'e
+                      kadar
                     </div>
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    101mm from parting line
+                    Ayırma hattından 101mm
                     <div className="text-sm text-gray-400 mt-1">
-                      Up to 203.2mm if the parting line can pass through middle
-                      of part
+                      Ayırma hattı parçanın ortasından geçebiliyorsa 203,2mm'ye
+                      kadar
                     </div>
                   </td>
                 </tr>
@@ -172,18 +173,18 @@ export default function page() {
                 {/* Projected Mold Area Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Projected Mold Area
+                    Öngörülen Kalıp Alanı
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    175 sq in. (plastic)
+                    175 inç kare (plastik)
                     <div className="text-sm text-gray-400 mt-1">
-                      48 sq. in. (silicone rubber)
+                      48 inç kare (silikon kauçuk)
                     </div>
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    112,903 sq. mm (plastic)
+                    112.903 mm kare (plastik)
                     <div className="text-sm text-gray-400 mt-1">
-                      30,958 sq. mm (silicone rubber)
+                      30.958 mm kare (silikon kauçuk)
                     </div>
                   </td>
                 </tr>
@@ -198,30 +199,31 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Additional Notes
+                Ek Notlar
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-700">
-                    Minimum part volume is 0.025 cu. in. (40.98 cu. mm).
+                    Minimum parça hacmi 0,025 inç küp (40,98 mm küp)'tür.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-700">
-                    With substrate molds, we can maintain a machining tolerance
-                    of ±0.003 in. (0.08mm) with an included resin tolerance that
-                    can be greater but no less than 0.002 in./in. (0.002mm/mm).
+                    Alt tabaka kalıpları ile, +/- 0,003 inç (0,08mm) işleme
+                    toleransını koruyabiliriz ve buna dahil olan reçine
+                    toleransı 0,002 inç/inç'ten (0,002mm/mm) büyük ancak daha az
+                    olmayabilir.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-700">
-                    With thermoplastic overmolds, tolerances remain the same as
-                    substrate molds, however, if the overmold is LSR, then
-                    tolerances shift to 0.025 in./in. (0.025mm).
+                    Termoplastik kaplamalı kalıplarda toleranslar alt tabaka
+                    kalıplarıyla aynı kalır, ancak kaplama LSR ise toleranslar
+                    0,025 inç/inç'e (0,025mm) kayar.
                   </span>
                 </li>
               </ul>
@@ -235,7 +237,7 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/green-overmold-part.webp"
                   }
                   fill
-                  alt="design cube"
+                  alt="Gömme parçalı kalıplama örneği"
                 />
               </div>
             </div>
@@ -248,33 +250,34 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Insert Molding Capabilities
+                Gömme Parçalı Kalıplama Yetenekleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-300 leading-relaxed mb-4">
-                Instead of a mold that produces a final part using two separate
-                shots like overmolding, insert molding generally consists of a
-                preformed part—often metal—that is loaded into a mold, where it
-                is then overmolded with plastic to create a part with improved
-                functional or mechanical properties. We currently accept inserts
-                from PEM, Dodge, Tri-Star, Spirol, and Tappex. A complete chart
-                of{" "}
+                Kaplama kalıplama gibi iki ayrı enjeksiyon kullanarak nihai bir
+                parça üreten bir kalıp yerine, gömme parçalı kalıplama
+                genellikle bir kalıba yüklenen ve daha sonra gelişmiş
+                fonksiyonel veya mekanik özelliklere sahip bir parça oluşturmak
+                için plastikle kaplanan, genellikle metal olan önceden
+                şekillendirilmiş bir parçadan oluşur. Şu anda PEM, Dodge,
+                Tri-Star, Spirol ve Tappex'ten ek parçalar kabul ediyoruz.
+                Fasonly'deki{" "}
                 <a
                   href="#"
                   className="text-[#96E92A] hover:text-[#85d122] transition-colors">
-                  stocked inserts
+                  stoktaki ek parçaların
                 </a>{" "}
-                at Fasonly is available here.
+                tam listesi burada mevcuttur.
               </p>
 
               <p className="text-gray-300 leading-relaxed">
-                One way insert molding is used is with threaded inserts, which
-                reinforce the mechanical properties of plastic parts' ability to
-                be fastened together, especially over repeated assembly.
-                Bushings and sleeves are another great way to increase part
-                durability for mating components that need more abrasion
-                resistance due to moving parts.
+                Gömme parçalı kalıplamanın kullanıldığı bir yöntem, özellikle
+                tekrarlanan montajlarda plastik parçaların birbirine bağlanma
+                yeteneğinin mekanik özelliklerini güçlendiren dişli ek
+                parçalardır. Burçlar ve manşonlar, hareketli parçalar nedeniyle
+                daha fazla aşınma direnci gerektiren birleşen bileşenler için
+                parça dayanıklılığını artırmanın başka bir harika yoludur.
               </p>
             </div>
 
@@ -286,7 +289,7 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/insert-molding/om-dg-insertmold-tiny.webp"
                   }
                   fill
-                  alt="design cube"
+                  alt="Gömme parçalı kalıplama şeması"
                 />
               </div>
             </div>
@@ -304,7 +307,7 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/insert-molding/overmolding-and-insert-molding-process-illustration-900x600.png"
                   }
                   fill
-                  alt="design cube"
+                  alt="Gömme parçalı kalıplama süreci"
                 />
               </div>
             </div>
@@ -312,15 +315,16 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                What is Insert Molding?
+                Gömme Parçalı Kalıplama Nedir?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Insert molding is a similar process but instead uses a preformed
-                part—often metal—that is loaded into a mold where it is then
-                overmolded with a thermoplastic resin to create a final
-                component. When the run is complete, parts are boxed and shipped
-                shortly thereafter.
+                Gömme parçalı kalıplama benzer bir süreçtir ancak bunun yerine
+                bir kalıba yüklenen ve daha sonra nihai bir bileşen oluşturmak
+                için bir termoplastik reçine ile kaplanan, genellikle metal olan
+                önceden şekillendirilmiş bir parça kullanır. Çalıştırma
+                tamamlandığında, parçalar kutulanır ve kısa bir süre sonra
+                gönderilir.
               </p>
             </div>
           </div>

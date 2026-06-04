@@ -8,12 +8,12 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="w-full pt-10 bg-white">
+    <div className="w-full pt-10 pb-36 bg-white">
       <ServicesHero
         title="Çevrimiçi CNC İşleme Hizmeti"
         desc="İşlenmiş prototipler ve üretim parçaları 1 gün kadar kısa sürede. Bugün çevrimiçi teklif talep edin."
         image="/Assets/Images/services/injection-molding/yellow-plastic-part.webp"
-        firstButton={{ title: "Get Instant Quote", route: "/" }}
+        firstButton={{ title: "Anında Teklif Al", route: "/" }}
         secondButton={{ title: "Malzemeleri İncele", route: "/" }}
         simple
       />
@@ -25,16 +25,16 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Capabilities",
-                    "Materials",
-                    "Surface Finishes",
-                    "Quality Inspections",
-                    "Finishing Options",
-                    "About Plastic Injection Molding",
+                    "Yetenekler",
+                    "Malzemeler",
+                    "Yüzey İşlemleri",
+                    "Kalite Denetimleri",
+                    "İşlem Sonrası Seçenekler",
+                    "Plastik Enjeksiyon Kalıplama Hakkında",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -51,43 +51,43 @@ export default function page() {
             <div className="lg:col-span-3">
               {/* What is Plastic Injection Molding? Section */}
               <div
-                id="about-plastic-injection-molding"
+                id="plastik-enjeksiyon-kalıplama-hakkında"
                 className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  What is Plastic Injection Molding?
+                  Plastik Enjeksiyon Kalıplama Nedir?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Injection molding is a manufacturing process that consists of
-                  filling a metal mold cavity with liquid plastic resin, which
-                  then cools and forms a plastic part.
+                  Enjeksiyon kalıplama, bir metal kalıp boşluğunun sıvı plastik
+                  reçine ile doldurulmasından oluşan ve daha sonra soğuyarak
+                  plastik bir parça oluşturan bir üretim sürecidir.
                 </p>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  It's most often used for manufacturing plastic parts at scale
-                  due to its low material waste and low cost per part. It's an
-                  ideal manufacturing process for industries like medical
-                  devices, consumer products, and automotive.
+                  Düşük malzeme israfı ve parça başına düşük maliyet nedeniyle
+                  çoğunlukla ölçekte plastik parçaların üretilmesi için
+                  kullanılır. Medikal cihazlar, tüketici ürünleri ve otomotiv
+                  gibi endüstriler için ideal bir üretim sürecidir.
                 </p>
 
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Our plastic injection molding process produces custom
-                  prototypes and end-use production parts with lead times as
-                  fast as 1 day. We use aluminum molds that offer cost-efficient
-                  tooling and accelerated manufacturing cycles, and stock about
-                  200 different thermoplastic resins.
+                  Plastik enjeksiyon kalıplama sürecimiz, 1 gün kadar kısa
+                  teslim süreleriyle özel prototipler ve son kullanım üretim
+                  parçaları üretir. Maliyet etkin takım ve hızlandırılmış üretim
+                  döngüleri sunan alüminyum kalıplar kullanıyoruz ve yaklaşık
+                  200 farklı termoplastik reçine stokluyoruz.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Common applications for plastic injection molding:
+                  Plastik enjeksiyon kalıplama için yaygın uygulamalar:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "low-volume production",
-                    "bridge tooling",
-                    "pilot runs",
-                    "functional testing and prototyping",
+                    "düşük hacimli üretim",
+                    "köprü takımı",
+                    "pilot çalışmalar",
+                    "fonksiyonel test ve prototipleme",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -103,9 +103,9 @@ export default function page() {
         </div>
       </div>
       <Quote
-        text="It has been very enlightening to us here at HP that we are able to get parts so rapidly out of the actual materials that we're going to use in the final production."
+        text="HP'de bizim için gerçek son üretimde kullanacağımız malzemelerden parçaları bu kadar hızlı alabiliyor olmamız çok aydınlatıcı oldu."
         author="J.D. HANKINS"
-        title="NEW PRODUCT INTRODUCTION ENGINEER, HP"
+        title="YENİ ÜRÜN TANITIM MÜHENDİSİ, HP"
       />
 
       <div className="w-full bg-white py-20">
@@ -113,18 +113,20 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Plastic Molding Capabilities
+              Plastik Kalıplama Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our basic guidelines for plastic injection molding include
-              important design considerations to help improve part moldability,
-              enhance cosmetic appearance, and reduce overall production time.
+              Plastik enjeksiyon kalıplama için temel kılavuzlarımız, parça
+              kalıplanabilirliğini iyileştirmeye, kozmetik görünümü geliştirmeye
+              ve genel üretim süresini azaltmaya yardımcı olacak önemli tasarım
+              hususlarını içerir.
             </p>
             <a
               href="#"
               className="inline-block text-[#0099ff] hover:text-[#96E92A] transition-colors mt-2">
-              View our design guidelines page for more details. →
+              Daha fazla detay için tasarım kılavuzları sayfamızı görüntüleyin.
+              →
             </a>
           </div>
 
@@ -135,10 +137,10 @@ export default function page() {
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700"></th>
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                    US
+                    ABD
                   </th>
                   <th className="text-left p-4 font-semibold text-lg">
-                    Metric
+                    Metrik
                   </th>
                 </tr>
               </thead>
@@ -146,10 +148,10 @@ export default function page() {
                 {/* Size Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 w-1/3">
-                    Size
+                    Boyut
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    18.9 in. x 29.6 in. x 8 in.
+                    18,9 inç x 29,6 inç x 8 inç
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
                     480mm x 751mm x 203mm
@@ -159,31 +161,31 @@ export default function page() {
                 {/* Volume Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Volume
+                    Hacim
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">59 cu. in.</td>
+                  <td className="p-4 text-gray-600 bg-white">59 inç küp</td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    966,837 cu. mm
+                    966.837 mm küp
                   </td>
                 </tr>
 
                 {/* Depth Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Depth
+                    Derinlik
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    4 in. from parting line
+                    Ayırma hattından 4 inç
                     <div className="text-sm text-gray-400 mt-1">
-                      Up to 8 in. if parting line can pass through the middle of
-                      the part
+                      Ayırma hattı parçanın ortasından geçebiliyorsa 8 inç'e
+                      kadar
                     </div>
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    101mm from parting line
+                    Ayırma hattından 101mm
                     <div className="text-sm text-gray-400 mt-1">
-                      Up to 203.2mm if the parting line can pass through the
-                      middle of the part
+                      Ayırma hattı parçanın ortasından geçebiliyorsa 203,2mm'ye
+                      kadar
                     </div>
                   </td>
                 </tr>
@@ -191,11 +193,11 @@ export default function page() {
                 {/* Projected Mold Area Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Projected Mold Area
+                    Öngörülen Kalıp Alanı
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">175 sq. in.</td>
+                  <td className="p-4 text-gray-600 bg-white">175 inç kare</td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    112,903 sq. mm
+                    112.903 mm kare
                   </td>
                 </tr>
               </tbody>
@@ -205,10 +207,10 @@ export default function page() {
           {/* Tolerances Info */}
           <div className="mt-6 p-4 bg-[#F0F8FF] rounded-lg">
             <p className="text-gray-600 text-sm leading-relaxed">
-              <span className="font-semibold text-[#0B1221]">Tolerances:</span>{" "}
-              Typically, Fasonly can maintain a machining tolerance of +/- 0.003
-              in. (0.08mm) with an included resin tolerance that can be greater
-              than but no less than +/- 0.002 in./in. (0.002mm/mm).
+              <span className="font-semibold text-[#0B1221]">Toleranslar:</span>{" "}
+              Tipik olarak Fasonly, +/- 0,003 inç (0,08mm) işleme toleransını
+              koruyabilir ve bu toleransa, +/- 0,002 inç/inç'ten (0,002mm/mm)
+              büyük ancak daha az olmayan bir reçine toleransı dahildir.
             </p>
           </div>
         </div>
@@ -221,16 +223,17 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Grab a Design Cube
+                Tasarım Küpü Alın
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto lg:mx-0"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Want to learn more about injection molding? Sign up to receive a
-                Design Cube. This physical aid demonstrates how to properly
-                design features commonly found on molded parts.
+                Enjeksiyon kalıplama hakkında daha fazla bilgi edinmek ister
+                misiniz? Bir Tasarım Küpü almak için kaydolun. Bu fiziksel
+                yardımcı, kalıplanmış parçalarda yaygın olarak bulunan
+                özelliklerin nasıl doğru şekilde tasarlanacağını gösterir.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Get a Design Cube
+                Tasarım Küpü Al
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -250,9 +253,8 @@ export default function page() {
       </div>
 
       <GuideDownload
-        title="Definitive Guide to Injection Molding"
-        desc="This complete reference guide walks you through everything from quoting, design analysis, and shipment to best practices that ensure your model is optimized for molding.
-"
+        title="Enjeksiyon Kalıplama Kesin Kılavuzu"
+        desc="Bu tam referans kılavuzu, teklif alma, tasarım analizi ve sevkiyattan, modelinizin kalıplama için optimize edildiğini garanti eden en iyi uygulamalara kadar her şeyde size yol gösterir."
       />
 
       <div className="w-full bg-white py-20">
@@ -261,19 +263,19 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Thermoplastic Materials
+                Termoplastik Malzemeler
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                We have wide selection of more than 100 thermoplastic and
-                thermoset materials. And if you're looking for alternative
-                material options, check out our{" "}
+                100'den fazla termoplastik ve termoset malzeme seçeneğimiz
+                bulunmaktadır. Alternatif malzeme seçenekleri arıyorsanız, ABS,
+                PC, PP ve diğer yaygın kalıplanan plastikler için{" "}
                 <a
                   href="#"
                   className="text-[#0099ff] hover:text-[#96E92A] transition-colors">
-                  guide to resin substitutes
+                  reçine alternatifleri rehberimize
                 </a>{" "}
-                for ABS, PC, PP, and other commonly molded plastics.
+                göz atın.
               </p>
 
               {/* Materials Grid - 3 columns */}
@@ -281,23 +283,23 @@ export default function page() {
                 {[
                   "ABS",
                   "ABS/PC",
-                  "Acetal",
-                  "Acetal Homopolymer/Delrin",
+                  "Asetal",
+                  "Asetal Homopolimer/Delrin",
                   "ETPU",
                   "HDPE",
                   "LCP",
                   "LDPE",
                   "LLDPE",
-                  "Nylon",
+                  "Naylon",
                   "PBT",
                   "PC/PBT",
                   "PEEK",
                   "PEI",
                   "PET",
                   "PETG",
-                  "PMMA (Acrylic, Plexiglas)",
-                  "Polycarbonate",
-                  "Polypropylene",
+                  "PMMA (Akrilik, Plexiglas)",
+                  "Polikarbonat",
+                  "Polipropilen",
                   "PPA",
                   "PPE/PS",
                   "PS",
@@ -347,36 +349,37 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Material Selection Guide
+                Malzeme Seçim Kılavuzu
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Choose from hundreds of engineering-grade resins for your
-                injection molding project. Our material selection guide helps
-                you compare properties, applications, and cost considerations to
-                find the perfect material for your specific needs.
+                Enjeksiyon kalıplama projeniz için yüzlerce mühendislik sınıfı
+                reçine arasından seçim yapın. Malzeme seçim kılavuzumuz, özel
+                ihtiyaçlarınız için mükemmel malzemeyi bulmanıza yardımcı olmak
+                üzere özellikleri, uygulamaları ve maliyet hususlarını
+                karşılaştırmanıza olanak tanır.
               </p>
 
               {/* Material Categories */}
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="bg-[#F0F8FF] rounded-lg p-4">
                   <h3 className="font-bold text-[#0B1221] mb-2">
-                    Thermoplastics
+                    Termoplastikler
                   </h3>
                   <p className="text-sm text-gray-500">
-                    ABS, PC, Nylon, PEEK, and more
+                    ABS, PC, Naylon, PEEK ve daha fazlası
                   </p>
                 </div>
                 <div className="bg-[#F0F8FF] rounded-lg p-4">
-                  <h3 className="font-bold text-[#0B1221] mb-2">Thermosets</h3>
+                  <h3 className="font-bold text-[#0B1221] mb-2">Termosetler</h3>
                   <p className="text-sm text-gray-500">
-                    Silicone, Epoxy, Phenolic
+                    Silikon, Epoksi, Fenolik
                   </p>
                 </div>
               </div>
 
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Explore Materials
+                Malzemeleri Keşfet
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -388,12 +391,14 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Quality Inspections and Finishing Options for Custom Molded Parts
+              Özel Kalıplanmış Parçalar için Kalite Denetimleri ve İşlem Sonrası
+              Seçenekler
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
             <p className="text-gray-600 mt-4 leading-relaxed">
-              Depending on your application's requirements, you can choose from
-              the following when requesting an injection molding quote.
+              Uygulamanızın gereksinimlerine bağlı olarak, bir enjeksiyon
+              kalıplama teklifi talep ederken aşağıdakiler arasından seçim
+              yapabilirsiniz.
             </p>
           </div>
 
@@ -402,17 +407,17 @@ export default function page() {
             {/* Left Column - Quality Inspections */}
             <div className="bg-[#F0F8FF] rounded-2xl p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-bold text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
-                Quality Inspections
+                Kalite Denetimleri
               </h3>
               <p className="text-sm text-gray-500 mt-2 mb-4">
-                available for on-demand manufacturing orders
+                talep üzerine üretim siparişleri için mevcuttur
               </p>
               <ul className="space-y-3">
                 {[
-                  "Designing for Manufacturability Feedback (DFM)",
-                  "Scientific molding process development report",
-                  "In-process CMM inspection and machine monitoring",
-                  "First article inspection (FAI) and process capability report with GD&T",
+                  "Üretilebilirlik İçin Tasarım Geri Bildirimi (DFM)",
+                  "Bilimsel kalıplama süreç geliştirme raporu",
+                  "Süreç içi CMM denetimi ve makine izleme",
+                  "GD&T ile ilk ürün denetimi (FAI) ve süreç yetenek raporu",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -425,34 +430,34 @@ export default function page() {
             {/* Right Column - Post-Processing */}
             <div className="bg-[#F0F8FF] rounded-2xl p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-bold text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
-                Post-Processing
+                İşlem Sonrası
               </h3>
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold text-[#0B1221] mb-2">
-                    Mold Texturing (Mold Tech Surface Finishes)
+                    Kalıp Dokulandırma (Mold Tech Yüzey İşlemleri)
                   </h4>
                   <ul className="space-y-2 ml-4">
                     <li className="flex items-start gap-3">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
-                      <span className="text-gray-700">Laser Engraving</span>
+                      <span className="text-gray-700">Lazer Gravür</span>
                     </li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="font-semibold text-[#0B1221] mb-2">
-                    Threaded Inserts
+                    Dişli Ekleme Parçaları
                   </h4>
                   <ul className="space-y-2 ml-4">
                     <li className="flex items-start gap-3">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
-                      <span className="text-gray-700">Component Assembly</span>
+                      <span className="text-gray-700">Bileşen Montajı</span>
                     </li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="font-semibold text-[#0B1221] mb-2">
-                    Pad Printing
+                    Pad Baskı
                   </h4>
                 </div>
               </div>
@@ -476,10 +481,10 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
                   <p className="text-gray-300 text-xs mt-1">
-                    Prototyping vs On-Demand Manufacturing
+                    Prototipleme vs Talep Üzerine Üretim
                   </p>
                 </div>
               </div>
@@ -488,17 +493,17 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Prototyping or On-demand Manufacturing?
+                Prototipleme mi Talep Üzerine Üretim mi?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto lg:mx-0"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                While the molds themselves are similar, part quantities,
-                lifetime maintenance, quality documentation, and pricing vary
-                depending on which service option is chosen. The right one
-                depends on your project needs.
+                Kalıpların kendileri benzer olsa da, parça miktarları, ömür boyu
+                bakım, kalite dokümantasyonu ve fiyatlandırma, hangi hizmet
+                seçeneğinin seçildiğine bağlı olarak değişir. Doğru seçenek,
+                proje ihtiyaçlarınıza bağlıdır.
               </p>
               <button className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                Learn More
+                Daha Fazla Bilgi
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -511,49 +516,51 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                How Does Plastic Injection Molding Work?
+                Plastik Enjeksiyon Kalıplama Nasıl Çalışır?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                The manufacturing process for molded parts is complex. Before
-                your parts are even molded, we're there to help you with
-                comprehensive manufacturability feedback and consultative design
-                services, so you can avoid mold design pitfalls before the resin
-                hits the mold. From there, our production process is documented
-                and optimized using scientific molding so you get high-quality
-                parts consistently and reliably with every production run.
+                Kalıplanmış parçalar için üretim süreci karmaşıktır.
+                Parçalarınız kalıplanmadan önce bile, kapsamlı üretilebilirlik
+                geri bildirimi ve danışmanlık tasarım hizmetleriyle size
+                yardımcı olmak için oradayız, böylece reçine kalıba girmeden
+                önce kalıp tasarımı tuzaklarından kaçınabilirsiniz. Oradan,
+                üretim sürecimiz belgelenir ve bilimsel kalıplama kullanılarak
+                optimize edilir, böylece her üretim çalışmasında tutarlı ve
+                güvenilir bir şekilde yüksek kaliteli parçalar elde edersiniz.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Critical-to-quality (CTQ) dimensions you call out on models let
-                us know what areas are most crucial to the success of your
-                parts. Once the parts start molding, the process and samples are
-                qualified using automated inline CMM technology, generating a
-                detailed FAI and process capability study with no additional
-                lead time.
+                Modellerde belirttiğiniz kalite için kritik (CTQ) boyutlar,
+                hangi alanların parçalarınızın başarısı için en önemli olduğunu
+                bilmemizi sağlar. Parçalar kalıplanmaya başladığında, süreç ve
+                numuneler otomatik entegre CMM teknolojisi kullanılarak kalifiye
+                edilir ve ek teslim süresi olmadan ayrıntılı bir FAI ve süreç
+                yetenek çalışması oluşturulur.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our thermoplastic injection molding is a standard process
-                involving an aluminum mold with no heating or cooling lines
-                running through it, which means cycle times are a bit longer. As
-                part of the scientific molding process, our molders
-                independently optimize and monitor fill speed, hold pressure,
-                and hold time, and periodically inspect part quality and
-                cosmetics. During the molding process, we use an automated
-                inline CMM to ensure dimensional accuracy, as well as generate a
-                detailed process capability study and FAI report.
+                Termoplastik enjeksiyon kalıplamamız, içinden ısıtma veya
+                soğutma hatları geçmeyen alüminyum bir kalıp içeren standart bir
+                süreçtir, bu da çevrim sürelerinin biraz daha uzun olduğu
+                anlamına gelir. Bilimsel kalıplama sürecinin bir parçası olarak,
+                kalıpçılarımız dolum hızını, tutma basıncını ve tutma süresini
+                bağımsız olarak optimize eder ve izler ve periyodik olarak parça
+                kalitesini ve estetiğini denetler. Kalıplama süreci sırasında,
+                boyutsal doğruluğu sağlamak için otomatik bir entegre CMM
+                kullanırız ve ayrıca ayrıntılı bir süreç yetenek çalışması ve
+                FAI raporu oluştururuz.
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                Resin pellets are loaded into a barrel where they will
-                eventually be melted, compressed, and injected into the mold's
-                runner system. Hot resin is shot into the mold cavity through
-                the gates and the part is molded. Ejector pins facilitate
-                removal of the part from the mold where it falls into a loading
-                bin. When the run is complete, parts (or the initial sample run)
-                are boxed and shipped shortly thereafter.
+                Reçine peletleri bir hazneye yüklenir, burada eritilir,
+                sıkıştırılır ve kalıbın kanal sistemine enjekte edilir. Sıcak
+                reçine, kapaklardan kalıp boşluğuna püskürtülür ve parça
+                kalıplanır. İtici pimler, parçanın bir yükleme haznesine düştüğü
+                kalıptan çıkarılmasını kolaylaştırır. Çalıştırma
+                tamamlandığında, parçalar (veya ilk numune çalıştırması)
+                kutulanır ve kısa bir süre sonra gönderilir.
               </p>
             </div>
 

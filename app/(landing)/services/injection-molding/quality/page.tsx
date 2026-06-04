@@ -9,88 +9,88 @@ export default function page() {
   );
 
   const partialData = {
-    title: "CTQ Partial FAI",
+    title: "CTQ Kısmi FAI",
     rows: [
       {
-        label: "Benefits",
+        label: "Faydalar",
         value:
-          "Provides a dimensional capability study of critical features (customer selects features defined through an Inspection Statement of Work)",
+          "Kritik özelliklerin boyutsal yetenek çalışmasını sağlar (müşteri, bir Muayene İş Tanımı aracılığıyla tanımlanan özellikleri seçer)",
       },
       {
-        label: "Measurements",
+        label: "Ölçümler",
         value:
-          "Selected features per Inspection Statement of Work. May include plane-to-plane, hole-to-hole, ID/OD, or radii measurements as critical features",
+          "Muayene İş Tanımı başına seçilen özellikler. Kritik özellikler olarak düzlemler arası, delikler arası, iç çap/dış çap veya yarıçap ölçümlerini içerebilir",
       },
-      { label: "Service Provided By", value: "Fasonly" },
+      { label: "Hizmet Sağlayıcı", value: "Fasonly" },
       {
-        label: "Additional Features",
+        label: "Ek Özellikler",
         value:
-          "Formatted report with bubbled part image and result summary chart",
-      },
-      {
-        label: "Eligibility",
-        value:
-          "On-demand manufacturing, injection molding orders. Can be added to any other order (excludes: Thermoplastic elastomers (TPU, TPV, TPO, etc.) and liquid silicone rubber (LSR))",
-      },
-      { label: "Additional Lead Time", value: "None" },
-      {
-        label: "Price",
-        value:
-          "Default of 3-piece up to 5 feature partial FAI provided at no additional charge on new unlimited mold orders. For additional part quantities, features, or to add to repeat orders, partial FAI can be modified a la carte. (Starting at $500)",
+          "Baloncuklu parça görseli ve sonuç özet tablosu içeren biçimlendirilmiş rapor",
       },
       {
-        label: "Sample Plan",
+        label: "Uygunluk",
         value:
-          "After establishing the molding process, a partial FAI is done using samples of the first parts off the tool",
+          "Talep üzerine üretim, enjeksiyon kalıplama siparişleri. Diğer tüm siparişlere eklenebilir (Termoplastik elastomerler (TPU, TPV, TPO, vb.) ve sıvı silikon kauçuk (LSR) hariç)",
+      },
+      { label: "Ek Teslim Süresi", value: "Yok" },
+      {
+        label: "Fiyat",
+        value:
+          "Varsayılan olarak, yeni sınırsız kalıp siparişlerinde ek ücret olmaksızın 5 özelliğe kadar 3 parçalı kısmi FAI sağlanır. Ek parça miktarları, özellikler veya tekrar eden siparişlere eklemek için kısmi FAI a la carte olarak değiştirilebilir. (500$'dan başlayan fiyatlarla)",
       },
       {
-        label: "Additional Information",
+        label: "Örneklem Planı",
         value:
-          'Available to select in "inspections" during checkout. Upload a 2D drawing with critical features identified. In addition, define part and feature quantities needed. Contact your account representative with questions',
+          "Kalıplama süreci kurulduktan sonra, takımdan çıkan ilk parçaların örnekleri kullanılarak kısmi bir FAI yapılır",
+      },
+      {
+        label: "Ek Bilgiler",
+        value:
+          'Ödeme sırasında "denetimler" bölümünde seçilebilir. Kritik özellikleri belirtilmiş bir 2B çizim yükleyin. Ayrıca, gerekli parça ve özellik miktarlarını tanımlayın. Sorularınız için hesap temsilcinizle iletişime geçin',
       },
     ],
     downloadLink: "#",
   };
 
   const capabilityData = {
-    title: "CTQ DIR with Capability Study",
+    title: "CTQ Yetenek Çalışması ile DIR",
     rows: [
       {
-        label: "Benefits",
+        label: "Faydalar",
         value:
-          "Provides a dimensional capability study of critical features (customer selects features defined through an Inspection Statement of Work)",
+          "Kritik özelliklerin boyutsal yetenek çalışmasını sağlar (müşteri, bir Muayene İş Tanımı aracılığıyla tanımlanan özellikleri seçer)",
       },
       {
-        label: "Measurements",
+        label: "Ölçümler",
         value:
-          "Selected features per Inspection Statement of Work. May include plane-to-plane, hole-to-hole, ID/OD, or radii measurements as critical features",
+          "Muayene İş Tanımı başına seçilen özellikler. Kritik özellikler olarak düzlemler arası, delikler arası, iç çap/dış çap veya yarıçap ölçümlerini içerebilir",
       },
-      { label: "Service Provided By", value: "Fasonly" },
+      { label: "Hizmet Sağlayıcı", value: "Fasonly" },
       {
-        label: "Additional Features",
+        label: "Ek Özellikler",
         value:
-          "Formatted report with bubbled part image and result summary chart",
-      },
-      {
-        label: "Eligibility",
-        value:
-          "On-demand manufacturing, injection molding orders. Can be added to any other order (excludes: Thermoplastic elastomers (TPU, TPV, TPO, etc.) and liquid silicone rubber (LSR))",
-      },
-      { label: "Additional Lead Time", value: "None" },
-      {
-        label: "Price",
-        value:
-          "Default of 30-piece up to 5 feature Capability Study provided at no additional charge on new unlimited mold orders. For additional part quantities, features, or to add a repeat order, Capability Study can be modified a la carte. (Starting at $1,500)",
+          "Baloncuklu parça görseli ve sonuç özet tablosu içeren biçimlendirilmiş rapor",
       },
       {
-        label: "Sample Plan",
+        label: "Uygunluk",
         value:
-          "After establishing the molding process, the capability report will be based on customer-defined quantity of parts taken from a set of evenly distributed samples while the order is running (30-part minimum)",
+          "Talep üzerine üretim, enjeksiyon kalıplama siparişleri. Diğer tüm siparişlere eklenebilir (Termoplastik elastomerler (TPU, TPV, TPO, vb.) ve sıvı silikon kauçuk (LSR) hariç)",
+      },
+      { label: "Ek Teslim Süresi", value: "Yok" },
+      {
+        label: "Fiyat",
+        value:
+          "Varsayılan olarak, yeni sınırsız kalıp siparişlerinde ek ücret olmaksızın 5 özelliğe kadar 30 parçalı Yetenek Çalışması sağlanır. Ek parça miktarları, özellikler veya tekrar eden bir siparişe eklemek için Yetenek Çalışması a la carte olarak değiştirilebilir. (1.500$'dan başlayan fiyatlarla)",
       },
       {
-        label: "Additional Information",
+        label: "Örneklem Planı",
         value:
-          'Available to select in "inspections" during checkout. Upload a 2D drawing with critical features identified. In addition, define part and feature quantities needed. Contact your account representative with questions',
+          "Kalıplama süreci kurulduktan sonra, yetenek raporu, sipariş çalışırken eşit dağıtılmış örneklerden alınan müşteri tarafından tanımlanan parça miktarına dayanacaktır (minimum 30 parça)",
+      },
+      {
+        label: "Ek Bilgiler",
+        value:
+          'Ödeme sırasında "denetimler" bölümünde seçilebilir. Kritik özellikleri belirtilmiş bir 2B çizim yükleyin. Ayrıca, gerekli parça ve özellik miktarlarını tanımlayın. Sorularınız için hesap temsilcinizle iletişime geçin',
       },
     ],
     downloadLink: "#",
@@ -100,11 +100,11 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Injection Molding Quality Control"
-        desc="How we use digital processes, scientific molding, and inspection reporting to manufacture quality parts consistently"
+        title="Enjeksiyon Kalıplama Kalite Kontrolü"
+        desc="Tutarlı bir şekilde kaliteli parçalar üretmek için dijital süreçleri, bilimsel kalıplamayı ve denetim raporlamasını nasıl kullandığımız"
         image="/Assets/Images/services/injection-molding/hero.png"
-        firstButton={{ title: "Get a Quote", route: "/" }}
-        secondButton={{ title: "View Inspection Options", route: "/" }}
+        firstButton={{ title: "Teklif Al", route: "/" }}
+        secondButton={{ title: "Denetim Seçeneklerini Görüntüle", route: "/" }}
       />
 
       <div className="w-full bg-white py-20">
@@ -114,16 +114,16 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Capabilities",
-                    "Materials",
-                    "Surface Finishes",
-                    "Quality Inspections",
-                    "Finishing Options",
-                    "About Plastic Injection Molding",
+                    "Yetenekler",
+                    "Malzemeler",
+                    "Yüzey İşlemleri",
+                    "Kalite Denetimleri",
+                    "İşlem Sonrası Seçenekler",
+                    "Plastik Enjeksiyon Kalıplama Hakkında",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -138,33 +138,31 @@ export default function page() {
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
-              <div
-                id="about-plastic-injection-molding"
-                className="scroll-mt-32">
+              {/* What is Quality Control? Section */}
+              <div id="kalite-kontrol-nedir" className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  What is Prototyping?
+                  Kalite Kontrol Nedir?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  We have two injection molding service options—prototyping and
-                  on-demand manufacturing—and each offers its own benefits
-                  depending on your project needs. If part quantities are lower,
-                  an affordable entry point for tooling is important, and rapid
-                  development over a short period of time is critical, our
-                  prototyping option works great.
+                  İki enjeksiyon kalıplama hizmet seçeneğimiz var—prototipleme
+                  ve talep üzerine üretim—ve her biri proje ihtiyaçlarınıza
+                  bağlı olarak kendi avantajlarını sunar. Parça miktarları daha
+                  düşükse, takım için uygun fiyatlı bir giriş noktası önemliyse
+                  ve kısa bir süre içinde hızlı geliştirme kritikse,
+                  prototipleme seçeneğimiz harika çalışır.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Common applications for plastic injection molding:
+                  Plastik enjeksiyon kalıplama için yaygın uygulamalar:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "low-volume production",
-                    "bridge tooling",
-                    "pilot runs",
-                    "functional testing and prototyping",
+                    "düşük hacimli üretim",
+                    "köprü takımı",
+                    "pilot çalışmalar",
+                    "fonksiyonel test ve prototipleme",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -184,12 +182,12 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Design for Manufacturing (DFM) Analysis
+              Üretilebilirlik İçin Tasarım (DFM) Analizi
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              When requesting a quote through our online quoting system, you
-              will receive manufacturing analysis and pricing.
+              Çevrimiçi teklif sistemimiz üzerinden bir teklif talep
+              ettiğinizde, üretim analizi ve fiyatlandırma alacaksınız.
             </p>
           </div>
 
@@ -198,16 +196,16 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                How our manufacturing analysis can improve quality of
-                injection-molded parts:
+                Üretim analizimiz enjeksiyon kalıplanmış parçaların kalitesini
+                nasıl iyileştirebilir:
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Identifies thick walls",
-                  "Identifies features with insufficient draft",
-                  "Mold flow analysis",
-                  "Select gate location",
-                  "Select ejector pin location",
+                  "Kalın duvarları tanımlar",
+                  "Yetersiz çekme açısına sahip özellikleri tanımlar",
+                  "Kalıp akış analizi",
+                  "Kapak konumu seçimi",
+                  "İtici pim konumu seçimi",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -225,7 +223,7 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/quality/group-1-2.webp"
                   }
                   fill
-                  alt="design cube"
+                  alt="DFM analizi"
                 />
               </div>
             </div>
@@ -241,7 +239,7 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/quality/scientific-molding-guide-image_570x308-6.webp"
                   }
                   fill
-                  alt="design cube"
+                  alt="Bilimsel kalıplama"
                 />
               </div>
             </div>
@@ -249,33 +247,34 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Scientific Molding: Consistently Delivering Quality Parts
+                Bilimsel Kalıplama: Tutarlı Kaliteli Parçaların Teslimatı
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                We use <span className="font-semibold">scientific</span>, or{" "}
-                <span className="font-semibold">decoupled</span>,{" "}
-                <span className="font-semibold">injection molding</span> to
-                produce consistent parts for our customers. Each project has an
-                optimized, documented process that ensures uniformity in every
-                run. Modifications are tracked for traceability across runs.
-                Scientific molding guarantees consistency in the process,
-                meeting specific resin and dimensional requirements whether the
-                part is re-run or ordered later.
+                Müşterilerimiz için tutarlı parçalar üretmek üzere{" "}
+                <span className="font-semibold">bilimsel</span> veya{" "}
+                <span className="font-semibold">ayrıştırılmış</span>{" "}
+                <span className="font-semibold">enjeksiyon kalıplama</span>{" "}
+                kullanıyoruz. Her proje, her çalıştırmada tekdüzeliği sağlayan
+                optimize edilmiş, belgelenmiş bir sürece sahiptir.
+                Değişiklikler, çalıştırmalar arasında izlenebilirlik için takip
+                edilir. Bilimsel kalıplama, parça yeniden çalıştırılsa veya daha
+                sonra sipariş edilse bile, belirli reçine ve boyutsal
+                gereksinimleri karşılayan süreçte tutarlılığı garanti eder.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                By controlling fill, pack, and hold, we ensure each part matches
-                the previous one, providing benefits of higher quality and
-                consistent inspection reports for our customers.
+                Doldurma, paketleme ve tutmayı kontrol ederek, her parçanın bir
+                öncekiyle eşleşmesini sağlıyoruz ve müşterilerimize daha yüksek
+                kalite ve tutarlı denetim raporlarının faydalarını sunuyoruz.
               </p>
               <div className="mt-4 flex flex-wrap gap-4">
                 <span className="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded">
-                  Gate Frozen
+                  Kapak Dondu
                 </span>
                 <span className="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded">
-                  Pressurized Runner
+                  Basınçlı Kanal
                 </span>
                 <span className="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded">
-                  No Further Pressurization
+                  Daha Fazla Basınçlandırma Yok
                 </span>
               </div>
             </div>
@@ -290,7 +289,7 @@ export default function page() {
               <div className="text-center">
                 <span className="text-6xl">👨‍🔧</span>
                 <p className="text-gray-500 text-sm mt-2">
-                  Engineering Support
+                  Mühendislik Desteği
                 </p>
               </div>
             </div>
@@ -298,40 +297,40 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Design Support from Injection Molding Experts
+                Enjeksiyon Kalıplama Uzmanlarından Tasarım Desteği
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
                 <span className="font-semibold">
-                  Consultative Design Services:
+                  Danışmanlık Tasarım Hizmetleri:
                 </span>{" "}
-                Work directly with an injection molding applications engineer to
-                improve the moldability of your design. Think of it like having
-                your very own injection molding consultant on your team. During
-                this process, our applications engineer will collaborate with
-                you to understand your design goals, review the manufacturing
-                analysis provided in your online quote, and make changes to the
-                3D CAD file.
+                Tasarımınızın kalıplanabilirliğini iyileştirmek için doğrudan
+                bir enjeksiyon kalıplama uygulama mühendisiyle çalışın. Bunu,
+                ekibinizde kendi enjeksiyon kalıplama danışmanınıza sahip olmak
+                gibi düşünün. Bu süreçte, uygulama mühendisimiz tasarım
+                hedeflerinizi anlamak, çevrimiçi teklifinizde sağlanan üretim
+                analizini incelemek ve 3B CAD dosyasında değişiklikler yapmak
+                için sizinle işbirliği yapacaktır.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-6">
                 <span className="font-semibold">
-                  Fasonly Proposed Revision (PPR):
+                  Fasonly Önerilen Revizyon (PPR):
                 </span>{" "}
-                In some instances, we can provide a second CAD model to
-                you—called a Fasonly Proposed Revision (PPR). This is a new CAD
-                file with changes already made. The revised model can be used
-                immediately or you can transfer the modifications to the
-                original model. Following the DFM analysis, and, in some cases,
-                the PPR, once the part has been approved, Fasonly moves into the
-                final step before actual production—the digital preparation.
+                Bazı durumlarda, size ikinci bir CAD modeli sağlayabiliriz—buna
+                Fasonly Önerilen Revizyon (PPR) denir. Bu, değişikliklerin zaten
+                yapılmış olduğu yeni bir CAD dosyasıdır. Revize edilmiş model
+                hemen kullanılabilir veya değişiklikleri orijinal modele
+                aktarabilirsiniz. DFM analizini ve bazı durumlarda PPR'yi
+                takiben, parça onaylandıktan sonra, Fasonly gerçek üretimden
+                önceki son adıma—dijital hazırlığa—geçer.
               </p>
 
               <a
                 href="#"
                 className="text-[#0099ff] hover:text-[#96E92A] font-medium transition-colors inline-flex items-center gap-2 group">
-                Talk to an Applications Engineer.
+                Bir Uygulama Mühendisiyle Görüşün.
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
@@ -343,13 +342,13 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Inspections for Injection-Molded Parts
+              Enjeksiyon Kalıplanmış Parçalar için Denetimler
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              We offer several quality inspection reports for injection molding
-              orders. Depending on your project requirements you can choose from
-              the following reports.
+              Enjeksiyon kalıplama siparişleri için çeşitli kalite denetim
+              raporları sunuyoruz. Proje gereksinimlerinize bağlı olarak
+              aşağıdaki raporlar arasından seçim yapabilirsiniz.
             </p>
           </div>
 
@@ -363,7 +362,7 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/quality/im_quality_inspection_3_hi_res.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Denetim raporları"
                 />
               </div>
             </div>
@@ -371,15 +370,15 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Available Inspection Reports
+                Mevcut Denetim Raporları
               </h3>
               <ul className="space-y-2">
                 {[
-                  "CTQ Partial FAI",
-                  "CTQ DIR with Capability Study",
-                  "Production Part Approval Process (PPAP)",
-                  "Digital Inspection Report / Full FAI",
-                  "Custom Inspection",
+                  "CTQ Kısmi FAI",
+                  "CTQ Yetenek Çalışması ile DIR",
+                  "Üretim Parçası Onay Süreci (PPAP)",
+                  "Dijital Denetim Raporu / Tam FAI",
+                  "Özel Denetim",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -395,19 +394,19 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Injection Molding Inspection Reports
+                Enjeksiyon Kalıplama Denetim Raporları
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                As part of the Fasonly standard, we measure up to four
-                plane-to-plane and outside diameter dimensions based on your CAD
-                model (X, Y, Z) to quoted tolerances. We automatically define
-                these quality control checks and perform the measurements on a
-                sampling of parts.
+                Fasonly standardının bir parçası olarak, CAD modelinize (X, Y,
+                Z) ve teklif edilen toleranslara dayalı olarak dörde kadar
+                düzlemler arası ve dış çap boyutunu ölçüyoruz. Bu kalite kontrol
+                kontrollerini otomatik olarak tanımlıyor ve parçalardan örneklem
+                alarak ölçümleri gerçekleştiriyoruz.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                In addition, we provide a wide range of other quality
-                documentation. Compare the benefits of each inspection report to
-                see which is best suited for your project needs.
+                Ek olarak, geniş bir yelpazede başka kalite dokümantasyonu da
+                sağlıyoruz. Proje ihtiyaçlarınıza en uygun olanı görmek için her
+                denetim raporunun faydalarını karşılaştırın.
               </p>
             </div>
 
@@ -419,7 +418,7 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/quality/frame-1-5.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Denetim süreci"
                 />
               </div>
             </div>
@@ -435,7 +434,7 @@ export default function page() {
                     "/Assets/Images/services/injection-molding/quality/scientific-molding-wp-cmm-570x308.png"
                   }
                   fill
-                  alt="design cube"
+                  alt="CMM ölçümü"
                 />
               </div>
             </div>
@@ -443,22 +442,22 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                How are Part Dimensions Measured?
+                Parça Boyutları Nasıl Ölçülür?
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                We use industry standard coordinate-measuring machines
-                (CMM)—calipers and pin gauges—just as you would expect from an
-                industry leading manufacturing partner. What differentiates our
-                process is that we've applied patented automation technology to
-                our CMMs to enable in-process inspection with no additional cost
-                or lead time.
+                Sektör lideri bir üretim ortağından bekleyeceğiniz gibi,
+                endüstri standardı koordinat ölçüm makineleri (CMM) - kumpaslar
+                ve pim ölçüleri - kullanıyoruz. Sürecimizi farklı kılan şey,
+                CMM'lerimize patentli otomasyon teknolojisi uygulayarak ek
+                maliyet veya teslim süresi olmadan süreç içi denetime olanak
+                tanımamızdır.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Parts are measured at an equidistant cadence of n/30 where n =
-                total part order quantity. Along with the measurement data from
-                each part, the Capability Report will also provide the average
-                measurement, standard deviation, and a Process Capability Index
-                (Cpk) value for all critical dimensions.
+                Parçalar, n = toplam parça sipariş miktarı olmak üzere eşit
+                mesafeli bir n/30 ritminde ölçülür. Her parçadan gelen ölçüm
+                verileriyle birlikte, Yetenek Raporu ayrıca tüm kritik boyutlar
+                için ortalama ölçümü, standart sapmayı ve Süreç Yetenek İndeksi
+                (Cpk) değerini sağlayacaktır.
               </p>
             </div>
           </div>
@@ -469,7 +468,7 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Critical to Quality (CTQ)
+              Kalite İçin Kritik (CTQ)
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -483,7 +482,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              CTQ Partial FAI
+              CTQ Kısmi FAI
             </button>
             <button
               onClick={() => setActiveTab("capability")}
@@ -492,7 +491,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              CTQ DIR with Capability Study
+              CTQ Yetenek Çalışması ile DIR
             </button>
           </div>
 
@@ -517,8 +516,8 @@ export default function page() {
           {/* Excludes Note */}
           <div className="mt-4 p-3 bg-gray-100 rounded-lg">
             <p className="text-sm text-gray-500 italic">
-              *Excludes: Thermoplastic elastomers (TPU, TPV, TPO, etc.) and
-              Liquid Silicone Rubber (LSR).
+              *Hariç: Termoplastik elastomerler (TPU, TPV, TPO, vb.) ve Sıvı
+              Silikon Kauçuk (LSR).
             </p>
           </div>
 
@@ -528,7 +527,7 @@ export default function page() {
               href={currentData.downloadLink}
               className="inline-flex items-center gap-2 text-[#0099ff] hover:text-[#96E92A] transition-colors font-medium">
               <Download className="w-4 h-4" />
-              Download Sample {currentData.title}
+              Örnek {currentData.title} İndir
             </a>
           </div>
         </div>
@@ -539,32 +538,32 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Additional Quality Capabilities
+                Ek Kalite Yetenekleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <div className="mb-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Medical Molding Capabilities
+                  Medikal Kalıplama Yetenekleri
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  We do offer ISO 13485 injection molding capabilities through
-                  trusted partners.
+                  Güvenilir ortaklar aracılığıyla ISO 13485 enjeksiyon kalıplama
+                  yetenekleri sunuyoruz.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Custom Inspection
+                  Özel Denetim
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Additional inspection options are available, tailored to your
-                  requirements, allowing verification of numerous critical
-                  dimensions.
+                  Gereksinimlerinize göre uyarlanmış, çok sayıda kritik boyutun
+                  doğrulanmasına olanak tanıyan ek denetim seçenekleri
+                  mevcuttur.
                 </p>
                 <p className="text-gray-600">
-                  Contact your account representative to request a custom
-                  inspection.
+                  Özel bir denetim talep etmek için hesap temsilcinizle
+                  iletişime geçin.
                 </p>
               </div>
             </div>
@@ -582,10 +581,10 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
                   <p className="text-gray-300 text-xs mt-1">
-                    Quality Capabilities Overview
+                    Kalite Yetenekleri Genel Bakış
                   </p>
                 </div>
               </div>

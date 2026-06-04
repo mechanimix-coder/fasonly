@@ -17,7 +17,7 @@ export default function CncMachining() {
         title="Çevrimiçi CNC İşleme Hizmeti"
         desc="İşlenmiş prototipler ve üretim parçaları 1 gün kadar kısa sürede. Bugün çevrimiçi teklif talep edin."
         image="/Assets/Images/services/injection-molding/cnc-hero.webp"
-        firstButton={{ title: "Get Instant Quote", route: "/" }}
+        firstButton={{ title: "Anında Teklif Al", route: "/" }}
         secondButton={{ title: "Malzemeleri İncele", route: "/" }}
       />
 
@@ -25,7 +25,7 @@ export default function CncMachining() {
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-12">
-            CNC Machining Capabilities
+            CNC İşleme Yetenekleri
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -41,23 +41,23 @@ export default function CncMachining() {
               {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  CNC Milling
+                  CNC Frezeleme
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  CNC milling is a subtractive manufacturing process that uses
-                  3-axis milling and 5-axis indexed milling processes to cut
-                  solid plastic and metal blocks into final parts.
+                  CNC frezeleme, katı plastik ve metal blokları nihai parçalara
+                  kesmek için 3 eksenli frezeleme ve 5 eksenli endeksli
+                  frezeleme süreçlerini kullanan bir çıkarımlı üretim sürecidir.
                 </p>
                 <div className="flex flex-col gap-2">
                   <Link
                     href="/capabilities/cnc-milling"
                     className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 w-fit">
-                    Capabilities →
+                    Yetenekler →
                   </Link>
                   <Link
                     href="/design-guidelines/cnc-milling"
                     className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 w-fit">
-                    Design Guidelines →
+                    Tasarım Kılavuzları →
                   </Link>
                 </div>
               </div>
@@ -75,23 +75,23 @@ export default function CncMachining() {
               {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  CNC Turning
+                  CNC Tornalama
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  CNC turning with live tooling combines both lathe and mill
-                  capabilities to machine parts with cylindrical features from
-                  metal rod stock.
+                  Canlı takım tezgahına sahip CNC tornalama, metal çubuk
+                  stokundan silindirik özelliklere sahip parçaları işlemek için
+                  torna ve freze yeteneklerini birleştirir.
                 </p>
                 <div className="flex flex-col gap-2">
                   <Link
                     href="/capabilities/cnc-turning"
                     className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 w-fit">
-                    Capabilities →
+                    Yetenekler →
                   </Link>
                   <Link
                     href="/design-guidelines/cnc-turning"
                     className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 w-fit">
-                    Design Guidelines →
+                    Tasarım Kılavuzları →
                   </Link>
                 </div>
               </div>
@@ -112,20 +112,20 @@ export default function CncMachining() {
                   Fasonly Network
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Our manufacturing network provides advanced CNC machining
-                  capabilities like tighter tolerances, volume pricing, and
-                  anodizing options.
+                  Üretim ağımız, daha sıkı toleranslar, hacim fiyatlandırması ve
+                  anodizasyon seçenekleri gibi gelişmiş CNC işleme yetenekleri
+                  sağlar.
                 </p>
                 <div className="flex flex-col gap-2">
                   <Link
                     href="/capabilities/network"
                     className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 w-fit">
-                    Capabilities →
+                    Yetenekler →
                   </Link>
                   <Link
                     href="/design-guidelines/network"
                     className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 w-fit">
-                    Design Guidelines →
+                    Tasarım Kılavuzları →
                   </Link>
                 </div>
               </div>
@@ -139,23 +139,23 @@ export default function CncMachining() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1221] mb-4">
-              CNC Machining Services for End-Use Parts
+              Son Kullanım Parçaları için CNC İşleme Hizmetleri
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              Get high-quality machined parts faster with our expanded automated
-              CNC milling—parts ready in as fast as 4 days
+              Genişletilmiş otomatik CNC frezeleme ile yüksek kaliteli işlenmiş
+              parçaları daha hızlı alın - parçalar 4 gün kadar kısa sürede hazır
             </p>
             <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-              Get a Quote
+              Teklif Al
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>
       </div>
       {/* Metals section */}
-      <MetalsSection title="Metals" metals={metalsData} />
+      <MetalsSection title="Metaller" metals={metalsData} />
       {/* Plastics section */}
-      <MetalsSection title="Plastics" metals={plasticMaterials} />
+      <MetalsSection title="Plastikler" metals={plasticMaterials} />
 
       {/* More Machining Materials Section */}
       <div className="w-full bg-white py-20">
@@ -178,14 +178,14 @@ export default function CncMachining() {
             {/* Right Column - Content */}
             <div>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0B1221] mb-4">
-                More Machining Materials Available Through the Network
+                Ağ Üzerinden Daha Fazla İşleme Malzemesi Mevcut
               </h2>
               <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
-                Not seeing the material you're looking for? We have added 24 new
-                options available through the Fasonly Network.
+                Aradığınız malzemeyi görmüyor musunuz? Fasonly Network
+                aracılığıyla mevcut 24 yeni seçenek ekledik.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Browse Materials
+                Malzemelere Göz At
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -205,56 +205,56 @@ export default function CncMachining() {
             {/* Left Column - Surface Finish Options */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#0B1221] mb-4">
-                Surface Finish and <br />
-                Post-Processing Options
+                Yüzey İşlem ve <br />
+                İşlem Sonrası Seçenekleri
               </h2>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Fasonly offers a variety of CNC machining surface finishing
-                options to meet your part requirements. More advanced coating
-                and plating options are also available.
+                Fasonly, parça gereksinimlerinizi karşılamak için çeşitli CNC
+                işleme yüzey işlem seçenekleri sunar. Daha gelişmiş kaplama ve
+                plakalama seçenekleri de mevcuttur.
               </p>
 
               <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                Surface Finish Options
+                Yüzey İşlem Seçenekleri
               </h3>
               <ul className="space-y-2 mb-8">
                 <li className="flex items-center gap-2 text-gray-600">
                   <span className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></span>
-                  Edges broken with tool marks visible
+                  Görünür takım izleriyle kırılmış kenarlar
                 </li>
                 <li className="flex items-center gap-2 text-gray-600">
                   <span className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></span>
-                  Edges broken with light bead blasting
+                  Hafif boncuk püskürtme ile kırılmış kenarlar
                 </li>
                 <li className="flex items-center gap-2 text-gray-600">
                   <span className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></span>
-                  Sharp edges (tool marks visible)
+                  Keskin kenarlar (takım izleri görünür)
                 </li>
               </ul>
 
               <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                Coating and Plating Options
+                Kaplama ve Plakalama Seçenekleri
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-gray-600">
                   <span className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></span>
-                  Anodizing
+                  Anodizasyon
                 </li>
                 <li className="flex items-center gap-2 text-gray-600">
                   <span className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></span>
-                  Chromate coating
+                  Kromat kaplama
                 </li>
                 <li className="flex items-center gap-2 text-gray-600">
                   <span className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></span>
-                  Powder coating
+                  Toz boya
                 </li>
                 <li className="flex items-center gap-2 text-gray-600">
                   <span className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></span>
-                  Zinc coating
+                  Çinko kaplama
                 </li>
                 <li className="flex items-center gap-2 text-gray-600">
                   <span className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></span>
-                  Nickel plating
+                  Nikel kaplama
                 </li>
               </ul>
             </div>
@@ -263,9 +263,7 @@ export default function CncMachining() {
             <div className="relative w-full h-80 md:h-auto rounded-2xl overflow-hidden bg-gradient-to-br from-[#0099ff]/10 to-[#96E92A]/10 flex items-center justify-center">
               <div className="text-center">
                 <span className="text-6xl block mb-4">🔧</span>
-                <p className="text-gray-500 text-sm">
-                  Surface Finish Illustration
-                </p>
+                <p className="text-gray-500 text-sm">Yüzey İşlem Gösterimi</p>
               </div>
               {/* Uncomment below to add actual image */}
               {/* <Image
@@ -280,7 +278,8 @@ export default function CncMachining() {
           {/* Learn More Link */}
           <div className="mt-10 text-left lg:text-left">
             <button className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-              Learn more about post-processing options for CNC machining →
+              CNC işleme için işlem sonrası seçenekler hakkında daha fazla bilgi
+              edinin →
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
@@ -292,7 +291,7 @@ export default function CncMachining() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-12">
-            Why Choose Us for Custom CNC Machining?
+            Neden Özel CNC İşleme İçin Bizi Tercih Etmelisiniz?
           </h2>
 
           {/* Features Grid - 3 columns on desktop, 2 on tablet, 1 on mobile */}
@@ -300,83 +299,83 @@ export default function CncMachining() {
             {/* Card 1 - Fast and Reliable Delivery */}
             <div className="group">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3 group-hover:text-[#0099ff] transition-colors">
-                Fast and Reliable Delivery
+                Hızlı ve Güvenilir Teslimat
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Iterate part designs quickly and accelerate product development
-                with quick-turn parts. Our automated design analysis will help
-                spot any difficult to machine features before your design is
-                sent to the manufacturing floor and save you from costly reworks
-                further down the product development cycle.
+                Hızlı teslim parçalarla parça tasarımlarını hızla yineleyin ve
+                ürün geliştirmeyi hızlandırın. Otomatik tasarım analizimiz,
+                tasarımınız üretim katına gönderilmeden önce işlenmesi zor
+                özellikleri tespit etmenize yardımcı olacak ve ürün geliştirme
+                döngüsünde maliyetli yeniden işlemelerden kurtaracaktır.
               </p>
             </div>
 
             {/* Card 2 - Manufacturing Analysis and Online Quotes */}
             <div className="group">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3 group-hover:text-[#0099ff] transition-colors">
-                Manufacturing Analysis and Online Quotes
+                Üretim Analizi ve Çevrimiçi Teklifler
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                When you upload your 3D CAD file to request a quote, we'll
-                analyze your part geometry to identify any features that may be
-                difficult to machine such as tall, thin walls or holes that
-                cannot be threaded.
+                3B CAD dosyanızı teklif talep etmek için yüklediğinizde, parça
+                geometrinizi analiz ederek yüksek, ince duvarlar veya diş
+                açılamayan delikler gibi işlenmesi zor olabilecek özellikleri
+                tanımlayacağız.
               </p>
             </div>
 
             {/* Card 3 - Domestic Production and Support */}
             <div className="group">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3 group-hover:text-[#0099ff] transition-colors">
-                Domestic Production and Support
+                Yerli Üretim ve Destek
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                For parts that need to meet ITAR regulations, partner with a
-                reliable US manufacturer to avoid the risk of shipping parts
-                abroad. You can also call or email us at any time and we'll help
-                with ordering parts, design feedback, material recommendations,
-                and answer any questions.
+                ITAR düzenlemelerine uyması gereken parçalar için, parçaları
+                yurt dışına gönderme riskinden kaçınmak için güvenilir bir ABD
+                üreticisiyle ortaklık kurun. Ayrıca, istediğiniz zaman bizi
+                arayabilir veya e-posta gönderebilirsiniz, parça siparişi,
+                tasarım geri bildirimi, malzeme önerileri konusunda yardımcı
+                olacak ve sorularınızı yanıtlayacağız.
               </p>
             </div>
 
             {/* Card 4 - Infinite Capacity */}
             <div className="group">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3 group-hover:text-[#0099ff] transition-colors">
-                Infinite Capacity
+                Sınırsız Kapasite
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Reduce downtime and alleviate pressure on your in-house
-                machining by using our automated process, which provides
-                on-demand, unlimited manufacturing capacity.
+                Talep üzerine, sınırsız üretim kapasitesi sağlayan otomatik
+                sürecimizi kullanarak kesinti süresini azaltın ve dahili işleme
+                işlemleriniz üzerindeki baskıyı hafifletin.
               </p>
             </div>
 
             {/* Card 5 - Material Selection */}
             <div className="group">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3 group-hover:text-[#0099ff] transition-colors">
-                Material Selection
+                Malzeme Seçimi
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We stock more than 30 engineering-grade plastic and metal
-                materials that are suitable for various part applications and
-                industries. Materials range from plastics like ABS,
-                polycarbonate, nylon, and PEEK to aluminum, stainless steel,
-                platinum, and copper.
+                Çeşitli parça uygulamaları ve endüstriler için uygun 30'dan
+                fazla mühendislik sınıfı plastik ve metal malzeme stokluyoruz.
+                Malzemeler ABS, polikarbonat, naylon ve PEEK gibi plastiklerden
+                alüminyum, paslanmaz çelik, platin ve bakıra kadar uzanmaktadır.
               </p>
             </div>
 
             {/* Card 6 - Advanced Capabilities */}
             <div className="group">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3 group-hover:text-[#0099ff] transition-colors">
-                Advanced Capabilities
+                Gelişmiş Yetenekler
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Benefit from cost-effective pricing by using our manufacturing
-                network, which offers expanded production capabilities such as
-                tighter tolerances, volume discounts, and more material choices.
-                Gain flexibility with a mix of international and local vendors
-                for everything from prototypes to final products. Plus, access
-                extra finishes like smoother surfaces, brushed finishes, black
-                oxide, and the option for custom requests.
+                Daha sıkı toleranslar, hacim indirimleri ve daha fazla malzeme
+                seçeneği gibi genişletilmiş üretim yetenekleri sunan üretim
+                ağımızı kullanarak uygun maliyetli fiyatlandırmadan yararlanın.
+                Prototiplerden nihai ürünlere kadar uluslararası ve yerel
+                tedarikçilerin bir karışımıyla esneklik kazanın. Ayrıca, daha
+                pürüzsüz yüzeyler, fırçalanmış yüzeyler, siyah oksit ve özel
+                talep seçeneği gibi ekstra yüzey işlemlerine erişin.
               </p>
             </div>
           </div>
@@ -389,26 +388,26 @@ export default function CncMachining() {
             {/* Left Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1221] mb-6 leading-tight">
-                What is CNC Machining and How Does it Work?
+                CNC İşleme Nedir ve Nasıl Çalışır?
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  CNC machining is an automated manufacturing process that
-                  transforms a solid block or rod of material into a part using
-                  end mills. The end mills are controlled by software (G-code)
-                  which references a 3D CAD model to reduce the stock material
-                  into a desired geometry. Parts can be manufactured relatively
-                  quickly due to the level of automation.
+                  CNC işleme, katı bir blok veya malzeme çubuğunu parçalara
+                  dönüştürmek için parmak frezeler kullanan otomatik bir üretim
+                  sürecidir. Parmak frezeler, bir 3B CAD modeline atıfta
+                  bulunarak stok malzemeyi istenen geometriye indirgeyen yazılım
+                  (G-kodu) tarafından kontrol edilir. Parçalar, otomasyon
+                  seviyesi nedeniyle nispeten hızlı bir şekilde üretilebilir.
                 </p>
                 <p>
-                  There are many types of CNC machines, which include CNC
-                  milling and CNC turning. CNC machining is a suitable
-                  manufacturing process for one-off prototypes or custom
-                  components as well as mid-volume production quantities.
+                  CNC frezeleme ve CNC tornalamayı içeren birçok CNC makinesi
+                  türü vardır. CNC işleme, tek seferlik prototipler veya özel
+                  bileşenler ile orta hacimli üretim miktarları için uygun bir
+                  üretim sürecidir.
                 </p>
               </div>
               <button className="mt-6 inline-flex items-center gap-2 text-[#0099ff] font-semibold hover:text-[#96E92A] transition-colors group">
-                Check out our guide to CNC machining
+                CNC işleme kılavuzumuza göz atın
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -421,9 +420,9 @@ export default function CncMachining() {
                     <Play className="w-10 h-10 text-[#0B1221] ml-1" />
                   </div>
                   <p className="text-white text-lg font-semibold">
-                    CNC Machining Explained
+                    CNC İşleme Açıklaması
                   </p>
-                  <p className="text-gray-300 text-sm mt-1">Watch the video</p>
+                  <p className="text-gray-300 text-sm mt-1">Videoyu izleyin</p>
                 </div>
               </div>
               {/* Optional: Add actual video embed here */}
@@ -435,38 +434,38 @@ export default function CncMachining() {
             {/* Left Column */}
             <div>
               <h3 className="text-xl md:text-2xl font-bold text-[#0B1221] mb-4">
-                How Does CNC Machining Work?
+                CNC İşleme Nasıl Çalışır?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                CNC machining works by converting a 3D CAD model into a set of
-                computer instructions (G-code) that guide the cutting tools. The
-                machine removes material from a solid block or rod with
-                precision, creating the desired shape. This subtractive
-                manufacturing process is highly accurate and repeatable, making
-                it ideal for complex geometries and tight tolerances.
+                CNC işleme, bir 3B CAD modelini, kesici takımları yönlendiren
+                bir dizi bilgisayar talimatına (G-kodu) dönüştürerek çalışır.
+                Makine, katı bir blok veya çubuktan hassas bir şekilde malzeme
+                çıkararak istenen şekli oluşturur. Bu çıkarımlı üretim süreci
+                yüksek hassasiyetli ve tekrarlanabilirdir, bu da onu karmaşık
+                geometriler ve sıkı toleranslar için ideal hale getirir.
               </p>
             </div>
 
             {/* Right Column */}
             <div>
               <h3 className="text-xl md:text-2xl font-bold text-[#0B1221] mb-4">
-                Types of CNC Machines
+                CNC Makinesi Türleri
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Common types of CNC machines include CNC milling machines, which
-                use rotating cutting tools to remove material from a stationary
-                workpiece, and CNC lathes, which rotate the workpiece against a
-                stationary cutting tool. Other types include routers, plasma
-                cutters, and EDM machines, each suited for different materials
-                and applications.
+                Yaygın CNC makinesi türleri arasında, dönen kesici takımlar
+                kullanarak sabit bir iş parçasından malzeme çıkaran CNC freze
+                makineleri ve iş parçasını sabit bir kesici takıma karşı
+                döndüren CNC torna tezgahları bulunur. Diğer türler arasında
+                router'lar, plazma kesiciler ve EDM makineleri bulunur; bunların
+                her biri farklı malzemeler ve uygulamalar için uygundur.
               </p>
             </div>
           </div>
         </div>
       </div>
       <GuideDownload
-        title="CNC Machining Design Guide"
-        desc="In this guide to CNC machining, you'll learn how to create efficient, manufacturable metal and plastic parts for prototyping and production."
+        title="CNC İşleme Tasarım Kılavuzu"
+        desc="Bu CNC işleme kılavuzunda, prototipleme ve üretim için verimli, üretilebilir metal ve plastik parçaların nasıl oluşturulacağını öğreneceksiniz."
       />
 
       <div className="w-full bg-white py-20">
@@ -486,7 +485,7 @@ export default function CncMachining() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-medium">
-                    Watch Overview
+                    Genel Bakışı İzleyin
                   </p>
                 </div>
               </div>
@@ -495,20 +494,20 @@ export default function CncMachining() {
             {/* Right Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Get an Instant CNC Machining Quote
+                Anında CNC İşleme Teklifi Alın
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Upload a 3D CAD file of your machined part and in seconds to
-                hours, we'll send you manufacturing analysis and quote specific
-                to your request. In the automated factory, within your quote you
-                can modify materials and quantities, see pricing updates in
-                real-time, and assign threading with a click of your mouse. In
-                the semi-automated workflow that accepts technical drawings,
-                you'll receive a quote specific to the expanded needs you've
-                uploaded.
+                İşlenmiş parçanızın 3B CAD dosyasını yükleyin ve saniyeler ila
+                saatler içinde, talebinize özel üretim analizi ve teklif
+                göndereceğiz. Otomatik fabrikada, teklifiniz içinde malzemeleri
+                ve miktarları değiştirebilir, gerçek zamanlı fiyat
+                güncellemelerini görebilir ve fare tıklamasıyla diş
+                atayabilirsiniz. Teknik çizimleri kabul eden yarı otomatik iş
+                akışında, yüklediğiniz genişletilmiş ihtiyaçlara özel bir teklif
+                alacaksınız.
               </p>
               <button className="inline-flex items-center gap-2 text-[#0099ff] font-semibold hover:text-[#96E92A] transition-colors duration-300 group">
-                View a Sample Quote
+                Örnek Teklifi Görüntüleyin
                 <svg
                   className="w-4 h-4 group-hover:translate-x-1 transition-transform"
                   fill="none"
@@ -530,12 +529,13 @@ export default function CncMachining() {
             {/* Left Column - Content */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Tour Our Automated CNC Machine Shop
+                Otomatik CNC İşleme Atölyemizi Gezin
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Take a quick tour through our 215,000 sq. ft. CNC machining
-                facility in Minnesota to see how we leverage digitally-enabled
-                processes to achieve industry-best lead times.
+                Minnesota'daki 215.000 feet karelik CNC işleme tesisimizde,
+                sektörün en iyi teslim sürelerini elde etmek için dijital olarak
+                etkinleştirilmiş süreçlerden nasıl yararlandığımızı görmek için
+                hızlı bir tur atın.
               </p>
             </div>
 
@@ -552,7 +552,7 @@ export default function CncMachining() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-medium">
-                    Watch Overview
+                    Genel Bakışı İzleyin
                   </p>
                 </div>
               </div>
@@ -563,8 +563,8 @@ export default function CncMachining() {
       {/* faqs section */}
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
-          <h2 className="text-3xl md:text-4xl w-full flex  justify-center font-bold text-[#0B1221] mb-10">
-            CNC Machining FAQs
+          <h2 className="text-3xl md:text-4xl w-full flex justify-center font-bold text-[#0B1221] mb-10">
+            CNC İşleme SSS
           </h2>
           <Accordion items={faqItems} />
         </div>

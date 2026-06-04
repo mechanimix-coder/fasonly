@@ -18,13 +18,12 @@ export default function Footer() {
           {/* Contact Text Section */}
           <div className="flex flex-col items-start max-w-full lg:max-w-[25rem] gap-3 pt-4 relative z-10 mb-8 lg:mb-0">
             <h1 className="font-bold text-3xl md:text-4xl leading-tight text-white">
-              Other Questions <br />
-              and Support <br />
-              Requests!
+              Diğer Sorularınız ve <br />
+              Destek Talepleriniz!
             </h1>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Contact us, explore the most suitable production method and cost
-              advantages for your designs together.
+              Bizimle iletişime geçin, tasarımlarınız için en uygun üretim
+              yöntemini ve maliyet avantajlarını birlikte keşfedelim.
             </p>
           </div>
 
@@ -44,7 +43,7 @@ export default function Footer() {
                 </div>
                 <div className="flex-1">
                   <label className="block text-[10px] uppercase tracking-wider text-gray-400 mb-1">
-                    Email
+                    E-posta
                   </label>
                   <input
                     type="email"
@@ -56,7 +55,7 @@ export default function Footer() {
               {/* Message */}
               <div>
                 <label className="block text-[10px] uppercase tracking-wider text-gray-400 mb-1">
-                  Your message
+                  Mesajınız
                 </label>
                 <textarea
                   rows={3}
@@ -66,7 +65,7 @@ export default function Footer() {
 
               {/* Send Button */}
               <button className="w-full bg-[#96E92A] hover:bg-[#85d122] text-black font-medium py-2.5 rounded mt-2 transition-colors">
-                Send
+                Gönder
               </button>
             </form>
           </div>
@@ -78,13 +77,13 @@ export default function Footer() {
         {/* Call to Action */}
         <div className="flex flex-col items-center text-center mb-16 gap-4 relative z-10 px-4">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
-            Are You Ready To Accelerate Your <br />
-            Production Processes With <br />
-            <span className="text-[#0099ff]">Fasonly?</span>
+            Üretim Süreçlerinizi <br />
+            Fasonly ile Hızlandırmaya <br />
+            <span className="text-[#0099ff]">Hazır mısınız?</span>
           </h2>
           <p className="text-sm text-gray-300 max-w-2xl">
-            Share your projects with us and we will plan the whole process from
-            CAD file to shipment together.
+            Projelerinizi bizimle paylaşın, CAD dosyasından sevkiyata kadar tüm
+            süreci birlikte planlayalım.
           </p>
         </div>
 
@@ -92,16 +91,16 @@ export default function Footer() {
         <div className="relative z-10 flex flex-col md:flex-row bg-[#151E32] rounded-lg overflow-hidden max-w-4xl mx-auto shadow-xl border border-white/5">
           {/* Contact Block */}
           <div className="flex-1 p-6 flex flex-col items-center justify-center border-r-0 md:border-r border-white/10 border-b md:border-b-0 border-white/10">
-            <h3 className="text-white font-bold text-lg mb-2">Contact</h3>
+            <h3 className="text-white font-bold text-lg mb-2">İletişim</h3>
 
             <span className="text-xs text-gray-400 text-center">
-              e-mail: info@fasonly.com / tel: +90 541 773 1298
+              e-posta: info@fasonly.com / tel: +90 541 773 1298
             </span>
           </div>
 
           {/* Address Block */}
           <div className="flex-1 p-6 flex flex-col items-center justify-center border-r-0 md:border-r border-white/10 border-b md:border-b-0 border-white/10">
-            <h3 className="text-white font-bold text-lg mb-2">Address</h3>
+            <h3 className="text-white font-bold text-lg mb-2">Adres</h3>
             <span className="text-xs text-[#96E92A] text-center">
               Baksan, 10000 Nilüfer/Bursa
             </span>
@@ -109,9 +108,7 @@ export default function Footer() {
 
           {/* Certifications Block - New */}
           <div className="flex-1 p-6 flex flex-col items-center justify-center">
-            <h3 className="text-white font-bold text-lg mb-2">
-              Certifications
-            </h3>
+            <h3 className="text-white font-bold text-lg mb-2">Sertifikalar</h3>
             <div className="flex flex-col items-center gap-1">
               {certifications.map((cert, index) => (
                 <div key={index} className="text-center">

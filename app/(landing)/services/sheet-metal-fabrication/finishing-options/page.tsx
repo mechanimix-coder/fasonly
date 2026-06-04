@@ -8,31 +8,31 @@ export default function page() {
   const [unit, setUnit] = useState<"us" | "metric">("us");
 
   const usData = [
-    { tape: "0.250 in.", rounds: "0.3125 in." },
-    { tape: "0.500 in.", rounds: "0.375 in." },
-    { tape: "0.675 in.", rounds: "0.500 in." },
-    { tape: "0.750 in.", rounds: "0.625 in." },
-    { tape: "1.000 in.", rounds: "0.750 in." },
-    { tape: "2.000 in.", rounds: "1.000 in." },
+    { tape: "0,250 inç", rounds: "0,3125 inç" },
+    { tape: "0,500 inç", rounds: "0,375 inç" },
+    { tape: "0,675 inç", rounds: "0,500 inç" },
+    { tape: "0,750 inç", rounds: "0,625 inç" },
+    { tape: "1,000 inç", rounds: "0,750 inç" },
+    { tape: "2,000 inç", rounds: "1,000 inç" },
   ];
 
   const metricData = [
-    { tape: "6.35mm", rounds: "7.938mm" },
-    { tape: "12.7mm", rounds: "9.525mm" },
-    { tape: "17.145mm", rounds: "12.7mm" },
-    { tape: "19.05mm", rounds: "15.875mm" },
-    { tape: "25.4mm", rounds: "19.05mm" },
-    { tape: "50.8mm", rounds: "25.4mm" },
+    { tape: "6,35mm", rounds: "7,938mm" },
+    { tape: "12,7mm", rounds: "9,525mm" },
+    { tape: "17,145mm", rounds: "12,7mm" },
+    { tape: "19,05mm", rounds: "15,875mm" },
+    { tape: "25,4mm", rounds: "19,05mm" },
+    { tape: "50,8mm", rounds: "25,4mm" },
   ];
 
   const currentData = unit === "us" ? usData : metricData;
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Sheet Metal Finishes and Post-Processing"
-        desc="Our sheet metal fabrication service offers a broad range of surface finish treatments and post-processing options to customize your projects."
+        title="Sac Metal Yüzey İşlemleri ve İşlem Sonrası"
+        desc="Sac metal imalat hizmetimiz, projelerinizi özelleştirmek için geniş bir yüzey işlem ve işlem sonrası seçenekleri yelpazesi sunar."
         image="/Assets/Images/services/sheet-metal-fabrication/finishing-options/hero.webp"
-        firstButton={{ title: "Start a Project", route: "/" }}
+        firstButton={{ title: "Proje Başlat", route: "/" }}
         simple
       />
 
@@ -43,15 +43,15 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Surface Finishes ",
-                    "Powder Coating ",
-                    "Plating/Coating ",
-                    "Wet Paint ",
-                    "Silk Screening ",
+                    "Yüzey İşlemleri",
+                    "Toz Boya",
+                    "Kaplama",
+                    "Islak Boya",
+                    "İpek Baskı",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -66,31 +66,29 @@ export default function page() {
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
-              <div
-                id="about-plastic-injection-molding"
-                className="scroll-mt-32">
+              {/* What is Sheet Metal Finishing? Section */}
+              <div id="sac-metal-yuzey-islemleri" className="scroll-mt-32">
                 <h1 className="text-black text-4xl font-bold mb-4">
-                  Get the Look You Want with One or More Production Quality
-                  Finishes
+                  Bir veya Daha Fazla Üretim Kalitesi Yüzey İşlemi ile
+                  İstediğiniz Görünümü Elde Edin
                 </h1>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  We offer over 100 finishing options to customize your sheet
-                  metal component or assembly. Designed to enhance the
-                  functional or aesthetics elements of your design, these
-                  finishes are available with short lead times, applied by
-                  experts who deliver high quality results.
+                  Sac metal bileşeninizi veya montajınızı özelleştirmek için
+                  100'den fazla yüzey işlem seçeneği sunuyoruz. Tasarımınızın
+                  fonksiyonel veya estetik unsurlarını geliştirmek için
+                  tasarlanan bu yüzey işlemleri, kısa teslim süreleriyle, yüksek
+                  kaliteli sonuçlar sunan uzmanlar tarafından uygulanır.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Various post-processing operations can be used to:
+                  Çeşitli işlem sonrası operasyonlar şunlar için kullanılabilir:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "Reduce surface roughness",
-                    "Add custom color",
-                    "Increase transparency",
-                    "Increase part strength",
+                    "Yüzey pürüzlülüğünü azaltmak",
+                    "Özel renk eklemek",
+                    "Şeffaflığı artırmak",
+                    "Parça mukavemetini artırmak",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -112,7 +110,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-800">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/finishing-options/support.jpg"
-                alt="Free Finishing Consultation"
+                alt="Ücretsiz Yüzey İşlem Danışmanlığı"
                 fill
                 className="object-cover"
               />
@@ -122,23 +120,24 @@ export default function page() {
             <div className="flex-1">
               <div className="inline-block px-3 py-1 bg-[#96E92A]/10 rounded-full mb-4">
                 <span className="text-[#96E92A] text-sm font-semibold">
-                  INNOVATION
+                  YENİLİK
                 </span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Free Finishing Consultation for Fabricated Projects
+                Fabrikasyon Projeler için Ücretsiz Yüzey İşlem Danışmanlığı
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Take advantage of a free 30-minute virtual finishing
-                consultation with one of our sheet metal applications engineers.
-                It's a perfect opportunity to review your finishing requirements
-                to ensure your project arrives to your specifications.
+                Sac metal uygulama mühendislerimizden biriyle ücretsiz 30
+                dakikalık sanal yüzey işlem danışmanlığından yararlanın.
+                Projenizin spesifikasyonlarınıza uygun şekilde ulaşmasını
+                sağlamak için yüzey işlem gereksinimlerinizi gözden geçirmek
+                için mükemmel bir fırsattır.
               </p>
               <a
                 href="#"
                 className="text-[#96E92A] font-medium hover:text-[#85d122] transition-colors inline-flex items-center gap-2 group">
-                Schedule Now →
+                Şimdi Planla →
               </a>
             </div>
           </div>
@@ -148,66 +147,66 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              Surface Finishes
+              Yüzey İşlemleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-8"></div>
 
             <p className="text-gray-600 leading-relaxed text-center mb-10">
-              Choose between two surface finishes on your sheet metal part.
-              These options will leave your part safe to handle and ready to use
-              right out of the box:
+              Sac metal parçanız için iki yüzey işlemi arasında seçim yapın. Bu
+              seçenekler, parçanızı kullanıma hazır ve dokunmak için güvenli
+              bırakacaktır:
             </p>
 
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Orbital Sander
+                Orbital Zımpara
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                This is the most common surface finish for sheet metal parts and
-                involves using a random orbital sanding device to remove dross
-                and other surface debris and build-up from the last cutting
-                process. Orbital sanding is not recommended for cosmetic
-                applications and is best used for internal components or
-                situations where form, fit, and function is the priority.
+                Bu, sac metal parçalar için en yaygın yüzey işlemidir ve son
+                kesme işleminden kaynaklanan cüruf ile diğer yüzey kalıntılarını
+                ve birikintileri temizlemek için rastgele bir orbital zımpara
+                cihazı kullanmayı içerir. Orbital zımparalama, kozmetik
+                uygulamalar için önerilmez ve en iyi şekilde iç bileşenler veya
+                form, uyum ve işlevin öncelikli olduğu durumlar için kullanılır.
               </p>
             </div>
 
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Straight Grain/Brushed
+                Düz Tane / Fırçalanmış
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                This surface finish involves applying a sanding belt in a
-                uniform direction/pattern to the surface of the sheet metal.
-                Designs with a grain direction are usually for cosmetic or
-                end-user facing purposes. Straight grain can be applied to your
-                part in three ways:
+                Bu yüzey işlemi, sac metalin yüzeyine uniform bir yönde/desende
+                bir zımpara bandı uygulamayı içerir. Tane yönüne sahip
+                tasarımlar genellikle kozmetik veya son kullanıcıya yönelik
+                amaçlar içindir. Düz tane, parçanıza üç şekilde uygulanabilir:
               </p>
               <ul className="space-y-2 mb-4">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600">
-                    Perpendicular to the longest bend (when formed) or edge
-                    (when flat)
+                    En uzun büküme (şekillendirilmişse) veya kenara (düzse) dik
+                    olarak
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600">
-                    Parallel to the longest bend or edge
+                    En uzun büküme veya kenara paralel olarak
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600">
-                    At a 45-degree angle to the longest bend or edge
+                    En uzun büküme veya kenara 45 derecelik açıyla
                   </span>
                 </li>
               </ul>
               <p className="text-gray-600 leading-relaxed italic">
-                A note on welded parts: weld beads leave a raised surface at the
-                weld site. Our process involves blending the weld bead into the
-                metal material, leaving a uniform edge.
+                Kaynaklı parçalar hakkında not: Kaynak boncukları kaynak
+                alanında yükseltilmiş bir yüzey bırakır. Sürecimiz, kaynak
+                boncuğunu metal malzemeye karıştırmayı ve uniform bir kenar
+                bırakmayı içerir.
               </p>
             </div>
           </div>
@@ -220,7 +219,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/finishing-options/powder-coating.jpg"
-                alt="Powder Coating Process"
+                alt="Toz Boya Süreci"
                 fill
                 className="object-cover"
               />
@@ -229,112 +228,109 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Powder Coating
+                Toz Boya
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Powder coating applies a dry powder to the surface of sheet
-                metal parts. Then, they are cured in a large oven to create a
-                hard finish that is tougher than conventional paint. This
-                process improves durability to parts and adds custom color for
-                aesthetic purposes.
+                Toz boya, sac metal parçaların yüzeyine kuru bir toz uygular.
+                Ardından, geleneksel boyadan daha sert bir kaplama oluşturmak
+                için büyük bir fırında kürlenirler. Bu işlem, parçaların
+                dayanıklılığını artırır ve estetik amaçlar için özel renk ekler.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                Choose from 50 stocked colors for the fastest turnaround time.
-                Various texture and gloss levels are available.
+                En hızlı geri dönüş süresi için 50 stok renk arasından seçim
+                yapın. Çeşitli doku ve parlaklık seviyeleri mevcuttur.
               </p>
 
               <a
                 href="#"
                 className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                Learn more about powder coating →
+                Toz boya hakkında daha fazla bilgi edinin →
               </a>
             </div>
           </div>
         </div>
       </div>
       <GuideDownload
-        title="Sheet Metal Surface Finish Guide"
-        desc="Check out our sheet metal guide for a quick snapshot of our Standard and Cosmetic finishing options available for various sheet metal materials."
+        title="Sac Metal Yüzey İşlem Kılavuzu"
+        desc="Çeşitli sac metal malzemeler için mevcut Standart ve Kozmetik yüzey işlem seçeneklerimizin hızlı bir özeti için sac metal kılavuzumuza göz atın."
       />
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              Wet Paint
+              Islak Boya
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-8"></div>
 
-            {/* First Paragraph */}
             <p className="text-gray-600 leading-relaxed mb-6">
-              With wet paint, a liquid coating is applied to your part to
-              provide an aesthetically appealing finish. The process is offered
-              in virtually any color and is commonly paired with a primer layer
-              to improve paint adhesion and durability.
+              Islak boya ile, parçanıza estetik açıdan hoş bir yüzey sağlamak
+              için sıvı bir kaplama uygulanır. Bu işlem, neredeyse her renkte
+              sunulur ve genellikle boya yapışmasını ve dayanıklılığı artırmak
+              için bir astar katmanıyla birlikte kullanılır.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Wet paint is often used in situations where the visual consistency
-              of the finish across parts is an important consideration, which is
-              why you primarily see it on automotive or consumer electronics
-              products.
+              Islak boya, genellikle parçalar arasında yüzey işleminin görsel
+              tutarlılığının önemli bir husus olduğu durumlarda kullanılır, bu
+              nedenle öncelikle otomotiv veya tüketici elektroniği ürünlerinde
+              görürsünüz.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Our wet paint options are available with or without primer.
+              Islak boya seçeneklerimiz astarlı veya astarsız olarak mevcuttur.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              To ensure we can meet your specifications exactly, we ask you
-              provide the full paint specification (including color and
-              texture). These details can be conveyed two ways. Pick the option
-              that is easiest for you. It's not necessary to submit both ways:
+              Spesifikasyonlarınızı tam olarak karşılayabildiğimizden emin olmak
+              için, tam boya spesifikasyonunu (renk ve doku dahil) sağlamanızı
+              rica ediyoruz. Bu detaylar iki şekilde iletilebilir. Sizin için en
+              kolay olan seçeneği seçin. Her iki şekilde de göndermeniz
+              gerekmez:
             </p>
 
             <ul className="space-y-2 mb-8">
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Submit a 2D-drawing with the wet paint specifications
-                  included.
+                  Islak boya spesifikasyonlarını içeren bir 2B çizim gönderin.
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  In the "Coating" section of your online quote, depending on
-                  your project needs, select "Wet Paint" or "Wet Paint with
-                  Primer" from the drop-down menu.
+                  Çevrimiçi teklifinizin "Kaplama" bölümünde, proje
+                  ihtiyaçlarınıza bağlı olarak açılır menüden "Islak Boya" veya
+                  "Astar ile Islak Boya" seçeneğini seçin.
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  In the "Spec" field, enter the wet paint specifications as
-                  described above.
+                  "Spesifikasyon" alanına, yukarıda açıklandığı gibi islak boya
+                  spesifikasyonlarını girin.
                 </span>
               </li>
             </ul>
 
-            {/* Wet Paint Special Considerations */}
             <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-              Wet paint special considerations:
+              Islak boya özel hususlar:
             </h3>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Quotes with wet paint service may take slightly longer than 24
-                  hours.
+                  Islak boya hizmeti içeren teklifler 24 saatten biraz daha uzun
+                  sürebilir.
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  If masking is required as a component of your finished
-                  product, please submit a 2D-drawing.
+                  Nihai ürününüzün bir bileşeni olarak maskeleme gerekiyorsa,
+                  lütfen bir 2B çizim gönderin.
                 </span>
               </li>
             </ul>
@@ -345,67 +341,67 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              Silk Screening
+              İpek Baskı
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-8"></div>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Silk screening on sheet metal involves forcing ink through a fine
-              mesh screen containing a stencil that blocks off areas in order to
-              achieve the desired design. Ink is transferred to areas not
-              covered by the stencil onto the metal surface. This process is
-              often used for adding labels, instructions, or decorative patterns
-              to fabricated metal products.
+              Sac metal üzerinde ipek baskı, istenen tasarımı elde etmek için
+              alanları bloke eden bir şablon içeren ince bir mesh elekten
+              mürekkep geçirmeyi içerir. Mürekkep, şablon tarafından kaplanmayan
+              alanlardan metal yüzeye aktarılır. Bu işlem genellikle fabrikasyon
+              metal ürünlere etiket, talimat veya dekoratif desenler eklemek
+              için kullanılır.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              Requesting silk screening on your next project is easy. Just
-              submit the following information:
+              Bir sonraki projenizde ipek baskı talep etmek kolaydır. Sadece
+              aşağıdaki bilgileri gönderin:
             </p>
 
             <ul className="space-y-2 mb-6">
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  An image saved as an .ai, .dxf, or .PDF file
+                  .ai, .dxf veya .PDF dosyası olarak kaydedilmiş bir görüntü
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Part location for the silk-screened artwork
+                  İpek baskılı sanat eseri için parça konumu
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Color data based on the Pantone Matching System (PMS)
+                  Pantone Eşleme Sistemi'ne (PMS) dayalı renk verileri
                 </span>
               </li>
             </ul>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              Additionally, please note these silk screening considerations:
+              Ek olarak, lütfen bu ipek baskı hususlarını not edin:
             </p>
 
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Minimum screen size: 1 in. (25.4 mm) square
+                  Minimum ekran boyutu: 1 inç (25,4 mm) kare
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Maximum screen size: 24 in. (609.6 mm) by 14 in. (355.6 mm)
+                  Maksimum ekran boyutu: 24 inç (609,6 mm) x 14 inç (355,6 mm)
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Screening internal faces requires at least 1 in. (25.4 mm)
-                  margin from bends and other part features
+                  İç yüzeylerin ekranlanması, bükümlerden ve diğer parça
+                  özelliklerinden en az 1 inç (25,4 mm) kenar boşluğu gerektirir
                 </span>
               </li>
             </ul>
@@ -416,52 +412,53 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              Masking
+              Maskeleme
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-8"></div>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Masking is a common step in the finishing process when it comes to
-              sheet metal components, assemblies, or electrical enclosures. We
-              use tape, rounds, and plugs to allow for selective application of
-              finishes on your design. Some key benefits of masking include:
+              Maskeleme, sac metal bileşenler, montajlar veya elektrik
+              muhafazaları söz konusu olduğunda yüzey işlem sürecinde yaygın bir
+              adımdır. Tasarımınızda seçici olarak yüzey işlemi uygulamak için
+              bant, yuvarlak ve tapa kullanıyoruz. Maskenin bazı önemli
+              faydaları şunlardır:
             </p>
 
             <ul className="space-y-2 mb-6">
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Protection of functional areas of the part such as hardware
-                  inserts, threaded holes, or surfaces
+                  Donanım ek parçaları, dişli delikler veya yüzeyler gibi
+                  parçanın fonksiyonel alanlarının korunması
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Solid dimensional tolerances with the unfinished state.
-                  Finishing processes add to the thickness of your part, which
-                  may affect fit or function of certain designs.
+                  Bitmemiş durumda sağlam boyutsal toleranslar. Yüzey işlem
+                  süreçleri parçanızın kalınlığını artırır, bu da belirli
+                  tasarımların uyumunu veya işlevini etkileyebilir.
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Avoiding coating applications in areas where electrical
-                  conductivity is needed
+                  Elektriksel iletkenliğin gerekli olduğu alanlarda kaplama
+                  uygulamalarından kaçınma
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Improved aesthetic appeal of the overall design
+                  Genel tasarımın iyileştirilmiş estetik çekiciliği
                 </span>
               </li>
             </ul>
 
             <p className="text-gray-600 leading-relaxed">
-              Request masking in a 2D drawing submitted with your CAD file. The
-              2D drawing should include the location of masked areas, as well as
-              which holes/inserts are to be plugged.
+              CAD dosyanızla birlikte gönderilen bir 2B çizimde maskeleme talep
+              edin. 2B çizim, maskeli alanların konumunun yanı sıra hangi
+              deliklerin/ek parçaların tıkanacağını içermelidir.
             </p>
           </div>
         </div>
@@ -470,12 +467,12 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              Masking Tape and Rounds
+              Maskeleme Bandı ve Yuvarlaklar
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-8"></div>
 
             <p className="text-gray-600 leading-relaxed text-center mb-6">
-              We offer a range of tape and rounds (discs):
+              Bir dizi bant ve yuvarlak (disk) sunuyoruz:
             </p>
 
             {/* Unit Toggle Buttons */}
@@ -487,7 +484,7 @@ export default function page() {
                     ? "bg-[#0B1221] text-white shadow-md"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}>
-                Standard (US)
+                Standart (ABD)
               </button>
               <button
                 onClick={() => setUnit("metric")}
@@ -496,7 +493,7 @@ export default function page() {
                     ? "bg-[#0B1221] text-white shadow-md"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}>
-                Metric
+                Metrik
               </button>
             </div>
 
@@ -506,10 +503,10 @@ export default function page() {
                 <thead>
                   <tr className="bg-[#0B1221] text-white">
                     <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                      Tape
+                      Bant
                     </th>
                     <th className="text-left p-4 font-semibold text-lg">
-                      Rounds/Discs
+                      Yuvarlak/Disk
                     </th>
                   </tr>
                 </thead>
@@ -532,70 +529,70 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              Part Marking
+              Parça İşaretleme
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-8"></div>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Part marking is a helpful tool to ensure components are easily
-              identified and traceable as they move through your supply chain.
-              Every order that leaves our facility includes a{" "}
-              <span className="italic">bag &amp; tag</span>
-              marking method wherein parts are collectively packaged and labeled
-              with identifying information.
+              Parça işaretleme, bileşenlerin tedarik zincirinizde hareket
+              ederken kolayca tanımlanabilmesini ve izlenebilir olmasını
+              sağlamak için yararlı bir araçtır. Tesisimizden çıkan her sipariş,
+              parçaların toplu olarak paketlendiği ve tanımlayıcı bilgilerle
+              etiketlendiği bir <span className="italic">poşet ve etiket</span>{" "}
+              işaretleme yöntemi içerir.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              If your supply chain requires all parts to be uniquely marked for
-              traceability purposes, we offer a stenciling process that can
-              provide:
+              Tedarik zinciriniz izlenebilirlik amacıyla tüm parçaların
+              benzersiz şekilde işaretlenmesini gerektiriyorsa, aşağıdakileri
+              sağlayabilen bir şablonlama süreci sunuyoruz:
             </p>
 
             <ul className="space-y-2 mb-6">
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
-                <span className="text-gray-600">Part number</span>
+                <span className="text-gray-600">Parça numarası</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
-                <span className="text-gray-600">Revision level</span>
+                <span className="text-gray-600">Revizyon seviyesi</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
-                <span className="text-gray-600">Vendor code/ID</span>
+                <span className="text-gray-600">Tedarikçi kodu/kimliği</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
-                <span className="text-gray-600">Cage code</span>
+                <span className="text-gray-600">Kafes kodu</span>
               </li>
             </ul>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              To include part marking with your part or project, submit a 2D
-              drawing including:
+              Parça veya projenize parça işaretlemesi eklemek için,
+              aşağıdakileri içeren bir 2B çizim gönderin:
             </p>
 
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Location on part for marking placement
+                  İşaretleme yerleşimi için parça üzerinde konum
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Font size (minimum 12 pt., maximum 16 pt.)
+                  Yazı tipi boyutu (minimum 12 punto, maksimum 16 punto)
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
-                <span className="text-gray-600">Color</span>
+                <span className="text-gray-600">Renk</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Information to be marked (choose from list on the left)
+                  İşaretlenecek bilgi (soldaki listeden seçin)
                 </span>
               </li>
             </ul>
@@ -606,15 +603,15 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              Standard and Cosmetic Parts
+              Standart ve Kozmetik Parçalar
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-8"></div>
 
             <p className="text-gray-600 leading-relaxed text-center mb-10">
-              Whether you're developing a prototype to check form, fit, or
-              function, or you need quick-turn cosmetic parts for your next
-              trade show, we have you covered. Use this guide to choose the best
-              option for your project.
+              İster form, uyum veya işlevi kontrol etmek için bir prototip
+              geliştiriyor olun, ister bir sonraki ticaret fuarınız için hızlı
+              teslim kozmetik parçalara ihtiyacınız olsun, sizi koruyoruz.
+              Projeniz için en iyi seçeneği seçmek üzere bu kılavuzu kullanın.
             </p>
 
             {/* Table */}
@@ -623,62 +620,66 @@ export default function page() {
                 <thead>
                   <tr className="bg-[#0B1221] text-white">
                     <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                      Description
+                      Açıklama
                     </th>
                     <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                      Standard
+                      Standart
                     </th>
                     <th className="text-left p-4 font-semibold text-lg">
-                      Cosmetic
+                      Kozmetik
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-200 bg-white">
                     <td className="p-4 font-semibold text-[#0B1221]">
-                      Use Cases
+                      Kullanım Alanları
                     </td>
                     <td className="p-4 text-gray-600">
-                      When lower cost is a greater priority than appearance
+                      Düşük maliyet, görünümden daha büyük bir öncelik olduğunda
                     </td>
                     <td className="p-4 text-gray-600">
-                      Functionally cosmetic parts that make you and your parts
-                      look good to stakeholders
+                      Sizi ve parçalarınızı paydaşlara iyi gösteren fonksiyonel
+                      kozmetik parçalar
                     </td>
                   </tr>
                   <tr className="border-b border-gray-200 bg-gray-50">
                     <td className="p-4 font-semibold text-[#0B1221]">
-                      Part Applications
+                      Parça Uygulamaları
                     </td>
                     <td className="p-4 text-gray-600">
-                      Form, fit, function prototyping; internal components
+                      Form, uyum, işlev prototipleme; iç bileşenler
                     </td>
                     <td className="p-4 text-gray-600">
-                      Testing or demonstration units, trade show parts, external
-                      components
+                      Test veya demonstrasyon üniteleri, ticaret fuarı
+                      parçaları, dış bileşenler
                     </td>
                   </tr>
                   <tr className="border-b border-gray-200 bg-white">
                     <td className="p-4 font-semibold text-[#0B1221]">
-                      Surface Finish
+                      Yüzey İşlemi
                     </td>
-                    <td className="p-4 text-gray-600">Fasonly' discretion</td>
                     <td className="p-4 text-gray-600">
-                      Housings, covers, face plates, external brackets and
-                      mounts
+                      Fasonly'nin takdirine bağlı
+                    </td>
+                    <td className="p-4 text-gray-600">
+                      Gövdeler, kapaklar, ön paneller, dış braketler ve montaj
+                      parçaları
                     </td>
                   </tr>
                   <tr className="border-b border-gray-200 bg-gray-50">
-                    <td className="p-4 font-semibold text-[#0B1221]">Cost</td>
-                    <td className="p-4 text-gray-600">Yes</td>
-                    <td className="p-4 text-gray-600">Yes</td>
+                    <td className="p-4 font-semibold text-[#0B1221]">
+                      Maliyet
+                    </td>
+                    <td className="p-4 text-gray-600">Evet</td>
+                    <td className="p-4 text-gray-600">Evet</td>
                   </tr>
                   <tr className="border-b border-gray-200 bg-white">
-                    <td className="p-4 font-semibold text-[#0B1221]">
-                      Quantity
+                    <td className="p-4 font-semibold text-[#0B1221]">Miktar</td>
+                    <td className="p-4 text-gray-600">1-100+ parça</td>
+                    <td className="p-4 text-gray-600">
+                      1-25 parça için en iyisi
                     </td>
-                    <td className="p-4 text-gray-600">1-100+ parts</td>
-                    <td className="p-4 text-gray-600">Best for 1-25 parts</td>
                   </tr>
                 </tbody>
               </table>

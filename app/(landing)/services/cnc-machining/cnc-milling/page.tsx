@@ -101,156 +101,162 @@ export default function page() {
   const [activeTab, setActiveTab] = useState<string>("maximumDimensions");
 
   const tabs: Tab[] = [
-    { id: "maximumDimensions", label: "Maximum Dimensions" },
-    { id: "minimumDimensions", label: "Minimum Dimensions" },
-    { id: "threading", label: "Threading" },
-    { id: "tolerances", label: "Tolerances" },
-    { id: "radii", label: "Radii" },
-    { id: "text", label: "Text" },
+    { id: "maximumDimensions", label: "Maksimum Boyutlar" },
+    { id: "minimumDimensions", label: "Minimum Boyutlar" },
+    { id: "threading", label: "Diş Açma" },
+    { id: "tolerances", label: "Toleranslar" },
+    { id: "radii", label: "Yarıçaplar" },
+    { id: "text", label: "Metin" },
   ];
 
   const content: Record<string, TabContent> = {
     maximumDimensions: {
-      title: "Maximum Dimensions",
+      title: "Maksimum Boyutlar",
       description:
-        "For specific milling dimensions by material, see maximum part extents for machining.",
+        "Malzemeye göre belirli frezeleme boyutları için işleme için maksimum parça boyutlarına bakın.",
       table: {
-        headers: ["Material", "US", "Metric"],
+        headers: ["Malzeme", "ABD", "Metrik"],
         rows: [
           {
-            material: "3-axis - ABS",
-            us: "10 in. x 14 in. x 1.75 in.",
-            metric: "254mm x 356mm x 44.5mm",
+            material: "3 eksenli - ABS",
+            us: "10 inç x 14 inç x 1,75 inç",
+            metric: "254mm x 356mm x 44,5mm",
           },
           {
-            material: "3-axis - Acetal",
-            us: "22 in. x 14 in. x 0.75 in.",
-            metric: "559mm x 356mm x 19.1mm",
+            material: "3 eksenli - Asetal",
+            us: "22 inç x 14 inç x 0,75 inç",
+            metric: "559mm x 356mm x 19,1mm",
           },
           {
-            material: "3-axis - Nylon",
-            us: "22 in. x 14 in. x 0.75 in.",
-            metric: "559mm x 356mm x 19.1mm",
+            material: "3 eksenli - Naylon",
+            us: "22 inç x 14 inç x 0,75 inç",
+            metric: "559mm x 356mm x 19,1mm",
           },
           {
-            material: "3-axis - Aluminum",
-            us: "22 in. x 14 in. x 3.75 in.",
-            metric: "559mm x 356mm x 95.3mm",
+            material: "3 eksenli - Alüminyum",
+            us: "22 inç x 14 inç x 3,75 inç",
+            metric: "559mm x 356mm x 95,3mm",
           },
           {
-            material: "3-axis - Hard metals*",
-            us: "22 in. x 14 in. x 3.75 in.",
-            metric: "559mm x 356mm x 95.3mm",
+            material: "3 eksenli - Sert metaller*",
+            us: "22 inç x 14 inç x 3,75 inç",
+            metric: "559mm x 356mm x 95,3mm",
           },
           {
-            material: "5-axis - Brass",
-            us: "10 in. x 7 in. x 1.75 in.",
-            metric: "254mm x 178mm x 44.5mm",
+            material: "5 eksenli - Pirinç",
+            us: "10 inç x 7 inç x 1,75 inç",
+            metric: "254mm x 178mm x 44,5mm",
           },
           {
-            material: "5-axis - Copper",
-            us: "10 in. x 7 in. x 1.75 in.",
-            metric: "254mm x 178mm x 44.5mm",
+            material: "5 eksenli - Bakır",
+            us: "10 inç x 7 inç x 1,75 inç",
+            metric: "254mm x 178mm x 44,5mm",
           },
           {
-            material: "5-axis - Aluminum",
-            us: "10 in. x 7 in. x 3.75 in.",
-            metric: "254mm x 178mm x 95.3mm",
+            material: "5 eksenli - Alüminyum",
+            us: "10 inç x 7 inç x 3,75 inç",
+            metric: "254mm x 178mm x 95,3mm",
           },
           {
-            material: "5-axis - Stainless Steel 304",
-            us: "4.25 in. x 3.25 in. x 3.75 in.",
-            metric: "107.95mm x 82.55mm x 95.25mm",
+            material: "5 eksenli - Paslanmaz Çelik 304",
+            us: "4,25 inç x 3,25 inç x 3,75 inç",
+            metric: "107,95mm x 82,55mm x 95,25mm",
           },
         ],
       },
-      note: "*Hard metals: Titanium (6Al-4V), Stainless Steels (303, 316, 17-4PH), Steel Alloy (4140)",
-      note2: "**Denotes two-sided machining only",
+      note: "*Sert metaller: Titanyum (6Al-4V), Paslanmaz Çelikler (303, 316, 17-4PH), Çelik Alaşımı (4140)",
+      note2: "**Yalnızca iki taraflı işlemeyi belirtir",
     },
     minimumDimensions: {
-      title: "Minimum Dimensions",
-      description: "Minimum part size requirements for CNC milling.",
+      title: "Minimum Boyutlar",
+      description: "CNC frezeleme için minimum parça boyutu gereksinimleri.",
       table: {
-        headers: ["", "US", "Metric"],
+        headers: ["", "ABD", "Metrik"],
         rows: [
           {
-            material: "Size",
-            us: "0.25 in. x 0.25 in.",
-            metric: "6.35mm x 6.35mm",
+            material: "Boyut",
+            us: "0,25 inç x 0,25 inç",
+            metric: "6,35mm x 6,35mm",
           },
           {
-            material: "Nominal Thickness",
-            us: "0.040 in.",
-            metric: "1.02mm",
+            material: "Nominal Kalınlık",
+            us: "0,040 inç",
+            metric: "1,02mm",
           },
         ],
       },
-      note: "Maximum depth that can be milled is 2 in. (50.8mm) from either side of part.",
+      note: "Freze edilebilecek maksimum derinlik, parçanın her iki tarafından 2 inçtir (50,8mm).",
     },
     threading: {
-      title: "Threading",
+      title: "Diş Açma",
       description:
-        "In the Fasonly automated factory, we currently support UNC and UNF threads from #2 up to 0.5 in., and metric threads from M2 to M12. Avoid modeling internal threads on your part design.",
+        "Fasonly otomatik fabrikasında, şu anda #2'den 0,5 inç'e kadar UNC ve UNF dişleri ve M2'den M12'ye kadar metrik dişleri destekliyoruz. Parça tasarımınızda iç diş modellemekten kaçının.",
       table: {
-        headers: ["Thread Type", "Size Range"],
+        headers: ["Diş Tipi", "Boyut Aralığı"],
         rows: [
-          { material: "UNC / UNF", us: "#2 up to 0.5 in." },
-          { material: "Metric", us: "M2 to M12" },
+          { material: "UNC / UNF", us: "#2'den 0,5 inç'e kadar" },
+          { material: "Metrik", us: "M2'den M12'ye" },
         ],
       },
-      additionalOptions: ["Coil inserts", "Key inserts"],
-      link: "View Threading Options",
+      additionalOptions: ["Bobin ek parçalar", "Anahtar ek parçalar"],
+      link: "Diş Açma Seçeneklerini Görüntüle",
     },
     tolerances: {
-      title: "Tolerances",
+      title: "Toleranslar",
       description: "",
       sections: [
         {
-          subtitle: "Standard Tolerances",
+          subtitle: "Standart Toleranslar",
           content:
-            "For parts that don't require a technical drawing we typically can hold a machining tolerance of +/- 0.005 in. (0.13mm). Part features are recommended to be thicker than 0.020 in. (0.51mm) in all regions and a nominal part thickness above 0.040 in.",
+            "Teknik çizim gerektirmeyen parçalar için tipik olarak +/- 0,005 inç (0,13mm) işleme toleransı uygulayabiliriz. Parça özelliklerinin tüm bölgelerde 0,020 inçten (0,51mm) daha kalın ve nominal parça kalınlığının 0,040 inçin üzerinde olması önerilir.",
         },
         {
-          subtitle: "High-Requirement Tolerances",
+          subtitle: "Yüksek Gereksinimli Toleranslar",
           content:
-            "For additional tolerance requirements, we require a technical drawing at time of upload. Linear tolerance quoted to ISO 2768-1-1989-f, standard hole tolerance of +/- 0.005 in. (0.13mm) and hole and bore-style tolerance on specified features may be +/- 0.0005 in. (0.01mm).",
+            "Ek tolerans gereksinimleri için, yükleme sırasında bir teknik çizim talep ediyoruz. ISO 2768-1-1989-f standardına göre doğrusal tolerans belirtilir, standart delik toleransı +/- 0,005 inçtir (0,13mm) ve belirtilen özelliklerde delik ve silindirik delik toleransı +/- 0,0005 inç (0,01mm) olabilir.",
         },
       ],
     },
     radii: {
-      title: "Radii",
+      title: "Yarıçaplar",
       description:
-        "Sharp inside corners on a part will be radiused (rounded) as a natural result of the CNC machining process. Resulting radii will be the minimum allowable tool radius.",
+        "Bir parça üzerindeki keskin iç köşeler, CNC işleme sürecinin doğal bir sonucu olarak yuvarlatılır (radislenir). Ortaya çıkan yarıçaplar, izin verilen minimum takım yarıçapı olacaktır.",
       table: null,
     },
     text: {
-      title: "Text",
+      title: "Metin",
       description: "",
       sections: [
         {
-          subtitle: "Engraving",
+          subtitle: "Gravür",
           content:
-            "Fasonly' fully automated factory allows you to design in engraving.",
+            "Fasonly'nin tam otomatik fabrikası, gravürü tasarımınıza dahil etmenize olanak tanır.",
         },
       ],
       bulletPoints: [
-        "Plastic and soft metals: Minimum width of 0.018 in. (0.457mm), depth of 0.0118 in. (0.3mm). Example text size would be 16 point Arial Rounded MT font.",
-        "Hard metals: Minimum width of 0.033 in. (0.838mm) and depth of 0.0118 in. (0.3mm). Example text size would be 22 point Arial Rounded MT font.",
-        "If design permits it, opt for recessed text versus raised text.",
+        "Plastikler ve yumuşak metaller: Minimum genişlik 0,018 inç (0,457mm), derinlik 0,0118 inç (0,3mm). Örnek metin boyutu 16 punto Arial Rounded MT yazı tipi olacaktır.",
+        "Sert metaller: Minimum genişlik 0,033 inç (0,838mm) ve derinlik 0,0118 inç (0,3mm). Örnek metin boyutu 22 punto Arial Rounded MT yazı tipi olacaktır.",
+        "Tasarım izin veriyorsa, kabartma metin yerine girintili metni tercih edin.",
       ],
-      note: "Fasonly also offers Laser Part Marking and Ink Stamp for our semi-automated factory capability as well as via Fasonly Network website.",
+      note: "Fasonly ayrıca yarı otomatik fabrika yeteneğimiz ve Fasonly Network web sitesi aracılığıyla Lazer Parça İşaretleme ve Mürekkep Damgası sunmaktadır.",
       inkTable: {
-        headers: ["Ink Stamp", "Spec"],
+        headers: ["Mürekkep Damgası", "Özellik"],
         rows: [
-          { stamp: "Black Ink", spec: 'MIL-A-208, 13pt. (1/8") Characters' },
           {
-            stamp: "Black Epoxy Ink",
-            spec: 'MIL-A-56032, 13pt. (1/8") Characters',
+            stamp: "Siyah Mürekkep",
+            spec: 'MIL-A-208, 13 punto (1/8") Karakterler',
           },
-          { stamp: "White Ink", spec: 'MIL-A-208, 13pt. (1/8") Characters' },
           {
-            stamp: "White Epoxy Ink",
-            spec: 'MIL-A-56032, 13pt. (1/8") Characters',
+            stamp: "Siyah Epoksi Mürekkep",
+            spec: 'MIL-A-56032, 13 punto (1/8") Karakterler',
+          },
+          {
+            stamp: "Beyaz Mürekkep",
+            spec: 'MIL-A-208, 13 punto (1/8") Karakterler',
+          },
+          {
+            stamp: "Beyaz Epoksi Mürekkep",
+            spec: 'MIL-A-56032, 13 punto (1/8") Karakterler',
           },
         ],
       },
@@ -301,10 +307,10 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="CNC Milling Service"
-        desc="Get custom milled parts for rapid prototyping and production."
+        title="CNC Frezeleme Hizmeti"
+        desc="Hızlı prototipleme ve üretim için özel frezelenmiş parçalar alın."
         image="/Assets/Images/services/injection-molding/cnc_circflange_al_beadblastededge.webp"
-        firstButton={{ title: "Get a Quote", route: "/" }}
+        firstButton={{ title: "Teklif Al", route: "/" }}
       />
 
       <div className="w-full bg-white py-20">
@@ -314,14 +320,14 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Capabilities",
-                    "Materials",
-                    "Surface Finishes",
-                    "Quality Inspections",
+                    "Yetenekler",
+                    "Malzemeler",
+                    "Yüzey İşlemleri",
+                    "Kalite Denetimleri",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -336,32 +342,30 @@ export default function page() {
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
-              <div
-                id="about-plastic-injection-molding"
-                className="scroll-mt-32">
+              {/* What is CNC Milling? Section */}
+              <div id="cnc-frezeleme-nedir" className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  What is Plastic Injection Molding?
+                  CNC Frezeleme Nedir?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Our liquid silicone rubber (LSR) molding process produces
-                  custom prototypes and end-use production parts in 15 days or
-                  less. We use aluminum molds that offer cost-efficient tooling
-                  and accelerated manufacturing cycles, and stock various grades
-                  and durometers of LSR materials.
+                  Sıvı silikon kauçuk (LSR) kalıplama sürecimiz, 15 gün veya
+                  daha kısa sürede özel prototipler ve son kullanım üretim
+                  parçaları üretir. Maliyet etkin takım ve hızlandırılmış üretim
+                  döngüleri sunan alüminyum kalıplar kullanıyoruz ve çeşitli
+                  kalite ve sertlik derecelerinde LSR malzemeleri stokluyoruz.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Common applications for silicone rubber molding:
+                  Silikon kauçuk kalıplama için yaygın uygulamalar:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "low-volume production",
-                    "bridge tooling",
-                    "pilot runs",
-                    "functional prototyping",
+                    "düşük hacimli üretim",
+                    "köprü takımı",
+                    "pilot çalışmalar",
+                    "fonksiyonel prototipleme",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -378,8 +382,8 @@ export default function page() {
       </div>
 
       <GuideDownload
-        title="CNC Machining Design Guide"
-        desc="In this guide to CNC machining, you'll learn how to create efficient, manufacturable metal and plastic parts for prototyping and production."
+        title="CNC İşleme Tasarım Kılavuzu"
+        desc="Bu CNC işleme kılavuzunda, prototipleme ve üretim için verimli, üretilebilir metal ve plastik parçaların nasıl oluşturulacağını öğreneceksiniz."
       />
 
       <div className="w-full bg-white py-20">
@@ -387,18 +391,20 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              CNC Milling Design Guidelines and Capabilities
+              CNC Frezeleme Tasarım Kılavuzları ve Yetenekler
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our basic guidelines for CNC milling include important design
-              considerations to help improve part manufacturability, enhance
-              cosmetic appearance, and reduce overall production time.
+              CNC frezeleme için temel kılavuzlarımız, parça üretilebilirliğini
+              iyileştirmeye, kozmetik görünümü geliştirmeye ve genel üretim
+              süresini azaltmaya yardımcı olacak önemli tasarım hususlarını
+              içerir.
             </p>
             <a
               href="#"
               className="inline-block text-[#0099ff] hover:text-[#96E92A] transition-colors mt-2">
-              View our design guidelines page for more details. →
+              Daha fazla detay için tasarım kılavuzları sayfamızı görüntüleyin.
+              →
             </a>
           </div>
 
@@ -492,7 +498,7 @@ export default function page() {
                   currentContent.additionalOptions && (
                     <div className="mb-4">
                       <p className="text-gray-600 mb-2">
-                        We also offer the following for milled parts:
+                        Frezelenmiş parçalar için ayrıca şunları da sunuyoruz:
                       </p>
                       <ul className="list-disc pl-5 space-y-1">
                         {currentContent.additionalOptions.map((opt, idx) => (
@@ -590,9 +596,8 @@ export default function page() {
         </div>
       </div>
       <GetAQuote
-        title=" CNC Machining Services for End-Use Parts"
-        desc="Get high-quality machined parts faster with our expanded
-                automated CNC milling—parts ready in as fast as 4 days"
+        title="Son Kullanım Parçaları için CNC İşleme Hizmetleri"
+        desc="Genişletilmiş otomatik CNC frezeleme ile yüksek kaliteli işlenmiş parçaları daha hızlı alın - parçalar 4 gün kadar kısa sürede hazır"
       />
 
       <div className="w-full bg-white py-20">
@@ -606,7 +611,7 @@ export default function page() {
                     "/Assets/Images/services/cnc-machining/cnc-milling/aluminum-cnc-milled-part.webp"
                   }
                   fill
-                  alt="design cube"
+                  alt="Alüminyum CNC frezelenmiş parça"
                 />
               </div>
             </div>
@@ -614,28 +619,27 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                CNC Milling Materials
+                CNC Frezeleme Malzemeleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                We stock more than 30 production-grade plastic and metal
-                materials that are suitable for various part applications and
-                industries.
+                Çeşitli parça uygulamaları ve endüstriler için uygun 30'dan
+                fazla üretim sınıfı plastik ve metal malzeme stokluyoruz.
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-6">
                 {/* Plastics */}
                 <div>
                   <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                    Plastics
+                    Plastikler
                   </h3>
                   <ul className="space-y-2">
                     {[
                       "ABS",
-                      "Acetal",
+                      "Asetal",
                       "CPVC",
                       "HDPE",
-                      "Nylon",
+                      "Naylon",
                       "PEEK",
                       "PEI",
                       "PET",
@@ -651,17 +655,17 @@ export default function page() {
                 {/* Metals */}
                 <div>
                   <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                    Metals
+                    Metaller
                   </h3>
                   <ul className="space-y-2">
                     {[
-                      "Aluminum",
-                      "Brass",
-                      "Copper",
-                      "Stainless Steel",
-                      "Steel Alloy",
-                      "Steel Mild Low Carbon",
-                      "Titanium",
+                      "Alüminyum",
+                      "Pirinç",
+                      "Bakır",
+                      "Paslanmaz Çelik",
+                      "Çelik Alaşımı",
+                      "Yumuşak Düşük Karbonlu Çelik",
+                      "Titanyum",
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -673,15 +677,15 @@ export default function page() {
               </div>
 
               <p className="text-gray-600 leading-relaxed mt-4">
-                Evaluate standard surface finishes for CNC machined parts as
-                well as advanced capabilities to improve durability, surface
-                finish, and add color.
+                CNC işlenmiş parçalar için standart yüzey işlemlerini ve ayrıca
+                dayanıklılığı, yüzey kalitesini iyileştirmek ve renk eklemek
+                için gelişmiş yetenekleri değerlendirin.
               </p>
 
               <a
                 href="#"
                 className="inline-flex items-center gap-2 text-[#0099ff] hover:text-[#96E92A] transition-colors font-medium mt-4 group">
-                Explore Options →
+                Seçenekleri Keşfet →
               </a>
             </div>
           </div>
@@ -692,15 +696,15 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Surface Finish on Milled Parts
+              Frezelenmiş Parçalarda Yüzey İşlemi
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-300 leading-relaxed">
-              Typically, we break (debur) the edges on all machined parts. All
-              machined plastic parts are left as-machined, which may leave
-              visible tool marks. Some metal parts, on the other hand, allow
-              more choice. Parts left with sharp edges should be handled with
-              care.
+              Tipik olarak, tüm işlenmiş parçaların kenarlarını kırarız (çapak
+              alırız). Tüm işlenmiş plastik parçalar işlenmiş olarak bırakılır,
+              bu da görünür takım izleri bırakabilir. Diğer yandan, bazı metal
+              parçalar daha fazla seçenek sunar. Keskin kenarlı bırakılan
+              parçalar dikkatle tutulmalıdır.
             </p>
           </div>
 
@@ -714,12 +718,12 @@ export default function page() {
                     "/Assets/Images/services/cnc-machining/cnc-milling/black-abs-plastic-milled-part.webp"
                   }
                   fill
-                  alt="design cube"
+                  alt="Siyah ABS plastik parça"
                 />
               </div>
               <div className="p-4 text-center">
-                <h3 className="text-white font-bold text-lg">ABS Black</h3>
-                <p className="text-gray-300 text-sm">Finish: Broken edge</p>
+                <h3 className="text-white font-bold text-lg">ABS Siyah</h3>
+                <p className="text-gray-300 text-sm">İşlem: Kırık kenar</p>
               </div>
             </div>
 
@@ -731,12 +735,12 @@ export default function page() {
                     "/Assets/Images/services/cnc-machining/cnc-milling/abs-natural-cnc-milled-part.png"
                   }
                   fill
-                  alt="design cube"
+                  alt="Doğal ABS parça"
                 />
               </div>
               <div className="p-4 text-center">
-                <h3 className="text-white font-bold text-lg">ABS Natural</h3>
-                <p className="text-gray-300 text-sm">Finish: Broken edge</p>
+                <h3 className="text-white font-bold text-lg">ABS Doğal</h3>
+                <p className="text-gray-300 text-sm">İşlem: Kırık kenar</p>
               </div>
             </div>
 
@@ -748,12 +752,12 @@ export default function page() {
                     "/Assets/Images/services/cnc-machining/cnc-milling/aluminum-cnc-milled-part-broken-edges.webp"
                   }
                   fill
-                  alt="design cube"
+                  alt="Alüminyum parça - kırık kenar"
                 />
               </div>
               <div className="p-4 text-center">
-                <h3 className="text-white font-bold text-lg">Aluminum</h3>
-                <p className="text-gray-300 text-sm">Finish: Broken edge</p>
+                <h3 className="text-white font-bold text-lg">Alüminyum</h3>
+                <p className="text-gray-300 text-sm">İşlem: Kırık kenar</p>
               </div>
             </div>
 
@@ -765,12 +769,12 @@ export default function page() {
                     "/Assets/Images/services/cnc-machining/cnc-milling/aluminum-cnc-milled-part-with-bead-blast.png"
                   }
                   fill
-                  alt="design cube"
+                  alt="Alüminyum parça - boncuk püskürtme"
                 />
               </div>
               <div className="p-4 text-center">
-                <h3 className="text-white font-bold text-lg">Aluminum</h3>
-                <p className="text-gray-300 text-sm">Finish: Bead Blast</p>
+                <h3 className="text-white font-bold text-lg">Alüminyum</h3>
+                <p className="text-gray-300 text-sm">İşlem: Boncuk Püskürtme</p>
               </div>
             </div>
 
@@ -782,12 +786,12 @@ export default function page() {
                     "/Assets/Images/services/cnc-machining/cnc-milling/aluminum-cnc-milled-part-with-sharp-edges.webp"
                   }
                   fill
-                  alt="design cube"
+                  alt="Alüminyum parça - keskin kenar"
                 />
               </div>
               <div className="p-4 text-center">
-                <h3 className="text-white font-bold text-lg">Aluminum</h3>
-                <p className="text-gray-300 text-sm">Finish: Sharp edge</p>
+                <h3 className="text-white font-bold text-lg">Alüminyum</h3>
+                <p className="text-gray-300 text-sm">İşlem: Keskin kenar</p>
               </div>
             </div>
 
@@ -798,9 +802,9 @@ export default function page() {
               </div>
               <div className="p-4 text-center">
                 <h3 className="text-white font-bold text-lg">
-                  Stainless Steel
+                  Paslanmaz Çelik
                 </h3>
-                <p className="text-gray-300 text-sm">Finish: As machined</p>
+                <p className="text-gray-300 text-sm">İşlem: İşlenmiş olarak</p>
               </div>
             </div>
           </div>
@@ -811,13 +815,13 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Tour our Digital Machine Shop
+              Dijital İşleme Atölyemizi Gezin
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Take a quick tour through our 215,000 sq. ft. CNC machining
-              facility in Minnesota to see how we manufacture parts in as fast
-              as 24 hours.
+              Minnesota'daki 215.000 feet karelik CNC işleme tesisimizde
+              parçaları 24 saat kadar kısa sürede nasıl ürettiğimizi görmek için
+              hızlı bir tur atın.
             </p>
           </div>
 
@@ -827,9 +831,11 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
                 <span className="text-6xl">🏭</span>
-                <p className="text-gray-500 text-sm mt-2">CNC Machine Shop</p>
+                <p className="text-gray-500 text-sm mt-2">
+                  CNC İşleme Atölyesi
+                </p>
                 <span className="absolute bottom-4 left-4 bg-[#0B1221]/80 text-white text-xs px-2 py-1 rounded">
-                  Milling Head (2 axis)
+                  Freze Başlığı (2 eksenli)
                 </span>
               </div>
             </div>
@@ -837,23 +843,24 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h3 className="text-2xl md:text-3xl font-bold text-[#0B1221] mb-4">
-                What is CNC Milling and How Does it Work?
+                CNC Frezeleme Nedir ve Nasıl Çalışır?
               </h3>
               <div className="w-16 h-0.5 bg-[#96E92A] rounded-full mb-4"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                CNC milling is a subtractive manufacturing process. It starts by
-                fixturing a block of metal or plastic material inside the CNC
-                mill. Using G-code, the CNC machine is programmed to rapidly
-                mill out parts from the block of raw material. Our 3- and 5-axis
-                CNC machines are equipped with various toolsets to maximize
-                efficiency and production speed.
+                CNC frezeleme, çıkarımlı bir üretim sürecidir. Bir metal veya
+                plastik malzeme bloğunu CNC freze makinesinin içine sabitleyerek
+                başlar. G-kodu kullanarak, CNC makinesi ham malzeme bloğundan
+                hızla parçalar frezelemek üzere programlanır. 3 ve 5 eksenli CNC
+                makinelerimiz, verimliliği ve üretim hızını maksimize etmek için
+                çeşitli takım setleriyle donatılmıştır.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Machined plastic parts are left as-milled, which typically means
-                they show visible tool marks. Some metal parts allow more
-                finishing choices like anodizing and chromate plating. When the
-                run is complete and your required surface finish is applied,
-                parts are boxed and shipped shortly thereafter.
+                İşlenmiş plastik parçalar frezelenmiş olarak bırakılır, bu tipik
+                olarak görünür takım izleri gösterdikleri anlamına gelir. Bazı
+                metal parçalar, anodizasyon ve kromat kaplama gibi daha fazla
+                bitirme seçeneğine izin verir. Çalıştırma tamamlandığında ve
+                gerekli yüzey işleminiz uygulandığında, parçalar kutulanır ve
+                kısa bir süre sonra gönderilir.
               </p>
             </div>
           </div>
@@ -863,20 +870,21 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h3 className="text-2xl md:text-3xl font-bold text-[#0B1221] mb-4">
-                Advanced CNC Capabilities
+                Gelişmiş CNC Yetenekleri
               </h3>
               <div className="w-16 h-0.5 bg-[#96E92A] rounded-full mb-4"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our state-of-the-art facility houses over 200 CNC machines
-                running 24/7 to deliver your parts on time. With automated tool
-                changers, in-process probing, and real-time monitoring, we
-                ensure consistent quality across every production run.
+                Son teknoloji tesisimiz, parçalarınızı zamanında teslim etmek
+                için 7/24 çalışan 200'den fazla CNC makinesine ev sahipliği
+                yapmaktadır. Otomatik takım değiştiriciler, süreç içi problar ve
+                gerçek zamanlı izleme ile her üretim çalışmasında tutarlı kalite
+                sağlıyoruz.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                From rapid prototypes to high-volume production, our digital
-                manufacturing process eliminates traditional bottlenecks. Upload
-                your CAD file, receive instant DFM feedback, and get your parts
-                delivered in days, not weeks.
+                Hızlı prototiplerden yüksek hacimli üretime kadar, dijital
+                üretim sürecimiz geleneksel darboğazları ortadan kaldırır. CAD
+                dosyanızı yükleyin, anında DFM geri bildirimi alın ve
+                parçalarınızı haftalar değil, günler içinde teslim alın.
               </p>
             </div>
 
@@ -884,7 +892,9 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
                 <span className="text-6xl">⚙️</span>
-                <p className="text-gray-500 text-sm mt-2">5-Axis CNC Machine</p>
+                <p className="text-gray-500 text-sm mt-2">
+                  5 Eksenli CNC Makinesi
+                </p>
               </div>
             </div>
           </div>

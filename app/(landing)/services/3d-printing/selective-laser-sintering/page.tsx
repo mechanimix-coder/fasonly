@@ -10,86 +10,86 @@ export default function page() {
   const [activeTab, setActiveTab] = useState("maxDimensions");
 
   const tabs = [
-    { id: "maxDimensions", label: "Max Dimensions" },
-    { id: "layerThickness", label: "Layer Thickness / Resolution" },
-    { id: "wallThickness", label: "Wall Thickness" },
-    { id: "minFeatureSize", label: "Minimum Feature Size" },
-    { id: "tolerances", label: "Tolerances" },
-    { id: "warpage", label: "Warpage" },
-    { id: "surfaceFinish", label: "Surface Finish Options" },
+    { id: "maxDimensions", label: "Maks. Boyutlar" },
+    { id: "layerThickness", label: "Katman Kalınlığı / Çözünürlük" },
+    { id: "wallThickness", label: "Duvar Kalınlığı" },
+    { id: "minFeatureSize", label: "Minimum Özellik Boyutu" },
+    { id: "tolerances", label: "Toleranslar" },
+    { id: "warpage", label: "Eğrilme" },
+    { id: "surfaceFinish", label: "Yüzey İşlem Seçenekleri" },
   ];
 
   const content = {
     maxDimensions: {
-      title: "Max Dimensions",
+      title: "Maks. Boyutlar",
       table: {
-        headers: ["Material", "US", "Metric"],
+        headers: ["Malzeme", "ABD", "Metrik"],
         rows: [
           [
-            "Nylon, TPU, and other PA12 Materials",
-            "12.2 in. x 10.3 in. x 10 in.",
-            "309.88mm x 261.62mm x 254mm",
+            "Naylon, TPU ve diğer PA12 Malzemeler",
+            "12,2 inç x 10,3 inç x 10 inç",
+            "309,88mm x 261,62mm x 254mm",
           ],
           [
-            "PP (Polypropylene)",
-            "12.2 in. x 10.3 in. x 8 in.",
-            "309.88mm x 261.62mm x 203.2mm",
+            "PP (Polipropilen)",
+            "12,2 inç x 10,3 inç x 8 inç",
+            "309,88mm x 261,62mm x 203,2mm",
           ],
-          ["PA12 White", "19 in. x 19 in. x 17 in.", "482mm x 482mm x 431mm"],
+          ["PA12 Beyaz", "19 inç x 19 inç x 17 inç", "482mm x 482mm x 431mm"],
         ],
       },
     },
     layerThickness: {
-      title: "Layer Thickness / Resolution",
+      title: "Katman Kalınlığı / Çözünürlük",
       table: {
-        headers: ["US", "Metric"],
-        rows: [["0.004 in.", "0.1016mm"]],
+        headers: ["ABD", "Metrik"],
+        rows: [["0,004 inç", "0,1016mm"]],
       },
     },
     wallThickness: {
-      title: "Wall Thickness",
+      title: "Duvar Kalınlığı",
       table: {
-        headers: ["Material", "US", "Metric"],
+        headers: ["Malzeme", "ABD", "Metrik"],
         rows: [
-          ["Nylons", "0.030 in.", "0.762mm"],
-          ["PP and TPU", "0.040 in.", "1.01mm"],
+          ["Naylonlar", "0,030 inç", "0,762mm"],
+          ["PP ve TPU", "0,040 inç", "1,01mm"],
         ],
       },
     },
     minFeatureSize: {
-      title: "Minimum Feature Size",
+      title: "Minimum Özellik Boyutu",
       description:
-        "Minimum feature size depends on the material and part geometry. Contact our engineering team for specific requirements.",
+        "Minimum özellik boyutu malzemeye ve parça geometrisine bağlıdır. Özel gereksinimler için mühendislik ekibimizle iletişime geçin.",
       table: null,
     },
     tolerances: {
-      title: "SLS Tolerances",
+      title: "SLS Toleransları",
       description:
-        "For well-designed parts, tolerances of ±0.010 in. (0.25mm) plus 0.1% of nominal length can typically be achieved. Note that tolerances may change depending on part geometry.",
+        "İyi tasarlanmış parçalar için, ±0,010 inç (0,25mm) artı nominal uzunluğun %0,1'i toleranslar tipik olarak elde edilebilir. Toleransların parça geometrisine bağlı olarak değişebileceğini unutmayın.",
       table: null,
     },
     warpage: {
-      title: "SLS Part Warpage",
+      title: "SLS Parça Eğrilmesi",
       description:
-        "Larger part sizes (>7 in.) and parts with thin features are the most susceptible to warp. We recommend maintaining a uniform thickness of 0.125 in. (3.175mm) to ensure stability.",
+        "Daha büyük parça boyutları (>7 inç) ve ince özelliklere sahip parçalar eğrilmeye en yatkın olanlardır. Stabiliteyi sağlamak için 0,125 inç (3,175mm) uniform kalınlık korunmasını öneririz.",
       table: null,
     },
     surfaceFinish: {
-      title: "Surface Finish Options",
+      title: "Yüzey İşlem Seçenekleri",
       table: {
-        headers: ["Finish Type", "Description"],
+        headers: ["İşlem Tipi", "Açıklama"],
         rows: [
           [
-            "Standard",
-            "Bead blast to remove all powder, which leaves a consistent overall texture.",
+            "Standart",
+            "Tüm tozu temizleyen ve tutarlı bir genel doku bırakan boncuk püskürtme.",
           ],
           [
-            "Vapor Smoothing",
-            "Significant reduction of surface roughness from 250+ μm RA (as-printed) to 64 – 100 μm RA after smoothing. Available for PA11 Black.",
+            "Buhar Düzeltme",
+            "Yüzey pürüzlülüğünde 250+ μm RA'dan (baskı durumu) düzeltmeden sonra 64 – 100 μm RA'ya önemli azalma. PA11 Siyah için mevcuttur.",
           ],
           [
-            "Custom",
-            "Secondary options include a primer or dye color that can be applied as well as taps and inserts.",
+            "Özel",
+            "İkincil seçenekler arasında uygulanabilen bir astar veya boya rengi ile kılavuz çekme ve ek parçalar bulunur.",
           ],
         ],
       },
@@ -107,75 +107,78 @@ export default function page() {
   const materials = [
     {
       id: 0,
-      title: "ABS-Like White (Accura Xtreme White 200)",
-      content: `ABS-Like White (Accura Xtreme White 200) is a widely used general purpose stereolithography material. In terms of flexibility and strength, this material falls between molded polypropylene and molded ABS, which makes it a good choice for functional prototypes. Parts as large as 29 in. x 25 in. x 21 in. can be built with ABS-Like White so consider it a primary option if you require an extensive part size build envelope.`,
+      title: "ABS-Benzeri Beyaz (Accura Xtreme White 200)",
+      content: `ABS-Benzeri Beyaz (Accura Xtreme White 200), yaygın olarak kullanılan genel amaçlı bir stereolitografi malzemesidir. Esneklik ve mukavemet açısından, bu malzeme kalıplanmış polipropilen ve kalıplanmış ABS arasında yer alır, bu da onu fonksiyonel prototipler için iyi bir seçim haline getirir. 29 inç x 25 inç x 21 inç kadar büyük parçalar ABS-Benzeri Beyaz ile üretilebilir, bu nedenle geniş parça boyutu yapı hacmi gerektiriyorsa birincil seçenek olarak düşünün.`,
       benefits: [
-        "Durable, general purpose resin",
-        "Accommodates extra-large parts",
+        "Dayanıklı, genel amaçlı reçine",
+        "Ekstra büyük parçaları barındırır",
       ],
     },
     {
       id: 1,
-      title: "ABS-Like Gray (Accura Xtreme Gray)",
-      content: `ABS-Like Gray (Accura Xtreme Gray) is a widely used general purpose stereolithography material. In terms of flexibility and strength, this material falls between molded polypropylene and molded ABS, which makes it a good choice for functional prototypes. ABS-Like Gray offers the highest HDT of the ABS-like SLA resins.`,
+      title: "ABS-Benzeri Gri (Accura Xtreme Gray)",
+      content: `ABS-Benzeri Gri (Accura Xtreme Gray), yaygın olarak kullanılan genel amaçlı bir stereolitografi malzemesidir. Esneklik ve mukavemet açısından, bu malzeme kalıplanmış polipropilen ve kalıplanmış ABS arasında yer alır, bu da onu fonksiyonel prototipler için iyi bir seçim haline getirir. ABS-Benzeri Gri, ABS-benzeri SLA reçineleri arasında en yüksek HDT'yi sunar.`,
       benefits: [
-        "Durable, general purpose resin",
-        "Highest HDT of the ABS-like SLA resins",
+        "Dayanıklı, genel amaçlı reçine",
+        "ABS-benzeri SLA reçinelerinin en yüksek HDT'si",
       ],
     },
     {
       id: 2,
-      title: "ABS-Like Black (Accura 7820)",
-      content: `ABS-Like Black (Accura 7820) is a widely used general purpose material. Its deep black color and glossy up-facing surfaces in a top profile offer the appearance of a molded part, while layer lines may be visible in a side profile. Accura 7820 also has low moisture absorption (0.25% per ASTM D570) so that parts are more dimensionally stable. Compared to other materials used for stereolithography, it has midrange values for all mechanical properties.`,
-      benefits: ["Low moisture absorption", "Glossy cosmetic appearance"],
+      title: "ABS-Benzeri Siyah (Accura 7820)",
+      content: `ABS-Benzeri Siyah (Accura 7820), yaygın olarak kullanılan genel amaçlı bir malzemedir. Derin siyah rengi ve üst profilde parlak üst yüzeyleri, kalıplanmış bir parça görünümü sunarken, yan profilde katman çizgileri görülebilir. Accura 7820 ayrıca düşük nem emilimine sahiptir (ASTM D570 başına %0,25), böylece parçalar daha boyutsal olarak kararlıdır. Stereolitografi için kullanılan diğer malzemelerle karşılaştırıldığında, tüm mekanik özellikler için orta aralık değerlerine sahiptir.`,
+      benefits: ["Düşük nem emilimi", "Parlak kozmetik görünüm"],
     },
     {
       id: 3,
-      title: "ABS-Like Translucent/Clear (WaterShed XC 11122)",
-      content: `ABS-Like Translucent/Clear (WaterShed XC 11122) offers a unique combination of low moisture absorption (0.35% 0.25% per ASTM D570) and near-colorless transparency. Secondary operations are required to achieve functional part clarity, and the part will also retain a very light blue hue afterward. While good for general-purpose applications, WaterShed is the best choice for flow-visualization models, light pipes, and lenses.`,
+      title: "ABS-Benzeri Yarı Saydam/Şeffaf (WaterShed XC 11122)",
+      content: `ABS-Benzeri Yarı Saydam/Şeffaf (WaterShed XC 11122), düşük nem emilimi (ASTM D570 başına %0,35) ve neredeyse renksiz şeffaflığın benzersiz bir kombinasyonunu sunar. Fonksiyonel parça şeffaflığı elde etmek için ikincil işlemler gereklidir ve parça daha sonra çok açık mavi bir renk tonunu da koruyacaktır. Genel amaçlı uygulamalar için iyi olsa da, WaterShed akış görselleştirme modelleri, ışık boruları ve lensler için en iyi seçimdir.`,
       benefits: [
-        "Lowest moisture absorption of SLA resins",
-        "Functional transparency",
+        "SLA reçinelerinin en düşük nem emilimi",
+        "Fonksiyonel şeffaflık",
       ],
     },
     {
       id: 4,
-      title: "MicroFine™ (Gray and Green)",
-      content: `MicroFine™ is a custom formulated material available in gray and green that is exclusive to Fasonly. This ABS-like thermoset is printed in Fasonly' customized machinery to achieve high resolution features as small as 0.002 in. MicroFine is ideal for small parts, generally less than 1 in. by 1 in. by 1 in. In terms of mechanical properties, MicroFine falls in the mid-range of stereolithography materials for tensile strength and modulus and on the low end for impact strength and elongation.`,
+      title: "MicroFine™ (Gri ve Yeşil)",
+      content: `MicroFine™, Fasonly'ye özel gri ve yeşil renklerde mevcut olan özel formüle edilmiş bir malzemedir. Bu ABS-benzeri termoset, 0,002 inç kadar küçük yüksek çözünürlüklü özellikler elde etmek için Fasonly'nin özelleştirilmiş makinelerinde basılır. MicroFine, genellikle 1 inç x 1 inç x 1 inçten küçük küçük parçalar için idealdir. Mekanik özellikler açısından, MicroFine çekme mukavemeti ve modülü için stereolitografi malzemelerinin orta aralığında ve darbe dayanımı ve uzama için düşük uçta yer alır.`,
       benefits: [
-        "Produces highest resolution parts",
-        "Ideal for extra-small parts",
+        "En yüksek çözünürlüklü parçalar üretir",
+        "Ekstra küçük parçalar için ideal",
       ],
     },
     {
       id: 5,
-      title: "PP-Like Translucent White (Somos 9120)",
-      content: `PP-Like Translucent White (Somos 9120) is the most flexible SLA option outside of Carbon RPU 70 and FPU 50. In direct comparison to the average values of an injection-molded polypropylene, 9120 has similar tensile strength, tensile modulus, flexural modulus, and impact strength. The only departure from molded PP is its elongation value, which is only 25% of the molded thermoplastic.`,
-      benefits: ["Semi-flexible", "Translucency"],
+      title: "PP-Benzeri Yarı Saydam Beyaz (Somos 9120)",
+      content: `PP-Benzeri Yarı Saydam Beyaz (Somos 9120), Carbon RPU 70 ve FPU 50 dışındaki en esnek SLA seçeneğidir. Enjeksiyon kalıplanmış bir polipropilenin ortalama değerleriyle doğrudan karşılaştırıldığında, 9120 benzer çekme mukavemeti, çekme modülü, eğilme modülü ve darbe dayanımına sahiptir. Kalıplanmış PP'den tek farkı, kalıplanmış termoplastiğin sadece %25'i olan uzama değeridir.`,
+      benefits: ["Yarı esnek", "Yarı saydamlık"],
     },
     {
       id: 6,
-      title: "PC-Like Advanced High Temp (Accura 5530)",
-      content: `PC-Like Advanced High Temp (Accura 5530) creates strong, stiff parts with high temperature resistance. A thermal post-cure option can increase HDT as high as 482°F at 0.46 MPa loading. Accura 5530 has the highest E-modulus of all the unfilled SLA materials, and it is known for being resistant to automotive fluids. However, the thermal curing process does make Accura 5530 less durable, resulting in a 50% reduction to elongation.`,
-      benefits: ["High elastic modulus", "Higher resistance to heated fluids"],
+      title: "PC-Benzeri Gelişmiş Yüksek Sıcaklık (Accura 5530)",
+      content: `PC-Benzeri Gelişmiş Yüksek Sıcaklık (Accura 5530), yüksek sıcaklık direncine sahip güçlü, sert parçalar oluşturur. Bir termal son kürleme seçeneği, HDT'yi 0,46 MPa yüklemede 482°F kadar yükseğe çıkarabilir. Accura 5530, tüm dolgusuz SLA malzemeleri arasında en yüksek E-modülüne sahiptir ve otomotiv sıvılarına dayanıklı olmasıyla bilinir. Ancak, termal kürleme işlemi Accura 5530'u daha az dayanıklı hale getirerek uzamada %50 azalmaya neden olur.`,
+      benefits: [
+        "Yüksek elastik modül",
+        "Isıtılmış sıvılara karşı yüksek direnç",
+      ],
     },
     {
       id: 7,
-      title: "PC-Like Translucent/Clear (Accura 60)",
-      content: `PC-Like Translucent/Clear (Accura 60) is an alternative to the general purpose ABS-like materials and WaterShed XC 11122 when stiffness is desired. Like WaterShed, this material can be custom finished to achieve functional transparency with secondary processing. Accura 60 has the highest tensile strength and elastic modulus compared of all stereolithography materials outside of the Advanced High Temp options that are most often thermal cured.`,
-      benefits: ["High stiffness", "Functional transparency"],
+      title: "PC-Benzeri Yarı Saydam/Şeffaf (Accura 60)",
+      content: `PC-Benzeri Yarı Saydam/Şeffaf (Accura 60), sertlik istendiğinde genel amaçlı ABS-benzeri malzemelere ve WaterShed XC 11122'ye bir alternatiftir. WaterShed gibi, bu malzeme ikincil işlemlerle fonksiyonel şeffaflık elde etmek için özel olarak bitirilebilir. Accura 60, çoğunlukla termal olarak kürlenen Gelişmiş Yüksek Sıcaklık seçenekleri dışındaki tüm stereolitografi malzemeleri arasında en yüksek çekme mukavemetine ve elastik modülüne sahiptir.`,
+      benefits: ["Yüksek sertlik", "Fonksiyonel şeffaflık"],
     },
     {
       id: 8,
-      title: "Ceramic-Like Advanced HighTemp (PerFORM)",
-      content: `Ceramic-Like Advanced HighTemp (PerFORM) exhibits the highest tensile strength and E-modulus making it the stiffest performance material of the SLA materials. When the thermal cure option is applied to parts made from PerFORM, it exhibits the highest HDT (as high as 514°F at 0.46 MPa loading) of the SLA materials.`,
-      benefits: ["Stiffest SLA resin", "Highest HDT of SLA resins"],
+      title: "Seramik-Benzeri Gelişmiş Yüksek Sıcaklık (PerFORM)",
+      content: `Seramik-Benzeri Gelişmiş Yüksek Sıcaklık (PerFORM), en yüksek çekme mukavemeti ve E-modülü sergileyerek SLA malzemelerinin en sert performans malzemesi olmasını sağlar. PerFORM'dan yapılan parçalara termal kürleme seçeneği uygulandığında, SLA malzemelerinin en yüksek HDT'sini (0,46 MPa yüklemede 514°F kadar yüksek) sergiler.`,
+      benefits: ["En sert SLA reçinesi", "SLA reçinelerinin en yüksek HDT'si"],
     },
     {
       id: 9,
-      title: "True Silicone",
-      content: `True silicone is 100% pure silicone that is available in different shore-A hardness as detailed below. The material is suitable to produce both functional prototypes and end-use products. The material shows high resistance to harsh environments conditions, various acids, bases and nonpolar solvents.`,
-      benefits: ["100% pure silicone", "High chemical resistance"],
+      title: "Gerçek Silikon",
+      content: `Gerçek silikon, aşağıda detaylandırıldığı gibi farklı shore-A sertliklerinde mevcut olan %100 saf silikondur. Malzeme, hem fonksiyonel prototipleri hem de son kullanım ürünlerini üretmek için uygundur. Malzeme, sert çevre koşullarına, çeşitli asitlere, bazlara ve polar olmayan çözücülere karşı yüksek direnç gösterir.`,
+      benefits: ["%100 saf silikon", "Yüksek kimyasal direnç"],
     },
   ];
 
@@ -188,119 +191,119 @@ export default function page() {
 
   const usData = [
     {
-      material: "PA 11 Black (PA 850)",
-      color: "Black",
-      tensileStrength: "7.54 ksi",
+      material: "PA 11 Siyah (PA 850)",
+      color: "Siyah",
+      tensileStrength: "7,54 ksi",
       tensileModulus: "261 ksi",
-      elongation: "30%",
+      elongation: "%30",
     },
     {
-      material: "PA12 Black",
-      color: "Dyed Black",
-      tensileStrength: "6.7 ksi",
+      material: "PA12 Siyah",
+      color: "Boyalı Siyah",
+      tensileStrength: "6,7 ksi",
       tensileModulus: "276 ksi",
-      elongation: "13%",
+      elongation: "%13",
     },
     {
-      material: "PA 12 White (PA 650)",
-      color: "White",
-      tensileStrength: "7.25 ksi",
+      material: "PA 12 Beyaz (PA 650)",
+      color: "Beyaz",
+      tensileStrength: "7,25 ksi",
       tensileModulus: "290 ksi",
-      elongation: "11%",
+      elongation: "%11",
     },
     {
-      material: "PA12 Value",
-      color: "Off White",
-      tensileStrength: "6.7 ksi",
+      material: "PA12 Değer",
+      color: "Kirli Beyaz",
+      tensileStrength: "6,7 ksi",
       tensileModulus: "276 ksi",
-      elongation: "13%",
+      elongation: "%13",
     },
     {
-      material: "PA 12 Mineral-Filled (Duraform HST)",
-      color: "Light Gray",
-      tensileStrength: "5.51 ksi",
+      material: "PA 12 Mineral Dolgulu (Duraform HST)",
+      color: "Açık Gri",
+      tensileStrength: "5,51 ksi",
       tensileModulus: "450 ksi",
-      elongation: "3%",
+      elongation: "%3",
     },
     {
-      material: "PA 12 40% Glass-Filled",
-      color: "White",
-      tensileStrength: "7.25 ksi",
+      material: "PA 12 %40 Cam Dolgulu",
+      color: "Beyaz",
+      tensileStrength: "7,25 ksi",
       tensileModulus: "522 ksi",
-      elongation: "5%",
+      elongation: "%5",
     },
     {
-      material: "Polypropylene Natural",
-      color: "Natural",
-      tensileStrength: "2.61 ksi",
+      material: "Polipropilen Doğal",
+      color: "Doğal",
+      tensileStrength: "2,61 ksi",
       tensileModulus: "123 ksi",
-      elongation: "15%",
+      elongation: "%15",
     },
     {
       material: "TPU 70-A",
-      color: "White",
+      color: "Beyaz",
       tensileStrength: "580 psi",
       tensileModulus: "",
-      elongation: "210%",
+      elongation: "%210",
     },
   ];
 
   const metricData = [
     {
-      material: "PA 11 Black (PA 850)",
-      color: "Black",
-      tensileStrength: "52 Mpa",
-      tensileModulus: "1,800 Mpa",
-      elongation: "30%",
+      material: "PA 11 Siyah (PA 850)",
+      color: "Siyah",
+      tensileStrength: "52 MPa",
+      tensileModulus: "1.800 MPa",
+      elongation: "%30",
     },
     {
-      material: "PA12 Black",
-      color: "Black",
-      tensileStrength: "46 Mpa",
-      tensileModulus: "1,900 Mpa",
-      elongation: "13%",
+      material: "PA12 Siyah",
+      color: "Siyah",
+      tensileStrength: "46 MPa",
+      tensileModulus: "1.900 MPa",
+      elongation: "%13",
     },
     {
-      material: "PA 12 White (PA 650)",
-      color: "White",
-      tensileStrength: "50.0 Mpa",
-      tensileModulus: "2,000 Mpa",
-      elongation: "11%",
+      material: "PA 12 Beyaz (PA 650)",
+      color: "Beyaz",
+      tensileStrength: "50,0 MPa",
+      tensileModulus: "2.000 MPa",
+      elongation: "%11",
     },
     {
-      material: "PA12 Value",
-      color: "Off White",
-      tensileStrength: "46 Mpa",
-      tensileModulus: "1,900 Mpa",
-      elongation: "13%",
+      material: "PA12 Değer",
+      color: "Kirli Beyaz",
+      tensileStrength: "46 MPa",
+      tensileModulus: "1.900 MPa",
+      elongation: "%13",
     },
     {
-      material: "PA 12 Mineral-Filled (Duraform HST)",
-      color: "Light Gray",
-      tensileStrength: "38 Mpa",
-      tensileModulus: "3,100 Mpa",
-      elongation: "3%",
+      material: "PA 12 Mineral Dolgulu (Duraform HST)",
+      color: "Açık Gri",
+      tensileStrength: "38 MPa",
+      tensileModulus: "3.100 MPa",
+      elongation: "%3",
     },
     {
-      material: "PA 12 40% Glass-Filled",
-      color: "White",
-      tensileStrength: "50 Mpa",
-      tensileModulus: "3,600 Mpa",
-      elongation: "5%",
+      material: "PA 12 %40 Cam Dolgulu",
+      color: "Beyaz",
+      tensileStrength: "50 MPa",
+      tensileModulus: "3.600 MPa",
+      elongation: "%5",
     },
     {
-      material: "Polypropylene Natural",
-      color: "Natural",
-      tensileStrength: "18 Mpa",
-      tensileModulus: "848 Mpa",
-      elongation: "15%",
+      material: "Polipropilen Doğal",
+      color: "Doğal",
+      tensileStrength: "18 MPa",
+      tensileModulus: "848 MPa",
+      elongation: "%15",
     },
     {
       material: "TPU 70-A",
-      color: "White",
-      tensileStrength: "4.0 Mpa",
+      color: "Beyaz",
+      tensileStrength: "4,0 MPa",
       tensileModulus: "",
-      elongation: "210%",
+      elongation: "%210",
     },
   ];
 
@@ -308,10 +311,10 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="SLS 3D Printing Service"
-        desc="Order custom SLS parts suitable for rapid prototyping, functional testing, and end-use production."
+        title="SLS 3D Baskı Hizmeti"
+        desc="Hızlı prototipleme, fonksiyonel test ve son kullanım üretimi için uygun özel SLS parçaları sipariş edin."
         image="/Assets/Images/services/3d-printing/selective-laser-sintering/hero.webp"
-        firstButton={{ title: "Get Instant Quote", route: "/" }}
+        firstButton={{ title: "Anında Teklif Al", route: "/" }}
         simple
       />
 
@@ -322,15 +325,15 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Capabilities",
-                    "Materials",
-                    "Surface Finishes",
-                    "SLS 3D Printers",
-                    "About Selective Laser Sintering",
+                    "Yetenekler",
+                    "Malzemeler",
+                    "Yüzey İşlemleri",
+                    "SLS 3D Yazıcılar",
+                    "Seçici Lazer Sinterleme Hakkında",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -345,36 +348,34 @@ export default function page() {
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
-              <div
-                id="about-plastic-injection-molding"
-                className="scroll-mt-32">
+              {/* What is Selective Laser Sintering? Section */}
+              <div id="seçici-lazer-sinterleme-nedir" className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  What is 3D printing ?
+                  3D Baskı Nedir?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Selective laser sintering (SLS) is an industrial 3D printing
-                  process that produces accurate prototypes and functional
-                  production parts in as fast as 1 day. Multiple nylon-based
-                  materials and a thermoplastic polyurethane (TPU) are
-                  available, which create highly durable final parts that
-                  require heat resistance, chemical resistance, flexibility, or
-                  dimensional stability. With SLS 3D printing, no support
-                  structures are required making it easy to nest multiple parts
-                  into a single build and an economical solution for when higher
-                  volumes of 3D-printed parts are required.
+                  Seçici lazer sinterleme (SLS), doğru prototipler ve
+                  fonksiyonel üretim parçalarını 1 gün kadar kısa sürede üreten
+                  endüstriyel bir 3D baskı sürecidir. Isı direnci, kimyasal
+                  direnç, esneklik veya boyutsal kararlılık gerektiren son
+                  derece dayanıklı nihai parçalar oluşturan çoklu naylon bazlı
+                  malzemeler ve bir termoplastik poliüretan (TPU) mevcuttur. SLS
+                  3D baskı ile destek yapıları gerekmez, bu da birden fazla
+                  parçayı tek bir yapıya yerleştirmeyi kolaylaştırır ve daha
+                  yüksek hacimlerde 3D baskılı parça gerektiğinde ekonomik bir
+                  çözüm sunar.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Common uses for selective laser sintering are:
+                  Seçici lazer sinterleme için yaygın kullanımlar şunlardır:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "jigs and fixtures",
-                    "housings",
-                    "snap fits and living hinges",
+                    "tezgahlar ve fikstürler",
+                    "gövdeler",
+                    "geçmeli bağlantılar ve hareketli menteşeler",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -405,9 +406,11 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
-                  <p className="text-gray-300 text-xs mt-1">Why Use SLS?</p>
+                  <p className="text-gray-300 text-xs mt-1">
+                    Neden SLS Kullanmalı?
+                  </p>
                 </div>
               </div>
             </div>
@@ -415,14 +418,15 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Why Use SLS?
+                Neden SLS Kullanmalı?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-300 leading-relaxed">
-                See how SLS uses actual thermoplastic and elastomeric materials
-                to produce parts with good mechanical properties. Final parts
-                can be used to test future injection molding designs or as
-                functional, end-use components.
+                SLS'nin, iyi mekanik özelliklere sahip parçalar üretmek için
+                gerçek termoplastik ve elastomerik malzemeleri nasıl
+                kullandığını görün. Nihai parçalar, gelecekteki enjeksiyon
+                kalıplama tasarımlarını test etmek veya fonksiyonel, son
+                kullanım bileşenleri olarak kullanılabilir.
               </p>
             </div>
           </div>
@@ -434,16 +438,16 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Vapor Smoothing is Here!
+                Buhar Düzeltme Burada!
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Vapor smoothing is now available for select 3D-printed nylon
-                parts. The process eliminates rough surfaces and leaves a
-                glossy, aesthetic finish on parts.
+                Buhar düzeltme artık seçili 3D baskılı naylon parçalar için
+                mevcuttur. Süreç, pürüzlü yüzeyleri ortadan kaldırır ve
+                parçalarda parlak, estetik bir yüzey bırakır.
               </p>
               <button className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                Learn More
+                Daha Fazla Bilgi
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -452,7 +456,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden ">
               <Image
                 src="/Assets/Images/services/3d-printing/selective-laser-sintering/vapor-smooth-part-3jpg.jpg"
-                alt="Vapor Smoothing"
+                alt="Buhar Düzeltme"
                 fill
                 className="object-cover"
               />
@@ -461,8 +465,8 @@ export default function page() {
         </div>
       </div>
       <GuideDownload
-        title="Definitive Guide to 3D Printing"
-        desc="Our comprehensive guide navigates the entire additive manufacturing process—from prototyping to production."
+        title="3D Baskı Kesin Kılavuzu"
+        desc="Kapsamlı kılavuzumuz, tüm eklemeli üretim sürecinde - prototiplemeden üretime - yol gösterir."
       />
 
       <div className="w-full bg-white py-20">
@@ -470,14 +474,14 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Design Guidelines for Selective Laser Sintering (SLS)
+              Seçici Lazer Sinterleme (SLS) için Tasarım Kılavuzları
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our basic guidelines for selective laser sintering include
-              important design considerations to help improve part
-              manufacturability, enhance cosmetic appearance, and reduce overall
-              production time.
+              Seçici lazer sinterleme için temel kılavuzlarımız, parça
+              üretilebilirliğini iyileştirmeye, kozmetik görünümü geliştirmeye
+              ve genel üretim süresini azaltmaya yardımcı olacak önemli tasarım
+              hususlarını içerir.
             </p>
           </div>
 
@@ -562,7 +566,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-96 lg:h-auto min-h-[500px] rounded-xl overflow-hidden ">
               <Image
                 src="/Assets/Images/services/3d-printing/selective-laser-sintering/sls-med-device-part-v1-cutout-lr.webp"
-                alt="SLA Material Options"
+                alt="SLA Malzeme Seçenekleri"
                 width={400}
                 height={400}
                 className="object-cover"
@@ -572,7 +576,7 @@ export default function page() {
             {/* Right Column - Section Header and Accordions */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Selective Laser Sintering (SLS) Materials
+                Seçici Lazer Sinterleme (SLS) Malzemeleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
@@ -605,7 +609,7 @@ export default function page() {
                       </p>
                       <div className="mt-3">
                         <h4 className="font-semibold text-[#0B1221] text-sm mb-2">
-                          Primary Benefits:
+                          Temel Faydalar:
                         </h4>
                         <ul className="space-y-1">
                           {material.benefits.map((benefit, idx) => (
@@ -631,7 +635,7 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Compare SLS Material Properties
+              SLS Malzeme Özelliklerini Karşılaştır
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -645,7 +649,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              US (Imperial)
+              ABD (Imperial)
             </button>
             <button
               onClick={() => setUnit("metric")}
@@ -654,7 +658,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Metric (SI)
+              Metrik (SI)
             </button>
           </div>
 
@@ -664,19 +668,19 @@ export default function page() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[220px]">
-                    Material
+                    Malzeme
                   </th>
                   <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[120px]">
-                    Color
+                    Renk
                   </th>
                   <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[150px]">
-                    Tensile Strength
+                    Çekme Mukavemeti
                   </th>
                   <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[150px]">
-                    Tensile Modulus
+                    Çekme Modülü
                   </th>
                   <th className="text-left p-4 font-semibold min-w-[100px]">
-                    Elongation
+                    Uzama
                   </th>
                 </tr>
               </thead>
@@ -709,12 +713,12 @@ export default function page() {
           {/* Disclaimer */}
           <div className="mt-6 p-4 bg-gray-100 rounded-lg">
             <p className="text-xs text-gray-500 leading-relaxed">
-              These figures are approximate and dependent on a number of
-              factors, including but not limited to, machine and process
-              parameters. The information provided is therefore not binding and
-              not deemed to be certified. When performance is critical, also
-              consider independent lab testing of additive materials or final
-              parts.
+              Bu rakamlar yaklaşıktır ve makine ve süreç parametreleriyle
+              sınırlı olmamak üzere bir dizi faktöre bağlıdır. Bu nedenle
+              sağlanan bilgiler bağlayıcı değildir ve sertifikalı olarak kabul
+              edilmez. Performans kritik olduğunda, eklemeli malzemelerin veya
+              nihai parçaların bağımsız laboratuvar testlerini de göz önünde
+              bulundurun.
             </p>
           </div>
         </div>
@@ -724,16 +728,17 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Surface Finish for SLS Parts
+              SLS Parçalarında Yüzey İşlemi
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-300 leading-relaxed">
-              Surface finish on SLS parts is typically rougher than other 3D
-              printing technologies—it can range from 100-250 RMS. We also bead
-              blast the majority of customers' parts to remove loose powder and
-              create a smooth matte finish. Vapor smoothing is a post-processing
-              option available for PA11 Black parts, which will result in
-              surface finish roughness between 64-100 pin RA.
+              SLS parçalarında yüzey işlemi tipik olarak diğer 3D baskı
+              teknolojilerinden daha pürüzlüdür - 100-250 RMS arasında
+              değişebilir. Ayrıca, gevşek tozu temizlemek ve pürüzsüz bir mat
+              yüzey oluşturmak için müşterilerimizin parçalarının çoğuna boncuk
+              püskürtme uyguluyoruz. Buhar düzeltme, PA11 Siyah parçalar için
+              mevcut bir işlem sonrası seçeneğidir ve bu da 64-100 pin RA
+              arasında yüzey işlemi pürüzlülüğü ile sonuçlanacaktır.
             </p>
           </div>
 
@@ -746,13 +751,13 @@ export default function page() {
               </div>
               <div className="p-4 text-center">
                 <p className="text-gray-300 text-sm">
-                  Material: PA12 40% Glass-Filled
+                  Malzeme: PA12 %40 Cam Dolgulu
                 </p>
                 <p className="text-gray-400 text-xs mt-1">
-                  Resolution: Normal (0.004 in. layer thickness)
+                  Çözünürlük: Normal (0,004 inç katman kalınlığı)
                 </p>
                 <p className="text-[#96E92A] text-xs mt-1 font-semibold">
-                  Finish: Standard
+                  İşlem: Standart
                 </p>
               </div>
             </div>
@@ -764,13 +769,13 @@ export default function page() {
               </div>
               <div className="p-4 text-center">
                 <p className="text-gray-300 text-sm">
-                  Material: PA11 Black (PA850)
+                  Malzeme: PA11 Siyah (PA850)
                 </p>
                 <p className="text-gray-400 text-xs mt-1">
-                  Resolution: Normal (0.004 in. layer thickness)
+                  Çözünürlük: Normal (0,004 inç katman kalınlığı)
                 </p>
                 <p className="text-[#96E92A] text-xs mt-1 font-semibold">
-                  Finish: Standard
+                  İşlem: Standart
                 </p>
               </div>
             </div>
@@ -785,7 +790,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md">
               <Image
                 src="/Assets/Images/services/3d-printing/selective-laser-sintering/sls-machines-570x308-1.webp"
-                alt="SLS 3D Printers"
+                alt="SLS 3D Yazıcılar"
                 fill
                 className="object-cover"
               />
@@ -794,19 +799,19 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Our SLS 3D Printers
+                SLS 3D Yazıcılarımız
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our SLS equipment includes sPro140 machines, which have the
-                world's largest sintering build volume, and feature fully
-                digital high-speed scanning systems, unparalleled process
-                consistency, and closed systems for powder blending and delivery
-                for reliable part quality.
+                SLS ekipmanlarımız, dünyanın en büyük sinterleme yapı hacmine
+                sahip sPro140 makinelerini içerir ve tamamen dijital yüksek
+                hızlı tarama sistemleri, eşsiz süreç tutarlılığı ve güvenilir
+                parça kalitesi için toz karıştırma ve dağıtım için kapalı
+                sistemler sunar.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                We also use sPro60 machines, which allow for multiple materials
-                and high throughput.
+                Ayrıca, birden fazla malzeme ve yüksek verim sağlayan sPro60
+                makinelerini de kullanıyoruz.
               </p>
             </div>
           </div>
@@ -816,24 +821,23 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                How Does SLS 3D Printing Work?
+                SLS 3D Baskı Nasıl Çalışır?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                The selective laser sintering machine begins sintering each
-                layer of part geometry into a heated bed of nylon-based powder.
-                After each layer is fused, a roller moves across the bed to
-                distribute the next layer of powder. The process is repeated
-                layer by layer until the build is complete.
+                Seçici lazer sinterleme makinesi, her bir parça geometrisi
+                katmanını ısıtılmış bir naylon bazlı toz yatağına sinterleyerek
+                başlar. Her katman kaynaştırıldıktan sonra, bir silindir bir
+                sonraki toz katmanını dağıtmak için yatak boyunca hareket eder.
+                Süreç, yapı tamamlanana kadar katman katman tekrarlanır.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                When the build finishes, the entire powder bed with the
-                encapsulated parts is moved into a breakout station, where it is
-                raised up, and parts are broken out of the bed. An initial
-                brushing is manually administered to remove a majority of loose
-                powder. Parts are then bead blasted to remove any of the
-                remaining residual powder before ultimately reaching the
-                finishing department.
+                Yapı tamamlandığında, kapsüllenmiş parçaları içeren tüm toz
+                yatağı, yükseltildiği ve parçaların yataktan çıkarıldığı bir
+                ayırma istasyonuna taşınır. Gevşek tozun çoğunu temizlemek için
+                manuel olarak bir ilk fırçalama uygulanır. Parçalar daha sonra,
+                nihayet bitirme bölümüne ulaşmadan önce kalan artık tozu
+                temizlemek için boncuk püskürtülür.
               </p>
             </div>
 
@@ -850,10 +854,10 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
                   <p className="text-gray-300 text-xs mt-1">
-                    SLS 3D Printing Process
+                    SLS 3D Baskı Süreci
                   </p>
                 </div>
               </div>
@@ -877,10 +881,10 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
                   <p className="text-gray-300 text-xs mt-1">
-                    3D Printing Facility Tour
+                    3D Baskı Tesisi Turu
                   </p>
                 </div>
               </div>
@@ -889,14 +893,14 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Tour Our 3D Printing Facility
+                3D Baskı Tesisimizi Gezin
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed">
-                Take a quick tour through our additive manufacturing facility in
-                North Carolina, one of the largest 3D printing operations in the
-                world, to see how we build high-quality prototypes and fully
-                functional end-use components and assemblies.
+                Dünyanın en büyük 3D baskı operasyonlarından biri olan Kuzey
+                Carolina'daki eklemeli üretim tesisimizde, yüksek kaliteli
+                prototipler ve tam fonksiyonel son kullanım bileşenleri ile
+                montajları nasıl ürettiğimizi görmek için hızlı bir tur atın.
               </p>
             </div>
           </div>

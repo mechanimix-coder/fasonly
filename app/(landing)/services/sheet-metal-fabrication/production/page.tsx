@@ -8,11 +8,11 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Sheet Metal Low Volume Production Service"
-        desc="Streamline your sheet metal sourcing with a single, reliable partner. Backed by expert technical and logistical guidance, verified inspection documentation, and flexible batch production, you can ensure quality, reduce complexity, and respond faster to changing market demands."
+        title="Sac Metal Düşük Hacimli Üretim Hizmeti"
+        desc="Tek, güvenilir bir ortakla sac metal tedarik sürecinizi kolaylaştırın. Uzman teknik ve lojistik rehberlik, doğrulanmış denetim dokümantasyonu ve esnek parti üretimi ile desteklenen kaliteyi sağlayabilir, karmaşıklığı azaltabilir ve değişen pazar taleplerine daha hızlı yanıt verebilirsiniz."
         image="/Assets/Images/services/sheet-metal-fabrication/production/smf_moderate_parts_02_600x400-1.png"
-        firstButton={{ title: "Get Instant Quote", route: "/" }}
-        secondButton={{ title: "Start Production Quote", route: "/" }}
+        firstButton={{ title: "Anında Teklif Al", route: "/" }}
+        secondButton={{ title: "Üretim Teklifi Başlat", route: "/" }}
         simple
       />
       <div className="w-full bg-white py-20">
@@ -21,62 +21,59 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Production Capabilities for Sheet Metal Parts and Assemblies
+                Sac Metal Parçalar ve Montajlar için Üretim Yetenekleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Manufacturing Capabilities
+                Üretim Yetenekleri
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Whether your production bill of materials includes simple
-                designs, complex designs, or both, our fabrication capabilities
-                can support your sheet metal geometries.
+                Üretim malzeme listeniz basit tasarımlar, karmaşık tasarımlar
+                veya her ikisini de içerse de, fabrikasyon yeteneklerimiz sac
+                metal geometrilerinizi destekleyebilir.
               </p>
 
               <div className="space-y-4 mb-4">
                 <div>
                   <p className="text-gray-600 leading-relaxed">
                     <span className="font-semibold text-[#0B1221]">
-                      Punching
+                      Zımbalama
                     </span>{" "}
-                    is a sheet cutting process which easily scales to higher
-                    volumes and can incorporate formed features in products such
-                    as panels, covers, enclosures, and housings.
+                    daha yüksek hacimlere kolayca ölçeklenen ve paneller,
+                    kapaklar, muhafazalar ve gövdeler gibi ürünlerde
+                    şekillendirilmiş özellikleri birleştirebilen bir sac kesme
+                    işlemidir.
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-gray-600 leading-relaxed">
+                    <span className="font-semibold text-[#0B1221]">Bükme</span>{" "}
+                    genellikle braketler, montaj parçaları ve şasilerde bulunan
+                    karmaşık şekilleri dahil etme yeteneği sunar.
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-gray-600 leading-relaxed">
+                    <span className="font-semibold text-[#0B1221]">Montaj</span>{" "}
+                    birden fazla sac metal bileşenin bir araya getirilmesi,
+                    kaynaklı konstrüksiyonlar, alt montajlar ve özel muhafazalar
+                    gibi karmaşık ürünlerin üretime sorunsuz geçişi için bir yol
+                    sağlar.
                   </p>
                 </div>
 
                 <div>
                   <p className="text-gray-600 leading-relaxed">
                     <span className="font-semibold text-[#0B1221]">
-                      Bending
+                      Yüzey İşlem
                     </span>{" "}
-                    offers the ability to include the intricate shapes often
-                    found in brackets, mounts, and chassis.
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-gray-600 leading-relaxed">
-                    <span className="font-semibold text-[#0B1221]">
-                      Assembly
-                    </span>{" "}
-                    of multiple sheet metal components provides a path for
-                    complex products such as weldments, sub-assemblies, and
-                    custom enclosures to smoothly transition you into
-                    production.
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-gray-600 leading-relaxed">
-                    <span className="font-semibold text-[#0B1221]">
-                      Finishing
-                    </span>{" "}
-                    options provide functional and aesthetic properties. Experts
-                    apply your finishing services with options including powder
-                    coating, plating, wet paint, masking, and silk screening.
-                    You can even combine multiple finishes, if needed.
+                    seçenekleri fonksiyonel ve estetik özellikler sağlar.
+                    Uzmanlar, toz boya, kaplama, ıslak boya, maskeleme ve ipek
+                    baskı seçenekleriyle yüzey işlem hizmetlerinizi uygular.
+                    Gerekirse birden fazla yüzey işlemini birleştirebilirsiniz.
                   </p>
                 </div>
               </div>
@@ -86,7 +83,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-[500px] rounded-xl overflow-hidden bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/production/smf_complexity_assembly_2.jpg"
-                alt="Production Capabilities for Sheet Metal Parts and Assemblies"
+                alt="Sac Metal Parçalar ve Montajlar için Üretim Yetenekleri"
                 fill
                 className="object-cover"
               />
@@ -94,7 +91,7 @@ export default function page() {
           </div>
         </div>
       </div>
-      <Hint text="Build efficiency into every project and reduce redundancy with manufacturing support at every stage of the product life cycle." />
+      <Hint text="Ürün yaşam döngüsünün her aşamasında üretim desteği ile her projede verimlilik oluşturun ve tekrarı azaltın." />
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
@@ -111,11 +108,9 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
-                  <p className="text-gray-300 text-xs mt-1">
-                    Manufacturing Journey
-                  </p>
+                  <p className="text-gray-300 text-xs mt-1">Üretim Yolculuğu</p>
                 </div>
               </div>
             </div>
@@ -123,15 +118,15 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                The Manufacturing Journey of Production Parts
+                Üretim Parçalarının İmalat Yolculuğu
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Using digital automation, and extensive production expertise, we
-                have optimized the process of manufacturing parts for end-use,
-                so you can get quality, production-grade parts faster than ever.
-                Watch the video to see how we take your product from concept to
-                completion.
+                Dijital otomasyon ve kapsamlı üretim uzmanlığını kullanarak, son
+                kullanım için parça üretme sürecini optimize ettik, böylece
+                kaliteli, üretim sınıfı parçaları her zamankinden daha hızlı
+                alabilirsiniz. Ürününüzü konseptten tamamlanmaya nasıl
+                götürdüğümüzü görmek için videoyu izleyin.
               </p>
               <p className="text-gray-400 text-sm">FASONLY</p>
             </div>
@@ -144,40 +139,42 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Technical Support
+                Teknik Destek
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                We can help you navigate from design validation to pilot runs,
-                and on to production using these technical tools:
+                Bu teknik araçları kullanarak tasarım doğrulamadan pilot
+                çalışmalara ve ardından üretime geçiş yapmanıza yardımcı
+                olabiliriz:
               </p>
 
               <div className="space-y-4 mb-6">
                 <div>
                   <p className="text-gray-600 leading-relaxed">
-                    Our 3D-visualized design for manufacturability (DFM)
-                    analysis helps optimize your design to meet your production
-                    quality objectives. Also, it provides insights to simplify
-                    your designs, leading to cost savings.{" "}
+                    3D görselleştirilmiş üretilebilirlik için tasarım (DFM)
+                    analizimiz, üretim kalite hedeflerinizi karşılamak için
+                    tasarımınızı optimize etmenize yardımcı olur. Ayrıca,
+                    tasarımlarınızı basitleştirmek için içgörüler sağlayarak
+                    maliyet tasarrufu sağlar.{" "}
                     <a
                       href="#"
                       className="text-[#0099ff] hover:text-[#96E92A] transition-colors">
-                      Learn more about navigating our sheet metal quoting and
-                      ordering process →
+                      Sac metal teklif ve sipariş sürecimiz hakkında daha fazla
+                      bilgi edinin →
                     </a>
                   </p>
                 </div>
 
                 <div>
                   <p className="text-gray-600 leading-relaxed">
-                    Design for assembly (DFA) can aid in validating that a
-                    project can stand up to rigorous delivery reliability and
-                    quality benchmarks. Ensuring a design has adequate tooling
-                    access and clearance is one way to avoid challenges once
-                    full production launch occurs. Our team of applications
-                    engineers are standing by to support your design for
-                    assembly questions.
+                    Montaj için tasarım (DFA), bir projenin titiz teslimat
+                    güvenilirliği ve kalite kriterlerine dayanabileceğini
+                    doğrulamaya yardımcı olabilir. Bir tasarımın yeterli takım
+                    erişimine ve boşluğuna sahip olduğundan emin olmak, tam
+                    üretim başladığında zorluklardan kaçınmanın bir yoludur.
+                    Uygulama mühendisleri ekibimiz, montaj için tasarım
+                    sorularınızı desteklemek için hazır bekliyor.
                   </p>
                 </div>
               </div>
@@ -185,7 +182,7 @@ export default function page() {
               <a
                 href="#"
                 className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                Schedule time to discuss your project today →
+                Projenizi görüşmek için bugün zaman planlayın →
               </a>
             </div>
 
@@ -193,7 +190,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/production/support.jpg"
-                alt="Technical Support"
+                alt="Teknik Destek"
                 fill
                 className="object-cover"
               />
@@ -206,23 +203,23 @@ export default function page() {
           <div className="text-center">
             <div className="mb-8">
               <p className="text-[#0B1221] font-bold text-2xl md:text-3xl tracking-wider">
-                Delivery and Logistics
+                Teslimat ve Lojistik
               </p>
               <p className="text-gray-500 mt-5 text-lg md:text-xl tracking-wide">
-                Once you are ready to place a production order, our team
-                supports you by reviewing your purchase order for any necessary
-                quality clauses* and coordinates batch sizes and delivery
-                schedules as needed. *Note: Purchase orders with quality clauses
-                may take additional time to process, which will extend
-                turnaround of order confirmations.
+                Bir üretim siparişi vermeye hazır olduğunuzda, ekibimiz gerekli
+                kalite maddeleri için satın alma siparişinizi inceleyerek* ve
+                gerektiğinde parti boyutlarını ve teslimat programlarını
+                koordine ederek sizi destekler. *Not: Kalite maddeleri içeren
+                satın alma siparişlerinin işlenmesi ek süre alabilir, bu da
+                sipariş onaylarının geri dönüş süresini uzatacaktır.
               </p>
             </div>
 
             <div className="mt-8 pt-4 border-t border-gray-300">
               <p className="text-gray-500 text-sm leading-relaxed max-w-2xl mx-auto">
-                Note: Purchase orders with quality clauses may take additional
-                time to process, which will extend turnaround of order
-                confirmations.
+                Not: Kalite maddeleri içeren satın alma siparişlerinin işlenmesi
+                ek süre alabilir, bu da sipariş onaylarının geri dönüş süresini
+                uzatacaktır.
               </p>
             </div>
           </div>
@@ -234,25 +231,26 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Production Materials
+                Üretim Malzemeleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                We stock common sheet metal materials used for production part
-                applications. Try our material comparison tool to help decide
-                which material option is best for your project. The tool
-                compares materials for formability, corrosion resistance, cost
-                effectiveness, and more for the following materials:
+                Üretim parça uygulamaları için kullanılan yaygın sac metal
+                malzemeleri stokluyoruz. Hangi malzeme seçeneğinin projeniz için
+                en iyi olduğuna karar vermenize yardımcı olması için malzeme
+                karşılaştırma aracımızı deneyin. Araç, aşağıdaki malzemeler için
+                şekillendirilebilirlik, korozyon direnci, maliyet etkinliği ve
+                daha fazlası açısından malzemeleri karşılaştırır:
               </p>
 
               <ul className="space-y-2">
                 {[
-                  "Aluminum 5052, 6061",
-                  "Brass C260",
-                  "Galvanized, Galvannealed (pre-plated steel)",
-                  "Low Carbon Steel CR 1008",
-                  "Stainless Steel 304, 316",
+                  "Alüminyum 5052, 6061",
+                  "Pirinç C260",
+                  "Galvanizli, Galvanizli Tavlanmış (ön kaplamalı çelik)",
+                  "Düşük Karbonlu Çelik CR 1008",
+                  "Paslanmaz Çelik 304, 316",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -266,7 +264,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/production/protolabs-sheet-metal-materials-570-x308.jpg"
-                alt="Production Materials Comparison Chart"
+                alt="Üretim Malzemeleri Karşılaştırma Tablosu"
                 fill
                 className="object-cover"
               />
@@ -281,7 +279,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/production/sheet-metal-powder-coating-570x308.jpg"
-                alt="Production Finishes"
+                alt="Üretim Yüzey İşlemleri"
                 fill
                 className="object-cover"
               />
@@ -290,26 +288,27 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Production Finishes
+                Üretim Yüzey İşlemleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                Our extensive finishing options help you match the exact
-                requirements of your sheet metal component or assembly, no
-                matter how complex the design or the finishes. These choices are
-                designed to work with products that have either functional
-                and/or aesthetic finish needs.
+                Kapsamlı yüzey işlem seçeneklerimiz, tasarım veya yüzey
+                işlemleri ne kadar karmaşık olursa olsun, sac metal
+                bileşeninizin veya montajınızın tam gereksinimlerini
+                karşılamanıza yardımcı olur. Bu seçenekler, fonksiyonel ve/veya
+                estetik yüzey işlem ihtiyaçları olan ürünlerle çalışmak üzere
+                tasarlanmıştır.
               </p>
 
               <ul className="space-y-2 mb-6">
                 {[
-                  "Powder Coating",
-                  "Plating/Coating",
-                  "Wet Paint",
-                  "Silk Screening",
-                  "Masking",
-                  "Part Marking",
+                  "Toz Boya",
+                  "Kaplama",
+                  "Islak Boya",
+                  "İpek Baskı",
+                  "Maskeleme",
+                  "Parça İşaretleme",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -321,7 +320,8 @@ export default function page() {
               <a
                 href="#"
                 className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                Check out our menu of 100+ finishing options →
+                100'den fazla yüzey işlem seçeneğimizden oluşan menümüze göz
+                atın →
               </a>
             </div>
           </div>
@@ -333,31 +333,31 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Quality Processes and Documentation
+                Kalite Süreçleri ve Dokümantasyonu
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-300 leading-relaxed mb-6">
-                Qualifying a supplier for production of a specific part number
-                or SKU often requires an assessment of process quality. Our
-                quality management system (QMS) ensures that your parts receive
-                both in-process and post-manufacturing checks. Plus, our quality
-                control experts review each batch for visual and dimensional
-                accuracy.
+                Belirli bir parça numarası veya SKU'nun üretimi için bir
+                tedarikçiyi nitelendirmek, genellikle süreç kalitesinin bir
+                değerlendirmesini gerektirir. Kalite yönetim sistemimiz (QMS),
+                parçalarınızın hem süreç içi hem de üretim sonrası kontroller
+                almasını sağlar. Ayrıca, kalite kontrol uzmanlarımız her partiyi
+                görsel ve boyutsal doğruluk açısından inceler.
               </p>
 
               <p className="text-gray-300 leading-relaxed mb-4">
-                Choose from the following menu of inspection documentation to
-                get your own assessment of our quality processes at work:
+                Çalışan kalite süreçlerimizin kendi değerlendirmenizi almak için
+                aşağıdaki denetim dokümantasyonu menüsünden seçim yapın:
               </p>
 
               <ul className="space-y-2 mb-6">
                 {[
-                  "Dimensional Inspection Report",
-                  "First Article Inspection",
-                  "Certificate of Conformance",
-                  "Material Certification",
-                  "Finish Certification",
+                  "Boyutsal Denetim Raporu",
+                  "İlk Ürün Denetimi",
+                  "Uygunluk Sertifikası",
+                  "Malzeme Sertifikası",
+                  "Yüzey İşlem Sertifikası",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -369,7 +369,7 @@ export default function page() {
               <a
                 href="#"
                 className="text-[#96E92A] font-medium hover:text-[#85d122] transition-colors inline-flex items-center gap-2 group">
-                We take quality seriously. See how →
+                Kaliteyi ciddiye alıyoruz. Nasıl olduğunu görün →
               </a>
             </div>
 
@@ -377,7 +377,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-800">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/production/04_sm_digital_twin_400x400.webp"
-                alt="Quality Processes and Documentation"
+                alt="Kalite Süreçleri ve Dokümantasyonu"
                 width={400}
                 height={350}
                 className="object-cover"
@@ -393,7 +393,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/production/batch-production-670x360-1.jpg"
-                alt="Batch Production"
+                alt="Parti Üretimi"
                 fill
                 className="object-cover"
               />
@@ -402,42 +402,42 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Batch Production
+                Parti Üretimi
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Carrying and storing inventory is costly, particularly if demand
-                forecasts are challenging to predict, such as when bringing new
-                products to market. A common mitigation strategy for this
-                situation is to stagger product deliveries, known as batch
-                production, and avoid taking large volumes of inventory.
+                Envanter taşımak ve depolamak maliyetlidir, özellikle de yeni
+                ürünleri pazara sunarken olduğu gibi talep tahminleri yapmak
+                zorsa. Bu durum için yaygın bir azaltma stratejisi, parti
+                üretimi olarak bilinen ürün teslimatlarını kademelendirmek ve
+                büyük hacimli envanter almaktan kaçınmaktır.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our digital quoting system lets you easily configure production
-                quantities. Once you receive the price and lead time for your
-                desired quantity of parts, our team can work with you to
-                translate that total quantity into batches. Instead of shipping
-                the total quantity of parts to you in one shipment, we will work
-                with you to identify an ideal batch size (sub-quantity of the
-                total) and delivery schedule.
+                Dijital teklif sistemimiz, üretim miktarlarını kolayca
+                yapılandırmanıza olanak tanır. İstediğiniz miktardaki parça için
+                fiyat ve teslim süresini aldıktan sonra, ekibimiz bu toplam
+                miktarı partilere dönüştürmek için sizinle çalışabilir. Toplam
+                parça miktarını tek bir sevkiyatta göndermek yerine, ideal bir
+                parti boyutu (toplamın alt miktarı) ve teslimat programı
+                belirlemek için sizinle çalışacağız.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                To move forward with your batch production order,{" "}
+                Parti üretim siparişinizle devam etmek için,{" "}
                 <a
                   href="#"
                   className="text-[#0099ff] hover:text-[#96E92A] transition-colors">
-                  contact our customer service team
+                  müşteri hizmetleri ekibimizle iletişime geçin
                 </a>{" "}
-                and provide the following information:
+                ve aşağıdaki bilgileri sağlayın:
               </p>
 
               <ul className="space-y-2">
                 {[
-                  "Desired batch size (number of parts needed in each shipment)",
-                  "Desired shipping schedule/frequency (how often each batch should arrive at your location)",
+                  "İstenen parti boyutu (her sevkiyatta ihtiyaç duyulan parça sayısı)",
+                  "İstenen sevkiyat programı/sıklığı (her partinin konumunuza ne sıklıkta ulaşması gerektiği)",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>

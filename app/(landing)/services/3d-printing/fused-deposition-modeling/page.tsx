@@ -11,60 +11,60 @@ export default function page() {
   const prototypingMaterials = [
     {
       id: 0,
-      title: "PLA (Polylactic Acid)",
+      title: "PLA (Politik Asit)",
       content:
-        "Known for excellent surface finish and ease of printing, PLA is biodegradable and ideal for visual models and consumer products.",
+        "Mükemmel yüzey kalitesi ve baskı kolaylığı ile bilinen PLA, biyolojik olarak parçalanabilir ve görsel modeller ile tüketici ürünleri için idealdir.",
     },
     {
       id: 1,
-      title: "PETG (Polyethylene Terephthalate Glycol)",
+      title: "PETG (Polietilen Tereftalat Glikol)",
       content:
-        "Offers a good combination of strength and flexibility, making it food-safe and suitable for mechanical parts.",
+        "Mukavemet ve esnekliğin iyi bir kombinasyonunu sunar, gıda güvenlidir ve mekanik parçalar için uygundur.",
     },
     {
       id: 2,
-      title: "ASA (Acrylonitrile Styrene Acrylate)",
+      title: "ASA (Akrilik Nitril Stiren Akrilat)",
       content:
-        "Provides UV resistance and weatherability, perfect for outdoor applications.",
+        "UV direnci ve hava koşullarına dayanıklılık sağlar, dış mekan uygulamaları için mükemmeldir.",
     },
     {
       id: 3,
-      title: "ABS (Acrylonitrile Butadiene Styrene)",
+      title: "ABS (Akrilik Nitril Bütadien Stiren)",
       content:
-        "Known for impact resistance and strength, suitable for durable prototypes and functional parts.",
+        "Darbe direnci ve mukavemeti ile bilinir, dayanıklı prototipler ve fonksiyonel parçalar için uygundur.",
     },
     {
       id: 4,
-      title: "TPU (Thermoplastic Polyurethane)",
+      title: "TPU (Termoplastik Poliüretan)",
       content:
-        "Highly flexible and abrasion-resistant, ideal for creating rubber-like components.",
+        "Son derece esnek ve aşınmaya dayanıklıdır, kauçuk benzeri bileşenler oluşturmak için idealdir.",
     },
   ];
 
   const industrialMaterials = [
     {
       id: 5,
-      title: "Nylon (Markforged Onyx)",
+      title: "Naylon (Markforged Onyx)",
       content:
-        "Offers superior tensile strength and toughness, ideal for functional prototypes and production parts requiring durability and wear resistance.",
+        "Üstün çekme mukavemeti ve tokluk sunar, dayanıklılık ve aşınma direnci gerektiren fonksiyonel prototipler ve üretim parçaları için idealdir.",
     },
     {
       id: 6,
       title: "ULTEM (Stratasys)",
       content:
-        "ULTEM 9085 and ULTEM 1010: Known for high thermal and chemical resistance, suitable for aerospace and automotive applications where high performance is critical.",
+        "ULTEM 9085 ve ULTEM 1010: Yüksek termal ve kimyasal direnci ile bilinir, yüksek performansın kritik olduğu havacılık ve otomotiv uygulamaları için uygundur.",
     },
     {
       id: 7,
       title: "ASA (Stratasys)",
       content:
-        "Combines good mechanical properties with UV stability, perfect for robust outdoor and automotive components.",
+        "İyi mekanik özellikleri UV kararlılığı ile birleştirir, sağlam dış mekan ve otomotiv bileşenleri için mükemmeldir.",
     },
     {
       id: 8,
       title: "ABS (Stratasys)",
       content:
-        "ABS M30 and ABSplus: Provides enhanced strength and stability, suitable for end-use parts needing reliable performance under stress.",
+        "ABS M30 ve ABSplus: Gelişmiş mukavemet ve kararlılık sağlar, stres altında güvenilir performans gerektiren son kullanım parçaları için uygundur.",
     },
   ];
 
@@ -74,10 +74,10 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="FDM 3D Printing"
+        title="FDM 3D Baskı"
         bg="/Assets/Images/services/3d-printing/fused-deposition-modeling/bg.jpg"
-        desc="Fused deposition modeling (FDM) creates quality prototypes and end-use parts in a variety of materials and fast quoting "
-        firstButton={{ title: "Get Instant Quote", route: "/" }}
+        desc="Birikimli modelleme teknolojisi (FDM), çeşitli malzemelerde kaliteli prototipler ve son kullanım parçaları oluşturur ve hızlı teklif alma imkanı sunar"
+        firstButton={{ title: "Anında Teklif Al", route: "/" }}
         simple
       />
 
@@ -88,7 +88,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md">
               <Image
                 src="/Assets/Images/services/3d-printing/fused-deposition-modeling/dsc03497-600x400-bf06395-1.jpg"
-                alt="FDM 3D Printing"
+                alt="FDM 3D Baskı"
                 fill
                 className="object-cover"
               />
@@ -97,16 +97,17 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                What is FDM 3D Printing?
+                FDM 3D Baskı Nedir?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed">
-                FDM is a versatile 3D printing technology that builds parts one
-                layer at a time by extruding heated thermoplastics through a
-                nozzle. Known for its affordability and quality, FDM is ideal
-                for low-volume production of both prototypes and functional
-                parts. Work with materials like PLA, ABS, TPU, PETG, and PEI to
-                cover a wide range of applications.
+                FDM, bir nozul aracılığıyla ısıtılmış termoplastikleri ekstrüde
+                ederek parçaları birer birer katman halinde oluşturan çok yönlü
+                bir 3D baskı teknolojisidir. Uygun fiyatı ve kalitesiyle bilinen
+                FDM, hem prototiplerin hem de fonksiyonel parçaların düşük
+                hacimli üretimi için idealdir. PLA, ABS, TPU, PETG ve PEI gibi
+                malzemelerle geniş bir uygulama yelpazesini kapsayacak şekilde
+                çalışın.
               </p>
             </div>
           </div>
@@ -118,14 +119,14 @@ export default function page() {
             {/* Benefits of FDM */}
             <div className="bg-[#F0F8FF] rounded-2xl p-8 hover:shadow-md transition-all duration-300">
               <h2 className="text-2xl md:text-3xl font-bold text-[#0B1221] mb-4">
-                Benefits of FDM
+                FDM'nin Faydaları
               </h2>
               <div className="w-16 h-0.5 bg-[#96E92A] rounded-full mb-6"></div>
               <ul className="space-y-3">
                 {[
-                  "Speedy turnaround for prototypes and parts",
-                  "Versatile material choices: heat and chemical resistant, flame retardant, biocompatible, and high strength materials available",
-                  "Cost-effective manufacturing for custom parts",
+                  "Prototipler ve parçalar için hızlı teslimat",
+                  "Çok yönlü malzeme seçenekleri: ısı ve kimyasal dirençli, alev geciktirici, biyouyumlu ve yüksek mukavemetli malzemeler mevcuttur",
+                  "Özel parçalar için uygun maliyetli üretim",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -140,26 +141,26 @@ export default function page() {
             {/* Common Applications for FDM 3D Printing */}
             <div className="bg-[#F0F8FF] rounded-2xl p-8 hover:shadow-md transition-all duration-300">
               <h2 className="text-2xl md:text-3xl font-bold text-[#0B1221] mb-4">
-                Common Applications for FDM 3D Printing
+                FDM 3D Baskı için Yaygın Uygulamalar
               </h2>
               <div className="w-16 h-0.5 bg-[#96E92A] rounded-full mb-6"></div>
               <div className="space-y-4">
                 {[
                   {
-                    title: "Aerospace",
-                    desc: "Lightweight components, enclosures, housing, and antenna covers",
+                    title: "Havacılık",
+                    desc: "Hafif bileşenler, muhafazalar, gövdeler ve anten kapakları",
                   },
                   {
-                    title: "Automotive",
-                    desc: "Assembly tools and prototype parts",
+                    title: "Otomotiv",
+                    desc: "Montaj araçları ve prototip parçalar",
                   },
                   {
-                    title: "Consumer Electronics",
-                    desc: "Custom enclosures and housings",
+                    title: "Tüketici Elektroniği",
+                    desc: "Özel muhafazalar ve gövdeler",
                   },
                   {
-                    title: "Medical",
-                    desc: "Custom prosthetics and anatomical models",
+                    title: "Medikal",
+                    desc: "Özel protezler ve anatomik modeller",
                   },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-2">
@@ -184,13 +185,13 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              FDM Design Guidelines and Capabilities
+              FDM Tasarım Kılavuzları ve Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our basic guidelines for FDM include important design
-              considerations to help improve part precision and reduce overall
-              production time.
+              FDM için temel kılavuzlarımız, parça hassasiyetini iyileştirmeye
+              ve genel üretim süresini azaltmaya yardımcı olacak önemli tasarım
+              hususlarını içerir.
             </p>
           </div>
 
@@ -201,10 +202,10 @@ export default function page() {
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700"></th>
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                    US
+                    ABD
                   </th>
                   <th className="text-left p-4 font-semibold text-lg">
-                    Metric
+                    Metrik
                   </th>
                 </tr>
               </thead>
@@ -212,34 +213,34 @@ export default function page() {
                 {/* Max Part Size Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 align-top">
-                    Max Part Size
+                    Maks. Parça Boyutu
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
                     <div className="mb-2">
                       <span className="font-semibold text-[#0B1221]">
-                        Prototyping FDM:
+                        Prototipleme FDM:
                       </span>
-                      <div>Up to 19.68 in. x 19.68 in. x 19.68 in.</div>
+                      <div>19,68 inç x 19,68 inç x 19,68 inç'e kadar</div>
                     </div>
                     <div>
                       <span className="font-semibold text-[#0B1221]">
-                        Industrial FDM:
+                        Endüstriyel FDM:
                       </span>
-                      <div>Up to 15.98 in. x 13.97 in. x 15.98 in.</div>
+                      <div>15,98 inç x 13,97 inç x 15,98 inç'e kadar</div>
                     </div>
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
                     <div className="mb-2">
                       <span className="font-semibold text-[#0B1221]">
-                        Prototyping FDM:
+                        Prototipleme FDM:
                       </span>
-                      <div>Up to 500mm x 500mm x 500mm</div>
+                      <div>500mm x 500mm x 500mm'e kadar</div>
                     </div>
                     <div>
                       <span className="font-semibold text-[#0B1221]">
-                        Industrial FDM:
+                        Endüstriyel FDM:
                       </span>
-                      <div>Up to 406mm x 355mm x 406mm</div>
+                      <div>406mm x 355mm x 406mm'e kadar</div>
                     </div>
                   </td>
                 </tr>
@@ -247,34 +248,34 @@ export default function page() {
                 {/* Dimensional Accuracy Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 align-top">
-                    Dimensional Accuracy
+                    Boyutsal Doğruluk
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
                     <div className="mb-2">
                       <span className="font-semibold text-[#0B1221]">
-                        Prototyping FDM:
+                        Prototipleme FDM:
                       </span>
-                      <div>± 0.5% with a lower limit of ±0.020 in.</div>
+                      <div>±%0,5, alt limit ±0,020 inç</div>
                     </div>
                     <div>
                       <span className="font-semibold text-[#0B1221]">
-                        Industrial FDM:
+                        Endüstriyel FDM:
                       </span>
-                      <div>± 0.3% with a lower limit of ±0.012 in.</div>
+                      <div>±%0,3, alt limit ±0,012 inç</div>
                     </div>
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
                     <div className="mb-2">
                       <span className="font-semibold text-[#0B1221]">
-                        Prototyping FDM:
+                        Prototipleme FDM:
                       </span>
-                      <div>0.5mm</div>
+                      <div>0,5mm</div>
                     </div>
                     <div>
                       <span className="font-semibold text-[#0B1221]">
-                        Industrial FDM:
+                        Endüstriyel FDM:
                       </span>
-                      <div>±0.3mm</div>
+                      <div>±0,3mm</div>
                     </div>
                   </td>
                 </tr>
@@ -282,32 +283,32 @@ export default function page() {
                 {/* Unsupported/Supported Walls Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Unsupported/Supported Walls
+                    Desteksiz/Destekli Duvarlar
                   </td>
                   <td className="p-4 text-gray-600 bg-white">
-                    Minimum 0.0315 in.
+                    Minimum 0,0315 inç
                   </td>
                   <td className="p-4 text-gray-600 bg-gray-50">
-                    Minimum 0.8mm
+                    Minimum 0,8mm
                   </td>
                 </tr>
 
                 {/* Minimum Feature Size Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Minimum Feature Size
+                    Minimum Özellik Boyutu
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">0.0787 in.</td>
-                  <td className="p-4 text-gray-600 bg-gray-50">2.0mm</td>
+                  <td className="p-4 text-gray-600 bg-white">0,0787 inç</td>
+                  <td className="p-4 text-gray-600 bg-gray-50">2,0mm</td>
                 </tr>
 
                 {/* Minimum Hole Diameter Row */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                    Minimum Hole Diameter
+                    Minimum Delik Çapı
                   </td>
-                  <td className="p-4 text-gray-600 bg-white">0.0787 in.</td>
-                  <td className="p-4 text-gray-600 bg-gray-50">2.0mm</td>
+                  <td className="p-4 text-gray-600 bg-white">0,0787 inç</td>
+                  <td className="p-4 text-gray-600 bg-gray-50">2,0mm</td>
                 </tr>
               </tbody>
             </table>
@@ -320,31 +321,31 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                How Does FDM 3D Printing Work?
+                FDM 3D Baskı Nasıl Çalışır?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Fused Deposition Modeling (FDM) creates parts by heating and
-                extruding thermoplastic filaments layer by layer, resulting in
-                solid objects with practical functionality.
+                Birikimli Modelleme (FDM), termoplastik filamentleri ısıtarak ve
+                katman katman ekstrüde ederek parçalar oluşturur ve pratik
+                işlevselliğe sahip katı nesneler elde edilmesini sağlar.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Unlike resin-based technologies such as stereolithography
-                (SLA)—which use liquid photopolymers cured by a UV laser to
-                achieve fine details and smooth finishes—FDM offers the
-                advantage of lower costs and faster production times.
+                İnce detaylar ve pürüzsüz yüzeyler elde etmek için UV lazerle
+                kürlenen sıvı fotopolimerler kullanan stereolitografi (SLA) gibi
+                reçine tabanlı teknolojilerin aksine, FDM daha düşük maliyet ve
+                daha hızlı üretim süreleri avantajı sunar.
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                Additionally, although powder-based methods such as selective
-                laser sintering (SLS) fuse material powders into complex shapes
-                without the need for support structures, FDM remains a versatile
-                and economical option for producing durable parts, especially
-                when surface finish is not the primary concern. This makes FDM
-                ideal for functional prototypes and low-volume manufacturing
-                across a range of industries.
+                Ek olarak, destek yapılarına ihtiyaç duymadan toz malzemeleri
+                karmaşık şekillere birleştiren seçici lazer sinterleme (SLS)
+                gibi toz tabanlı yöntemler bulunsa da, FDM özellikle yüzey
+                kalitesi birincil endişe olmadığında dayanıklı parçalar üretmek
+                için çok yönlü ve ekonomik bir seçenek olmaya devam etmektedir.
+                Bu, FDM'yi çeşitli endüstrilerde fonksiyonel prototipler ve
+                düşük hacimli üretim için ideal hale getirir.
               </p>
             </div>
 
@@ -361,10 +362,10 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
                   <p className="text-gray-300 text-xs mt-1">
-                    When to Use FDM 3D Printing
+                    FDM 3D Baskı Ne Zaman Kullanılır
                   </p>
                   <p className="text-gray-400 text-xs mt-2">FASONLY</p>
                 </div>
@@ -378,23 +379,24 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              FDM Material Options
+              FDM Malzeme Seçenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Fasonly FDM materials for prototyping are typically chosen for
-              their ease of use, speed, and cost-effectiveness, focusing on
-              enabling rapid design iterations and validation. Materials for
-              production are selected for their durability, specific mechanical
-              properties, and long-term performance, ensuring they meet
-              standards for end-use applications.
+              Fasonly FDM prototipleme malzemeleri tipik olarak kullanım
+              kolaylıkları, hızları ve maliyet etkinlikleri nedeniyle seçilir ve
+              hızlı tasarım yinelemeleri ile doğrulamayı mümkün kılmaya
+              odaklanır. Üretim malzemeleri ise dayanıklılıkları, belirli
+              mekanik özellikleri ve uzun vadeli performansları için seçilir ve
+              son kullanım uygulamaları için standartları karşılamalarını
+              sağlar.
             </p>
           </div>
 
           {/* Prototyping Materials Section */}
           <div className="mb-10">
             <h3 className="text-2xl font-bold text-[#0B1221] mb-6 text-center">
-              FDM Materials for Prototyping:
+              Prototipleme için FDM Malzemeleri:
             </h3>
             <div className="space-y-3">
               {prototypingMaterials.map((material) => (
@@ -431,7 +433,7 @@ export default function page() {
           {/* Industrial FDM Materials Section */}
           <div>
             <h3 className="text-2xl font-bold text-[#0B1221] mb-6 text-center">
-              Industrial FDM Materials:
+              Endüstriyel FDM Malzemeleri:
             </h3>
             <div className="space-y-3">
               {industrialMaterials.map((material) => (
@@ -472,31 +474,31 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                How Does FDM 3D Printing Work?
+                FDM 3D Baskı Nasıl Çalışır?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Fused Deposition Modeling (FDM) creates parts by heating and
-                extruding thermoplastic filaments layer by layer, resulting in
-                solid objects with practical functionality.
+                Birikimli Modelleme (FDM), termoplastik filamentleri ısıtarak ve
+                katman katman ekstrüde ederek parçalar oluşturur ve pratik
+                işlevselliğe sahip katı nesneler elde edilmesini sağlar.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Unlike resin-based technologies such as stereolithography
-                (SLA)—which use liquid photopolymers cured by a UV laser to
-                achieve fine details and smooth finishes—FDM offers the
-                advantage of lower costs and faster production times.
+                İnce detaylar ve pürüzsüz yüzeyler elde etmek için UV lazerle
+                kürlenen sıvı fotopolimerler kullanan stereolitografi (SLA) gibi
+                reçine tabanlı teknolojilerin aksine, FDM daha düşük maliyet ve
+                daha hızlı üretim süreleri avantajı sunar.
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                Additionally, although powder-based methods such as selective
-                laser sintering (SLS) fuse material powders into complex shapes
-                without the need for support structures, FDM remains a versatile
-                and economical option for producing durable parts, especially
-                when surface finish is not the primary concern. This makes FDM
-                ideal for functional prototypes and low-volume manufacturing
-                across a range of industries.
+                Ek olarak, destek yapılarına ihtiyaç duymadan toz malzemeleri
+                karmaşık şekillere birleştiren seçici lazer sinterleme (SLS)
+                gibi toz tabanlı yöntemler bulunsa da, FDM özellikle yüzey
+                kalitesi birincil endişe olmadığında dayanıklı parçalar üretmek
+                için çok yönlü ve ekonomik bir seçenek olmaya devam etmektedir.
+                Bu, FDM'yi çeşitli endüstrilerde fonksiyonel prototipler ve
+                düşük hacimli üretim için ideal hale getirir.
               </p>
             </div>
 
@@ -513,10 +515,10 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
                   <p className="text-gray-300 text-xs mt-1">
-                    When to Use FDM 3D Printing
+                    FDM 3D Baskı Ne Zaman Kullanılır
                   </p>
                   <p className="text-gray-400 text-xs mt-2">FASONLY</p>
                 </div>

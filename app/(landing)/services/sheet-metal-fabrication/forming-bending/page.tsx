@@ -7,10 +7,10 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Sheet Metal Forming Service"
-        desc="Get custom formed sheet metal parts for rapid prototyping and production in as fast as 3 days"
+        title="Sac Metal Şekillendirme Hizmeti"
+        desc="Hızlı prototipleme ve üretim için özel şekillendirilmiş sac metal parçaları 3 gün kadar kısa sürede alın"
         image="/Assets/Images/services/sheet-metal-fabrication/forming/hero.webp"
-        firstButton={{ title: "Upload A Part", route: "/" }}
+        firstButton={{ title: "Parça Yükle", route: "/" }}
         simple
       />
       <div className="w-full bg-white py-20">
@@ -19,28 +19,28 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                What is Press Brake Forming?
+                Pres Freni Şekillendirme Nedir?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Press brake forming is a metal fabrication process that bends
-                flat sheet metal into a final shape using a press brake machine.
-                Force is applied between a punch (upper tool) and die (bottom
-                tool), and linear bends can be made for a variety of metal
-                materials and thicknesses.
+                Pres freni şekillendirme, bir pres freni makinesi kullanarak düz
+                sac metali nihai bir şekle büken bir metal imalat sürecidir.
+                Zımba (üst takım) ve kalıp (alt takım) arasında kuvvet uygulanır
+                ve çeşitli metal malzemeler ve kalınlıklar için doğrusal
+                bükümler yapılabilir.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                All brakes are equipped with CNC controllers for precise part
-                positioning and repeatability. Press brake forming works well to
-                create parts that include U-bends, flanges, channels, and
-                internal bends.
+                Tüm frenler, hassas parça konumlandırma ve tekrarlanabilirlik
+                için CNC kontrolörleri ile donatılmıştır. Pres freni
+                şekillendirme, U-bükümler, flanşlar, kanallar ve iç bükümler
+                içeren parçalar oluşturmak için iyi çalışır.
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                Lead times for qualifying formed parts are as fast as three
-                days.
+                Uygun şekillendirilmiş parçalar için teslim süreleri üç gün
+                kadar kısadır.
               </p>
             </div>
 
@@ -48,7 +48,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/forming/sheet_metal_fab_1483_570x308.jpg"
-                alt="Press Brake Forming Process"
+                alt="Pres Freni Şekillendirme Süreci"
                 fill
                 className="object-cover"
               />
@@ -61,12 +61,12 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Sheet Metal Forming Design Guidelines and Capabilities
+              Sac Metal Şekillendirme Tasarım Kılavuzları ve Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Follow these guidelines for formed sheet metal parts to ensure
-              consistent quality and fast production times:
+              Tutarlı kalite ve hızlı üretim süreleri sağlamak için
+              şekillendirilmiş sac metal parçalar için bu kılavuzları izleyin:
             </p>
           </div>
 
@@ -75,34 +75,38 @@ export default function page() {
             <table className="w-full border-collapse">
               <tbody>
                 {[
-                  { label: "Maximum Bend Length", value: "47 in." },
+                  { label: "Maksimum Büküm Uzunluğu", value: "47 inç" },
                   {
-                    label: "Minimum Qualifying Part Size",
+                    label: "Minimum Uygun Parça Boyutu",
                     value:
-                      "0.05 in x 0.05 in (12.7mm x 12.7mm) for formed parts",
+                      "Şekillendirilmiş parçalar için 0,05 inç x 0,05 inç (12,7mm x 12,7mm)",
                   },
-                  { label: "Maximum Pressing Force", value: "80 tons" },
+                  { label: "Maksimum Presleme Kuvveti", value: "80 ton" },
                   {
-                    label: "Bend Angles",
-                    value: "1 degree 'kick' to 135 degrees",
-                  },
-                  {
-                    label: "Bending Output",
-                    value: "Linear bends—external and internal flanges",
+                    label: "Büküm Açıları",
+                    value: "1 derece 'vuruş' ila 135 derece",
                   },
                   {
-                    label: "Maximum U-Channel Ratio",
-                    value: "2:1 (width:height)",
+                    label: "Büküm Çıktısı",
+                    value: "Doğrusal bükümler - dış ve iç flanşlar",
                   },
                   {
-                    label: "Internal Radius Tooling Options",
+                    label: "Maksimum U-Kanal Oranı",
+                    value: "2:1 (genişlik:yükseklik)",
+                  },
+                  {
+                    label: "İç Yarıçap Takım Seçenekleri",
                     value:
-                      "0.01 in. to 1 in. (standard tooling increments) >1 in. radius bends will be bump formed",
+                      "0,01 inç ila 1 inç (standart takım artışları) >1 inç yarıçaplı bükümler kademeli şekillendirilecektir",
                   },
-                  { label: "Offsets", value: "Standard offset tooling sizes" },
                   {
-                    label: "Hems",
-                    value: "Closed hems up to 47 in., open hems up to 36 in.",
+                    label: "Ofsetler",
+                    value: "Standart ofset takım boyutları",
+                  },
+                  {
+                    label: "Kıvırmalar",
+                    value:
+                      "47 inç'e kadar kapalı kıvırmalar, 36 inç'e kadar açık kıvırmalar",
                   },
                 ].map((row, idx) => (
                   <tr
@@ -122,21 +126,20 @@ export default function page() {
           <div className="space-y-2">
             <p className="text-gray-600 leading-relaxed">
               <span className="font-semibold text-[#0B1221]">
-                • Relieve bends
-              </span>{" "}
-              in CAD designs
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              <span className="font-semibold text-[#0B1221]">
-                • For best price and lead time
+                • CAD tasarımlarında bükümleri boşaltın
               </span>
-              , use manufacturer-recommended radius tooling
             </p>
             <p className="text-gray-600 leading-relaxed">
               <span className="font-semibold text-[#0B1221]">
-                • Ensure appropriate placement
+                • En iyi fiyat ve teslim süresi için
+              </span>
+              , üretici tarafından önerilen yarıçap takımını kullanın
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              <span className="font-semibold text-[#0B1221]">
+                • Yakındaki özelliklerin uygun yerleşimini sağlayın
               </span>{" "}
-              of nearby features (e.g., holes, hardware inserts, other bends)
+              (örn. delikler, donanım ek parçaları, diğer bükümler)
             </p>
           </div>
         </div>
@@ -146,13 +149,13 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Sheet Metal Materials and Thicknesses for Formed Parts
+              Şekillendirilmiş Parçalar için Sac Metal Malzemeler ve Kalınlıklar
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              We offer the following metal materials for custom-formed sheet
-              metal parts. Note that based on material thickness, maximum
-              bending capabilities will vary.
+              Özel şekillendirilmiş sac metal parçalar için aşağıdaki metal
+              malzemeleri sunuyoruz. Malzeme kalınlığına bağlı olarak maksimum
+              büküm yeteneklerinin değişeceğini unutmayın.
             </p>
           </div>
 
@@ -162,13 +165,13 @@ export default function page() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700 min-w-[150px]">
-                    Material
+                    Malzeme
                   </th>
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700 min-w-[200px]">
-                    Grade
+                    Kalite
                   </th>
                   <th className="text-left p-4 font-semibold text-lg min-w-[300px]">
-                    Thicknesses Available
+                    Mevcut Kalınlıklar
                   </th>
                 </tr>
               </thead>
@@ -176,18 +179,18 @@ export default function page() {
                 {/* Aluminum */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-gray-700 font-semibold align-top">
-                    Aluminum
+                    Alüminyum
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
                       <li>5052-H32</li>
-                      <li>6061-T6 (requires review)</li>
+                      <li>6061-T6 (inceleme gerektirir)</li>
                     </ul>
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
-                      <li>5052: 0.025 in. – 0.250 in. (0.635mm – 6.35mm)</li>
-                      <li>6061: 0.025 in. – 0.134 in. (0.635mm – 3.40mm)*</li>
+                      <li>5052: 0,025 inç – 0,250 inç (0,635mm – 6,35mm)</li>
+                      <li>6061: 0,025 inç – 0,134 inç (0,635mm – 3,40mm)*</li>
                     </ul>
                   </td>
                 </tr>
@@ -195,22 +198,22 @@ export default function page() {
                 {/* Steel */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-gray-700 font-semibold align-top">
-                    Steel
+                    Çelik
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
                       <li>CRS/HRPO</li>
-                      <li>Galvanneal (pre-plated)</li>
-                      <li>Galvanized (pre-plated)</li>
+                      <li>Galvanizli Tavlanmış (ön kaplamalı)</li>
+                      <li>Galvanizli (ön kaplamalı)</li>
                     </ul>
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
                       <li>
-                        CRS/HRPO: 0.025 in. – 0.250 in. (0.635mm – 6.35mm)
+                        CRS/HRPO: 0,025 inç – 0,250 inç (0,635mm – 6,35mm)
                       </li>
                       <li>
-                        Pre-plated: 0.025 in. – 0.134 in. (0.635mm – 3.40mm)
+                        Ön kaplamalı: 0,025 inç – 0,134 inç (0,635mm – 3,40mm)
                       </li>
                     </ul>
                   </td>
@@ -219,7 +222,7 @@ export default function page() {
                 {/* Stainless Steel */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-gray-700 font-semibold align-top">
-                    Stainless Steel
+                    Paslanmaz Çelik
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
@@ -230,9 +233,9 @@ export default function page() {
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
-                      <li>304-2B: 0.025 in. – 0.250 in. (0.635mm – 6.35mm)</li>
-                      <li>304-4: 0.025 in – 0.119 in. (0.635mm – 3.023mm)</li>
-                      <li>316-2B: 0.025 in. – 0.134 in. (0.635mm – 3.40mm)</li>
+                      <li>304-2B: 0,025 inç – 0,250 inç (0,635mm – 6,35mm)</li>
+                      <li>304-4: 0,025 inç – 0,119 inç (0,635mm – 3,023mm)</li>
+                      <li>316-2B: 0,025 inç – 0,134 inç (0,635mm – 3,40mm)</li>
                     </ul>
                   </td>
                 </tr>
@@ -240,7 +243,7 @@ export default function page() {
                 {/* Copper */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-gray-700 font-semibold align-top">
-                    Copper
+                    Bakır
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
@@ -249,14 +252,14 @@ export default function page() {
                     </ul>
                   </td>
                   <td className="p-4 text-gray-600 align-top">
-                    0.025 in – 0.125 in. (0.635mm – 3.175mm)
+                    0,025 inç – 0,125 inç (0,635mm – 3,175mm)
                   </td>
                 </tr>
 
                 {/* Brass */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-gray-700 font-semibold align-top">
-                    Brass
+                    Pirinç
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
@@ -264,7 +267,7 @@ export default function page() {
                     </ul>
                   </td>
                   <td className="p-4 text-gray-600 align-top">
-                    0.025 in. – 0.125 in. (0.635mm – 3.175mm)
+                    0,025 inç – 0,125 inç (0,635mm – 3,175mm)
                   </td>
                 </tr>
               </tbody>
@@ -274,8 +277,8 @@ export default function page() {
           {/* Note */}
           <div className="mt-4 p-4 bg-[#F0F8FF] rounded-lg">
             <p className="text-gray-600 text-sm leading-relaxed">
-              *Formed parts made out of Aluminum 6061-T6 require manual review
-              and are not configurable during the quoting process.
+              *Alüminyum 6061-T6'dan yapılan şekillendirilmiş parçalar manuel
+              inceleme gerektirir ve teklif süreci sırasında yapılandırılamaz.
             </p>
           </div>
         </div>
@@ -286,25 +289,25 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Applications for Press Brake Formed Parts
+                Pres Freni Şekillendirilmiş Parçalar için Uygulamalar
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Press brake forming is a commonly used manufacturing process in
-                industries such as energy storage, computer electronics,
-                robotics, medical, and aerospace. Common sheet metal parts
-                fabricated with forming include:
+                Pres freni şekillendirme, enerji depolama, bilgisayar
+                elektroniği, robotik, medikal ve havacılık gibi endüstrilerde
+                yaygın olarak kullanılan bir üretim sürecidir. Şekillendirme ile
+                üretilen yaygın sac metal parçalar şunları içerir:
               </p>
 
               <ul className="space-y-2">
                 {[
-                  "brackets",
-                  "busbars",
-                  "covers",
-                  "panels",
-                  "mounts",
-                  "housings or enclosures",
+                  "braketler",
+                  "baralar",
+                  "kapaklar",
+                  "paneller",
+                  "montaj parçaları",
+                  "gövdeler veya muhafazalar",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -318,7 +321,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/forming/sheet_metal_fab_1511_low_res_570x308.jpg"
-                alt="Applications for Press Brake Formed Parts"
+                alt="Pres Freni Şekillendirilmiş Parçalar için Uygulamalar"
                 fill
                 className="object-cover"
               />
@@ -329,4 +332,3 @@ export default function page() {
     </div>
   );
 }
-// /Assets/Images/services/sheet-metal-fabrication/forming/sheet_metal_fab_1511_low_res_570x308.jpg

@@ -9,124 +9,132 @@ export default function page() {
   const [activeTab, setActiveTab] = useState("maxDimensions");
 
   const tabs = [
-    { id: "maxDimensions", label: "Max Dimensions" },
-    { id: "layerThickness", label: "Layer Thickness" },
-    { id: "minFeatureSize", label: "Minimum Feature Size" },
-    { id: "tolerances", label: "Tolerances" },
-    { id: "surfaceFinishes", label: "Surface Finishes" },
+    { id: "maxDimensions", label: "Maks. Boyutlar" },
+    { id: "layerThickness", label: "Katman Kalınlığı" },
+    { id: "minFeatureSize", label: "Minimum Özellik Boyutu" },
+    { id: "tolerances", label: "Toleranslar" },
+    { id: "surfaceFinishes", label: "Yüzey İşlemleri" },
   ];
 
   const content = {
     maxDimensions: {
-      title: "Max Dimensions",
+      title: "Maks. Boyutlar",
       description: "",
       table: {
-        headers: ["", "US", "Metric"],
+        headers: ["", "ABD", "Metrik"],
         rows: [
           {
-            label: "Normal Resolution",
-            us: "9.6 in. x 9.6 in. x 13.0 in.",
+            label: "Normal Çözünürlük",
+            us: "9,6 inç x 9,6 inç x 13,0 inç",
             metric: "245mm x 245mm x 330mm",
           },
           {
             label: "X Line*",
-            us: "31.5 in. x 15.7 in. x 19.7 in.",
+            us: "31,5 inç x 15,7 inç x 19,7 inç",
             metric: "400mm x 800mm x 500mm",
           },
           {
-            label: "High Resolution",
-            us: "3.5 in. x 3.5 in. x 2.7 in.",
+            label: "Yüksek Çözünürlük",
+            us: "3,5 inç x 3,5 inç x 2,7 inç",
             metric: "88mm x 88mm x 70mm",
           },
           {
-            label: "Aluminum (High Res)",
-            us: "3.8 in. x 3.8 in. x 3.7 in.",
+            label: "Alüminyum (Yüksek Çöz.)",
+            us: "3,8 inç x 3,8 inç x 3,7 inç",
             metric: "98mm x 98mm x 94mm",
           },
         ],
       },
-      note: "*At this time, Inconel 718 and Aluminum are the only materials available on our large format, X Line machine.",
+      note: "*Şu anda, Inconel 718 ve Alüminyum, büyük format X Line makinemizde mevcut olan tek malzemelerdir.",
     },
     layerThickness: {
-      title: "Layer Thickness",
+      title: "Katman Kalınlığı",
       description: "",
       table: {
-        headers: ["", "US", "Metric"],
+        headers: ["", "ABD", "Metrik"],
         rows: [
           {
-            label: "Normal Resolution",
-            us: "0.0012 in.",
-            metric: "30 microns",
+            label: "Normal Çözünürlük",
+            us: "0,0012 inç",
+            metric: "30 mikron",
           },
-          { label: "High Resolution", us: "0.00079 in.", metric: "20 microns" },
+          {
+            label: "Yüksek Çözünürlük",
+            us: "0,00079 inç",
+            metric: "20 mikron",
+          },
         ],
       },
-      note: "*At this time, Inconel 718 and Aluminum are the only materials available on our large format, X Line machine.",
+      note: "*Şu anda, Inconel 718 ve Alüminyum, büyük format X Line makinemizde mevcut olan tek malzemelerdir.",
     },
     minFeatureSize: {
-      title: "Minimum Feature Size",
+      title: "Minimum Özellik Boyutu",
       description: "",
       table: {
-        headers: ["", "US", "Metric"],
+        headers: ["", "ABD", "Metrik"],
         rows: [
           {
-            label: "Normal Resolution (Inconel)",
-            us: "0.00236 in.",
-            metric: "60 microns",
+            label: "Normal Çözünürlük (Inconel)",
+            us: "0,00236 inç",
+            metric: "60 mikron",
           },
           {
-            label: "Normal Resolution (Aluminum)",
-            us: "0.00157 in.",
-            metric: "40 microns",
+            label: "Normal Çözünürlük (Alüminyum)",
+            us: "0,00157 inç",
+            metric: "40 mikron",
           },
-          { label: "High Resolution", us: "0.00079 in.", metric: "20 microns" },
+          {
+            label: "Yüksek Çözünürlük",
+            us: "0,00079 inç",
+            metric: "20 mikron",
+          },
         ],
       },
-      note: "*At this time, Inconel 718 and Aluminum are the only materials available on our large format, X Line machine.",
+      note: "*Şu anda, Inconel 718 ve Alüminyum, büyük format X Line makinemizde mevcut olan tek malzemelerdir.",
     },
     tolerances: {
-      title: "Metal 3D Printing Tolerances",
+      title: "Metal 3D Baskı Toleransları",
       description:
-        "For well-designed parts, tolerances in the X/Y dimension of ±0.003 in. (0.075mm) for first inch plus 0.1% of nominal length (0.001mm/mm), and Z dimension tolerances of ±0.006 in. for first inch plus 0.1% of nominal length, can typically be achieved. Note that tolerances may change depending on part geometry.",
+        "İyi tasarlanmış parçalar için, ilk inç için X/Y boyutunda ±0,003 inç (0,075mm) artı nominal uzunluğun %0,1'i (0,001mm/mm) ve ilk inç için Z boyutunda ±0,006 inç artı nominal uzunluğun %0,1'i toleranslar tipik olarak elde edilebilir. Toleransların parça geometrisine bağlı olarak değişebileceğini unutmayın.",
       table: {
-        headers: ["", "US", "Metric"],
+        headers: ["", "ABD", "Metrik"],
         rows: [
           {
-            label: "X/Y Dimension",
-            us: "±0.003 in. for first inch + 0.1%",
-            metric: "±0.075mm for first mm + 0.001mm/mm",
+            label: "X/Y Boyutu",
+            us: "İlk inç için ±0,003 inç + %0,1",
+            metric: "İlk mm için ±0,075mm + 0,001mm/mm",
           },
           {
-            label: "Z Dimension",
-            us: "±0.006 in. for first inch + 0.1%",
-            metric: "±0.153mm for first mm + 0.001mm/mm",
+            label: "Z Boyutu",
+            us: "İlk inç için ±0,006 inç + %0,1",
+            metric: "İlk mm için ±0,153mm + 0,001mm/mm",
           },
-          { label: "X Line*", us: "0.006 in.", metric: "0.153mm" },
+          { label: "X Line*", us: "0,006 inç", metric: "0,153mm" },
         ],
       },
-      note: "*At this time, Inconel 718 and Aluminum are the only materials available on our large format, X Line machine.",
+      note: "*Şu anda, Inconel 718 ve Alüminyum, büyük format X Line makinemizde mevcut olan tek malzemelerdir.",
     },
     surfaceFinishes: {
-      title: "Surface Finishes",
+      title: "Yüzey İşlemleri",
       description: "",
       table: {
-        headers: ["Finishing Option", "Description"],
+        headers: ["İşlem Seçeneği", "Açıklama"],
         rows: [
           {
-            label: "Standard",
-            desc: "Support structures are removed and layer lines are visible.",
+            label: "Standart",
+            desc: "Destek yapıları çıkarılır ve katman çizgileri görünür.",
           },
           {
-            label: "Brushed",
-            desc: "Indicated surfaces will be directionally sanded to desired grit level.",
+            label: "Fırçalanmış",
+            desc: "Belirtilen yüzeyler istenen tane seviyesine kadar yönlü olarak zımparalanır.",
           },
           {
-            label: "Satin",
-            desc: "Indicated surfaces will be sanded to desired grit level, grit blasted and then bead blasted.",
+            label: "Saten",
+            desc: "Belirtilen yüzeyler istenen tane seviyesine kadar zımparalanır, kum püskürtülür ve ardından boncuk püskürtülür.",
           },
           {
-            label: "Polished",
-            desc: "Indicated surfaces will be sanded to desired grit level. Surfaces will be somewhat reflective and bright, but some sanding lines or marks may still be visible.",
+            label: "Parlatılmış",
+            desc: "Belirtilen yüzeyler istenen tane seviyesine kadar zımparalanır. Yüzeyler bir miktar yansıtıcı ve parlak olacaktır, ancak bazı zımpara izleri veya işaretler hala görülebilir.",
           },
         ],
       },
@@ -141,72 +149,72 @@ export default function page() {
 
   const usData = [
     {
-      material: "Stainless Steel (17-4 PH)",
+      material: "Paslanmaz Çelik (17-4 PH)",
       resolution: "20 µm",
-      condition: "Solution & Aged (H900)",
+      condition: "Çözelti & Yaşlandırılmış (H900)",
       ultimateTensile: "199",
       yieldStress: "178",
       elongation: "10",
       hardness: "42 HRC",
     },
     {
-      material: "Stainless Steel (17-4 PH)",
+      material: "Paslanmaz Çelik (17-4 PH)",
       resolution: "30 µm",
-      condition: "Solution & Aged (H900)",
+      condition: "Çözelti & Yaşlandırılmış (H900)",
       ultimateTensile: "198",
       yieldStress: "179",
       elongation: "13",
       hardness: "42 HRC",
     },
     {
-      material: "Stainless Steel (316L)",
+      material: "Paslanmaz Çelik (316L)",
       resolution: "20 µm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "82",
       yieldStress: "56",
       elongation: "78",
       hardness: "90 HRB",
     },
     {
-      material: "Stainless Steel (316L)",
+      material: "Paslanmaz Çelik (316L)",
       resolution: "30 µm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "85",
       yieldStress: "55",
       elongation: "75",
       hardness: "88 HRB",
     },
     {
-      material: "Aluminum (AlSi10Mg)",
+      material: "Alüminyum (AlSi10Mg)",
       resolution: "20 µm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "39",
       yieldStress: "26",
       elongation: "15",
       hardness: "42 HRB",
     },
     {
-      material: "Aluminum (AlSi10Mg)",
+      material: "Alüminyum (AlSi10Mg)",
       resolution: "30 µm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "50",
       yieldStress: "33",
       elongation: "8",
       hardness: "59 HRB",
     },
     {
-      material: "Cobalt Chrome (Co28Cr6Mo)",
+      material: "Kobalt Krom (Co28Cr6Mo)",
       resolution: "20 µm",
-      condition: "As Built",
+      condition: "İmal Edildiği Gibi",
       ultimateTensile: "182",
       yieldStress: "112",
       elongation: "17",
       hardness: "39 HRC",
     },
     {
-      material: "Cobalt Chrome (Co28Cr6Mo)",
+      material: "Kobalt Krom (Co28Cr6Mo)",
       resolution: "30 µm",
-      condition: "As Built",
+      condition: "İmal Edildiği Gibi",
       ultimateTensile: "176",
       yieldStress: "119",
       elongation: "14",
@@ -215,7 +223,7 @@ export default function page() {
     {
       material: "Inconel 718",
       resolution: "20 µm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "143",
       yieldStress: "98",
       elongation: "36",
@@ -224,52 +232,52 @@ export default function page() {
     {
       material: "Inconel 718",
       resolution: "30 µm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "144",
       yieldStress: "91",
       elongation: "39",
       hardness: "30 HRC",
     },
     {
-      material: "Titanium (Ti6Al4V)",
+      material: "Titanyum (Ti6Al4V)",
       resolution: "60 µm",
-      condition: "Solution & Aged per AMS 5663",
+      condition: "AMS 5663'e göre Çözelti & Yaşlandırılmış",
       ultimateTensile: "208",
       yieldStress: "175",
       elongation: "18",
       hardness: "46 HRC",
     },
     {
-      material: "Titanium (Ti6Al4V)",
+      material: "Titanyum (Ti6Al4V)",
       resolution: "60 µm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "139",
       yieldStress: "83",
       elongation: "40",
       hardness: "27 HRC",
     },
     {
-      material: "Titanium (Ti6Al4V) - Aged",
+      material: "Titanyum (Ti6Al4V) - Yaşlandırılmış",
       resolution: "60 µm",
-      condition: "Solution & Aged per AMS 5663",
+      condition: "AMS 5663'e göre Çözelti & Yaşlandırılmış",
       ultimateTensile: "201",
       yieldStress: "174",
       elongation: "19",
       hardness: "45 HRC",
     },
     {
-      material: "Titanium (Ti6Al4V) - 20µm",
+      material: "Titanyum (Ti6Al4V) - 20µm",
       resolution: "20 µm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "153",
       yieldStress: "138",
       elongation: "15",
       hardness: "35 HRC",
     },
     {
-      material: "Titanium (Ti6Al4V) - 30µm",
+      material: "Titanyum (Ti6Al4V) - 30µm",
       resolution: "30 µm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "144",
       yieldStress: "124",
       elongation: "18",
@@ -279,73 +287,73 @@ export default function page() {
 
   const metricData = [
     {
-      material: "Stainless Steel (17-4 PH)",
+      material: "Paslanmaz Çelik (17-4 PH)",
       resolution: "20 μm",
-      condition: "Solution & Aged (H900)",
-      ultimateTensile: "1,372",
-      yieldStress: "1,227",
+      condition: "Çözelti & Yaşlandırılmış (H900)",
+      ultimateTensile: "1.372",
+      yieldStress: "1.227",
       elongation: "10",
       hardness: "42 HRC",
     },
     {
-      material: "Stainless Steel (17-4 PH)",
+      material: "Paslanmaz Çelik (17-4 PH)",
       resolution: "30 μm",
-      condition: "Solution & Aged (H900)",
-      ultimateTensile: "1,365",
-      yieldStress: "1,234",
+      condition: "Çözelti & Yaşlandırılmış (H900)",
+      ultimateTensile: "1.365",
+      yieldStress: "1.234",
       elongation: "13",
       hardness: "42 HRC",
     },
     {
-      material: "Stainless Steel (316L)",
+      material: "Paslanmaz Çelik (316L)",
       resolution: "20 μm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "565",
       yieldStress: "386",
       elongation: "78",
       hardness: "90 HRB",
     },
     {
-      material: "Stainless Steel (316L)",
+      material: "Paslanmaz Çelik (316L)",
       resolution: "30 μm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "586",
       yieldStress: "379",
       elongation: "75",
       hardness: "88 HRB",
     },
     {
-      material: "Aluminum (AlSi10Mg)",
+      material: "Alüminyum (AlSi10Mg)",
       resolution: "20 μm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "268",
       yieldStress: "180",
       elongation: "15",
       hardness: "46 HRB",
     },
     {
-      material: "Aluminum (AlSi10Mg)",
+      material: "Alüminyum (AlSi10Mg)",
       resolution: "30 μm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "345",
       yieldStress: "228",
       elongation: "8",
       hardness: "59 HRB",
     },
     {
-      material: "Cobalt Chrome (Co28Cr6Mo)",
+      material: "Kobalt Krom (Co28Cr6Mo)",
       resolution: "20 μm",
-      condition: "As Built",
-      ultimateTensile: "1,255",
+      condition: "İmal Edildiği Gibi",
+      ultimateTensile: "1.255",
       yieldStress: "772",
       elongation: "17",
       hardness: "39 HRC",
     },
     {
-      material: "Cobalt Chrome (Co28Cr6Mo)",
+      material: "Kobalt Krom (Co28Cr6Mo)",
       resolution: "30 μm",
-      condition: "As Built",
-      ultimateTensile: "1,213",
+      condition: "İmal Edildiği Gibi",
+      ultimateTensile: "1.213",
       yieldStress: "820",
       elongation: "14",
       hardness: "38 HRC",
@@ -353,7 +361,7 @@ export default function page() {
     {
       material: "Inconel 718",
       resolution: "20 μm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "986",
       yieldStress: "676",
       elongation: "36",
@@ -362,52 +370,52 @@ export default function page() {
     {
       material: "Inconel 718",
       resolution: "30 μm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "993",
       yieldStress: "627",
       elongation: "39",
       hardness: "30 HRC",
     },
     {
-      material: "Titanium (Ti6Al4V)",
+      material: "Titanyum (Ti6Al4V)",
       resolution: "60 μm",
-      condition: "Solution & Aged per AMS 5663",
-      ultimateTensile: "1,434",
-      yieldStress: "1,207",
+      condition: "AMS 5663'e göre Çözelti & Yaşlandırılmış",
+      ultimateTensile: "1.434",
+      yieldStress: "1.207",
       elongation: "18",
       hardness: "46 HRC",
     },
     {
-      material: "Titanium (Ti6Al4V)",
+      material: "Titanyum (Ti6Al4V)",
       resolution: "60 μm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "958",
       yieldStress: "572",
       elongation: "40",
       hardness: "27 HRC",
     },
     {
-      material: "Titanium (Ti6Al4V) - Aged",
+      material: "Titanyum (Ti6Al4V) - Yaşlandırılmış",
       resolution: "60 μm",
-      condition: "Solution & Aged per AMS 5663",
-      ultimateTensile: "1,386",
-      yieldStress: "1,200",
+      condition: "AMS 5663'e göre Çözelti & Yaşlandırılmış",
+      ultimateTensile: "1.386",
+      yieldStress: "1.200",
       elongation: "19",
       hardness: "45 HRC",
     },
     {
-      material: "Titanium (Ti6Al4V) - 20μm",
+      material: "Titanyum (Ti6Al4V) - 20μm",
       resolution: "20 μm",
-      condition: "Stress Relieved",
-      ultimateTensile: "1,055",
+      condition: "Gerilim Giderilmiş",
+      ultimateTensile: "1.055",
       yieldStress: "951",
       elongation: "15",
       hardness: "35 HRC",
     },
     {
-      material: "Titanium (Ti6Al4V) - 30μm",
+      material: "Titanyum (Ti6Al4V) - 30μm",
       resolution: "30 μm",
-      condition: "Stress Relieved",
+      condition: "Gerilim Giderilmiş",
       ultimateTensile: "993",
       yieldStress: "855",
       elongation: "18",
@@ -419,10 +427,10 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Metal 3D Printing Service"
-        desc="Get quality metal 3D-printed prototypes and production parts. Request an online quote today."
+        title="Metal 3D Baskı Hizmeti"
+        desc="Kaliteli metal 3D baskılı prototipler ve üretim parçaları alın. Bugün çevrimiçi teklif talep edin."
         image="/Assets/Images/services/3d-printing/metal-3d-printing/hero.webp"
-        firstButton={{ title: "Upload a part", route: "/" }}
+        firstButton={{ title: "Parça Yükle", route: "/" }}
       />
 
       <div className="w-full bg-white py-20">
@@ -432,15 +440,15 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Capabilities",
-                    "Compare Material Properties",
-                    "Material Options",
-                    "Post-Processing",
-                    "Why Metal 3D Printing?",
+                    "Yetenekler",
+                    "Malzeme Özelliklerini Karşılaştır",
+                    "Malzeme Seçenekleri",
+                    "İşlem Sonrası",
+                    "Neden Metal 3D Baskı?",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -455,31 +463,30 @@ export default function page() {
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
-              <div
-                id="about-plastic-injection-molding"
-                className="scroll-mt-32">
+              {/* What is Metal 3D Printing? Section */}
+              <div id="metal-3d-baski-nedir" className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  What is 3D printing ?
+                  3D Baskı Nedir?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Direct metal laser sintering (DMLS) is an industrial metal 3D
-                  printing process that builds fully functional metal prototypes
-                  and production parts in 7 days or less. A range of metals
-                  produce final parts that can be used for end-use applications.
+                  Doğrudan metal lazer sinterleme (DMLS), tam fonksiyonel metal
+                  prototipler ve üretim parçalarını 7 gün veya daha kısa sürede
+                  üreten endüstriyel bir metal 3D baskı sürecidir. Bir dizi
+                  metal, son kullanım uygulamaları için kullanılabilecek nihai
+                  parçalar üretir.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Metal 3D printing technology is commonly used for:
+                  Metal 3D baskı teknolojisi genellikle şunlar için kullanılır:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "Prototyping in production-grade materials",
-                    "Complex geometries",
-                    "Functional, end-use parts",
-                    "Reducing metal components in an assembly",
+                    "Üretim sınıfı malzemelerde prototipleme",
+                    "Karmaşık geometriler",
+                    "Fonksiyonel, son kullanım parçaları",
+                    "Bir montajdaki metal bileşenleri azaltma",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -496,8 +503,8 @@ export default function page() {
       </div>
 
       <GuideDownload
-        title="Metal 3D Printing Guide"
-        desc="Jump start your metal 3D printing with this guide that covers material selection, design, post-processing, and quality inspections. "
+        title="Metal 3D Baskı Kılavuzu"
+        desc="Malzeme seçimi, tasarım, işlem sonrası ve kalite denetimlerini kapsayan bu kılavuzla metal 3D baskıya hızlı bir başlangıç yapın."
       />
 
       <div className="w-full bg-white py-20">
@@ -505,13 +512,14 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Metal 3D Printing Capabilities
+              Metal 3D Baskı Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our basic guidelines for metal 3D printing include important
-              design considerations to help improve part manufacturability,
-              enhance cosmetic appearance, and reduce overall production time.
+              Metal 3D baskı için temel kılavuzlarımız, parça üretilebilirliğini
+              iyileştirmeye, kozmetik görünümü geliştirmeye ve genel üretim
+              süresini azaltmaya yardımcı olacak önemli tasarım hususlarını
+              içerir.
             </p>
           </div>
 
@@ -614,17 +622,17 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1221] mb-4">
-                Print it Better
+                Daha İyi Baskı Alın
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto lg:mx-0"></div>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                Get high quality 3D-printed parts fast with support from
-                engineers who know additive inside and out. Build
-                high-performing, reliable parts with six 3D printing
-                technologies and 60+ materials.
+                Eklemeli üretimi enine boyuna bilen mühendislerin desteğiyle
+                yüksek kaliteli 3D baskılı parçaları hızlıca alın. Altı 3D baskı
+                teknolojisi ve 60'ın üzerinde malzeme ile yüksek performanslı,
+                güvenilir parçalar üretin.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Learn More
+                Daha Fazla Bilgi
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -633,7 +641,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
               <div className="text-center">
                 <span className="text-6xl">🖨️</span>
-                <p className="text-gray-500 text-sm mt-2">3D Printing</p>
+                <p className="text-gray-500 text-sm mt-2">3D Baskı</p>
               </div>
             </div>
           </div>
@@ -644,7 +652,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Compare Material Properties
+              Malzeme Özelliklerini Karşılaştır
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
           </div>
@@ -658,7 +666,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              US
+              ABD
             </button>
             <button
               onClick={() => setUnit("metric")}
@@ -667,7 +675,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Metric
+              Metrik
             </button>
           </div>
 
@@ -677,26 +685,26 @@ export default function page() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[180px]">
-                    Materials
+                    Malzemeler
                   </th>
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[100px]">
-                    Resolution
+                    Çözünürlük
                   </th>
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[180px]">
-                    Condition
+                    Durum
                   </th>
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[120px]">
-                    Ultimate Tensile Strength{" "}
+                    Maksimum Çekme Mukavemeti{" "}
                     {unit === "us" ? "(ksi)" : "(MPa)"}
                   </th>
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[100px]">
-                    Yield Stress {unit === "us" ? "(ksi)" : "(MPa)"}
+                    Akma Gerilmesi {unit === "us" ? "(ksi)" : "(MPa)"}
                   </th>
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[80px]">
-                    Elongation (%)
+                    Uzama (%)
                   </th>
                   <th className="text-left p-3 font-semibold min-w-[100px]">
-                    Hardness
+                    Sertlik
                   </th>
                 </tr>
               </thead>
@@ -724,22 +732,22 @@ export default function page() {
           <div className="mt-6 p-4 bg-[#F0F8FF] rounded-lg">
             <p className="text-sm text-gray-600">
               <span className="font-semibold">
-                20 µm = high resolution (HR)
+                20 µm = yüksek çözünürlük (HR)
               </span>
               <br />
-              30, 40, and 60 µm = normal resolution (NR)
+              30, 40 ve 60 µm = normal çözünürlük (NR)
             </p>
           </div>
 
           {/* Disclaimer */}
           <div className="mt-4 p-4 bg-gray-50 rounded-lg">
             <p className="text-xs text-gray-500 italic">
-              These figures are approximate and dependent on a number of
-              factors, including but not limited to, machine and process
-              parameters. The information provided is therefore not binding and
-              not deemed to be certified. When performance is critical, also
-              consider independent lab testing of additive materials or final
-              parts.
+              Bu rakamlar yaklaşıktır ve makine ve süreç parametreleriyle
+              sınırlı olmamak üzere bir dizi faktöre bağlıdır. Bu nedenle
+              sağlanan bilgiler bağlayıcı değildir ve sertifikalı olarak kabul
+              edilmez. Performans kritik olduğunda, eklemeli malzemelerin veya
+              nihai parçaların bağımsız laboratuvar testlerini de göz önünde
+              bulundurun.
             </p>
           </div>
         </div>

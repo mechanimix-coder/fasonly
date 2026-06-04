@@ -10,12 +10,10 @@ export default function SheetMetalFabrication() {
   return (
     <div className="w-full pt-10 bg-white">
       <ServicesHero
-        title=" Online Custom Sheet Metal Fabrication Service"
-        desc="Sheet metal components and assemblies in as fast as 1 day. Get
-                an online quote for your prototype or low-volume production
-                project today."
+        title=" Çevrimiçi Özel Sac Metal İmalat Hizmeti"
+        desc="Sac metal bileşenler ve montajlar 1 gün kadar kısa sürede. Bugün prototip veya düşük hacimli üretim projeniz için çevrimiçi teklif alın."
         image="/Assets/Images/services/injection-molding/complexity.webp"
-        firstButton={{ title: "Get a Quote", route: "/" }}
+        firstButton={{ title: "Teklif Al", route: "/" }}
         secondButton={{ title: "Malzemeleri İncele", route: "/" }}
       />
 
@@ -24,18 +22,19 @@ export default function SheetMetalFabrication() {
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Sheet Metal Fabrication Capabilities
+              Sac Metal İmalat Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our online sheet metal fabrication service enables you to get a
-              quote in minutes and have your parts delivered in days. We offer
-              3D visualized Design for Manufacturability (DFM) feedback to help
-              you manage project costs and receive actionable design insights.
-              With a broad range of fabrication and finishing capabilities, our
-              powerful combination of technology and skilled operators produce
-              precision quality parts whether your project has one component or
-              many.
+              Çevrimiçi sac metal imalat hizmetimiz, dakikalar içinde teklif
+              almanızı ve parçalarınızın günler içinde teslim edilmesini sağlar.
+              Proje maliyetlerini yönetmenize ve uygulanabilir tasarım
+              içgörüleri elde etmenize yardımcı olmak için 3D görselleştirilmiş
+              Üretilebilirlik İçin Tasarım (DFM) geri bildirimi sunuyoruz. Geniş
+              bir imalat ve yüzey işlem yetenekleri yelpazesi ile teknoloji ve
+              yetenekli operatörlerin güçlü kombinasyonumuz, projeniz tek bir
+              bileşenden oluşsa veya birçoğundan oluşsa da hassas kaliteli
+              parçalar üretir.
             </p>
           </div>
 
@@ -50,15 +49,15 @@ export default function SheetMetalFabrication() {
               </div>
               <div className="flex-1 p-6 md:p-8">
                 <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
-                  Laser Cutting
+                  Lazer Kesim
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Laser cutting is a subtractive manufacturing process that uses
-                  a high-powered and focused laser beam to create precise cuts
-                  in sheet metal materials.
+                  Lazer kesim, sac metal malzemelerde hassas kesimler oluşturmak
+                  için yüksek güçlü ve odaklanmış bir lazer ışını kullanan bir
+                  çıkarımlı üretim sürecidir.
                 </p>
                 <button className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                  Learn More
+                  Daha Fazla Bilgi
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -73,15 +72,15 @@ export default function SheetMetalFabrication() {
               </div>
               <div className="flex-1 p-6 md:p-8">
                 <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
-                  Forming and Bending
+                  Şekillendirme ve Bükme
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Press brake forming uses a matching punch and die set and the
-                  application of force along a straight axis, producing linear
-                  bends on metal sheets.
+                  Pres freni şekillendirme, eşleşen bir zımba ve kalıp seti ile
+                  düz bir eksen boyunca kuvvet uygulayarak metal levhalar
+                  üzerinde doğrusal bükümler üretir.
                 </p>
                 <button className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                  Learn More
+                  Daha Fazla Bilgi
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -96,15 +95,16 @@ export default function SheetMetalFabrication() {
               </div>
               <div className="flex-1 p-6 md:p-8">
                 <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
-                  Punching
+                  Zımbalama
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Punching is a process that combines a punch tool with a bottom
-                  die and uses a pressing force to cut part profiles and form
-                  metal sheets into specific shapes and patterns.
+                  Zımbalama, bir zımba takımını alt kalıpla birleştiren ve parça
+                  profillerini kesmek ve metal levhaları belirli şekil ve
+                  desenlere dönüştürmek için presleme kuvveti kullanan bir
+                  süreçtir.
                 </p>
                 <button className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                  Learn More
+                  Daha Fazla Bilgi
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -119,15 +119,15 @@ export default function SheetMetalFabrication() {
               </div>
               <div className="flex-1 p-6 md:p-8">
                 <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
-                  Fabricated Assemblies
+                  Fabrikasyon Montajlar
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Sheet metal assemblies involve joining multiple sheet metal
-                  components through a variety of processes, such as welding or
-                  riveting, to create an assembled final product.
+                  Sac metal montajları, monte edilmiş bir nihai ürün oluşturmak
+                  için kaynak veya perçinleme gibi çeşitli süreçlerle birden
+                  fazla sac metal bileşenin birleştirilmesini içerir.
                 </p>
                 <button className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                  Learn More
+                  Daha Fazla Bilgi
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -148,18 +148,19 @@ export default function SheetMetalFabrication() {
             {/* Right Column - Content */}
             <div className="flex-1 text-center md:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Sheet Metal Quoting with Fasonly
+                Fasonly ile Sac Metal Teklif Alma
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto md:mx-0"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Our online quoting platform for sheet metal fabrication lets you
-                upload, configure, and order your sheet metal project in a
-                fraction of the time of traditional quoting methods. This guide
-                provides a look into the key elements of the platform so you can
-                complete your order to your exact specifications.
+                Sac metal imalatı için çevrimiçi teklif platformumuz, sac metal
+                projenizi geleneksel teklif yöntemlerinin çok daha kısa bir
+                süresinde yüklemenize, yapılandırmanıza ve sipariş etmenize
+                olanak tanır. Bu kılavuz, platformun kilit unsurlarına bir bakış
+                sağlayarak siparişinizi tam spesifikasyonlarınıza göre
+                tamamlayabilmenizi sağlar.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-2.5 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Learn More
+                Daha Fazla Bilgi
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -177,17 +178,17 @@ export default function SheetMetalFabrication() {
             {/* Left Column - Text */}
             <div className="flex-1 text-center md:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                How Does Sheet Metal Fabrication Work?
+                Sac Metal İmalatı Nasıl Çalışır?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto md:mx-0"></div>
               <p className="text-gray-600 leading-relaxed">
-                During the sheet metal fabrication process, thin sheet metal
-                stock is placed on a flat bed where a laser cutter (1) draws
-                programmed part patterns. Depending on the part geometry, a
-                sheet metal punch (2) can form additional features. Once the
-                parts are deburred, they move to the press brake (3) where they
-                are formed into the final geometries. Additional secondary
-                operations are often used to finish the sheet metal parts.
+                Sac metal imalat süreci sırasında, ince sac metal stoku, bir
+                lazer kesicinin (1) programlanmış parça desenlerini çizdiği düz
+                bir yatağa yerleştirilir. Parça geometrisine bağlı olarak, bir
+                sac metal zımba (2) ek özellikler oluşturabilir. Parçaların
+                çapağı alındıktan sonra, nihai geometrilere şekillendirildikleri
+                pres frenine (3) taşınırlar. Sac metal parçaları bitirmek için
+                genellikle ek ikincil işlemler kullanılır.
               </p>
             </div>
 
@@ -214,7 +215,7 @@ export default function SheetMetalFabrication() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    What is Sheet Metal Fabrication?
+                    Sac Metal İmalatı Nedir?
                   </p>
                 </div>
               </div>
@@ -223,29 +224,28 @@ export default function SheetMetalFabrication() {
             {/* Right Column - Text */}
             <div className="flex-1 text-center md:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                What is Sheet Metal Fabrication?
+                Sac Metal İmalatı Nedir?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto md:mx-0"></div>
               <p className="text-gray-600 leading-relaxed">
-                The sheet metal fabrication process is ideal for metal
-                components and can support both prototyping and production
-                quantities.
+                Sac metal imalat süreci metal bileşenler için idealdir ve hem
+                prototipleme hem de üretim miktarlarını destekleyebilir.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center gap-3 justify-center md:justify-start">
                   <Check className="w-5 h-5 text-[#96E92A]" />
-                  <span className="text-gray-600">Low material waste</span>
+                  <span className="text-gray-600">Düşük malzeme israfı</span>
                 </li>
                 <li className="flex items-center gap-3 justify-center md:justify-start">
                   <Check className="w-5 h-5 text-[#96E92A]" />
                   <span className="text-gray-600">
-                    Can cost-effectively scale to production volumes
+                    Üretim hacimlerine uygun maliyetle ölçeklenebilir
                   </span>
                 </li>
                 <li className="flex items-center gap-3 justify-center md:justify-start">
                   <Check className="w-5 h-5 text-[#96E92A]" />
                   <span className="text-gray-600">
-                    Multiple finishing options like anodizing and powder coating
+                    Anodizasyon ve toz boya gibi çoklu yüzey işlem seçenekleri
                   </span>
                 </li>
               </ul>
@@ -257,20 +257,20 @@ export default function SheetMetalFabrication() {
             {/* Left Column - Text with Buttons */}
             <div className="flex-1 text-center md:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Advantages of Sheet Metal Fabrication
+                Sac Metal İmalatının Avantajları
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto md:mx-0"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                The sheet metal fabrication process is ideal for metal
-                components and can support both prototyping and production
-                quantities with high efficiency and precision.
+                Sac metal imalat süreci metal bileşenler için idealdir ve yüksek
+                verimlilik ve hassasiyetle hem prototipleme hem de üretim
+                miktarlarını destekleyebilir.
               </p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <button className="bg-[#0B1221] hover:bg-[#1a2a3a] text-white font-medium px-5 py-2.5 rounded-lg transition-all duration-300">
-                  View Countersink Chart
+                  Havşa Tablosunu Görüntüle
                 </button>
                 <button className="border-2 border-[#0B1221] hover:bg-[#0B1221] hover:text-white text-[#0B1221] font-medium px-5 py-2.5 rounded-lg transition-all duration-300">
-                  View Design Guideline
+                  Tasarım Kılavuzunu Görüntüle
                 </button>
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function SheetMetalFabrication() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Sheet Metal Process Overview
+                    Sac Metal Süreci Genel Bakış
                   </p>
                 </div>
               </div>
@@ -302,19 +302,19 @@ export default function SheetMetalFabrication() {
             {/* Left Column - Content */}
             <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Design for Manufacturability (DFM) Feedback on Every Sheet Metal
-                Quote
+                Her Sac Metal Teklifinde Üretilebilirlik İçin Tasarım (DFM) Geri
+                Bildirimi
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto lg:mx-0"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                We now offer automated design analysis for all sheet metal
-                components, which highlights any features that may pose
-                challenges during the fabrication process. DFM feedback that can
-                improve the quality of your sheet metal parts is now delivered
-                in minutes.
+                Artık tüm sac metal bileşenler için otomatik tasarım analizi
+                sunuyoruz; bu analiz, imalat süreci sırasında zorluk
+                çıkarabilecek özellikleri vurgular. Sac metal parçalarınızın
+                kalitesini iyileştirebilecek DFM geri bildirimi artık dakikalar
+                içinde sunulmaktadır.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Start a Project
+                Proje Başlat
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -343,24 +343,24 @@ export default function SheetMetalFabrication() {
             {/* Right Column - Content */}
             <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Sheet Metal Applications
+                Sac Metal Uygulamaları
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto lg:mx-0"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Sheet metal is a versatile manufacturing process for a range of
-                metal components. The process can support high-volume commodity
-                products and low-volume, one-of-a-kind applications. Common
-                sheet metal parts include:
+                Sac metal, bir dizi metal bileşen için çok yönlü bir üretim
+                sürecidir. Süreç, yüksek hacimli ticari ürünleri ve düşük
+                hacimli, benzersiz uygulamaları destekleyebilir. Yaygın sac
+                metal parçalar şunları içerir:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
                 {[
-                  "Electrical enclosure",
-                  "Parts for computer electronics",
-                  "Chassis",
-                  "Brackets",
-                  "Cabinets",
-                  "Mounts",
-                  "Appliances",
+                  "Elektrik muhafazası",
+                  "Bilgisayar elektroniği parçaları",
+                  "Şasi",
+                  "Braketler",
+                  "Dolaplar",
+                  "Montaj parçaları",
+                  "Ev aletleri",
                 ].map((item, idx) => (
                   <div
                     key={idx}
@@ -389,9 +389,9 @@ export default function SheetMetalFabrication() {
 
             {/* Quote Text */}
             <p className="text-xl md:text-2xl lg:text-3xl text-[#0B1221] leading-relaxed mb-6 italic font-medium">
-              &quot;Partnering with Fasonly was easy. We ended up with high
-              fidelity hardware at a bargain price on a very competitive
-              schedule.&quot;
+              &quot;Fasonly ile ortaklık kurmak çok kolaydı. Çok rekabetçi bir
+              programa karşılık uygun fiyata yüksek kaliteli donanım elde
+              ettik.&quot;
             </p>
 
             {/* Divider */}
@@ -399,7 +399,7 @@ export default function SheetMetalFabrication() {
 
             {/* Author */}
             <p className="text-[#0B1221] font-semibold">
-              — CHRIS CLOUTIER, ADVANCED PROGRAMS PROTOTYPE LEAD
+              — CHRIS CLOUTIER, GELİŞMİŞ PROGRAMLAR PROTOTİP LİDERİ
             </p>
             <p className="text-gray-500 text-sm mt-1">LOCKHEED MARTIN</p>
           </div>
@@ -411,18 +411,18 @@ export default function SheetMetalFabrication() {
             {/* Left Column - Content */}
             <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Our Sheet Metal Material Options
+                Sac Metal Malzeme Seçeneklerimiz
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto lg:mx-0"></div>
 
               <div className="space-y-3 mb-6">
                 {[
-                  "Aluminum (1)",
-                  "Brass (2)",
-                  "Copper (3)",
-                  "Stainless Steel (4)",
-                  "Steel: CR Non-treated (5)",
-                  "Steel: CR Galvanneal and CR Galvanized (6)",
+                  "Alüminyum (1)",
+                  "Pirinç (2)",
+                  "Bakır (3)",
+                  "Paslanmaz Çelik (4)",
+                  "Çelik: CR İşlem Görmemiş (5)",
+                  "Çelik: CR Galvanizli Tavlanmış ve CR Galvanizli (6)",
                 ].map((material, idx) => (
                   <div
                     key={idx}
@@ -434,7 +434,8 @@ export default function SheetMetalFabrication() {
               </div>
 
               <button className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                Learn more about Fasonly' sheet metal materials →
+                Fasonly'nin sac metal malzemeleri hakkında daha fazla bilgi
+                edinin →
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -474,7 +475,7 @@ export default function SheetMetalFabrication() {
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Why Choose Fasonly for Sheet Metal Parts?
+              Neden Sac Metal Parçalar için Fasonly'yi Seçmelisiniz?
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -498,13 +499,13 @@ export default function SheetMetalFabrication() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Fast and Simple Online Quoting
+                Hızlı ve Basit Çevrimiçi Teklif Alma
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Our easy-to-use interface offers an average one-day
-                upload-to-quote lead time (simple design quoting in as fast as
-                one hour). Easily configure part specifications like material
-                selection, and finishing options.
+                Kullanımı kolay arayüzümüz, ortalama bir gün yüklemeden teklife
+                teslim süresi sunar (basit tasarım teklifi 1 saat kadar kısa
+                sürede). Malzeme seçimi ve yüzey işlem seçenekleri gibi parça
+                özelliklerini kolayca yapılandırın.
               </p>
             </div>
 
@@ -525,10 +526,11 @@ export default function SheetMetalFabrication() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Reliable Delivery
+                Güvenilir Teslimat
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Quality parts delivered within our five-day standard lead time.
+                Beş günlük standart teslim süremiz içinde teslim edilen kaliteli
+                parçalar.
               </p>
             </div>
 
@@ -549,11 +551,11 @@ export default function SheetMetalFabrication() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Expansive Capacity
+                Geniş Kapasite
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                With more than 200 machines all under one roof, we're dedicated
-                to continuously evolving our capabilities.
+                Tek bir çatı altında 200'den fazla makine ile yeteneklerimizi
+                sürekli geliştirmeye kendimizi adadık.
               </p>
             </div>
 
@@ -574,12 +576,13 @@ export default function SheetMetalFabrication() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Domestic Production
+                Yerli Üretim
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                All sheet metal parts are made in New Hampshire with secondary
-                operations such as hardware placement, welding, and finishing
-                done in-house or locally by an approved vendor.
+                Tüm sac metal parçalar New Hampshire'da üretilir ve donanım
+                yerleştirme, kaynak ve yüzey işlem gibi ikincil işlemler şirket
+                içinde veya yerel olarak onaylı bir tedarikçi tarafından
+                yapılır.
               </p>
             </div>
 
@@ -600,12 +603,12 @@ export default function SheetMetalFabrication() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Sheet Metal Technical Expertise
+                Sac Metal Teknik Uzmanlığı
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Work with our team of engineering experts that offer technical
-                design guidance and can inform you on manufacturability and
-                cost-saving opportunities.
+                Teknik tasarım rehberliği sunan ve sizi üretilebilirlik ve
+                maliyet tasarrufu fırsatları hakkında bilgilendirebilen
+                mühendislik uzmanları ekibimizle çalışın.
               </p>
             </div>
           </div>
@@ -624,17 +627,17 @@ export default function SheetMetalFabrication() {
             {/* Right Column - Content */}
             <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Sheet Metal Finishing Options
+                Sac Metal Yüzey İşlem Seçenekleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto lg:mx-0"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Looking for more than a few basic sheet metal parts? We offer
-                welding, hardware insertion, plating, silk screening, and powder
-                coating to provide complete sheet metal components all under one
-                roof.
+                Birkaç temel sac metal parçadan daha fazlasını mı arıyorsunuz?
+                Tek bir çatı altında eksiksiz sac metal bileşenler sağlamak için
+                kaynak, donanım yerleştirme, kaplama, ipek baskı ve toz boya
+                sunuyoruz.
               </p>
               <button className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                View Finishing Options
+                Yüzey İşlem Seçeneklerini Görüntüle
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -642,8 +645,8 @@ export default function SheetMetalFabrication() {
         </div>
       </div>
       <GuideDownload
-        title="Sheet Metal Surface Finish Guide"
-        desc="Check out our sheet metal guide for a quick snapshot of our Standard and Cosmetic finishing options available for various sheet metal materials."
+        title="Sac Metal Yüzey İşlem Kılavuzu"
+        desc="Çeşitli sac metal malzemeler için mevcut Standart ve Kozmetik yüzey işlem seçeneklerimizin hızlı bir özeti için sac metal kılavuzumuza göz atın."
       />
       <Blog />
     </div>

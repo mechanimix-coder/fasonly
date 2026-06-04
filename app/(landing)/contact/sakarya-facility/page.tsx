@@ -79,7 +79,7 @@ export default function SakaryaFacility() {
   ];
 
   return (
-    <div className="w-full pt-32 pb-20 bg-white">
+    <div className="w-full pt-32 pb-36 bg-white">
       <div className="container mx-auto px-4 md:px-10 lg:px-20">
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-20">

@@ -11,73 +11,73 @@ export default function page() {
 
   const tables = {
     standard: {
-      title: "Standard Inspection Report",
+      title: "Standart Denetim Raporu",
       headers: [
-        "Benefits",
-        "Measurements",
-        "Additional Features",
-        "Eligibility",
-        "Additional Lead Time",
-        "Sample Plan",
+        "Faydalar",
+        "Ölçümler",
+        "Ek Özellikler",
+        "Uygunluk",
+        "Ek Teslim Süresi",
+        "Örneklem Planı",
       ],
       rows: [
         [
-          "Includes a dimensional report of requested features",
-          "Bubbled/CTQ dimensions if indicated, otherwise all tolerated dimensions",
-          "Formatted report with bubbled part image and result summary chart",
-          "All 3D printing technologies",
-          "Two business days or more depending on inspection requirements",
-          "One part per geometry, unless otherwise specified",
+          "İstenen özelliklerin boyutsal raporunu içerir",
+          "Belirtilmişse baloncuklu/CTQ boyutları, aksi takdirde tüm toleranslı boyutlar",
+          "Baloncuklu parça görseli ve sonuç özet tablosu içeren biçimlendirilmiş rapor",
+          "Tüm 3D baskı teknolojileri",
+          "Denetim gereksinimlerine bağlı olarak iki iş günü veya daha fazla",
+          "Aksi belirtilmedikçe geometri başına bir parça",
         ],
       ],
       additionalInfo:
-        "Upload a 2D drawing including requested inspection features. Reference Report is informational-only and is not pass/fail. Any features we are unable to measure will be stated in the Manufacturing Analysis of the part.",
+        "İstenen denetim özelliklerini içeren bir 2B çizim yükleyin. Referans Raporu yalnızca bilgilendirme amaçlıdır ve geçer/kalır değildir. Ölçemediğimiz herhangi bir özellik, parçanın Üretim Analizinde belirtilecektir.",
     },
     reference: {
-      title: "Reference Report",
+      title: "Referans Raporu",
       headers: [
-        "Benefits",
-        "Measurements",
-        "Additional Features",
-        "Eligibility",
-        "Additional Lead Time",
-        "Sample Plan",
+        "Faydalar",
+        "Ölçümler",
+        "Ek Özellikler",
+        "Uygunluk",
+        "Ek Teslim Süresi",
+        "Örneklem Planı",
       ],
       rows: [
         [
-          "Includes a pass/fail dimensional report of requested features",
-          "Bubbled/CTQ dimensions if indicated, otherwise all toleranced dimensions",
-          "Formatted report with bubbled part image and result summary chart",
+          "İstenen özelliklerin geçer/kalır boyutsal raporunu içerir",
+          "Belirtilmişse baloncuklu/CTQ boyutları, aksi takdirde tüm toleranslı boyutlar",
+          "Baloncuklu parça görseli ve sonuç özet tablosu içeren biçimlendirilmiş rapor",
           "DMLS, SLS, MJF",
-          "Two business days or more depending on inspection requirements",
-          "One part per geometry, unless otherwise specified",
+          "Denetim gereksinimlerine bağlı olarak iki iş günü veya daha fazla",
+          "Aksi belirtilmedikçe geometri başına bir parça",
         ],
       ],
       additionalInfo:
-        "Reference Report is informational-only and is not pass/fail.",
+        "Referans Raporu yalnızca bilgilendirme amaçlıdır ve geçer/kalır değildir.",
     },
     as9102: {
-      title: "AS9102 First Article Inspection Report",
+      title: "AS9102 İlk Ürün Denetim Raporu",
       headers: [
-        "Benefits",
-        "Measurements",
-        "Additional Features",
-        "Eligibility",
-        "Additional Lead Time",
-        "Sample Plan",
+        "Faydalar",
+        "Ölçümler",
+        "Ek Özellikler",
+        "Uygunluk",
+        "Ek Teslim Süresi",
+        "Örneklem Planı",
       ],
       rows: [
         [
-          "Includes a dimensional report of all features in AS9102 FAIR format",
-          "All dimensions and drawing notes",
-          "Full 3-page AS9102 document and matching bubbled drawing",
+          "AS9102 FAIR formatında tüm özelliklerin boyutsal raporunu içerir",
+          "Tüm boyutlar ve çizim notları",
+          "Tam 3 sayfalık AS9102 belgesi ve eşleşen baloncuklu çizim",
           "DMLS, SLS, MJF",
-          "2-5 business days or more depending on inspection requirements",
-          "One part per geometry",
+          "Denetim gereksinimlerine bağlı olarak 2-5 iş günü veya daha fazla",
+          "Geometri başına bir parça",
         ],
       ],
       additionalInfo:
-        "AS9102 certification is available for selective laser sintering (SLS), Multi Jet Fusion (MJF), and direct metal laser sintering (DMLS).",
+        "AS9102 sertifikası, seçici lazer sinterleme (SLS), Multi Jet Füzyon (MJF) ve doğrudan metal lazer sinterleme (DMLS) için mevcuttur.",
     },
   };
 
@@ -85,11 +85,11 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Processes, Inspections, and Reporting for Quality 3D Printing"
-        desc="How we use digital manufacturing and quality control processes to manufacture accurate parts consistently"
+        title="Kaliteli 3D Baskı için Süreçler, Denetimler ve Raporlama"
+        desc="Doğru parçaları tutarlı bir şekilde üretmek için dijital üretim ve kalite kontrol süreçlerini nasıl kullandığımız"
         image="/Assets/Images/services/3d-printing/quality/hero.webp"
-        firstButton={{ title: "Get Instant Quote", route: "/" }}
-        secondButton={{ title: "View Inspection Options", route: "/" }}
+        firstButton={{ title: "Anında Teklif Al", route: "/" }}
+        secondButton={{ title: "Denetim Seçeneklerini Görüntüle", route: "/" }}
         simple
       />
       <div className="w-full bg-white py-20">
@@ -108,10 +108,10 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
                   <p className="text-gray-300 text-xs mt-1">
-                    Design for Additive Manufacturing Analysis
+                    Eklemeli Üretim için Tasarım Analizi
                   </p>
                 </div>
               </div>
@@ -120,28 +120,28 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Design for Additive Manufacturing Analysis
+                Eklemeli Üretim için Tasarım Analizi
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our dedication to quality is apparent throughout the
-                manufacturing process, and you'll experience it from your first
-                interaction. When you submit a quote, you'll receive an analysis
-                of your 3D printing design.
+                Kaliteye olan bağlılığımız üretim süreci boyunca belirgindir ve
+                bunu ilk etkileşiminizden itibaren deneyimleyeceksiniz. Teklif
+                gönderdiğinizde, 3D baskı tasarımınızın bir analizini
+                alacaksınız.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our automated design for additive manufacturing analysis quickly
-                identifies:
+                Eklemeli üretim için otomatik tasarım analizimiz hızla şunları
+                tanımlar:
               </p>
 
               <ul className="space-y-2 mb-4">
                 {[
-                  "Issues with part size (large or small)",
-                  "Gaps in material that are too small to form without collapsing",
-                  "Inaccessible surfaces to remove excess powder, remove supports, or apply surface finish treatment",
-                  "Text size for optimal text resolution",
+                  "Parça boyutuyla ilgili sorunlar (büyük veya küçük)",
+                  "Çökmeden oluşamayacak kadar küçük malzeme boşlukları",
+                  "Fazla tozu temizlemek, destekleri çıkarmak veya yüzey işlemi uygulamak için erişilemeyen yüzeyler",
+                  "Optimum metin çözünürlüğü için metin boyutu",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -151,10 +151,11 @@ export default function page() {
               </ul>
 
               <p className="text-gray-600 leading-relaxed">
-                If you get one of these advisories, you will also notice that it
-                includes a proposed solution to fix your model. With a single
-                click, you can choose to accept the issue and proceed as-is or
-                go back to redesign and resubmit your model.
+                Bu uyarılardan birini alırsanız, modelinizi düzeltmek için
+                önerilen bir çözüm içerdiğini de fark edeceksiniz. Tek bir
+                tıklamayla, sorunu kabul edip olduğu gibi devam etmeyi veya geri
+                dönüp yeniden tasarlayıp modelinizi yeniden göndermeyi
+                seçebilirsiniz.
               </p>
             </div>
           </div>
@@ -180,18 +181,19 @@ export default function page() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
-                Support from 3D Printing Experts
+                3D Baskı Uzmanlarından Destek
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Discuss your design with a 3D printing applications engineer who
-                can answer any manufacturability questions you might have.
-                Common design review topics include optimizing for cost, feature
-                location and spacing, and questions about finishing options.
+                Tasarımınızı, sahip olabileceğiniz her türlü üretilebilirlik
+                sorusunu yanıtlayabilecek bir 3D baskı uygulama mühendisiyle
+                tartışın. Yaygın tasarım inceleme konuları arasında maliyet
+                optimizasyonu, özellik konumu ve aralığı ile yüzey işlem
+                seçenekleri hakkındaki sorular yer alır.
               </p>
               <a
                 href="#"
                 className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                Schedule a free virtual meeting today →
+                Bugün ücretsiz sanal toplantı planlayın →
               </a>
             </div>
 
@@ -212,19 +214,19 @@ export default function page() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
-                Repeatability and Precision
+                Tekrarlanabilirlik ve Hassasiyet
               </h3>
               <p className="text-gray-600 leading-relaxed mb-3">
-                Our mission is to deliver quality parts every time. To do that,
-                we use clearly documented work standards and procedures. To
-                minimize escapes, our team of skilled additive manufacturing
-                technicians perform in-process quality checks on every unique
-                geometry.
+                Misyonumuz her seferinde kaliteli parçalar teslim etmektir. Bunu
+                yapmak için, açıkça belgelenmiş iş standartları ve prosedürleri
+                kullanıyoruz. Hataları en aza indirmek için, yetenekli eklemeli
+                üretim teknisyenlerinden oluşan ekibimiz her benzersiz
+                geometride süreç içi kalite kontrolleri gerçekleştirir.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Once the part is completed, our quality control experts take
-                over to visually and dimensionally inspect the physical part,
-                ensuring consistency with your 3D model (or print, if included).
+                Parça tamamlandıktan sonra, kalite kontrol uzmanlarımız devralır
+                ve fiziksel parçayı 3B modelinizle (veya varsa çıktınızla)
+                tutarlılığı sağlamak için görsel ve boyutsal olarak denetler.
               </p>
             </div>
           </div>
@@ -236,17 +238,17 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Print it Better
+                Daha İyi Baskı Alın
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Get high quality 3D-printed parts fast with support from
-                engineers who know additive inside and out. Build
-                high-performing, reliable parts with six 3D printing
-                technologies and 60+ materials.
+                Eklemeli üretimi enine boyuna bilen mühendislerin desteğiyle
+                yüksek kaliteli 3D baskılı parçaları hızlıca alın. Altı 3D baskı
+                teknolojisi ve 60'ın üzerinde malzeme ile yüksek performanslı,
+                güvenilir parçalar üretin.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Learn More
+                Daha Fazla Bilgi
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -266,7 +268,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/3d-printing/quality/3dp_brand_campaign_01.jpg"
-                alt="Print it Better"
+                alt="Daha İyi Baskı Alın"
                 fill
                 className="object-cover"
               />
@@ -279,22 +281,22 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Inspection Documentation for 3D-Printed Parts
+              3D Baskılı Parçalar için Denetim Dokümantasyonu
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              All parts undergo a 100% visual inspection as well as part
-              sampling of measurements to verify that basic dimensions meet
-              quoted tolerances. With our AS9100-certified offerings—selective
-              laser sintering (SLS), Multi Jet Fusion (MJF), and direct metal
-              laser sintering (DMLS)—parts are sampled using AQL (Acceptable
-              Quality Limit) level II as part of our manufacturing process.
+              Tüm parçalar %100 görsel denetime ve temel boyutların teklif
+              edilen toleransları karşıladığını doğrulamak için parça örnekleme
+              ölçümlerine tabi tutulur. AS9100 sertifikalı tekliflerimizle -
+              seçici lazer sinterleme (SLS), Multi Jet Füzyon (MJF) ve doğrudan
+              metal lazer sinterleme (DMLS) - parçalar, üretim sürecimizin bir
+              parçası olarak AQL (Kabul Edilebilir Kalite Limiti) seviye II
+              kullanılarak örneklenir.
             </p>
             <p className="text-gray-600 leading-relaxed mt-3">
-              If you need a report, we offer three different options, plus a
-              comprehensive Build Report. Compare the benefits of each
-              inspection report to see which is best suited for your project
-              needs.
+              Bir rapora ihtiyacınız varsa, üç farklı seçenek ve kapsamlı bir
+              Yapı Raporu sunuyoruz. Proje ihtiyaçlarınıza en uygun olanı görmek
+              için her denetim raporunun faydalarını karşılaştırın.
             </p>
           </div>
 
@@ -307,7 +309,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Standard Report
+              Standart Rapor
             </button>
             <button
               onClick={() => setActiveTab("reference")}
@@ -316,7 +318,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Reference Report
+              Referans Raporu
             </button>
             <button
               onClick={() => setActiveTab("as9102")}
@@ -367,9 +369,7 @@ export default function page() {
           {/* Additional Information */}
           <div className="mt-6 p-4 bg-[#F0F8FF] rounded-lg">
             <p className="text-gray-600 text-sm leading-relaxed">
-              <span className="font-semibold text-[#0B1221]">
-                Additional Information:
-              </span>{" "}
+              <span className="font-semibold text-[#0B1221]">Ek Bilgiler:</span>{" "}
               {currentTable.additionalInfo}
             </p>
           </div>
@@ -382,28 +382,29 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Reference Report
+                Referans Raporu
               </h3>
               <p className="text-gray-600 leading-relaxed mb-3">
-                Typically, a Reference Report is used if you want to get
-                feedback on a part compared to any drawing you include but it
-                cannot be used for pass/fail inspections. We provide a Reference
-                Report for all of our 3D printing technologies.
+                Tipik olarak, Referans Raporu, dahil ettiğiniz herhangi bir
+                çizime göre bir parça hakkında geri bildirim almak istiyorsanız
+                kullanılır, ancak geçer/kalır denetimleri için kullanılamaz. Tüm
+                3D baskı teknolojilerimiz için bir Referans Raporu sunuyoruz.
               </p>
               <h3 className="text-2xl font-bold text-[#0B1221] mt-6 mb-4">
-                Dimensional Inspection Report (DIR)
+                Boyutsal Denetim Raporu (DIR)
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                A DIR is a standard inspection tool used to compare parts to a
-                drawing and provide a pass/fail result, which then requires
-                customer feedback on any failures. There are no limits to the
-                number of dimensions we measure, but any extra evaluation will
-                increase work time and thus increase the lead time and price of
-                your parts. While we use one part for the standard inspection,
-                more parts can be inspected on request, adding lead time and
-                cost. Due to the nature of the material, we are not able to
-                offer a DIR for stereolithography (SLA), PolyJet, and advanced
-                photopolymer (AP) technologies.
+                DIR, parçaları bir çizimle karşılaştırmak ve geçer/kalır sonucu
+                sağlamak için kullanılan standart bir denetim aracıdır ve bu
+                durum herhangi bir başarısızlık için müşteri geri bildirimi
+                gerektirir. Ölçtüğümüz boyut sayısında bir sınır yoktur, ancak
+                herhangi bir ek değerlendirme çalışma süresini artıracak ve
+                dolayısıyla parçalarınızın teslim süresini ve fiyatını
+                artıracaktır. Standart denetim için bir parça kullanırken, talep
+                üzerine daha fazla parça denetlenebilir, bu da teslim süresi ve
+                maliyet ekler. Malzemenin doğası gereği, stereolitografi (SLA),
+                PolyJet ve gelişmiş fotopolimer (AP) teknolojileri için DIR
+                sunamıyoruz.
               </p>
             </div>
 
@@ -411,7 +412,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-[500px] rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/3d-printing/quality/frame-1-2.jpg"
-                alt="Inspection Reports"
+                alt="Denetim Raporları"
                 fill
                 className="object-cover"
               />
@@ -424,7 +425,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-[500px] rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/3d-printing/quality/frame-3-3.jpg"
-                alt="Build Report and AS9102 FAI"
+                alt="Yapı Raporu ve AS9102 FAI"
                 fill
                 className="object-cover"
               />
@@ -433,25 +434,26 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Build Report
+                Yapı Raporu
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                For SLS, MJF, and DMLS parts we offer a Build Report, which
-                compiles your DIR with a comprehensive list of the information
-                from the build process. These include, but are not limited to
-                lot numbers, build numbers, over cycles, certificates of
-                conformance, and certifications for outsourced processes.
+                SLS, MJF ve DMLS parçaları için, DIR'inizi yapı sürecinden
+                alınan bilgilerin kapsamlı bir listesiyle birleştiren bir Yapı
+                Raporu sunuyoruz. Bunlar, parti numaraları, yapı numaraları,
+                döngüler, uygunluk sertifikaları ve dış kaynaklı süreçler için
+                sertifikaları içerir ancak bunlarla sınırlı değildir.
               </p>
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                AS9102 First Article Inspection (FAI)
+                AS9102 İlk Ürün Denetimi (FAI)
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                The AS9102 FAI is a more stringent report which validates the
-                actual process used to make parts. Fasonly quality control will
-                inspect 100% of dimensions provided on a 2D drawing, including
-                GD&T. AS9102 is an industry standard format often required in
-                the aerospace industry, but other fields can use it, too. It is
-                significantly more intense from a completion standpoint.
+                AS9102 FAI, parçaları yapmak için kullanılan gerçek süreci
+                doğrulayan daha sıkı bir rapordur. Fasonly kalite kontrol, GD&T
+                dahil olmak üzere 2B çizimde sağlanan boyutların %100'ünü
+                denetleyecektir. AS9102, genellikle havacılık endüstrisinde
+                gerekli olan bir endüstri standardı formatıdır, ancak diğer
+                alanlar da kullanabilir. Tamamlanma açısından önemli ölçüde daha
+                yoğundur.
               </p>
             </div>
           </div>

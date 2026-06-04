@@ -269,18 +269,18 @@ export default function Header() {
                         name: "Sıvı Silikon Kauçuk Kalıplama",
                         link: "/services/injection-molding/liquid-silicone-rubber-molding",
                       },
-                      // {
-                      //   name: "Kaplama Kalıplama",
-                      //   link: "/services/injection-molding/overmolding",
-                      // },
-                      // {
-                      //   name: "Gömme Parçalı Kalıplama",
-                      //   link: "/services/injection-molding/insert-molding",
-                      // },
-                      // {
-                      //   name: "Aile ve Çok Gözlü Kalıplama",
-                      //   link: "/services/injection-molding/family-multi-cavity",
-                      // },
+                      {
+                        name: "Kaplama Kalıplama",
+                        link: "/services/injection-molding/overmolding",
+                      },
+                      {
+                        name: "Gömme Parçalı Kalıplama",
+                        link: "/services/injection-molding/insert-molding",
+                      },
+                      {
+                        name: "Aile ve Çok Gözlü Kalıplama",
+                        link: "/services/injection-molding/family-multi-cavity",
+                      },
                       {
                         name: "Prototipleme",
                         link: "/services/injection-molding/prototyping",
@@ -289,14 +289,14 @@ export default function Header() {
                         name: "Seri Üretim",
                         link: "/services/injection-molding/production",
                       },
-                      // {
-                      //   name: "Kalite",
-                      //   link: "/services/injection-molding/quality",
-                      // },
-                      // {
-                      //   name: "İkincil Operasyonlar",
-                      //   link: "/services/injection-molding/secondary-operations",
-                      // },
+                      {
+                        name: "Kalite",
+                        link: "/services/injection-molding/quality",
+                      },
+                      {
+                        name: "İkincil Operasyonlar",
+                        link: "/services/injection-molding/secondary-operations",
+                      },
                     ].map((item, idx) => (
                       <li key={idx}>
                         <Link
@@ -330,18 +330,18 @@ export default function Header() {
                         name: "Seri Üretim İşleme",
                         link: "/services/cnc-machining/production-machining",
                       },
-                      // {
-                      //   name: "Diş Açma Seçenekleri",
-                      //   link: "/services/cnc-machining/threading-options",
-                      // },
-                      // {
-                      //   name: "Kalite",
-                      //   link: "/services/cnc-machining/quality",
-                      // },
-                      // {
-                      //   name: "Yüzey İşlem Seçenekleri",
-                      //   link: "/services/cnc-machining/finishing-options",
-                      // },
+                      {
+                        name: "Diş Açma Seçenekleri",
+                        link: "/services/cnc-machining/threading-options",
+                      },
+                      {
+                        name: "Kalite",
+                        link: "/services/cnc-machining/quality",
+                      },
+                      {
+                        name: "Yüzey İşlem Seçenekleri",
+                        link: "/services/cnc-machining/finishing-options",
+                      },
                     ].map((item, idx) => (
                       <li key={idx}>
                         <Link
@@ -371,39 +371,39 @@ export default function Header() {
                         name: "Stereolitografi",
                         link: "/services/3d-printing/stereolithography",
                       },
-                      // {
-                      //   name: "Multi Jet Fusion",
-                      //   link: "/services/3d-printing/multi-jet-fusion",
-                      // },
+                      {
+                        name: "Multi Jet Fusion",
+                        link: "/services/3d-printing/multi-jet-fusion",
+                      },
                       {
                         name: "Seçici Lazer Sinterleme",
                         link: "/services/3d-printing/selective-laser-sintering",
                       },
-                      // {
-                      //   name: "PolyJet",
-                      //   link: "/services/3d-printing/polyjet",
-                      // },
-                      // {
-                      //   name: "Gelişmiş Fotopolimerler",
-                      //   link: "/services/3d-printing/advanced-photopolymers",
-                      // },
+                      {
+                        name: "PolyJet",
+                        link: "/services/3d-printing/polyjet",
+                      },
+                      {
+                        name: "Gelişmiş Fotopolimerler",
+                        link: "/services/3d-printing/advanced-photopolymers",
+                      },
                       {
                         name: "Fused Deposition Modeling",
                         link: "/services/3d-printing/fused-deposition-modeling",
                       },
-                      // {
-                      //   name: "Seri Üretim",
-                      //   link: "/services/3d-printing/production",
-                      // },
-                      // {
-                      //   name: "Büyük Format",
-                      //   link: "/services/3d-printing/large-format",
-                      // },
-                      // { name: "Kalite", link: "/services/3d-printing/quality" },
-                      // {
-                      //   name: "Yüzey İşlem Seçenekleri",
-                      //   link: "/services/3d-printing/finishing-options",
-                      // },
+                      {
+                        name: "Seri Üretim",
+                        link: "/services/3d-printing/production",
+                      },
+                      {
+                        name: "Büyük Format",
+                        link: "/services/3d-printing/large-format",
+                      },
+                      { name: "Kalite", link: "/services/3d-printing/quality" },
+                      {
+                        name: "Yüzey İşlem Seçenekleri",
+                        link: "/services/3d-printing/finishing-options",
+                      },
                     ].map((item, idx) => (
                       <li key={idx}>
                         <Link
@@ -429,18 +429,18 @@ export default function Header() {
                         name: "Lazer Kesim",
                         link: "/services/sheet-metal-fabrication/laser-cutting",
                       },
-                      // {
-                      //   name: "Zımbalama",
-                      //   link: "/services/sheet-metal-fabrication/punching",
-                      // },
+                      {
+                        name: "Zımbalama",
+                        link: "/services/sheet-metal-fabrication/punching",
+                      },
                       {
                         name: "Şekillendirme ve Bükme",
                         link: "/services/sheet-metal-fabrication/forming-bending",
                       },
-                      // {
-                      //   name: "Birleştirilmiş Montajlar",
-                      //   link: "/services/sheet-metal-fabrication/assemblies",
-                      // },
+                      {
+                        name: "Birleştirilmiş Montajlar",
+                        link: "/services/sheet-metal-fabrication/assemblies",
+                      },
                       {
                         name: "Prototipleme",
                         link: "/services/sheet-metal-fabrication/prototyping",
@@ -449,18 +449,18 @@ export default function Header() {
                         name: "Seri Üretim",
                         link: "/services/sheet-metal-fabrication/production",
                       },
-                      // {
-                      //   name: "Tasarım Kılavuzları",
-                      //   link: "/services/sheet-metal-fabrication/design-guidelines",
-                      // },
-                      // {
-                      //   name: "Kalite",
-                      //   link: "/services/sheet-metal-fabrication/quality",
-                      // },
-                      // {
-                      //   name: "Yüzey İşlem Seçenekleri",
-                      //   link: "/services/sheet-metal-fabrication/finishing-options",
-                      // },
+                      {
+                        name: "Tasarım Kılavuzları",
+                        link: "/services/sheet-metal-fabrication/design-guidelines",
+                      },
+                      {
+                        name: "Kalite",
+                        link: "/services/sheet-metal-fabrication/quality",
+                      },
+                      {
+                        name: "Yüzey İşlem Seçenekleri",
+                        link: "/services/sheet-metal-fabrication/finishing-options",
+                      },
                     ].map((item, idx) => (
                       <li key={idx}>
                         <Link
@@ -606,10 +606,10 @@ export default function Header() {
                         name: "EV/AV Otomotiv Rehberi",
                         link: "/resources/ev-av-automotive-guide",
                       },
-                      // {
-                      //   name: "Sektör Vaka Çalışmaları",
-                      //   link: "/resources/industry-case-studies",
-                      // },
+                      {
+                        name: "Sektör Vaka Çalışmaları",
+                        link: "/resources/industry-case-studies",
+                      },
                     ].map((resource, idx) => (
                       <Link
                         href={resource.link}

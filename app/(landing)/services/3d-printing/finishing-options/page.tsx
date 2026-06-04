@@ -7,8 +7,8 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Post-Processing for 3D Printing"
-        desc="Evaluate standard surface finishes for 3D-printed parts as well as advanced, custom finishing capabilities to improve durability, surface finish, and add color."
+        title="3D Baskı için İşlem Sonrası"
+        desc="3D baskılı parçalar için standart yüzey işlemlerini ve ayrıca dayanıklılığı, yüzey kalitesini iyileştirmek ve renk eklemek için gelişmiş, özel bitirme yeteneklerini değerlendirin."
         simple
       />
 
@@ -19,13 +19,13 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Stereolithography",
-                    "Multi Jet Fusion",
-                    "Selective Laser Sintering",
+                    "Stereolitografi",
+                    "Multi Jet Füzyon",
+                    "Seçici Lazer Sinterleme",
                     "PolyJet",
                     "Carbon DLS",
                   ].map((item, idx) => (
@@ -42,26 +42,24 @@ export default function page() {
 
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
-              {/* What is Plastic Injection Molding? Section */}
-              <div
-                id="about-plastic-injection-molding"
-                className="scroll-mt-32">
+              {/* Post-Processing Introduction Section */}
+              <div id="islem-sonrasi-giris" className="scroll-mt-32">
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  We offer several surface finish and post-processing options
-                  for metal and plastic 3D-printed parts. These options can
-                  range from as-printed with only support structures removed to
-                  custom finishing for highly aesthetic parts.
+                  Metal ve plastik 3D baskılı parçalar için çeşitli yüzey işlem
+                  ve işlem sonrası seçenekleri sunuyoruz. Bu seçenekler,
+                  yalnızca destek yapıları çıkarılmış baskı durumundan, son
+                  derece estetik parçalar için özel bitirmeye kadar değişebilir.
                 </p>
 
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Various post-processing operations can be used to:
+                  Çeşitli işlem sonrası operasyonlar şunlar için kullanılabilir:
                 </h3>
                 <ul className="space-y-2 mb-8">
                   {[
-                    "Reduce surface roughness",
-                    "Add custom color",
-                    "Increase transparency",
-                    "Increase part strength",
+                    "Yüzey pürüzlülüğünü azaltmak",
+                    "Özel renk eklemek",
+                    "Şeffaflığı artırmak",
+                    "Parça mukavemetini artırmak",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -82,17 +80,17 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Print it Better
+                Daha İyi Baskı Alın
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Get high quality 3D-printed parts fast with support from
-                engineers who know additive inside and out. Build
-                high-performing, reliable parts with six 3D printing
-                technologies and 60+ materials.
+                Eklemeli üretimi enine boyuna bilen mühendislerin desteğiyle
+                yüksek kaliteli 3D baskılı parçaları hızlıca alın. Altı 3D baskı
+                teknolojisi ve 60'ın üzerinde malzeme ile yüksek performanslı,
+                güvenilir parçalar üretin.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Learn More
+                Daha Fazla Bilgi
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -112,7 +110,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/3d-printing/quality/3dp_brand_campaign_01.jpg"
-                alt="Print it Better"
+                alt="Daha İyi Baskı Alın"
                 fill
                 className="object-cover"
               />
@@ -125,7 +123,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Surface Finish Options by Technology
+              Teknolojiye Göre Yüzey İşlem Seçenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -133,26 +131,26 @@ export default function page() {
           {/* Metals Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#0B1221] mb-6 pb-2 border-b-2 border-[#96E92A] inline-block">
-              Metals
+              Metaller
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
               <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
                 <div className="relative h-48 w-full bg-gray-100">
                   <Image
                     src="/Assets/Images/services/3d-printing/finishing-options/M1.jpg"
-                    alt="Metals Standard Finish"
+                    alt="Metaller Standart İşlem"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-5">
                   <h4 className="text-xl font-bold text-[#0B1221] mb-2">
-                    Standard
+                    Standart
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Expect roughness values of 200 to 400 μin Ra (0.005 to
-                    0.010mm Ra), depending on material and resolution. Support
-                    structures are removed and layer lines are visible.
+                    Malzeme ve çözünürlüğe bağlı olarak 200 ila 400 μin Ra
+                    (0,005 ila 0,010mm Ra) pürüzlülük değerleri bekleyin. Destek
+                    yapıları çıkarılır ve katman çizgileri görünür.
                   </p>
                 </div>
               </div>
@@ -160,24 +158,24 @@ export default function page() {
                 <div className="relative h-48 w-full bg-gray-100">
                   <Image
                     src="/Assets/Images/services/3d-printing/finishing-options/M2.jpg"
-                    alt="Metals Custom Finish"
+                    alt="Metaller Özel İşlem"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-5">
                   <h4 className="text-xl font-bold text-[#0B1221] mb-2">
-                    Custom
+                    Özel
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed mb-2">
-                    Custom finishing for metal 3D-printed parts includes
-                    post-processing machining, heat treatments, and several
-                    brushed surface finishes in a range of grits.
+                    Metal 3D baskılı parçalar için özel bitirme, işlem sonrası
+                    işleme, ısıl işlemler ve çeşitli tane boyutlarında birkaç
+                    fırçalanmış yüzey kalitesini içerir.
                   </p>
                   <a
                     href="#"
                     className="text-[#0099ff] text-sm font-medium hover:text-[#96E92A] transition-colors">
-                    View a complete list of custom finishing options →
+                    Özel bitirme seçeneklerinin tam listesini görüntüleyin →
                   </a>
                 </div>
               </div>
@@ -187,28 +185,28 @@ export default function page() {
           {/* Plastics - Stereolithography Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#0B1221] mb-6 pb-2 border-b-2 border-[#96E92A] inline-block">
-              Plastics - Stereolithography
+              Plastikler - Stereolitografi
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
               {[
                 {
-                  title: "Unfinished",
-                  desc: "Dots, or standing 'nibs,' remain evident on the bottom of the part from the support structure remnants. Good for when fast lead times are required or cost is a factor.",
+                  title: "Bitmemiş",
+                  desc: "Destek yapısı kalıntılarından parçanın alt kısmında noktalar veya dikenler belirgin kalır. Hızlı teslim süreleri gerektiğinde veya maliyet faktör olduğunda iyidir.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/P1.jpg",
                 },
                 {
-                  title: "Natural",
-                  desc: "Supported surfaces are sanded down to eliminate the support nibs.",
+                  title: "Doğal",
+                  desc: "Destekli yüzeyler, destek dikenlerini ortadan kaldırmak için zımparalanır.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/P2.jpg",
                 },
                 {
-                  title: "Standard",
-                  desc: "Supported surfaces are sanded, and the entire part is finely blasted for a consistent look. Note that the layers are still present.",
+                  title: "Standart",
+                  desc: "Destekli yüzeyler zımparalanır ve tüm parça tutarlı bir görünüm için ince kumlanır. Katmanların hala mevcut olduğunu unutmayın.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/P3.jpg",
                 },
                 {
-                  title: "Custom",
-                  desc: "Soft-touch paint, clear part finishing, painting, masking, color matching, decals/graphics, and texture finishes are available.",
+                  title: "Özel",
+                  desc: "Yumuşak dokunuşlu boya, şeffaf parça bitirme, boyama, maskeleme, renk eşleme, çıkartmalar/grafikler ve doku yüzeyleri mevcuttur.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/P4.jpg",
                 },
               ].map((item, idx) => (
@@ -230,11 +228,11 @@ export default function page() {
                     <p className="text-gray-600 text-sm leading-relaxed">
                       {item.desc}
                     </p>
-                    {item.title === "Custom" && (
+                    {item.title === "Özel" && (
                       <a
                         href="#"
                         className="text-[#0099ff] text-sm font-medium hover:text-[#96E92A] transition-colors mt-2 inline-block">
-                        View custom options →
+                        Özel seçenekleri görüntüle →
                       </a>
                     )}
                   </div>
@@ -246,28 +244,28 @@ export default function page() {
           {/* Multi Jet Fusion Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#0B1221] mb-6 pb-2 border-b-2 border-[#96E92A] inline-block">
-              Multi Jet Fusion
+              Multi Jet Füzyon
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
               {[
                 {
-                  title: "As-printed",
-                  desc: "Parts will be gray in color and slightly rougher in texture compared to standard finish.",
+                  title: "Baskı Durumu",
+                  desc: "Parçalar gri renkte olacak ve standart işleme kıyasla dokuda biraz daha pürüzlü olacaktır.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/MJ1.jpg",
                 },
                 {
-                  title: "Standard",
-                  desc: "A bead blast removes all powder and leaves a consistent overall texture. Parts are then dyed a standard black color.",
+                  title: "Standart",
+                  desc: "Boncuk püskürtme tüm tozu temizler ve tutarlı bir genel doku bırakır. Parçalar daha sonra standart siyah renge boyanır.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/MJ2.jpg",
                 },
                 {
-                  title: "Vapor Smoothing",
-                  desc: "Significant reduction of surface roughness from 250+ μin RA (as-printed) to 64 – 100 μin RA after smoothing. Available for PA12 Black and PA12 40% Glass-Filled Black.",
+                  title: "Buhar Düzeltme",
+                  desc: "Yüzey pürüzlülüğünde 250+ μin RA'dan (baskı durumu) düzeltmeden sonra 64 – 100 μin RA'ya önemli azalma. PA12 Siyah ve PA12 %40 Cam Dolgulu Siyah için mevcuttur.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/MJ3.jpg",
                 },
                 {
-                  title: "Custom",
-                  desc: "Common post-processing options for MJF parts include a primer that can be applied, as well as taps and inserts.",
+                  title: "Özel",
+                  desc: "MJF parçaları için yaygın işlem sonrası seçenekleri arasında uygulanabilen bir astar ile kılavuz çekme ve ek parçalar bulunur.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/MJ4.jpg",
                 },
               ].map((item, idx) => (
@@ -289,11 +287,11 @@ export default function page() {
                     <p className="text-gray-600 text-sm leading-relaxed">
                       {item.desc}
                     </p>
-                    {item.title === "Custom" && (
+                    {item.title === "Özel" && (
                       <a
                         href="#"
                         className="text-[#0099ff] text-sm font-medium hover:text-[#96E92A] transition-colors mt-2 inline-block">
-                        View custom options →
+                        Özel seçenekleri görüntüle →
                       </a>
                     )}
                   </div>
@@ -305,23 +303,23 @@ export default function page() {
           {/* Selective Laser Sintering Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#0B1221] mb-6 pb-2 border-b-2 border-[#96E92A] inline-block">
-              Selective Laser Sintering
+              Seçici Lazer Sinterleme
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
               {[
                 {
-                  title: "Standard",
-                  desc: "Parts are bead blasted to remove loose powder and create a smooth matte finish.",
+                  title: "Standart",
+                  desc: "Parçalar gevşek tozu temizlemek ve pürüzsüz bir mat yüzey oluşturmak için boncuk püskürtülür.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/S1.jpg",
                 },
                 {
-                  title: "Vapor Smoothing",
-                  desc: "Significant reduction of surface roughness from 250+ μin RA (as-printed) to 64 – 100 μin RA after smoothing. Available in PA 11 Black, PA 12 White, PA 12 40% Glass-Filled, and TPU 70-A.",
+                  title: "Buhar Düzeltme",
+                  desc: "Yüzey pürüzlülüğünde 250+ μin RA'dan (baskı durumu) düzeltmeden sonra 64 – 100 μin RA'ya önemli azalma. PA 11 Siyah, PA 12 Beyaz, PA 12 %40 Cam Dolgulu ve TPU 70-A'da mevcuttur.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/S2.jpg",
                 },
                 {
-                  title: "Custom",
-                  desc: "Common post-processing options for SLS parts include a primer that can be applied, as well as taps and inserts.",
+                  title: "Özel",
+                  desc: "SLS parçaları için yaygın işlem sonrası seçenekleri arasında uygulanabilen bir astar ile kılavuz çekme ve ek parçalar bulunur.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/S3.jpg",
                 },
               ].map((item, idx) => (
@@ -343,11 +341,11 @@ export default function page() {
                     <p className="text-gray-600 text-sm leading-relaxed">
                       {item.desc}
                     </p>
-                    {item.title === "Custom" && (
+                    {item.title === "Özel" && (
                       <a
                         href="#"
                         className="text-[#0099ff] text-sm font-medium hover:text-[#96E92A] transition-colors mt-2 inline-block">
-                        View custom options →
+                        Özel seçenekleri görüntüle →
                       </a>
                     )}
                   </div>
@@ -364,13 +362,13 @@ export default function page() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
               {[
                 {
-                  title: "Standard",
-                  desc: "Support structures are removed and sanded down to remove nibs.",
+                  title: "Standart",
+                  desc: "Destek yapıları çıkarılır ve dikenleri gidermek için zımparalanır.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/PJ1.jpg",
                 },
                 {
-                  title: "Custom",
-                  desc: "Common custom finishing is a clear coat on the digital clear material to enhance translucence.",
+                  title: "Özel",
+                  desc: "Yaygın özel bitirme, şeffaflığı artırmak için dijital şeffaf malzeme üzerine şeffaf bir katmandır.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/PJ2.jpg",
                 },
               ].map((item, idx) => (
@@ -392,11 +390,11 @@ export default function page() {
                     <p className="text-gray-600 text-sm leading-relaxed">
                       {item.desc}
                     </p>
-                    {item.title === "Custom" && (
+                    {item.title === "Özel" && (
                       <a
                         href="#"
                         className="text-[#0099ff] text-sm font-medium hover:text-[#96E92A] transition-colors mt-2 inline-block">
-                        View custom options →
+                        Özel seçenekleri görüntüle →
                       </a>
                     )}
                   </div>
@@ -413,13 +411,13 @@ export default function page() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
               {[
                 {
-                  title: "Natural",
-                  desc: "Aesthetics will vary based on build orientation. Standing nibs are sanded flat.",
+                  title: "Doğal",
+                  desc: "Estetik, yapı yönelimine bağlı olarak değişir. Dikenler düzleştirilir.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/C1.jpg",
                 },
                 {
-                  title: "Standard",
-                  desc: "Parts are bead blasted to remove loose powder and create a smooth matte finish.",
+                  title: "Standart",
+                  desc: "Parçalar gevşek tozu temizlemek ve pürüzsüz bir mat yüzey oluşturmak için boncuk püskürtülür.",
                   img: "/Assets/Images/services/3d-printing/finishing-options/C2.jpg",
                 },
               ].map((item, idx) => (
@@ -453,59 +451,59 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Custom Finishing
+              Özel Bitirme
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Custom finishing options to meet your exact specifications are
-              available.
+              Tam spesifikasyonlarınızı karşılamak için özel bitirme seçenekleri
+              mevcuttur.
             </p>
           </div>
 
           {/* Plastics Table */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-[#0B1221] mb-6 pb-2 border-b-2 border-[#96E92A] inline-block">
-              Plastics
+              Plastikler
             </h3>
             <div className="overflow-x-auto mt-4">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-[#0B1221] text-white">
                     <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[180px]">
-                      Finish Type
+                      İşlem Tipi
                     </th>
-                    <th className="text-left p-4 font-semibold">Description</th>
+                    <th className="text-left p-4 font-semibold">Açıklama</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
                     {
-                      name: "Clear Coat",
-                      desc: "Applied to plastic parts to create a clear, glossy finish. Ideal for lenses and other optical applications.",
+                      name: "Şeffaf Kaplama",
+                      desc: "Plastik parçalara şeffaf, parlak bir yüzey oluşturmak için uygulanır. Lensler ve diğer optik uygulamalar için idealdir.",
                     },
                     {
-                      name: "Thermal Cure",
-                      desc: "Enhance mechanical properties of Accura 5530 and PerForm. This process does make parts more brittle.",
+                      name: "Isıl Kürleme",
+                      desc: "Accura 5530 ve PerForm'un mekanik özelliklerini geliştirir. Bu işlem parçaları daha kırılgan hale getirir.",
                     },
                     {
-                      name: "Plating",
-                      desc: "Electroless nickel plating adds strength and durability to plastic parts.",
+                      name: "Kaplama",
+                      desc: "Elektrolizsiz nikel kaplama, plastik parçalara mukavemet ve dayanıklılık katar.",
                     },
                     {
-                      name: "Painting",
-                      desc: "Parts can be painted to match any Pantone number. For best results, parts are typically sanded and polished before applying paint.",
+                      name: "Boyama",
+                      desc: "Parçalar herhangi bir Pantone numarasına uyacak şekilde boyanabilir. En iyi sonuçlar için, parçalar tipik olarak boya uygulanmadan önce zımparalanır ve parlatılır.",
                     },
                     {
-                      name: "Dyeing",
-                      desc: "Dyeing is a low-cost option when a material's natural color is not desired. Color options include black, green, red, blue, and yellow.",
+                      name: "Boyama (Daldırma)",
+                      desc: "Bir malzemenin doğal rengi istenmediğinde boyama düşük maliyetli bir seçenektir. Renk seçenekleri arasında siyah, yeşil, kırmızı, mavi ve sarı bulunur.",
                     },
                     {
-                      name: "Texture",
-                      desc: "Apply a spray texture to mimic a Mold-Tech brand-like finish or improve UV-resistance of SLA parts.",
+                      name: "Doku",
+                      desc: "Mold-Tech marka benzeri bir yüzeyi taklit etmek veya SLA parçalarının UV direncini iyileştirmek için bir sprey doku uygulayın.",
                     },
                     {
-                      name: "Laser Engraving",
-                      desc: "Laser engraving can be applied to a raw 3D-printed part or a part that has been coated with Cerakote or paint. Laser engraving ensures crisp, consistent information on each part and great for logos, part numbers or serialization.",
+                      name: "Lazer Gravür",
+                      desc: "Lazer gravür, ham 3D baskılı bir parçaya veya Cerakote veya boya ile kaplanmış bir parçaya uygulanabilir. Lazer gravür, her parça üzerinde net, tutarlı bilgi sağlar ve logolar, parça numaraları veya serileştirme için harikadır.",
                     },
                   ].map((item, idx) => (
                     <tr
@@ -527,41 +525,41 @@ export default function page() {
           {/* Metals Table */}
           <div>
             <h3 className="text-2xl font-bold text-[#0B1221] mb-6 pb-2 border-b-2 border-[#96E92A] inline-block">
-              Metals
+              Metaller
             </h3>
             <div className="overflow-x-auto mt-4">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-[#0B1221] text-white">
                     <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[180px]">
-                      Finish Type
+                      İşlem Tipi
                     </th>
-                    <th className="text-left p-4 font-semibold">Description</th>
+                    <th className="text-left p-4 font-semibold">Açıklama</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
                     {
-                      name: "CNC Machining",
-                      desc: "Achieve smooth surface finishes, tighter tolerances, or threading with post-process machining.",
+                      name: "CNC İşleme",
+                      desc: "İşlem sonrası işleme ile pürüzsüz yüzey kaliteleri, daha sıkı toleranslar veya diş açma elde edin.",
                     },
                     {
                       name: "Cerakote",
-                      desc: "Cerakote is a high-quality, rugged coating for a wide variety of printed parts, independent of the printing process you choose.",
+                      desc: "Cerakote, seçtiğiniz baskı sürecinden bağımsız olarak çok çeşitli baskılı parçalar için yüksek kaliteli, dayanıklı bir kaplamadır.",
                     },
                     {
-                      name: "Heat Treatment",
-                      desc: "Multiple heat treatments are available to further enhance mechanical properties of metal additive parts. NADCAP certification is available upon request.",
+                      name: "Isıl İşlem",
+                      desc: "Metal eklemeli parçaların mekanik özelliklerini daha da geliştirmek için çeşitli ısıl işlemler mevcuttur. NADCAP sertifikası talep üzerine mevcuttur.",
                     },
                     {
-                      name: "Hot Isostatic Pressing (HIP)",
-                      desc: "Hot Isostatic Pressing (HIP)",
+                      name: "Sıcak İzostatik Presleme (HIP)",
+                      desc: "Sıcak İzostatik Presleme (HIP)",
                     },
-                    { name: "Annealing", desc: "Annealing" },
-                    { name: "Aging", desc: "Aging" },
+                    { name: "Tavlama", desc: "Tavlama" },
+                    { name: "Yaşlandırma", desc: "Yaşlandırma" },
                     {
-                      name: "Polishing",
-                      desc: "Brushed and polish surface finishes are available upon request.",
+                      name: "Parlatma",
+                      desc: "Fırçalanmış ve parlatılmış yüzey kaliteleri talep üzerine mevcuttur.",
                     },
                   ].map((item, idx) => (
                     <tr
@@ -586,7 +584,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              How to Order Parts with Custom Finishing
+              Özel Bitirmeli Parçalar Nasıl Sipariş Edilir
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -602,7 +600,7 @@ export default function page() {
                 <div className="flex items-center justify-center h-full">
                   <Image
                     src="/Assets/Images/services/3d-printing/finishing-options/step1.jpg"
-                    alt="Step 1: Select Custom Finish"
+                    alt="Adım 1: Özel İşlem Seçin"
                     fill
                     className="object-contain"
                   />
@@ -610,12 +608,12 @@ export default function page() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Step 1
+                  Adım 1
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  In your quote configuration, select "custom" from the finish
-                  drop-down menu. From here you will be prompted to describe
-                  what type of finish you are looking for.
+                  Teklif yapılandırmanızda, işlem açılır menüsünden "özel"
+                  seçeneğini seçin. Buradan, ne tür bir işlem aradığınızı
+                  tanımlamanız istenecektir.
                 </p>
               </div>
             </div>
@@ -629,7 +627,7 @@ export default function page() {
                 <div className="flex items-center justify-center h-full">
                   <Image
                     src="/Assets/Images/services/3d-printing/finishing-options/step2.jpg"
-                    alt="Step 2: Engineer Review"
+                    alt="Adım 2: Mühendis İncelemesi"
                     fill
                     className="object-contain"
                   />
@@ -637,13 +635,14 @@ export default function page() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Step 2
+                  Adım 2
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  By adding a request for custom finishing, this will trigger a
-                  manual review of a quote and an applications engineer will
-                  reach out to you to learn more about your part requirements
-                  and provide recommendations on a path forward.
+                  Özel bitirme talebi ekleyerek, bu bir teklifin manuel
+                  incelemesini tetikleyecek ve bir uygulama mühendisi, parça
+                  gereksinimleriniz hakkında daha fazla bilgi edinmek ve
+                  ilerleme yolu hakkında önerilerde bulunmak için sizinle
+                  iletişime geçecektir.
                 </p>
               </div>
             </div>
@@ -657,7 +656,7 @@ export default function page() {
                 <div className="flex items-center justify-center h-full">
                   <Image
                     src="/Assets/Images/services/3d-printing/finishing-options/step3.jpg"
-                    alt="Step 3: Place Order"
+                    alt="Adım 3: Sipariş Verin"
                     fill
                     className="object-contain"
                   />
@@ -665,12 +664,12 @@ export default function page() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Step 3
+                  Adım 3
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  You will receive a link that will bring you to a final quote
-                  that includes the custom finishing required. Place your order
-                  and wait for your custom finished parts to arrive.
+                  Gerekli özel bitirmeyi içeren nihai bir teklife götürecek bir
+                  bağlantı alacaksınız. Siparişinizi verin ve özel bitirilmiş
+                  parçalarınızın gelmesini bekleyin.
                 </p>
               </div>
             </div>

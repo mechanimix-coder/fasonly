@@ -12,147 +12,155 @@ export default function Page() {
   const [compareUnit, setCompareUnit] = useState<"us" | "metric">("us");
 
   const tabs = [
-    { id: "maxPartSize", label: "Max Part Size" },
-    { id: "layerThickness", label: "Layer Thickness" },
-    { id: "minFeatureSize", label: "Minimum Feature Size" },
-    { id: "tolerances", label: "Tolerances" },
-    { id: "surfaceFinish", label: "Surface Finish Options" },
-    { id: "specialOps", label: "Special Operations" },
+    { id: "maxPartSize", label: "Maks. Parça Boyutu" },
+    { id: "layerThickness", label: "Katman Kalınlığı" },
+    { id: "minFeatureSize", label: "Minimum Özellik Boyutu" },
+    { id: "tolerances", label: "Toleranslar" },
+    { id: "surfaceFinish", label: "Yüzey İşlem Seçenekleri" },
+    { id: "specialOps", label: "Özel Operasyonlar" },
   ];
 
   const content = {
     maxPartSize: {
-      title: "Max Part Size",
+      title: "Maks. Parça Boyutu",
       table: {
-        headers: ["US", "Metric"],
-        rows: [["9.8 in. x 5.5 in. x 19.4 in.", "249mm x 140mm x 499mm"]],
+        headers: ["ABD", "Metrik"],
+        rows: [["9,8 inç x 5,5 inç x 19,4 inç", "249mm x 140mm x 499mm"]],
       },
     },
     layerThickness: {
-      title: "Layer Thickness",
+      title: "Katman Kalınlığı",
       table: {
-        headers: ["Resolution", "US", "Metric"],
+        headers: ["Çözünürlük", "ABD", "Metrik"],
         rows: [
-          ["Normal Resolution", "0.004 in.", "0.100mm"],
+          ["Normal Çözünürlük", "0,004 inç", "0,100mm"],
           [
-            "High Resolution (ceramic-filled available)",
-            "0.002 in.",
-            "0.050mm",
+            "Yüksek Çözünürlük (seramik dolgulu mevcut)",
+            "0,002 inç",
+            "0,050mm",
           ],
         ],
       },
     },
     minFeatureSize: {
-      title: "Minimum Feature Size",
+      title: "Minimum Özellik Boyutu",
       tables: [
         {
-          title: "Tough Black",
-          headers: ["", "US", "Metric"],
+          title: "Sert Siyah",
+          headers: ["", "ABD", "Metrik"],
           rows: [
-            ["Structural Wall Thickness", "0.100 in.", "2.5mm"],
-            ["Supported Walls (Ribs, Bosses, etc.)", "0.040 in.", "1.0mm"],
-            ["Positive Features", "0.020 in.", "0.5mm"],
-            ["Negative Features/Holes", "0.025 in.", "0.6mm"],
+            ["Yapısal Duvar Kalınlığı", "0,100 inç", "2,5mm"],
+            [
+              "Destekli Duvarlar (Kaburgalar, Bosslar vb.)",
+              "0,040 inç",
+              "1,0mm",
+            ],
+            ["Pozitif Özellikler", "0,020 inç", "0,5mm"],
+            ["Negatif Özellikler/Delikler", "0,025 inç", "0,6mm"],
           ],
         },
         {
-          title: "Ceramic-Filled and Flame Retardant Black",
-          headers: ["", "US", "Metric"],
+          title: "Seramik Dolgulu ve Alev Geciktirici Siyah",
+          headers: ["", "ABD", "Metrik"],
           rows: [
-            ["Structural Wall Thickness", "0.020 in.", "0.5mm"],
-            ["Supported Walls (Ribs, Bosses, etc.)", "0.010 in.", "0.25mm"],
-            ["Positive Features", "0.010 in.", "0.25mm"],
-            ["Negative Features/Holes", "0.020 in.", "0.5mm"],
+            ["Yapısal Duvar Kalınlığı", "0,020 inç", "0,5mm"],
+            [
+              "Destekli Duvarlar (Kaburgalar, Bosslar vb.)",
+              "0,010 inç",
+              "0,25mm",
+            ],
+            ["Pozitif Özellikler", "0,010 inç", "0,25mm"],
+            ["Negatif Özellikler/Delikler", "0,020 inç", "0,5mm"],
           ],
         },
       ],
     },
     tolerances: {
-      title: "Tolerances",
+      title: "Toleranslar",
       description:
-        "For well-designed parts, tolerances of ±0.005 in. (0.13mm) for the first inch plus 0.1% of nominal length can typically be achieved. Note that tolerances may change depending on part geometry and material selection.",
+        "İyi tasarlanmış parçalar için, ilk inç için ±0,005 inç (0,13mm) artı nominal uzunluğun %0,1'i toleranslar tipik olarak elde edilebilir. Toleransların parça geometrisine ve malzeme seçimine bağlı olarak değişebileceğini unutmayın.",
     },
     surfaceFinish: {
-      title: "Surface Finish Options",
+      title: "Yüzey İşlem Seçenekleri",
       table: {
-        headers: ["Finish Type", "Description"],
+        headers: ["İşlem Tipi", "Açıklama"],
         rows: [
           [
-            "Unfinished",
-            "Dots, or standing 'nibs,' remain evident on the bottom of the part from the support structure remnants.",
+            "Bitmemiş",
+            "Destek yapısı kalıntılarından parçanın alt kısmında noktalar veya dikenler belirgin kalır.",
           ],
           [
-            "Natural (Default)",
-            "Supported surfaces are sanded down to eliminate the support nibs.",
+            "Doğal (Varsayılan)",
+            "Destekli yüzeyler, destek dikenlerini ortadan kaldırmak için zımparalanır.",
           ],
           [
-            "Standard",
-            "Supported surfaces are sanded, and the entire part is finely blasted for a consistent look. Note that the layers are still present.",
+            "Standart",
+            "Destekli yüzeyler zımparalanır ve tüm parça tutarlı bir görünüm için ince kumlanır. Katmanların hala mevcut olduğunu unutmayın.",
           ],
           [
-            "Custom",
-            "Secondary options include a primer or paint that can be applied as well as taps and inserts.",
+            "Özel",
+            "İkincil seçenekler arasında uygulanabilen astar veya boya ile kılavuz çekme ve ek parçalar bulunur.",
           ],
         ],
       },
     },
     specialOps: {
-      title: "Special Operations",
+      title: "Özel Operasyonlar",
       description:
-        "Additional finishing processes to aid in assembly and meet your exact specifications are available. These include:",
-      list: ["Taps", "Threaded inserts"],
+        "Montaja yardımcı olmak ve tam spesifikasyonlarınızı karşılamak için ek bitirme işlemleri mevcuttur. Bunlar şunları içerir:",
+      list: ["Kılavuz çekme", "Dişli ek parçalar"],
     },
   };
 
   const currentContent = content[activeTab as keyof typeof content];
 
   const materials = [
-    { id: "toughBlack", label: "Tough Black (Loctite Henkel 3843)" },
-    { id: "ceramicFilled", label: "Ceramic-Filled (BASF 3280)" },
-    { id: "flameRetardant", label: "Flame Retardant Black (Arkema FR512)" },
-    { id: "esdBlack", label: "ESD Black (Loctite 3380)" },
+    { id: "toughBlack", label: "Sert Siyah (Loctite Henkel 3843)" },
+    { id: "ceramicFilled", label: "Seramik Dolgulu (BASF 3280)" },
+    { id: "flameRetardant", label: "Alev Geciktirici Siyah (Arkema FR512)" },
+    { id: "esdBlack", label: "ESD Siyah (Loctite 3380)" },
   ];
 
   const materialContent = {
     toughBlack: {
-      title: "Tough Black (Loctite Henkel 3843)",
+      title: "Sert Siyah (Loctite Henkel 3843)",
       description:
-        "Tough Black (Loctite Henkel 3843) is a slow-curing, engineering-tough resin with high strength, good impact resistance and excellent surface finish. It's great for a wide range of tooling applications such as jigs and fixtures, housings, and covers.",
+        "Sert Siyah (Loctite Henkel 3843), yüksek mukavemet, iyi darbe direnci ve mükemmel yüzey kalitesine sahip, yavaş kürlenen, mühendislik sertliğinde bir reçinedir. Tezgahlar ve fikstürler, gövdeler ve kapaklar gibi çok çeşitli takım uygulamaları için harikadır.",
       benefits: [
-        "High impact strength",
-        "Semi-flexible",
-        "Excellent smooth and matte surface finish",
+        "Yüksek darbe dayanımı",
+        "Yarı esnek",
+        "Mükemmel pürüzsüz ve mat yüzey kalitesi",
       ],
     },
     ceramicFilled: {
-      title: "Ceramic-Filled (BASF 3280)",
+      title: "Seramik Dolgulu (BASF 3280)",
       description:
-        "Ceramic-Filled (BASF 3280) is a composite offering extremely high stiffness of around 10 GPa and an HDT above 536°F (280°C). This material is often used for tooling and molding.",
+        "Seramik Dolgulu (BASF 3280), yaklaşık 10 GPa'lık son derece yüksek sertlik ve 536°F (280°C) üzerinde HDT sunan bir kompozittir. Bu malzeme genellikle takım ve kalıplama için kullanılır.",
       benefits: [
-        "Superior stiffness",
-        "Excellent temperature performance",
-        "High suspension stability",
-        "Ceramic-like color and feel",
+        "Üstün sertlik",
+        "Mükemmel sıcaklık performansı",
+        "Yüksek süspansiyon stabilitesi",
+        "Seramik benzeri renk ve his",
       ],
     },
     flameRetardant: {
-      title: "Flame Retardant Black (Arkema FR512)",
+      title: "Alev Geciktirici Siyah (Arkema FR512)",
       description:
-        "Flame Retardant Black (Arkema FR512) offers high strength and heat deflection temperature (HDT). It is liquid at room temperature and provides robust printing and processing capabilities.",
+        "Alev Geciktirici Siyah (Arkema FR512), yüksek mukavemet ve ısı sapma sıcaklığı (HDT) sunar. Oda sıcaklığında sıvıdır ve sağlam baskı ve işleme yetenekleri sağlar.",
       benefits: [
-        "High strength and heat deflection temperature (HDT)",
-        "Liquid at room temperature",
-        "Robust printing and processing",
+        "Yüksek mukavemet ve ısı sapma sıcaklığı (HDT)",
+        "Oda sıcaklığında sıvı",
+        "Sağlam baskı ve işleme",
       ],
     },
     esdBlack: {
-      title: "ESD Black (Loctite 3380)",
+      title: "ESD Siyah (Loctite 3380)",
       description:
-        "ESD Black (Loctite 3380) is a high-temperature resistant resin with electrostatic dissipating (ESD) capabilities and high stiffness. Pairing it with our HPS technology results in parts that are very smooth, have an impressive chemical resistance, and a high heat deflection temperature (HDT) of 374°F (190°C).",
+        "ESD Siyah (Loctite 3380), elektrostatik dağıtma (ESD) yetenekleri ve yüksek sertliğe sahip yüksek sıcaklığa dayanıklı bir reçinedir. Bunu HPS teknolojimizle birleştirmek, çok pürüzsüz, etkileyici kimyasal dirence ve 374°F (190°C) yüksek ısı sapma sıcaklığına (HDT) sahip parçalar elde edilmesini sağlar.",
       benefits: [
-        "High accuracy and fine detail printing",
-        "Displays electrostatic dissipative properties (ESD)",
-        "Excellent stiffness and versatility",
+        "Yüksek doğruluk ve ince detay baskısı",
+        "Elektrostatik dağıtıcı özellikler gösterir (ESD)",
+        "Mükemmel sertlik ve çok yönlülük",
       ],
     },
   };
@@ -163,55 +171,55 @@ export default function Page() {
   // Compare HPS Material Properties Data
   const hpsUsData = [
     {
-      material: "Tough Black (Loctite Henkel 3843)",
+      material: "Sert Siyah (Loctite Henkel 3843)",
       hardness: "85A",
-      tensileStrength: "8,700 psi",
-      elongation: "17.5%",
+      tensileStrength: "8.700 psi",
+      elongation: "%17,5",
     },
     {
-      material: "Ceramic-Filled (BASF 3280)",
+      material: "Seramik Dolgulu (BASF 3280)",
       hardness: "n/a",
-      tensileStrength: "10,900 psi",
-      elongation: "1%",
+      tensileStrength: "10.900 psi",
+      elongation: "%1",
     },
     {
-      material: "Flame Retardant Black (Arkema FR512)",
+      material: "Alev Geciktirici Siyah (Arkema FR512)",
       hardness: "80A",
-      tensileStrength: "7,500 psi",
-      elongation: "60%",
+      tensileStrength: "7.500 psi",
+      elongation: "%60",
     },
     {
-      material: "ESD Black (Loctite 3380)",
+      material: "ESD Siyah (Loctite 3380)",
       hardness: "85A",
-      tensileStrength: "8,200 psi",
-      elongation: "15%",
+      tensileStrength: "8.200 psi",
+      elongation: "%15",
     },
   ];
 
   const hpsMetricData = [
     {
-      material: "Tough Black (Loctite Henkel 3843)",
+      material: "Sert Siyah (Loctite Henkel 3843)",
       hardness: "85A",
-      tensileStrength: "60 Mpa",
-      elongation: "17.5%",
+      tensileStrength: "60 MPa",
+      elongation: "%17,5",
     },
     {
-      material: "Ceramic-Filled (BASF 3280)",
+      material: "Seramik Dolgulu (BASF 3280)",
       hardness: "n/a",
-      tensileStrength: "75 Mpa",
-      elongation: "1%",
+      tensileStrength: "75 MPa",
+      elongation: "%1",
     },
     {
-      material: "Flame Retardant Black (Arkema FR512)",
+      material: "Alev Geciktirici Siyah (Arkema FR512)",
       hardness: "80A",
-      tensileStrength: "52 Mpa",
-      elongation: "60%",
+      tensileStrength: "52 MPa",
+      elongation: "%60",
     },
     {
-      material: "ESD Black (Loctite 3380)",
+      material: "ESD Siyah (Loctite 3380)",
       hardness: "85A",
-      tensileStrength: "56 Mpa",
-      elongation: "15%",
+      tensileStrength: "56 MPa",
+      elongation: "%15",
     },
   ];
 
@@ -220,63 +228,63 @@ export default function Page() {
   // Compare Material Properties Data
   const compareUsData = [
     {
-      material: "Flame Retardant Black (Arkema FR512)",
-      color: "Black",
-      tensileStrength: "6.0916 ksi",
-      tensileModulus: "652.7 ksi",
-      elongation: "4.2%",
+      material: "Alev Geciktirici Siyah (Arkema FR512)",
+      color: "Siyah",
+      tensileStrength: "6,0916 ksi",
+      tensileModulus: "652,7 ksi",
+      elongation: "%4,2",
     },
     {
-      material: "Tough Black",
-      color: "Black",
-      tensileStrength: "7.4 ksi",
+      material: "Sert Siyah",
+      color: "Siyah",
+      tensileStrength: "7,4 ksi",
       tensileModulus: "262 ksi",
-      elongation: "43%",
+      elongation: "%43",
     },
     {
-      material: "Ceramic-Filled",
-      color: "Off-white",
-      tensileStrength: "12.6 ksi",
-      tensileModulus: "1,537 ksi",
-      elongation: "1.30%",
+      material: "Seramik Dolgulu",
+      color: "Kirli Beyaz",
+      tensileStrength: "12,6 ksi",
+      tensileModulus: "1.537 ksi",
+      elongation: "%1,30",
     },
     {
-      material: "ESD Black (Loctite 3380)",
-      color: "Black",
-      tensileStrength: "6.5267 ksi",
-      tensileModulus: "420.6 ksi",
-      elongation: "1.0%",
+      material: "ESD Siyah (Loctite 3380)",
+      color: "Siyah",
+      tensileStrength: "6,5267 ksi",
+      tensileModulus: "420,6 ksi",
+      elongation: "%1,0",
     },
   ];
 
   const compareMetricData = [
     {
-      material: "Flame Retardant Black (Arkema FR512)",
-      color: "Black",
+      material: "Alev Geciktirici Siyah (Arkema FR512)",
+      color: "Siyah",
       tensileStrength: "42 MPa",
-      tensileModulus: "4,500 MPa",
-      elongation: "4.2%",
+      tensileModulus: "4.500 MPa",
+      elongation: "%4,2",
     },
     {
-      material: "Tough Black",
-      color: "Black",
+      material: "Sert Siyah",
+      color: "Siyah",
       tensileStrength: "51 MPa",
-      tensileModulus: "1,806 MPa",
-      elongation: "10%",
+      tensileModulus: "1.806 MPa",
+      elongation: "%10",
     },
     {
-      material: "Ceramic-Filled",
-      color: "Off-white",
+      material: "Seramik Dolgulu",
+      color: "Kirli Beyaz",
       tensileStrength: "87 MPa",
-      tensileModulus: "10,597 MPa",
-      elongation: "1.30%",
+      tensileModulus: "10.597 MPa",
+      elongation: "%1,30",
     },
     {
-      material: "ESD Black (Loctite 3380)",
-      color: "Black",
+      material: "ESD Siyah (Loctite 3380)",
+      color: "Siyah",
       tensileStrength: "45 MPa",
-      tensileModulus: "2,900 MPa",
-      elongation: "1.0%",
+      tensileModulus: "2.900 MPa",
+      elongation: "%1,0",
     },
   ];
 
@@ -286,10 +294,10 @@ export default function Page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Advanced Photopolymers for 3D Printing"
-        desc="Our HPS technology delivers high-quality 3D-printed parts"
+        title="3D Baskı için Gelişmiş Fotopolimerler"
+        desc="HPS teknolojimiz yüksek kaliteli 3D baskılı parçalar sunar"
         image="/Assets/Images/services/3d-printing/advanced-photopolymers/hero.png"
-        firstButton={{ title: "Upload A Part", route: "/" }}
+        firstButton={{ title: "Parça Yükle", route: "/" }}
         simple
       />
 
@@ -300,10 +308,10 @@ export default function Page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
-                  {["Capabilities", "SLA Materials", "Surface Finishes"].map(
+                  {["Yetenekler", "SLA Malzemeleri", "Yüzey İşlemleri"].map(
                     (item, idx) => (
                       <a
                         key={idx}
@@ -320,21 +328,21 @@ export default function Page() {
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
               {/* Beyond Prototyping Section */}
-              <div id="what-is-stereolithography" className="scroll-mt-32">
+              <div id="prototipleme-ötesi" className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  Beyond Prototyping
+                  Prototipleme Ötesi
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  When your project requires advanced mechanical properties
-                  beyond stereolithography (SLA) and PolyJet, explore our
-                  advanced photopolymer materials unlocked by Axtra3D Hybrid
-                  PhotoSynthesis (HPS) technologies. HPS leverages the best
-                  features of Carbon digital light synthesis (DLS) printers,
-                  such as speed, near-isotropic parts, and smooth surface
-                  finish, but adds the greater speed and higher resolution of
-                  stereolithography (SLA).
+                  Projeniz stereolitografi (SLA) ve PolyJet'in ötesinde gelişmiş
+                  mekanik özellikler gerektirdiğinde, Axtra3D Hibrit Fotoğraf
+                  Sentezi (HPS) teknolojileriyle açığa çıkan gelişmiş
+                  fotopolimer malzemelerimizi keşfedin. HPS, Carbon dijital ışık
+                  sentezi (DLS) yazıcılarının hız, neredeyse izotropik parçalar
+                  ve pürüzsüz yüzey kalitesi gibi en iyi özelliklerinden
+                  yararlanır, ancak stereolitografinin (SLA) daha yüksek hızını
+                  ve daha yüksek çözünürlüğünü ekler.
                 </p>
               </div>
             </div>
@@ -349,26 +357,26 @@ export default function Page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Hybrid PhotoSynthesis (HPS)
+                Hibrit Fotoğraf Sentezi (HPS)
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                HPS technology integrates both a precision laser and a digital
-                light processing (DLP) system to simultaneously image internal
-                and external structures. This dual approach allows the Extra3D
-                printer to overcome traditional limitations and produce
-                exceptionally detailed parts with unmatched speed and quality.
+                HPS teknolojisi, iç ve dış yapıları eşzamanlı olarak
+                görüntülemek için hem hassas bir lazer hem de bir dijital ışık
+                işleme (DLP) sistemini entegre eder. Bu ikili yaklaşım, Extra3D
+                yazıcının geleneksel sınırlamaları aşmasına ve benzersiz hız ve
+                kalitede son derece detaylı parçalar üretmesine olanak tanır.
               </p>
 
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Common applications for HPS are:
+                HPS için yaygın uygulamalar şunlardır:
               </h3>
               <ul className="space-y-2">
                 {[
-                  "High accuracy features for testing and validation.",
-                  "Production grade parts with excellent throughput.",
-                  "Glass-like surface finishes for cosmetic prototypes.",
+                  "Test ve doğrulama için yüksek doğruluklu özellikler.",
+                  "Mükemmel verimlilikle üretim sınıfı parçalar.",
+                  "Kozmetik prototipler için cam benzeri yüzey kalitesi.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -382,7 +390,7 @@ export default function Page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden">
               <Image
                 src="/Assets/Images/services/3d-printing/advanced-photopolymers/hps-ceramic-filled-part.jpg"
-                alt="Hybrid PhotoSynthesis (HPS) Technology"
+                alt="Hibrit Fotoğraf Sentezi (HPS) Teknolojisi"
                 fill
                 className="object-cover"
               />
@@ -398,7 +406,7 @@ export default function Page() {
             {/* Left Column - Dynamic Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                HPS Material Options
+                HPS Malzeme Seçenekleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
@@ -413,7 +421,7 @@ export default function Page() {
                 </p>
 
                 <h4 className="font-semibold text-[#0B1221] text-lg mb-3">
-                  Primary Benefits:
+                  Temel Faydalar:
                 </h4>
                 <ul className="space-y-2">
                   {currentMaterial.benefits.map((benefit, idx) => (
@@ -453,7 +461,7 @@ export default function Page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Compare HPS Material Properties
+              HPS Malzeme Özelliklerini Karşılaştır
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -467,7 +475,7 @@ export default function Page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              US (Imperial)
+              ABD (Imperial)
             </button>
             <button
               onClick={() => setUnit("metric")}
@@ -476,7 +484,7 @@ export default function Page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Metric (SI)
+              Metrik (SI)
             </button>
           </div>
 
@@ -486,16 +494,16 @@ export default function Page() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[220px]">
-                    Material
+                    Malzeme
                   </th>
                   <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[100px]">
-                    Hardness
+                    Sertlik
                   </th>
                   <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[150px]">
-                    Tensile Strength
+                    Çekme Mukavemeti
                   </th>
                   <th className="text-left p-4 font-semibold min-w-[100px]">
-                    Elongation
+                    Uzama
                   </th>
                 </tr>
               </thead>
@@ -527,20 +535,20 @@ export default function Page() {
           {/* Disclaimer */}
           <div className="mt-6 p-4 bg-gray-100 rounded-lg">
             <p className="text-xs text-gray-500 leading-relaxed">
-              These figures are approximate and dependent on a number of
-              factors, including but not limited to, machine and process
-              parameters. The information provided is therefore not binding and
-              not deemed to be certified. When performance is critical, also
-              consider independent lab testing of additive materials or final
-              parts.
+              Bu rakamlar yaklaşıktır ve makine ve süreç parametreleriyle
+              sınırlı olmamak üzere bir dizi faktöre bağlıdır. Bu nedenle
+              sağlanan bilgiler bağlayıcı değildir ve sertifikalı olarak kabul
+              edilmez. Performans kritik olduğunda, eklemeli malzemelerin veya
+              nihai parçaların bağımsız laboratuvar testlerini de göz önünde
+              bulundurun.
             </p>
           </div>
         </div>
       </div>
 
       <GuideDownload
-        title="3D Printing Surface Finish Guide"
-        desc="Get this quick reference guide to explore your surface finish options across our six 3D printing technologies."
+        title="3D Baskı Yüzey İşlem Kılavuzu"
+        desc="Altı 3D baskı teknolojimiz genelinde yüzey işlem seçeneklerinizi keşfetmek için bu hızlı referans kılavuzunu alın."
       />
 
       {/* HPS Guidelines and Capabilities Section */}
@@ -549,13 +557,14 @@ export default function Page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              HPS Guidelines and Capabilities
+              HPS Kılavuzları ve Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our basic guidelines for HPS include important design
-              considerations to help improve part manufacturability, enhance
-              cosmetic appearance, and reduce overall production time.
+              HPS için temel kılavuzlarımız, parça üretilebilirliğini
+              iyileştirmeye, kozmetik görünümü geliştirmeye ve genel üretim
+              süresini azaltmaya yardımcı olacak önemli tasarım hususlarını
+              içerir.
             </p>
           </div>
 
@@ -695,7 +704,7 @@ export default function Page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Compare Material Properties
+              Malzeme Özelliklerini Karşılaştır
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -709,7 +718,7 @@ export default function Page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              US (Imperial)
+              ABD (Imperial)
             </button>
             <button
               onClick={() => setCompareUnit("metric")}
@@ -718,7 +727,7 @@ export default function Page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Metric (SI)
+              Metrik (SI)
             </button>
           </div>
 
@@ -728,19 +737,19 @@ export default function Page() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[200px]">
-                    Material
+                    Malzeme
                   </th>
                   <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[100px]">
-                    Color
+                    Renk
                   </th>
                   <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[150px]">
-                    Tensile Strength
+                    Çekme Mukavemeti
                   </th>
                   <th className="text-left p-4 font-semibold border-r border-gray-700 min-w-[150px]">
-                    Tensile Modulus
+                    Çekme Modülü
                   </th>
                   <th className="text-left p-4 font-semibold min-w-[100px]">
-                    Elongation
+                    Uzama
                   </th>
                 </tr>
               </thead>
@@ -773,12 +782,12 @@ export default function Page() {
           {/* Disclaimer */}
           <div className="mt-6 p-4 bg-gray-100 rounded-lg">
             <p className="text-xs text-gray-500 leading-relaxed">
-              These figures are approximate and dependent on a number of
-              factors, including but not limited to, machine and process
-              parameters. The information provided is therefore not binding and
-              not deemed to be certified. When performance is critical, also
-              consider independent lab testing of additive materials or final
-              parts.
+              Bu rakamlar yaklaşıktır ve makine ve süreç parametreleriyle
+              sınırlı olmamak üzere bir dizi faktöre bağlıdır. Bu nedenle
+              sağlanan bilgiler bağlayıcı değildir ve sertifikalı olarak kabul
+              edilmez. Performans kritik olduğunda, eklemeli malzemelerin veya
+              nihai parçaların bağımsız laboratuvar testlerini de göz önünde
+              bulundurun.
             </p>
           </div>
         </div>
@@ -789,7 +798,7 @@ export default function Page() {
           {/* Row 1 - Surface Finish Grid */}
           <div className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              Surface Finish on HPS Parts
+              HPS Parçalarında Yüzey İşlemi
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-12"></div>
 
@@ -797,44 +806,43 @@ export default function Page() {
               {/* Unfinished */}
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Unfinished
+                  Bitmemiş
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Dots, or standing nibs, remain evident on the bottom of the
-                  part from the support structure remnants.
+                  Destek yapısı kalıntılarından parçanın alt kısmında noktalar
+                  veya dikenler belirgin kalır.
                 </p>
               </div>
 
               {/* Natural (Default) */}
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Natural (Default)
+                  Doğal (Varsayılan)
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Supported surfaces are sanded down to eliminate support nibs.
+                  Destekli yüzeyler, destek dikenlerini ortadan kaldırmak için
+                  zımparalanır.
                 </p>
               </div>
 
               {/* Standard */}
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Standard
+                  Standart
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Supported surfaces are sanded, and the entire part is finely
-                  blasted for a consistent look. Note that the layers are still
-                  present.
+                  Destekli yüzeyler zımparalanır ve tüm parça tutarlı bir
+                  görünüm için ince kumlanır. Katmanların hala mevcut olduğunu
+                  unutmayın.
                 </p>
               </div>
 
               {/* Custom */}
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Custom
-                </h3>
+                <h3 className="text-xl font-bold text-[#0B1221] mb-3">Özel</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Secondary options include a primer or paint that can be
-                  applied as well as taps and inserts.
+                  İkincil seçenekler arasında uygulanabilen astar veya boya ile
+                  kılavuz çekme ve ek parçalar bulunur.
                 </p>
               </div>
             </div>
@@ -845,19 +853,20 @@ export default function Page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                How Does HPS Work?
+                HPS Nasıl Çalışır?
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed">
-                One answer is fast—really fast. Two established technologies
-                team up to create a sum that is greater than its parts. Like
-                Carbon DLS, light is used to quickly harden liquid resin to
-                create various geometries. HPS takes it a step further by adding
-                a laser (as with SLA) to add precision and speed. When one layer
-                is complete, the build platform rises and the process repeats
-                until the part is complete. In the end, you get both the speed
-                of Carbon DLS, and feature details, resolution, and build volume
-                of SLA.
+                Cevap hızlıdır - gerçekten hızlı. İki yerleşik teknoloji,
+                parçalarının toplamından daha büyük bir bütün oluşturmak için
+                bir araya gelir. Carbon DLS gibi, çeşitli geometriler oluşturmak
+                için sıvı reçineyi hızla sertleştirmek üzere ışık kullanılır.
+                HPS, hassasiyet ve hız eklemek için bir lazer (SLA'da olduğu
+                gibi) ekleyerek bunu bir adım daha ileri götürür. Bir katman
+                tamamlandığında, yapı platformu yükselir ve parça tamamlanana
+                kadar süreç tekrarlanır. Sonuç olarak, hem Carbon DLS'nin hızını
+                hem de SLA'nın özellik detaylarını, çözünürlüğünü ve yapı
+                hacmini elde edersiniz.
               </p>
             </div>
           </div>

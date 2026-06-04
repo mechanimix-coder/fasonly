@@ -11,10 +11,10 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Sheet Metal Prototype Service for Components and Assemblies"
-        desc="Receive pricing and lead times for your designs in minutes and get precision fabricated prototypes delivered to you in just days. With every quote, we offer 3D-visualized design for manufacturability feedback, plus, you can validate part designs and transition to production with confidence."
+        title="Bileşenler ve Montajlar için Sac Metal Prototip Hizmeti"
+        desc="Tasarımlarınız için dakikalar içinde fiyatlandırma ve teslim süreleri alın ve hassas fabrikasyon prototipleri günler içinde teslim alın. Her teklifte, üretilebilirlik için 3D görselleştirilmiş tasarım geri bildirimi sunuyoruz, ayrıca parça tasarımlarını doğrulayabilir ve güvenle üretime geçiş yapabilirsiniz."
         image="/Assets/Images/services/sheet-metal-fabrication/prototyping/hero.png"
-        firstButton={{ title: "Start a Project", route: "/" }}
+        firstButton={{ title: "Proje Başlat", route: "/" }}
         simple
       />
 
@@ -25,14 +25,14 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Learn More about our Sheet Metal Prototyping Service
+                  Sac Metal Prototip Hizmetimiz Hakkında Daha Fazla Bilgi
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Sheet Metal Capabilities",
-                    "How Our Lead Times Work",
-                    " Prototyping Advantages of Sheet Metal Fabrication",
-                    "Product Applications for Prototyping",
+                    "Sac Metal Yetenekleri",
+                    "Teslim Sürelerimiz Nasıl Çalışır",
+                    "Sac Metal İmalatının Prototipleme Avantajları",
+                    "Prototipleme için Ürün Uygulamaları",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -48,37 +48,38 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
               {/* Beyond Prototyping Section */}
-              <div id="what-is-stereolithography" className="scroll-mt-32">
+              <div id="neden-fasonly" className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  Why Fasonly?
+                  Neden Fasonly?
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Quotes delivered in minutes and parts in days We quote and
-                  manufacture both simple and complex sheet metal designs in a
-                  fraction of the time of traditional methods. Upload,
-                  configure, and order your parts on Monday and they are on your
-                  desk by Friday. Repeatable process quality Our fabricators
-                  have decades of experience in producing high-quality sheet
-                  metal components and assemblies, ensuring that you and your
-                  stakeholders can evaluate an accurate representation of your
-                  design. Learn more about how we safeguard part quality.
-                  Manufacturability analysis on every design Leverage our sheet
-                  metal design for manufacturability (DFM) analysis tool for
-                  3D-visualized insights into potential manufacturing challenges
-                  and identify opportunities to optimize your design for speed
-                  and cost. Capacity to produce thousands of unique designs
-                  every month We fabricate thousands of unique sheet metal
-                  designs of all shapes and sizes each month. Our automated
-                  process provides on-time delivery reliability, so your
-                  shipment arrives on time. Advanced design support for
-                  assemblies and complex projects Our team of applications
-                  engineers are trained sheet metal experts who are available to
-                  consult with you on all aspects of your design. Whether you're
-                  looking for advice on feature placement, tooling selection, or
-                  assembly construction options, we answer your questions in a
-                  free 30-minute virtual session. Schedule your session today.
+                  Dakikalar içinde teklifler ve günler içinde parçalar Hem basit
+                  hem de karmaşık sac metal tasarımlarını geleneksel yöntemlerin
+                  çok daha kısa bir süresinde tekliflendiriyor ve üretiyoruz.
+                  Pazartesi günü parçalarınızı yükleyin, yapılandırın ve sipariş
+                  edin, Cuma günü masanızda olsunlar. Tekrarlanabilir süreç
+                  kalitesi Üreticilerimiz, yüksek kaliteli sac metal bileşenler
+                  ve montajlar üretmede on yılların deneyimine sahiptir, böylece
+                  siz ve paydaşlarınız tasarımınızın doğru bir temsilini
+                  değerlendirebilirsiniz. Parça kalitesini nasıl koruduğumuz
+                  hakkında daha fazla bilgi edinin. Her tasarımda
+                  üretilebilirlik analizi Potansiyel üretim zorluklarına ilişkin
+                  3D görselleştirilmiş içgörüler için sac metal üretilebilirlik
+                  için tasarım (DFM) analiz aracımızdan yararlanın ve
+                  tasarımınızı hız ve maliyet için optimize etme fırsatlarını
+                  belirleyin. Her ay binlerce benzersiz tasarım üretme
+                  kapasitesi Her ay her şekil ve boyutta binlerce benzersiz sac
+                  metal tasarımı üretiyoruz. Otomatik sürecimiz zamanında
+                  teslimat güvenilirliği sağlar, böylece sevkiyatınız zamanında
+                  ulaşır. Montajlar ve karmaşık projeler için gelişmiş tasarım
+                  desteği Uygulama mühendisleri ekibimiz, tasarımınızın tüm
+                  yönleri hakkında size danışmanlık yapmak için hazır olan
+                  eğitimli sac metal uzmanlarıdır. İster özellik yerleşimi,
+                  ister takım seçimi veya montaj yapım seçenekleri hakkında
+                  tavsiye arıyor olun, sorularınızı ücretsiz 30 dakikalık sanal
+                  bir oturumda yanıtlıyoruz. Oturumunuzu bugün planlayın.
                 </p>
               </div>
             </div>
@@ -91,31 +92,31 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Sheet Metal Capabilities
+                Sac Metal Yetenekleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-300 leading-relaxed mb-6">
-                We have a broad selection of sheet metal fabrication
-                capabilities for your prototype components and assembly
-                projects. Our collection of manufacturing processes gets you
-                simpler flat geometries, intricate formed parts, and complex
-                welded assemblies at unparalleled speeds.
+                Prototip bileşenleriniz ve montaj projeleriniz için geniş bir
+                sac metal fabrikasyon yetenekleri yelpazesine sahibiz. Üretim
+                süreçleri koleksiyonumuz, daha basit düz geometriler, karmaşık
+                şekillendirilmiş parçalar ve karmaşık kaynaklı montajları
+                benzersiz hızlarda elde etmenizi sağlar.
               </p>
 
               <p className="text-gray-300 leading-relaxed mb-4">
-                Explore our capabilities:
+                Yeteneklerimizi keşfedin:
               </p>
 
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  "Laser cutting",
-                  "Punching",
-                  "Forming & Bending",
-                  "Hardware insertion",
-                  "Welding",
-                  "Assembly",
-                  "Finishing",
+                  "Lazer kesim",
+                  "Zımbalama",
+                  "Şekillendirme ve Bükme",
+                  "Donanım yerleştirme",
+                  "Kaynak",
+                  "Montaj",
+                  "Yüzey İşlem",
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -129,7 +130,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-800">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/prototyping/smf-countersink-img.jpg"
-                alt="Sheet Metal Capabilities"
+                alt="Sac Metal Yetenekleri"
                 fill
                 className="object-cover"
               />
@@ -142,13 +143,14 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              How Our Lead Times Work
+              Teslim Sürelerimiz Nasıl Çalışır
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our digital sheet metal fabrication service delivers components
-              and assemblies to you in just days. Review the tool below to see
-              how your precision quality parts would qualify.
+              Dijital sac metal fabrikasyon hizmetimiz, bileşenleri ve
+              montajları günler içinde size ulaştırır. Hassas kaliteli
+              parçalarınızın nasıl nitelendirileceğini görmek için aşağıdaki
+              aracı inceleyin.
             </p>
           </div>
 
@@ -161,7 +163,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Standard (3-5 Day)
+              Standart (3-5 Gün)
             </button>
             <button
               onClick={() => setActiveTab("advanced")}
@@ -170,7 +172,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Advanced Capabilities
+              Gelişmiş Yetenekler
             </button>
             <button
               onClick={() => setActiveTab("finishing")}
@@ -179,7 +181,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Finishing & Assembly
+              Yüzey İşlem ve Montaj
             </button>
           </div>
 
@@ -190,13 +192,13 @@ export default function page() {
                 <thead>
                   <tr className="bg-[#0B1221] text-white">
                     <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                      Fabrication Capabilities
+                      Fabrikasyon Yetenekleri
                     </th>
                     <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                      Eligibility
+                      Uygunluk
                     </th>
                     <th className="text-left p-4 font-semibold text-lg">
-                      Applications
+                      Uygulamalar
                     </th>
                   </tr>
                 </thead>
@@ -206,50 +208,50 @@ export default function page() {
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                          Cutting (laser or punch)
+                          Kesim (lazer veya zımba)
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                          Deburring
+                          Çapak Alma
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                          Forming/bending (≤12 bends)
+                          Şekillendirme/Bükme (≤12 büküm)
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                          Hardware insertion (extensive PEM® library)
+                          Donanım yerleştirme (kapsamlı PEM® kütüphanesi)
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                          Tapping/countersinks
+                          Kılavuz çekme/Havşa açma
                         </li>
                       </ul>
                     </td>
                     <td className="p-4 text-gray-600 bg-gray-50 align-top">
-                      Material thicknesses: ≤0.125 in. (≤3.175mm)
+                      Malzeme kalınlıkları: ≤0,125 inç (≤3,175mm)
                     </td>
                     <td className="p-4 text-gray-600 bg-white align-top">
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                          Brackets
+                          Braketler
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                          Covers
+                          Kapaklar
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                          Panels
+                          Paneller
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                          Flat geometries
+                          Düz geometriler
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                          Mounts
+                          Montaj parçaları
                         </li>
                       </ul>
                     </td>
@@ -264,69 +266,71 @@ export default function page() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Fabrication Capabilities
+                  Fabrikasyon Yetenekleri
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      All 3-day fabrication options plus CNC-machined features
-                      (pockets, flanges, other features)
+                      Tüm 3 günlük fabrikasyon seçenekleri artı CNC işlenmiş
+                      özellikler (cepler, flanşlar, diğer özellikler)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Additional forming options (complex sequencing or setups,
-                      &gt;12 bends)
+                      Ek şekillendirme seçenekleri (karmaşık sıralamalar veya
+                      kurulumlar, &gt;12 büküm)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Intricately formed features (hems, jogs/offsets)
+                      Karmaşık şekillendirilmiş özellikler (kıvırmalar,
+                      itmeler/ofsetler)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Punch-formed features
+                      Zımba ile şekillendirilmiş özellikler
                     </span>
                   </li>
                 </ul>
               </div>
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Eligibility
+                  Uygunluk
                 </h3>
                 <p className="text-gray-600 text-sm mb-2">
-                  All material thicknesses:
+                  Tüm malzeme kalınlıkları:
                 </p>
                 <p className="text-gray-600 text-sm font-mono">
-                  0.024 in. - 0.250 in. (0.61mm - 6.35mm)
+                  0,024 inç - 0,250 inç (0,61mm - 6,35mm)
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Applications
+                  Uygulamalar
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Complex internal componentry
+                      Karmaşık iç bileşenler
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Parts with features critical to quality or functionality
+                      Kalite veya işlevsellik için kritik özelliklere sahip
+                      parçalar
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Enclosure or chassis housings
+                      Muhafaza veya şasi gövdeleri
                     </span>
                   </li>
                 </ul>
@@ -339,119 +343,125 @@ export default function page() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Fabrication Capabilities
+                  Fabrikasyon Yetenekleri
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Welding (add 1 day)
+                      Kaynak (1 gün ekler)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Assembly (add 1-3 days)
+                      Montaj (1-3 gün ekler)
                     </span>
                   </li>
                 </ul>
                 <h3 className="text-xl font-bold text-[#0B1221] mt-6 mb-4">
-                  Additional Customizations
+                  Ek Özelleştirmeler
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Powder coating (add 2 days)
+                      Toz boya (2 gün ekler)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Plating/coating (add 2 days)
+                      Kaplama (2 gün ekler)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Masking (add 1-2 days)
+                      Maskeleme (1-2 gün ekler)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Silk screening (add 1 day)
+                      İpek baskı (1 gün ekler)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Part marking (add 1 day)
+                      Parça işaretleme (1 gün ekler)
                     </span>
                   </li>
                 </ul>
               </div>
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Lead Times
+                  Teslim Süreleri
                 </h3>
-                <p className="text-gray-600 text-sm mb-2">3-day Lead Time</p>
-                <p className="text-gray-600 text-sm mb-4">5-day Lead Time</p>
+                <p className="text-gray-600 text-sm mb-2">
+                  3 Gün Teslim Süresi
+                </p>
+                <p className="text-gray-600 text-sm mb-4">
+                  5 Gün Teslim Süresi
+                </p>
                 <h3 className="text-xl font-bold text-[#0B1221] mt-6 mb-4">
-                  Applications
+                  Uygulamalar
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
-                    <span className="text-gray-600 text-sm">Weldments</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Multi-component assemblies
+                      Kaynaklı Konstrüksiyonlar
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      End-user-facing projects
+                      Çok bileşenli montajlar
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
+                    <span className="text-gray-600 text-sm">
+                      Son kullanıcıya yönelik projeler
                     </span>
                   </li>
                 </ul>
               </div>
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4">
-                  Finishing Options
+                  Yüzey İşlem Seçenekleri
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Powder coating (add 2 days)
+                      Toz boya (2 gün ekler)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Plating/coating (add 2 days)
+                      Kaplama (2 gün ekler)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Masking (add 1-2 days)
+                      Maskeleme (1-2 gün ekler)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Silk screening (add 1 day)
+                      İpek baskı (1 gün ekler)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-1.5"></div>
                     <span className="text-gray-600 text-sm">
-                      Part marking (add 1 day)
+                      Parça işaretleme (1 gün ekler)
                     </span>
                   </li>
                 </ul>
@@ -464,64 +474,65 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              Advantages of Prototyping with Sheet Metal Fabrication
+              Sac Metal İmalatı ile Prototiplemenin Avantajları
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-10"></div>
 
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Validate your design cost-effectively
+                  Tasarımınızı uygun maliyetle doğrulayın
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Before transitioning your design to higher up-front investment
-                  technologies such as hard tooling, sheet metal fabrication
-                  provides a cost-effective way to validate functionality and
-                  the physical or mechanical properties of your design before
-                  you freeze it for end-use production.
+                  Tasarımınızı sert takım gibi daha yüksek ön yatırım gerektiren
+                  teknolojilere geçirmeden önce, sac metal imalatı, tasarımınızı
+                  son kullanım üretimi için dondurmadan önce işlevselliğini ve
+                  fiziksel veya mekanik özelliklerini doğrulamak için uygun
+                  maliyetli bir yol sağlar.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Highly customizable processes produce many types of geometries
+                  Yüksek düzeyde özelleştirilebilir süreçler birçok geometri
+                  türü üretir
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Complex product applications often require sheet metal parts
-                  of various shapes, sizes, and feature sets. Sheet metal
-                  fabrication combines several manufacturing technologies such
-                  as laser cutting, press brake forming, and welding to achieve
-                  a variety of custom designs.
+                  Karmaşık ürün uygulamaları genellikle çeşitli şekil, boyut ve
+                  özellik setlerine sahip sac metal parçalar gerektirir. Sac
+                  metal imalatı, çeşitli özel tasarımlar elde etmek için lazer
+                  kesim, pres freni şekillendirme ve kaynak gibi birkaç üretim
+                  teknolojisini birleştirir.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Simulate your design with a real-world analog
+                  Tasarımınızı gerçek dünya analoguyla simüle edin
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Depending on which certifications might be needed to bring a
-                  product to market, sheet metal fabrication can produce a
-                  design for testing purposes. Doing that comes with the added
-                  benefit of avoiding high up-front tooling costs. Machine
-                  set-up costs are quickly amortized with each incremental unit
-                  fabricated.
+                  Bir ürünü pazara sunmak için hangi sertifikaların
+                  gerekebileceğine bağlı olarak, sac metal imalatı test amacıyla
+                  bir tasarım üretebilir. Bunu yapmak, yüksek ön takım
+                  maliyetlerinden kaçınma gibi ek bir fayda sağlar. Makine
+                  kurulum maliyetleri, üretilen her ek birim ile hızla amorti
+                  edilir.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Abundance of design flexibility and avenues for cost
-                  optimizations
+                  Bol miktarda tasarım esnekliği ve maliyet optimizasyonu
+                  yolları
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Like many manufacturing technologies, sheet metal fabrication
-                  is no stranger to trade-offs. While sheet metal offers a high
-                  degree of design flexibility, design simplification can yield
-                  significant cost savings. For example, moving a hole or cutout
-                  a fraction of an inch away from a bend line could amount to
-                  sizeable savings by eliminating costly CNC machining or hand
-                  drilling operations.
+                  Birçok üretim teknolojisi gibi, sac metal imalatı da
+                  ödünleşimlere yabancı değildir. Sac metal yüksek derecede
+                  tasarım esnekliği sunarken, tasarım basitleştirmesi önemli
+                  maliyet tasarrufları sağlayabilir. Örneğin, bir deliği veya
+                  kesiği bir büküm hattından birkaç milimetre uzağa taşımak,
+                  maliyetli CNC işleme veya elle delme işlemlerini ortadan
+                  kaldırarak önemli tasarruflar sağlayabilir.
                 </p>
               </div>
             </div>
@@ -533,14 +544,14 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Product Applications for Prototyping
+              Prototipleme için Ürün Uygulamaları
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Sheet metal fabrication is a collection of manufacturing processes
-              that can produce geometries of all shapes and sizes. In practical
-              terms, this means it can fulfill the needs of many types of
-              products, such as:
+              Sac metal imalatı, her şekil ve boyutta geometriler üretebilen bir
+              üretim süreçleri koleksiyonudur. Pratik anlamda bu, aşağıdakiler
+              gibi birçok ürün türünün ihtiyaçlarını karşılayabileceği anlamına
+              gelir:
             </p>
           </div>
 
@@ -550,10 +561,10 @@ export default function page() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700 min-w-[250px]">
-                    Generic Products
+                    Genel Ürünler
                   </th>
                   <th className="text-left p-4 font-semibold text-lg min-w-[300px]">
-                    Specialized Applications
+                    Özel Uygulamalar
                   </th>
                 </tr>
               </thead>
@@ -563,39 +574,39 @@ export default function page() {
                     <ul className="space-y-2">
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Brackets</span>
+                        <span>Braketler</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Busbars</span>
+                        <span>Baralar</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Covers</span>
+                        <span>Kapaklar</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Electronics enclosures</span>
+                        <span>Elektronik muhafazaları</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Housings</span>
+                        <span>Gövdeler</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Mechanical chassis</span>
+                        <span>Mekanik şasiler</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Mounts</span>
+                        <span>Montaj parçaları</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Panels</span>
+                        <span>Paneller</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Weldments</span>
+                        <span>Kaynaklı konstrüksiyonlar</span>
                       </li>
                     </ul>
                   </td>
@@ -603,33 +614,34 @@ export default function page() {
                     <ul className="space-y-2">
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Audio/Visual technology housings</span>
+                        <span>Ses/Görüntü teknolojisi gövdeleri</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Commercial lighting components</span>
+                        <span>Ticari aydınlatma bileşenleri</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
                         <span>
-                          Computing products (e.g. server racks, data storage)
+                          Bilgisayar ürünleri (örn. sunucu rafları, veri
+                          depolama)
                         </span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Energy storage devices</span>
+                        <span>Enerji depolama cihazları</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Robotics solutions</span>
+                        <span>Robotik çözümleri</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Rugged industrial products</span>
+                        <span>Sağlam endüstriyel ürünler</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
-                        <span>Scientific or medical instruments</span>
+                        <span>Bilimsel veya medikal aletler</span>
                       </li>
                     </ul>
                   </td>

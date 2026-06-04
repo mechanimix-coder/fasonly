@@ -8,12 +8,9 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Production 3D Printing"
-        desc="
-
-Industrial-grade 3D-printed parts with consistent repeatability at any quantity
-"
-        firstButton={{ title: "Discuss Project Requirements", route: "/" }}
+        title="Üretim 3D Baskı"
+        desc="Her miktarda tutarlı tekrarlanabilirliğe sahip endüstriyel sınıf 3D baskılı parçalar"
+        firstButton={{ title: "Proje Gereksinimlerini Görüşün", route: "/" }}
         bg="/Assets/Images/services/3d-printing/production/bg.jpg"
         simple
       />
@@ -24,26 +21,26 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                3D Printing for End Use
+                Son Kullanım için 3D Baskı
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Beyond prototyping, Fasonly is also a reliable source for
-                3D-printed production parts. With industrial additive
-                manufacturing technologies and a wide range of plastic and metal
-                materials, we can support projects from early design stages
-                through to end-use part production.
+                Prototiplemenin ötesinde, Fasonly aynı zamanda 3D baskılı üretim
+                parçaları için güvenilir bir kaynaktır. Endüstriyel eklemeli
+                üretim teknolojileri ve geniş plastik ve metal malzeme yelpazesi
+                ile projeleri erken tasarım aşamalarından son kullanım parça
+                üretimine kadar destekleyebiliriz.
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                Our production 3D printing services help engineers scale
-                efficiently. With the combined capabilities of our in-house
-                factories and global network, we can produce durable, functional
-                components at a range of quantities while maintaining
-                flexibility on design, timelines, and cost. This approach allows
-                you to manufacture end-use parts when you need them, on tight
-                timeframes, and at exceptional quality.
+                Üretim 3D baskı hizmetlerimiz, mühendislerin verimli bir şekilde
+                ölçeklenmesine yardımcı olur. Kendi fabrikalarımızın ve küresel
+                ağımızın birleşik yetenekleriyle, tasarım, zaman çizelgeleri ve
+                maliyet üzerinde esnekliği korurken çeşitli miktarlarda
+                dayanıklı, fonksiyonel bileşenler üretebiliriz. Bu yaklaşım, son
+                kullanım parçalarını ihtiyacınız olduğunda, sıkı zaman
+                çerçevelerinde ve olağanüstü kalitede üretmenize olanak tanır.
               </p>
             </div>
 
@@ -51,7 +48,7 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md">
               <Image
                 src="/Assets/Images/services/3d-printing/production/3dp-production-1.jpg"
-                alt="3D Printing for End Use"
+                alt="Son Kullanım için 3D Baskı"
                 fill
                 className="object-cover"
               />
@@ -64,7 +61,7 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Advantages of Fasonly
+              Fasonly'nin Avantajları
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -88,10 +85,10 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                Industrial-Grade
+                Endüstriyel Sınıf
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Production capabilities for customer-ready applications
+                Müşteriye hazır uygulamalar için üretim yetenekleri
               </p>
             </div>
 
@@ -112,10 +109,10 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                Repeatability
+                Tekrarlanabilirlik
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Identical parts across production runs
+                Üretim çalıştırmalarında aynı parçalar
               </p>
             </div>
 
@@ -136,10 +133,10 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                Lead time
+                Teslim Süresi
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Customized to fit your needs
+                İhtiyaçlarınıza göre özelleştirilir
               </p>
             </div>
 
@@ -160,10 +157,10 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                Finishing Options
+                Yüzey İşlem Seçenekleri
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Heat treating, secondary machining, vapor smoothing, and more
+                Isıl işlem, ikincil işleme, buhar düzeltme ve daha fazlası
               </p>
             </div>
           </div>
@@ -174,15 +171,14 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Production Capabilities for 3D Printing
+              3D Baskı için Üretim Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our service is all about solutions and flexibility. We take time
-              to understand your project and leverage our in-house factories and
-              global network to find the right manufacturer for the job. We
-              offer the latest technology in production-grade 3D printing,
-              including:
+              Hizmetimiz tamamen çözümler ve esneklikle ilgilidir. Projenizi
+              anlamak için zaman ayırıyoruz ve iş için doğru üreticiyi bulmak
+              için kendi fabrikalarımızdan ve küresel ağımızdan yararlanıyoruz.
+              Üretim sınıfı 3D baskıda en son teknolojiyi sunuyoruz:
             </p>
           </div>
 
@@ -193,17 +189,17 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
               <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/services/3d-printing/production/C1.jpg"
-                  alt="Metal 3D Printing"
+                  alt="Metal 3D Baskı"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Metal 3D Printing
+                  Metal 3D Baskı
                 </h3>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </button>
               </div>
             </div>
@@ -213,17 +209,17 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
               <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/services/3d-printing/production/C2.jpg"
-                  alt="Stereolithography"
+                  alt="Stereolitografi"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Stereolithography
+                  Stereolitografi
                 </h3>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </button>
               </div>
             </div>
@@ -233,17 +229,17 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
               <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/services/3d-printing/production/C3.jpg"
-                  alt="PolyJet & Silicone"
+                  alt="PolyJet ve Silikon"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  PolyJet & Silicone
+                  PolyJet ve Silikon
                 </h3>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </button>
               </div>
             </div>
@@ -253,17 +249,17 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
               <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/services/3d-printing/production/C4.jpg"
-                  alt="Multi Jet Fusion"
+                  alt="Multi Jet Füzyon"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Multi Jet Fusion
+                  Multi Jet Füzyon
                 </h3>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </button>
               </div>
             </div>
@@ -273,17 +269,17 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
               <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/services/3d-printing/production/C5.jpg"
-                  alt="Fused Deposition Modeling"
+                  alt="Birikimli Modelleme"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Fused Deposition Modeling
+                  Birikimli Modelleme
                 </h3>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </button>
               </div>
             </div>
@@ -293,17 +289,17 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
               <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/services/3d-printing/production/C6.jpg"
-                  alt="Selective Laser Sintering"
+                  alt="Seçici Lazer Sinterleme"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Selective Laser Sintering
+                  Seçici Lazer Sinterleme
                 </h3>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </button>
               </div>
             </div>
@@ -313,17 +309,17 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
               <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/services/3d-printing/production/C7.jpg"
-                  alt="Advanced Photopolymers"
+                  alt="Gelişmiş Fotopolimerler"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                  Advanced Photopolymers
+                  Gelişmiş Fotopolimerler
                 </h3>
                 <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </button>
               </div>
             </div>
@@ -336,15 +332,15 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                The Manufacturing Journey of Production Parts
+                Üretim Parçalarının İmalat Yolculuğu
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Using digital automation, and extensive production expertise, we
-                have optimized the process of manufacturing parts for end-use,
-                so you can get quality, production-grade parts faster than ever.
-                Watch the video to see how we take your product from concept to
-                completion.
+                Dijital otomasyon ve kapsamlı üretim uzmanlığını kullanarak, son
+                kullanım için parça üretme sürecini optimize ettik, böylece
+                kaliteli, üretim sınıfı parçaları her zamankinden daha hızlı
+                alabilirsiniz. Ürününüzü konseptten tamamlanmaya nasıl
+                götürdüğümüzü görmek için videoyu izleyin.
               </p>
               <p className="text-gray-400 text-sm">FASONLY</p>
             </div>
@@ -362,11 +358,9 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
-                  <p className="text-gray-300 text-xs mt-1">
-                    Manufacturing Journey
-                  </p>
+                  <p className="text-gray-300 text-xs mt-1">İmalat Yolculuğu</p>
                 </div>
               </div>
             </div>
@@ -389,9 +383,9 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
-                  <p className="text-gray-300 text-xs mt-1">How It Works</p>
+                  <p className="text-gray-300 text-xs mt-1">Nasıl Çalışır</p>
                 </div>
               </div>
             </div>
@@ -399,16 +393,16 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                How it Works
+                Nasıl Çalışır
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Fasonly' experts support you throughout your 3D printing
-                project, helping you to get the most out of our on-demand
-                capabilities, and ensuring consistency across production runs.
+                Fasonly uzmanları, 3D baskı projeniz boyunca size destek olur,
+                talep üzerine yeteneklerimizden en iyi şekilde yararlanmanıza ve
+                üretim çalıştırmalarında tutarlılık sağlamanıza yardımcı olur.
               </p>
               <button className="bg-[#96E92A] hover:bg-[#85d122] text-[#0B1221] font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2">
-                Discuss Project Requirements
+                Proje Gereksinimlerini Görüşün
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -431,7 +425,7 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              5 Reasons to Rely on Fasonly for 3D Printing at Scale
+              Ölçekte 3D Baskı için Fasonly'ye Güvenmek için 5 Neden
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -446,14 +440,14 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                 </span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Production Capabilities
+                Üretim Yetenekleri
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Benefit from the advanced performance of MJF, Advanced
-                Photopolymers, DMLS and industrial FDM, which deliver strong,
-                functional parts with high accuracy and consistent
-                repeatability. These processes are ideal for printing complex
-                geometries with durable materials.
+                Yüksek doğruluk ve tutarlı tekrarlanabilirlik ile güçlü,
+                fonksiyonel parçalar sunan MJF, Gelişmiş Fotopolimerler, DMLS ve
+                endüstriyel FDM'nin gelişmiş performansından yararlanın. Bu
+                süreçler, dayanıklı malzemelerle karmaşık geometriler yazdırmak
+                için idealdir.
               </p>
             </div>
 
@@ -465,12 +459,12 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                 </span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Complete Order Management
+                Tam Sipariş Yönetimi
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We have a team of manufacturing experts working behind the
-                scenes to fulfill your production order—we manage the entire
-                process and keep you updated along the way.
+                Üretim siparişinizi yerine getirmek için perde arkasında çalışan
+                bir üretim uzmanları ekibimiz var - tüm süreci yönetiyor ve sizi
+                yol boyunca güncel tutuyoruz.
               </p>
             </div>
 
@@ -482,13 +476,14 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                 </span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Strong Supply Chain
+                Güçlü Tedarik Zinciri
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Build agility into your supply chain by manufacturing on demand,
-                including high-mix, low-volume BOMs ideal for mass
-                customization. Onshoring through us helps reduce supply chain
-                risk and brings manufacturing closer to your end markets.
+                Talep üzerine üretim yaparak tedarik zincirinize çeviklik
+                kazandırın, kitlesel özelleştirme için ideal olan yüksek
+                karışımlı, düşük hacimli BOM'lar dahil. Bizim aracılığıyla
+                yurtiçinde üretim, tedarik zinciri riskini azaltmaya yardımcı
+                olur ve üretimi nihai pazarlarınıza yaklaştırır.
               </p>
             </div>
 
@@ -500,13 +495,13 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                 </span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Quality Documentation and Certifications
+                Kalite Dokümantasyonu ve Sertifikalar
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Get added quality assurance from conventional AS9102 FA (First
-                Article Inspection) reporting, full Dimensional Inspection
-                Reports (DIR), Reference reports, and industry certifications
-                (ISO 13485, ISO 9001, etc.)
+                Geleneksel AS9102 FA (İlk Ürün Denetimi) raporlaması, tam
+                Boyutsal Denetim Raporları (DIR), Referans raporları ve endüstri
+                sertifikalarından (ISO 13485, ISO 9001, vb.) ek kalite güvencesi
+                alın.
               </p>
             </div>
 
@@ -518,39 +513,39 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
                 </span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Engineering Support
+                Mühendislik Desteği
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Think of our engineers as part of your team. Together, our
-                engineers bring decades of experience across every major 3D
-                printing technology, from metals to advanced polymers to surface
-                finishes and post-processing services. Whether you're designing
-                a prototype or ready for production volumes, they are available
-                to consult with you on a technical, quality compliance, and
-                business requirements associated with your project.
+                Mühendislerimizi ekibinizin bir parçası olarak düşünün.
+                Mühendislerimiz birlikte, metallerden gelişmiş polimerlere,
+                yüzey işlemlerinden işlem sonrası hizmetlere kadar her büyük 3D
+                baskı teknolojisinde on yılların deneyimini getiriyor. Bir
+                prototip tasarlıyor veya üretim hacimlerine hazır olun,
+                projenizle ilgili teknik, kalite uygunluğu ve iş gereksinimleri
+                konusunda size danışmanlık yapmak için hazırlar.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <Hint text="Consider consolidating multiple components into a single part, reducing assembly steps and improving overall reliability. Get more expert tips for production. " />
+      <Hint text="Birden fazla bileşeni tek bir parçada birleştirmeyi, montaj adımlarını azaltmayı ve genel güvenilirliği iyileştirmeyi düşünün. Üretim için daha fazla uzman ipucu alın." />
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                3D Printing Throughout the Product Life Cycle
+                Ürün Yaşam Döngüsü Boyunca 3D Baskı
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                Our 3D printing solutions scale from prototyping to production
-                with flexible capacity and no minimum order quantities. For
-                end-use parts, advanced processes like MJF, Advanced
-                Photopolymers, and DMLS deliver consistent quality and
-                performance, supported by application-specific post-processing,
-                inspection, and compliance documentation.
+                3D baskı çözümlerimiz, esnek kapasite ve minimum sipariş miktarı
+                olmadan prototiplemeden üretime ölçeklenir. Son kullanım
+                parçaları için MJF, Gelişmiş Fotopolimerler ve DMLS gibi
+                gelişmiş süreçler, uygulamaya özel işlem sonrası, denetim ve
+                uygunluk dokümantasyonu ile desteklenen tutarlı kalite ve
+                performans sağlar.
               </p>
 
               {/* Technology Tags */}
@@ -570,42 +565,42 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
               <div className="grid grid-cols-2 gap-3">
                 <div className="bg-[#F0F8FF] rounded-lg p-3 text-center">
                   <span className="text-sm font-semibold text-[#0B1221]">
-                    On-Demand Production
+                    Talep Üzerine Üretim
                   </span>
                 </div>
                 <div className="bg-[#F0F8FF] rounded-lg p-3 text-center">
                   <span className="text-sm font-semibold text-[#0B1221]">
-                    Jigs, Fixtures & Tooling
+                    Tezgahlar, Fikstürler ve Takımlar
                   </span>
                 </div>
                 <div className="bg-[#F0F8FF] rounded-lg p-3 text-center">
                   <span className="text-sm font-semibold text-[#0B1221]">
-                    Early Prototyping
+                    Erken Prototipleme
                   </span>
                 </div>
                 <div className="bg-[#F0F8FF] rounded-lg p-3 text-center">
                   <span className="text-sm font-semibold text-[#0B1221]">
-                    Late Prototyping
+                    Geç Prototipleme
                   </span>
                 </div>
                 <div className="bg-[#F0F8FF] rounded-lg p-3 text-center">
                   <span className="text-sm font-semibold text-[#0B1221]">
-                    Low-Volume Production
+                    Düşük Hacimli Üretim
                   </span>
                 </div>
                 <div className="bg-[#F0F8FF] rounded-lg p-3 text-center">
                   <span className="text-sm font-semibold text-[#0B1221]">
-                    Ramp-Up Production
+                    Artan Üretim
                   </span>
                 </div>
                 <div className="bg-[#F0F8FF] rounded-lg p-3 text-center">
                   <span className="text-sm font-semibold text-[#0B1221]">
-                    Mass Production
+                    Seri Üretim
                   </span>
                 </div>
                 <div className="bg-[#F0F8FF] rounded-lg p-3 text-center">
                   <span className="text-sm font-semibold text-[#0B1221]">
-                    End-Product
+                    Nihai Ürün
                   </span>
                 </div>
               </div>
@@ -615,7 +610,7 @@ Industrial-grade 3D-printed parts with consistent repeatability at any quantity
             <div className="flex-1 relative w-full h-96 md:h-[500px] rounded-xl overflow-hidden shadow-md">
               <Image
                 src="/Assets/Images/services/3d-printing/production/3dp-technologies-v3_amer.webp"
-                alt="3D Printing Throughout the Product Life Cycle"
+                alt="Ürün Yaşam Döngüsü Boyunca 3D Baskı"
                 fill
                 className="object-cover"
               />

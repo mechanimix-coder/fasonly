@@ -6,11 +6,11 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Quality Measures for CNC Machining"
-        desc="How we use digital manufacturing and quality control processes to manufacture quality parts consistently"
+        title="CNC İşleme için Kalite Önlemleri"
+        desc="Kaliteli parçaları tutarlı bir şekilde üretmek için dijital üretim ve kalite kontrol süreçlerini nasıl kullandığımız"
         image="/Assets/Images/services/cnc-machining/qualityHero.png"
-        firstButton={{ title: "Get a Quote", route: "/" }}
-        secondButton={{ title: "View Inspection", route: "/" }}
+        firstButton={{ title: "Teklif Al", route: "/" }}
+        secondButton={{ title: "Denetimi Görüntüle", route: "/" }}
       />
 
       <div className="w-full bg-white py-20">
@@ -30,10 +30,10 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
                   <p className="text-gray-300 text-xs mt-1">
-                    Quality Standards Overview
+                    Kalite Standartları Genel Bakış
                   </p>
                 </div>
               </div>
@@ -42,24 +42,24 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Quality is in Our Work Standards, and Our DNA
+                Kalite İş Standartlarımızda ve DNA'mızdadır
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our dedication to quality is apparent throughout the
-                manufacturing process, and you'll experience it from your first
-                interaction. When you submit a CAD file for a quote, you'll
-                receive analysis of your design.
+                Kaliteye olan bağlılığımız üretim süreci boyunca belirgindir ve
+                bunu ilk etkileşiminizden itibaren deneyimleyeceksiniz. Teklif
+                için bir CAD dosyası gönderdiğinizde, tasarımınızın analizini
+                alırsınız.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our automated design for manufacturing analysis quickly
-                identifies potential issues, such as:
+                Otomatik üretilebilirlik için tasarım analizimiz, potansiyel
+                sorunları hızla tanımlar, örneğin:
               </p>
               <ul className="space-y-2 mb-4">
                 {[
-                  "Walls that are too thin",
-                  "Parts that are too large",
-                  "Holes that are eligible for threading",
+                  "Çok ince duvarlar",
+                  "Çok büyük parçalar",
+                  "Diş açmaya uygun delikler",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -68,25 +68,26 @@ export default function page() {
                 ))}
               </ul>
               <p className="text-gray-600 leading-relaxed mb-4">
-                If you get one of these advisories, you will also notice that it
-                includes a proposed solution to fix your model. With a single
-                click, you can choose to accept the issue and proceed as-is or
-                go back to redesign and resubmit your model.
+                Bu uyarılardan birini alırsanız, modelinizi düzeltmek için
+                önerilen bir çözüm içerdiğini de fark edeceksiniz. Tek bir
+                tıklamayla, sorunu kabul edip olduğu gibi devam etmeyi veya geri
+                dönüp yeniden tasarlayıp modelinizi yeniden göndermeyi
+                seçebilirsiniz.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 <span className="font-semibold">
-                  Dedicated to Delivering Quality
+                  Kalite Teslimatına Adanmış
                 </span>
                 <br />
-                Our mission is to deliver great parts every time. To do that, we
-                use clearly documented work standards and procedures. To
-                minimize escapes, our proprietary software instructs our factory
-                CNC machines to perform in-process quality checks on every
-                unique geometry. Whether produced in our factories or through
-                Fasonly Network, once the part is completed, our quality control
-                experts take over and visually and dimensionally inspect the
-                physical part to ensure consistency with your 3D model (or
-                print, if necessary).
+                Misyonumuz her seferinde harika parçalar teslim etmektir. Bunu
+                yapmak için, açıkça belgelenmiş iş standartları ve prosedürleri
+                kullanıyoruz. Hataları en aza indirmek için, özel yazılımımız
+                fabrika CNC makinelerimize her benzersiz geometride süreç içi
+                kalite kontrolleri yapmalarını emreder. Fabrikalarımızda veya
+                Fasonly Network aracılığıyla üretilmiş olsun, parça
+                tamamlandıktan sonra, kalite kontrol uzmanlarımız devralır ve
+                fiziksel parçayı 3B modelinizle (veya gerekirse çıktınızla)
+                tutarlılığı sağlamak için görsel ve boyutsal olarak denetler.
               </p>
             </div>
           </div>
@@ -98,7 +99,7 @@ export default function page() {
               <div className="text-center">
                 <Image
                   src="/Assets/Images/services/cnc-machining/quality/012-pl_brandcampaign_2024_techinical-expert-test.jpg"
-                  alt="OD Threads"
+                  alt="Kalite denetimi"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -108,24 +109,23 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Inspection Documentation for CNC Machining Projects
+                CNC İşleme Projeleri için Denetim Dokümantasyonu
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                You can choose from multiple forms of quality inspection
-                documentation for your CNC-machined part orders based on the
-                complexity of your models. Depending on your project
-                requirements, the following reports are available within your
-                online quote. Additionally, you can request Certificates of
-                Conformance, Material Certifications, and Hardware
-                Certifications.
+                Modellerinizin karmaşıklığına bağlı olarak CNC işlenmiş parça
+                siparişleriniz için birden fazla kalite denetim dokümantasyonu
+                biçimi arasından seçim yapabilirsiniz. Proje gereksinimlerinize
+                bağlı olarak, aşağıdaki raporlar çevrimiçi teklifiniz içinde
+                mevcuttur. Ayrıca, Uygunluk Sertifikaları, Malzeme Sertifikaları
+                ve Donanım Sertifikaları talep edebilirsiniz.
               </p>
               <ul className="space-y-2">
                 {[
-                  "Basic Production/Quality Inspection Report",
-                  "Dimensional Inspection Report",
-                  "First Article Inspection",
-                  "Production Part Approval Process (PPAP)",
+                  "Temel Üretim/Kalite Denetim Raporu",
+                  "Boyutsal Denetim Raporu",
+                  "İlk Ürün Denetimi",
+                  "Üretim Parçası Onay Süreci (PPAP)",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -141,27 +141,27 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Our Quality Process
+                Kalite Sürecimiz
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Every part that leaves our facility undergoes rigorous quality
-                control checks. From initial material verification to final
-                dimensional inspection, we ensure that every specification is
-                met.
+                Tesisimizden çıkan her parça titiz kalite kontrol
+                kontrollerinden geçer. İlk malzeme doğrulamasından son boyut
+                denetimine kadar, her spesifikasyonun karşılandığından emin
+                oluyoruz.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our quality management system is ISO 9001:2015 certified, and we
-                maintain strict adherence to industry standards. Whether you
-                need PPAP level 3 documentation or simple COC, we have you
-                covered.
+                Kalite yönetim sistemimiz ISO 9001:2015 sertifikalıdır ve
+                endüstri standartlarına sıkı sıkıya bağlılığı sürdürüyoruz. PPAP
+                seviye 3 dokümantasyonuna veya basit COC'ye ihtiyacınız olsun,
+                sizi koruyoruz.
               </p>
               <ul className="space-y-2">
                 {[
-                  "ISO 9001:2015 Certified",
-                  "AS9100D for Aerospace",
-                  "ISO 13485 for Medical Devices",
-                  "ITAR Registered",
+                  "ISO 9001:2015 Sertifikalı",
+                  "Havacılık için AS9100D",
+                  "Medikal Cihazlar için ISO 13485",
+                  "ITAR Kayıtlı",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -176,7 +176,7 @@ export default function page() {
               <div className="text-center">
                 <Image
                   src="/Assets/Images/services/cnc-machining/quality/quality_control.jpg"
-                  alt="OD Threads"
+                  alt="Kalite kontrol"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -190,7 +190,7 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Quality Inspections for CNC Machining
+              CNC İşleme için Kalite Denetimleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -201,47 +201,44 @@ export default function page() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[180px]">
-                    Benefits
+                    Faydalar
                   </th>
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[200px]">
-                    Inspection without Report
+                    Rapor Olmadan Denetim
                   </th>
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[220px]">
-                    Basic Production/Quality Inspection Report
+                    Temel Üretim/Kalite Denetim Raporu
                   </th>
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[220px]">
-                    Dimensional Inspection Report
+                    Boyutsal Denetim Raporu
                   </th>
                   <th className="text-left p-3 font-semibold min-w-[220px]">
-                    First Article Inspection
+                    İlk Ürün Denetimi
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-gray-200 bg-white">
                   <td className="p-3 text-gray-700 font-medium align-top">
-                    Benefits
+                    Faydalar
                   </td>
                   <td className="p-3 text-gray-600 text-sm align-top">
-                    Parts are inspected dimensionally and visually. A
-                    Certificate of Conformance is available, but measurement
-                    results are not included.
+                    Parçalar boyutsal ve görsel olarak denetlenir. Uygunluk
+                    Sertifikası mevcuttur, ancak ölçüm sonuçları dahil değildir.
                   </td>
                   <td className="p-3 text-gray-600 text-sm align-top">
-                    Parts are inspected dimensionally and visually. An
-                    inspection report with corresponding measurements is
-                    included.
+                    Parçalar boyutsal ve görsel olarak denetlenir. İlgili
+                    ölçümleri içeren bir denetim raporu dahildir.
                   </td>
                   <td className="p-3 text-gray-600 text-sm align-top">
-                    Verifies numerous dimensional specifications without
-                    requiring a 2D drawing for precision machined parts.
-                    Quick-turn parts require a 2D drawing. GD&T is not
-                    inspected.
+                    Hassas işlenmiş parçalar için 2B çizim gerektirmeden çok
+                    sayıda boyutsal spesifikasyonu doğrular. Hızlı teslim
+                    parçalar 2B çizim gerektirir. GD&T denetlenmez.
                   </td>
                   <td className="p-3 text-gray-600 text-sm align-top">
-                    Verifies the sample part conforms to all dimensions provided
-                    on a 2D drawing, including GD&T. Results provided in AS9102
-                    format.
+                    Örnek parçanın, GD&T dahil olmak üzere 2B çizimde sağlanan
+                    tüm boyutlara uygun olduğunu doğrular. Sonuçlar AS9102
+                    formatında sağlanır.
                   </td>
                 </tr>
               </tbody>
@@ -251,23 +248,23 @@ export default function page() {
           {/* Note */}
           <div className="mb-12 p-3 bg-[#F0F8FF] rounded-lg text-center">
             <p className="text-sm text-gray-500 italic">
-              *Note that capabilities may vary by manufacturing site
+              *Not: Yetenekler üretim sahasına göre değişiklik gösterebilir
             </p>
           </div>
 
           {/* Sampling-Based Inspection Process Section */}
           <div>
             <h3 className="text-2xl font-bold text-[#0B1221] mb-4 text-center">
-              Fasonly' Sampling-Based Inspection Process
+              Fasonly'nin Örnekleme Tabanlı Denetim Süreci
             </h3>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed text-center max-w-3xl mx-auto mb-8">
-              To ensure consistent quality while maintaining fast turnaround
-              times, Fasonly uses a sampling-based inspection process for
-              BIR/DIR inspection reports rather than inspecting every part in a
-              lot. Sample sizes are selected based on total lot quantity, as
-              outlined in the table below, and are designed to provide reliable
-              verification of dimensional accuracy and workmanship.
+              Hızlı geri dönüş sürelerini korurken tutarlı kaliteyi sağlamak
+              için Fasonly, BIR/DIR denetim raporları için bir partideki her
+              parçayı denetlemek yerine örnekleme tabanlı bir denetim süreci
+              kullanır. Örneklem boyutları, aşağıdaki tabloda belirtildiği gibi
+              toplam parti miktarına göre seçilir ve boyutsal doğruluk ve
+              işçiliğin güvenilir doğrulamasını sağlamak için tasarlanmıştır.
             </p>
 
             {/* Sample Size Table */}
@@ -276,38 +273,38 @@ export default function page() {
                 <thead>
                   <tr className="bg-[#0B1221] text-white">
                     <th className="text-center p-3 font-semibold border-r border-gray-700">
-                      Lot Size
+                      Parti Boyutu
                     </th>
                     <th className="text-center p-3 font-semibold border-r border-gray-700">
-                      1 to 50
+                      1 - 50
                     </th>
                     <th className="text-center p-3 font-semibold border-r border-gray-700">
-                      51 to 90
+                      51 - 90
                     </th>
                     <th className="text-center p-3 font-semibold border-r border-gray-700">
-                      91 to 150
+                      91 - 150
                     </th>
                     <th className="text-center p-3 font-semibold border-r border-gray-700">
-                      151 to 280
+                      151 - 280
                     </th>
                     <th className="text-center p-3 font-semibold border-r border-gray-700">
-                      281 to 500
+                      281 - 500
                     </th>
                     <th className="text-center p-3 font-semibold border-r border-gray-700">
-                      501 to 1,200
+                      501 - 1.200
                     </th>
                     <th className="text-center p-3 font-semibold border-r border-gray-700">
-                      1,201 to 3,200
+                      1.201 - 3.200
                     </th>
                     <th className="text-center p-3 font-semibold">
-                      3,201 to 10,000
+                      3.201 - 10.000
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-200 bg-gray-50">
                     <td className="p-3 font-semibold text-[#0B1221] text-center">
-                      Sample Size
+                      Örneklem Boyutu
                     </td>
                     <td className="p-3 text-gray-600 text-center">1</td>
                     <td className="p-3 text-gray-600 text-center">2</td>
@@ -333,7 +330,7 @@ export default function page() {
               <div className="text-center">
                 <Image
                   src="/Assets/Images/services/cnc-machining/quality/pl_brandcampaign_technical_expert_02.webp"
-                  alt="OD Threads"
+                  alt="Uzman desteği"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -343,19 +340,20 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Support from CNC Machining Experts
+                CNC İşleme Uzmanlarından Destek
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Discuss your design with a CNC machining applications engineer
-                who can answer any manufacturability questions you might have.
-                Common design review topics include optimizing cost, tolerances,
-                threading, and finishing options.
+                Tasarımınızı, sahip olabileceğiniz her türlü üretilebilirlik
+                sorusunu yanıtlayabilecek bir CNC işleme uygulama mühendisiyle
+                tartışın. Yaygın tasarım inceleme konuları arasında maliyet
+                optimizasyonu, toleranslar, diş açma ve yüzey işlem seçenekleri
+                yer alır.
               </p>
               <a
                 href="#"
                 className="text-[#0099ff] hover:text-[#96E92A] font-medium transition-colors inline-flex items-center gap-2 group">
-                Schedule a free virtual meeting today →
+                Bugün ücretsiz sanal toplantı planlayın →
               </a>
             </div>
           </div>
@@ -365,21 +363,21 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Machined Parts for Aerospace Applications
+                Havacılık Uygulamaları için İşlenmiş Parçalar
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                With capabilities such as AS9100, FAI, material traceability,
-                NADCAP-certified coatings, and full technical drawing and
-                quality requirement reviews, we can get your parts to you, as
-                designed, in as little as 1 business day. This reduces time for
-                iteration and speeds your transition to final part designs, both
-                critical needs for the aerospace industry.
+                AS9100, FAI, malzeme izlenebilirliği, NADCAP sertifikalı
+                kaplamalar ve tam teknik çizim ve kalite gereksinim incelemeleri
+                gibi yeteneklerle, parçalarınızı tasarlandığı gibi, 1 iş günü
+                kadar kısa sürede size ulaştırabiliriz. Bu, iterasyon süresini
+                kısaltır ve havacılık endüstrisi için kritik ihtiyaçlar olan
+                nihai parça tasarımlarına geçişinizi hızlandırır.
               </p>
               <a
                 href="#"
                 className="text-[#0099ff] hover:text-[#96E92A] font-medium transition-colors inline-flex items-center gap-2 group">
-                Learn More →
+                Daha Fazla Bilgi →
               </a>
             </div>
 
@@ -388,7 +386,7 @@ export default function page() {
               <div className="text-center">
                 <Image
                   src="/Assets/Images/services/cnc-machining/quality/comparison-guide.jpg"
-                  alt="OD Threads"
+                  alt="Havacılık parçaları"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />

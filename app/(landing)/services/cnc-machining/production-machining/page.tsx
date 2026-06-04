@@ -9,9 +9,9 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Production CNC Machining"
-        desc="Cost-efficient machined parts at any quantity."
-        firstButton={{ title: "Get a Quote", route: "/" }}
+        title="Üretim CNC İşleme"
+        desc="Her miktarda uygun maliyetli işlenmiş parçalar."
+        firstButton={{ title: "Teklif Al", route: "/" }}
       />
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
@@ -19,30 +19,30 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1">
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                We're not only the fastest manufacturing supplier of machined
-                prototypes but also the most reliable source of on-demand
-                production parts.
+                Sadece işlenmiş prototiplerin en hızlı üretim tedarikçisi değil,
+                aynı zamanda talep üzerine üretim parçalarının en güvenilir
+                kaynağıyız.
               </p>
 
               <h2 className="text-2xl md:text-3xl font-bold text-[#0B1221] mb-3">
-                Why is this important?
+                Bu neden önemli?
               </h2>
               <p className="text-gray-600 leading-relaxed mb-8">
-                You have a single-source supplier from concept validation to
-                full scale production options.
+                Konsept doğrulamadan tam ölçekli üretim seçeneklerine kadar tek
+                bir kaynak tedarikçiniz var.
               </p>
 
               <h2 className="text-2xl md:text-3xl font-bold text-[#0B1221] mb-3">
-                How do we do it?
+                Bunu nasıl yapıyoruz?
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Beyond prototyping, we provide full support with production. Our
-                experts manage your project across our manufacturing partner
-                network to bring you competitive pricing with significant
-                economies of scale. On-demand production is cost-effective,
-                letting you build inventory as you need it. We can manufacture
-                end-use parts at smaller quantities, or volumes up to one
-                million parts - we're flexible on your needs.
+                Prototiplemenin ötesinde, üretimle tam destek sağlıyoruz.
+                Uzmanlarımız projenizi üretim ortak ağımız genelinde yöneterek
+                size önemli ölçek ekonomileriyle rekabetçi fiyatlandırma sunar.
+                Talep üzerine üretim uygun maliyetlidir ve envanterinizi
+                ihtiyacınız olduğu gibi oluşturmanıza olanak tanır. Son kullanım
+                parçalarını daha küçük miktarlarda veya bir milyon parçaya kadar
+                hacimlerde üretebiliriz - ihtiyaçlarınız konusunda esneğiz.
               </p>
             </div>
 
@@ -54,7 +54,7 @@ export default function page() {
                     "/Assets/Images/services/cnc-machining/production-machining/cnc_milling_2019_bp_scale_02_hr-1-1.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Üretim CNC işleme"
                 />
               </div>
             </div>
@@ -81,10 +81,10 @@ export default function page() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                Low Unit Costs
+                Düşük Birim Maliyetleri
               </h3>
               <p className="text-gray-500 text-sm">
-                Lower piece part price as quantities increase.
+                Miktarlar arttıkça daha düşük parça fiyatı.
               </p>
             </div>
 
@@ -105,10 +105,10 @@ export default function page() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                Lead Time
+                Teslim Süresi
               </h3>
               <p className="text-gray-500 text-sm">
-                Shipped in as fast as 5 days.
+                5 gün kadar kısa sürede gönderim.
               </p>
             </div>
 
@@ -129,10 +129,10 @@ export default function page() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                Finishing Options
+                Yüzey İşlem Seçenekleri
               </h3>
               <p className="text-gray-500 text-sm">
-                Anodizing, chromate plating, and beyond.
+                Anodizasyon, kromat kaplama ve ötesi.
               </p>
             </div>
 
@@ -152,28 +152,25 @@ export default function page() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                Quantity
-              </h3>
+              <h3 className="text-xl font-bold text-[#0B1221] mb-2">Miktar</h3>
               <p className="text-gray-500 text-sm">
-                1 to 1,000,000 parts. No minimum.
+                1'den 1.000.000 parçaya. Minimum yok.
               </p>
             </div>
           </div>
         </div>
       </div>
       <GetAQuote
-        title=" CNC Machining Services for End-Use Parts"
-        desc="Get high-quality machined parts faster with our expanded
-                      automated CNC milling—parts ready in as fast as 4 days"
+        title="Son Kullanım Parçaları için CNC İşleme Hizmetleri"
+        desc="Genişletilmiş otomatik CNC frezeleme ile yüksek kaliteli işlenmiş parçaları daha hızlı alın - parçalar 4 gün kadar kısa sürede hazır"
       />
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              4 Reasons to Turn to the Fasonly Network for Machined Production
-              Parts
+              İşlenmiş Üretim Parçaları için Fasonly Network'e Yönelmeniz için 4
+              Neden
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -186,13 +183,13 @@ export default function page() {
                 <span className="text-[#0099ff] font-bold text-xl">1</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Reduced Piece-Part Price with Higher Quantities
+                Daha Yüksek Miktarlarla Daha Düşük Parça Fiyatı
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Through long-standing partnerships with manufacturers, we offer
-                fair, competitive prices. We help you to scale with volume
-                pricing options to lower your price per part as quantities
-                increase.
+                Üreticilerle uzun süreli ortaklıklar sayesinde adil, rekabetçi
+                fiyatlar sunuyoruz. Miktarlar arttıkça parça başına fiyatınızı
+                düşürmek için hacim fiyatlandırma seçenekleriyle ölçeklenmenize
+                yardımcı oluyoruz.
               </p>
             </div>
 
@@ -202,13 +199,13 @@ export default function page() {
                 <span className="text-[#0099ff] font-bold text-xl">2</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Quality Documentation and Certifications
+                Kalite Dokümantasyonu ve Sertifikalar
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Get added quality assurance from conventional FAI reporting, CoC
-                documentation, CMM inspection reports, full dimensional
-                inspections, material test reports, material certifications, and
-                industry certifications (PPAP, ISO 9001, etc.).
+                Geleneksel FAI raporlaması, CoC dokümantasyonu, CMM denetim
+                raporları, tam boyutlu denetimler, malzeme test raporları,
+                malzeme sertifikaları ve endüstri sertifikalarından (PPAP, ISO
+                9001, vb.) ek kalite güvencesi alın.
               </p>
             </div>
 
@@ -218,12 +215,12 @@ export default function page() {
                 <span className="text-[#0099ff] font-bold text-xl">3</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                High-mix Configurations
+                Yüksek Karışımlı Konfigürasyonlar
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                We're equipped to handle a complex bill of materials. We provide
-                full flexibility for production orders with multiple line items
-                that require a high level of customization.
+                Karmaşık malzeme listelerini yönetmek için donanımlıyız. Yüksek
+                düzeyde özelleştirme gerektiren birden fazla kalem içeren üretim
+                siparişleri için tam esneklik sağlıyoruz.
               </p>
             </div>
 
@@ -233,13 +230,14 @@ export default function page() {
                 <span className="text-[#0099ff] font-bold text-xl">4</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Complete Order Management
+                Tam Sipariş Yönetimi
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                We bring you the capabilities of more than 250 manufacturers,
-                with the ease of working with one. You're supported by a
-                dedicated point of contact and backed by an entire team working
-                to produce your order to specs.
+                250'den fazla üreticinin yeteneklerini, tek bir firma ile
+                çalışma kolaylığıyla size sunuyoruz. Özel bir iletişim kişisi
+                tarafından destekleniyor ve siparişinizi spesifikasyonlara göre
+                üretmek için çalışan bütün bir ekip tarafından
+                destekleniyorsunuz.
               </p>
             </div>
           </div>
@@ -256,7 +254,7 @@ export default function page() {
                     "/Assets/Images/services/cnc-machining/production-machining/cnc-milling-metal-2019-c-7421-lr.jpg"
                   }
                   fill
-                  alt="design cube"
+                  alt="Üretim yetenekleri"
                 />
               </div>
             </div>
@@ -264,23 +262,23 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Production Capabilities for CNC Machining
+                CNC İşleme için Üretim Yetenekleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our service is all about solutions and flexibility. We take time
-                to understand your project and leverage our global network to
-                find the right manufacturer for the job. We can help get
-                products ready for market with:
+                Hizmetimiz tamamen çözümler ve esneklikle ilgilidir. Projenizi
+                anlamak için zaman ayırıyoruz ve iş için doğru üreticiyi bulmak
+                için küresel ağımızdan yararlanıyoruz. Ürünlerin pazara hazır
+                hale getirilmesine şu şekilde yardımcı olabiliriz:
               </p>
               <ul className="grid grid-cols-2 gap-3 mb-6">
                 {[
-                  "Cosmetic finishes",
-                  "Multiple surface finish options",
-                  "Tight tolerances",
-                  "Custom materials",
-                  "Production tooling",
-                  "Hardware assembly",
+                  "Kozmetik yüzey işlemleri",
+                  "Çoklu yüzey işlem seçenekleri",
+                  "Sıkı toleranslar",
+                  "Özel malzemeler",
+                  "Üretim takımları",
+                  "Donanım montajı",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -289,32 +287,32 @@ export default function page() {
                 ))}
               </ul>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our production capabilities extend far beyond those on our quote
-                builder.
+                Üretim yeteneklerimiz, teklif oluşturucumuzdakilerin çok ötesine
+                uzanmaktadır.
               </p>
               <a
                 href="#"
                 className="text-[#0099ff] hover:text-[#96E92A] font-medium transition-colors inline-flex items-center gap-2 group">
-                Contact us for a personalized solution →
+                Kişiselleştirilmiş çözüm için bizimle iletişime geçin →
               </a>
             </div>
           </div>
         </div>
       </div>
-      <Hint text="Streamline the process of manufacturing machined parts at scale. Here are some ways that we reduce the common pain points of production." />
+      <Hint text="İşlenmiş parçaların ölçekte üretim sürecini kolaylaştırın. İşte üretimin yaygın sorunlu noktalarını azaltmanın bazı yolları." />
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              How it Works
+              Nasıl Çalışır
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Working with Protolab Network, you will always have a point of
-              contact to assist you with your design and the manufacturing
-              process to ensure you get the parts you need at the specs you
-              require.
+              Fasonly Network ile çalışırken, ihtiyacınız olan parçaları gereken
+              spesifikasyonlarda almanızı sağlamak için tasarımınız ve üretim
+              süreciniz konusunda size yardımcı olacak her zaman bir iletişim
+              kişiniz olacaktır.
             </p>
           </div>
 
@@ -331,10 +329,10 @@ export default function page() {
                   </svg>
                 </div>
                 <p className="text-white text-lg font-semibold">
-                  Watch How it Works
+                  Nasıl Çalıştığını İzleyin
                 </p>
                 <p className="text-gray-300 text-sm mt-1">
-                  Fasonly Network Process Overview
+                  Fasonly Network Süreç Genel Bakışı
                 </p>
               </div>
             </div>

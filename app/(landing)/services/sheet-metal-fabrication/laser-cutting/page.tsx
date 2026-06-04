@@ -12,39 +12,39 @@ export default function page() {
   const accordionItems = [
     {
       id: 0,
-      title: "Online quoting",
+      title: "Çevrimiçi teklif alma",
       content:
-        "Upload your CAD file to receive an online quote. Configure materials, finishes, and additional options in myRapid.",
+        "Çevrimiçi teklif almak için CAD dosyanızı yükleyin. myRapid içinde malzemeleri, yüzey işlemlerini ve ek seçenekleri yapılandırın.",
     },
     {
       id: 1,
-      title: "Expedited 1-day lead times",
+      title: "Hızlandırılmış 1 günlük teslim süreleri",
       content:
-        "Parts can be fabricated and shipped in as fast as 1 day. Standard 3-day lead times for quantities less than 50.",
+        "Parçalar 1 gün kadar kısa sürede üretilebilir ve gönderilebilir. 50'den az miktarlar için standart 3 günlük teslim süreleri.",
     },
     {
       id: 2,
-      title: "Safe parts without sharp edges",
+      title: "Keskin kenarları olmayan güvenli parçalar",
       content:
-        "Parts deburred and edge debris removed prior to shipping (included in the price). Process ensures parts are safe to handle out of the box.",
+        "Gönderim öncesinde parçaların çapakları alınır ve kenar kalıntıları temizlenir (fiyata dahildir). Süreç, parçaların kutudan çıktığında dokunmak için güvenli olmasını sağlar.",
     },
     {
       id: 3,
-      title: "One-stop shop for sheet metal components",
+      title: "Sac metal bileşenler için tek durak noktası",
       content:
-        "Formed geometries and geometries with hardware inserts available at 3-day lead times for quantities less than 50. Basket of sheet metal components ship on same standard lead time. Flatwork and formed parts produced with one supplier.",
+        "Şekillendirilmiş geometriler ve donanım ek parçalı geometriler, 50'den az miktarlar için 3 günlük teslim sürelerinde mevcuttur. Sac metal bileşen sepeti aynı standart teslim süresinde gönderilir. Düz işler ve şekillendirilmiş parçalar tek bir tedarikçi ile üretilir.",
     },
     {
       id: 4,
-      title: "Highly reliable cutting capability",
+      title: "Yüksek güvenilirlikli kesim yeteneği",
       content:
-        "Fiber optic lasers designed for metal cutting applications (vs. other material types) within thickness range of 0.024 in. – 0.250 in. (0.609mm – 6.35mm).",
+        "0,024 inç – 0,250 inç (0,609mm – 6,35mm) kalınlık aralığında metal kesim uygulamaları için tasarlanmış fiber optik lazerler.",
     },
     {
       id: 5,
-      title: "Manufacturing expertise",
+      title: "Üretim uzmanlığı",
       content:
-        "Have questions? Work with our team of sheet metal applications engineers to ensure your parts meet your requirements.",
+        "Sorularınız mı var? Parçalarınızın gereksinimlerinizi karşıladığından emin olmak için sac metal uygulama mühendisleri ekibimizle çalışın.",
     },
   ];
 
@@ -58,23 +58,23 @@ export default function page() {
 
   const data = {
     standard: {
-      title: "Standard Thickness (3.40mm - 6.35mm)",
-      maxSize: "990.6mm x 482.6mm",
-      minPartSize: "6.35mm x 6.35mm",
-      thicknessRange: "0.61mm - 6.35mm",
+      title: "Standart Kalınlık (3,40mm - 6,35mm)",
+      maxSize: "990,6mm x 482,6mm",
+      minPartSize: "6,35mm x 6,35mm",
+      thicknessRange: "0,61mm - 6,35mm",
       tolerances: [
-        "+/- 0.127mm for all features (except for hardware holes)",
-        "+0.076mm/-0.000mm on hardware insert holes to ensure correct seating of inserts",
+        "Tüm özellikler için +/- 0,127mm (donanım delikleri hariç)",
+        "Ek parçaların doğru oturmasını sağlamak için donanım ek parçası deliklerinde +0,076mm/-0,000mm",
       ],
     },
     thin: {
-      title: "Thin Material (0.61mm - 3.40mm)",
-      maxSize: "990.6mm x 1,193.6mm",
-      minPartSize: "6.35mm x 6.35mm",
-      thicknessRange: "0.61mm - 6.35mm",
+      title: "İnce Malzeme (0,61mm - 3,40mm)",
+      maxSize: "990,6mm x 1.193,6mm",
+      minPartSize: "6,35mm x 6,35mm",
+      thicknessRange: "0,61mm - 6,35mm",
       tolerances: [
-        "+/- 0.127mm for all features (except for hardware holes)",
-        "+0.076mm/-0.000mm on hardware insert holes to ensure correct seating of inserts",
+        "Tüm özellikler için +/- 0,127mm (donanım delikleri hariç)",
+        "Ek parçaların doğru oturmasını sağlamak için donanım ek parçası deliklerinde +0,076mm/-0,000mm",
       ],
     },
   };
@@ -83,9 +83,9 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Metal Laser Cutting Service"
-        desc="Get custom laser-cut parts in as fast as 1 day. Standard 3-day lead times also available."
-        firstButton={{ title: "Upload A Part", route: "/" }}
+        title="Metal Lazer Kesim Hizmeti"
+        desc="1 gün kadar kısa sürede özel lazer kesim parçalar alın. Standart 3 günlük teslim süreleri de mevcuttur."
+        firstButton={{ title: "Parça Yükle", route: "/" }}
         simple
       />
 
@@ -96,14 +96,14 @@ export default function page() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h3 className="text-lg font-bold text-[#0B1221] mb-4">
-                  Jump to Section
+                  Bölüme Atla
                 </h3>
                 <div className="space-y-2">
                   {[
-                    "Our Process",
-                    "Design Guidelines",
-                    "Materials",
-                    "Laser Cutting Applications",
+                    "Sürecimiz",
+                    "Tasarım Kılavuzları",
+                    "Malzemeler",
+                    "Lazer Kesim Uygulamaları",
                   ].map((item, idx) => (
                     <a
                       key={idx}
@@ -119,26 +119,26 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="lg:col-span-3">
               {/* Beyond Prototyping Section */}
-              <div id="what-is-stereolithography" className="scroll-mt-32">
+              <div id="lazer-kesim" className="scroll-mt-32">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-6">
-                  Beyond Prototyping
+                  Prototipleme Ötesi
                 </h2>
                 <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Laser cutting is a manufacturing process where a laser beam
-                  pierces raw sheet stock to produce flat geometries. A range of
-                  metals are available, which work well for components such as
-                  washers, mounts, brackets, and housings.
+                  Lazer kesim, bir lazer ışınının ham sac stoğu delerek düz
+                  geometriler ürettiği bir üretim sürecidir. Rondelalar, montaj
+                  parçaları, braketler ve gövdeler gibi bileşenler için iyi
+                  çalışan bir dizi metal mevcuttur.
                 </p>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Laser cutting is commonly used for:
+                  Lazer kesim genellikle şunlar için kullanılır:
                 </h3>
                 <ul className="space-y-2">
                   {[
-                    "prototyping designs or testing product requirements",
-                    "efficiencies of scale up to 50+ parts",
-                    "parts with standard connectivity features (USB, HDMI, ethernet ports)",
+                    "prototip tasarımları veya ürün gereksinimlerini test etme",
+                    "50+ parçaya kadar ölçek verimlilikleri",
+                    "standart bağlantı özelliklerine sahip parçalar (USB, HDMI, ethernet portları)",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -152,8 +152,8 @@ export default function page() {
         </div>
       </div>
       <GuideDownload
-        title="Sheet Metal Design Guide"
-        desc="Download this guide to explore the processes involved in creating sheet metal parts along with how to design common features and select the right material."
+        title="Sac Metal Tasarım Kılavuzu"
+        desc="Sac metal parçaların oluşturulmasında yer alan süreçleri, yaygın özelliklerin nasıl tasarlanacağını ve doğru malzemenin nasıl seçileceğini keşfetmek için bu kılavuzu indirin."
       />
 
       <div className="w-full bg-white py-20">
@@ -162,12 +162,13 @@ export default function page() {
             {/* Left Column - Accordion */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Our Laser Cutting Process
+                Lazer Kesim Sürecimiz
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Our laser cutting service and capabilities are designed around
-                reliably producing quality parts on time.
+                Lazer kesim hizmetimiz ve yeteneklerimiz, kaliteli parçaları
+                zamanında güvenilir bir şekilde üretmek etrafında
+                tasarlanmıştır.
               </p>
 
               <div className="space-y-3">
@@ -206,7 +207,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-auto min-h-[500px] rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/laser-cutting-process.jpg"
-                alt="Laser Cutting Process"
+                alt="Lazer Kesim Süreci"
                 fill
                 className="object-cover"
               />
@@ -219,7 +220,7 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Laser Cutting Specifications
+              Lazer Kesim Özellikleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -233,7 +234,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Standard Thickness (3.40mm - 6.35mm)
+              Standart Kalınlık (3,40mm - 6,35mm)
             </button>
             <button
               onClick={() => setActiveTab("thin")}
@@ -242,7 +243,7 @@ export default function page() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Thin Material (0.61mm - 3.40mm)
+              İnce Malzeme (0,61mm - 3,40mm)
             </button>
           </div>
 
@@ -254,7 +255,7 @@ export default function page() {
                   {/* Maximum Size Row */}
                   <tr className="border-b border-gray-200">
                     <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 w-1/3">
-                      Maximum Size
+                      Maksimum Boyut
                     </td>
                     <td className="p-4 text-gray-600 bg-white">
                       {currentData.maxSize}
@@ -264,7 +265,7 @@ export default function page() {
                   {/* Minimum Part Size Row */}
                   <tr className="border-b border-gray-200">
                     <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                      Minimum Part Size
+                      Minimum Parça Boyutu
                     </td>
                     <td className="p-4 text-gray-600 bg-white">
                       {currentData.minPartSize}
@@ -274,7 +275,7 @@ export default function page() {
                   {/* Material Thicknesses Row */}
                   <tr className="border-b border-gray-200">
                     <td className="p-4 font-semibold text-[#0B1221] bg-gray-50">
-                      Material Thicknesses
+                      Malzeme Kalınlıkları
                     </td>
                     <td className="p-4 text-gray-600 bg-white">
                       {currentData.thicknessRange}
@@ -282,9 +283,9 @@ export default function page() {
                   </tr>
 
                   {/* Tolerances Row */}
-                  <tr>
+                  <tr className="border-b border-gray-200">
                     <td className="p-4 font-semibold text-[#0B1221] bg-gray-50 align-top">
-                      Tolerances
+                      Toleranslar
                     </td>
                     <td className="p-4 text-gray-600 bg-white">
                       <ul className="space-y-2">
@@ -308,13 +309,13 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Materials and Thicknesses for Laser Cut Parts
+              Lazer Kesim Parçalar için Malzemeler ve Kalınlıklar
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              We offer the following metal materials for custom laser cut parts.
-              Note that based on material thickness, maximum part size will
-              vary.
+              Özel lazer kesim parçalar için aşağıdaki metal malzemeleri
+              sunuyoruz. Malzeme kalınlığına bağlı olarak maksimum parça
+              boyutunun değişeceğini unutmayın.
             </p>
           </div>
 
@@ -324,13 +325,13 @@ export default function page() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700 min-w-[150px]">
-                    Material
+                    Malzeme
                   </th>
                   <th className="text-left p-4 font-semibold text-lg border-r border-gray-700 min-w-[200px]">
-                    Grade
+                    Kalite
                   </th>
                   <th className="text-left p-4 font-semibold text-lg min-w-[250px]">
-                    Thicknesses Available
+                    Mevcut Kalınlıklar
                   </th>
                 </tr>
               </thead>
@@ -338,7 +339,7 @@ export default function page() {
                 {/* Aluminum */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-gray-700 font-semibold align-top">
-                    Aluminum
+                    Alüminyum
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
@@ -347,10 +348,10 @@ export default function page() {
                     </ul>
                   </td>
                   <td className="p-4 text-gray-600 align-top" rowSpan={4}>
-                    0.025 in. - 0.250 in.
+                    0,025 inç - 0,250 inç
                     <br />
                     <span className="text-gray-400 text-sm">
-                      (0.635mm - 6.35mm)
+                      (0,635mm - 6,35mm)
                     </span>
                   </td>
                 </tr>
@@ -358,13 +359,13 @@ export default function page() {
                 {/* Steel */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-gray-700 font-semibold align-top">
-                    Steel
+                    Çelik
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
                       <li>CRS/HRPO</li>
-                      <li>Galvanneal</li>
-                      <li>Galvanized</li>
+                      <li>Galvanizli Tavlanmış</li>
+                      <li>Galvanizli</li>
                     </ul>
                   </td>
                 </tr>
@@ -372,7 +373,7 @@ export default function page() {
                 {/* Stainless Steel */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-gray-700 font-semibold align-top">
-                    Stainless Steel
+                    Paslanmaz Çelik
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
@@ -386,7 +387,7 @@ export default function page() {
                 {/* Copper */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-gray-700 font-semibold align-top">
-                    Copper
+                    Bakır
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
@@ -395,10 +396,10 @@ export default function page() {
                     </ul>
                   </td>
                   <td className="p-4 text-gray-600 align-top" rowSpan={2}>
-                    0.025 in. - 0.125 in.
+                    0,025 inç - 0,125 inç
                     <br />
                     <span className="text-gray-400 text-sm">
-                      (0.635mm - 3.175mm)
+                      (0,635mm - 3,175mm)
                     </span>
                   </td>
                 </tr>
@@ -406,7 +407,7 @@ export default function page() {
                 {/* Brass */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-gray-700 font-semibold align-top">
-                    Brass
+                    Pirinç
                   </td>
                   <td className="p-4 text-gray-600 align-top">
                     <ul className="space-y-1">
@@ -426,7 +427,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/services/sheet-metal-fabrication/high-precision-cnc-gas-cutting-metal-sheet-1-1.jpg"
-                alt="Applications for Laser Cut Parts"
+                alt="Lazer Kesim Parçalar için Uygulamalar"
                 fill
                 className="object-cover"
               />
@@ -435,22 +436,22 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Applications for Laser Cut Parts
+                Lazer Kesim Parçalar için Uygulamalar
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Laser cutting is a frequently used manufacturing process in
-                industries such as energy storage, computer electronics,
-                robotics, and aerospace. Common parts fabricated with laser
-                cutting include:
+                Lazer kesim, enerji depolama, bilgisayar elektroniği, robotik ve
+                havacılık gibi endüstrilerde sıklıkla kullanılan bir üretim
+                sürecidir. Lazer kesim ile üretilen yaygın parçalar şunları
+                içerir:
               </p>
               <ul className="space-y-2">
                 {[
-                  "flat patterns",
-                  "face plates",
-                  "washers",
-                  "mounting plates",
-                  "panels",
+                  "düz desenler",
+                  "ön paneller",
+                  "rondelalar",
+                  "montaj plakaları",
+                  "paneller",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>

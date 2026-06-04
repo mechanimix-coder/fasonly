@@ -8,8 +8,8 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Finishes and Coatings for CNC Machined Parts"
-        desc="Evaluate standard surface finishes for CNC machined parts as well as advanced capabilities to improve durability, surface finish, and add color."
+        title="CNC İşlenmiş Parçalar için Yüzey İşlemleri ve Kaplamalar"
+        desc="CNC işlenmiş parçalar için standart yüzey işlemlerini ve ayrıca dayanıklılığı, yüzey kalitesini iyileştirmek ve renk eklemek için gelişmiş yetenekleri değerlendirin."
         simple
       />
 
@@ -18,12 +18,12 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Standard Finishes
+              Standart Yüzey İşlemleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Choose from three standard surface finish options for CNC machined
-              parts.
+              CNC işlenmiş parçalar için üç standart yüzey işlem seçeneği
+              arasından seçim yapın.
             </p>
           </div>
 
@@ -34,27 +34,27 @@ export default function page() {
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
                 <Image
                   src="/Assets/Images/services/cnc-machining/finishing-options/cnc-circularflange-aluminum-brokenedge.jpg"
-                  alt="OD Threads"
+                  alt="Dış Dişler"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] text-center mb-3">
-                  Edges broken (tool marks visible)
+                  Kırılmış Kenarlar (takım izleri görünür)
                 </h3>
                 <p className="text-gray-500 text-sm text-center mb-4">
-                  Edges deburred with visible toolmarks.
+                  Görünür takım izleriyle çapak alınmış kenarlar.
                 </p>
                 <div className="border-t border-gray-200 pt-3 mt-2">
                   <div className="flex justify-between items-center text-sm">
-                    <span className="text-gray-500">Materials:</span>
+                    <span className="text-gray-500">Malzemeler:</span>
                     <span className="text-gray-700 font-medium">
-                      Plastic, Metals
+                      Plastik, Metaller
                     </span>
                   </div>
                   <div className="flex justify-between items-center text-sm mt-2">
-                    <span className="text-gray-500">Cost:</span>
+                    <span className="text-gray-500">Maliyet:</span>
                     <span className="text-[#96E92A] font-bold">$</span>
                   </div>
                 </div>
@@ -66,25 +66,25 @@ export default function page() {
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
                 <Image
                   src="/Assets/Images/services/cnc-machining/finishing-options/cnc-milling-circularflange-aluminum-beadblasted.jpg"
-                  alt="OD Threads"
+                  alt="Dış Dişler"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] text-center mb-3">
-                  Edges broken and light bead blast
+                  Kırılmış Kenarlar ve Hafif Boncuk Püskürtme
                 </h3>
                 <p className="text-gray-500 text-sm text-center mb-4">
-                  Edges deburred with light bead blast.
+                  Hafif boncuk püskürtme ile çapak alınmış kenarlar.
                 </p>
                 <div className="border-t border-gray-200 pt-3 mt-2">
                   <div className="flex justify-between items-center text-sm">
-                    <span className="text-gray-500">Materials:</span>
-                    <span className="text-gray-700 font-medium">Metals</span>
+                    <span className="text-gray-500">Malzemeler:</span>
+                    <span className="text-gray-700 font-medium">Metaller</span>
                   </div>
                   <div className="flex justify-between items-center text-sm mt-2">
-                    <span className="text-gray-500">Cost:</span>
+                    <span className="text-gray-500">Maliyet:</span>
                     <span className="text-[#96E92A] font-bold">$$</span>
                   </div>
                 </div>
@@ -96,26 +96,26 @@ export default function page() {
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
                 <Image
                   src="/Assets/Images/services/cnc-machining/finishing-options/cnc-milling-circularflange-aluminum-sharpedge.jpg"
-                  alt="OD Threads"
+                  alt="Dış Dişler"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] text-center mb-3">
-                  Leave sharp (tool marks visible)
+                  Keskin Bırak (takım izleri görünür)
                 </h3>
                 <p className="text-gray-500 text-sm text-center mb-4">
-                  Edges left sharp (tool marks visible) should be handled with
-                  care.
+                  Keskin bırakılan kenarlar (takım izleri görünür) dikkatle
+                  tutulmalıdır.
                 </p>
                 <div className="border-t border-gray-200 pt-3 mt-2">
                   <div className="flex justify-between items-center text-sm">
-                    <span className="text-gray-500">Materials:</span>
-                    <span className="text-gray-700 font-medium">Metals</span>
+                    <span className="text-gray-500">Malzemeler:</span>
+                    <span className="text-gray-700 font-medium">Metaller</span>
                   </div>
                   <div className="flex justify-between items-center text-sm mt-2">
-                    <span className="text-gray-500">Cost:</span>
+                    <span className="text-gray-500">Maliyet:</span>
                     <span className="text-[#96E92A] font-bold">$</span>
                   </div>
                 </div>
@@ -126,8 +126,8 @@ export default function page() {
       </div>
 
       <GetAQuote
-        title="CNC Machining Services for End-Use Parts"
-        desc="Get high‑quality machined parts faster with our expanded automated CNC milling—parts ready in as fast as 4 days "
+        title="Son Kullanım Parçaları için CNC İşleme Hizmetleri"
+        desc="Genişletilmiş otomatik CNC frezeleme ile yüksek kaliteli işlenmiş parçaları daha hızlı alın - parçalar 4 gün kadar kısa sürede hazır"
       />
 
       <div className="w-full bg-white py-20">
@@ -135,27 +135,27 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Coating and Plating Options
+              Kaplama ve Plakalama Seçenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Choose from a variety of coating and plating options for CNC
-              machined parts.
+              CNC işlenmiş parçalar için çeşitli kaplama ve plakalama
+              seçenekleri arasından seçim yapın.
             </p>
           </div>
 
           {/* Anodizing Type II */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-[#0B1221] mb-6">
-              Anodizing Type II
+              Tip II Anodizasyon
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
               {[
-                { name: "Anodize Type II Black", color: "bg-gray-800" },
-                { name: "Anodize Type II Blue", color: "bg-blue-600" },
-                { name: "Anodize Type II Clear", color: "bg-gray-300" },
-                { name: "Anodize Type II Gold", color: "bg-amber-500" },
-                { name: "Anodize Type II Red", color: "bg-red-600" },
+                { name: "Tip II Siyah Anodizasyon", color: "bg-gray-800" },
+                { name: "Tip II Mavi Anodizasyon", color: "bg-blue-600" },
+                { name: "Tip II Şeffaf Anodizasyon", color: "bg-gray-300" },
+                { name: "Tip II Altın Anodizasyon", color: "bg-amber-500" },
+                { name: "Tip II Kırmızı Anodizasyon", color: "bg-red-600" },
               ].map((item, idx) => (
                 <div
                   key={idx}
@@ -164,7 +164,7 @@ export default function page() {
                     className={`relative h-32 w-full ${item.color} flex items-center justify-center`}>
                     <Image
                       src="/Assets/Images/services/cnc-machining/finishing-options/A1.webp"
-                      alt="OD Threads"
+                      alt="Anodizasyon örneği"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -182,15 +182,15 @@ export default function page() {
           {/* Anodizing Type III */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-[#0B1221] mb-6">
-              Anodizing Type III
+              Tip III Anodizasyon
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
               {[
-                { name: "Anodize Type III Black", color: "bg-gray-800" },
-                { name: "Anodize Type III Blue", color: "bg-blue-600" },
-                { name: "Anodize Type III Clear", color: "bg-gray-300" },
-                { name: "Anodize Type III Gold", color: "bg-amber-500" },
-                { name: "Anodize Type III Red", color: "bg-red-600" },
+                { name: "Tip III Siyah Anodizasyon", color: "bg-gray-800" },
+                { name: "Tip III Mavi Anodizasyon", color: "bg-blue-600" },
+                { name: "Tip III Şeffaf Anodizasyon", color: "bg-gray-300" },
+                { name: "Tip III Altın Anodizasyon", color: "bg-amber-500" },
+                { name: "Tip III Kırmızı Anodizasyon", color: "bg-red-600" },
               ].map((item, idx) => (
                 <div
                   key={idx}
@@ -213,36 +213,37 @@ export default function page() {
 
           {/* Powder Coating */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold text-[#0B1221] mb-6">
-              Powder Coating
-            </h3>
+            <h3 className="text-2xl font-bold text-[#0B1221] mb-6">Toz Boya</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {[
                 {
-                  name: "Black Flat Smooth (Raven Black)",
+                  name: "Siyah Düz Pürüzsüz (Kuzgun Siyahı)",
                   color: "bg-gray-900",
                 },
                 {
-                  name: "Black Flat Fine Textured (Black Grey RAL 7021)",
+                  name: "Siyah Düz İnce Dokulu (Siyah Gri RAL 7021)",
                   color: "bg-gray-700",
                 },
-                { name: "Black Flat Smooth", color: "bg-gray-800" },
+                { name: "Siyah Düz Pürüzsüz", color: "bg-gray-800" },
                 {
-                  name: "White Gloss Smooth (Signal White RAL 9003)",
+                  name: "Beyaz Parlak Pürüzsüz (Sinyal Beyazı RAL 9003)",
                   color: "bg-white border border-gray-200",
                 },
                 {
-                  name: "White Gloss Smooth (Sky White)",
+                  name: "Beyaz Parlak Pürüzsüz (Gökyüzü Beyazı)",
                   color: "bg-gray-50 border border-gray-200",
                 },
-                { name: "Tan Flat Smooth (Desert Tan)", color: "bg-amber-700" },
+                {
+                  name: "Ten Rengi Düz Pürüzsüz (Çöl Ten Rengi)",
+                  color: "bg-amber-700",
+                },
               ].map((item, idx) => (
                 <div
                   key={idx}
                   className="bg-[#F0F8FF] rounded-xl overflow-hidden hover:shadow-md transition-all duration-300">
                   <div
                     className={`relative h-32 w-full ${item.color} flex items-center justify-center`}>
-                    {item.name.includes("White") && (
+                    {item.name.includes("Beyaz") && (
                       <span className="text-gray-300 text-2xl">●</span>
                     )}
                   </div>
@@ -261,7 +262,7 @@ export default function page() {
             {/* Safety Orange */}
             <div>
               <h3 className="text-2xl font-bold text-[#0B1221] mb-6">
-                Safety Orange
+                Güvenli Turuncu
               </h3>
               <div className="grid grid-cols-1 gap-4">
                 <div className="bg-[#F0F8FF] rounded-xl overflow-hidden hover:shadow-md transition-all duration-300">
@@ -272,7 +273,7 @@ export default function page() {
                   </div>
                   <div className="p-3 text-center">
                     <p className="text-xs font-medium text-gray-700">
-                      Safety Orange
+                      Güvenli Turuncu
                     </p>
                   </div>
                 </div>
@@ -282,16 +283,16 @@ export default function page() {
             {/* Chromate Plating */}
             <div>
               <h3 className="text-2xl font-bold text-[#0B1221] mb-6">
-                Chromate Plating
+                Kromat Kaplama
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   {
-                    name: "Type I Class 1A Clear Chromate Plating",
+                    name: "Tip I Sınıf 1A Şeffaf Kromat Kaplama",
                     color: "bg-yellow-100",
                   },
                   {
-                    name: "Type I Class 3 Clear Chromate Plating",
+                    name: "Tip I Sınıf 3 Şeffaf Kromat Kaplama",
                     color: "bg-yellow-200",
                   },
                 ].map((item, idx) => (
@@ -318,7 +319,7 @@ export default function page() {
             {/* Electroless Nickel Plating */}
             <div>
               <h3 className="text-2xl font-bold text-[#0B1221] mb-6">
-                Electroless Nickel Plating
+                Elektrolizsiz Nikel Kaplama
               </h3>
               <div className="grid grid-cols-1 gap-4">
                 <div className="bg-[#F0F8FF] rounded-xl overflow-hidden hover:shadow-md transition-all duration-300">
@@ -329,7 +330,7 @@ export default function page() {
                   </div>
                   <div className="p-3 text-center">
                     <p className="text-xs font-medium text-gray-700">
-                      Clear Electroless Nickel Plating
+                      Şeffaf Elektrolizsiz Nikel Kaplama
                     </p>
                   </div>
                 </div>
@@ -339,7 +340,7 @@ export default function page() {
             {/* Zinc Coating */}
             <div>
               <h3 className="text-2xl font-bold text-[#0B1221] mb-6">
-                Zinc Coating
+                Çinko Kaplama
               </h3>
               <div className="grid grid-cols-1 gap-4">
                 <div className="bg-[#F0F8FF] rounded-xl overflow-hidden hover:shadow-md transition-all duration-300">
@@ -350,7 +351,7 @@ export default function page() {
                   </div>
                   <div className="p-3 text-center">
                     <p className="text-xs font-medium text-gray-700">
-                      Yellow Zinc Plating Type II
+                      Sarı Çinko Kaplama Tip II
                     </p>
                   </div>
                 </div>
@@ -364,13 +365,13 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Advanced Post-Processing Options for CNC Machining Parts
+              CNC İşleme Parçaları için Gelişmiş İşlem Sonrası Seçenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Through both the Factory and Fasonly Network, you can access a
-              broad range of post-processing capabilities to meet your part's
-              specifications.
+              Hem Fabrika hem de Fasonly Network aracılığıyla, parçanızın
+              özelliklerini karşılamak için geniş bir yelpazede işlem sonrası
+              yeteneklere erişebilirsiniz.
             </p>
           </div>
 
@@ -380,13 +381,13 @@ export default function page() {
               <thead>
                 <tr className="bg-[#0B1221] text-white">
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[160px]">
-                    Description
+                    Açıklama
                   </th>
                   <th className="text-left p-3 font-semibold border-r border-gray-700 min-w-[180px]">
-                    Materials
+                    Malzemeler
                   </th>
                   <th className="text-center p-3 font-semibold border-r border-gray-700 w-20">
-                    Factory
+                    Fabrika
                   </th>
                   <th className="text-center p-3 font-semibold w-20">
                     Network
@@ -396,93 +397,93 @@ export default function page() {
               <tbody>
                 {[
                   {
-                    name: "Bead Blasting",
-                    desc: "Light bead blast to provide uniform finish and light texture",
-                    materials: "Metals",
+                    name: "Boncuk Püskürtme",
+                    desc: "Homojen yüzey ve hafif doku sağlamak için hafif boncuk püskürtme",
+                    materials: "Metaller",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Anodizing",
-                    desc: "Type I, II, and III finishes are available to improve part durability and add color",
-                    materials: "Aluminum, Titanium",
+                    name: "Anodizasyon",
+                    desc: "Parça dayanıklılığını artırmak ve renk eklemek için Tip I, II ve III yüzey işlemleri mevcuttur",
+                    materials: "Alüminyum, Titanyum",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Chromate Coating",
-                    desc: "Improve corrosion resistance, add electrical connectivity, and the ability to better paint parts",
-                    materials: "Metals",
+                    name: "Kromat Kaplama",
+                    desc: "Korozyon direncini artırır, elektriksel bağlantı ekler ve parçaların daha iyi boyanmasını sağlar",
+                    materials: "Metaller",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Electroless Nickel Plating",
-                    desc: "A wear-, abrasion-, and corrosion resistant finish that is compatible with aluminum, stainless steel, and mild steel",
-                    materials: "Aluminum, Steel",
+                    name: "Elektrolizsiz Nikel Kaplama",
+                    desc: "Alüminyum, paslanmaz çelik ve yumuşak çelik ile uyumlu, aşınmaya, sürtünmeye ve korozyona dayanıklı bir yüzey işlemi",
+                    materials: "Alüminyum, Çelik",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Part Marking",
-                    desc: "Laser engraving or pad printing to add labeling and other text to parts",
-                    materials: "Metals, Plastics",
+                    name: "Parça İşaretleme",
+                    desc: "Parçalara etiketleme ve diğer metinleri eklemek için lazer gravür veya pad baskı",
+                    materials: "Metaller, Plastikler",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Passivation",
-                    desc: "Enhance durability and corrosion resistance of metal parts",
-                    materials: "Metals",
+                    name: "Pasivasyon",
+                    desc: "Metal parçaların dayanıklılığını ve korozyon direncini artırın",
+                    materials: "Metaller",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Powder Coating",
-                    desc: "Add custom color to parts while improving durability",
-                    materials: "Metals",
+                    name: "Toz Boya",
+                    desc: "Dayanıklılığı artırırken parçalara özel renk ekleyin",
+                    materials: "Metaller",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Inserts",
-                    desc: "Incorporate off-the-shelf hardware components to facilitate assembly",
-                    materials: "Metals",
+                    name: "Ek Parçalar",
+                    desc: "Montajı kolaylaştırmak için hazır donanım bileşenlerini entegre edin",
+                    materials: "Metaller",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Silk Screening",
-                    desc: "Add design elements or labels to parts",
-                    materials: "Metals",
+                    name: "İpek Baskı",
+                    desc: "Parçalara tasarım öğeleri veya etiketler ekleyin",
+                    materials: "Metaller",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Brushing",
-                    desc: "Achieve uniform, satin-like surface finish",
-                    materials: "Stainless Steel",
+                    name: "Fırçalama",
+                    desc: "Homojen, saten benzeri yüzey kalitesi elde edin",
+                    materials: "Paslanmaz Çelik",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Polishing",
-                    desc: "Create mirror-like finishes on metal parts",
-                    materials: "Metals",
+                    name: "Parlatma",
+                    desc: "Metal parçalarda ayna benzeri yüzeyler oluşturun",
+                    materials: "Metaller",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Black Oxide",
-                    desc: "Improve corrosion resistance",
-                    materials: "Metals",
+                    name: "Siyah Oksit",
+                    desc: "Korozyon direncini artırın",
+                    materials: "Metaller",
                     factory: true,
                     network: true,
                   },
                   {
-                    name: "Brushed + Electropolishing",
-                    desc: "This combination of processing results in easy-to-clean parts that are corrosion resistant",
-                    materials: "Metals",
+                    name: "Fırçalama + Elektro Parlatma",
+                    desc: "Bu işlem kombinasyonu, korozyona dayanıklı, temizlemesi kolay parçalar elde edilmesini sağlar",
+                    materials: "Metaller",
                     factory: true,
                     network: true,
                   },
