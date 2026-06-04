@@ -5,48 +5,50 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="A Guide to Manufacturing Aerospace Parts"
-        desc="4 ways to improve product development in aerospace and defense using speed, component reduction, multiple manufacturing methods, and quality assurance"
+        title="Havacılık Parçaları Üretimi İçin Bir Kılavuz"
+        desc="Havacılık ve savunmada hız, bileşen azaltma, çoklu üretim yöntemleri ve kalite güvencesi kullanarak ürün geliştirmeyi iyileştirmenin 4 yolu"
         simple
       />
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-4xl mx-auto">
             <p className="text-gray-600 leading-relaxed mb-6">
-              The aerospace and defense industry is known for producing complex
-              and advanced products—jet engines, aircraft, rockets, satellites,
-              drones, and more—that move fast in a highly regulated environment.
-              It is no wonder that these factors of speed, complexity, and
-              policy compliance play key roles in the manufacturing process.
-              This design tip explores how to improve aerospace development
-              cycles through:
+              Havacılık ve savunma endüstrisi, jet motorları, uçaklar, roketler,
+              uydular, drone'lar ve daha fazlası gibi karmaşık ve gelişmiş
+              ürünler üretmesiyle bilinir - bunların hepsi yüksek düzeyde
+              düzenlenmiş bir ortamda hızlı hareket eder. Bu hız, karmaşıklık ve
+              politika uyumluluğu faktörlerinin üretim sürecinde kilit roller
+              oynaması şaşırtıcı değildir. Bu tasarım ipucu, havacılık
+              geliştirme döngülerinin aşağıdaki yollarla nasıl
+              iyileştirileceğini araştırmaktadır:
             </p>
 
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  accelerating production with digital manufacturing
+                  dijital üretim ile üretimi hızlandırma
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  reducing components, which helps in lightweighting part
-                  design, cuts items in an overall assembly, and reduces costs
+                  parça tasarımında hafifletmeye yardımcı olan, genel montajdaki
+                  öğeleri azaltan ve maliyetleri düşüren bileşenlerin
+                  azaltılması
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  using a range of manufacturing methods and materials, which
-                  can accelerate development and add value to your designs
+                  geliştirmeyi hızlandırabilen ve tasarımlarınıza değer
+                  katabilen bir dizi üretim yöntemi ve malzemesi kullanma
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  streamlining quality and compliance assurances
+                  kalite ve uyumluluk güvencelerini kolaylaştırma
                 </span>
               </li>
             </ul>
@@ -58,25 +60,25 @@ export default function page() {
           {/* Row 1 - Pure Text */}
           <div className="max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              1. Use Digital Manufacturing to Accelerate Product Development
+              1. Ürün Geliştirmeyi Hızlandırmak için Dijital Üretimi Kullanın
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              At Protolabs, we understand the importance of speed. Working
-              extensively with companies in the aerospace and defense industry,
-              we have accelerated the development over the years of a range of
-              metal and plastic aerospace parts and products that include:
+              Protolabs'ta hızın önemini anlıyoruz. Havacılık ve savunma
+              endüstrisindeki şirketlerle kapsamlı bir şekilde çalışarak, yıllar
+              içinde aşağıdakileri içeren bir dizi metal ve plastik havacılık
+              parçası ve ürününün geliştirilmesini hızlandırdık:
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
               {[
-                "Heat exchangers",
-                "Manifolds",
-                "Turbo pumps",
-                "Liquid and gas flow components",
-                "Fuel nozzles",
-                "Conformal cooling channels",
+                "Isı eşanjörleri",
+                "Manifoldlar",
+                "Turbo pompalar",
+                "Sıvı ve gaz akış bileşenleri",
+                "Yakıt nozulları",
+                "Konformal soğutma kanalları",
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -86,54 +88,54 @@ export default function page() {
             </div>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              Metal aerospace parts have been produced by a range of digital
-              manufacturing methods, including GE's additively manufactured fuel
-              nozzle, left, for CFM International's LEAP aircraft engine, right.
+              Metal havacılık parçaları, CFM International'ın LEAP uçak motoru
+              için GE'nin eklemeli olarak ürettiği yakıt nozulu dahil olmak
+              üzere çeşitli dijital üretim yöntemleriyle üretilmiştir.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              One of the drivers in our success is through experience and
-              rigorous development of digital manufacturing tools. We have found
-              the right blend of working with autonomous digital tools and
-              hands-on application engineers to meet aerospace demands.
+              Başarımızın itici güçlerinden biri, deneyim ve dijital üretim
+              araçlarının titiz geliştirilmesidir. Havacılık taleplerini
+              karşılamak için otonom dijital araçlar ve uygulamalı uygulama
+              mühendisleri ile çalışmanın doğru karışımını bulduk.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              When starting the digital manufacturing process with many
-              manufacturers, it can be easy to upload a CAD file into multiple
-              online quoting tools. Unfortunately, some manufacturers' online
-              quoting tools don't take into account all of the back-end
-              requirements, or offer all of a manufacturer's processes. This is
-              where we choose to be upfront so that each step required for the
-              part or project is reflected in the initial quote.
+              Birçok üreticiyle dijital üretim sürecine başlarken, bir CAD
+              dosyasını birden fazla çevrimiçi teklif aracına yüklemek kolay
+              olabilir. Ne yazık ki, bazı üreticilerin çevrimiçi teklif
+              araçları, tüm arka uç gereksinimlerini dikkate almaz veya bir
+              üreticinin tüm süreçlerini sunmaz. Burada, parça veya proje için
+              gereken her adımın ilk teklife yansıtılması için açık sözlü olmayı
+              tercih ediyoruz.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              When using online digital tools, quoting software can greatly
-              accelerate development and production cycles. However, to get the
-              most out of these tools, make sure you are working with software
-              (and a manufacturer) that includes the following:
+              Çevrimiçi dijital araçları kullanırken, teklif yazılımı geliştirme
+              ve üretim döngülerini büyük ölçüde hızlandırabilir. Ancak, bu
+              araçlardan en iyi şekilde yararlanmak için, aşağıdakileri içeren
+              bir yazılım (ve üretici) ile çalıştığınızdan emin olun:
             </p>
 
             <ul className="space-y-2 mb-6">
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Takes into account all requirements and steps of the build or
-                  project
+                  Yapının veya projenin tüm gereksinimlerini ve adımlarını
+                  dikkate alır
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Offers all available processes and materials
+                  Mevcut tüm süreçleri ve malzemeleri sunar
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                 <span className="text-gray-600">
-                  Offers trained and experienced staff with years of
-                  manufacturing experience
+                  Yıllarca üretim deneyimine sahip eğitimli ve deneyimli
+                  personel sunar
                 </span>
               </li>
             </ul>
@@ -145,7 +147,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/resources/aerospace-manufacturing-guide/pl-dt-oct-2020-570x308-fuelnosel.png"
-                alt="GE additively manufactured fuel nozzle for CFM International LEAP aircraft engine"
+                alt="CFM International LEAP uçak motoru için GE tarafından eklemeli olarak üretilen yakıt nozulu"
                 fill
                 className="object-cover"
               />
@@ -154,29 +156,32 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <p className="text-gray-600 leading-relaxed mb-4">
-                A major challenge in the aerospace and defense industry is
-                on-time delivery and quality. Industry sources say around 80% of
-                orders generally show up on time. Yet, when those orders do show
-                up on time, about 25% of parts do not meet the required quality.
-                A common complaint from aerospace companies is when vendors
-                promise a lead time with a cheaper price but could not deliver
-                within the timeline quoted. Delays have led to missed deadlines
-                and greater costs to fix than if they would have just started
-                with the higher-priced vendor.
+                Havacılık ve savunma endüstrisindeki büyük bir zorluk, zamanında
+                teslimat ve kalitedir. Endüstri kaynakları, siparişlerin
+                yaklaşık %80'inin genellikle zamanında teslim edildiğini
+                söylüyor. Ancak, bu siparişler zamanında geldiğinde, parçaların
+                yaklaşık %25'i gerekli kaliteyi karşılamıyor. Havacılık
+                şirketlerinden gelen yaygın bir şikayet, tedarikçilerin daha
+                ucuz bir fiyatla bir teslim süresi vaat etmesi ancak teklif
+                edilen zaman çizelgesi içinde teslim edememesidir. Gecikmeler,
+                kaçırılan son teslim tarihlerine ve daha pahalı tedarikçiyle
+                başlamış olsalardı olacağından daha fazla düzeltme maliyetine
+                yol açmıştır.
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                Our online, interactive quoting system turns your CAD model into
-                a quote with immediate design analysis and feedback. Your design
-                can be reworked to determine the ideal balance of processes,
-                materials, time, and cost. This greatly increases efficiency as
-                it isn't necessary to talk with someone every time a part is
-                needed. But when you need a knowledgeable person on your side,
-                we have a team of applications engineers ready to back up our
-                automated tools. All contacts, customer or not, get free access
-                to our responsive team that understands how to design for our
-                processes, reduce cost, and answer a myriad of other technical
-                questions.
+                Çevrimiçi, etkileşimli teklif sistemimiz, CAD modelinizi anında
+                tasarım analizi ve geri bildirimi ile bir teklife dönüştürür.
+                Tasarımınız, süreçler, malzemeler, zaman ve maliyetin ideal
+                dengesini belirlemek için yeniden çalışılabilir. Bu, her
+                seferinde bir parçaya ihtiyaç duyulduğunda biriyle konuşmak
+                gerekmediği için verimliliği büyük ölçüde artırır. Ancak bilgili
+                bir kişinin sizin tarafınızda olması gerektiğinde, otomatik
+                araçlarımızı desteklemeye hazır bir uygulama mühendisleri
+                ekibimiz var. Müşteri olsun ya da olmasın tüm kişiler,
+                süreçlerimiz için nasıl tasarım yapılacağını anlayan, maliyeti
+                azaltan ve sayısız diğer teknik soruyu yanıtlayan duyarlı
+                ekibimize ücretsiz erişim sağlar.
               </p>
             </div>
           </div>
@@ -191,29 +196,29 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              2. Reduce Components to Benefit Product Design
+              2. Ürün Tasarımına Fayda Sağlamak için Bileşenleri Azaltın
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              You may want to reduce overall components in a part or product
-              design for several reasons.
+              Bir parça veya ürün tasarımındaki genel bileşenleri birkaç
+              nedenden dolayı azaltmak isteyebilirsiniz.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              First, lightweighting is crucial in aerospace. Companies know just
-              how many ounces of fuel it takes to fly a gram of weight in
-              flight, for example, so slight reductions drive major gains. The
-              choice of materials, and sometimes the method of manufacturing,
-              also factor into this lightweighting equation. But trimming part
-              count helps, too.
+              İlk olarak, havacılıkta hafifletme çok önemlidir. Şirketler,
+              örneğin bir gram ağırlığın uçuşta taşınmasının kaç ons yakıt
+              gerektirdiğini bilir, bu nedenle küçük azaltmalar büyük kazançlar
+              sağlar. Malzeme seçimi ve bazen üretim yöntemi de bu hafifletme
+              denkleminde rol oynar. Ancak parça sayısını azaltmak da yardımcı
+              olur.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              Second, cutting costs is important. Plastics and metals can be
-              expensive, and so can assembly time. Accordingly, if designs can
-              lessen the number of components or parts, this can reduce
-              materials and assembly time.
+              İkinci olarak, maliyetleri düşürmek önemlidir. Plastikler ve
+              metaller pahalı olabilir ve montaj süresi de öyle. Buna göre,
+              tasarımlar bileşen veya parça sayısını azaltabilirse, bu
+              malzemeleri ve montaj süresini azaltabilir.
             </p>
 
             {/* Image floated to the right with text wrapping */}
@@ -221,7 +226,7 @@ export default function page() {
               <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden shadow-md bg-gray-100">
                 <Image
                   src="/Assets/Images/resources/aerospace-manufacturing-guide/pl-dt-oct-2020-570x308-ge-exploded-part.png"
-                  alt="Aerospace components"
+                  alt="Havacılık bileşenleri"
                   fill
                   className="object-cover"
                 />
@@ -229,46 +234,47 @@ export default function page() {
             </div>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              With these lightweighting and cost considerations in mind, which
-              materials work best for aerospace components? Titanium is often a
-              go-to choice, available through machining and 3D printing
-              services. This lightweight and strong material offers excellent
-              corrosion and temperature resistance. Aluminum, and its high
-              strength-to-weight ratio makes it a good candidate for housing and
-              brackets that must support high loading. Aluminum also is
-              available for both machined and 3D-printed parts. Inconel, a
-              3D-printed metal, is a nickel chromium superalloy ideal for rocket
-              engine components and other applications that require
-              high-temperature resistance.
+              Bu hafifletme ve maliyet hususlarını akılda tutarak, havacılık
+              bileşenleri için hangi malzemeler en iyi sonucu verir? Titanyum,
+              işleme ve 3D baskı hizmetleriyle mevcut olan sıklıkla tercih
+              edilen bir seçimdir. Bu hafif ve güçlü malzeme, mükemmel korozyon
+              ve sıcaklık direnci sunar. Yüksek mukavemet-ağırlık oranına sahip
+              alüminyum, yüksek yüklemeyi desteklemesi gereken gövdeler ve
+              braketler için iyi bir adaydır. Alüminyum ayrıca hem işlenmiş hem
+              de 3D baskılı parçalar için mevcuttur. 3D baskılı bir metal olan
+              Inconel, roket motoru bileşenleri ve yüksek sıcaklık direnci
+              gerektiren diğer uygulamalar için ideal bir nikel krom süper
+              alaşımdır.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              Stainless steel also is a frequent materials choice. For example,
-              SS 17-4 PH is used in the aerospace industry due to its high
-              strength, good corrosion resistance, and good mechanical
-              properties at temperatures up to 600 degrees F. Like titanium, it
-              can be machined or 3D printed. Liquid silicone rubber is also
-              widely used in the industry. This elastic fluorosilicone material
-              is specifically geared toward fuel and oil resistance while
-              optical silicone rubber is a good PC/PMMA alternative. Common
-              applications in aerospace include soft-touch surfaces, gaskets,
-              seals, and O-rings.
+              Paslanmaz çelik de sık kullanılan bir malzeme seçeneğidir.
+              Örneğin, SS 17-4 PH, yüksek mukavemeti, iyi korozyon direnci ve
+              600 derece F'ye kadar sıcaklıklarda iyi mekanik özellikleri
+              nedeniyle havacılık endüstrisinde kullanılır. Titanyum gibi,
+              işlenebilir veya 3D baskı ile üretilebilir. Sıvı silikon kauçuk da
+              endüstride yaygın olarak kullanılmaktadır. Bu elastik florosilikon
+              malzeme, özellikle yakıt ve yağ direncine yöneliktirken, optik
+              silikon kauçuk iyi bir PC/PMMA alternatifidir. Havacılıkta yaygın
+              uygulamalar arasında yumuşak dokunuşlu yüzeyler, contalar, keçeler
+              ve O-ringler bulunur.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Finally, beyond lightweighting and cost cutting issues, the
-              aerospace industry faces unique benefits and challenges with high
-              risks and rewards. Companies are concerned with development
-              cycles, prototyping, hot-fire testing, and production. So, while
-              component reduction can help reduce part weight and assembly time,
-              the real savings are in the reduction of the headaches and
-              overhead associated with the supply chain and paper trail for each
-              part. In aerospace, each component that goes into the final
-              product has a tremendous amount of validation behind it such as
-              material traceability, shock and vibe tests, rigorous inspections,
-              and much more. In such a regulated industry, reducing parts can
-              provide great value by reducing inventory, having fewer documents
-              to track, and streamlining your supply chain.
+              Son olarak, hafifletme ve maliyet düşürme konularının ötesinde,
+              havacılık endüstrisi yüksek riskler ve ödüllerle benzersiz
+              faydalar ve zorluklarla karşı karşıyadır. Şirketler, geliştirme
+              döngüleri, prototipleme, sıcak ateş testi ve üretim ile
+              ilgilenmektedir. Bu nedenle, bileşen azaltma parça ağırlığını ve
+              montaj süresini azaltmaya yardımcı olabilirken, gerçek tasarruf,
+              tedarik zinciri ve her parça için kağıt izi ile ilgili baş
+              ağrılarının ve genel giderlerin azaltılmasındadır. Havacılıkta,
+              nihai ürüne giren her bileşen, malzeme izlenebilirliği, şok ve
+              titreşim testleri, titiz denetimler ve çok daha fazlası gibi
+              arkasında muazzam miktarda doğrulama barındırır. Bu kadar
+              düzenlenmiş bir endüstride, parçaları azaltmak, envanteri
+              azaltarak, takip edilecek daha az belgeye sahip olarak ve tedarik
+              zincirinizi kolaylaştırarak büyük değer sağlayabilir.
             </p>
 
             {/* Clear float to ensure proper layout after the image */}
@@ -282,7 +288,7 @@ export default function page() {
             {/* Title Section */}
             <div className="mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                3. Deploy a Range of Manufacturing Methods, Materials
+                3. Bir Dizi Üretim Yöntemi ve Malzemesi Kullanın
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full"></div>
             </div>
@@ -292,80 +298,80 @@ export default function page() {
               {/* Left Column - All Text Content */}
               <div className="lg:w-2/3">
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  If you have an internal machine shop but have to deal with a
-                  lot of different types of manufacturing in a small space, you
-                  might have taken projects to outside vendors for development
-                  work. It is important to find the right vendor with the
-                  capacity to meet your high demands for quality and speed. You
-                  may know but it bears repeating that there are no universal
-                  processes or materials. You need all the tools in your arsenal
-                  to find the best solutions to stay on the cutting edge.
-                  Therefore, work with companies that are able to offer a range
-                  of manufacturing processes and materials. We offer CNC
-                  machining, sheet metal fabrication, injection molding, and six
-                  different industrial-grade 3D printing (additive
-                  manufacturing) methods. Additionally, you can choose from
-                  hundreds of commercial-grade plastics, metals, and elastomers
-                  that are suitable for both prototyping and production. See our
-                  Materials Comparison Guide for a complete list.
+                  Dahili bir işleme atölyeniz varsa ancak küçük bir alanda
+                  birçok farklı üretim türüyle uğraşmak zorunda kalıyorsanız,
+                  geliştirme çalışmaları için projeleri dış tedarikçilere vermiş
+                  olabilirsiniz. Kalite ve hız konusundaki yüksek taleplerinizi
+                  karşılayacak kapasiteye sahip doğru tedarikçiyi bulmak
+                  önemlidir. Evrensel süreçler veya malzemeler olmadığını
+                  biliyor olabilirsiniz ancak tekrarlamakta fayda var. En iyi
+                  çözümleri bulmak ve rekabet avantajınızı korumak için
+                  cephaneliğinizdeki tüm araçlara ihtiyacınız vardır. Bu
+                  nedenle, bir dizi üretim süreci ve malzemesi sunabilen
+                  şirketlerle çalışın. CNC işleme, sac metal imalatı, enjeksiyon
+                  kalıplama ve altı farklı endüstriyel sınıf 3D baskı (eklemeli
+                  üretim) yöntemi sunuyoruz. Ek olarak, hem prototipleme hem de
+                  üretim için uygun yüzlerce ticari sınıf plastik, metal ve
+                  elastomer arasından seçim yapabilirsiniz. Tam liste için
+                  Malzeme Karşılaştırma Kılavuzumuza bakın.
                 </p>
 
                 <h3 className="text-xl md:text-2xl font-bold text-[#0B1221] mb-3 mt-6">
-                  Subtractive Processes and Materials:
+                  Çıkarımlı Süreçler ve Malzemeler:
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  CNC machining methods, specifically three- and five-axis
-                  milling, are frequently used in manufacturing today. For the
-                  aerospace industry, common materials are 6061-T6 aluminum,
-                  hard metals such as 304, 316, and 17-4PH stainless steel, and
-                  titanium.
+                  CNC işleme yöntemleri, özellikle üç ve beş eksenli frezeleme,
+                  günümüzde üretimde sıklıkla kullanılmaktadır. Havacılık
+                  endüstrisi için yaygın malzemeler 6061-T6 alüminyum, 304, 316
+                  ve 17-4PH paslanmaz çelik gibi sert metaller ve titanyumdur.
                 </p>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  What isn't common are the size and geometric dimensioning and
-                  tolerancing (GD&amp;T) capabilities of many shops. While it is
-                  common for the customer to state what tolerances are needed,
-                  look for companies that state what size and GD&amp;T they can
-                  deliver.
+                  Yaygın olmayan şey, birçok atölyenin boyut ve geometrik
+                  boyutlandırma ve toleranslandırma (GD&amp;T) yetenekleridir.
+                  Müşterinin hangi toleransların gerekli olduğunu belirtmesi
+                  yaygın olsa da, hangi boyut ve GD&amp;T'yi teslim
+                  edebileceklerini belirten şirketleri arayın.
                 </p>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Most aerospace customers have complex parts that can be more
-                  advanced than even our automated machining facilities can
-                  handle.
+                  Havacılık müşterilerinin çoğu, otomatik işleme tesislerimizin
+                  bile işleyebileceğinden daha gelişmiş olabilen karmaşık
+                  parçalara sahiptir.
                 </p>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  To solve this problem, we introduced our high-requirement or
-                  precision-machining option, which can accommodate larger parts
-                  and more complex geometries. This option helps our aerospace
-                  customers by repeatedly and reliably delivering on more
-                  complex parts as programs progress toward end-use production.
-                  Also, this high-requirement option is able to read both a CAD
-                  file and a drawing, accommodate larger parts with more complex
-                  features, provide tighter tolerances, perform secondary
-                  operations, and offer quality reporting options.
+                  Bu sorunu çözmek için, daha büyük parçaları ve daha karmaşık
+                  geometrileri barındırabilen yüksek gereksinimli veya hassas
+                  işleme seçeneğimizi tanıttık. Bu seçenek, programlar son
+                  kullanım üretimine doğru ilerledikçe daha karmaşık parçaları
+                  tekrar tekrar ve güvenilir bir şekilde teslim ederek havacılık
+                  müşterilerimize yardımcı olur. Ayrıca, bu yüksek gereksinimli
+                  seçenek, hem bir CAD dosyasını hem de bir çizimi okuyabilir,
+                  daha karmaşık özelliklere sahip daha büyük parçaları
+                  barındırabilir, daha sıkı toleranslar sağlayabilir, ikincil
+                  işlemler gerçekleştirebilir ve kalite raporlama seçenekleri
+                  sunabilir.
                 </p>
 
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  For detailed information on these high-requirement or
-                  precision-machining options, including tolerances, minimum and
-                  maximum part dimensions, and other design guidelines, visit
-                  our CNC machining page. In addition, visit our website for
-                  basic design guidelines for CNC milling.
+                  Toleranslar, minimum ve maksimum parça boyutları ve diğer
+                  tasarım kılavuzları dahil olmak üzere bu yüksek gereksinimli
+                  veya hassas işleme seçenekleri hakkında detaylı bilgi için CNC
+                  işleme sayfamızı ziyaret edin. Ayrıca, CNC frezeleme için
+                  temel tasarım kılavuzları için web sitemizi ziyaret edin.
                 </p>
 
                 <h3 className="text-xl md:text-2xl font-bold text-[#0B1221] mb-3 mt-6">
-                  Additive Manufacturing—Processes and Materials:
+                  Eklemeli Üretim - Süreçler ve Malzemeler:
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  A considerable amount of aerospace and defense parts are
-                  metal. Accordingly, when it comes to metal 3D printing or
-                  additive manufacturing, most common materials are Inconel 718,
-                  the aluminum alloy AlSi10Mg, stainless steel (304 &amp; 17-4),
-                  titanium, and cobalt chrome (CoCr). Again, the difference here
-                  will be the material and additive manufacturing processes
-                  available.
+                  Havacılık ve savunma parçalarının önemli bir kısmı metaldir.
+                  Buna göre, metal 3D baskı veya eklemeli üretim söz konusu
+                  olduğunda, en yaygın malzemeler Inconel 718, alüminyum alaşımı
+                  AlSi10Mg, paslanmaz çelik (304 ve 17-4), titanyum ve kobalt
+                  kromdur (CoCr). Yine, buradaki fark, mevcut malzeme ve
+                  eklemeli üretim süreçleri olacaktır.
                 </p>
               </div>
 
@@ -373,11 +379,12 @@ export default function page() {
               <div className="lg:w-1/3">
                 <div className="bg-[#F0F8FF] rounded-2xl p-8 sticky top-32">
                   <h3 className="text-2xl font-bold text-[#0B1221] mb-6 pb-2 border-b-2 border-[#96E92A] inline-block">
-                    Prepping Your Flight Plan
+                    Uçuş Planınızı Hazırlama
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Visit these pages for more information on product design and
-                    development for the aerospace and defense industry.
+                    Havacılık ve savunma endüstrisi için ürün tasarımı ve
+                    geliştirme hakkında daha fazla bilgi için bu sayfaları
+                    ziyaret edin.
                   </p>
                   <ul className="space-y-4">
                     <li className="group">
@@ -386,9 +393,9 @@ export default function page() {
                         className="flex items-start gap-2 hover:gap-3 transition-all duration-300">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2 group-hover:scale-125 transition-transform"></div>
                         <span className="text-gray-700 text-sm font-medium hover:text-[#0099ff] transition-colors">
-                          <span className="font-semibold">TREND REPORT:</span>{" "}
-                          Aerospace Manufacturing Methods for Prototyping and
-                          Production
+                          <span className="font-semibold">TREND RAPORU:</span>{" "}
+                          Prototipleme ve Üretim için Havacılık Üretim
+                          Yöntemleri
                         </span>
                       </a>
                     </li>
@@ -398,8 +405,8 @@ export default function page() {
                         className="flex items-start gap-2 hover:gap-3 transition-all duration-300">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2 group-hover:scale-125 transition-transform"></div>
                         <span className="text-gray-700 text-sm font-medium hover:text-[#0099ff] transition-colors">
-                          <span className="font-semibold">GUIDE:</span>{" "}
-                          Combining Part Assemblies with Additive Manufacturing
+                          <span className="font-semibold">KILAVUZ:</span>{" "}
+                          Eklemeli Üretim ile Parça Montajlarını Birleştirme
                         </span>
                       </a>
                     </li>
@@ -409,8 +416,8 @@ export default function page() {
                         className="flex items-start gap-2 hover:gap-3 transition-all duration-300">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2 group-hover:scale-125 transition-transform"></div>
                         <span className="text-gray-700 text-sm font-medium hover:text-[#0099ff] transition-colors">
-                          How Additive and Subtractive Manufacturing Combine to
-                          Accelerate Aerospace Development
+                          Eklemeli ve Çıkarımlı Üretim Havacılık Geliştirmeyi
+                          Nasıl Hızlandırıyor
                         </span>
                       </a>
                     </li>
@@ -420,8 +427,7 @@ export default function page() {
                         className="flex items-start gap-2 hover:gap-3 transition-all duration-300">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2 group-hover:scale-125 transition-transform"></div>
                         <span className="text-gray-700 text-sm font-medium hover:text-[#0099ff] transition-colors">
-                          Remove Before Flight: How Aerospace Companies Mitigate
-                          Risk
+                          Havacılık Şirketleri Riski Nasıl Azaltır?
                         </span>
                       </a>
                     </li>
@@ -431,7 +437,8 @@ export default function page() {
                         className="flex items-start gap-2 hover:gap-3 transition-all duration-300">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2 group-hover:scale-125 transition-transform"></div>
                         <span className="text-gray-700 text-sm font-medium hover:text-[#0099ff] transition-colors">
-                          3D Printing Helps Keep Aerospace Industry Afloat
+                          3D Baskı Havacılık Endüstrisinin Ayakta Kalmasına
+                          Yardımcı Oluyor
                         </span>
                       </a>
                     </li>
@@ -441,7 +448,7 @@ export default function page() {
                         className="flex items-start gap-2 hover:gap-3 transition-all duration-300">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2 group-hover:scale-125 transition-transform"></div>
                         <span className="text-gray-700 text-sm font-medium hover:text-[#0099ff] transition-colors">
-                          Lockheed Martin's Small Drone with a Big Spirit
+                          Lockheed Martin'in Büyük Ruhlu Küçük Drone'u
                         </span>
                       </a>
                     </li>
@@ -451,7 +458,7 @@ export default function page() {
                         className="flex items-start gap-2 hover:gap-3 transition-all duration-300">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2 group-hover:scale-125 transition-transform"></div>
                         <span className="text-gray-700 text-sm font-medium hover:text-[#0099ff] transition-colors">
-                          Ready for Take off
+                          Kalkışa Hazır
                         </span>
                       </a>
                     </li>
@@ -470,64 +477,65 @@ export default function page() {
               <div className="relative w-full h-80 md:h-96 lg:h-[450px] rounded-xl overflow-hidden shadow-md bg-gray-100 mb-4">
                 <Image
                   src="/Assets/Images/resources/aerospace-manufacturing-guide/pl-dt-oct-2020-570x308-process-materials-deuce.png"
-                  alt="Large-format metal 3D printed part from GE Additive Concept Laser X-Line machine"
+                  alt="GE Additive Concept Laser X-Line makinesinden büyük formatlı metal 3D baskılı parça"
                   fill
                   className="object-cover"
                 />
               </div>
               <p className="text-gray-400 text-xs leading-relaxed">
-                DMLS does have a limited build space. However, we also offer
-                large-format metal parts. We can build production-grade metal
-                parts as large as 31.5 in. x 15.7 in. x 19.7 in. (800mm x 398mm
-                x 500mm). We are initially focusing on Inconel 718 as a material
-                to use to better serve the demand for larger complex parts in
-                the aerospace industry. This large-format metal 3D printing,
-                from our GE Additive Concept Laser X-Line machine, also is an
-                example of how our company is technology agnostic, using
-                machines, equipment, and processes sourced from a variety of
-                companies.
+                DMLS'nin sınırlı bir yapı alanı vardır. Ancak, büyük formatlı
+                metal parçalar da sunuyoruz. 31,5 inç x 15,7 inç x 19,7 inç
+                (800mm x 398mm x 500mm) kadar büyük üretim sınıfı metal parçalar
+                üretebiliriz. Başlangıçta, havacılık endüstrisinde daha büyük
+                karmaşık parçalara olan talebi daha iyi karşılamak için Inconel
+                718'i kullanmaya odaklanıyoruz. GE Additive Concept Laser X-Line
+                makinemizden yapılan bu büyük formatlı metal 3D baskı,
+                şirketimizin çeşitli şirketlerden tedarik edilen makineler,
+                ekipmanlar ve süreçleri kullanarak teknolojiye bağlı olmadığının
+                bir örneğidir.
               </p>
             </div>
 
             {/* Right Column - Text */}
             <div className="flex-1">
               <p className="text-gray-600 leading-relaxed mb-4">
-                DMLS can additively manufacture large, production-grade metal
-                parts (as shown). This large-format metal 3D printing, from our
-                GE Additive Concept Laser X-Line machine, is an example of how
-                our company is technology agnostic, using machines, equipment,
-                and processes sourced from a variety of companies.
+                DMLS, büyük, üretim sınıfı metal parçaları eklemeli olarak
+                üretebilir (gösterildiği gibi). GE Additive Concept Laser X-Line
+                makinemizden yapılan bu büyük formatlı metal 3D baskı,
+                şirketimizin çeşitli şirketlerden tedarik edilen makineler,
+                ekipmanlar ve süreçleri kullanarak teknolojiye bağlı olmadığının
+                bir örneğidir.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                We use multiple additive processes: stereolithography, direct
-                metal laser sintering (DMLS), selective laser sintering, Multi
-                Jet Fusion, Carbon DLS, and PolyJet. DMLS has proven to be a
-                desirable process in the aerospace industry because it offers:
+                Birden fazla eklemeli süreç kullanıyoruz: stereolitografi,
+                doğrudan metal lazer sinterleme (DMLS), seçici lazer sinterleme,
+                Multi Jet Fusion, Carbon DLS ve PolyJet. DMLS'nin aşağıdakileri
+                sunduğu için havacılık endüstrisinde arzu edilen bir süreç
+                olduğu kanıtlanmıştır:
               </p>
 
               <ul className="space-y-2 mb-4">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
-                  <span className="text-gray-600">
-                    large range of materials
-                  </span>
+                  <span className="text-gray-600">geniş malzeme yelpazesi</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
-                  <span className="text-gray-600">increased functionality</span>
+                  <span className="text-gray-600">artırılmış işlevsellik</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                   <span className="text-gray-600">
-                    ability to accommodate complexity and organic designs
+                    karmaşıklığı ve organik tasarımları barındırma yeteneği
                   </span>
                 </li>
               </ul>
 
               <p className="text-gray-600 leading-relaxed">
-                Beyond the manufacturing methods referenced (subtractive and
-                additive), we also offer a
+                Atıfta bulunulan üretim yöntemlerinin (çıkarımlı ve eklemeli)
+                ötesinde, tasarımınız bu uygulamaları gerektiriyorsa, bir dizi
+                ikincil veya yüzey işlem seçeneği de sunuyoruz:
               </p>
             </div>
           </div>
@@ -536,26 +544,21 @@ export default function page() {
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-4xl mx-auto">
-            <p className="text-gray-600 leading-relaxed mb-4">
-              number of secondary or finishing options, if your design calls for
-              these applications:
-            </p>
-
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
               {[
-                "Post-process machining - for 3D-printed metal parts",
-                "Heat treatment - including HIP for 3D printed parts",
-                "Additional plating",
-                "Anodizing",
-                "Basic assembly",
-                "Chromate plating",
-                "Cleaning",
-                "Electroless nickel plating",
-                "Part marking",
-                "Passivation",
-                "Powder coating",
-                "Press fit and hardware",
-                "Silkscreening",
+                "İşlem sonrası işleme - 3D baskılı metal parçalar için",
+                "Isıl işlem - 3D baskılı parçalar için HIP dahil",
+                "Ek kaplama",
+                "Anodizasyon",
+                "Temel montaj",
+                "Kromat kaplama",
+                "Temizleme",
+                "Elektrolizsiz nikel kaplama",
+                "Parça işaretleme",
+                "Pasivasyon",
+                "Toz boya",
+                "Pres geçme ve donanım",
+                "İpek baskı",
               ].map((item, idx) => (
                 <div key={idx} className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2 flex-shrink-0"></div>
@@ -565,20 +568,21 @@ export default function page() {
             </div>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              If you need several vendors for different processes or secondary
-              processes, remember the benefits mentioned earlier about using one
-              supplier with multiple processes. We offer many processes and
-              materials while operating as a local vendor to reduce time and
-              costs.
+              Farklı süreçler veya ikincil işlemler için birkaç tedarikçiye
+              ihtiyacınız varsa, birden fazla süreci olan tek bir tedarikçi
+              kullanmanın daha önce bahsedilen faydalarını unutmayın. Zaman ve
+              maliyetleri azaltmak için yerel bir tedarikçi olarak faaliyet
+              gösterirken birçok süreç ve malzeme sunuyoruz.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              In addition, as we recently noted in our trend report on aerospace
-              manufacturing, often the best solutions for aerospace and defense
-              will involve a hybrid approach using multiple technologies in
-              concert. Just as a traditional toolbox contains both hammer and
-              pliers, so too do today's advanced manufacturing operations house
-              both additive and subtractive manufacturing systems and know-how.
+              Ek olarak, havacılık üretimi hakkındaki trend raporumuzda yakın
+              zamanda belirttiğimiz gibi, havacılık ve savunma için en iyi
+              çözümler genellikle birden fazla teknolojiyi birlikte kullanan
+              hibrit bir yaklaşımı içerecektir. Geleneksel bir alet kutusu hem
+              çekiç hem de pense içerdiği gibi, günümüzün gelişmiş üretim
+              operasyonları da hem eklemeli hem de çıkarımlı üretim sistemlerini
+              ve bilgi birikimini barındırır.
             </p>
           </div>
         </div>
@@ -589,47 +593,48 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                4. Rely on Quality and Compliance Assurance
+                4. Kalite ve Uyumluluk Güvencesine Güvenin
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Finally, aerospace product designers and developers need to
-                carefully navigate government and safety policy and compliance
-                issues. Working in such a highly regulated industry, it is
-                important to find vendors familiar with aerospace requirements.
-                Traceability, documentation, testing, and certified parts that
-                are USA/ITAR compliant in an ISO 9001 environment can decrease
-                much of the work needed to be done, tested, or verified in
-                house.
+                Son olarak, havacılık ürün tasarımcıları ve geliştiricileri,
+                hükümet ve güvenlik politikası ile uyumluluk konularını
+                dikkatlice yönetmelidir. Bu kadar yüksek düzenlemeye tabi bir
+                endüstride çalışırken, havacılık gereksinimlerine aşina
+                tedarikçiler bulmak önemlidir. İzlenebilirlik, dokümantasyon,
+                test ve ISO 9001 ortamında ABD/ITAR uyumlu sertifikalı parçalar,
+                şirket içinde yapılması, test edilmesi veya doğrulanması gereken
+                işlerin çoğunu azaltabilir.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Governing bodies are continuously working on standards for
-                additive manufacturing, so knowing exactly what is needed may be
-                difficult to find for non-traditional processes. However,
-                standards or certifications for finished parts apply no matter
-                how it was manufactured. You will want to make sure vendors have
-                certified materials, powder analysis, material traceability, and
-                more depending on your needs.
+                Yönetim organları, eklemeli üretim için standartlar üzerinde
+                sürekli çalışmaktadır, bu nedenle geleneksel olmayan süreçler
+                için tam olarak neyin gerekli olduğunu bulmak zor olabilir.
+                Ancak, bitmiş parçalar için standartlar veya sertifikalar, nasıl
+                üretildiğine bakılmaksızın uygulanır. Tedarikçilerin,
+                ihtiyaçlarınıza bağlı olarak sertifikalı malzemelere, toz
+                analizine, malzeme izlenebilirliğine ve daha fazlasına sahip
+                olduğundan emin olmak isteyeceksiniz.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                We have already invested heavily in digital manufacturing
-                methods to provide you with automated tools, documentation,
-                testing, and traceability, all supported by our applications
-                engineers, delivering you a streamlined and efficient digital
-                thread. We offer the following quality documentations and report
-                options in an ISO 9001, AS9100 certified, USA/ITAR compliant
-                environment:
+                Size otomatik araçlar, dokümantasyon, test ve izlenebilirlik
+                sağlamak için dijital üretim yöntemlerine zaten büyük yatırım
+                yaptık, tümü uygulama mühendislerimiz tarafından desteklenmekte
+                ve size kolaylaştırılmış ve verimli bir dijital bağlantı
+                sunmaktadır. ISO 9001, AS9100 sertifikalı, ABD/ITAR uyumlu bir
+                ortamda aşağıdaki kalite dokümantasyonu ve rapor seçeneklerini
+                sunuyoruz:
               </p>
 
               <ul className="space-y-2 mb-6">
                 {[
-                  "Material certifications and heat lot numbers",
-                  "Certificate of conformance (CoC)",
-                  "First article inspections (FAI) - including AS9102 FAI for 3D-printed parts",
-                  "Various other inspection requests such as CMM, X-Ray or CT scanning",
+                  "Malzeme sertifikaları ve ısı parti numaraları",
+                  "Uygunluk sertifikası (CoC)",
+                  "İlk ürün denetimleri (FAI) - 3D baskılı parçalar için AS9102 FAI dahil",
+                  "CMM, X-Ray veya CT tarama gibi çeşitli diğer denetim talepleri",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
@@ -639,22 +644,23 @@ export default function page() {
               </ul>
 
               <p className="text-gray-600 leading-relaxed">
-                Ultimately, we will work with you to find the best solution and
-                consider all steps of your project. If you would like more
-                information, contact our applications engineers at{" "}
+                Sonuç olarak, en iyi çözümü bulmak ve projenizin tüm adımlarını
+                dikkate almak için sizinle çalışacağız. Daha fazla bilgi
+                isterseniz, uygulama mühendislerimizle{" "}
                 <a
                   href="tel:+902641234567"
                   className="text-[#0099ff] hover:text-[#96E92A] transition-colors font-medium">
                   +90 264 123 45 67
-                </a>
-                , email us at{" "}
+                </a>{" "}
+                numaralı telefondan iletişime geçin,{" "}
                 <a
                   href="mailto:info@fasonly.com"
                   className="text-[#0099ff] hover:text-[#96E92A] transition-colors font-medium">
                   info@fasonly.com
-                </a>
-                , or start your design today by uploading your 3D CAD model to
-                receive an interactive quote within hours.
+                </a>{" "}
+                adresinden e-posta gönderin veya 3B CAD modelinizi yükleyerek
+                saatler içinde etkileşimli bir teklif almak için tasarımınıza
+                bugün başlayın.
               </p>
             </div>
 
@@ -662,7 +668,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/resources/aerospace-manufacturing-guide/pl-dt-oct-2020-570x308-quality-assurance.png"
-                alt="Quality and Compliance Assurance"
+                alt="Kalite ve Uyumluluk Güvencesi"
                 fill
                 className="object-cover"
               />

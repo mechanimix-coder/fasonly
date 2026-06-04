@@ -7,68 +7,68 @@ export default function page() {
   const [activeTab, setActiveTab] = useState("aluminum");
 
   const tabs = [
-    { id: "aluminum", label: "Aluminum" },
-    { id: "brass", label: "Brass" },
-    { id: "copper", label: "Copper" },
-    { id: "stainless", label: "Stainless Steel" },
-    { id: "steelAlloy", label: "Steel Alloy" },
-    { id: "steelMild", label: "Steel Mild Low Carbon" },
-    { id: "titanium", label: "Titanium" },
+    { id: "aluminum", label: "Alüminyum" },
+    { id: "brass", label: "Pirinç" },
+    { id: "copper", label: "Bakır" },
+    { id: "stainless", label: "Paslanmaz Çelik" },
+    { id: "steelAlloy", label: "Çelik Alaşımı" },
+    { id: "steelMild", label: "Yumuşak Düşük Karbonlu Çelik" },
+    { id: "titanium", label: "Titanyum" },
   ];
 
   const content = {
     aluminum: {
-      title: "Aluminum",
+      title: "Alüminyum",
       description:
-        "Aluminum is a popular choice for machining due to its low density, good mechanical properties, high thermal and electrical conductivity, and resistance to corrosion. Aluminum alloys, such as 6061-T651, 7075-T651, and 2024-T351, are commonly used in CNC machining because they offer a good balance of strength, machinability, and cost.",
+        "Alüminyum, düşük yoğunluğu, iyi mekanik özellikleri, yüksek termal ve elektriksel iletkenliği ve korozyon direnci nedeniyle işleme için popüler bir seçimdir. 6061-T651, 7075-T651 ve 2024-T351 gibi alüminyum alaşımları, mukavemet, işlenebilirlik ve maliyet arasında iyi bir denge sundukları için CNC işlemede yaygın olarak kullanılır.",
       image:
         "/Assets/Images/resources/aerospace-machining/material_cnc_milling_aluminum-2024_02_hr.jpg",
       link: "#",
     },
     brass: {
-      title: "Brass",
+      title: "Pirinç",
       description:
-        "Brass is an alloy consisting of both copper and zinc. The golden material is a weather- and corrosion-resistant metal with tensile strength similar to mild steel. It's also an easy to machine material, so feedrates can remain high and coolant need is minimal.",
+        "Pirinç, hem bakır hem de çinkodan oluşan bir alaşımdır. Altın rengi malzeme, yumuşak çeliğe benzer çekme mukavemetine sahip, hava koşullarına ve korozyona dayanıklı bir metaldir. Ayrıca işlenmesi kolay bir malzemedir, bu nedenle ilerleme hızları yüksek kalabilir ve soğutma sıvısı ihtiyacı minimumdur.",
       image:
         "/Assets/Images/resources/aerospace-machining/material_cnc_milling_brass_02_hr.jpg",
       link: "#",
     },
     copper: {
-      title: "Copper",
+      title: "Bakır",
       description:
-        "Copper is a metal that is corrosion-resistant, extremely electrically conductive, and highly ductile. Its glossy orange-reddish appearance is instantly recognizable, and the metal looks attractive even when it goes through a natural oxidation process that forms a bluish-green coating called patina in response to its environment. Note, however, that copper weldability is considered moderate to poor.",
+        "Bakır, korozyona dayanıklı, son derece elektriksel iletken ve yüksek sünekliğe sahip bir metaldir. Parlak turuncu-kırmızımsı görünümü anında tanınabilir ve metal, çevresine tepki olarak patina adı verilen mavimsi-yeşil bir kaplama oluşturan doğal bir oksidasyon sürecinden geçse bile çekici görünür. Bununla birlikte, bakır kaynaklanabilirliğinin orta ila zayıf olduğunu unutmayın.",
       image:
         "/Assets/Images/resources/aerospace-machining/material_cnc_milling_copper_02_hr.jpg",
       link: "#",
     },
     stainless: {
-      title: "Stainless Steel",
+      title: "Paslanmaz Çelik",
       description:
-        "Stainless steel is a corrosion-resistant alloy known for its high strength, durability, and excellent machinability. It is widely used in aerospace, medical, and food processing industries due to its ability to withstand harsh environments and maintain structural integrity at various temperatures.",
+        "Paslanmaz çelik, yüksek mukavemeti, dayanıklılığı ve mükemmel işlenebilirliği ile bilinen korozyona dayanıklı bir alaşımdır. Sert ortamlara dayanma ve çeşitli sıcaklıklarda yapısal bütünlüğü koruma yeteneği nedeniyle havacılık, medikal ve gıda işleme endüstrilerinde yaygın olarak kullanılır.",
       image:
         "/Assets/Images/resources/aerospace-machining/material_cnc_milling_stainless-steel-303_02_hr.jpg",
       link: "#",
     },
     steelAlloy: {
-      title: "Steel Alloy",
+      title: "Çelik Alaşımı",
       description:
-        "Steel alloys are engineered materials that combine iron with carbon and other elements to achieve specific mechanical properties. They offer excellent strength, hardness, and wear resistance, making them ideal for demanding applications such as gears, shafts, and structural components.",
+        "Çelik alaşımları, belirli mekanik özellikler elde etmek için demiri karbon ve diğer elementlerle birleştiren mühendislik malzemeleridir. Mükemmel mukavemet, sertlik ve aşınma direnci sunarlar, bu da onları dişliler, miller ve yapısal bileşenler gibi zorlu uygulamalar için ideal kılar.",
       image:
         "/Assets/Images/resources/aerospace-machining/material_cnc_milling_steel-alloy-4140_02_hr.jpg",
       link: "#",
     },
     steelMild: {
-      title: "Steel Mild Low Carbon",
+      title: "Yumuşak Düşük Karbonlu Çelik",
       description:
-        "Mild steel (low carbon steel) is a versatile and cost-effective material with good machinability and weldability. It contains a small amount of carbon (typically 0.05-0.25%), making it ductile and easy to form. It is commonly used for brackets, mounts, and structural components where high strength is not the primary requirement.",
+        "Yumuşak çelik (düşük karbonlu çelik), iyi işlenebilirlik ve kaynaklanabilirliğe sahip çok yönlü ve uygun maliyetli bir malzemedir. Düşük miktarda karbon (tipik olarak %0,05-0,25) içerir, bu da onu sünek ve şekillendirmesi kolay hale getirir. Yüksek mukavemetin birincil gereklilik olmadığı braketler, montaj parçaları ve yapısal bileşenler için yaygın olarak kullanılır.",
       image:
         "/Assets/Images/resources/aerospace-machining/material_cnc_milling_low-carbon-steel_02_hr.jpg",
       link: "#",
     },
     titanium: {
-      title: "Titanium",
+      title: "Titanyum",
       description:
-        "Titanium is a lightweight, high-strength metal with exceptional corrosion resistance and biocompatibility. It is widely used in aerospace, medical implants, and high-performance automotive applications. Titanium's excellent strength-to-weight ratio makes it ideal for components that require both durability and reduced mass.",
+        "Titanyum, olağanüstü korozyon direnci ve biyouyumluluğa sahip hafif, yüksek mukavemetli bir metaldir. Havacılık, medikal implantlar ve yüksek performanslı otomotiv uygulamalarında yaygın olarak kullanılır. Titanyumun mükemmel mukavemet-ağırlık oranı, onu hem dayanıklılık hem de azaltılmış kütle gerektiren bileşenler için ideal kılar.",
       image:
         "/Assets/Images/resources/aerospace-machining/material_cnc_milling_titanium_02_hr.jpg",
       link: "#",
@@ -80,11 +80,11 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Aerospace CNC Machining"
-        desc="Reduce aerospace project and supply chain risk through reliable delivery, consistent quality, and a responsive team of experts"
+        title="Havacılık CNC İşleme"
+        desc="Güvenilir teslimat, tutarlı kalite ve duyarlı bir uzman ekibi ile havacılık projesi ve tedarik zinciri riskini azaltın"
         simple
         bg="/Assets/Images/resources/aerospace-machining/short-term-production-hero_v3.jpg"
-        firstButton={{ title: "Get a Quote", route: "/" }}
+        firstButton={{ title: "Teklif Al", route: "/" }}
       />
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
@@ -93,7 +93,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/resources/aerospace-machining/cnc-milling-production.jpg"
-                alt="CNC Machining for Aerospace Industry"
+                alt="Havacılık Endüstrisi için CNC İşleme"
                 fill
                 className="object-cover"
               />
@@ -102,16 +102,16 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                CNC Machining for the Aerospace Industry
+                Havacılık Endüstrisi için CNC İşleme
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed">
-                Speed, reliability, and quality compliance are key expectations
-                of aerospace components. Our CNC machining services support
-                demanding low-volume, high-mix production schedules by offering
-                consistently reliable fast lead times, expert design and
-                manufacturability support, and an online platform for simple
-                quoting and order placement.
+                Hız, güvenilirlik ve kalite uygunluğu, havacılık bileşenlerinin
+                temel beklentileridir. CNC işleme hizmetlerimiz, tutarlı ve
+                güvenilir hızlı teslim süreleri, uzman tasarım ve
+                üretilebilirlik desteği ile basit teklif alma ve sipariş verme
+                için çevrimiçi bir platform sunarak zorlu düşük hacimli, yüksek
+                karışımlı üretim programlarını destekler.
               </p>
             </div>
           </div>
@@ -121,22 +121,22 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] text-center mb-4">
-              How We Support Customers in the Aerospace Industry
+              Havacılık Endüstrisindeki Müşterileri Nasıl Destekliyoruz
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-10"></div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
               {[
-                "95%+ on-time delivery of durable, precise, production-grade components in days",
-                "Application and technical expertise at every stage of development and production",
-                "High-speed 3-axis and 5-axis milling and turning with live tooling for complex components",
-                "Traceability for qualified aluminum parts",
-                "Quality certifications: ISO 9001:2015, AS9100, ITAR registered",
-                "Ability to order parts with finer tolerances, diverse finishes, no material left behind, and comprehensive quality documentation",
-                "Consistent single-source supplier",
-                "Audit ready factories",
-                "Post-processing enhancements such as anodizing and chromate plating",
-                "Reduced development cost through fast prototyping and production",
+                "Dayanıklı, hassas, üretim sınıfı bileşenlerin günler içinde %95+ zamanında teslimatı",
+                "Geliştirme ve üretimin her aşamasında uygulama ve teknik uzmanlık",
+                "Karmaşık bileşenler için canlı takım tezgahlı yüksek hızlı 3 eksenli ve 5 eksenli frezeleme ve tornalama",
+                "Kalifiye alüminyum parçalar için izlenebilirlik",
+                "Kalite sertifikaları: ISO 9001:2015, AS9100, ITAR kayıtlı",
+                "Daha sıkı toleranslar, çeşitli yüzey işlemleri, arkada malzeme bırakmama ve kapsamlı kalite dokümantasyonu ile parça sipariş etme imkanı",
+                "Tutarlı tek kaynaklı tedarikçi",
+                "Denetime hazır fabrikalar",
+                "Anodizasyon ve kromat kaplama gibi işlem sonrası iyileştirmeler",
+                "Hızlı prototipleme ve üretim ile azaltılmış geliştirme maliyeti",
               ].map((item, idx) => (
                 <div key={idx} className="flex items-start gap-2">
                   <div className="flex-shrink-0 mt-1">
@@ -169,7 +169,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              CNC Machining Processes for Aerospace Parts
+              Havacılık Parçaları için CNC İşleme Süreçleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -181,30 +181,30 @@ export default function page() {
               <div className="relative w-2/5 h-auto min-h-[200px] bg-gray-100">
                 <Image
                   src="/Assets/Images/resources/aerospace-machining/cnc-milling-production.jpg"
-                  alt="CNC Milling"
+                  alt="CNC Frezeleme"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="flex-1 p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  CNC Milling
+                  CNC Frezeleme
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  CNC milling is a subtractive manufacturing process that uses
-                  3-axis milling and 5-axis indexed milling processes to cut
-                  solid plastic and metal blocks into final parts.
+                  CNC frezeleme, katı plastik ve metal blokları nihai parçalara
+                  kesmek için 3 eksenli frezeleme ve 5 eksenli endeksli
+                  frezeleme süreçlerini kullanan bir çıkarımlı üretim sürecidir.
                 </p>
                 <div className="space-y-1">
                   <a
                     href="#"
                     className="text-[#0099ff] text-sm font-medium hover:text-[#96E92A] transition-colors block">
-                    Capabilities →
+                    Yetenekler →
                   </a>
                   <a
                     href="#"
                     className="text-[#0099ff] text-sm font-medium hover:text-[#96E92A] transition-colors block">
-                    Design Guidelines →
+                    Tasarım Kılavuzları →
                   </a>
                 </div>
               </div>
@@ -215,30 +215,30 @@ export default function page() {
               <div className="relative w-2/5 h-auto min-h-[200px] bg-gray-100">
                 <Image
                   src="/Assets/Images/resources/aerospace-machining/cnc-turning-process-793-hr.jpg"
-                  alt="CNC Turning"
+                  alt="CNC Tornalama"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="flex-1 p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  CNC Turning
+                  CNC Tornalama
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  CNC turning with live tooling combines both lathe and mill
-                  capabilities to machine parts with cylindrical features from
-                  metal rod stock.
+                  Canlı takım tezgahına sahip CNC tornalama, metal çubuk
+                  stokundan silindirik özelliklere sahip parçaları işlemek için
+                  torna ve freze yeteneklerini birleştirir.
                 </p>
                 <div className="space-y-1">
                   <a
                     href="#"
                     className="text-[#0099ff] text-sm font-medium hover:text-[#96E92A] transition-colors block">
-                    Capabilities →
+                    Yetenekler →
                   </a>
                   <a
                     href="#"
                     className="text-[#0099ff] text-sm font-medium hover:text-[#96E92A] transition-colors block">
-                    Design Guidelines →
+                    Tasarım Kılavuzları →
                   </a>
                 </div>
               </div>
@@ -256,23 +256,23 @@ export default function page() {
               </div>
               <div className="flex-1 p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Protolabs Network
+                  Fasonly Network
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Our manufacturing network provides advanced CNC machining
-                  capabilities like tighter tolerances, volume pricing, and
-                  anodizing options.
+                  Üretim ağımız, daha sıkı toleranslar, hacim fiyatlandırması ve
+                  anodizasyon seçenekleri gibi gelişmiş CNC işleme yetenekleri
+                  sağlar.
                 </p>
                 <div className="space-y-1">
                   <a
                     href="#"
                     className="text-[#0099ff] text-sm font-medium hover:text-[#96E92A] transition-colors block">
-                    Capabilities →
+                    Yetenekler →
                   </a>
                   <a
                     href="#"
                     className="text-[#0099ff] text-sm font-medium hover:text-[#96E92A] transition-colors block">
-                    Design Guidelines →
+                    Tasarım Kılavuzları →
                   </a>
                 </div>
               </div>
@@ -285,7 +285,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Materials for CNC-Machined Aerospace Components
+              CNC İşlenmiş Havacılık Bileşenleri için Malzemeler
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -295,15 +295,14 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <p className="text-gray-600 leading-relaxed">
-                We have spent extensive time researching materials and canvasing
-                our customers to better understand what materials matter most
-                for the aerospace industry. That research yielded a curated list
-                of materials that includes the most in-demand and functionally
-                useful metals. Workhorse options like aluminum 6061—which is
-                affordable and very strong compared to its weight—make up the
-                bulk of the parts we machine, but we also offer a variety of
-                steels, brass, copper, and even titanium for more demanding
-                applications.
+                Havacılık endüstrisi için en önemli malzemeleri daha iyi anlamak
+                amacıyla kapsamlı araştırmalar yaptık ve müşterilerimizle
+                görüştük. Bu araştırma, en çok talep edilen ve işlevsel olarak
+                en kullanışlı metalleri içeren özel bir malzeme listesi ortaya
+                çıkardı. Uygun fiyatlı ve ağırlığına göre çok güçlü olan
+                alüminyum 6061 gibi çalışkan seçenekler, işlediğimiz parçaların
+                çoğunluğunu oluşturur, ancak daha zorlu uygulamalar için çeşitli
+                çelikler, pirinç, bakır ve hatta titanyum da sunuyoruz.
               </p>
             </div>
 
@@ -311,7 +310,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/resources/aerospace-machining/pl_cnc_machining_mild_steel.jpg"
-                alt="CNC machine tool"
+                alt="CNC takım tezgahı"
                 fill
                 className="object-cover"
               />
@@ -324,7 +323,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/resources/aerospace-machining/blog_cnc_chamfers___fillets-chamfers.jpg"
-                alt="Aerospace materials"
+                alt="Havacılık malzemeleri"
                 fill
                 className="object-cover"
               />
@@ -333,17 +332,18 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <p className="text-gray-600 leading-relaxed">
-                Designers know that reducing the weight of anything going into
-                space—or even at lower jet flight levels—helps reduce fuel
-                consumption, which adds up to substantial savings. There is a
-                constant balancing of weight and strength in applications, and
-                our available materials cover the vast majority of needs, even
-                in early design and prototyping builds during which the end
-                material might still be under evaluation. Engineers can build
-                and test multiple versions representing multiple different
-                material configurations all within the same platform and do so
-                very quickly, finding the perfect material fit without losing
-                excessive amounts of time.
+                Tasarımcılar, uzaya giden - hatta daha düşük jet uçuş
+                seviyelerinde bile - herhangi bir şeyin ağırlığını azaltmanın
+                yakıt tüketimini azaltmaya yardımcı olduğunu ve bunun da önemli
+                tasarruflar sağladığını bilir. Uygulamalarda sürekli bir ağırlık
+                ve mukavemet dengesi vardır ve mevcut malzemelerimiz, nihai
+                malzemenin hala değerlendirme altında olabileceği erken tasarım
+                ve prototipleme aşamalarında bile ihtiyaçların büyük çoğunluğunu
+                karşılar. Mühendisler, birden fazla farklı malzeme
+                konfigürasyonunu temsil eden birden fazla versiyonu aynı
+                platform içinde oluşturabilir ve test edebilir ve bunu çok hızlı
+                bir şekilde yaparak aşırı zaman kaybetmeden mükemmel malzeme
+                uyumunu bulabilir.
               </p>
             </div>
           </div>
@@ -354,7 +354,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Metals for CNC-Machined Parts
+              CNC İşlenmiş Parçalar için Metaller
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -389,8 +389,8 @@ export default function page() {
               <a
                 href={currentContent.link}
                 className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                Learn more about {currentContent.title.toLowerCase()} CNC
-                machining →
+                {currentContent.title.toLowerCase()} CNC işleme hakkında daha
+                fazla bilgi edinin →
               </a>
             </div>
 
@@ -413,7 +413,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/resources/aerospace-machining/cnc_machining_pom_c.jpg"
-                alt="Plastic CNC machined parts for aerospace"
+                alt="Havacılık için plastik CNC işlenmiş parçalar"
                 fill
                 className="object-cover"
               />
@@ -422,26 +422,25 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Plastic CNC-Machined Parts
+                Plastik CNC İşlenmiş Parçalar
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                While aerospace&apos;s focus tends toward strong, lightweight
-                metals, you might want to consider some plastics that offer
-                various qualities consistent with industry needs.
+                Havacılığın odağı genellikle güçlü, hafif metallere yönelse de,
+                endüstri ihtiyaçlarıyla tutarlı çeşitli nitelikler sunan bazı
+                plastikleri de düşünmek isteyebilirsiniz.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                <span className="font-semibold text-[#0B1221]">Acetals</span>{" "}
-                come to mind for particularly demanding mechanical applications,
-                while{" "}
-                <span className="font-semibold text-[#0B1221]">Ultem</span> and{" "}
-                <span className="font-semibold text-[#0B1221]">PEEK</span> are
-                great choices for high temperature applications.
+                <span className="font-semibold text-[#0B1221]">Asetaller</span>{" "}
+                özellikle zorlu mekanik uygulamalar için akla gelirken,{" "}
+                <span className="font-semibold text-[#0B1221]">Ultem</span> ve{" "}
+                <span className="font-semibold text-[#0B1221]">PEEK</span>{" "}
+                yüksek sıcaklık uygulamaları için harika seçimlerdir.
               </p>
               <a
                 href="#"
                 className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                Explore Plastics →
+                Plastikleri Keşfedin →
               </a>
             </div>
           </div>
@@ -452,16 +451,16 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              CNC Machining for Aerospace Applications
+              Havacılık Uygulamaları için CNC İşleme
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              The aerospace industry relies on CNC-machined parts for a
-              multitude of reasons. Two of the most important are accuracy and
-              repeatability. In aerospace applications, parts are subject to
-              extreme cold and heat, vibration, and massive pressure changes.
-              CNC machining is commonly used to produce aerospace components
-              such as:
+              Havacılık endüstrisi, birçok nedenden dolayı CNC işlenmiş
+              parçalara güvenir. Bunlardan en önemlileri doğruluk ve
+              tekrarlanabilirliktir. Havacılık uygulamalarında parçalar aşırı
+              soğuk ve sıcağa, titreşime ve büyük basınç değişikliklerine maruz
+              kalır. CNC işleme, genellikle aşağıdaki gibi havacılık bileşenleri
+              üretmek için kullanılır:
             </p>
           </div>
 
@@ -470,58 +469,58 @@ export default function page() {
             {/* Card 1 - Brackets */}
             <div className="bg-[#E8F4FD] rounded-xl p-6 transition-all duration-300 hover:shadow-lg">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Brackets
+                Braketler
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Bulky angular designs are always a great fit for CNC machining.
-                Brackets tend to be simple orthogonally based designs and CNC
-                machining is great for that, although our sheet metal
-                fabrication service might be a better way to go if the bracket
-                is thin enough.
+                Hacimli açısal tasarımlar CNC işleme için her zaman iyi bir uyum
+                sağlar. Braketler basit ortogonal tabanlı tasarımlar olma
+                eğilimindedir ve CNC işleme bunun için harikadır, ancak braket
+                yeterince inceyse sac metal imalat hizmetimiz daha iyi bir yol
+                olabilir.
               </p>
             </div>
 
             {/* Card 2 - Engine Components */}
             <div className="bg-[#E8F4FD] rounded-xl p-6 transition-all duration-300 hover:shadow-lg">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Engine Components
+                Motor Bileşenleri
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                These critical parts must endure wear and tear, hostile
-                environments, and require smooth, accurate geometries. Here's an
-                ugly scenario: Imagine an engine with pistons scraping across
-                rough cylinder heads. CNC machining helps avoid that potential
-                catastrophe. Confidence in these components withstanding
-                significant forces and stresses is paramount.
+                Bu kritik parçalar aşınma ve yıpranmaya, zorlu ortamlara
+                dayanmalı ve pürüzsüz, doğru geometriler gerektirir. İşte çirkin
+                bir senaryo: Pistonların pürüzlü silindir kafalarına sürtündüğü
+                bir motor hayal edin. CNC işleme bu potansiyel felaketten
+                kaçınmaya yardımcı olur. Bu bileşenlerin önemli kuvvetlere ve
+                gerilimlere dayanacağına dair güven çok önemlidir.
               </p>
             </div>
 
             {/* Card 3 - Heat Exchangers */}
             <div className="bg-[#E8F4FD] rounded-xl p-6 transition-all duration-300 hover:shadow-lg">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Heat Exchangers
+                Isı Eşanjörleri
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                These are good parts to manufacture on a CNC mill. The end mill
-                can cut into solid blocks to create the fin-like structures
-                you're used to seeing. The fins provide extra area to assist
-                with heat dissipation into surrounding air. Design these well
-                and it's possible to avoid the need for active cooling, such as
-                fans.
+                Bunlar bir CNC freze tezgahında üretmek için iyi parçalardır.
+                Parmak freze, görmeye alıştığınız kanat benzeri yapıları
+                oluşturmak için katı blokları kesebilir. Kanatlar, çevredeki
+                havaya ısı dağılımına yardımcı olmak için ek alan sağlar.
+                Bunları iyi tasarlayın ve fanlar gibi aktif soğutma ihtiyacından
+                kaçınmak mümkündür.
               </p>
             </div>
 
             {/* Card 4 - Turbo Pumps */}
             <div className="bg-[#E8F4FD] rounded-xl p-6 transition-all duration-300 hover:shadow-lg">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Turbo Pumps
+                Turbo Pompalar
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Another high-precision application for CNC machining, these spin
-                thousands of times per minute. Typically, the impellers and
-                blades are curved and must be made smoothly and accurately to
-                ensure optimal aerodynamics and structural integrity. That's
-                where CNC machining shines.
+                CNC işleme için bir başka yüksek hassasiyetli uygulama olan bu
+                pompalar, dakikada binlerce kez döner. Tipik olarak, pervaneler
+                ve kanatlar kavislidir ve optimal aerodinamik ve yapısal
+                bütünlüğü sağlamak için pürüzsüz ve doğru bir şekilde
+                yapılmalıdır. CNC işlemenin parladığı yer burasıdır.
               </p>
             </div>
           </div>
@@ -532,7 +531,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Trends in Aerospace Design and Manufacturing
+              Havacılık Tasarım ve İmalatında Trendler
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -543,7 +542,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/resources/aerospace-machining/maelstrom_engine-1-resized-1.png"
-                alt="Traditional aerospace design with flat planes and orthogonal features"
+                alt="Düzlemler ve ortogonal özelliklerle geleneksel havacılık tasarımı"
                 fill
                 className="object-cover"
               />
@@ -552,17 +551,17 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <p className="text-gray-600 leading-relaxed">
-                Historically, designers tend to think in terms of flat planes
-                and orthogonal features (not to say there aren't very complex
-                aerospace parts out there). These designs fit very well with the
-                machining process because design conception doesn't differ much
-                from the toolpathing that ultimately produces those parts (i.e.,
-                working in planes and relatively simple angles). That historical
-                mindset means that much of the historical data available
-                influencing modern designs is born from that same CNC-conducive
-                angular approach providing a higher degree of confidence derived
-                from past knowledge of how machined materials will respond under
-                various conditions and strain.
+                Tarihsel olarak, tasarımcılar düzlemler ve ortogonal özellikler
+                açısından düşünme eğilimindedir (çok karmaşık havacılık
+                parçaları olmadığı söylenemez). Bu tasarımlar, işleme sürecine
+                çok iyi uyum sağlar çünkü tasarım kavramı, nihayetinde bu
+                parçaları üreten takım yolundan (yani düzlemlerde ve nispeten
+                basit açılarda çalışmak) çok farklı değildir. Bu tarihsel
+                zihniyet, modern tasarımları etkileyen mevcut tarihsel verilerin
+                çoğunun, işlenmiş malzemelerin çeşitli koşullar ve gerilim
+                altında nasıl tepki vereceğine dair geçmiş bilgilerden türetilen
+                daha yüksek bir güven derecesi sağlayan aynı CNC'ye uygun açısal
+                yaklaşımdan doğduğu anlamına gelir.
               </p>
             </div>
           </div>
@@ -573,7 +572,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/resources/aerospace-machining/nasa-part-background.jpg"
-                alt="NASA generative AI organic curvy designs"
+                alt="NASA üretken yapay zeka organik kavisli tasarımları"
                 fill
                 className="object-cover"
               />
@@ -582,17 +581,16 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <p className="text-gray-600 leading-relaxed">
-                With the emergence of artificial intelligence (AI), new design
-                processes have emerged. In the NASA generative/AI projects we've
-                supported, we produced parts with organic curvy designs that
-                would appear far better suited for additive manufacturing than
-                CNC machining. However, with NASA's knowledge of our
-                partnership, they were able to produce these organic,
-                structurally optimized designs that are still compatible with
-                our machining process, alleviating some of the concern that
-                their finite element analysis (FEA) simulations might not
-                properly capture if parts were made via a different
-                manufacturing process.
+                Yapay zekanın (AI) ortaya çıkmasıyla birlikte yeni tasarım
+                süreçleri ortaya çıkmıştır. Desteklediğimiz NASA üretken/AI
+                projelerinde, CNC işlemeden ziyade eklemeli üretim için çok daha
+                uygun görünen organik kavisli tasarımlara sahip parçalar
+                ürettik. Ancak, NASA'nın ortaklığımız hakkındaki bilgisi
+                sayesinde, işleme sürecimizle hala uyumlu olan bu organik,
+                yapısal olarak optimize edilmiş tasarımları üretebildiler ve
+                sonlu elemanlar analizi (FEA) simülasyonlarının farklı bir
+                üretim süreciyle yapılmış parçaları doğru şekilde
+                yakalayamayacağı endişesini bir miktar hafiflettiler.
               </p>
             </div>
           </div>

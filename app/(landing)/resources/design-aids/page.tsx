@@ -5,8 +5,8 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Design Aids"
-        desc="Learn about the design elements, materials, and surface finishes of injection-molded parts by registering for our free design aids."
+        title="Tasarım Yardımcıları"
+        desc="Ücretsiz tasarım yardımcılarımıza kaydolarak enjeksiyon kalıplanmış parçaların tasarım öğeleri, malzemeleri ve yüzey işlemleri hakkında bilgi edinin."
         simple
       />
       <div className="w-full bg-white py-20">
@@ -19,27 +19,28 @@ export default function page() {
                 <div className="relative w-full h-56 md:h-64 bg-gray-100">
                   <Image
                     src="/Assets/Images/resources/aerospace-machining/design-cube.jpg"
-                    alt="Design Cube - Injection molding learning tool"
+                    alt="Tasarım Küpü - Enjeksiyon kalıplama öğrenme aracı"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-6">
                   <h2 className="text-2xl font-bold text-[#0B1221] mb-3">
-                    Design Cube
+                    Tasarım Küpü
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-5">
-                    One of the best ways to learn about our injection molding
-                    process is to have an actual plastic part in your hands to
-                    explore. That's why we created the Design Cube, which shows
-                    part features that are too thin or too thick, bad bosses,
-                    right and wrong ribs, and other considerations to be mindful
-                    of while designing parts for injection molding.
+                    Enjeksiyon kalıplama sürecimiz hakkında öğrenmenin en iyi
+                    yollarından biri, keşfetmek için gerçek bir plastik parçayı
+                    elinizde bulundurmaktır. Bu nedenle, çok ince veya çok kalın
+                    parça özelliklerini, kötü boss'ları, doğru ve yanlış
+                    kaburgaları ve enjeksiyon kalıplama için parça tasarlarken
+                    dikkat edilmesi gereken diğer hususları gösteren Tasarım
+                    Küpü'nü oluşturduk.
                   </p>
                   <a
                     href="#"
                     className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                    Get a Design Cube ➔
+                    Tasarım Küpü Alın ➔
                   </a>
                 </div>
               </div>
@@ -49,26 +50,27 @@ export default function page() {
                 <div className="relative w-full h-56 md:h-64 bg-gray-100">
                   <Image
                     src="/Assets/Images/resources/aerospace-machining/material-selectors.jpg"
-                    alt="Material Selectors - Quick reference guides for plastic and metal materials"
+                    alt="Malzeme Seçiciler - Plastik ve metal malzemeler için hızlı referans kılavuzları"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-6">
                   <h2 className="text-2xl font-bold text-[#0B1221] mb-3">
-                    Material Selectors
+                    Malzeme Seçiciler
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-5">
-                    These pocket-sized Material Selectors are quick reference
-                    guides to help you identify the right plastic and metal
-                    materials for your next project. It lists specific
-                    measurements on properties to ensure you have the most
-                    suitable material and process for your part's application.
+                    Bu cep boyutundaki Malzeme Seçiciler, bir sonraki projeniz
+                    için doğru plastik ve metal malzemeleri belirlemenize
+                    yardımcı olacak hızlı referans kılavuzlarıdır. Parçanızın
+                    uygulaması için en uygun malzeme ve sürece sahip olmanızı
+                    sağlamak amacıyla özelliklere ilişkin spesifik ölçümleri
+                    listeler.
                   </p>
                   <a
                     href="#"
                     className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                    Sheet Metal Material Selector →
+                    Sac Metal Malzeme Seçici →
                   </a>
                 </div>
               </div>

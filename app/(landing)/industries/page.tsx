@@ -50,13 +50,13 @@ export default function IndustriesPage() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Material Selector Tools
+              Malzeme Seçici Araçları
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Compare how our service-specific materials stack up against each
-              other. Sort by material property to quickly identify the best
-              choice for your application.
+              Hizmete özel malzemelerimizin birbirlerine karşı nasıl
+              sıralandığını karşılaştırın. Uygulamanız için en iyi seçimi
+              hızlıca belirlemek üzere malzeme özelliğine göre sıralayın.
             </p>
           </div>
 
@@ -68,10 +68,10 @@ export default function IndustriesPage() {
                 <span className="text-4xl">🏭</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                Injection Molding
+                Enjeksiyon Kalıplama
               </h3>
               <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                View Materials
+                Malzemeleri Görüntüle
                 <ArrowRight className="w-3 h-3" />
               </button>
             </div>
@@ -82,10 +82,10 @@ export default function IndustriesPage() {
                 <span className="text-4xl">⚙️</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                CNC Machining
+                CNC İşleme
               </h3>
               <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                View Materials
+                Malzemeleri Görüntüle
                 <ArrowRight className="w-3 h-3" />
               </button>
             </div>
@@ -96,10 +96,10 @@ export default function IndustriesPage() {
                 <span className="text-4xl">🖨️</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                3D Printing
+                3D Baskı
               </h3>
               <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                View Materials
+                Malzemeleri Görüntüle
                 <ArrowRight className="w-3 h-3" />
               </button>
             </div>
@@ -110,10 +110,10 @@ export default function IndustriesPage() {
                 <span className="text-4xl">🔩</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-2">
-                Sheet Metal Fabrication
+                Sac Metal İmalatı
               </h3>
               <button className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group-hover:gap-2">
-                View Materials
+                Malzemeleri Görüntüle
                 <ArrowRight className="w-3 h-3" />
               </button>
             </div>
@@ -125,7 +125,7 @@ export default function IndustriesPage() {
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Material Options by Service
+              Hizmete Göre Malzeme Seçenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -139,7 +139,7 @@ export default function IndustriesPage() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Injection Molding
+              Enjeksiyon Kalıplama
             </button>
             <button
               onClick={() => setActiveTab("cnc")}
@@ -148,7 +148,7 @@ export default function IndustriesPage() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              CNC Machining
+              CNC İşleme
             </button>
             <button
               onClick={() => setActiveTab("printing")}
@@ -157,7 +157,7 @@ export default function IndustriesPage() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              3D Printing
+              3D Baskı
             </button>
             <button
               onClick={() => setActiveTab("sheet")}
@@ -166,7 +166,7 @@ export default function IndustriesPage() {
                   ? "bg-[#0B1221] text-white shadow-md"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}>
-              Sheet Metal Fabrication
+              Sac Metal İmalatı
             </button>
           </div>
 
@@ -176,7 +176,7 @@ export default function IndustriesPage() {
               {/* Thermoplastics Section */}
               <div>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
-                  Thermoplastics
+                  Termoplastikler
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
                   {[
@@ -186,16 +186,16 @@ export default function IndustriesPage() {
                     "LCP",
                     "LDPE",
                     "LLDPE",
-                    "Nylon (PA)",
+                    "Naylon (PA)",
                     "PC/PBT",
                     "PEEK",
                     "PEI (Ultem)",
                     "PET",
                     "PETG",
-                    "PMMA (Acrylic)",
-                    "POM (Acetal/Delrin)",
-                    "Polycarbonate (PC)",
-                    "Polypropylene (PP)",
+                    "PMMA (Akrilik)",
+                    "POM (Asetal/Delrin)",
+                    "Polikarbonat (PC)",
+                    "Polipropilen (PP)",
                     "PPE/PS",
                     "PS",
                     "PSU",
@@ -216,14 +216,14 @@ export default function IndustriesPage() {
               {/* Thermosets Section */}
               <div>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
-                  Thermosets
+                  Termosetler
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                   {[
-                    "Silicone Rubber",
-                    "Medical-Grade Silicone Rubber",
-                    "Fluorosilicone",
-                    "Optical Silicone Rubber",
+                    "Silikon Kauçuk",
+                    "Medikal Sınıfı Silikon Kauçuk",
+                    "Florosilikon",
+                    "Optik Silikon Kauçuk",
                   ].map((material, idx) => (
                     <div key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -241,27 +241,27 @@ export default function IndustriesPage() {
               {/* Plastics Section */}
               <div>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
-                  Plastics
+                  Plastikler
                 </h3>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="bg-[#F0F8FF]">
                         <th className="text-left p-3 font-semibold text-[#0B1221] border-b border-gray-200">
-                          Material
+                          Malzeme
                         </th>
                         <th className="text-left p-3 font-semibold text-[#0B1221] border-b border-gray-200">
-                          Specification
+                          Spesifikasyon
                         </th>
                       </tr>
                     </thead>
                     <tbody>
                       {[
                         ["ABS", "PEI (Ultem)"],
-                        ["PA (Nylon)", "PET"],
-                        ["Polycarbonate (PC)", "PMMA (Acrylic)"],
-                        ["PEEK", "POM (Acetal/Delrin)"],
-                        ["Polypropylene (PP)", "PPSU"],
+                        ["PA (Naylon)", "PET"],
+                        ["Polikarbonat (PC)", "PMMA (Akrilik)"],
+                        ["PEEK", "POM (Asetal/Delrin)"],
+                        ["Polipropilen (PP)", "PPSU"],
                         ["PPE/PS", "UHMW"],
                         ["PVC", ""],
                       ].map((row, idx) => (
@@ -282,25 +282,25 @@ export default function IndustriesPage() {
               {/* Metals Section */}
               <div>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
-                  Metals
+                  Metaller
                 </h3>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="bg-[#F0F8FF]">
                         <th className="text-left p-3 font-semibold text-[#0B1221] border-b border-gray-200">
-                          Material
+                          Malzeme
                         </th>
                         <th className="text-left p-3 font-semibold text-[#0B1221] border-b border-gray-200">
-                          Specification
+                          Spesifikasyon
                         </th>
                       </tr>
                     </thead>
                     <tbody>
                       {[
-                        ["Aluminum", "Steel"],
-                        ["Brass", "Stainless Steel"],
-                        ["Copper", "Titanium"],
+                        ["Alüminyum", "Çelik"],
+                        ["Pirinç", "Paslanmaz Çelik"],
+                        ["Bakır", "Titanyum"],
                       ].map((row, idx) => (
                         <tr key={idx} className="border-b border-gray-100">
                           <td className="p-3 text-gray-600 text-sm">
@@ -324,10 +324,10 @@ export default function IndustriesPage() {
               {/* Plastics Section */}
               <div>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
-                  Plastics
+                  Plastikler
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-                  {["ABS", "PA (Nylon)", "Polycarbonate", "Polypropylene"].map(
+                  {["ABS", "PA (Naylon)", "Polikarbonat", "Polipropilen"].map(
                     (material, idx) => (
                       <div key={idx} className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -343,15 +343,15 @@ export default function IndustriesPage() {
               {/* Metals Section */}
               <div>
                 <h3 className="text-xl font-bold text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
-                  Metals
+                  Metaller
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
                   {[
-                    "Aluminum",
-                    "Cobalt Chrome",
+                    "Alüminyum",
+                    "Kobalt Krom",
                     "Inconel",
-                    "Stainless Steel",
-                    "Titanium",
+                    "Paslanmaz Çelik",
+                    "Titanyum",
                   ].map((material, idx) => (
                     <div key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -367,15 +367,15 @@ export default function IndustriesPage() {
           {activeTab === "sheet" && (
             <div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-4 pb-2 border-b-2 border-[#96E92A] inline-block">
-                Metals
+                Metaller
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
                 {[
-                  "Aluminum",
-                  "Steel",
-                  "Stainless Steel",
-                  "Copper",
-                  "Brass",
+                  "Alüminyum",
+                  "Çelik",
+                  "Paslanmaz Çelik",
+                  "Bakır",
+                  "Pirinç",
                 ].map((material, idx) => (
                   <div key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>
@@ -389,12 +389,8 @@ export default function IndustriesPage() {
       </div>
 
       <GuideDownload
-        title="Download Our Periodic Table of Materials"
-        desc="The Periodic Table of Materials is your go-to guide for the most
-                popular materials offered at Fasonly. Whether it is injection
-                molding, CNC machining, 3D printing or sheet metal fabrication,
-                download the guide and hang it at your desk for easy reference
-                during your next project."
+        title="Periyodik Malzeme Tablomuzu İndirin"
+        desc="Periyodik Malzeme Tablosu, Fasonly'de sunulan en popüler malzemeler için başvuru kılavuzunuzdur. İster enjeksiyon kalıplama, ister CNC işleme, 3D baskı veya sac metal imalatı olsun, kılavuzu indirin ve bir sonraki projeniz sırasında kolay referans için masanıza asın."
         simple
       />
 

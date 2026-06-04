@@ -9,54 +9,54 @@ export default function page() {
   const [activeTab, setActiveTab] = useState("injection");
 
   const tabs = [
-    { id: "injection", label: "Injection Molding" },
-    { id: "cnc", label: "CNC Machining" },
-    { id: "printing", label: "3D Printing" },
-    { id: "sheet", label: "Sheet Metal Fabrication" },
+    { id: "injection", label: "Enjeksiyon Kalıplama" },
+    { id: "cnc", label: "CNC İşleme" },
+    { id: "printing", label: "3D Baskı" },
+    { id: "sheet", label: "Sac Metal İmalatı" },
   ];
 
   const content = {
     injection: {
-      title: "Injection Molding",
+      title: "Enjeksiyon Kalıplama",
       description:
-        "Get affordable, high-quality molded parts and bridge tooling within days. With our free moldability consultation, the design and molding process is rapidly accelerated to save you time and money.",
+        "Günler içinde uygun fiyatlı, yüksek kaliteli kalıplanmış parçalar ve köprü takımı alın. Ücretsiz kalıplanabilirlik danışmanlığımız ile tasarım ve kalıplama süreci, size zaman ve para kazandırmak için hızla hızlandırılır.",
       features: [
-        "Low-volume molding up to 100,000+ parts with volume pricing available—no MOQ required",
-        "100+ plastic, elastomeric, and silicone rubber materials",
-        "Automated CMM for fast, in-house quality documentation",
+        "Hacim fiyatlandırması ile 100.000+ parçaya kadar düşük hacimli kalıplama - MOQ gerekmez",
+        "100'den fazla plastik, elastomerik ve silikon kauçuk malzeme",
+        "Hızlı, kurum içi kalite dokümantasyonu için otomatik CMM",
       ],
       image: "/Assets/Images/Industries/medical/pl_service_im.webp",
     },
     cnc: {
-      title: "CNC Machining",
+      title: "CNC İşleme",
       description:
-        "Leverage the same speed, precision, and reliability in machining that you're accustomed to at Fasonly but unlock advanced machining capabilities like tighter tolerances and volume pricing through our manufacturing network.",
+        "Fasonly'de alıştığınız aynı hız, hassasiyet ve güvenilirlikten işlemede yararlanın, ancak üretim ağımız aracılığıyla daha sıkı toleranslar ve hacim fiyatlandırması gibi gelişmiş işleme yeteneklerini açığa çıkarın.",
       features: [
-        "Machined parts in as fast as 1 day with optional plating and anodizing in as fast as 4 days",
-        "Cost-efficient machined parts at higher volumes",
-        "Tolerances down to ±0.001 in. (0.020mm) through our digital network",
+        "1 gün kadar kısa sürede işlenmiş parçalar, 4 gün kadar kısa sürede isteğe bağlı kaplama ve anodizasyon",
+        "Daha yüksek hacimlerde uygun maliyetli işlenmiş parçalar",
+        "Dijital ağımız aracılığıyla ±0,001 inç'e (0,020mm) kadar toleranslar",
       ],
       image: "/Assets/Images/Industries/medical/pl_service_cnc.webp",
     },
     printing: {
-      title: "3D Printing",
+      title: "3D Baskı",
       description:
-        "Want quality parts and additive expertise at a single 3D printing source? Choose from seven different additive manufacturing technologies for cost-effective prototyping and highly precise, repeatable production parts.",
+        "Tek bir 3D baskı kaynağında kaliteli parçalar ve eklemeli üretim uzmanlığı mı istiyorsunuz? Uygun maliyetli prototipleme ve son derece hassas, tekrarlanabilir üretim parçaları için yedi farklı eklemeli üretim teknolojisi arasından seçim yapın.",
       features: [
-        "Additive technologies include metal 3D printing, SLA, SLS, FDM, and more",
-        "30 plastic and metal materials in a range of finishes",
-        "25 years of additive manufacturing expertise",
+        "Eklemeli teknolojiler metal 3D baskı, SLA, SLS, FDM ve daha fazlasını içerir",
+        "Çeşitli yüzey işlemlerinde 30 plastik ve metal malzeme",
+        "25 yıllık eklemeli üretim uzmanlığı",
       ],
       image: "/Assets/Images/Industries/medical/pl_service_3dp-2.webp",
     },
     sheet: {
-      title: "Sheet Metal Fabrication",
+      title: "Sac Metal İmalatı",
       description:
-        "From easy quoting to quick-turn production and finishing options, get up to 500 quality sheet metal parts in your hands in days from a single supplier.",
+        "Kolay teklif almadan hızlı teslim üretim ve yüzey işlem seçeneklerine kadar, tek bir tedarikçiden günler içinde 500'e kadar kaliteli sac metal parçayı elinize alın.",
       features: [
-        "Instant quotes with interactive manufacturability feedback",
-        "Six sheet metal materials including aluminum, stainless steel, steel, brass, and copper",
-        "Finishing options from welding and hardware insertion to powder coating and silk screening",
+        "Etkileşimli üretilebilirlik geri bildirimi ile anında teklifler",
+        "Alüminyum, paslanmaz çelik, çelik, pirinç ve bakır dahil altı sac metal malzeme",
+        "Kaynak ve donanım yerleştirmeden toz boya ve ipek baskıya kadar yüzey işlem seçenekleri",
       ],
       image: "/Assets/Images/Industries/medical/sheet-metal-home.webp",
     },
@@ -66,12 +66,12 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Accelerating Medical Device Prototyping and Production"
-        desc="Get to market faster and streamline your supply chain with rapid prototyping and on-demand production of medical components"
+        title="Medikal Cihaz Prototipleme ve Üretimini Hızlandırma"
+        desc="Hızlı prototipleme ve medikal bileşenlerin talep üzerine üretimi ile pazara daha hızlı çıkın ve tedarik zincirinizi kolaylaştırın"
         bg="/Assets/Images/Industries/medicalHero.jpg"
         text="black"
-        firstButton={{ title: "Upload a Part", route: "/" }}
-        secondButton={{ title: "Start Production Quote", route: "/" }}
+        firstButton={{ title: "Parça Yükle", route: "/" }}
+        secondButton={{ title: "Üretim Teklifi Başlat", route: "/" }}
       />
 
       <div className="w-full bg-white py-20">
@@ -79,7 +79,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              How Do Medical Companies Use Fasonly?
+              Medikal Şirketleri Fasonly'yi Nasıl Kullanıyor?
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -92,12 +92,13 @@ export default function page() {
                 <span className="text-2xl">⚡</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Rapid Prototyping
+                Hızlı Prototipleme
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Create prototypes in production-grade materials for functional
-                and regulatory testing, or use our 3D printing service to print
-                models and organ scans to preview before medical procedures.
+                Fonksiyonel ve düzenleyici testler için üretim sınıfı
+                malzemelerde prototipler oluşturun veya medikal prosedürlerden
+                önce önizleme yapmak için modeller ve organ taramaları basmak
+                üzere 3D baskı hizmetimizi kullanın.
               </p>
             </div>
 
@@ -107,13 +108,13 @@ export default function page() {
                 <span className="text-2xl">✅</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Quality Certification
+                Kalite Sertifikası
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Streamline development of FDA Class II and devices, or
-                non-implantable components, with molding capabilities geared
-                towards high-requirement applications and ISO 13485 quality
-                certification.
+                Yüksek gereksinimli uygulamalara ve ISO 13485 kalite
+                sertifikasına yönelik kalıplama yetenekleri ile FDA Sınıf II ve
+                cihazların veya implant olmayan bileşenlerin geliştirilmesini
+                kolaylaştırın.
               </p>
             </div>
 
@@ -123,13 +124,13 @@ export default function page() {
                 <span className="text-2xl">🏭</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Low-Volume Production
+                Düşük Hacimli Üretim
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Ramp up production to get quality end-use parts to market fast
-                and use batch production to reduce financial risk with no
-                minimum order quantity (MOQ) and low total cost of ownership
-                (TCO).
+                Kaliteli son kullanım parçalarını pazara hızlıca ulaştırmak için
+                üretimi artırın ve minimum sipariş miktarı (MOQ) ve düşük toplam
+                sahip olma maliyeti (TCO) ile finansal riski azaltmak için parti
+                üretimini kullanın.
               </p>
             </div>
 
@@ -139,12 +140,12 @@ export default function page() {
                 <span className="text-2xl">📦</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                On-Demand Production
+                Talep Üzerine Üretim
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Build agility into your supply chain by ordering quick-turn
-                parts when needed, regardless of what stage of development
-                you're in.
+                Geliştirme aşamasından bağımsız olarak, gerektiğinde hızlı
+                teslim parçalar sipariş ederek tedarik zincirinize çeviklik
+                kazandırın.
               </p>
             </div>
           </div>
@@ -154,9 +155,9 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           {/* Description Text */}
           <p className="text-center text-gray-300 text-lg max-w-3xl mx-auto mb-12">
-            We are the fastest and most comprehensive digital manufacturer in
-            the industry with more than 25 years of experience developing
-            products for innovative medical companies around the world.
+            Dünya çapındaki yenilikçi medikal şirketleri için 25 yılı aşkın
+            süredir ürün geliştiren sektördeki en hızlı ve en kapsamlı dijital
+            üreticiyiz.
           </p>
 
           {/* Stats Row */}
@@ -167,29 +168,27 @@ export default function page() {
                 96%
               </div>
               <p className="text-white text-sm md:text-base">
-                of Fortune 500
+                Fortune 500
                 <br />
-                Medical Companies Served
+                Medikal Şirketlerine Hizmet Verildi
               </p>
             </div>
 
             {/* Stat 2 - 700 Million */}
             <div className="text-center">
               <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#96E92A] mb-2">
-                700 Million
+                700 Milyon
               </div>
-              <p className="text-white text-sm md:text-base">
-                Parts Manufactured
-              </p>
+              <p className="text-white text-sm md:text-base">Parça Üretildi</p>
             </div>
 
             {/* Stat 3 - 300,000 */}
             <div className="text-center">
               <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#96E92A] mb-2">
-                300,000
+                300.000
               </div>
               <p className="text-white text-sm md:text-base">
-                Customers Served
+                Müşteriye Hizmet Verildi
               </p>
             </div>
           </div>
@@ -200,13 +199,13 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Full Production Support Team
+              Tam Üretim Destek Ekibi
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              We have a team of manufacturing experts working behind the scenes
-              to fulfill your production order—we manage the entire process and
-              keep you updated along the way.
+              Üretim siparişinizi yerine getirmek için perde arkasında çalışan
+              bir üretim uzmanları ekibimiz var - tüm süreci yönetiyor ve sizi
+              yol boyunca güncel tutuyoruz.
             </p>
           </div>
 
@@ -218,11 +217,11 @@ export default function page() {
                 <span className="text-2xl">👤</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Account Manager
+                Hesap Yöneticisi
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                A dedicated account manager provides support, including
-                assistance with platform and file uploads.
+                Özel bir hesap yöneticisi, platform ve dosya yüklemelerinde
+                yardım dahil olmak üzere destek sağlar.
               </p>
             </div>
 
@@ -232,11 +231,12 @@ export default function page() {
                 <span className="text-2xl">🔧</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Applications Engineers
+                Uygulama Mühendisleri
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Expert CAD solutions and cost-reduction strategies tailored by
-                in-house applications engineers to optimize your designs.
+                Tasarımlarınızı optimize etmek için kurum içi uygulama
+                mühendisleri tarafından özelleştirilmiş uzman CAD çözümleri ve
+                maliyet azaltma stratejileri.
               </p>
             </div>
 
@@ -246,11 +246,11 @@ export default function page() {
                 <span className="text-2xl">🚚</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Logistics
+                Lojistik
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Seamless logistics fulfillment and efficiency optimization from
-                experienced operations specialists.
+                Deneyimli operasyon uzmanlarından kesintisiz lojistik yerine
+                getirme ve verimlilik optimizasyonu.
               </p>
             </div>
 
@@ -260,11 +260,12 @@ export default function page() {
                 <span className="text-2xl">✅</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Quality Control
+                Kalite Kontrol
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Our skilled expert on-site quality control teams ensure your
-                parts meet your expectations and exact specifications.
+                Yetenekli uzman yerinde kalite kontrol ekiplerimiz,
+                parçalarınızın beklentilerinizi ve tam spesifikasyonlarınızı
+                karşılamasını sağlar.
               </p>
             </div>
           </div>
@@ -275,7 +276,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Manufacturing Services for Medical Products
+              Medikal Ürünler için Üretim Hizmetleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -316,7 +317,7 @@ export default function page() {
                 ))}
               </ul>
               <button className="text-[#0099ff] hover:text-[#96E92A] font-medium transition-colors inline-flex items-center gap-2 group">
-                Learn More
+                Daha Fazla Bilgi
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -340,14 +341,15 @@ export default function page() {
             {/* Left Column - Content */}
             <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Your Trusted Partner in Medical Product Development
+                Medikal Ürün Geliştirmede Güvenilir Ortağınız
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6 mx-auto lg:mx-0"></div>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Speed, quality, and technical expertise are built into our
-                entire process. Partnering with us helps ensure your design is
-                optimized, your development timeline is accelerated, and that
-                you're supported from prototyping through end-use production.
+                Hız, kalite ve teknik uzmanlık tüm sürecimize entegre
+                edilmiştir. Bizimle ortaklık yapmak, tasarımınızın optimize
+                edilmesini, geliştirme zaman çizelgenizin hızlandırılmasını ve
+                prototiplemeden son kullanım üretimine kadar desteklenmenizi
+                sağlamaya yardımcı olur.
               </p>
             </div>
 
@@ -364,10 +366,10 @@ export default function page() {
                     </svg>
                   </div>
                   <p className="text-white text-sm font-semibold">
-                    Watch Video
+                    Videoyu İzle
                   </p>
                   <p className="text-gray-300 text-xs mt-1">
-                    Medical Product Development
+                    Medikal Ürün Geliştirme
                   </p>
                 </div>
               </div>
@@ -384,7 +386,7 @@ export default function page() {
               <div className="text-center">
                 <Image
                   src={"/Assets/Images/Industries/medical/quality_measures.jpg"}
-                  alt={""}
+                  alt={"Kalite önlemleri"}
                   fill
                 />
               </div>
@@ -393,12 +395,12 @@ export default function page() {
             {/* Right Column - Content */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Quality Measures for the Medical Industry
+                Medikal Endüstrisi için Kalite Önlemleri
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our industry-standard procedures and certifications guarantee
-                quality and regulatory compliance.
+                Endüstri standardı prosedürlerimiz ve sertifikalarımız, kalite
+                ve düzenleyici uyumluluğu garanti eder.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
@@ -406,32 +408,31 @@ export default function page() {
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                       <span className="text-gray-600 text-sm">
-                        CMM inspection report
+                        CMM denetim raporu
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                       <span className="text-gray-600 text-sm">
-                        Dimensional Inspection Report (DIR)
+                        Boyutsal Denetim Raporu (DIR)
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                       <span className="text-gray-600 text-sm">
-                        Material Certificates + Certificate of Analysis
+                        Malzeme Sertifikaları + Analiz Sertifikası
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                       <span className="text-gray-600 text-sm">
-                        REACH + RoHS Certificates
+                        REACH + RoHS Sertifikaları
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                       <span className="text-gray-600 text-sm">
-                        Industry Certifications: ISO 9001, AS 9100, and ISO
-                        13485
+                        Endüstri Sertifikaları: ISO 9001, AS 9100 ve ISO 13485
                       </span>
                     </li>
                   </ul>
@@ -441,7 +442,7 @@ export default function page() {
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                       <span className="text-gray-600 text-sm">
-                        First Article Inspection (FAI)
+                        İlk Ürün Denetimi (FAI)
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
@@ -451,7 +452,7 @@ export default function page() {
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                       <span className="text-gray-600 text-sm">
-                        Conflict Minerals Reporting
+                        Çatışma Mineral Raporlaması
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
@@ -461,7 +462,7 @@ export default function page() {
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full mt-2"></div>
                       <span className="text-gray-600 text-sm">
-                        Certificate of Conformance (CoC)
+                        Uygunluk Sertifikası (CoC)
                       </span>
                     </li>
                   </ul>
@@ -475,43 +476,43 @@ export default function page() {
             {/* Process Traceability */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 text-center hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Process Traceability
+                Süreç İzlenebilirliği
               </h3>
               <a
                 href="#"
                 className="text-[#0099ff] hover:text-[#96E92A] text-sm font-medium inline-flex items-center gap-1">
-                Learn More →
+                Daha Fazla Bilgi →
               </a>
             </div>
 
             {/* CTQ Reporting */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 text-center hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                CTQ Reporting
+                CTQ Raporlaması
               </h3>
               <a
                 href="#"
                 className="text-[#0099ff] hover:text-[#96E92A] text-sm font-medium inline-flex items-center gap-1">
-                Learn More →
+                Daha Fazla Bilgi →
               </a>
             </div>
 
             {/* Report Comparison */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 text-center hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Report Comparison
+                Rapor Karşılaştırması
               </h3>
               <a
                 href="#"
                 className="text-[#0099ff] hover:text-[#96E92A] text-sm font-medium inline-flex items-center gap-1">
-                Learn More →
+                Daha Fazla Bilgi →
               </a>
             </div>
 
             {/* Industry Certifications (Network) */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 text-center hover:shadow-md transition-all duration-300">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Network Certifications
+                Ağ Sertifikaları
               </h3>
               <p className="text-xs text-gray-500 mb-2">
                 ISO 13485, ISO 14001, ISO 45001, ISO TS16949
@@ -519,7 +520,7 @@ export default function page() {
               <a
                 href="#"
                 className="text-[#0099ff] hover:text-[#96E92A] text-sm font-medium inline-flex items-center gap-1">
-                Learn More →
+                Daha Fazla Bilgi →
               </a>
             </div>
           </div>
@@ -530,7 +531,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Materials for Medical Applications
+              Medikal Uygulamalar için Malzemeler
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -542,18 +543,17 @@ export default function page() {
               <div className="relative h-48 w-full flex items-center justify-center">
                 <Image
                   src={"/Assets/Images/Industries/medical/peek.jpg"}
-                  alt={""}
+                  alt={"Yüksek sıcaklık plastikleri"}
                   fill
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  High-temp Plastics
+                  Yüksek Sıcaklık Plastikleri
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  PEEK and PEI (Ultem) offer high-temperature resistance, creep
-                  resistance, and are suited for applications that require
-                  sterilization.
+                  PEEK ve PEI (Ultem) yüksek sıcaklık direnci, sünme direnci
+                  sunar ve sterilizasyon gerektiren uygulamalar için uygundur.
                 </p>
               </div>
             </div>
@@ -563,18 +563,18 @@ export default function page() {
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
                 <Image
                   src={"/Assets/Images/Industries/medical/silicone_parts.jpg"}
-                  alt={""}
+                  alt={"Medikal sınıfı silikon kauçuk"}
                   fill
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Medical-grade Silicone Rubber
+                  Medikal Sınıfı Silikon Kauçuk
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Dow Corning's QP1-250 has excellent thermal, chemical, and
-                  electrical resistance. It's also bio-compatible so can be used
-                  in applications that require skin contact.
+                  Dow Corning'in QP1-250'si mükemmel termal, kimyasal ve
+                  elektrik direncine sahiptir. Ayrıca biyouyumludur, bu nedenle
+                  cilt teması gerektiren uygulamalarda kullanılabilir.
                 </p>
               </div>
             </div>
@@ -584,18 +584,19 @@ export default function page() {
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
                 <Image
                   src={"/Assets/Images/Industries/medical/frame-9-1.jpg"}
-                  alt={""}
+                  alt={"Gelişmiş fotopolimerler"}
                   fill
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Advanced Photopolymers
+                  Gelişmiş Fotopolimerler
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Tough Black and ceramic-filled are production-grade materials
-                  available through our Hybrid Photosynthesis (HPS) technology,
-                  ideal for late-stage prototyping or end-use devices.
+                  Sert Siyah ve seramik dolgulu, Hibrit Fotosentez (HPS)
+                  teknolojimiz aracılığıyla sunulan üretim sınıfı malzemelerdir
+                  ve geç aşama prototipleme veya son kullanım cihazları için
+                  idealdir.
                 </p>
               </div>
             </div>
@@ -605,18 +606,18 @@ export default function page() {
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
                 <Image
                   src={"/Assets/Images/Industries/medical/micro_fine.jpg"}
-                  alt={""}
+                  alt={"Mikro çözünürlük"}
                   fill
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Micro-resolution
+                  Mikro Çözünürlük
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  MicroFine™ (green and gray) is a proprietary material
-                  developed by Fasonly to build complex 3D-printed parts with
-                  micro-sized features as small as 0.0025 in.
+                  MicroFine™ (yeşil ve gri), Fasonly tarafından 0,0025 inç kadar
+                  küçük mikro boyutlu özelliklere sahip karmaşık 3D baskılı
+                  parçalar üretmek için geliştirilmiş özel bir malzemedir.
                 </p>
               </div>
             </div>
@@ -626,18 +627,18 @@ export default function page() {
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
                 <Image
                   src={"/Assets/Images/Industries/medical/watershed.jpg"}
-                  alt={""}
+                  alt={"Mikroakışkan"}
                   fill
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Microfluidics
+                  Mikroakışkan
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Watershed (ABS-like) and Accura 60 (PC-like) are clear
-                  materials that can be used for microfluidic parts and
-                  transparent components like lenses and housings.
+                  Watershed (ABS-benzeri) ve Accura 60 (PC-benzeri),
+                  mikroakışkan parçalar ve lensler ve gövdeler gibi şeffaf
+                  bileşenler için kullanılabilen şeffaf malzemelerdir.
                 </p>
               </div>
             </div>
@@ -647,18 +648,18 @@ export default function page() {
               <div className="relative h-48 w-full bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20 flex items-center justify-center">
                 <Image
                   src={"/Assets/Images/Industries/medical/titanium.jpg"}
-                  alt={""}
+                  alt={"Medikal alaşımlar"}
                   fill
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Medical Alloys
+                  Medikal Alaşımlar
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Between machined and 3D-printed metals along with sheet metal,
-                  there are more than 20 metal material options available for
-                  medical components and other applications.
+                  İşlenmiş ve 3D baskılı metaller ile sac metal arasında,
+                  medikal bileşenler ve diğer uygulamalar için 20'den fazla
+                  metal malzeme seçeneği mevcuttur.
                 </p>
               </div>
             </div>
@@ -671,13 +672,13 @@ export default function page() {
             {/* Left Column - Title and Description */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Common Medical Applications
+                Yaygın Medikal Uygulamalar
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed">
-                We have several capabilities within our manufacturing services
-                catered to the medical industry. Here are a few applications we
-                frequently see.
+                Üretim hizmetlerimiz içinde medikal endüstrisine yönelik çeşitli
+                yeteneklerimiz bulunmaktadır. İşte sıkça gördüğümüz birkaç
+                uygulama.
               </p>
             </div>
 
@@ -685,16 +686,16 @@ export default function page() {
             <div className="flex-1">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
-                  "Handheld devices",
-                  "Surgical instruments",
-                  "Enclosures and housings",
-                  "Ventilators",
-                  "Implantable prototypes",
-                  "Prosthetic components",
-                  "Microfluidics",
-                  "Wearables",
-                  "Cartridges",
-                  "Laboratory equipment",
+                  "Elde taşınan cihazlar",
+                  "Cerrahi aletler",
+                  "Muhafazalar ve gövdeler",
+                  "Ventilatörler",
+                  "İmplant prototipleri",
+                  "Protez bileşenleri",
+                  "Mikroakışkanlar",
+                  "Giyilebilir cihazlar",
+                  "Kartuşlar",
+                  "Laboratuvar ekipmanları",
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3">
                     <div className="w-5 h-5 bg-[#96E92A] rounded-full flex items-center justify-center flex-shrink-0">

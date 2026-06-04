@@ -7,18 +7,18 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Medical Injection Molding"
-        desc="High quality, quick-turn injection-molded parts to accelerate the production of new product development in the medical industry"
+        title="Medikal Enjeksiyon Kalıplama"
+        desc="Medikal endüstrisinde yeni ürün geliştirme üretimini hızlandırmak için yüksek kaliteli, hızlı teslim enjeksiyon kalıplanmış parçalar"
         bg="/Assets/Images/resources/medical-injection-molding/bg.jpg"
         text="black"
-        firstButton={{ title: "Get a Quote", route: "/" }}
+        firstButton={{ title: "Teklif Al", route: "/" }}
       />
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Why Medical Teams Choose Protolabs
+              Medikal Ekipler Neden Protolabs'ı Seçiyor
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -28,79 +28,81 @@ export default function page() {
             {/* Item 1 - Move faster without increasing risk */}
             <div className="bg-[#F0F8FF] rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Move faster without increasing risk
+                Risk artırmadan daha hızlı hareket edin
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Designs where early process learnings, tooling decisions, and
-                manufacturability insights can be carried forward into
-                repeatable, production-intent molding processes. Our digital
-                quoting, built-in DFM feedback, and rapid iteration help medical
-                teams hit clinical, regulatory, and investor milestones.
+                Erken süreç öğrenimlerinin, takım kararlarının ve
+                üretilebilirlik içgörülerinin tekrarlanabilir, üretime yönelik
+                kalıplama süreçlerine taşınabildiği tasarımlar. Dijital
+                teklifimiz, yerleşik DFM geri bildirimimiz ve hızlı
+                iterasyonumuz, medikal ekiplerin klinik, düzenleyici ve
+                yatırımcı hedeflerine ulaşmasına yardımcı olur.
               </p>
             </div>
 
             {/* Item 2 - Production-grade quality from the start */}
             <div className="bg-[#F0F8FF] rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Production-grade quality from the start
+                Başlangıçtan itibaren üretim sınıfı kalite
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                FDA Class II and III devices and non-implantable components
-                require consistent quality, traceability, and documentation. Our
-                ISO 13485-certified processes support validation, audits, and
-                regulatory readiness.
+                FDA Sınıf II ve III cihazlar ve implant olmayan bileşenler,
+                tutarlı kalite, izlenebilirlik ve dokümantasyon gerektirir. ISO
+                13485 sertifikalı süreçlerimiz, doğrulama, denetimler ve
+                düzenleyici hazırlığı destekler.
               </p>
             </div>
 
             {/* Item 3 - Simplify a complex supplier ecosystem */}
             <div className="bg-[#F0F8FF] rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Simplify a complex supplier ecosystem
+                Karmaşık bir tedarikçi ekosistemini basitleştirin
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                A single partner from prototype through production reduces
-                handoffs, approval cycles, and overall program risk. Parts with
-                challenging geometries, material requirements, or multi-supplier
-                dependencies benefit from simplified sourcing and digitally
-                coordinated production workflows.
+                Prototipten üretime kadar tek bir ortak, devirleri, onay
+                döngülerini ve genel program riskini azaltır. Zorlu
+                geometrilere, malzeme gereksinimlerine veya çoklu tedarikçi
+                bağımlılıklarına sahip parçalar, basitleştirilmiş tedarik ve
+                dijital olarak koordine edilmiş üretim iş akışlarından
+                yararlanır.
               </p>
             </div>
 
             {/* Item 4 - Scale on-demand */}
             <div className="bg-[#F0F8FF] rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Scale on-demand
+                Talep üzerine ölçeklendirin
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                When demand is unpredictable, count on no MOQs, steady lead
-                times, and global digital manufacturing from early R&D through
-                ramp-up with easy scaling later.
+                Talep öngörülemez olduğunda, MOQ olmamasına, istikrarlı teslim
+                sürelerine ve erken Ar-Ge'den artışa kadar kolay sonraki
+                ölçeklendirme ile küresel dijital üretime güvenin.
               </p>
             </div>
 
             {/* Item 5 - Proven in real medical programs */}
             <div className="bg-[#F0F8FF] rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                Proven in real medical programs
+                Gerçek medikal programlarda kanıtlanmış
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                From mobility devices to robotic surgical systems and
-                infection-prevention products, Protolabs supports fast-moving
-                medical teams where speed, precision, and reliability matter
-                most.
+                Mobilite cihazlarından robotik cerrahi sistemlerine ve
+                enfeksiyon önleme ürünlerine kadar Protolabs, hız, hassasiyet ve
+                güvenilirliğin en önemli olduğu hızlı hareket eden medikal
+                ekipleri destekler.
               </p>
             </div>
 
             {/* Item 6 - U.S.-based manufacturing with global resilience */}
             <div className="bg-[#F0F8FF] rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
               <h3 className="text-2xl font-bold text-[#0B1221] mb-4">
-                U.S.-based manufacturing with global resilience
+                Küresel dayanıklılığa sahip ABD merkezli üretim
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Domestic production supports regulatory confidence, IP
-                protection, and supply continuity, while a vetted network of
-                manufacturing partners enables additional capacity and
-                geographic flexibility when needed.
+                Yerli üretim, düzenleyici güveni, fikri mülkiyet korumasını ve
+                tedarik sürekliliğini desteklerken, titizlikle seçilmiş bir
+                üretim ortakları ağı, gerektiğinde ek kapasite ve coğrafi
+                esneklik sağlar.
               </p>
             </div>
           </div>
@@ -111,7 +113,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Injection Molding Capabilities for Medical Device Development
+              Medikal Cihaz Geliştirme için Enjeksiyon Kalıplama Yetenekleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
           </div>
@@ -121,13 +123,13 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <p className="text-gray-600 leading-relaxed">
-                Protolabs helps medical teams move from concept to production
-                faster with injection molding services designed for rapid
-                iteration and production grade quality. Our free digital quoting
-                platform, ProDesk, provides pricing and built-in design for
-                manufacturability feedback, helping teams identify risks early
-                and ensure parts are ready for injection molding before tooling
-                begins.
+                Protolabs, hızlı iterasyon ve üretim sınıfı kalite için
+                tasarlanmış enjeksiyon kalıplama hizmetleriyle medikal ekiplerin
+                konseptten üretime daha hızlı geçmesine yardımcı olur. Ücretsiz
+                dijital teklif platformumuz ProDesk, fiyatlandırma ve yerleşik
+                üretilebilirlik için tasarım geri bildirimi sağlayarak ekiplerin
+                riskleri erken belirlemesine ve takım başlamadan önce parçaların
+                enjeksiyon kalıplamaya hazır olmasını sağlamasına yardımcı olur.
               </p>
             </div>
 
@@ -135,7 +137,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/resources/medical-injection-molding/medical-device.jpg"
-                alt="Injection Molding for Medical Device Development"
+                alt="Medikal Cihaz Geliştirme için Enjeksiyon Kalıplama"
                 fill
                 className="object-cover"
               />
@@ -148,7 +150,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/resources/medical-injection-molding/medical-figure3.jpg"
-                alt="Medical Injection Molding Capabilities"
+                alt="Medikal Enjeksiyon Kalıplama Yetenekleri"
                 fill
                 className="object-cover"
               />
@@ -157,20 +159,20 @@ export default function page() {
             {/* Right Column - Text */}
             <div className="flex-1">
               <p className="text-gray-600 leading-relaxed mb-6">
-                With access to a broad range of thermoplastics and medical grade
-                liquid silicone rubber, no minimum order quantities, and
-                industry leading lead times, teams can iterate quickly while
-                maintaining consistency, quality and control. Our manufacturing
-                experts support you throughout the product life cycle, offering
-                flexible options including customer-supplied resins, overmolding
-                and insert molding, and other secondary injection molding
-                operations.
+                Geniş bir termoplastik ve medikal sınıfı sıvı silikon kauçuk
+                yelpazesine erişim, minimum sipariş miktarı olmaması ve sektör
+                lideri teslim süreleri ile ekipler, tutarlılık, kalite ve
+                kontrolü korurken hızlı bir şekilde iterasyon yapabilir. Üretim
+                uzmanlarımız, müşteri tarafından sağlanan reçineler, kaplama
+                kalıplama ve gömme parçalı kalıplama ile diğer ikincil
+                enjeksiyon kalıplama operasyonları dahil olmak üzere esnek
+                seçenekler sunarak ürün yaşam döngüsü boyunca size destek olur.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Protolabs' on demand manufacturing model adapts from prototyping
-                through sustained production, enabling faster decision making,
-                fewer late stage changes, and predictable outcomes as programs
-                progress.
+                Protolabs'ın talep üzerine üretim modeli, prototiplemeden
+                sürekli üretime kadar uyum sağlayarak daha hızlı karar verme,
+                daha az geç aşama değişikliği ve programlar ilerledikçe
+                öngörülebilir sonuçlar sağlar.
               </p>
             </div>
           </div>
@@ -181,12 +183,12 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Plastic Materials for Medical Devices
+              Medikal Cihazlar için Plastik Malzemeler
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              From high-performance polymers to elastomers, we source and run
-              the materials medical teams rely on.
+              Yüksek performanslı polimerlerden elastomerlere kadar, medikal
+              ekiplerin güvendiği malzemeleri tedarik ediyor ve işliyoruz.
             </p>
           </div>
 
@@ -198,7 +200,7 @@ export default function page() {
                 <div className="flex items-center justify-center h-full">
                   <Image
                     src="/Assets/Images/resources/medical-injection-molding/silicone_parts.jpg"
-                    alt="Injection Molding for Medical Device Development"
+                    alt="Medikal Cihaz Geliştirme için Enjeksiyon Kalıplama"
                     fill
                     className="object-cover"
                   />
@@ -206,16 +208,17 @@ export default function page() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Medical-Grade Liquid Silicone Rubber (LSR)
+                  Medikal Sınıfı Sıvı Silikon Kauçuk (LSR)
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Go-to elastomer for seals and prototype implants, offering
-                  excellent biocompatibility and a wide, tunable softness range.
+                  Contalar ve prototip implantlar için tercih edilen elastomer,
+                  mükemmel biyouyumluluk ve geniş, ayarlanabilir yumuşaklık
+                  aralığı sunar.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </a>
               </div>
             </div>
@@ -226,7 +229,7 @@ export default function page() {
                 <div className="flex items-center justify-center h-full">
                   <Image
                     src="/Assets/Images/resources/medical-injection-molding/watershed.jpg"
-                    alt="Injection Molding for Medical Device Development"
+                    alt="Medikal Cihaz Geliştirme için Enjeksiyon Kalıplama"
                     fill
                     className="object-cover"
                   />
@@ -234,17 +237,17 @@ export default function page() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  PC-ABS and PC Blends
+                  PC-ABS ve PC Karışımları
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Versatile pick for housings, enclosures, wearables, and lab
-                  equipment; highly moldable with clean, durable cosmetics and
-                  medical-grade options.
+                  Gövdeler, muhafazalar, giyilebilir cihazlar ve laboratuvar
+                  ekipmanları için çok yönlü seçim; temiz, dayanıklı kozmetik ve
+                  medikal sınıfı seçeneklerle yüksek kalıplanabilirlik.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </a>
               </div>
             </div>
@@ -255,7 +258,7 @@ export default function page() {
                 <div className="flex items-center justify-center h-full">
                   <Image
                     src="/Assets/Images/resources/medical-injection-molding/peek.jpg"
-                    alt="Injection Molding for Medical Device Development"
+                    alt="Medikal Cihaz Geliştirme için Enjeksiyon Kalıplama"
                     fill
                     className="object-cover"
                   />
@@ -264,14 +267,14 @@ export default function page() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">PEEK</h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Engineered for demanding work such as implant prototypes and
-                  surgical tools; delivers top-tier strength and heat/chemical
-                  resistance.
+                  İmplant prototipleri ve cerrahi aletler gibi zorlu işler için
+                  tasarlanmıştır; en üst düzey mukavemet ve ısı/kimyasal direnç
+                  sunar.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </a>
               </div>
             </div>
@@ -282,7 +285,7 @@ export default function page() {
                 <div className="flex items-center justify-center h-full">
                   <Image
                     src="/Assets/Images/resources/medical-injection-molding/pc_material.webp"
-                    alt="Injection Molding for Medical Device Development"
+                    alt="Medikal Cihaz Geliştirme için Enjeksiyon Kalıplama"
                     fill
                     className="object-cover"
                   />
@@ -290,17 +293,17 @@ export default function page() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Polycarbonate (PC)
+                  Polikarbonat (PC)
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Trusted for transparent housings, surgical instruments, and IV
-                  connectors thanks to its clarity and durable performance, but
-                  watch for stress cracking in tough environments.
+                  Şeffaflığı ve dayanıklı performansı sayesinde şeffaf gövdeler,
+                  cerrahi aletler ve IV konnektörleri için güvenilir tercihtir,
+                  ancak zorlu ortamlarda gerilim çatlamasına dikkat edin.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </a>
               </div>
             </div>
@@ -311,7 +314,7 @@ export default function page() {
                 <div className="flex items-center justify-center h-full">
                   <Image
                     src="/Assets/Images/resources/medical-injection-molding/im_thermo_2017_enclosure_pp_ltgray_polypropylene.jpg"
-                    alt="Injection Molding for Medical Device Development"
+                    alt="Medikal Cihaz Geliştirme için Enjeksiyon Kalıplama"
                     fill
                     className="object-cover"
                   />
@@ -319,17 +322,17 @@ export default function page() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Polypropylene (PP)
+                  Polipropilen (PP)
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Cost-effective staple for high-volume disposables such as
-                  syringes and pill containers, offering chemical/heat
-                  resistance and a bit of flex to reduce cracking.
+                  Şırıngalar ve hap kapları gibi yüksek hacimli tek kullanımlık
+                  ürünler için uygun maliyetli temel malzeme, kimyasal/ısı
+                  direnci ve çatlamayı azaltmak için bir miktar esneklik sunar.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </a>
               </div>
             </div>
@@ -340,7 +343,7 @@ export default function page() {
                 <div className="flex items-center justify-center h-full">
                   <Image
                     src="/Assets/Images/resources/medical-injection-molding/tpu-im-img.webp"
-                    alt="Injection Molding for Medical Device Development"
+                    alt="Medikal Cihaz Geliştirme için Enjeksiyon Kalıplama"
                     fill
                     className="object-cover"
                   />
@@ -348,16 +351,17 @@ export default function page() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Thermoplastic Elastomers (TPE/TPU)
+                  Termoplastik Elastomerler (TPE/TPU)
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  Preferred for soft-touch grips, seals, and catheters, with
-                  strong chemical bonding in overmolded designs.
+                  Yumuşak dokunuşlu tutma yerleri, contalar ve kateterler için
+                  tercih edilir, kaplama kalıplanmış tasarımlarda güçlü kimyasal
+                  yapışma sağlar.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </a>
               </div>
             </div>

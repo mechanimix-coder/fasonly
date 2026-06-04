@@ -9,54 +9,54 @@ export default function page() {
   const [activeTab, setActiveTab] = useState("injection");
 
   const tabs = [
-    { id: "injection", label: "Injection Molding" },
-    { id: "cnc", label: "CNC Machining" },
-    { id: "printing", label: "3D Printing" },
-    { id: "sheet", label: "Sheet Metal Fabrication" },
+    { id: "injection", label: "Enjeksiyon Kalıplama" },
+    { id: "cnc", label: "CNC İşleme" },
+    { id: "printing", label: "3D Baskı" },
+    { id: "sheet", label: "Sac Metal İmalatı" },
   ];
 
   const content = {
     injection: {
-      title: "Injection Molding",
+      title: "Enjeksiyon Kalıplama",
       description:
-        "Get affordable, high-quality molded parts and bridge tooling within days. With our free moldability consultation, the design and molding process is rapidly accelerated to save you time and money.",
+        "Günler içinde uygun fiyatlı, yüksek kaliteli kalıplanmış parçalar ve köprü takımı alın. Ücretsiz kalıplanabilirlik danışmanlığımız ile tasarım ve kalıplama süreci, size zaman ve para kazandırmak için hızla hızlandırılır.",
       features: [
-        "Low-volume molding up to 100,000+ parts with volume pricing available—no MOQ required",
-        "100+ plastic, elastomeric, and silicone rubber materials",
-        "Automated CMM for fast, in-house quality documentation",
+        "Hacim fiyatlandırması ile 100.000+ parçaya kadar düşük hacimli kalıplama - MOQ gerekmez",
+        "100'den fazla plastik, elastomerik ve silikon kauçuk malzeme",
+        "Hızlı, kurum içi kalite dokümantasyonu için otomatik CMM",
       ],
       image: "/Assets/Images/Industries/aerospace/pl_service_im.webp",
     },
     cnc: {
-      title: "CNC Machining",
+      title: "CNC İşleme",
       description:
-        "Leverage the same speed, precision, and reliability in machining that you're accustomed to at Fasonly but unlock advanced machining capabilities like tighter tolerances and volume pricing through our manufacturing network.",
+        "Fasonly'de alıştığınız aynı hız, hassasiyet ve güvenilirlikten işlemede yararlanın, ancak üretim ağımız aracılığıyla daha sıkı toleranslar ve hacim fiyatlandırması gibi gelişmiş işleme yeteneklerini açığa çıkarın.",
       features: [
-        "Machined parts in as fast as 1 day with optional plating and anodizing in as fast as 4 days",
-        "Cost-efficient machined parts at higher volumes",
-        "Tolerances down to ±0.001 in. (0.020mm) through our digital network",
+        "1 gün kadar kısa sürede işlenmiş parçalar, 4 gün kadar kısa sürede isteğe bağlı kaplama ve anodizasyon",
+        "Daha yüksek hacimlerde uygun maliyetli işlenmiş parçalar",
+        "Dijital ağımız aracılığıyla ±0,001 inç'e (0,020mm) kadar toleranslar",
       ],
       image: "/Assets/Images/Industries/aerospace/pl_service_cnc.webp",
     },
     printing: {
-      title: "3D Printing",
+      title: "3D Baskı",
       description:
-        "Want quality parts and additive expertise at a single 3D printing source? Choose from seven different additive manufacturing technologies for cost-effective prototyping and highly precise, repeatable production parts.",
+        "Tek bir 3D baskı kaynağında kaliteli parçalar ve eklemeli üretim uzmanlığı mı istiyorsunuz? Uygun maliyetli prototipleme ve son derece hassas, tekrarlanabilir üretim parçaları için yedi farklı eklemeli üretim teknolojisi arasından seçim yapın.",
       features: [
-        "Additive technologies include metal 3D printing, SLA, SLS, FDM, and more",
-        "30 plastic and metal materials in a range of finishes",
-        "25 years of additive manufacturing expertise",
+        "Eklemeli teknolojiler metal 3D baskı, SLA, SLS, FDM ve daha fazlasını içerir",
+        "Çeşitli yüzey işlemlerinde 30 plastik ve metal malzeme",
+        "25 yıllık eklemeli üretim uzmanlığı",
       ],
       image: "/Assets/Images/Industries/aerospace/pl_service_3dp-2.webp",
     },
     sheet: {
-      title: "Sheet Metal Fabrication",
+      title: "Sac Metal İmalatı",
       description:
-        "From easy quoting to quick-turn production and finishing options, get up to 500 quality sheet metal parts in your hands in days from a single supplier.",
+        "Kolay teklif almadan hızlı teslim üretim ve yüzey işlem seçeneklerine kadar, tek bir tedarikçiden günler içinde 500'e kadar kaliteli sac metal parçayı elinize alın.",
       features: [
-        "Instant quotes with interactive manufacturability feedback",
-        "Six sheet metal materials including aluminum, stainless steel, steel, brass, and copper",
-        "Finishing options from welding and hardware insertion to powder coating and silk screening",
+        "Etkileşimli üretilebilirlik geri bildirimi ile anında teklifler",
+        "Alüminyum, paslanmaz çelik, çelik, pirinç ve bakır dahil altı sac metal malzeme",
+        "Kaynak ve donanım yerleştirmeden toz boya ve ipek baskıya kadar yüzey işlem seçenekleri",
       ],
       image: "/Assets/Images/Industries/aerospace/sheet-metal-home.webp",
     },
@@ -67,12 +67,12 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Digital Manufacturing for Automotive Product Development"
-        desc="Conquer ever-shortening development cycles for traditional, electric, and autonomous vehicles with rapid prototyping and low-volume production"
+        title="Otomotiv Ürün Geliştirme için Dijital Üretim"
+        desc="Geleneksel, elektrikli ve otonom araçlar için giderek kısalan geliştirme döngülerini hızlı prototipleme ve düşük hacimli üretim ile aşın"
         bg="/Assets/Images/Industries/automotive/bg.jpg"
         text="white"
-        firstButton={{ title: "Upload a Part", route: "/" }}
-        secondButton={{ title: "Start Production Quote", route: "/" }}
+        firstButton={{ title: "Parça Yükle", route: "/" }}
+        secondButton={{ title: "Üretim Teklifi Başlat", route: "/" }}
       />
 
       <div className="w-full bg-white py-20">
@@ -80,7 +80,7 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              How Do Automotive Companies use Fasonly?
+              Otomotiv Şirketleri Fasonly'yi Nasıl Kullanıyor?
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -93,11 +93,11 @@ export default function page() {
                 <span className="text-2xl">⚡</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Rapid Prototyping
+                Hızlı Prototipleme
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Mitigate design risk through rapid iteration and prototyping in
-                production materials without sacrificing development speed.
+                Üretim malzemelerinde hızlı iterasyon ve prototipleme yoluyla
+                geliştirme hızından ödün vermeden tasarım riskini azaltın.
               </p>
             </div>
 
@@ -107,12 +107,11 @@ export default function page() {
                 <span className="text-2xl">✅</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Quality Inspections
+                Kalite Denetimleri
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Validate part geometry with several quality documentation
-                options. Digital inspection, PPAP, and FAI reporting are
-                available.
+                Çeşitli kalite dokümantasyon seçenekleri ile parça geometrisini
+                doğrulayın. Dijital denetim, PPAP ve FAI raporlaması mevcuttur.
               </p>
             </div>
 
@@ -122,12 +121,12 @@ export default function page() {
                 <span className="text-2xl">🏭</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Mass Customization
+                Kitlesel Özelleştirme
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Implement low-volume manufacturing to enable more diverse and
-                customized automotive features that are tailored to modern
-                drivers.
+                Modern sürücülere göre uyarlanmış daha çeşitli ve
+                özelleştirilmiş otomotiv özelliklerini mümkün kılmak için düşük
+                hacimli üretimi uygulayın.
               </p>
             </div>
 
@@ -137,13 +136,13 @@ export default function page() {
                 <span className="text-2xl">📦</span>
               </div>
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Supply Chain Flexibility
+                Tedarik Zinciri Esnekliği
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Get on-demand support for line-down emergencies, part recalls,
-                or other supply chain disturbances in your production plants by
-                using automated quoting, rapid tooling, and low-volume
-                production parts.
+                Otomatik teklif alma, hızlı takım ve düşük hacimli üretim
+                parçalarını kullanarak üretim tesislerinizdeki hat duruşu acil
+                durumları, parça geri çağırmaları veya diğer tedarik zinciri
+                aksaklıkları için talep üzerine destek alın.
               </p>
             </div>
           </div>
@@ -154,9 +153,9 @@ export default function page() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           {/* Description Text */}
           <p className="text-center text-gray-300 text-lg max-w-3xl mx-auto mb-12">
-            We are the fastest and most comprehensive digital manufacturer in
-            the industry with more than 25 years of experience developing
-            products for innovative automotive companies around the world.
+            Dünya çapındaki yenilikçi otomotiv şirketleri için 25 yılı aşkın
+            süredir ürün geliştiren sektördeki en hızlı ve en kapsamlı dijital
+            üreticiyiz.
           </p>
 
           {/* Stats Row */}
@@ -167,29 +166,27 @@ export default function page() {
                 96%
               </div>
               <p className="text-white text-sm md:text-base">
-                of Fortune 500
+                Fortune 500
                 <br />
-                Medical Companies Served
+                Medikal Şirketlerine Hizmet Verildi
               </p>
             </div>
 
             {/* Stat 2 - 700 Million */}
             <div className="text-center">
               <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#96E92A] mb-2">
-                700 Million
+                700 Milyon
               </div>
-              <p className="text-white text-sm md:text-base">
-                Parts Manufactured
-              </p>
+              <p className="text-white text-sm md:text-base">Parça Üretildi</p>
             </div>
 
             {/* Stat 3 - 300,000 */}
             <div className="text-center">
               <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#96E92A] mb-2">
-                300,000
+                300.000
               </div>
               <p className="text-white text-sm md:text-base">
-                Customers Served
+                Müşteriye Hizmet Verildi
               </p>
             </div>
           </div>
@@ -202,13 +199,13 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Full Production Support Team
+              Tam Üretim Destek Ekibi
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              We have a team of manufacturing experts working behind the scenes
-              to fulfill your production order—we manage the entire process and
-              keep you updated along the way.
+              Üretim siparişinizi yerine getirmek için perde arkasında çalışan
+              bir üretim uzmanları ekibimiz var - tüm süreci yönetiyor ve sizi
+              yol boyunca güncel tutuyoruz.
             </p>
           </div>
 
@@ -219,18 +216,18 @@ export default function page() {
               <div className="relative w-full h-40 overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/Industries/aerospace/customer_support.jpg"
-                  alt="Account Manager"
+                  alt="Hesap Yöneticisi"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Account Manager
+                  Hesap Yöneticisi
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  A dedicated account manager provides support, including
-                  assistance with platform and file uploads.
+                  Özel bir hesap yöneticisi, platform ve dosya yüklemelerinde
+                  yardım dahil olmak üzere destek sağlar.
                 </p>
               </div>
             </div>
@@ -240,18 +237,19 @@ export default function page() {
               <div className="relative w-full h-40 overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/Industries/aerospace/application_engineer.jpg"
-                  alt="Applications Engineers"
+                  alt="Uygulama Mühendisleri"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Applications Engineers
+                  Uygulama Mühendisleri
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Expert CAD solutions and cost-reduction strategies tailored by
-                  in-house applications engineers to optimize your designs.
+                  Tasarımlarınızı optimize etmek için kurum içi uygulama
+                  mühendisleri tarafından özelleştirilmiş uzman CAD çözümleri ve
+                  maliyet azaltma stratejileri.
                 </p>
               </div>
             </div>
@@ -261,18 +259,18 @@ export default function page() {
               <div className="relative w-full h-40 overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/Industries/aerospace/logistics.jpg"
-                  alt="Logistics"
+                  alt="Lojistik"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Logistics
+                  Lojistik
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Seamless logistics fulfillment and efficiency optimization
-                  from experienced operations specialists.
+                  Deneyimli operasyon uzmanlarından kesintisiz lojistik yerine
+                  getirme ve verimlilik optimizasyonu.
                 </p>
               </div>
             </div>
@@ -282,18 +280,19 @@ export default function page() {
               <div className="relative w-full h-40 overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/Industries/aerospace/quality_control.jpg"
-                  alt="Quality Control"
+                  alt="Kalite Kontrol"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Quality Control
+                  Kalite Kontrol
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Our skilled expert on-site quality control teams ensure your
-                  parts meet your expectations and exact specifications.
+                  Yetenekli uzman yerinde kalite kontrol ekiplerimiz,
+                  parçalarınızın beklentilerinizi ve tam spesifikasyonlarınızı
+                  karşılamasını sağlar.
                 </p>
               </div>
             </div>
@@ -301,13 +300,13 @@ export default function page() {
         </div>
       </div>
 
-      {/* Manufacturing Services for Aerospace Products Section */}
+      {/* Manufacturing Services for Automotive Products Section */}
       <div className="w-full bg-white py-20">
         <div className="container mx-auto px-4 md:px-10 lg:px-20">
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Manufacturing Services for Aerospace Products
+              Otomotiv Ürünleri için Üretim Hizmetleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
@@ -353,7 +352,7 @@ export default function page() {
               <a
                 href="#"
                 className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                Learn More →
+                Daha Fazla Bilgi →
               </a>
             </div>
 
@@ -377,12 +376,12 @@ export default function page() {
           {/* Section Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Quality Measures for the Aerospace Industry
+              Otomotiv Endüstrisi için Kalite Önlemleri
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              Our industry-standard procedures and certifications guarantee
-              quality and regulatory compliance.
+              Endüstri standardı prosedürlerimiz ve sertifikalarımız, kalite ve
+              düzenleyici uyumluluğu garanti eder.
             </p>
           </div>
 
@@ -392,7 +391,7 @@ export default function page() {
             <div className="flex-1 relative w-full h-80 md:h-auto min-h-[400px] rounded-xl overflow-hidden shadow-md bg-gray-100">
               <Image
                 src="/Assets/Images/Industries/aerospace/quality_measures.jpg"
-                alt="Quality Measures for Aerospace Industry"
+                alt="Otomotiv Endüstrisi için Kalite Önlemleri"
                 fill
                 className="object-cover"
               />
@@ -405,54 +404,52 @@ export default function page() {
                   <thead>
                     <tr className="bg-[#0B1221] text-white">
                       <th className="text-left p-4 font-semibold text-lg border-r border-gray-700">
-                        Documentation
+                        Dokümantasyon
                       </th>
                       <th className="text-left p-4 font-semibold text-lg">
-                        Certification
+                        Sertifika
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-b border-gray-200 bg-white">
-                      <td className="p-4 text-gray-700">
-                        CMM inspection report
-                      </td>
+                      <td className="p-4 text-gray-700">CMM denetim raporu</td>
                       <td className="p-4 text-gray-600">
-                        First Article Inspection (FAI)
+                        İlk Ürün Denetimi (FAI)
                       </td>
                     </tr>
                     <tr className="border-b border-gray-200 bg-gray-50">
                       <td className="p-4 text-gray-700">
-                        Dimensional Inspection Report (DIR)
+                        Boyutsal Denetim Raporu (DIR)
                       </td>
                       <td className="p-4 text-gray-600">PPAP</td>
                     </tr>
                     <tr className="border-b border-gray-200 bg-white">
                       <td className="p-4 text-gray-700">
-                        Material Certificates + Certificate of Analysis
+                        Malzeme Sertifikaları + Analiz Sertifikası
                       </td>
                       <td className="p-4 text-gray-600">
-                        Conflict Minerals Reporting
+                        Çatışma Mineral Raporlaması
                       </td>
                     </tr>
                     <tr className="border-b border-gray-200 bg-gray-50">
                       <td className="p-4 text-gray-700">
-                        REACH + RoHS Certificates
+                        REACH + RoHS Sertifikaları
                       </td>
                       <td className="p-4 text-gray-600">Prop65</td>
                     </tr>
                     <tr className="border-b border-gray-200 bg-white">
                       <td className="p-4 text-gray-700">
-                        Industry Certifications: ISO 9001 and AS 9100
+                        Endüstri Sertifikaları: ISO 9001 ve AS 9100
                       </td>
                       <td className="p-4 text-gray-600">
-                        Certificate of Conformance (CoC)
+                        Uygunluk Sertifikası (CoC)
                       </td>
                     </tr>
                     <tr className="border-b border-gray-200 bg-gray-50">
                       <td className="p-4 text-gray-700">
-                        Industry Certifications (Fasonly Network): ISO 13485,
-                        ISO 14001, ISO 45001, and ISO TS16949
+                        Endüstri Sertifikaları (Fasonly Network): ISO 13485, ISO
+                        14001, ISO 45001 ve ISO TS16949
                       </td>
                       <td className="p-4 text-gray-600"></td>
                     </tr>
@@ -467,48 +464,48 @@ export default function page() {
             {/* Process Traceability */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300 text-center">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Process Traceability
+                Süreç İzlenebilirliği
               </h3>
               <a
                 href="#"
                 className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                Learn More →
+                Daha Fazla Bilgi →
               </a>
             </div>
 
             {/* CTQ Reporting */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300 text-center">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                CTQ Reporting
+                CTQ Raporlaması
               </h3>
               <a
                 href="#"
                 className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                Learn More →
+                Daha Fazla Bilgi →
               </a>
             </div>
 
             {/* Report Comparison */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300 text-center">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Report Comparison
+                Rapor Karşılaştırması
               </h3>
               <a
                 href="#"
                 className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                Learn More →
+                Daha Fazla Bilgi →
               </a>
             </div>
 
             {/* Additional Resource */}
             <div className="bg-[#F0F8FF] rounded-xl p-6 hover:shadow-md transition-all duration-300 text-center">
               <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                Quality Assurance
+                Kalite Güvencesi
               </h3>
               <a
                 href="#"
                 className="text-[#0099ff] font-medium text-sm hover:text-[#96E92A] transition-colors inline-flex items-center gap-1 group">
-                Learn More →
+                Daha Fazla Bilgi →
               </a>
             </div>
           </div>
@@ -519,31 +516,77 @@ export default function page() {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-              Materials for Automotive Applications
+              Otomotiv Uygulamaları için Malzemeler
             </h2>
             <div className="w-20 h-1 bg-[#96E92A] mx-auto rounded-full"></div>
           </div>
 
           {/* 5 Items Grid - 3 columns on desktop */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Titanium */}
+            {/* Thermoplastics */}
             <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
               <div className="relative w-full h-56 overflow-hidden bg-gray-100">
                 <Image
                   src="/Assets/Images/Industries/automotive/peek.jpg"
-                  alt="Titanium"
+                  alt="Termoplastikler"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
-                  Thermoplastics
+                  Termoplastikler
                 </h3>
                 <p className="text-gray-500 text-base leading-relaxed">
-                  Choose from hundreds of thermoplastics including PEEK, acetal,
-                  or supply your own material. Maintain branding with custom
-                  colorant for qualified projects.
+                  PEEK, asetal dahil yüzlerce termoplastik arasından seçim yapın
+                  veya kendi malzemenizi tedarik edin. Uygun projeler için özel
+                  renklendirici ile markalaşmayı koruyun.
+                </p>
+              </div>
+            </div>
+
+            {/* Nylons */}
+            <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
+              <div className="relative w-full h-56 overflow-hidden bg-gray-100">
+                <Image
+                  src="/Assets/Images/Industries/automotive/nylon.jpg"
+                  alt="Naylonlar"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
+                  Naylonlar
+                </h3>
+                <p className="text-gray-500 text-base leading-relaxed">
+                  Seçici lazer sinterleme ve Multi Jet Füzyon ile mevcut çeşitli
+                  naylon malzemelerde fonksiyonel prototipleri 3D baskı ile
+                  üretin. Mineral ve cam dolgulu naylonlar, gerektiğinde mekanik
+                  özellikleri iyileştirir.
+                </p>
+              </div>
+            </div>
+
+            {/* Liquid Silicone Rubber */}
+            <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
+              <div className="relative w-full h-56 overflow-hidden bg-gray-100">
+                <Image
+                  src="/Assets/Images/Industries/automotive/silicone_parts.jpg"
+                  alt="Sıvı Silikon Kauçuk"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
+                  Sıvı Silikon Kauçuk
+                </h3>
+                <p className="text-gray-500 text-base leading-relaxed">
+                  Yakıta dayanıklı florosilikon gibi silikon kauçuk malzemeler
+                  contalar, keçeler ve borular için kullanılabilir. Lens ve
+                  aydınlatma uygulamaları için optik şeffaflıkta silikon kauçuk
+                  da mevcuttur.
                 </p>
               </div>
             </div>
@@ -552,66 +595,20 @@ export default function page() {
             <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
               <div className="relative w-full h-56 overflow-hidden bg-gray-100">
                 <Image
-                  src="/Assets/Images/Industries/automotive/nylon.jpg"
-                  alt="Aluminum"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
-                  Nylons
-                </h3>
-                <p className="text-gray-500 text-base leading-relaxed">
-                  3D print functional prototypes in several nylon materials
-                  available through selective laser sintering and Multi Jet
-                  Fusion. Mineral- and glass-filled nylons improve mechanical
-                  properties when needed.
-                </p>
-              </div>
-            </div>
-
-            {/* Inconel */}
-            <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
-              <div className="relative w-full h-56 overflow-hidden bg-gray-100">
-                <Image
-                  src="/Assets/Images/Industries/automotive/silicone_parts.jpg"
-                  alt="Inconel"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
-                  Liquid Silicone Rubber
-                </h3>
-                <p className="text-gray-500 text-base leading-relaxed">
-                  Silicone rubber materials such as fuel-resistant
-                  fluorosilicone can be used for gaskets, seals, and tubing. An
-                  optical clarity silicone rubber is also available for lens and
-                  lighting applications.
-                </p>
-              </div>
-            </div>
-
-            {/* Stainless Steel */}
-            <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
-              <div className="relative w-full h-56 overflow-hidden bg-gray-100">
-                <Image
                   src="/Assets/Images/Industries/automotive/aluminum.jpg"
-                  alt="Stainless Steel"
+                  alt="Alüminyum"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-[#0B1221] mb-3">
-                  Aluminum
+                  Alüminyum
                 </h3>
                 <p className="text-gray-500 text-base leading-relaxed">
-                  This all-purpose metal used for light-weighting provides
-                  excellent strength-to-weight ratio and can be machined or 3D
-                  printed.
+                  Hafifletme için kullanılan bu çok amaçlı metal, mükemmel
+                  mukavemet-ağırlık oranı sağlar ve işlenebilir veya 3D baskı
+                  ile üretilebilir.
                 </p>
               </div>
             </div>
@@ -624,13 +621,13 @@ export default function page() {
             {/* Left Column - Text */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1221] mb-4">
-                Common Aerospace Applications
+                Yaygın Otomotiv Uygulamaları
               </h2>
               <div className="w-20 h-1 bg-[#96E92A] rounded-full mb-6"></div>
               <p className="text-gray-600 leading-relaxed">
-                We have several capabilities within our manufacturing services
-                catered to the aerospace industry. Here are a few applications
-                we frequently see.
+                Üretim hizmetlerimiz içinde otomotiv endüstrisine yönelik
+                çeşitli yeteneklerimiz bulunmaktadır. İşte sıkça gördüğümüz
+                birkaç uygulama.
               </p>
             </div>
 
@@ -638,16 +635,16 @@ export default function page() {
             <div className="flex-1">
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
-                  "Heat exchangers",
-                  "Manifolds",
-                  "Turbo pumps",
-                  "Jigs & fixtures",
-                  "Drones",
-                  "Liquid and gas flow components",
-                  "Fuel nozzles",
-                  "Conformal cooling channels",
-                  "Surrogate parts",
-                  "Small sensors",
+                  "Isı eşanjörleri",
+                  "Manifoldlar",
+                  "Turbo pompalar",
+                  "Tezgahlar ve fikstürler",
+                  "Drone'lar",
+                  "Sıvı ve gaz akış bileşenleri",
+                  "Yakıt nozulları",
+                  "Konformal soğutma kanalları",
+                  "Vekil parçalar",
+                  "Küçük sensörler",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#96E92A] rounded-full"></div>

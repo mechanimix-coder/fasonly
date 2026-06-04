@@ -5,10 +5,10 @@ export default function page() {
   return (
     <div className="w-full pt-10 pb-20 bg-white">
       <ServicesHero
-        title="Digital Manufacturing Across Your Product Life Cycle"
-        desc="We are your single resource from rapid prototyping to end-use production—and everything in between"
+        title="Ürün Yaşam Döngünüz Boyunca Dijital Üretim"
+        desc="Hızlı prototiplemeden son kullanım üretimine kadar - ve aradaki her şeyde tek kaynağınız siziz"
         simple
-        firstButton={{ title: "Start a Project", route: "/" }}
+        firstButton={{ title: "Proje Başlat", route: "/" }}
         bg="/Assets/Images/resources/product-life-cycle/use_cases_hub_hero.jpg"
         text="white"
       />
@@ -22,7 +22,7 @@ export default function page() {
                 <div className="relative w-full h-64 md:h-72 rounded-xl overflow-hidden shadow-md bg-gray-100">
                   <Image
                     src="/Assets/Images/resources/product-life-cycle/full_product_life_cycle.jpg"
-                    alt="Full product life cycle support from start to finish"
+                    alt="Baştan sona tam ürün yaşam döngüsü desteği"
                     fill
                     className="object-cover"
                   />
@@ -32,20 +32,20 @@ export default function page() {
               {/* Right Column - Text */}
               <div className="md:w-3/5">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0B1221] mb-4">
-                  Get Full Product Life Cycle Support from Start to Finish
+                  Baştan Sona Tam Ürün Yaşam Döngüsü Desteği Alın
                 </h2>
                 <div className="w-16 h-1 bg-[#96E92A] rounded-full mb-5"></div>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Whether you need prototype parts in one day or full-service
-                  production, you can partner with us across your entire product
-                  life cycle for speed, quality, and cost-efficiency in every
-                  project. It's one resource to support you throughout your
-                  manufacturing journey.
+                  İster bir günde prototip parçalara ihtiyacınız olsun ister tam
+                  hizmet üretime, her projede hız, kalite ve maliyet verimliliği
+                  için tüm ürün yaşam döngünüz boyunca bizimle ortaklık
+                  kurabilirsiniz. Üretim yolculuğunuz boyunca sizi destekleyecek
+                  tek kaynak budur.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </a>
               </div>
             </div>
@@ -55,26 +55,26 @@ export default function page() {
               {/* Item 1 - End-to-end Product Development */}
               <div className="bg-[#E8F4FD] rounded-xl p-6 md:p-8 transition-all duration-300 hover:shadow-lg">
                 <h3 className="text-xl md:text-2xl font-bold text-[#0B1221] mb-3">
-                  End-to-end Product Development
+                  Uçtan Uca Ürün Geliştirme
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Optimize part design and move quickly through iterative
-                  development with our rapid prototyping and low-volume
-                  production services. When you're ready, work with our team of
-                  applications engineers to meet all of your production needs
-                  for end-use parts.
+                  Hızlı prototipleme ve düşük hacimli üretim hizmetlerimizle
+                  parça tasarımını optimize edin ve döngüsel geliştirme boyunca
+                  hızla ilerleyin. Hazır olduğunuzda, son kullanım parçaları
+                  için tüm üretim ihtiyaçlarınızı karşılamak üzere uygulama
+                  mühendisleri ekibimizle çalışın.
                 </p>
               </div>
 
               {/* Item 2 - Supply Chain Diversification */}
               <div className="bg-[#E8F4FD] rounded-xl p-6 md:p-8 transition-all duration-300 hover:shadow-lg">
                 <h3 className="text-xl md:text-2xl font-bold text-[#0B1221] mb-3">
-                  Supply Chain Diversification
+                  Tedarik Zinciri Çeşitlendirmesi
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Build a manufacturing safety net into your supply chain that
-                  you can turn to during line-down situations or unplanned
-                  disruptions.
+                  Hat duruşu durumlarında veya planlanmamış aksaklıklarda
+                  başvurabileceğiniz tedarik zincirinize bir üretim emniyet ağı
+                  oluşturun.
                 </p>
               </div>
             </div>
@@ -89,19 +89,20 @@ export default function page() {
               {/* Left Column - Text */}
               <div className="md:w-3/5">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0B1221] mb-4">
-                  Accelerate Product Development with Rapid Prototyping
+                  Hızlı Prototipleme ile Ürün Geliştirmeyi Hızlandırın
                 </h2>
                 <div className="w-16 h-1 bg-[#96E92A] rounded-full mb-5"></div>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Take advantage of design for manufacturability (DFM) feedback
-                  in our instant quotes to make adjustments to part design
-                  before any actual manufacturing begins, then navigate quickly
-                  through early- and late-stage prototyping with ease.
+                  Herhangi bir gerçek üretim başlamadan önce parça tasarımında
+                  ayarlamalar yapmak için anlık tekliflerimizdeki
+                  üretilebilirlik için tasarım (DFM) geri bildiriminden
+                  yararlanın, ardından erken ve geç aşama prototipleme boyunca
+                  kolayca hızlı bir şekilde ilerleyin.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </a>
               </div>
 
@@ -110,7 +111,7 @@ export default function page() {
                 <div className="relative w-full h-64 md:h-72 rounded-xl overflow-hidden shadow-md bg-gray-100">
                   <Image
                     src="/Assets/Images/resources/product-life-cycle/rapid_prototyping.jpg"
-                    alt="Accelerate product development with rapid prototyping"
+                    alt="Hızlı prototipleme ile ürün geliştirmeyi hızlandırın"
                     fill
                     className="object-cover"
                   />
@@ -123,22 +124,23 @@ export default function page() {
               {/* Item 1 - Early Prototyping */}
               <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <h3 className="text-xl md:text-2xl font-bold text-[#0B1221] mb-3">
-                  Early Prototyping
+                  Erken Prototipleme
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Get quality parts in hand within days for iterative prototype
-                  testing of form, fit, and function.
+                  Form, uyum ve işlevin döngüsel prototip testi için günler
+                  içinde kaliteli parçaları elinize alın.
                 </p>
               </div>
 
               {/* Item 2 - Late Prototyping */}
               <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <h3 className="text-xl md:text-2xl font-bold text-[#0B1221] mb-3">
-                  Late Prototyping
+                  Geç Prototipleme
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Validate part designs with pilot runs and market testing to
-                  reduce design risk before production.
+                  Üretim öncesinde tasarım riskini azaltmak için pilot
+                  çalışmalar ve pazar testleri ile parça tasarımlarını
+                  doğrulayın.
                 </p>
               </div>
             </div>
@@ -150,7 +152,7 @@ export default function page() {
           <div className="relative flex justify-center w-full h-fit overflow-hidden">
             <Image
               src="/Assets/Images/resources/product-life-cycle/infographic_v2_def.jpg"
-              alt="Manufacturing facility banner"
+              alt="Üretim tesisi banner"
               width={1000}
               height={1500}
               className="object-cover"
@@ -168,7 +170,7 @@ export default function page() {
                 <div className="relative w-full h-64 md:h-72 rounded-xl overflow-hidden shadow-md bg-gray-100">
                   <Image
                     src="/Assets/Images/resources/product-life-cycle/end_use_production.jpg"
-                    alt="Shift seamlessly to end-use production"
+                    alt="Son kullanım üretimine sorunsuz geçiş"
                     fill
                     className="object-cover"
                   />
@@ -178,18 +180,18 @@ export default function page() {
               {/* Right Column - Text */}
               <div className="md:w-3/5">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0B1221] mb-4">
-                  Shift Seamlessly to End-Use Production
+                  Son Kullanım Üretimine Sorunsuz Geçiş Yapın
                 </h2>
                 <div className="w-16 h-1 bg-[#96E92A] rounded-full mb-5"></div>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  You'll find complete program management at Protolabs with a
-                  team of manufacturing experts who will help optimize your
-                  project around cost, quantity, and quality.
+                  Protolabs'ta, projenizi maliyet, miktar ve kalite etrafında
+                  optimize etmeye yardımcı olacak bir üretim uzmanları ekibiyle
+                  tam program yönetimi bulacaksınız.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </a>
               </div>
             </div>
@@ -199,34 +201,35 @@ export default function page() {
               {/* Item 1 - Low-Volume Production */}
               <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Low-Volume Production
+                  Düşük Hacimli Üretim
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Ramp up production to get quality end-use parts to market fast
-                  and use batch production to reduce financial risk with no
-                  order minimums and low total cost of ownership.
+                  Kaliteli son kullanım parçalarını pazara hızlıca ulaştırmak
+                  için üretimi artırın ve minimum sipariş miktarı ve düşük
+                  toplam sahip olma maliyeti ile finansal riski azaltmak için
+                  parti üretimini kullanın.
                 </p>
               </div>
 
               {/* Item 2 - Mass Production */}
               <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Mass Production
+                  Seri Üretim
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Order quantities up to 1 million+ parts with volume pricing
-                  built to fit your budget.
+                  Bütçenize uygun hacim fiyatlandırması ile 1 milyon+ parçaya
+                  kadar sipariş miktarları.
                 </p>
               </div>
 
               {/* Item 3 - On-Demand Production */}
               <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  On-Demand Production
+                  Talep Üzerine Üretim
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Build agility into your supply chain by ordering quick-turn
-                  parts when needed.
+                  Gerektiğinde hızlı teslim parçalar sipariş ederek tedarik
+                  zincirinize çeviklik kazandırın.
                 </p>
               </div>
             </div>
@@ -241,20 +244,20 @@ export default function page() {
               {/* Left Column - Text */}
               <div className="md:w-3/5">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0B1221] mb-4">
-                  Leverage Short-Term Production
+                  Kısa Vadeli Üretimden Yararlanın
                 </h2>
                 <div className="w-16 h-1 bg-[#96E92A] rounded-full mb-5"></div>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  You can also tap into our production capabilities for any
-                  immediate short-term needs of end-use parts like jigs,
-                  fixtures, and industrial components, or managing inventory
-                  levels and financial costs towards the end of the product life
-                  cycle.
+                  Tezgahlar, fikstürler ve endüstriyel bileşenler gibi son
+                  kullanım parçalarının acil kısa vadeli ihtiyaçları için veya
+                  ürün yaşam döngüsünün sonuna doğru envanter seviyelerini ve
+                  finansal maliyetleri yönetmek için üretim yeteneklerimizden de
+                  yararlanabilirsiniz.
                 </p>
                 <a
                   href="#"
                   className="text-[#0099ff] font-medium hover:text-[#96E92A] transition-colors inline-flex items-center gap-2 group">
-                  Learn More →
+                  Daha Fazla Bilgi →
                 </a>
               </div>
 
@@ -263,7 +266,7 @@ export default function page() {
                 <div className="relative w-full h-64 md:h-72 rounded-xl overflow-hidden shadow-md bg-gray-100">
                   <Image
                     src="/Assets/Images/resources/product-life-cycle/short_term_production.jpg"
-                    alt="Leverage short-term production for jigs, fixtures, and industrial components"
+                    alt="Tezgahlar, fikstürler ve endüstriyel bileşenler için kısa vadeli üretimden yararlanın"
                     fill
                     className="object-cover"
                   />
@@ -276,34 +279,35 @@ export default function page() {
               {/* Item 1 - Jigs & Fixtures */}
               <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Jigs & Fixtures
+                  Tezgahlar ve Fikstürler
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Streamline part assembly and help reduce production costs with
-                  durable jigs and fixtures.
+                  Dayanıklı tezgahlar ve fikstürler ile parça montajını
+                  kolaylaştırın ve üretim maliyetlerini düşürmeye yardımcı olun.
                 </p>
               </div>
 
               {/* Item 2 - End-of-Life Production */}
               <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  End-of-Life Production
+                  Ömür Sonu Üretimi
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Reduce your financial risk and warehousing costs during end of
-                  product life by ordering low volumes of product parts just in
-                  time.
+                  Tam zamanında düşük hacimli ürün parçaları sipariş ederek ürün
+                  ömrü sonunda finansal riskinizi ve depolama maliyetlerinizi
+                  azaltın.
                 </p>
               </div>
 
               {/* Item 3 - Maintenance, Repair, and Operations (MRO) */}
               <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <h3 className="text-xl font-bold text-[#0B1221] mb-3">
-                  Maintenance, Repair, and Operations (MRO)
+                  Bakım, Onarım ve Operasyonlar (MRO)
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Order custom production parts on demand for MRO applications
-                  to keep equipment running without delay.
+                  Ekipmanın gecikmeden çalışmaya devam etmesi için MRO
+                  uygulamaları için talep üzerine özel üretim parçaları sipariş
+                  edin.
                 </p>
               </div>
             </div>
