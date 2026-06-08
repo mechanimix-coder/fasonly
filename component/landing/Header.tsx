@@ -138,7 +138,7 @@ export default function Header() {
                     <ul className="space-y-1">
                       <li>
                         <Link
-                          href="/about/who-we-are"
+                          href="/about"
                           className="text-xs text-gray-300 hover:text-[#96E92A] transition-colors block py-1">
                           Biz Kimiz
                         </Link>
@@ -795,7 +795,13 @@ export default function Header() {
                 <div className="bg-[#F0F8FF] rounded-xl p-5 border border-gray-100">
                   <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden bg-gradient-to-br from-[#0099ff]/20 to-[#96E92A]/20">
                     <div className="flex items-center justify-center h-full">
-                      <span className="text-4xl">🎯</span>
+                      <Image
+                        src={"/assets/images/resources/3dprinter.jpeg"}
+                        alt="3d printer image"
+                        width={500}
+                        height={500}
+                        className="object-contain"
+                      />
                     </div>
                   </div>
                   <h3 className="font-bold text-base text-[#0B1221] mb-2">
@@ -954,7 +960,7 @@ export default function Header() {
                           </h4>
                           <div className="flex flex-col gap-1 mb-2">
                             <Link
-                              href="/about/who-we-are"
+                              href="/about"
                               onClick={closeMenu}
                               className="py-1 cursor-pointer hover:text-[#96E92A] transition-colors text-gray-300 text-sm">
                               Biz Kimiz
